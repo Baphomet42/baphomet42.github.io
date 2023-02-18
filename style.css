@@ -1,0 +1,206 @@
+html {
+    background-color: #271C2A;
+    color: #D7C2D7;
+    font-family: serif;
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    cursor: default;
+}
+
+#header {
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #111111;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#logo {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: .75rem;
+    left: 2rem;
+}
+
+#logoimg {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.sel-page {
+    color: white;
+}
+
+#footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4rem;
+    background-color: #111111;
+    color: #FFAA00;
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+article {
+    flex: 1;
+}
+
+a {
+    color: #D7C2D7;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.card-wrap {
+    float: left;
+    width: 50%;
+    align-content: center;
+}
+
+.card-wrap-full {
+    float: left;
+    width: 100%;
+    align-content: center;
+}
+
+.card-wrap-item {
+    float: left;
+    width: 25%;
+    align-content: center;
+}
+
+@media only screen and (max-width: 880px) {
+    .card-wrap {
+        width: 100%;
+    }
+}
+
+.card {
+    background-image:radial-gradient(#420666, #210333);
+    box-shadow: 0 0 .3rem .3rem black;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.item-card {
+    background-image:radial-gradient(#420666, #210333);
+    box-shadow: 0 0 .3rem .3rem black;
+    margin: 2rem;
+    padding: 1rem;
+
+}
+
+button {
+    font-size: large;
+    background-color: #222222;
+    color: white;
+    padding: .2rem .5rem .2rem .5rem;
+    border-top: .2rem solid #333333;
+    border-left: .2rem solid #333333;
+    border-right: .2rem solid #000000;
+    border-bottom: .2rem solid #000000;
+    cursor: pointer;
+}
+
+input {
+    cursor: text;
+}
+
+.button {
+    font-size: large;
+    background-color: #222222;
+    color: white;
+    padding: .2rem .5rem .2rem .5rem;
+    border-top: .2rem solid #333333;
+    border-left: .2rem solid #333333;
+    border-right: .2rem solid #000000;
+    border-bottom: .2rem solid #000000;
+}
+
+.item-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.item-desc {
+    font-size: 1rem;
+}
+
+.item-cmd {
+    background-color: black;
+    color: white;
+    width: 75%;
+    font-family: monospace;
+}
+
+.copy-button {
+    font-size: 1rem;
+    margin-right: .25rem;
+}
+
+#ee0 {
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    cursor: not-allowed;
+    color: #111111;
+    opacity: 0;
+    right: 1rem;
+    margin-top:-2rem;
+}
+
+#ee1 {
+    height:30rem;
+}
+
+#ee2 {
+    background-color: transparent;
+    border-color: transparent;
+    height: 30rem;
+    cursor: default;
+}
+
+#ee4 {
+    position: absolute;
+    border-color: transparent;
+    opacity:0;
+    height:0;
+    width:0;
+}
+
+.ee5 {
+    filter: grayscale(.5);
+}

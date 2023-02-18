@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/71295013?v=4">
+    <link rel="apple-touch-icon" href="https://avatars.githubusercontent.com/u/71295013?v=4">
+    <title>BaphomethLabs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="../data-include.js"></script>
+</head>
+<body>
+    <article>
+        <div data-include="../header" id="header"></div>
+
+        <div id="item-cards"></div>
+
+    </article>
+    <div data-include="../footer" id="footer"></div>
+
+    <script>
+        var item_cmd = [];
+
+        $(function () {
+            $.getJSON("items.json", function (data) {
+                var i = 0;
+                $.each(data, function (key, value) {
+                    var item = '';
+                    item += '<div class="card-wrap-item">';
+                    item += '<div class="item-card">';
+                    item += '<h1 class="item-name">' + value.name + '</h1>';
+                    item += '<p class="item-desc">' + value.description + '</p>';
+                    item += '<button onClick="copyText(' + i + ')" class="copy-button">Copy</button>';
+                    item += '<span>';
+                    item += '<input type="text" readonly class="item-cmd" value="/give @p ' + value.cmd.replace(/"/g,"&quot;") + '">';
+                    item += '</span>';
+                    item += '</div>';
+                    item += '</div>';
+                    $('#item-cards').append(item);
+                    item_cmd.push("/give @p " + value.cmd);
+                    i++;
+                });
+            });
+        });
+
+        function copyText(i) {
+            navigator.clipboard.writeText(item_cmd[i]);
+        }
+    </script>
+
+</body>
+</html>
