@@ -1,32 +1,53 @@
-[
-    {
-        "name": "Opened Iron Trapdoor",
-        "description": "Places a stable vertical iron trapdoor, no redstone needed!",
-        "cmd": "iron_trapdoor{BlockStateTag:{open:\"true\"},Enchantments:[{id:\"unbreaking\",lvl:0}],HideFlags:255,display:{Lore:['{\"text\":\"\"}','{\"color\":\"gold\",\"text\":\"BaphomethLabs\"}'],Name:'{\"italic\":false,\"text\":\"Opened Iron Trapdoor\",\"color\":\"white\"}'}}"
-    },
-    {
-        "name": "Pan Galactic Gargle Blaster",
-        "description": "Every status effect for 2 seconds. Gives \"A Furious Cocktail\" and \"How Did We Get Here?\" advancements.",
-        "cmd": "potion{CustomPotionColor:16777215,Enchantments:[{id:\"unbreaking\",lvl:0}],CustomPotionEffects:[{Ambient:0b,Amplifier:0b,Duration:40,Id:1b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:2b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:3b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:4b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:5b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:6b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:7b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:8b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:9b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:10b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:11b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:12b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:13b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:14b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:15b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:16b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:17b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:18b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:19b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:20b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:21b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:22b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:23b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:24b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:25b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:26b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:27b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:28b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:29b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:30b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:31b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:32b,ShowIcon:1b,ShowParticles:1b}],HideFlags:63,Potion:\"minecraft:empty\",display:{Lore:['{\"color\":\"dark_gray\",\"text\":\"Best Drink in Existence\"}','{\"text\":\"\"}','{\"italic\":false,\"color\":\"gray\",\"text\":\"Effects similar to having your brains\"}','{\"italic\":false,\"color\":\"gray\",\"text\":\"smashed out by a slice of lemon\"}','{\"italic\":false,\"color\":\"gray\",\"text\":\"wrapped around a large gold brick.\"}','{\"text\":\"\"}','{\"color\":\"gold\",\"text\":\"Bottled by BaphomethLabs\"}'],Name:'{\"bold\":true,\"italic\":false,\"color\":\"aqua\",\"text\":\"Pan Galactic Gargle Blaster\"}'}}"
-    },
-    {
-        "name": "Nova 6",
-        "description": "Insta kill against creative players",
-        "cmd": "splash_potion{CustomPotionColor:10943277,CustomPotionEffects:[{Ambient:0b,Amplifier:125b,Duration:0,Id:6b,ShowIcon:1b,ShowParticles:1b}],HideFlags:63,Potion:\"minecraft:empty\",display:{Lore:['{\"text\":\"\"}','{\"color\":\"gold\",\"text\":\"BaphomethLabs\"}'],Name:'{\"bold\":true,\"italic\":false,\"color\":\"dark_green\",\"text\":\"Nova 6\"}'}}"
-    },
-    {
-        "name": "Boomyboomboom",
-        "description": "Lightning spawn egg",
-        "cmd": "snow_golem_spawn_egg{Enchantments:[{id:\"unbreaking\",lvl:0}],EntityTag:{id:\"lightning_bolt\"},HideFlags:255,display:{Lore:['{\"text\":\"\"}','{\"text\":\"BaphomethLabs\",\"color\":\"gold\"}'],Name:'{\"text\":\"Boomyboomboom\",\"color\":\"#E0C0FF\",\"italic\":false,\"bold\":true}'}}"
-    },
-    {
-        "name": "Effective Power",
-        "description": "Speed item when held",
-        "cmd": "nether_star{AttributeModifiers:[{Amount:1.0d,AttributeName:\"minecraft:generic.movement_speed\",Name:\"My Modifier\",Operation:0,UUID:[I;-431029777,-926331870,-1418514128,-36404861]},{Amount:100.0d,AttributeName:\"minecraft:generic.max_health\",Name:\"My Modifier\",Operation:0,UUID:[I;-17734840,-1120255756,-1682343646,1652033132]},{Amount:100.0d,AttributeName:\"minecraft:generic.follow_range\",Name:\"My Modifier\",Operation:0,UUID:[I;244091189,175328353,-1351855587,1343156021]},{Amount:100.0d,AttributeName:\"minecraft:generic.attack_damage\",Name:\"My Modifier\",Operation:0,UUID:[I;1684508685,-68663004,-2078703161,-1028992239]},{Amount:100.0d,AttributeName:\"minecraft:horse.jump_strength\",Name:\"My Modifier\",Operation:0,UUID:[I;1391710487,-993443624,-1261456064,-281107543]},{Amount:100.0d,AttributeName:\"minecraft:zombie.spawn_reinforcements\",Name:\"My Modifier\",Operation:0,UUID:[I;469851148,883704074,-1379840482,539570013]}],Enchantments:[{id:\"minecraft:aqua_affinity\",lvl:100s},{id:\"minecraft:bane_of_arthropods\",lvl:100s},{id:\"minecraft:blast_protection\",lvl:100s},{id:\"minecraft:efficiency\",lvl:100s},{id:\"minecraft:feather_falling\",lvl:100s},{id:\"minecraft:fire_aspect\",lvl:100s},{id:\"minecraft:fire_protection\",lvl:100s},{id:\"minecraft:flame\",lvl:100s},{id:\"minecraft:fortune\",lvl:100s},{id:\"minecraft:infinity\",lvl:100s},{id:\"minecraft:knockback\",lvl:100s},{id:\"minecraft:looting\",lvl:100s},{id:\"minecraft:luck_of_the_sea\",lvl:100s},{id:\"minecraft:lure\",lvl:100s},{id:\"minecraft:power\",lvl:100s},{id:\"minecraft:projectile_protection\",lvl:100s},{id:\"minecraft:protection\",lvl:100s},{id:\"minecraft:punch\",lvl:100s},{id:\"minecraft:respiration\",lvl:100s},{id:\"minecraft:sharpness\",lvl:100s},{id:\"minecraft:silk_touch\",lvl:100s},{id:\"minecraft:smite\",lvl:100s},{id:\"minecraft:thorns\",lvl:100s},{id:\"minecraft:unbreaking\",lvl:100s}],HideFlags:63,display:{Lore:['{\"text\":\"\"}','{\"color\":\"gold\",\"text\":\"BaphomethLabs\"}'],Name:'{\"italic\":false,\"color\":\"dark_red\",\"text\":\"effective.Powerلُلُصّبُلُلصّبُررً ॣ ॣh ॣ ॣ冗\"}'}}"
-    },
-    {
-        "name": "Spongecart",
-        "description": "Minecart with Sponge (May contain traces of asbestos, nicotine)",
-        "cmd": "bee_spawn_egg{EntityTag:{CustomDisplayTile:1,DisplayOffset:6,DisplayState:{Name:\"sponge\"},id:\"minecraft:furnace_minecart\"},display:{Lore:['{\"text\":\"\"}','{\"text\":\"BaphomethLabs\",\"color\":\"gold\"}'],Name:'{\"italic\":false,\"text\":\"Spongecart\"}'}}"
-    }
-]
+{
+    "version":1,
+    "items": [
+        {
+            "category": "misc",
+            "name": "Opened Iron Trapdoor",
+            "description": "Places a stable vertical iron trapdoor, no redstone needed!",
+            "id": "iron_trapdoor",
+            "count": 1,
+            "tag": "{BlockStateTag:{open:\"true\"},Enchantments:[{id:\"unbreaking\",lvl:0}],HideFlags:255,display:{Lore:['{\"text\":\"\"}','{\"color\":\"gold\",\"text\":\"BaphomethLabs\"}'],Name:'{\"italic\":false,\"text\":\"Opened Iron Trapdoor\",\"color\":\"white\"}'}}"
+        },
+        {
+            "category": "potions",
+            "name": "Pan Galactic Gargle Blaster",
+            "description": "Every status effect for 2 seconds. Gives \"A Furious Cocktail\" and \"How Did We Get Here?\" advancements.",
+            "id": "potion",
+            "count": 1,
+            "tag": "{CustomPotionColor:16777215,Enchantments:[{id:\"unbreaking\",lvl:0}],CustomPotionEffects:[{Ambient:0b,Amplifier:0b,Duration:40,Id:1b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:2b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:3b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:4b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:5b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:6b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:7b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:8b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:9b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:10b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:11b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:12b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:13b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:14b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:15b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:16b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:17b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:18b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:19b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:20b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:21b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:22b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:23b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:24b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:25b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:26b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:27b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:28b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:29b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:30b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:31b,ShowIcon:1b,ShowParticles:1b},{Ambient:0b,Amplifier:0b,Duration:40,Id:32b,ShowIcon:1b,ShowParticles:1b}],HideFlags:63,Potion:\"minecraft:empty\",display:{Lore:['{\"color\":\"dark_gray\",\"text\":\"Best Drink in Existence\"}','{\"text\":\"\"}','{\"italic\":false,\"color\":\"gray\",\"text\":\"Effects similar to having your brains\"}','{\"italic\":false,\"color\":\"gray\",\"text\":\"smashed out by a slice of lemon\"}','{\"italic\":false,\"color\":\"gray\",\"text\":\"wrapped around a large gold brick.\"}','{\"text\":\"\"}','{\"color\":\"gold\",\"text\":\"Bottled by BaphomethLabs\"}'],Name:'{\"bold\":true,\"italic\":false,\"color\":\"aqua\",\"text\":\"Pan Galactic Gargle Blaster\"}'}}"
+        },
+        {
+            "category": "potions",
+            "name": "Nova 6",
+            "description": "Insta kill against creative players",
+            "id": "splash_potion",
+            "count": 1,
+            "tag": "{CustomPotionColor:10943277,CustomPotionEffects:[{Ambient:0b,Amplifier:125b,Duration:0,Id:6b,ShowIcon:1b,ShowParticles:1b}],HideFlags:63,Potion:\"minecraft:empty\",display:{Lore:['{\"text\":\"\"}','{\"color\":\"gold\",\"text\":\"BaphomethLabs\"}'],Name:'{\"bold\":true,\"italic\":false,\"color\":\"dark_green\",\"text\":\"Nova 6\"}'}}"
+        },
+        {
+            "category": "eggs",
+            "name": "Boomyboomboom",
+            "description": "Lightning spawn egg",
+            "id": "snow_golem_spawn_egg",
+            "count": 1,
+            "tag": "{Enchantments:[{id:\"unbreaking\",lvl:0}],EntityTag:{id:\"lightning_bolt\"},HideFlags:255,display:{Lore:['{\"text\":\"\"}','{\"text\":\"BaphomethLabs\",\"color\":\"gold\"}'],Name:'{\"text\":\"Boomyboomboom\",\"color\":\"#E0C0FF\",\"italic\":false,\"bold\":true}'}}"
+        },
+        {
+            "category": "misc",
+            "name": "Effective Power",
+            "description": "Speed item when held",
+            "id": "nether_star",
+            "count": 1,
+            "tag": "{AttributeModifiers:[{Amount:1.0d,AttributeName:\"minecraft:generic.movement_speed\",Name:\"My Modifier\",Operation:0,UUID:[I;-431029777,-926331870,-1418514128,-36404861]},{Amount:100.0d,AttributeName:\"minecraft:generic.max_health\",Name:\"My Modifier\",Operation:0,UUID:[I;-17734840,-1120255756,-1682343646,1652033132]},{Amount:100.0d,AttributeName:\"minecraft:generic.follow_range\",Name:\"My Modifier\",Operation:0,UUID:[I;244091189,175328353,-1351855587,1343156021]},{Amount:100.0d,AttributeName:\"minecraft:generic.attack_damage\",Name:\"My Modifier\",Operation:0,UUID:[I;1684508685,-68663004,-2078703161,-1028992239]},{Amount:100.0d,AttributeName:\"minecraft:horse.jump_strength\",Name:\"My Modifier\",Operation:0,UUID:[I;1391710487,-993443624,-1261456064,-281107543]},{Amount:100.0d,AttributeName:\"minecraft:zombie.spawn_reinforcements\",Name:\"My Modifier\",Operation:0,UUID:[I;469851148,883704074,-1379840482,539570013]}],Enchantments:[{id:\"minecraft:aqua_affinity\",lvl:100s},{id:\"minecraft:bane_of_arthropods\",lvl:100s},{id:\"minecraft:blast_protection\",lvl:100s},{id:\"minecraft:efficiency\",lvl:100s},{id:\"minecraft:feather_falling\",lvl:100s},{id:\"minecraft:fire_aspect\",lvl:100s},{id:\"minecraft:fire_protection\",lvl:100s},{id:\"minecraft:flame\",lvl:100s},{id:\"minecraft:fortune\",lvl:100s},{id:\"minecraft:infinity\",lvl:100s},{id:\"minecraft:knockback\",lvl:100s},{id:\"minecraft:looting\",lvl:100s},{id:\"minecraft:luck_of_the_sea\",lvl:100s},{id:\"minecraft:lure\",lvl:100s},{id:\"minecraft:power\",lvl:100s},{id:\"minecraft:projectile_protection\",lvl:100s},{id:\"minecraft:protection\",lvl:100s},{id:\"minecraft:punch\",lvl:100s},{id:\"minecraft:respiration\",lvl:100s},{id:\"minecraft:sharpness\",lvl:100s},{id:\"minecraft:silk_touch\",lvl:100s},{id:\"minecraft:smite\",lvl:100s},{id:\"minecraft:thorns\",lvl:100s},{id:\"minecraft:unbreaking\",lvl:100s}],HideFlags:63,display:{Lore:['{\"text\":\"\"}','{\"color\":\"gold\",\"text\":\"BaphomethLabs\"}'],Name:'{\"italic\":false,\"color\":\"dark_red\",\"text\":\"effective.Powerلُلُصّبُلُلصّبُررً ॣ ॣh ॣ ॣ冗\"}'}}"
+        },
+        {
+            "category": "eggs",
+            "name": "Spongecart",
+            "description": "Minecart with Sponge (May contain traces of asbestos, nicotine)",
+            "id": "bee_spawn_egg",
+            "count": 1,
+            "tag": "{EntityTag:{CustomDisplayTile:1,DisplayOffset:6,DisplayState:{Name:\"sponge\"},id:\"minecraft:furnace_minecart\"},display:{Lore:['{\"text\":\"\"}','{\"text\":\"BaphomethLabs\",\"color\":\"gold\"}'],Name:'{\"italic\":false,\"text\":\"Spongecart\"}'}}"
+        }
+    ]
+}
