@@ -33,13 +33,9 @@ body {
     left: 2rem;
 }
 
-img {
-    width: 100%;
-}
-
-#logoimg {
-    width: 3rem;
-    height: 3rem;
+#header-text {
+    width:80%;
+    margin-left:20%;
 }
 
 .sel-page {
@@ -68,6 +64,21 @@ footer {
 
 article {
     flex: 1;
+}
+
+img {
+    width: 100%;
+}
+
+.img-border {
+    box-shadow: 0 0 .5rem 0 black;
+}
+
+.img-full {
+    max-height: 30rem;
+    width: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 a {
@@ -118,8 +129,8 @@ h1 {
     border: 0;
     box-sizing: border-box;
     float: left;
-    width: 50%;
-    margin-left: 25%;
+    width: 66%;
+    margin-left: 17%;
     align-content: center;
 }
 
@@ -129,6 +140,33 @@ h1 {
     float: left;
     width: 25%;
     align-content: center;
+}
+
+.header-cell-logo {
+    border: 0;
+    box-sizing: border-box;
+    float: left;
+    width: 20%;
+    align-content: center;
+}
+
+.header-cell-text {
+    border: 0;
+    box-sizing: border-box;
+    float: left;
+    width: 60%;
+    align-content: center;
+}
+
+.header-cell-page {
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    border-top: 0;
+    border-bottom: 0;
+    margin: -5px;
+    padding-left:1rem;
+    padding-right:1rem;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -180,7 +218,15 @@ button {
     border-left: .2rem solid #333333;
     border-right: .2rem solid #000000;
     border-bottom: .2rem solid #000000;
-    cursor: pointer;
+}
+button:hover {
+    background-color: #111111;
+}
+button:active {
+    border-top: .2rem solid #000000;
+    border-left: .2rem solid #000000;
+    border-right: .2rem solid #333333;
+    border-bottom: .2rem solid #333333;
 }
 
 .button {
@@ -192,6 +238,15 @@ button {
     border-left: .2rem solid #333333;
     border-right: .2rem solid #000000;
     border-bottom: .2rem solid #000000;
+}
+.button:hover {
+    background-color: #111111;
+}
+.button:active {
+    border-top: .2rem solid #000000;
+    border-left: .2rem solid #000000;
+    border-right: .2rem solid #333333;
+    border-bottom: .2rem solid #333333;
 }
 
 .item-name {
@@ -206,8 +261,19 @@ button {
 .item-cmd {
     background-color: black;
     color: white;
-    width: 75%;
+    width: 100%;
     font-family: monospace;
+}
+
+.item-copy-wrap {
+    border: 0;
+    box-sizing: border-box;
+}
+
+.item-cmd-wrap {
+    border: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .copy-button {
