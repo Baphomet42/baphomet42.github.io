@@ -14,7 +14,9 @@
     <article>
         <div data-include="../header" id="header"></div>
 
-        <div id="item-cards"></div>
+        <table class="card-table">
+            <tr class="card-table-row" id="item-cards"></tr>
+        </table>
 
     </article>
     <div data-include="../footer" id="footer"></div>
@@ -27,7 +29,7 @@
                 var i = 0;
                 $.each(data.items, function (key, value) {
                     var item = '';
-                    item += '<div class="card-wrap-item">';
+                    item += '<td class="card-wrap-item">';
                     item += '<div class="item-card">';
                     item += '<h1 class="item-name">' + value.name + '</h1>';
                     item += '<p class="item-desc">' + value.description + '</p>';
@@ -36,7 +38,7 @@
                     item += '<input type="text" readonly class="item-cmd" value="/give @p ' + value.id + value.tag.replace(/"/g,"&quot;") + '">';
                     item += '</span>';
                     item += '</div>';
-                    item += '</div>';
+                    item += '</td>';
                     $('#item-cards').append(item);
                     item_cmd.push("/give @p " + value.id + value.tag);
                     i++;

@@ -12,10 +12,6 @@ body {
     flex-direction: column;
 }
 
-* {
-    cursor: default;
-}
-
 #header {
     top: 0;
     left: 0;
@@ -37,10 +33,13 @@ body {
     left: 2rem;
 }
 
+img {
+    width: 100%;
+}
+
 #logoimg {
     width: 3rem;
     height: 3rem;
-    cursor: pointer;
 }
 
 .sel-page {
@@ -53,9 +52,13 @@ body {
     right: 0;
     height: 4rem;
     background-color: #111111;
-    color: #FFAA00;
     font-size: 1rem;
     text-align: center;
+}
+
+#footer-gold {
+    color: #FFAA00;
+    font-weight: normal;
 }
 
 footer {
@@ -71,7 +74,6 @@ a {
     color: #D7C2D7;
     font-weight: bold;
     text-decoration: none;
-    cursor: pointer;
 }
 
 .center {
@@ -84,28 +86,74 @@ h1 {
     font-family: sans-serif;
 }
 
+.card-table {
+    width: 100%;
+    margin: 0;
+}
+
+.card-table-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+}
+
 .card-wrap {
+    border: 0;
+    box-sizing: border-box;
     float: left;
     width: 50%;
     align-content: center;
 }
 
 .card-wrap-full {
+    border: 0;
+    box-sizing: border-box;
     float: left;
     width: 100%;
     align-content: center;
 }
 
+.card-wrap-mid {
+    border: 0;
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    margin-left: 25%;
+    align-content: center;
+}
+
 .card-wrap-item {
+    border: 0;
+    box-sizing: border-box;
     float: left;
     width: 25%;
     align-content: center;
 }
 
+@media only screen and (max-width: 1000px) {
+
+    .card-wrap-item {
+        width: 50%;
+    }
+
+    .card-wrap-mid {
+        margin-left: 0;
+        width: 100%;
+    }
+
+}
+
 @media only screen and (max-width: 880px) {
+
     .card-wrap {
         width: 100%;
     }
+
+    .card-wrap-item {
+        width: 100%;
+    }
+
 }
 
 .card {
@@ -133,10 +181,6 @@ button {
     border-right: .2rem solid #000000;
     border-bottom: .2rem solid #000000;
     cursor: pointer;
-}
-
-input {
-    cursor: text;
 }
 
 .button {
