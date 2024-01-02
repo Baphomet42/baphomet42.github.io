@@ -9,7 +9,7 @@
         },
         {
             "name": "Invisible Frame",
-            "description": "Places an invisible item frames that can hold items",
+            "description": "Places an invisible item frame that can hold items",
             "id": "item_frame",
             "tag": "{Enchantments:[{id:\"unbreaking\",lvl:1}],EntityTag:{Invisible:1,Invulnerable:1},HideFlags:127,display:{Lore:['{\"text\":\"\"}','{\"color\":\"gold\",\"text\":\"BaphomethLabs\"}'],Name:'{\"italic\":false,\"text\":\"Invisible Frame\",\"color\":\"white\"}'}}"
         },
