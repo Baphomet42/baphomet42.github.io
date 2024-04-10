@@ -1,3 +1,7 @@
+:root {
+    color-scheme: dark;
+}
+
 html {
     background-color: #271C2A;
     color: #D7C2D7;
@@ -195,14 +199,14 @@ h1 {
 }
 
 .card {
-    background-image:radial-gradient(#420666, #210333);
+    background-image:radial-gradient(#42066642, #21033342);
     box-shadow: 0 0 .3rem .3rem black;
     margin: 2rem;
     padding: 1rem;
 }
 
 .item-card {
-    background-image:radial-gradient(#420666, #210333);
+    background-image:radial-gradient(#42066642, #21033342);
     box-shadow: 0 0 .3rem .3rem black;
     margin: 2rem;
     padding: 1rem;

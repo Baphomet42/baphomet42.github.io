@@ -1,0 +1,125 @@
+{
+    "main": [
+        {
+            "id": "waw",
+            "name": "World at War",
+            "year": 2008,
+            "maps": [
+                {"name": "Nacht der Untoten", "link": "https://callofduty.fandom.com/wiki/Nacht_der_Untoten"},
+                {"name": "Zombie Verrückt", "link": "https://callofduty.fandom.com/wiki/Verrückt"},
+                {"name": "Shi No Numa", "link": "https://callofduty.fandom.com/wiki/Shi_No_Numa"},
+                {"name": "Der Riese", "link": "https://callofduty.fandom.com/wiki/Der_Riese"}
+            ]
+        },
+        {
+            "id": "bo1",
+            "name": "Black Ops",
+            "year": 2010,
+            "maps": [
+                {"name": "Kino der Toten", "link": "https://callofduty.fandom.com/wiki/Kino_der_Toten"},
+                {"name": "\"Five\"", "link": "https://callofduty.fandom.com/wiki/%22Five%22"},
+                {"name": "Ascension", "link": "https://callofduty.fandom.com/wiki/Ascension"},
+                {"name": "Call of the Dead", "link": "https://callofduty.fandom.com/wiki/Call_of_the_Dead"},
+                {"name": "Shangri-La", "link": "https://callofduty.fandom.com/wiki/Shangri-La"},
+                {"name": "Moon", "link": "https://callofduty.fandom.com/wiki/Moon"},
+                {"name": "Nacht der Untoten", "link": "https://callofduty.fandom.com/wiki/Nacht_der_Untoten"},
+                {"name": "Verrückt", "link": "https://callofduty.fandom.com/wiki/Verrückt"},
+                {"name": "Shi No Numa", "link": "https://callofduty.fandom.com/wiki/Shi_No_Numa"},
+                {"name": "Der Riese", "link": "https://callofduty.fandom.com/wiki/Der_Riese"}
+            ]
+        },
+        {
+            "id": "bo2",
+            "name": "Black Ops II",
+            "year": 2012,
+            "maps": [
+                {"name": "TranZit", "link": "https://callofduty.fandom.com/wiki/TranZit"},
+                {"name": "Nuketown Zombies", "link": "https://callofduty.fandom.com/wiki/Nuketown_Zombies"},
+                {"name": "Die Rise", "link": "https://callofduty.fandom.com/wiki/Die_Rise"},
+                {"name": "Mob of the Dead", "link": "https://callofduty.fandom.com/wiki/Mob_of_the_Dead"},
+                {"name": "Buried", "link": "https://callofduty.fandom.com/wiki/Buried"},
+                {"name": "Origins", "link": "https://callofduty.fandom.com/wiki/Origins"}
+            ]
+        },
+        {
+            "id": "bo3",
+            "name": "Black Ops III",
+            "year": 2015,
+            "maps": [
+                {"name": "Shadows of Evil", "link": "https://callofduty.fandom.com/wiki/Shadows_of_Evil"},
+                {"name": "The Giant", "link": "https://callofduty.fandom.com/wiki/The_Giant"},
+                {"name": "Der Eisendrache", "link": "https://callofduty.fandom.com/wiki/Der_Eisendrache"},
+                {"name": "Zetsubou No Shima", "link": "https://callofduty.fandom.com/wiki/Zetsubou_No_Shima"},
+                {"name": "Gorod Krovi", "link": "https://callofduty.fandom.com/wiki/Gorod_Krovi"},
+                {"name": "Revelations", "link": "/group935/revelations"},
+                {"name": "Nacht der Untoten", "link": "https://callofduty.fandom.com/wiki/Nacht_der_Untoten"},
+                {"name": "Verrückt", "link": "https://callofduty.fandom.com/wiki/Verrückt"},
+                {"name": "Shi No Numa", "link": "https://callofduty.fandom.com/wiki/Shi_No_Numa"},
+                {"name": "Kino der Toten", "link": "https://callofduty.fandom.com/wiki/Kino_der_Toten"},
+                {"name": "Ascension", "link": "https://callofduty.fandom.com/wiki/Ascension"},
+                {"name": "Shangri-La", "link": "https://callofduty.fandom.com/wiki/Shangri-La"},
+                {"name": "Moon", "link": "https://callofduty.fandom.com/wiki/Moon"},
+                {"name": "Origins", "link": "https://callofduty.fandom.com/wiki/Origins"}
+            ]
+        },
+        {
+            "id": "bo4",
+            "name": "Black Ops IIII",
+            "year": 2018,
+            "maps": [
+                {"name": "Voyage of Despair", "link": "https://callofduty.fandom.com/wiki/Voyage_of_Despair"},
+                {"name": "IX", "link": "https://callofduty.fandom.com/wiki/IX"},
+                {"name": "Blood of the Dead", "link": "https://callofduty.fandom.com/wiki/Blood_of_the_Dead"},
+                {"name": "Classified", "link": "https://callofduty.fandom.com/wiki/Classified"},
+                {"name": "Dead of the Night", "link": "https://callofduty.fandom.com/wiki/Dead_of_the_Night"},
+                {"name": "Ancient Evil", "link": "https://callofduty.fandom.com/wiki/Ancient_Evil"},
+                {"name": "Alpha Omega", "link": "https://callofduty.fandom.com/wiki/Alpha_Omega"},
+                {"name": "Tag der Toten", "link": "https://callofduty.fandom.com/wiki/Tag_der_Toten"}
+            ]
+        },
+        {
+            "id": "bocw",
+            "name": "Black Ops Cold War",
+            "year": 2020,
+            "maps": [
+                {"name": "Die Maschine", "link": "https://callofduty.fandom.com/wiki/Die_Maschine"},
+                {"name": "Firebase Z", "link": "https://callofduty.fandom.com/wiki/Firebase_Z"},
+                {"name": "Outbreak", "link": "https://callofduty.fandom.com/wiki/Outbreak_(Cold_War)"},
+                {"name": "Mauer der Toten", "link": "https://callofduty.fandom.com/wiki/Mauer_der_Toten"},
+                {"name": "Forsaken", "link": "https://callofduty.fandom.com/wiki/Forsaken"}
+            ]
+        }
+    ],
+    "other": [
+        {
+            "name": "Dead Ops Arcade",
+            "year": "",
+            "maps": [
+                {"name": "Dead Ops Arcade", "desc": "Black Ops", "link": "https://callofduty.fandom.com/wiki/Dead_Ops_Arcade"},
+                {"name": "Dead Ops Arcade 2", "desc": "Black Ops III", "link": "https://callofduty.fandom.com/wiki/Dead_Ops_Arcade_II:_Cyber%27s_Avengening"},
+                {"name": "Dead Ops Arcade 3", "desc": "Black Ops Cold War", "link": "https://callofduty.fandom.com/wiki/Dead_Ops_Arcade_3:_Rise_of_the_Mamaback"}
+            ]
+        },
+        {
+            "name": "Exo Zombies",
+            "year": "Advanced Warfare",
+            "maps": [
+                {"name": "Outbreak", "link": "https://callofduty.fandom.com/wiki/Outbreak"},
+                {"name": "Infection", "link": "https://callofduty.fandom.com/wiki/Infection"},
+                {"name": "Carrier", "link": "https://callofduty.fandom.com/wiki/Carrier_(Exo_Zombies)"},
+                {"name": "Descent", "link": "https://callofduty.fandom.com/wiki/Descent_(Exo_Zombies)"}
+            ]
+        },
+        {
+            "name": "IW Zombies",
+            "year": "Infinite Warfare",
+            "maps": [
+                {"name": "Zombies in Spaceland", "link": "https://callofduty.fandom.com/wiki/Zombies_in_Spaceland"},
+                {"name": "Rave in the Redwoods", "link": "https://callofduty.fandom.com/wiki/Rave_in_the_Redwoods"},
+                {"name": "Shaolin Shuffle", "link": "https://callofduty.fandom.com/wiki/Shaolin_Shuffle"},
+                {"name": "Attack of the Radioactive Thing", "link": "https://callofduty.fandom.com/wiki/Attack_of_the_Radioactive_Thing"},
+                {"name": "The Beast from Beyond", "link": "https://callofduty.fandom.com/wiki/The_Beast_From_Beyond"}
+            ]
+        }
+    ]
+}
