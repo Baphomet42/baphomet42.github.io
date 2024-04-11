@@ -1,0 +1,17 @@
+{
+    "name": "Forsaken",
+    "subtext": "Black Ops Cold War",
+    "wiki": "https://callofduty.fandom.com/wiki/Forsaken",
+    "maps": [
+        {
+            "img": "https://callofdutymaps.com/wp-content/uploads/Forsaken-facility-minimap.png",
+            "link": "https://callofdutymaps.com/zombies/forsaken/"
+        },
+        {
+            "img": "https://callofdutymaps.com/wp-content/uploads/Forsaken-bunker-minimap.png",
+            "link": "https://callofdutymaps.com/zombies/forsaken/"
+        }
+    ],
+    "sections" : [
+    ]
+}

@@ -4,6 +4,7 @@
             "id": "waw",
             "name": "World at War",
             "year": 2008,
+            "img": "https://is4-ssl.mzstatic.com/image/thumb/Purple71/v4/e8/4a/cd/e84acd0a-d962-6ed8-9fd6-7ea60d8fba82/source/256x256bb.jpg",
             "maps": [
                 {"name": "Nacht der Untoten", "link": "https://callofduty.fandom.com/wiki/Nacht_der_Untoten"},
                 {"name": "Zombie Verrückt", "link": "https://callofduty.fandom.com/wiki/Verrückt"},
@@ -15,13 +16,14 @@
             "id": "bo1",
             "name": "Black Ops",
             "year": 2010,
+            "img": "https://assets-prd.ignimgs.com/2021/12/30/call-of-duty-black-ops-1-button-1640898530662.jpg",
             "maps": [
                 {"name": "Kino der Toten", "link": "https://callofduty.fandom.com/wiki/Kino_der_Toten"},
                 {"name": "\"Five\"", "link": "https://callofduty.fandom.com/wiki/%22Five%22"},
                 {"name": "Ascension", "link": "https://callofduty.fandom.com/wiki/Ascension"},
                 {"name": "Call of the Dead", "link": "https://callofduty.fandom.com/wiki/Call_of_the_Dead"},
                 {"name": "Shangri-La", "link": "https://callofduty.fandom.com/wiki/Shangri-La"},
-                {"name": "Moon", "link": "https://callofduty.fandom.com/wiki/Moon"},
+                {"name": "Moon", "link": "/group935/moon", "img": "https://callofdutymaps.com/wp-content/uploads/moon19.jpg"},
                 {"name": "Nacht der Untoten", "link": "https://callofduty.fandom.com/wiki/Nacht_der_Untoten"},
                 {"name": "Verrückt", "link": "https://callofduty.fandom.com/wiki/Verrückt"},
                 {"name": "Shi No Numa", "link": "https://callofduty.fandom.com/wiki/Shi_No_Numa"},
@@ -32,6 +34,7 @@
             "id": "bo2",
             "name": "Black Ops II",
             "year": 2012,
+            "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/8dd91536-f09a-487f-838f-140f69ff9d8a/d5l5phn-53173cdc-17b0-47cc-829a-e0008d2e114b.png",
             "maps": [
                 {"name": "TranZit", "link": "https://callofduty.fandom.com/wiki/TranZit"},
                 {"name": "Nuketown Zombies", "link": "https://callofduty.fandom.com/wiki/Nuketown_Zombies"},
@@ -45,20 +48,21 @@
             "id": "bo3",
             "name": "Black Ops III",
             "year": 2015,
+            "img": "https://i2.wp.com/www.inforumatik.com/wp-content/uploads/2015/07/Call-Of-Duty-Black-Ops-3-01.png?fit=256%2C256&ssl=1",
             "maps": [
                 {"name": "Shadows of Evil", "link": "https://callofduty.fandom.com/wiki/Shadows_of_Evil"},
                 {"name": "The Giant", "link": "https://callofduty.fandom.com/wiki/The_Giant"},
-                {"name": "Der Eisendrache", "link": "/group935/der_eisendrache"},
+                {"name": "Der Eisendrache", "link": "/group935/der_eisendrache", "img": "https://callofdutymaps.com/wp-content/uploads/dereisendracheloadscreen.jpg"},
                 {"name": "Zetsubou No Shima", "link": "https://callofduty.fandom.com/wiki/Zetsubou_No_Shima"},
-                {"name": "Gorod Krovi", "link": "https://callofduty.fandom.com/wiki/Gorod_Krovi"},
-                {"name": "Revelations", "link": "/group935/revelations"},
+                {"name": "Gorod Krovi", "link": "/group935/gorod_krovi", "img": "https://callofdutymaps.com/wp-content/uploads/gorodkrovi29.jpg"},
+                {"name": "Revelations", "link": "/group935/revelations", "img": "https://callofdutymaps.com/wp-content/uploads/revelations1.jpg"},
                 {"name": "Nacht der Untoten", "link": "https://callofduty.fandom.com/wiki/Nacht_der_Untoten"},
                 {"name": "Verrückt", "link": "https://callofduty.fandom.com/wiki/Verrückt"},
                 {"name": "Shi No Numa", "link": "https://callofduty.fandom.com/wiki/Shi_No_Numa"},
                 {"name": "Kino der Toten", "link": "https://callofduty.fandom.com/wiki/Kino_der_Toten"},
                 {"name": "Ascension", "link": "https://callofduty.fandom.com/wiki/Ascension"},
                 {"name": "Shangri-La", "link": "https://callofduty.fandom.com/wiki/Shangri-La"},
-                {"name": "Moon", "link": "https://callofduty.fandom.com/wiki/Moon"},
+                {"name": "Moon", "link": "/group935/moon", "img": "https://callofdutymaps.com/wp-content/uploads/moon19.jpg"},
                 {"name": "Origins", "link": "https://callofduty.fandom.com/wiki/Origins"}
             ]
         },
@@ -66,6 +70,7 @@
             "id": "bo4",
             "name": "Black Ops IIII",
             "year": 2018,
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGqkYW5tb_4H9WLmv02h5g4pMC-i1Z5Zok0Wv4bP4AWg&s",
             "maps": [
                 {"name": "Voyage of Despair", "link": "https://callofduty.fandom.com/wiki/Voyage_of_Despair"},
                 {"name": "IX", "link": "https://callofduty.fandom.com/wiki/IX"},
@@ -81,12 +86,13 @@
             "id": "bocw",
             "name": "Black Ops Cold War",
             "year": 2020,
+            "img": "https://styles.redditmedia.com/t5_44083d/styles/communityIcon_r4tglki3aan61.png",
             "maps": [
                 {"name": "Die Maschine", "link": "https://callofduty.fandom.com/wiki/Die_Maschine"},
                 {"name": "Firebase Z", "link": "https://callofduty.fandom.com/wiki/Firebase_Z"},
                 {"name": "Outbreak", "link": "https://callofduty.fandom.com/wiki/Outbreak_(Cold_War)"},
                 {"name": "Mauer der Toten", "link": "https://callofduty.fandom.com/wiki/Mauer_der_Toten"},
-                {"name": "Forsaken", "link": "https://callofduty.fandom.com/wiki/Forsaken"}
+                {"name": "Forsaken", "link": "/group935/forsaken", "img": "https://callofdutymaps.com/wp-content/uploads/Forsaken-1.jpg"}
             ]
         }
     ],

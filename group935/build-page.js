@@ -7,11 +7,13 @@ function buildPage(data) {
     page += '<div class="center"><a href="'+data.wiki+'" rel="noopener noreferrer" target="_blank" class="button">Call of Duty Wiki</a></div>'
     page += '</div>'
 
-    if(data.map) {
-        mapLink = data.map.img;
-        if(data.map.link)
-            mapLink = data.map.link;
-        page += '<div class="center"><a href="'+mapLink+'" rel="noopener noreferrer" target="_blank"><img src="'+data.map.img+'" class="img-border img-full"/></a></div>'
+    if(data.maps) {
+        $.each(data.maps, function (mapKey, map) {
+            mapLink = map.img;
+            if(map.link)
+                mapLink = map.link;
+            page += '<div class="center"><a href="'+mapLink+'" rel="noopener noreferrer" target="_blank"><img src="'+map.img+'" class="img-border img-full"/></a></div>'
+        })
     }
     
     $.each(data.sections, function (sectionKey, section) {

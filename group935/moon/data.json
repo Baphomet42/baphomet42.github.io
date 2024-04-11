@@ -1,0 +1,41 @@
+{
+    "name": "Moon",
+    "subtext": "Black Ops | Black Ops 3",
+    "wiki": "https://callofduty.fandom.com/wiki/Moon",
+    "sections" : [
+        {
+            "header": "Main Easter Egg",
+            "rows": [
+                {
+                    "cols": [
+                        {
+                            "header": "Requirements",
+                            "elements": [
+                                {
+                                    "html": [
+                                        "<p>Black Ops version only</p>",
+                                        "<li>2+ players</li>",
+                                        "<li>Call of the Dead easter egg</li>",
+                                        "<li>Shangri-La easter egg</li>",
+                                        "<p>Both versions</p>",
+                                        "<li>Wave Gun (from mystery box)</li>",
+                                        "<li>Q.E.D. (from mystery box)</li>",
+                                        "<li>Gersh Device (from mystery box)</li>"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "cols": [
+                        {
+                            "header": "Steps",
+                            "elements": [{"youtube": "AeoA2fUTX7Y"}]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

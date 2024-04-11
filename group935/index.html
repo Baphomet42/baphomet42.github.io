@@ -36,13 +36,14 @@
         <span id="other-games"></span>
 
         <br/>
+        <br/>
 
     </article>
     <div data-include="/template/footer" id="footer"></div>
 
     <script>
         $(function () {
-            $.getJSON("games.json", function (data) {
+            $.getJSON("data.json", function (data) {
                 $.each(data.main, function (key, value) {
                     $('#main-games').append(buildGames(value))
                 })
@@ -55,9 +56,13 @@
         function buildGames(value) {
             var game = ''
             game += '<div class="game-wrap"><table class="game-table"><tr class="game-row">'
-            game += '<td class="game-td center">'
-            game += '<h2 class="game-name">' + value.name + '</h2>'
-            game += '<p class="map-desc">' + value.year + '</p>'
+            if(value.img)
+                game += '<td class="game-td center" style="background-image: url('+value.img+')">'
+            else {
+                game += '<td class="game-td center">'
+                game += '<h2 class="game-name">' + value.name + '</h2>'
+                game += '<p class="map-desc center">' + value.year + '</p>'
+            }
             game += '</td>'
             game += '<td><div class="maps-list-wrap-outer"><div class="maps-list-wrap"><table class="maps-list-table"><tr class="maps-row">'
             
@@ -65,7 +70,7 @@
                 game += '<td class="map-td center">'
                 if(mapVal.link) {
                     if(mapVal.link[0]=='/')
-                        game += '<a href="'+mapVal.link+'" rel="noopener noreferrer"><div class="map-button">'
+                        game += '<a href="'+mapVal.link+'" rel="noopener noreferrer"><div class="map-button" style="background-image: url('+mapVal.img+')">'
                     else
                         game += '<a href="'+mapVal.link+'" rel="noopener noreferrer"><div class="map-button map-nocustom">'
                 }
@@ -73,7 +78,7 @@
                     game += '<a><div class="map-button map-nolink">'
                 game += '<h2 class="map-name">' + mapVal.name + '</h2>'
                 if(mapVal.desc)
-                    game += '<p class="map-desc">'+mapVal.desc+'</p>'
+                    game += '<p class="map-desc center">'+mapVal.desc+'</p>'
                 game += '</div></a>'
                 game += '</td>'
             })
