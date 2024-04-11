@@ -1,0 +1,124 @@
+{
+    "name": "Revelations",
+    "subtext": "Black Ops 3",
+    "wiki": "https://callofduty.fandom.com/wiki/Revelations_(map)",
+    "map": {
+        "img": "https://external-preview.redd.it/FP5nbmkR_vpTnVe1b243HbS1X8eBwAEFXhMH0C9F-Uw.jpg?width=1080&crop=smart&auto=webp&s=514e77929b98c50e5fbffd573b337d6866aa9aa1",
+        "link": "https://www.reddit.com/r/CODZombies/comments/564net/so_there_wasnt_a_detailed_revelations_map_that/"
+    },
+    "sections" : [
+        {
+            "header": "Power & Pack a Punch",
+            "rows": [
+                {
+                    "cols": [
+                        {
+                            "elements": [{"youtube": "r4xtsq_skww"}]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Part Locations",
+            "rows": [
+                {
+                    "cols": [
+                        {
+                            "header": "Dragon Shield",
+                            "elements": [{"youtube": "E1KheWSobD0"}]
+                        },
+                        {
+                            "header": "Keeper Protector",
+                            "elements": [{"youtube": "SysILhxXG3E"}]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Side Quests",
+            "rows": [
+                {
+                    "cols": [
+                        {
+                            "header": "Weapon Trading Table & Tommy Gun",
+                            "elements": [{"youtube": "cnPmpJ7uBDI"}]
+                        },
+                        {
+                            "header": "Masks",
+                            "elements": [{"youtube": "BA87HyIVmvw"}]
+                        },
+                        {
+                            "header": "Free Perk",
+                            "elements": [{"youtube": "WTGTp5VJNts"}]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Main Easter Egg",
+            "rows": [
+                {
+                    "cols": [
+                        {
+                            "header": "Requirements",
+                            "elements": [
+                                {
+                                    "html": [
+                                        "<li>Shield</li>",
+                                        "<li>Keeper Protector</li>",
+                                        "<li>Get Apothicon Servant from box</li>",
+                                        "<li>Upgrade Apothicon Servant</li>"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "elements": [
+                                {
+                                    "html": [
+                                        "<h4>Apothicon Servant Upgrade Guide</h4>"
+                                    ]
+                                },
+                                {
+                                    "youtube": "o3HLZ5z0Nw0"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "cols": [
+                        {
+                            "header": "Steps",
+                            "elements": [{"youtube": "0YH6npBuHVg"}]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Song",
+            "rows": [
+                {
+                    "cols": [
+                        {
+                            "header": "Teddy Bear Locations",
+                            "elements": [
+                                {
+                                    "html": [
+                                        "<li>On the way from Origins to Mob</li>",
+                                        "<li>Near the launch pad at Verrückt</li>",
+                                        "<li>In a chair in Kino</li>"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
