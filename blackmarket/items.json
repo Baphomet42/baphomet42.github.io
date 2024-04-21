@@ -1,5 +1,5 @@
 {
-    "version": 3,
+    "version": 4,
     "items": [
         {
             "name": "Essentials Box",
@@ -48,7 +48,8 @@
             "name": "Pan Galactic Gargle Blaster",
             "description": "Every status effect for 2 seconds. Gives \"A Furious Cocktail\" and \"How Did We Get Here?\" advancements.",
             "id": "potion",
-            "tag": "{CustomPotionColor:16777215,Enchantments:[{id:\"unbreaking\",lvl:0}],HideFlags:63,Potion:\"minecraft:empty\",custom_potion_effects:[{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:speed\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:slowness\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:haste\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:mining_fatigue\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:strength\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:instant_health\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:instant_damage\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:jump_boost\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:nausea\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:regeneration\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:resistance\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:fire_resistance\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:water_breathing\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:invisibility\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:blindness\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:night_vision\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:hunger\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:weakness\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:poison\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:wither\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:health_boost\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:absorption\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:saturation\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:glowing\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:levitation\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:luck\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:unluck\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:slow_falling\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:conduit_power\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:dolphins_grace\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:bad_omen\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:hero_of_the_village\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:darkness\",show_icon:1b,show_particles:1b}],display:{Lore:['{\"color\":\"dark_gray\",\"text\":\"Best Drink in Existence\"}','{\"text\":\"\"}','{\"italic\":false,\"color\":\"gray\",\"text\":\"Effects similar to having your brains\"}','{\"italic\":false,\"color\":\"gray\",\"text\":\"smashed out by a slice of lemon\"}','{\"italic\":false,\"color\":\"gray\",\"text\":\"wrapped around a large gold brick.\"}','{\"text\":\"\"}','{\"color\":\"gold\",\"text\":\"Bottled by BaphomethLabs\"}'],Name:'{\"bold\":true,\"italic\":false,\"color\":\"aqua\",\"text\":\"Pan Galactic Gargle Blaster\"}'}}"},
+            "tag": "{CustomPotionColor:16777215,Enchantments:[{id:\"unbreaking\",lvl:0}],HideFlags:63,Potion:\"minecraft:empty\",custom_potion_effects:[{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:speed\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:slowness\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:haste\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:mining_fatigue\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:strength\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:instant_health\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:instant_damage\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:jump_boost\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:nausea\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:regeneration\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:resistance\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:fire_resistance\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:water_breathing\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:invisibility\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:blindness\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:night_vision\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:hunger\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:weakness\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:poison\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:wither\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:health_boost\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:absorption\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:saturation\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:glowing\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:levitation\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:luck\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:unluck\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:slow_falling\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:conduit_power\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:dolphins_grace\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:bad_omen\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:hero_of_the_village\",show_icon:1b,show_particles:1b},{ambient:0b,amplifier:0b,duration:40,id:\"minecraft:darkness\",show_icon:1b,show_particles:1b}],display:{Lore:['{\"color\":\"dark_gray\",\"text\":\"Best Drink in Existence\"}','{\"text\":\"\"}','{\"italic\":false,\"color\":\"gray\",\"text\":\"Effects similar to having your brains\"}','{\"italic\":false,\"color\":\"gray\",\"text\":\"smashed out by a slice of lemon\"}','{\"italic\":false,\"color\":\"gray\",\"text\":\"wrapped around a large gold brick.\"}','{\"text\":\"\"}','{\"color\":\"gold\",\"text\":\"Bottled by BaphomethLabs\"}'],Name:'{\"bold\":true,\"italic\":false,\"color\":\"aqua\",\"text\":\"Pan Galactic Gargle Blaster\"}'}}"
+        },
         {
             "name": "Boomyboomboom",
             "description": "Lightning spawn egg",
@@ -276,6 +277,228 @@
             "description": "Note Block Sound",
             "id": "player_head",
             "tag": "{BlockEntityTag:{note_block_sound:\"music.creative\"},SkullOwner:{Id:[I;905869354,-357217255,-1221221082,-631504474],Name:\"§7[§fmusic.creative§7]§r\",Properties:{textures:[{Value:\"ew0KICAic2lnbmF0dXJlUmVxdWlyZWQiIDogZmFsc2UsDQogICJ0ZXh0dXJlcyIgOiB7DQogICAgIlNLSU4iIDogew0KICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS80Y2VlYjc3ZDRkMjU3MjRhOWNhZjJjN2NkZjJkODgzOTliMTQxN2M2YjlmZjUyMTM2NTliNjUzYmU0Mzc2ZTMiDQogICAgfQ0KICB9DQp9\"}]}}}"
+        }
+    ],
+    "items_41": [
+        {
+            "name": "Essentials Box",
+            "description": "Contains most items not available in the creative inventory",
+            "item": "{components:{\"minecraft:container\":[{item:{count:1,id:\"minecraft:command_block\"},slot:0},{item:{count:1,id:\"minecraft:chain_command_block\"},slot:1},{item:{count:1,id:\"minecraft:repeating_command_block\"},slot:2},{item:{count:1,id:\"minecraft:command_block_minecart\"},slot:3},{item:{count:1,id:\"minecraft:jigsaw\"},slot:4},{item:{count:1,id:\"minecraft:structure_block\"},slot:5},{item:{count:1,id:\"minecraft:structure_void\"},slot:6},{item:{count:1,id:\"minecraft:barrier\"},slot:7},{item:{count:1,id:\"minecraft:debug_stick\"},slot:8},{item:{count:1,id:\"minecraft:light\"},slot:9},{item:{components:{\"minecraft:entity_data\":{id:\"minecraft:painting\",variant:\"minecraft:earth\"}},count:1,id:\"minecraft:painting\"},slot:10},{item:{components:{\"minecraft:entity_data\":{id:\"minecraft:painting\",variant:\"minecraft:wind\"}},count:1,id:\"minecraft:painting\"},slot:11},{item:{components:{\"minecraft:entity_data\":{id:\"minecraft:painting\",variant:\"minecraft:water\"}},count:1,id:\"minecraft:painting\"},slot:12},{item:{components:{\"minecraft:entity_data\":{id:\"minecraft:painting\",variant:\"minecraft:fire\"}},count:1,id:\"minecraft:painting\"},slot:13},{item:{count:1,id:\"minecraft:petrified_oak_slab\"},slot:14},{item:{count:1,id:\"minecraft:knowledge_book\"},slot:15},{item:{count:1,id:\"minecraft:ender_dragon_spawn_egg\"},slot:16},{item:{count:1,id:\"minecraft:wither_spawn_egg\"},slot:17},{item:{count:1,id:\"minecraft:bundle\"},slot:18},{item:{components:{\"minecraft:enchantment_glint_override\":1b,\"minecraft:entity_data\":{Invisible:1b,id:\"item_frame\"},\"minecraft:item_name\":'\"Invisible Item Frame\"',\"minecraft:lore\":['\"\"','{\"color\":\"gold\",\"text\":\"BaphomethLabs\"}']},count:1,id:\"minecraft:item_frame\"},slot:24},{item:{components:{\"minecraft:enchantment_glint_override\":1b,\"minecraft:entity_data\":{Invisible:1b,id:\"glow_item_frame\"},\"minecraft:item_name\":'\"Invisible Glow Item Frame\"',\"minecraft:lore\":['\"\"','{\"color\":\"gold\",\"text\":\"BaphomethLabs\"}']},count:1,id:\"minecraft:glow_item_frame\"},slot:25},{item:{components:{\"minecraft:block_state\":{open:\"true\"},\"minecraft:enchantment_glint_override\":1b,\"minecraft:item_name\":'\"Open Iron Trapdoor\"',\"minecraft:lore\":['\"\"','{\"color\":\"gold\",\"text\":\"BaphomethLabs\"}']},count:1,id:\"minecraft:iron_trapdoor\"},slot:26}],\"minecraft:item_name\":'{\"bold\":true,\"color\":\"white\",\"extra\":[{\"bold\":false,\"color\":\"gold\",\"text\":\" [BaphomethLabs]\"}],\"text\":\"Essentials\"}'},id:\"white_shulker_box\"}"
+        },
+        {
+            "name": "Invisible Item Frame",
+            "description": "Places an invisible item frame that can hold items",
+            "item": "{components:{\"minecraft:enchantment_glint_override\":1b,\"minecraft:entity_data\":{Invisible:1b,id:\"item_frame\"},\"minecraft:item_name\":'\"Invisible Item Frame\"',\"minecraft:lore\":['\"\"','{\"color\":\"gold\",\"text\":\"BaphomethLabs\"}']},id:\"item_frame\"}"
+        },
+        {
+            "name": "Invisible Glow Item Frame",
+            "description": "Places an invisible glow item frame that can hold items",
+            "item": "{components:{\"minecraft:enchantment_glint_override\":1b,\"minecraft:entity_data\":{Invisible:1b,id:\"glow_item_frame\"},\"minecraft:item_name\":'\"Invisible Glow Item Frame\"',\"minecraft:lore\":['\"\"','{\"color\":\"gold\",\"text\":\"BaphomethLabs\"}']},id:\"glow_item_frame\"}"
+        },
+        {
+            "name": "Opened Iron Trapdoor",
+            "description": "Places a stable vertical iron trapdoor, no redstone needed!",
+            "item": "{components:{\"minecraft:block_state\":{open:\"true\"},\"minecraft:enchantment_glint_override\":1b,\"minecraft:item_name\":'\"Open Iron Trapdoor\"',\"minecraft:lore\":['\"\"','{\"color\":\"gold\",\"text\":\"BaphomethLabs\"}']},id:\"iron_trapdoor\"}"
+        },
+        {
+            "name": "Magic Crocs",
+            "description": "Stylish speedy shoes",
+            "item": "{}"
+        },
+        {
+            "name": "Effective Power",
+            "description": "Speed item when held",
+            "item": "{}"
+        },
+        {
+            "name": "Nova 6",
+            "description": "Insta kill against creative players",
+            "item": "{components:{\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'{\"bold\":true,\"color\":\"dark_green\",\"text\":\"Nova 6\"}',\"minecraft:lore\":['\"\"','{\"color\":\"gold\",\"text\":\"BaphomethLabs\"}'],\"minecraft:potion_contents\":{custom_color:10943277,custom_effects:[{amplifier:125b,id:\"minecraft:instant_health\",show_icon:1b}]}},id:\"splash_potion\"}"
+        },
+        {
+            "name": "Pan Galactic Gargle Blaster",
+            "description": "Every status effect for 2 seconds. Gives \"A Furious Cocktail\" and \"How Did We Get Here?\" advancements.",
+            "item": "{components:{\"minecraft:enchantment_glint_override\":1b,\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'{\"bold\":true,\"color\":\"aqua\",\"text\":\"Pan Galactic Gargle Blaster\"}',\"minecraft:lore\":['{\"color\":\"dark_gray\",\"text\":\"Best Drink in Existence\"}','\"\"','{\"color\":\"gray\",\"italic\":false,\"text\":\"Effects similar to having your brains\"}','{\"color\":\"gray\",\"italic\":false,\"text\":\"smashed out by a slice of lemon\"}','{\"color\":\"gray\",\"italic\":false,\"text\":\"wrapped around a large gold brick.\"}','\"\"','{\"color\":\"gold\",\"text\":\"Bottled by BaphomethLabs\"}'],\"minecraft:potion_contents\":{custom_color:16777215,custom_effects:[{duration:40,id:\"minecraft:speed\",show_icon:1b},{duration:40,id:\"minecraft:slowness\",show_icon:1b},{duration:40,id:\"minecraft:haste\",show_icon:1b},{duration:40,id:\"minecraft:mining_fatigue\",show_icon:1b},{duration:40,id:\"minecraft:strength\",show_icon:1b},{duration:40,id:\"minecraft:instant_health\",show_icon:1b},{duration:40,id:\"minecraft:instant_damage\",show_icon:1b},{duration:40,id:\"minecraft:jump_boost\",show_icon:1b},{duration:40,id:\"minecraft:nausea\",show_icon:1b},{duration:40,id:\"minecraft:regeneration\",show_icon:1b},{duration:40,id:\"minecraft:resistance\",show_icon:1b},{duration:40,id:\"minecraft:fire_resistance\",show_icon:1b},{duration:40,id:\"minecraft:water_breathing\",show_icon:1b},{duration:40,id:\"minecraft:invisibility\",show_icon:1b},{duration:40,id:\"minecraft:blindness\",show_icon:1b},{duration:40,id:\"minecraft:night_vision\",show_icon:1b},{duration:40,id:\"minecraft:hunger\",show_icon:1b},{duration:40,id:\"minecraft:weakness\",show_icon:1b},{duration:40,id:\"minecraft:poison\",show_icon:1b},{duration:40,id:\"minecraft:wither\",show_icon:1b},{duration:40,id:\"minecraft:health_boost\",show_icon:1b},{duration:40,id:\"minecraft:absorption\",show_icon:1b},{duration:40,id:\"minecraft:saturation\",show_icon:1b},{duration:40,id:\"minecraft:glowing\",show_icon:1b},{amplifier:42b,duration:40,id:\"minecraft:levitation\",show_icon:1b},{duration:40,id:\"minecraft:luck\",show_icon:1b},{duration:40,id:\"minecraft:unluck\",show_icon:1b},{duration:40,id:\"minecraft:slow_falling\",show_icon:1b},{duration:40,id:\"minecraft:conduit_power\",show_icon:1b},{duration:40,id:\"minecraft:dolphins_grace\",show_icon:1b},{duration:40,id:\"minecraft:bad_omen\",show_icon:1b},{duration:40,id:\"minecraft:hero_of_the_village\",show_icon:1b},{duration:40,id:\"minecraft:darkness\",show_icon:1b}]}},id:\"potion\"}"
+        },
+        {
+            "name": "Boomyboomboom",
+            "description": "Lightning spawn egg",
+            "item": "{}"
+        },
+        {
+            "name": "42™ Action Figure",
+            "description": "Collect them all!",
+            "item": "{}"
+        },
+        {
+            "name": "Spongecart",
+            "description": "Minecart with Sponge (May contain traces of asbestos, nicotine)",
+            "item": "{}"
+        },
+        {
+            "name": "Glow Squid Head",
+            "description": "Super Cool",
+            "item": "{components:{\"minecraft:profile\":{properties:[{name:\"textures\",value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODIwZDUzYzYyNjc3NmRkMjUyZjU1ZTRjMWI1NzlhN2FlMWMzNmE0NGE1MGMxMGRlNzJhNWUzNDE1MjhhNmMzOSJ9fX0=\"}]}},id:\"player_head\"}"
+        },
+        {
+            "name": "Smoke Bomb",
+            "description": "Extremely ineffective",
+            "item": "{}"
+        },
+        {
+            "name": "jim",
+            "description": "Visible name variant",
+            "item": "{}"
+        },
+        {
+            "name": "Sam (Trick 'r Treat)",
+            "description": "Collect them all!",
+            "item": "{}"
+        },
+        {
+            "name": "Natural Sculk Shrieker",
+            "description": "Can spawn wardens",
+            "item": "{}"
+        },
+        {
+            "name": "Sculk Vein Block",
+            "description": "Full block of sculk vein",
+            "item": "{}"
+        },
+        {
+            "name": "Glow Lichen Block",
+            "description": "Full block of glow lichen",
+            "item": "{}"
+        },
+        {
+            "name": "Mushroom Pores",
+            "description": "Inside texture of mushroom",
+            "item": "{}"
+        },
+        {
+            "name": "Expired Milk",
+            "description": "Chunky",
+            "item": "{}"
+        },
+        {
+            "name": "Pitch Black Mountain Dew",
+            "description": "Bottled by BaphomethLabs",
+            "item": "{}"
+        },
+        {
+            "name": "Space Potion",
+            "description": "Bottled by BaphomethLabs",
+            "item": "{}"
+        },
+        {
+            "name": "Infinite Night Vision",
+            "description": "Bottled by BaphomethLabs",
+            "item": "{}"
+        },
+        {
+            "name": "Infinite Invisibility",
+            "description": "Bottled by BaphomethLabs",
+            "item": "{}"
+        },
+        {
+            "name": "Infinite Glowing",
+            "description": "Bottled by BaphomethLabs",
+            "item": "{}"
+        },
+        {
+            "name": "Nova 6 (Lingering)",
+            "description": "Lingering version of Nova 6",
+            "item": "{}"
+        },
+        {
+            "name": "Lyft",
+            "description": "Bottled by BaphomethLabs",
+            "item": "{}"
+        },
+        {
+            "name": "UberLyft",
+            "description": "Bottled by BaphomethLabs",
+            "item": "{}"
+        },
+        {
+            "name": "Evoker Fangs",
+            "description": "Temporary Entity",
+            "item": "{}"
+        },
+        {
+            "name": "Flashbang",
+            "description": "Particle Effect",
+            "item": "{}"
+        },
+        {
+            "name": "Elder Guardian",
+            "description": "Particle Effect",
+            "item": "{}"
+        },
+        {
+            "name": "Hearts",
+            "description": "Particle Effect",
+            "item": "{}"
+        },
+        {
+            "name": "Spooky Cave Sounds",
+            "description": "Sound Effect",
+            "item": "{}"
+        },
+        {
+            "name": "Basic End Crystal",
+            "description": "End crystal with base",
+            "item": "{}"
+        },
+        {
+            "name": "Leash Knot",
+            "description": "Place on a fence",
+            "item": "{}"
+        },
+        {
+            "name": "Glowing",
+            "description": "Potion Cloud",
+            "item": "{}"
+        },
+        {
+            "name": "Nova 6",
+            "description": "Potion Cloud",
+            "item": "{}"
+        },
+        {
+            "name": "Space",
+            "description": "Potion Cloud",
+            "item": "{}"
+        },
+        {
+            "name": "Lyft",
+            "description": "Potion Cloud",
+            "item": "{}"
+        },
+        {
+            "name": "UberLyft",
+            "description": "Potion Cloud",
+            "item": "{}"
+        },
+        {
+            "name": "Infinite Invisibility",
+            "description": "Potion Cloud",
+            "item": "{}"
+        },
+        {
+            "name": "Infinite Night Vision",
+            "description": "Potion Cloud",
+            "item": "{}"
+        },
+        {
+            "name": "Warden Heartbeat",
+            "description": "Note Block Sound",
+            "item": "{}"
+        },
+        {
+            "name": "Random Music",
+            "description": "Note Block Sound",
+            "item": "{}"
         }
     ]
 }
