@@ -47,13 +47,13 @@
                     item += '<button onClick="copyText(' + i + ')" class="copy-button">Copy</button>';
                     item += '</td>';
                     item += '<td class="item-cmd-wrap">';
-                    item += '<input type="text" readonly class="item-cmd" value="/summon item ~ ~ ~ {Item:' + value.item.replace(/"/g,"&quot;") + '}">';
+                    item += '<input type="text" readonly class="item-cmd" value="/summon item ~ ~ ~ {Item:' + value.item.replace(/"/g,"&quot;").replace(/\u00a7/g,"\\\\u00a7") + '}">';
                     item += '</td>';
                     item += '</tr></table>';
                     item += '</div>';
                     item += '</td>';
                     $('#item-cards').append(item);
-                    item_cmd.push("/summon item ~ ~ ~ {Item:" + value.item + "}");
+                    item_cmd.push("/summon item ~ ~ ~ {Item:" + value.item.replace(/\u00a7/g,"\\\\u00a7") + "}");
                     i++;
                 });
             });
