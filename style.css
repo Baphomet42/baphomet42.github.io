@@ -6,7 +6,7 @@ html {
     background-color: #271C2A;
     color: #D7C2D7;
     font-family: serif;
-    font-size: 100%;
+    font-size: large;
 }
 
 body {
@@ -101,6 +101,16 @@ h1 {
     font-family: sans-serif;
 }
 
+@font-face {
+    font-family: 'Minecraft-Seven_v2';
+    src: url('/assets/mojang/Minecraft-Seven_v2.woff') format('woff'),
+    url('/assets/mojang/Minecraft-Seven_v2.ttf') format('truetype');
+}
+
+.mc {
+    font-family: 'Minecraft-Seven_v2';
+}
+
 .card-table {
     width: 100%;
     margin: 0;
@@ -173,6 +183,14 @@ h1 {
     padding-right:1rem;
 }
 
+@media only screen and (max-width: 1200px) {
+
+    .card-wrap-item {
+        width: 33.333%;
+    }
+
+}
+
 @media only screen and (max-width: 1000px) {
 
     .card-wrap-item {
@@ -199,18 +217,22 @@ h1 {
 }
 
 .card {
-    background-image:radial-gradient(#42066642, #21033342);
-    box-shadow: 0 0 .3rem .3rem black;
-    margin: 2rem;
+    margin: 1.5rem;
     padding: 1rem;
 }
 
 .item-card {
-    background-image:radial-gradient(#42066642, #21033342);
-    box-shadow: 0 0 .3rem .3rem black;
-    margin: 2rem;
+    margin: 1rem;
     padding: 1rem;
 
+}
+
+.tooltip {
+    background-color: #100010F0;
+    border: 4px solid;
+    border-image: linear-gradient(to bottom, #5000FF50, #28007F50);
+    border-image-slice: 1;
+    box-shadow: 4px 0 0 0 #100010F0, -4px 0 0 0 #100010F0, 0 4px 0 0 #100010F0, 0 -4px 0 0 #100010F0;
 }
 
 button {
@@ -253,20 +275,33 @@ button:active {
     border-bottom: .2rem solid #333333;
 }
 
+.item-header {
+    font-size: xx-large;
+    margin:0;
+    color: #FFFFFF;
+}
+
+.item-subtitle {
+    color: #AAAAAA;
+}
+
 .item-name {
-    font-size: 1.25rem;
-    font-weight: bold;
+    font-size: x-large;
+    margin: 0;
+    color: #FFFFFF;
 }
 
 .item-desc {
-    font-size: 1rem;
+    font-style: italic;
+    color: #AA00AA;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .item-cmd {
     background-color: black;
     color: white;
     width: 100%;
-    font-family: monospace;
 }
 
 .item-copy-wrap {
