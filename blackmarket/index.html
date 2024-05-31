@@ -29,6 +29,7 @@
                 <p class="item-header mc">Black Market</p>
                 <br>
                 <p class="item-subtitle mc">Copy and paste into a command block to get the custom item. You must have operator permissions to run the command.</p>
+                <p class="item-subtitle mc">Items made for 1.21+</p>
             </div></td>
         
             </tr><tr class="card-table-row" id="item-cards">
@@ -44,7 +45,7 @@
         $(function () {
             $.getJSON("items.json", function (data) {
                 var i = 0;
-                $.each(data.items_41, function (key, value) {
+                $.each(data.items_45, function (key, value) {
                     var item = '';
                     item += '<td class="card-wrap-item">';
                     item += '<div class="item-card tooltip">';
