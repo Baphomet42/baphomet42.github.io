@@ -433,6 +433,11 @@
             "item": "{components:{\"minecraft:block_state\":{down:\"false\",east:\"false\",north:\"false\",south:\"false\",up:\"false\",west:\"false\"},\"minecraft:enchantment_glint_override\":1b,\"minecraft:item_name\":'\"Mushroom Pores\"',\"minecraft:lore\":['\"\"','{\"color\":\"gold\",\"text\":\"BaphomethLabs\"}']},count:1,id:\"minecraft:mushroom_stem\"}"
         },
         {
+            "name": "Historically Accurate Cake",
+            "description": "Eat it too",
+            "item": "{components:{\"minecraft:block_state\":{bites:\"0\"},\"minecraft:damage\":0,\"minecraft:food\":{nutrition:2,saturation:0.4f,using_converts_to:{components:{\"minecraft:block_state\":{bites:\"1\"},\"minecraft:damage\":1,\"minecraft:food\":{nutrition:2,saturation:0.4f,using_converts_to:{components:{\"minecraft:block_state\":{bites:\"2\"},\"minecraft:damage\":2,\"minecraft:food\":{nutrition:2,saturation:0.4f,using_converts_to:{components:{\"minecraft:block_state\":{bites:\"3\"},\"minecraft:damage\":3,\"minecraft:food\":{nutrition:2,saturation:0.4f,using_converts_to:{components:{\"minecraft:block_state\":{bites:\"4\"},\"minecraft:damage\":4,\"minecraft:food\":{nutrition:2,saturation:0.4f,using_converts_to:{components:{\"minecraft:block_state\":{bites:\"5\"},\"minecraft:damage\":5,\"minecraft:food\":{nutrition:2,saturation:0.4f,using_converts_to:{components:{\"minecraft:block_state\":{bites:\"6\"},\"minecraft:damage\":6,\"minecraft:food\":{nutrition:2,saturation:0.4f},\"minecraft:max_damage\":7},id:\"minecraft:cake\"}},\"minecraft:max_damage\":7},id:\"minecraft:cake\"}},\"minecraft:max_damage\":7},id:\"minecraft:cake\"}},\"minecraft:max_damage\":7},id:\"minecraft:cake\"}},\"minecraft:max_damage\":7},id:\"minecraft:cake\"}},\"minecraft:max_damage\":7},id:\"minecraft:cake\"}},\"minecraft:max_damage\":7},count:1,id:\"minecraft:cake\"}"
+        },
+        {
             "name": "Expired Milk",
             "description": "Chunky",
             "item": "{components:{\"minecraft:item_name\":'\"Expired Milk\"',\"minecraft:lore\":['\"\"','{\"color\":\"gold\",\"text\":\"BaphomethLabs\"}'],\"minecraft:suspicious_stew_effects\":[{duration:6000,id:\"minecraft:nausea\"},{duration:60000,id:\"minecraft:unluck\"}]},count:1,id:\"minecraft:suspicious_stew\"}"
