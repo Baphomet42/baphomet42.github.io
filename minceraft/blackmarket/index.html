@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/minceraft/style.css">
     <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/71295013?v=4">
     <link rel="apple-touch-icon" href="https://avatars.githubusercontent.com/u/71295013?v=4">
     <title>Black Market | BaphomethLabs</title>
@@ -21,15 +22,15 @@
 </head>
 <body>
     <article>
-        <div data-include="/template/header" id="header"></div>
+        <div data-include="/minceraft/header" id="header"></div>
 
         <table class="card-table"><tr class="card-table-row">
 
             <td class="card-wrap-mid"><div class="card tooltip center">
-                <p class="item-header mc">Black Market</p>
+                <p class="item-header">Black Market</p>
                 <br>
-                <p class="item-subtitle mc">Copy and paste into a command block to get the custom item. You must have operator permissions to run the command.</p>
-                <p class="item-subtitle mc">Items made for 1.21+</p>
+                <p class="item-subtitle">Copy and paste into a command block to get the custom item. You must have operator permissions to run the command.</p>
+                <p class="item-subtitle">Items made for 1.21+</p>
             </div></td>
         
             </tr><tr class="card-table-row" id="item-cards">
@@ -49,14 +50,14 @@
                     var item = '';
                     item += '<td class="card-wrap-item">';
                     item += '<div class="item-card tooltip">';
-                    item += '<p class="item-name mc center">' + value.name + '</p>';
-                    item += '<p class="item-desc mc">' + value.description + '</p>';
+                    item += '<p class="item-name center">' + value.name + '</p>';
+                    item += '<p class="item-desc">' + value.description + '</p>';
                     item += '<table class="card-table"><tr>';
                     item += '<td class="item-copy-wrap">';
-                    item += '<button onClick="copyText(' + i + ')" class="copy-button mc">Copy</button>';
+                    item += '<button onClick="copyText(' + i + ')" class="copy-button">Copy</button>';
                     item += '</td>';
                     item += '<td class="item-cmd-wrap">';
-                    item += '<input type="text" readonly class="item-cmd mc" value="/summon item ~ ~ ~ {Item:' + value.item.replace(/"/g,"&quot;").replace(/\u00a7/g,"\\\\u00a7") + '}">';
+                    item += '<input type="text" readonly class="item-cmd" value="/summon item ~ ~ ~ {Item:' + value.item.replace(/"/g,"&quot;").replace(/\u00a7/g,"\\\\u00a7") + '}">';
                     item += '</td>';
                     item += '</tr></table>';
                     item += '</div>';
