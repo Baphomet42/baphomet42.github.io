@@ -235,10 +235,15 @@ h1 {
 }
 
 .main-title {
+    margin: 0;
+    padding: 0;
     margin-left: 5rem;
+    text-align: left;
 }
 
 .main-button {
+    margin: 0;
+    padding: 0;
     position: absolute;
     right: 0;
     margin-right: 7.5rem;
@@ -277,10 +282,7 @@ h1 {
     }
     
     .main-button {
-        position: absolute;
-        right: 0;
         margin-right: 3.5rem;
-        margin-top: -1.5rem;
     }
 
 }
