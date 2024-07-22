@@ -23,27 +23,8 @@ body {
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: #111111;
-    color: white;
-    font-weight: bold;
     font-size: 2rem;
     text-align: center;
-}
-
-#logo {
-    width: 3rem;
-    height: 3rem;
-    position: absolute;
-    top: .75rem;
-    left: 2rem;
-}
-
-#header-text {
-    width:80%;
-    margin-left:20%;
-}
-
-.sel-page {
-    color: white;
 }
 
 #footer {
@@ -54,11 +35,6 @@ body {
     background-color: #111111;
     font-size: 1rem;
     text-align: center;
-}
-
-#footer-gold {
-    color: #FFAA00;
-    font-weight: normal;
 }
 
 footer {
@@ -86,29 +62,14 @@ img {
 }
 
 a {
-    color: #D7C2D7;
-    font-weight: bold;
+    color: inherit;
     text-decoration: none;
-}
-
-.center {
-    text-align: center;
 }
 
 h1 {
     margin: 0;
     text-align: center;
     font-family: sans-serif;
-}
-
-@font-face {
-    font-family: 'Minecraft-Seven_v2';
-    src: url('/assets/mojang/Minecraft-Seven_v2.woff') format('woff'),
-    url('/assets/mojang/Minecraft-Seven_v2.ttf') format('truetype');
-}
-
-.mc {
-    font-family: 'Minecraft-Seven_v2';
 }
 
 .card-table {
@@ -148,54 +109,7 @@ h1 {
     align-content: center;
 }
 
-.card-wrap-item {
-    border: 0;
-    box-sizing: border-box;
-    float: left;
-    width: 25%;
-    align-content: center;
-}
-
-.header-cell-logo {
-    border: 0;
-    box-sizing: border-box;
-    float: left;
-    width: 20%;
-    align-content: center;
-}
-
-.header-cell-text {
-    border: 0;
-    box-sizing: border-box;
-    float: left;
-    width: 60%;
-    align-content: center;
-}
-
-.header-cell-page {
-    border-width: 2px;
-    border-style: solid;
-    border-color: white;
-    border-top: 0;
-    border-bottom: 0;
-    margin: -5px;
-    padding-left:1rem;
-    padding-right:1rem;
-}
-
-@media only screen and (max-width: 1200px) {
-
-    .card-wrap-item {
-        width: 33.333%;
-    }
-
-}
-
 @media only screen and (max-width: 1000px) {
-
-    .card-wrap-item {
-        width: 50%;
-    }
 
     .card-wrap-mid {
         margin-left: 0;
@@ -210,21 +124,11 @@ h1 {
         width: 100%;
     }
 
-    .card-wrap-item {
-        width: 100%;
-    }
-
 }
 
 .card {
     margin: 1.5rem;
     padding: 1rem;
-}
-
-.item-card {
-    margin: 1rem;
-    padding: 1rem;
-
 }
 
 .tooltip {
@@ -233,26 +137,6 @@ h1 {
     border-image: linear-gradient(to bottom, #5000FF50, #28007F50);
     border-image-slice: 1;
     box-shadow: 4px 0 0 0 #100010F0, -4px 0 0 0 #100010F0, 0 4px 0 0 #100010F0, 0 -4px 0 0 #100010F0;
-}
-
-button {
-    font-size: large;
-    background-color: #222222;
-    color: white;
-    padding: .2rem .5rem .2rem .5rem;
-    border-top: .2rem solid #333333;
-    border-left: .2rem solid #333333;
-    border-right: .2rem solid #000000;
-    border-bottom: .2rem solid #000000;
-}
-button:hover {
-    background-color: #111111;
-}
-button:active {
-    border-top: .2rem solid #000000;
-    border-left: .2rem solid #000000;
-    border-right: .2rem solid #333333;
-    border-bottom: .2rem solid #333333;
 }
 
 .button {
@@ -275,81 +159,52 @@ button:active {
     border-bottom: .2rem solid #333333;
 }
 
-.item-header {
-    font-size: xx-large;
-    margin:0;
-    color: #FFFFFF;
-}
-
-.item-subtitle {
-    color: #AAAAAA;
-}
-
-.item-name {
-    font-size: x-large;
-    margin: 0;
-    color: #FFFFFF;
-}
-
-.item-desc {
-    font-style: italic;
-    color: #AA00AA;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.item-cmd {
-    background-color: black;
-    color: white;
-    width: 100%;
-}
-
-.item-copy-wrap {
-    border: 0;
-    box-sizing: border-box;
-}
-
-.item-cmd-wrap {
-    border: 0;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.copy-button {
-    font-size: 1rem;
-    margin-right: .25rem;
-}
-
-#ee0 {
-    position: absolute;
-    height: 1rem;
-    width: 1rem;
+.button-disabled {
     cursor: not-allowed;
-    color: #111111;
-    opacity: 0;
-    right: 1rem;
-    margin-top:-2rem;
 }
 
-#ee1 {
-    height:30rem;
+.center {
+    text-align: center;
 }
 
-#ee2 {
-    background-color: transparent;
-    border-color: transparent;
-    height: 30rem;
-    cursor: default;
+.left {
+    text-align: left;
 }
 
-#ee4 {
-    position: absolute;
-    border-color: transparent;
-    opacity:0;
-    height:0;
-    width:0;
+.right {
+    text-align: right;
 }
 
-.ee5 {
-    filter: grayscale(.5);
+.bold {
+    font-weight: bold;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.error {
+    color: #FF5555;
+}
+
+.warn {
+    color: #FFFF55;
+}
+
+.main-wrap {
+    height: 2rem;
+}
+
+.main-title {
+    float: left;
+    margin-left: 5rem;
+}
+
+.main-button {
+    float: right;
+    margin-right: 5rem;
 }

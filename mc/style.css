@@ -1,0 +1,49 @@
+:root, h1, button, input {
+    font-family: 'Minecraft-Seven_v2';
+}
+
+@font-face {
+    font-family: 'Minecraft-Seven_v2';
+    src: url('/assets/mojang/Minecraft-Seven_v2.woff') format('woff'),
+    url('/assets/mojang/Minecraft-Seven_v2.ttf') format('truetype');
+}
+
+.item-subtitle {
+    color: #AAAAAA;
+}
+
+.item-header {
+    font-size: xx-large;
+    margin:0;
+    color: #FFFFFF;
+}
+
+.item-name {
+    font-size: x-large;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.text-box {
+    resize: none;
+    width: 100%;
+    height: 20rem;
+    background-color: black;
+    color: white;
+    font-size: large;
+    font-family: inherit;
+}
+
+label {
+    color: white;
+    font-size: x-large;
+}
+
+.uuid-input {
+    font-size: large;
+    width: 66%;
+}
+
+#scale-input {
+    width: 66%;
+}

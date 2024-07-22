@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/mc/style.css">
+    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/71295013?v=4">
+    <link rel="apple-touch-icon" href="https://avatars.githubusercontent.com/u/71295013?v=4">
+    <title>UUID | BaphomethLabs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="/template/data-include.js"></script>
+</head>
+<body>
+    <article>
+        <div data-include="/mc/header" id="header"></div>
+
+        <table class="card-table"><tr class="card-table-row">
+
+            <td class="card-wrap-mid"><div class="card tooltip center">
+                <p class="item-header">UUID Generator</p>
+                <br>
+                <p class="item-subtitle">Convert between different UUID forms</p>
+            </div></td>
+
+            <td class="card-wrap-full"><div class="card tooltip center">
+                <label for="uuid-int-array">Int Array: </label>
+                <input id="uuid-int-array" class="uuid-input" onchange="setIntArray()"/>
+                <button class="button" onClick="copyIntArray()">Copy</button>
+                <br>
+                <br>
+                <label for="uuid-hex">Hex: </label>
+                <input id="uuid-hex" class="uuid-input" onchange="setHex()"/>
+                <button class="button" onClick="copyHex()">Copy</button>
+                <br>
+                <br>
+                <button class="button" onClick="random()" style="font-size:x-large">Randomize</button>
+            </div></td>
+
+        </tr></table>
+
+    </article>
+    <div data-include="/template/footer" id="footer"></div>
+
+    <script>
+        var editing = false
+        reset()
+
+        function copyIntArray() {
+            var input = document.getElementById('uuid-int-array')
+            navigator.clipboard.writeText(input.value);
+        }
+        function copyHex() {
+            var input = document.getElementById('uuid-hex')
+            navigator.clipboard.writeText(input.value);
+        }
+
+        function random() {
+            update(crypto.randomUUID())
+        }
+
+        function reset() {
+            document.getElementById('uuid-int-array').value = "[I;0,0,0,0]"
+            editing = false
+            setIntArray()
+        }
+
+        function setHex() {
+            if(!editing) {
+                editing = true
+
+                let uuid = document.getElementById('uuid-hex').value
+                let hex = ''
+                let valid = false
+
+                if(uuid.indexOf("-")>0 && uuid.indexOf("-")<=8) {
+                    let current = uuid.substring(0,uuid.indexOf("-"))
+                    uuid = uuid.substring(uuid.indexOf("-")+1)
+                    while(current.length<8)
+                        current = '0'+current
+                    hex += current
+
+                    if(uuid.indexOf("-")>0 && uuid.indexOf("-")<=4) {
+                        current = uuid.substring(0,uuid.indexOf("-"))
+                        uuid = uuid.substring(uuid.indexOf("-")+1)
+                        while(current.length<4)
+                            current = '0'+current
+                        hex += current
+
+                        if(uuid.indexOf("-")>0 && uuid.indexOf("-")<=4) {
+                            current = uuid.substring(0,uuid.indexOf("-"))
+                            uuid = uuid.substring(uuid.indexOf("-")+1)
+                            while(current.length<4)
+                                current = '0'+current
+                            hex += current
+
+                            if(uuid.indexOf("-")>0 && uuid.indexOf("-")<=4) {
+                                current = uuid.substring(0,uuid.indexOf("-"))
+                                uuid = uuid.substring(uuid.indexOf("-")+1)
+                                while(current.length<4)
+                                    current = '0'+current
+                                hex += current
+
+                                if(uuid.length>0 && uuid.length<=12) {
+                                    current = uuid
+                                    while(current.length<12)
+                                        current = '0'+current
+                                    hex += current
+                                    valid = true
+                                }
+                            }
+                        }
+                    }
+                }
+
+                if(valid) {
+                    update(hex.substring(0,8)+'-'+hex.substring(8,12)+'-'+hex.substring(12,16)+'-'+hex.substring(16,20)+'-'+hex.substring(20,32))
+                }
+                else {
+                    reset()
+                }
+
+                editing = false
+            }
+        }
+
+        function setIntArray() {
+            if(!editing) {
+                editing = true
+
+                let uuid = document.getElementById('uuid-int-array').value
+                let arr = [0,0,0,0]
+                let valid = false
+
+                if(uuid.startsWith("[I;") || uuid.startsWith("[i;")) {
+                    uuid = uuid.substring(3)
+
+                    if(uuid.indexOf(",")>0) {
+                        arr[0] = uuid.substring(0,uuid.indexOf(","))
+                        uuid = uuid.substring(uuid.indexOf(",")+1)
+
+                        if(uuid.indexOf(",")>0) {
+                            arr[1] = uuid.substring(0,uuid.indexOf(","))
+                            uuid = uuid.substring(uuid.indexOf(",")+1)
+
+                            if(uuid.indexOf(",")>0) {
+                                arr[2] = uuid.substring(0,uuid.indexOf(","))
+                                uuid = uuid.substring(uuid.indexOf(",")+1)
+
+                                if(uuid.indexOf("]")>0) {
+                                    arr[3] = uuid.substring(0,uuid.indexOf("]"))
+                                    uuid = uuid.substring(uuid.indexOf("]")+1)
+
+                                    if(uuid === '') {
+                                        valid = true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                if(valid) {
+                    let hex = ''
+                    for(let i=0; i<4; i++) {
+                        let current = parseInt(arr[i])
+
+                        if(current>2147483647)
+                            current = 2147483647
+                        if(current<-2147483648)
+                            current = -2147483648
+
+                        current = (current>>>0).toString(16)
+
+                        while(current.length<8)
+                            current = '0'+current
+
+                        hex += current
+                    }
+
+                    update(hex.substring(0,8)+'-'+hex.substring(8,12)+'-'+hex.substring(12,16)+'-'+hex.substring(16,20)+'-'+hex.substring(20,32))
+                }
+                else {
+                    reset()
+                }
+                
+                editing = false
+            }
+        }
+
+        function update(uuid) {
+
+            let valid = false
+            let arr = [0,0,0,0]
+            let hex = ''
+
+            if(uuid.length==36 && uuid[8]==='-' && uuid[13]==='-' && uuid[18]==='-' && uuid[23]==='-') {
+                let uuidHex = uuid.substring(0,8)+uuid.substring(9,13)+uuid.substring(14,18)+uuid.substring(19,23)+uuid.substring(24,36)
+                for(let i=0; i<4; i++) {
+                    arr[i] = parseInt(uuidHex.substring(i*8,i*8+8), 16)
+                    if(arr[i]>2147483647) {
+                        arr[i] -= 2147483648
+                        arr[i] += -2147483648
+                    }
+                    let hexCurrent = (arr[i]>>>0).toString(16)
+                    while(hexCurrent.length<8)
+                        hexCurrent = '0'+hexCurrent
+                    hex += hexCurrent
+                }
+                valid = true
+                hex = (hex.substring(0,8)+'-'+hex.substring(8,12)+'-'+hex.substring(12,16)+'-'+hex.substring(16,20)+'-'+hex.substring(20,32))
+            }
+
+            if(valid) {
+                document.getElementById('uuid-int-array').value = '[I;'+arr[0]+','+arr[1]+','+arr[2]+','+arr[3]+']'
+                document.getElementById('uuid-hex').value = hex
+            }
+            else {
+                reset()
+            }
+        }
+    </script>
+
+</body>
+</html>

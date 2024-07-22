@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/mc/style.css">
+    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/71295013?v=4">
+    <link rel="apple-touch-icon" href="https://avatars.githubusercontent.com/u/71295013?v=4">
+    <title>Pixel Scaler | BaphomethLabs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="/template/data-include.js"></script>
+</head>
+<body>
+    <article>
+        <div data-include="/mc/header" id="header"></div>
+
+        <table class="card-table"><tr class="card-table-row">
+
+            <td class="card-wrap-mid"><div class="card tooltip center">
+                <p class="item-header">Pixel Scaler</p>
+                <br>
+                <p class="item-subtitle">Increase image size without blurring</p>
+            </div></td>
+
+            <td class="card-wrap-full"><div class="card tooltip center">
+                <label for="file-input">Image:</label>
+                <input type="file" id="file-input" style="display: none;"/>
+                <button class="button" onClick="openFile()" style="font-size:x-large">Open Image</button>
+                <span id="file-label"></span>
+                <br/>
+                <br/>
+                <label for="scale-input">Scale:</label>
+                <input type="range" min="1" max="128" id="scale-input" oninput="setScale()"/>
+                <span id="scale-label"></span>
+                <br/>
+                <br/>
+                <button class="button" onClick="submit()" style="font-size:x-large">Generate</button>
+                <br/>
+                <br/>
+                <span id="button-label" class="error"></span>
+                <canvas id="canvas" style="display: none"></canvas>
+                <span id="img-span"></span>
+            </div></td>
+
+        </tr></table>
+
+    </article>
+    <div data-include="/template/footer" id="footer"></div>
+
+    <script>
+        var scale = 32
+        var inputWidth = -1
+        var inputHeight = -1
+        var width = -1
+        var height = -1
+        var img = new Image()
+        var imgName = ''
+        var downloadLink = document.createElement('a')
+
+        document.getElementById('scale-input').value = scale
+        setScale()
+
+        function setScale() {
+            scale = document.getElementById('scale-input').value
+            height = inputHeight * scale
+            width = inputWidth * scale
+
+            let lbl = scale
+            if(width>-1 && height >-1)
+                lbl += ' ('+width+'x'+height+')'
+            document.getElementById('scale-label').innerHTML = lbl
+        }
+
+        function openFile() {
+            document.getElementById('file-input').click()
+        }
+
+        document.getElementById('file-input').addEventListener('change', function(event) {
+            const file = event.target.files[0]
+            let valid = false
+
+            if(file && file.type === 'image/png') {
+                valid = true
+                imgName = file.name
+
+                const fr = new FileReader()
+
+                fr.onload = function(e) {
+                    img.src = e.target.result
+                }
+
+                fr.readAsDataURL(file)
+            }
+
+            if(!valid) {
+                document.getElementById('file-label').innerHTML = 'File must be a PNG'
+                inputHeight = -1
+                inputWidth = -1
+                setScale()
+            }
+
+        })
+
+        img.onload = function() {
+            inputWidth = img.width
+            inputHeight = img.height
+            document.getElementById('file-label').innerHTML = imgName+' ('+inputWidth+'x'+inputHeight+')'
+            setScale()
+        }
+
+        function submit() {
+            let valid = false
+            let lbl = ''
+            if(inputWidth<0 || inputHeight<0 || width<0 || height<0)
+                lbl = 'No PNG file selected'
+            else if(width>4096 || height>4096 || scale<1)
+                lbl = 'New image cannot be larger than 4096x4096'
+            else {
+                valid = true
+            }
+            document.getElementById('button-label').innerHTML = lbl
+
+            document.getElementById('img-span').innerHTML = ''
+            downloadLink = document.createElement('a')
+            if(valid) {
+                const canvas = document.getElementById('canvas')
+                canvas.width = width
+                canvas.height = height
+                const ctx = canvas.getContext('2d')
+
+                ctx.drawImage(img,0,0)
+                const originalImageData = ctx.getImageData(0,0,inputWidth,inputHeight)
+                const scaledImageData = ctx.createImageData(width,height)
+
+                for (let y = 0; y < inputHeight; y++) {
+                    for (let x = 0; x < inputWidth; x++) {
+                        const index = (y * inputWidth + x) * 4
+                        const r = originalImageData.data[index]
+                        const g = originalImageData.data[index + 1]
+                        const b = originalImageData.data[index + 2]
+                        const a = originalImageData.data[index + 3]
+
+                        for (let dy = 0; dy < scale; dy++) {
+                            for (let dx = 0; dx < scale; dx++) {
+                                const scaledIndex = ((y * scale + dy) * width + (x * scale + dx)) * 4
+                                scaledImageData.data[scaledIndex] = r
+                                scaledImageData.data[scaledIndex + 1] = g
+                                scaledImageData.data[scaledIndex + 2] = b
+                                scaledImageData.data[scaledIndex + 3] = a
+                            }
+                        }
+                    }
+                }
+                ctx.putImageData(scaledImageData,0,0)
+
+                downloadLink.href = canvas.toDataURL('image/png')
+                downloadLink.download = imgName
+                let newHtml = '<img src="'+canvas.toDataURL('image/png')+'" class="img-full">'
+                newHtml += '<br/><br/>'
+                newHtml += '<button class="button" onClick="download()" style="font-size:x-large">Download</button>'
+                document.getElementById('img-span').innerHTML = newHtml
+            }
+        }
+
+        function download() {
+            downloadLink.click()
+        }
+
+    </script>
+
+</body>
+</html>

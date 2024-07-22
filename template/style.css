@@ -1,0 +1,50 @@
+#logo {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: .75rem;
+    left: 2rem;
+}
+
+.header-cell-logo {
+    border: 0;
+    box-sizing: border-box;
+    float: left;
+    width: 20%;
+    align-content: center;
+}
+
+.header-cell-text {
+    border: 0;
+    box-sizing: border-box;
+    float: left;
+    width: 60%;
+    align-content: center;
+}
+
+.header-cell-page {
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    border-top: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    margin: -6px;
+    padding-left:1rem;
+    padding-right:1rem;
+}
+
+#footer-gold {
+    color: #FFAA00;
+}
+
+#ee0 {
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    cursor: not-allowed;
+    color: #111111;
+    opacity: 0;
+    right: 1rem;
+    margin-top:-2rem;
+}

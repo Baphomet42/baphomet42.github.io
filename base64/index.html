@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/mc/style.css">
+    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/71295013?v=4">
+    <link rel="apple-touch-icon" href="https://avatars.githubusercontent.com/u/71295013?v=4">
+    <title>Base64 | BaphomethLabs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="/template/data-include.js"></script>
+</head>
+<body>
+    <article>
+        <div data-include="/mc/header" id="header"></div>
+
+        <table class="card-table"><tr class="card-table-row">
+
+            <td class="card-wrap-mid"><div class="card tooltip center">
+                <p class="item-header">Base64 Translator</p>
+                <br>
+                <p class="item-subtitle">Convert text to and from base64</p>
+            </div></td>
+
+            <td class="card-wrap-full"><div class="card tooltip center">
+                <textarea autofocus placeholder="Paste text here..." class="text-box" id="base64-box"></textarea>
+                <span class="float-left">
+                    <button class="button" onClick="encode()">Encode text</button>
+                    <button class="button" onClick="decode()">Decode base64</button>
+                </span>
+                <span class="float-right">
+                    <button class="button" onClick="copy()">Copy</button>
+                </span>
+                <br>
+            </div></td>
+
+        </tr></table>
+
+    </article>
+    <div data-include="/template/footer" id="footer"></div>
+
+    <script>
+        function encode() {
+            var textbox = document.getElementById('base64-box')
+            textbox.value = btoa(textbox.value)
+        }
+
+        function decode() {
+            var textbox = document.getElementById('base64-box')
+            textbox.value = atob(textbox.value)
+        }
+
+        function copy() {
+            var textbox = document.getElementById('base64-box')
+            navigator.clipboard.writeText(textbox.value);
+        }
+    </script>
+
+</body>
+</html>

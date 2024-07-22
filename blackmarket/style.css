@@ -1,0 +1,65 @@
+.copy-button {
+    font-size: 1rem;
+    margin-right: .25rem;
+}
+
+.item-desc {
+    font-style: italic;
+    color: #AA00AA;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.item-cmd {
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.item-copy-wrap {
+    border: 0;
+    box-sizing: border-box;
+}
+
+.item-cmd-wrap {
+    border: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.item-card {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.card-wrap-item {
+    border: 0;
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    align-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .card-wrap-item {
+        width: 33.333%;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .card-wrap-item {
+        width: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 880px) {
+
+    .card-wrap-item {
+        width: 100%;
+    }
+
+}

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/minceraft/style.css">
+    <link rel="stylesheet" href="/mc/style.css">
+    <link rel="stylesheet" href="/blackmarket/style.css">
     <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/71295013?v=4">
     <link rel="apple-touch-icon" href="https://avatars.githubusercontent.com/u/71295013?v=4">
     <title>Black Market | BaphomethLabs</title>
@@ -22,7 +23,7 @@
 </head>
 <body>
     <article>
-        <div data-include="/minceraft/header" id="header"></div>
+        <div data-include="/mc/header" id="header"></div>
 
         <table class="card-table"><tr class="card-table-row">
 
@@ -54,7 +55,7 @@
                     item += '<p class="item-desc">' + value.description + '</p>';
                     item += '<table class="card-table"><tr>';
                     item += '<td class="item-copy-wrap">';
-                    item += '<button onClick="copyText(' + i + ')" class="copy-button">Copy</button>';
+                    item += '<button onClick="copyText(' + i + ')" class="copy-button button">Copy</button>';
                     item += '</td>';
                     item += '<td class="item-cmd-wrap">';
                     item += '<input type="text" readonly class="item-cmd" value="/summon item ~ ~ ~ {Item:' + value.item.replace(/"/g,"&quot;").replace(/\u00a7/g,"\\\\u00a7") + '}">';
