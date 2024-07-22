@@ -2,6 +2,10 @@
     color-scheme: dark;
 }
 
+* {
+    touch-action: manipulation;
+}
+
 html {
     background-color: #271C2A;
     color: #D7C2D7;
