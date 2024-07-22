@@ -24,23 +24,47 @@
             </div></td>
 
             <td class="card-wrap-full"><div class="card tooltip center">
-                <label for="file-input">Image:</label>
-                <input type="file" id="file-input" style="display: none;"/>
-                <button class="button" onClick="openFile()" style="font-size:x-large">Open Image</button>
-                <span id="file-label"></span>
-                <br/>
-                <br/>
-                <label for="scale-input">Scale:</label>
-                <input type="range" min="1" max="128" id="scale-input" oninput="setScale()"/>
-                <span id="scale-label"></span>
-                <br/>
-                <br/>
-                <button class="button" onClick="submit()" style="font-size:x-large">Generate</button>
-                <br/>
+
+                <table class="card-table">
+                    <tr class="card-table-row">
+                        <td class="card-wrap-third-left">
+                            <label for="file-input">Image:</label>
+                        </td>
+                        <td class="card-wrap-third-mid">
+                            <input type="file" id="file-input" style="display: none;"/>
+                            <button class="button" onClick="openFile()" style="font-size:x-large">Open Image</button>
+                        </td>
+                        <td class="card-wrap-third-right">
+                            <span id="file-label"></span>
+                        </td>
+                    </tr>
+                    <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
+                    <tr class="card-table-row">
+                        <td class="card-wrap-third-left">
+                            <label for="scale-input">Scale:</label>
+                        </td>
+                        <td class="card-wrap-third-mid">
+                            <input type="range" min="1" max="128" id="scale-input" class="slider" oninput="setScale()"/>
+                        </td>
+                        <td class="card-wrap-third-right">
+                            <span id="scale-label"></span>
+                        </td>
+                    </tr>
+                    <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
+                    <tr class="card-table-row">
+                        <td class="card-wrap-third-left"></td>
+                        <td class="card-wrap-third-mid">
+                            <button class="button" onClick="submit()" style="font-size:x-large">Generate</button>
+                        </td>
+                        <td class="card-wrap-third-right"></td>
+                    </tr>
+                </table>
+
                 <br/>
                 <span id="button-label" class="error"></span>
                 <canvas id="canvas" style="display: none"></canvas>
                 <span id="img-span"></span>
+
             </div></td>
 
         </tr></table>
@@ -68,7 +92,7 @@
 
             let lbl = scale
             if(width>-1 && height >-1)
-                lbl += ' ('+width+'x'+height+')'
+                lbl += ' ('+width+'&#8203;x&#8203;'+height+')'
             document.getElementById('scale-label').innerHTML = lbl
         }
 
@@ -105,7 +129,7 @@
         img.onload = function() {
             inputWidth = img.width
             inputHeight = img.height
-            document.getElementById('file-label').innerHTML = imgName+' ('+inputWidth+'x'+inputHeight+')'
+            document.getElementById('file-label').innerHTML = imgName+' ('+inputWidth+'&#8203;x&#8203;'+inputHeight+')'
             setScale()
         }
 

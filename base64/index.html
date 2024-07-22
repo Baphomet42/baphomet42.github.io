@@ -24,15 +24,26 @@
             </div></td>
 
             <td class="card-wrap-full"><div class="card tooltip center">
-                <textarea autofocus placeholder="Paste text here..." class="text-box" id="base64-box"></textarea>
-                <span class="float-left">
-                    <button class="button" onClick="encode()">Encode text</button>
-                    <button class="button" onClick="decode()">Decode base64</button>
-                </span>
-                <span class="float-right">
-                    <button class="button" onClick="copy()">Copy</button>
-                </span>
-                <br>
+
+                <table class="card-table">
+                    <tr class="card-table-row">
+                        <td class="card-wrap-full">
+                            <textarea autofocus placeholder="Paste text here..." class="text-box" id="base64-box"></textarea>
+                        </td>
+                    </tr>
+                    <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
+                    <tr class="card-table-row">
+                        <td class="card-wrap left">
+                            <button class="button" onClick="encode()">Encode text</button>
+                            <span>&nbsp;</span>
+                            <button class="button" onClick="decode()">Decode base64</button>
+                        </td>
+                        <td class="card-wrap right">
+                            <button class="button" onClick="copy()">Copy</button>
+                        </td>
+                    </tr>
+                </table>
+
             </div></td>
 
         </tr></table>

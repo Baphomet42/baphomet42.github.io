@@ -24,17 +24,41 @@
             </div></td>
 
             <td class="card-wrap-full"><div class="card tooltip center">
-                <label for="uuid-int-array">Int Array: </label>
-                <input id="uuid-int-array" class="uuid-input" onchange="setIntArray()"/>
-                <button class="button" onClick="copyIntArray()">Copy</button>
-                <br>
-                <br>
-                <label for="uuid-hex">Hex: </label>
-                <input id="uuid-hex" class="uuid-input" onchange="setHex()"/>
-                <button class="button" onClick="copyHex()">Copy</button>
-                <br>
-                <br>
-                <button class="button" onClick="random()" style="font-size:x-large">Randomize</button>
+
+                <table class="card-table">
+                    <tr class="card-table-row">
+                        <td class="card-wrap-third-left">
+                            <label for="uuid-int-array">Int Array: </label>
+                        </td>
+                        <td class="card-wrap-third-mid">
+                            <input id="uuid-int-array" class="uuid-input" onchange="setIntArray()"/>
+                        </td>
+                        <td class="card-wrap-third-right">
+                            <button class="button" onClick="copyIntArray()">Copy</button>
+                        </td>
+                    </tr>
+                    <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
+                    <tr class="card-table-row">
+                        <td class="card-wrap-third-left">
+                            <label for="uuid-hex">Hex: </label>
+                        </td>
+                        <td class="card-wrap-third-mid">
+                            <input id="uuid-hex" class="uuid-input" onchange="setHex()"/>
+                        </td>
+                        <td class="card-wrap-third-right">
+                            <button class="button" onClick="copyHex()">Copy</button>
+                        </td>
+                    </tr>
+                    <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
+                    <tr class="card-table-row">
+                        <td class="card-wrap-third-left"></td>
+                        <td class="card-wrap-third-mid">
+                            <button class="button" onClick="random()" style="font-size:x-large">Randomize</button>
+                        </td>
+                        <td class="card-wrap-third-right"></td>
+                    </tr>
+                </table>
+
             </div></td>
 
         </tr></table>

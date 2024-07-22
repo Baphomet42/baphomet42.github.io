@@ -24,16 +24,6 @@
     color: #FFFFFF;
 }
 
-.text-box {
-    resize: none;
-    width: 100%;
-    height: 20rem;
-    background-color: black;
-    color: white;
-    font-size: large;
-    font-family: inherit;
-}
-
 label {
     color: white;
     font-size: x-large;
@@ -41,9 +31,5 @@ label {
 
 .uuid-input {
     font-size: large;
-    width: 66%;
-}
-
-#scale-input {
-    width: 66%;
+    width: 100%;
 }

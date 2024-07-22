@@ -55,7 +55,7 @@ img {
 }
 
 .img-full {
-    max-height: 30rem;
+    max-height: 20rem;
     width: auto;
     max-width: 100%;
     height: auto;
@@ -92,6 +92,19 @@ h1 {
     align-content: center;
 }
 
+.card-wrap-any {
+    border: 0;
+    box-sizing: border-box;
+    float: left;
+    align-content: center;
+}
+
+.card-wrap-stable {
+    border: 0;
+    box-sizing: border-box;
+    align-content: center;
+}
+
 .card-wrap-full {
     border: 0;
     box-sizing: border-box;
@@ -109,6 +122,34 @@ h1 {
     align-content: center;
 }
 
+.card-wrap-third-left {
+    border: 0;
+    box-sizing: border-box;
+    float: left;
+    height: 2rem;
+    width: 16%;
+    align-content: center;
+}
+
+.card-wrap-third-mid {
+    border: 0;
+    box-sizing: border-box;
+    float: left;
+    height: 2rem;
+    width: 66%;
+    align-content: center;
+}
+
+.card-wrap-third-right {
+    border: 0;
+    box-sizing: border-box;
+    float: left;
+    height: 3rem;
+    width: 16%;
+    align-content: center;
+    overflow: hidden;
+}
+
 @media only screen and (max-width: 1000px) {
 
     .card-wrap-mid {
@@ -121,6 +162,18 @@ h1 {
 @media only screen and (max-width: 880px) {
 
     .card-wrap {
+        width: 100%;
+    }
+
+    .card-wrap-third-left {
+        width: 100%;
+    }
+    
+    .card-wrap-third-mid {
+        width: 100%;
+    }
+    
+    .card-wrap-third-right {
         width: 100%;
     }
 
@@ -163,6 +216,29 @@ h1 {
     cursor: not-allowed;
 }
 
+.slider {
+    appearance: none;
+    background-color: #333333;
+    height: .5rem;
+    width: 100%;
+}
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: .75rem;
+    height: 1.5rem;
+    background-color: #D7C2D7;
+}
+
+.text-box {
+    resize: none;
+    width: 100%;
+    height: 20rem;
+    background-color: black;
+    color: white;
+    font-size: large;
+    font-family: inherit;
+}
+
 .center {
     text-align: center;
 }
@@ -177,14 +253,6 @@ h1 {
 
 .bold {
     font-weight: bold;
-}
-
-.float-left {
-    float: left;
-}
-
-.float-right {
-    float: right;
 }
 
 .error {
