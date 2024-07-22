@@ -268,11 +268,12 @@ h1 {
 }
 
 .main-title {
-    float: left;
     margin-left: 5rem;
 }
 
 .main-button {
-    float: right;
-    margin-right: 5rem;
+    position: absolute;
+    right: 0;
+    margin-right: 7rem;
+    margin-top: -1.5rem;
 }
