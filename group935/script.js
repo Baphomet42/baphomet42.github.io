@@ -29,8 +29,6 @@ function pageRev2(data) {
     page += '<div class="section">'
     page += '<h1 class="center">'+data.name+'</h1>'
     page += '<h3 class="center">'+data.subtext+'</h3>'
-    page += '<br/>'
-    page += '<div class="center"><a href="'+data.wiki+'" rel="noopener noreferrer" target="_blank" class="button">Call of Duty Wiki</a></div>'
     page += '</div>'
 
     if(data.maps) {
@@ -64,20 +62,23 @@ function pageRev2(data) {
                 if(sub.elements) {
                     page += '<table class="card-table"><tr class="card-table-row">'
                     $.each(sub.elements, function (elKey, el) {
-                        page += '<td class="col-wrap"><div class="col-cell center-container">'
+                        if(el.full)
+                            page += '<td class="col-wrap-full"><div class="col-cell center-container">'
+                        else
+                            page += '<td class="col-wrap"><div class="col-cell center-container">'
 
                         if(el.pic) {
                             page += '<div class="pic-wrap"><img class="pic" src="'+el.pic.src+'"/></div>';
                             if(el.pic.alt)
                                 page += '<p class="pic-alt">'+el.pic.alt+'</p>';
                         }
+                        else if(el.step) {
+                            page += '<h3>'+el.step.title+'</h3>';
+                            if(el.step.description)
+                                page += '<p>'+el.step.description+'</p>';
+                        }
                         else if(el.youtube) {
                             page += '<div class="pic-wrap"><iframe class="pic" src="https://www.youtube.com/embed/'+el.youtube+'" frameborder="0" allowfullscreen></iframe></div>';
-                        }
-                        else if(el.html) {
-                            $.each(el.html, function (htmlKey, html) {
-                                page += html;
-                            })
                         }
 
                         page += "</div></td>"
@@ -88,6 +89,7 @@ function pageRev2(data) {
             })
         }
 
+        page += '<div class="section-footer" onclick="toggleCollapse(\'section_'+sectionKey+'\')"><h2 class="center section-footer-text">[Collapse]</h2></div>'
         page += '</div></div>'
     })
 

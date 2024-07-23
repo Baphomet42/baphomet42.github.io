@@ -1,22 +1,141 @@
 {
     "name": "Der Eisendrache",
     "subtext": "Black Ops 3",
-    "wiki": "https://callofduty.fandom.com/wiki/Der_Eisendrache",
     "rev": 2,
     "sections" : [
+        {
+            "header": "Map Features",
+            "collapse": true,
+            "subsections": [
+                {
+                    "header": "Power Switch",
+                    "description": "Located between the church and the bedrooms",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/local/935/de/5.png",
+                                "alt": "Power switch location"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Pack-a-Punch",
+                    "description": "Interact with all 3 locations to enable PaP. Machine will move randomly between the locations.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/local/935/de/13.png",
+                                "alt": "Location 1 (Bastion) - Next to the Death Ray"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/12.png",
+                                "alt": "Location 2 (Undercroft) - In the undercroft between Juggernog and the teleporter"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/14.png",
+                                "alt": "Location 3 (Rocket Pad) - Up the stairs at the rocket"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/84.png",
+                                "alt": "Finished Pack-a-Punch machine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Low Gravity Mode",
+                    "description": "Stand on each of the 4 pressure plates surrounding the pyramid until they light up blue. Once active, low gravity mode will randomly turn on and off during the game.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/local/935/de/11.png",
+                                "alt": "Pyramid and surrounding pressure plates"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Wundersphere Locations",
+                    "description": "Each of the 4 Wunderspheres requires its landing pad to be activated once during the match. This does not require power.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/local/935/de/15.png",
+                                "alt": "Location 1 - In spawn, used for the rocket Wundersphere"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/16.png",
+                                "alt": "Location 2 - Above Double Tap, used for the courtyard Wundersphere"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/17.png",
+                                "alt": "Location 3 - Just outside the clock tower, used for the Double Tap Wundersphere"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/18.png",
+                                "alt": "Location 4 - Outside the rocket blast doors, used for the Death Ray Wundersphere"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Tram Fuses",
+                    "description": "A tram fuse can be spent in spawn to get a random power-up.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/local/935/de/62.png",
+                                "alt": "Tram fuse power-up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/31.png",
+                                "alt": "Tram fuse control location"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Trigger a Rocket Test",
+                    "description": "Wallrun on a blue pressure plate to attempt to trigger a rocket test launch. The first attempt will also spawn a Death Machine above the crafting bench by the pyramid.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/local/935/de/37.png",
+                                "alt": "Pressure plate location, near Pack-a-Punch and Juggernog"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
         {
             "header": "Rocket Shield",
             "collapse": true,
             "description": "Collect 3 parts and craft at a workbench.",
             "subsections": [
                 {
-                    "header": "Part 1 (Fuel Canisters)",
-                    "description": "Located near Double Tap (3 possible locations)",
+                    "header": "Part 1 (Shield Window)",
+                    "description": "Located in the undercroft (3 possible locations). Low gravity mode required.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "/local/935/de/2.png",
-                                "alt": "Location 1 - On some boxes near a baricade"
+                                "src": "/local/935/de/.png",
+                                "alt": "Location 1 - Above the workbench on the metal that surrounds the pyramid"
                             }
                         },
                         {
@@ -27,8 +146,8 @@
                         },
                         {
                             "pic": {
-                                "src": "/local/935/de/.png",
-                                "alt": "Location 3 - Up the stairs towards the Death Ray"
+                                "src": "/local/935/de/9.png",
+                                "alt": "Location 3 - On the wall above Pack-a-Punch"
                             }
                         }
                     ]
@@ -58,13 +177,13 @@
                     ]
                 },
                 {
-                    "header": "Part 3 (Shield Window)",
-                    "description": "Located in the undercroft (3 possible locations). Low gravity mode required.",
+                    "header": "Part 3 (Fuel Canisters)",
+                    "description": "Located near Double Tap (3 possible locations)",
                     "elements": [
                         {
                             "pic": {
-                                "src": "/local/935/de/.png",
-                                "alt": "Location 1 - Above the workbench on the metal that surrounds the pyramid"
+                                "src": "/local/935/de/2.png",
+                                "alt": "Location 1 - On some boxes near a baricade"
                             }
                         },
                         {
@@ -75,8 +194,8 @@
                         },
                         {
                             "pic": {
-                                "src": "/local/935/de/9.png",
-                                "alt": "Location 3 - On the wall above Pack-a-Punch"
+                                "src": "/local/935/de/.png",
+                                "alt": "Location 3 - Up the stairs towards the Death Ray"
                             }
                         }
                     ]
@@ -106,7 +225,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/local/935/de/.png",
+                                "src": "/local/935/de/74.png",
                                 "alt": ""
                             }
                         }
@@ -114,17 +233,17 @@
                 },
                 {
                     "header": "Part 2",
-                    "description": "Spawns in the sky after using the Death Ray (2 possible locations). Pick up by using the correct Wundersphere, either in the courtyard or above Double Tap.",
+                    "description": "Spawns in the sky after using the Death Ray trap (spawns in 2 possible locations). Pick up by using the correct Wundersphere, either in the courtyard or above Double Tap.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "/local/935/de/.png",
+                                "src": "/local/935/de/47.png",
                                 "alt": "Death Ray"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/local/935/de/.png",
+                                "src": "/local/935/de/48.png",
                                 "alt": "Part floating above the Death Ray (in the path of the courtyard Wundersphere)"
                             }
                         }
@@ -148,7 +267,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/local/935/de/.png",
+                                "src": "/local/935/de/39.png",
                                 "alt": "The part in the teleporter"
                             }
                         }
@@ -160,7 +279,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/local/935/de/.png",
+                                "src": "/local/935/de/75.png",
                                 "alt": "One possible build location, in the Speed Cola room"
                             }
                         }
@@ -179,19 +298,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/local/935/de/.png",
+                                "src": "/local/935/de/6.png",
                                 "alt": "Location 1 - Near Double Tap, by the stairs that lead to the undercroft"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/local/935/de/.png",
+                                "src": "/local/935/de/7.png",
                                 "alt": "Location 2 - In the church near Speed Cola"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/local/935/de/.png",
+                                "src": "/local/935/de/8.png",
                                 "alt": "Location 3 - In the undercroft by the pyramid"
                             }
                         }
@@ -203,68 +322,8 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/local/935/de/.png",
+                                "src": "/local/935/de/21.png",
                                 "alt": "Bow spawn location"
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "header": "Miscellaneous Features",
-            "collapse": true,
-            "subsections": [
-                {
-                    "header": "Power Switch",
-                    "description": "Located between the church and the bedrooms",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "/local/935/de/.png",
-                                "alt": "Power switch location"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "Wundersphere Locations",
-                    "description": "Each of the 4 Wunderspheres requires its landing pad to be activated once during the match. This does not require power.",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "/local/935/de/.png",
-                                "alt": "Location 1 - Located in spawn, used for the rocket Wundersphere"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/local/935/de/.png",
-                                "alt": "Location 2 - Located above Double Tap, used for the courtyard Wundersphere"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/local/935/de/.png",
-                                "alt": "Location 3 - Located just outside the clock tower, used for the Double Tap Wundersphere"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/local/935/de/.png",
-                                "alt": "Location 4 - Located outside the rocket blast doors, used for the Death Ray Wundersphere"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "Trigger a rocket test",
-                    "description": "Wallrun on a blue pressure plate to attempt to trigger a rocket test launch. The first attempt will also spawn a Death Machine above the crafting bench by the pyramid.",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "/local/935/de/.png",
-                                "alt": "Pressure plate location, near Pack-a-Punch and Juggernog"
                             }
                         }
                     ]
@@ -274,8 +333,46 @@
         {
             "header": "Upgraded Bows",
             "collapse": true,
-            "description": "Only 1 player can work on each bow at a time. Finished bows can only be used by 1 player.",
             "subsections": [
+                {
+                    "header": "Lightning Bow (Storm / Kreema'ahm la Ahmahm)",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Acquire Arrow",
+                                "description": "Using a bow, shoot the weathervane located between the Death Ray and clock tower (aim below the dragon). Then pick up the arrow that drops. Only the player who holds the arrow can complete the remaining steps."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/22.png",
+                                "alt": "Weathervane"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/23.png",
+                                "alt": "Storm arrow"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Fire Bow (Rune Prison / Kreeaho'ahm nal Ahmhogaroc)",
+                    "elements": [
+                    ]
+                },
+                {
+                    "header": "Wolf Bow (Wolf Howl / Kreeholo lu Kreemasaleet)",
+                    "elements": [
+                    ]
+                },
+                {
+                    "header": "Void Bow (Demon Gate / Kreegakaleet lu Gosata'ahm)",
+                    "elements": [
+                    ]
+                }
             ]
         },
         {
@@ -285,8 +382,8 @@
             ]
         },
         {
-            "header": "Songs",
-            "collapse": false,
+            "header": "Song",
+            "collapse": true,
             "subsections": [
                 {
                     "header": "Dead Again",
@@ -294,31 +391,109 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/local/935/de/.png",
+                                "src": "/local/935/de/28.png",
                                 "alt": "Location 1 - In the bedroom between Double Tap and the Power Room"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/local/935/de/.png",
+                                "src": "/local/935/de/30.png",
                                 "alt": "Location 2 - Across from Juggernog"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/local/935/de/.png",
+                                "src": "/local/935/de/32.png",
                                 "alt": "Location 3 - In a truck by the rocket"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Side Easter Eggs",
+            "collapse": true,
+            "subsections": [
+                {
+                    "header": "Panzer Claw Helmet",
+                    "description": "Kill 3 panzers using panzer claws to grant all players the helmet. The map has 3 panzer claws that may each be used a single time. Shoot the claw once to make it fall down from the ceiling, then again to fire it forward (requires a bullet gun or knife melee). If the claw hits one or more panzers, they are instantly killed.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/local/935/de/71.png",
+                                "alt": "Location 1 - On the catwalk across from the Double Tap dragon location"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/73.png",
+                                "alt": "Location 2 - Directly through the door by Quick Revive"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/72.png",
+                                "alt": "Location 3 - In the power room, near the door that leads to the church"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Samantha's Lullabye (Only audible near music box)",
-                    "description": "Interact with the music box in the bedroom across from the teddy location",
+                    "header": "Flower Pot Gobblegum",
+                    "description": "Pick up the flower pot in the teleporter room in the undercroft. Then place it in the same spot while time traveling. Finally, interact with it in the present to get a random gobblegum.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "/local/935/de/.png",
+                                "alt": "Flower pot location"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Plunger Melee Weapon",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/local/935/de/.png",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Replace Zombies with Skeletons",
+                    "description": "Using a bow, shoot 3 floating skulls while using the In Plain Sight gobblegum",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/local/935/de/.png",
+                                "alt": "Location 1 - Next to Double Tap"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/.png",
+                                "alt": "Location 2 - "
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/.png",
+                                "alt": "Location 3 -"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Samantha's Lullabye",
+                    "description": "Interact with the music box in the bedroom across from the teddy location. Samantha's Lullabye will be audible near the music box.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/local/935/de/29.png",
                                 "alt": "Music box location"
                             }
                         }
