@@ -45,6 +45,29 @@ a {
     box-sizing: border-box;
 }
 
+.section-group {
+    background-color: #00000099;
+    width: min(95%, 70rem);
+    margin: 1rem auto;
+    box-sizing: border-box;
+}
+
+.section-header {
+    padding: 1rem;
+    background-color: #11111199;
+    cursor: pointer;
+}
+.section-header:hover {
+    background-color: #333333aa;
+}
+.section-header:active {
+    background-color: #555555aa;
+}
+
+.section-body {
+    padding: 0 2rem;
+}
+
 .text-wrap {
     padding: 2rem;
     background-color: #00000099;
@@ -158,6 +181,7 @@ a {
 
 .map-name {
     font-size: large;
+    text-shadow: 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black;
 }
 
 .map-desc {
@@ -171,7 +195,7 @@ a {
     margin: 0;
 }
 
-.video-wrap {
+.pic-wrap {
     position: relative;
     width: 100%;
     height: 0;
@@ -180,7 +204,7 @@ a {
     box-shadow: 0 0 .5rem 0 black;
 }
 
-.video {
+.pic {
     position: absolute;
     top: 0;
     left: 0;

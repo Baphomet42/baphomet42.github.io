@@ -23,17 +23,17 @@
         <br/>
         <br/>
 
-        <div class="text-wrap">
-            <h1>Mainstream Zombies</h1>
-        </div>
+        <!-- <div class="text-wrap">
+            <h1>Mainline Zombies</h1>
+        </div> -->
         <span id="main-games"></span>
 
-        <br/>
+        <!-- <br/>
 
         <div class="text-wrap">
             <h1>Spin-Off Zombies</h1>
         </div>
-        <span id="other-games"></span>
+        <span id="other-games"></span> -->
 
         <br/>
         <br/>
@@ -47,9 +47,9 @@
                 $.each(data.main, function (key, value) {
                     $('#main-games').append(buildGames(value))
                 })
-                $.each(data.other, function (key, value) {
-                    $('#other-games').append(buildGames(value))
-                })
+                // $.each(data.other, function (key, value) {
+                //     $('#other-games').append(buildGames(value))
+                // })
             })
         })
 

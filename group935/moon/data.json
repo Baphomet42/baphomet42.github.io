@@ -2,6 +2,7 @@
     "name": "Moon",
     "subtext": "Black Ops | Black Ops 3",
     "wiki": "https://callofduty.fandom.com/wiki/Moon",
+    "rev": 1,
     "sections" : [
         {
             "header": "Main Easter Egg",
