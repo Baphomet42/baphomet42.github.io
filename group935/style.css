@@ -88,6 +88,23 @@ a {
     border-bottom: .2rem solid #888888;
 }
 
+.jump-link-wrap {
+    width: 50%;
+    padding-left: 25%;
+    padding-bottom: 1rem;
+    color: #FFFF55;
+    font-size: medium;
+}
+
+.jump-link-header {
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+.jump-link {
+    font-weight: bold;
+}
+
 .text-wrap {
     padding: 2rem;
     background-color: #00000099;

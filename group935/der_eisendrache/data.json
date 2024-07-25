@@ -5,7 +5,6 @@
     "sections" : [
         {
             "header": "Map Features",
-            "collapse": true,
             "subsections": [
                 {
                     "header": "Power Switch",
@@ -125,7 +124,6 @@
         },
         {
             "header": "Rocket Shield",
-            "collapse": true,
             "description": "Collect 3 parts and craft at a workbench.",
             "subsections": [
                 {
@@ -216,7 +214,6 @@
         },
         {
             "header": "Ragnarok DG-4",
-            "collapse": true,
             "description": "Collect 3 parts and craft at a workbench.",
             "subsections": [
                 {
@@ -289,7 +286,6 @@
         },
         {
             "header": "Wrath of the Ancients",
-            "collapse": true,
             "description": "Feed 8 zombies to each of the 3 dragon heads.",
             "subsections": [
                 {
@@ -333,7 +329,7 @@
         {
             "header": "Upgraded Bows",
             "description": "Bows are upgraded separately and can be done in any order.",
-            "collapse": true,
+            "links": true,
             "subsections": [
                 {
                     "header": "Lightning Bow (Storm / Kreema'ahm la Ahmahm)",
@@ -982,7 +978,7 @@
         },
         {
             "header": "Main Quest",
-            "collapse": true,
+            "links": true,
             "subsections": [
                 {
                     "header": "Requirements",
@@ -1447,6 +1443,106 @@
                                 "src": "/local/935/de/139.png",
                                 "alt": "One of the pressure plates next to the pyramid"
                             }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Waves",
+                                "description": "There are a few waves that will repeat during the entire boss fight. During the storm wave, you can deal damage to the boss. If you successfully deal enough damage during the storm wave, you can beat the boss in 3 cycles. Skeletons and dogs will continue spawning the entire time, and do not need to be killed. Max ammo power-ups will sometimes spawn in the center of the arena."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Panzer Wave",
+                                "description": "When panzers spawn in, you will have to kill all of them to advance to the next wave."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Boss Attacks",
+                                "description": "Some of the waves have different boss attacks. Flaming rock piles can spawn around the entire arena and will do damage if you step on them. Void skulls will fly through the air and deal damage."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Storm Wave",
+                                "description": "During the boss fight, a swirl of electricity will spawn in the center of the arena. If you fail to dodge the attack, you will be instantly downed. Hiding behind one of the pillars will prevent the lightning from damaging you, but you only have a few seconds to hide after the electricity spawns in."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/140.png",
+                                "alt": "Electricity from storm wave"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Stunning the boss",
+                                "description": "You can only damage the boss during a storm wave. As soon as the elecricity appears, one player must place their Ragnaroks on the ground directly on the electricity in the center of the arena. If done correctly, the storm attack will be stopped, so you don't have to hide behind a pillar. This will also create a glowing symbol on the front of the boss."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Damaging the boss",
+                                "description": "While the glowing symbol is visible, all players should rapidly shoot it to deal as much damage as possible. Skeletons will continue to attack you during this time. If enough damage is dealt, the boss will be pushed back violently. If not enough damage is done in time, the boss will move away. In either case, the symbol will no longer be lit, and no damage can be done."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/141.png",
+                                "alt": "Glowing symbol on the keeper boss"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Killing the boss",
+                                "description": "After enough damage has been done, the boss will spin into the air, and everyone will teleport back to the undercroft. It will always take 3 successful attacks to kill the boss. If not enough damage was dealt during one stun, the damage will carry over to the next stun, meaning it will take more than 3 stuns to finish all 3 attacks."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "16. Start the cutscene",
+                    "description": "You can continue playing as normal after the cutscene is done.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Pick up the summoning key",
+                                "description": "Interact with the summoning key on the M.P.D. to pick it up."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/143.png",
+                                "alt": "Summoning key"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Launch the nukes",
+                                "description": "Go to the terminal outside the clock tower and interact with the center computer."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/145.png",
+                                "alt": "Computer terminal"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Cutscenes",
+                                "description": "Interacting with the computer will start an ingame cutscene. After that, all players will enter the video cutscene. All players will get the achievement, then the game will continue as normal."
+                            }
                         }
                     ]
                 }
@@ -1454,7 +1550,6 @@
         },
         {
             "header": "Song",
-            "collapse": true,
             "subsections": [
                 {
                     "header": "Dead Again",
@@ -1484,7 +1579,7 @@
         },
         {
             "header": "Side Easter Eggs",
-            "collapse": true,
+            "links": true,
             "subsections": [
                 {
                     "header": "Panzer Claw Helmet",

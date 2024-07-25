@@ -43,21 +43,29 @@ function pageRev2(data) {
     $.each(data.sections, function (sectionKey, section) {
         page += '<div class="section-group">'
         page += '<div class="section-header" onclick="toggleCollapse(\'section_'+sectionKey+'\')"><h2 class="center">'+section.header+'</h2></div>'
-
-        if(section.collapse)
-            page += '<div class="section-body collapsable" id="section_'+sectionKey+'" style="display: none">'
-        else
-            page += '<div class="section-body collapsable" id="section_'+sectionKey+'">'
+        page += '<div class="section-body collapsable" id="section_'+sectionKey+'" style="display: none">'
 
         if(section.description)
             page += '<h3 class="center">'+section.description+'</h3>'
 
         if(section.subsections) {
+
+            if(section.links) {
+                page += '<div class="jump-link-wrap">';
+                page += '<p class="jump-link-header">Jump to...</p>'
+                page += '<ul>';
+                $.each(section.subsections, function (subKey, sub) {
+                    if(sub.header)
+                        page += '<li><a href="#s_'+sectionKey+'_'+subKey+'" class="jump-link">'+sub.header+'</a></li>';
+                })
+                page += '</ul></div>';
+            }
+
             $.each(section.subsections, function (subKey, sub) {
                 page += '<div class="subsection">'
 
                 if(sub.header)
-                    page += '<h3>'+sub.header+'</h3>'
+                    page += '<h3 id="s_'+sectionKey+'_'+subKey+'">'+sub.header+'</h3>'
 
                 if(sub.description)
                     page += '<p>'+sub.description+'</p>'
