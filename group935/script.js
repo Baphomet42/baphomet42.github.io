@@ -54,8 +54,11 @@ function pageRev2(data) {
 
         if(section.subsections) {
             $.each(section.subsections, function (subKey, sub) {
+                page += '<div class="subsection">'
+
                 if(sub.header)
                     page += '<h3>'+sub.header+'</h3>'
+
                 if(sub.description)
                     page += '<p>'+sub.description+'</p>'
 
@@ -73,18 +76,27 @@ function pageRev2(data) {
                                 page += '<p class="pic-alt">'+el.pic.alt+'</p>';
                         }
                         else if(el.step) {
-                            page += '<h3>'+el.step.title+'</h3>';
+                            if(el.step.title)
+                                page += '<h3>'+el.step.title+'</h3>';
                             if(el.step.description)
                                 page += '<p>'+el.step.description+'</p>';
                         }
                         else if(el.youtube) {
                             page += '<div class="pic-wrap"><iframe class="pic" src="https://www.youtube.com/embed/'+el.youtube+'" frameborder="0" allowfullscreen></iframe></div>';
                         }
+                        else if(el.bullets) {
+                            page += '<ul>';
+                            $.each(el.bullets, function (bulletKey, bullet) {
+                                page += '<li>'+bullet+'</li>';
+                            })
+                            page += '</ul>';
+                        }
 
                         page += "</div></td>"
                     })
                     page += '</tr></table>'
                 }
+                page += '</div>'
         
             })
         }

@@ -332,6 +332,7 @@
         },
         {
             "header": "Upgraded Bows",
+            "description": "Bows are upgraded separately and can be done in any order.",
             "collapse": true,
             "subsections": [
                 {
@@ -340,7 +341,7 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "1. Acquire Arrow",
+                                "title": "1. Acquire storm arrow",
                                 "description": "Using a bow, shoot the weathervane located between the Death Ray and clock tower (aim below the dragon). Then pick up the arrow that drops. Only the player who holds the arrow can complete the remaining steps."
                             }
                         },
@@ -351,9 +352,118 @@
                             }
                         },
                         {
+                            "full": true,
+                            "step": {
+                                "title": "2. Ignite 3 fires",
+                                "description": "Using a bow, shoot the 3 wood piles outside the map. They will ignite when hit correctly."
+                            }
+                        },
+                        {
                             "pic": {
-                                "src": "/local/935/de/23.png",
-                                "alt": "Storm arrow"
+                                "src": "/local/935/de/52.png",
+                                "alt": "Location 1 - Behind the clock tower"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/53.png",
+                                "alt": "Location 2 - Out the spawn door that goes towards Double Tap"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/54.png",
+                                "alt": "Location 3 - At the rocket"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Wallrun over the symbols",
+                                "description": "In the undercroft, wallrun over the 5 blinking symbols without touching the ground. When finished, they will stay lit up."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/55.png",
+                                "alt": "One of the blinking symbols on the wall"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "4. Get kills by the 3 sparking urns",
+                                "description": "Using a bow, kill zombies near the 3 sparking urns. When zombie souls no longer go to the urn, it is done."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/56.png",
+                                "alt": "Location 1 - In the clock tower"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/57.png",
+                                "alt": "Location 2 - Above Double Tap"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/59.png",
+                                "alt": "Location 3 - At the rocket site, inside the blast doors"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "5. Electrify the 3 fires",
+                                "description": "Pull an arrow next to each of the urns, then shoot the sparking arrow into the nearest fire from step 2. The fire will have lightning around it when complete."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/61.png",
+                                "alt": "Fire with lightning around it"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "6. Interact with the blue smoke and pick up the arrow",
+                                "description": "Go back to where the arrow was in step 1. Interact with the smoke, then interact with the arrow."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/85.png",
+                                "alt": "Blue smoke location"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "7. Get kills by the pyramid",
+                                "description": "Place the arrow in the storm box next to the pyramid. Then, kill zombies next to the pyramid until no more souls fly towards the arrow (kills must be using a bow)."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/87.png",
+                                "alt": "Storm box"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "8. Aquire the upgraded bow",
+                                "description": "Place the original bow in the storm box, then grab the upgraded bow."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/88.png",
+                                "alt": "Finished bow"
                             }
                         }
                     ]
@@ -361,16 +471,511 @@
                 {
                     "header": "Fire Bow (Rune Prison / Kreeaho'ahm nal Ahmhogaroc)",
                     "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Aquire rune prison arrow",
+                                "description": "Using a bow, shoot the red symbol in the upstairs of the clock tower. Then, pick up the arrow. Only the player who holds the arrow can complete the remaining steps."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/26.png",
+                                "alt": "Red symbol location"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Shoot the flaming rock after a rocket test launch",
+                                "description": "Immediately after a test launch finishes, shoot the glowing red rock just outside the blast doors (using a bow). Aim towards the upper left corner of the glowing rock, and shoot one arrow. When done, a flaming orb will shoot out of the rock and float above the Death Ray."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/.png",
+                                "alt": "Glowing rock out the blast doors and to the right"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Ignite the 3 circles",
+                                "description": "While flying from a Wundersphere, hit an arrow in each of the 3 fire circles. When a circle is hit, it will remain lit up."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/93.png",
+                                "alt": "Location 1 - Between spawn and Double Tap"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/94.png",
+                                "alt": "Location 2 - Outside the clock tower"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/95.png",
+                                "alt": "Location 3 - By the Death Ray"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "4. Charge the 3 circles with kills",
+                                "description": "Stand in each of the 3 circles and get zombie kills with a bow until a red light shoots up from the ground. The circle will dim after enough kills."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/97.png",
+                                "alt": "Finished circle"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "5. Interact with the clock tower gears",
+                                "description": "Go back to where you got the arrow and interact with the gears behind the wall. Afterwards, only 1 of the circles will remain lit up."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/98.png",
+                                "alt": "Clock tower gears"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "6. Pass fire from the circle to the corresponding fireplace",
+                                "description": "Stand in the lit up circle and shoot an arrow towards the correct fireplace. Then, stand on the flaming rock pile and shoot again. Repeat until the fireplace lights up. If the rock pile vanishes, go back to the circle and try again."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/100.png",
+                                "alt": "Fireplace by the Double Tap dragon. Used for the circle outside the clock tower."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/146.png",
+                                "alt": "Fireplace in the church. Used for the circle by the Death Ray."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/148.png",
+                                "alt": "Fireplace in the bedrooms area. Used for the circle on the way from spawn to Double Tap."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/101.png",
+                                "alt": "Flaming rock pile"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/102.png",
+                                "alt": "Lit fireplace"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "7. Interact with the fireplace, then interact with the flaming orb and pick up the arrow",
+                                "description": "Interact with the smoke in the fireplace so it vanishes. Then, go to the Death Ray and interact with the flaming orb so it explodes and drops the arrow. Pick up the arrow."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/103.png",
+                                "alt": "Flaming orb by the Death Ray"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "8. Get kills by the pyramid",
+                                "description": "Place the arrow in the rune prison box next to the pyramid. Then, kill zombies next to the pyramid until no more souls fly towards the arrow (kills must be using a bow)."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/.png",
+                                "alt": "Rune prison box"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "9. Aquire the upgraded bow",
+                                "description": "Place the original bow in the rune prison box, then grab the upgraded bow."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/107.png",
+                                "alt": "Finished bow"
+                            }
+                        }
                     ]
                 },
                 {
                     "header": "Wolf Bow (Wolf Howl / Kreeholo lu Kreemasaleet)",
                     "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Interact with the 4 paintings",
+                                "description": "Four paintings must be interacted in the correct order such that the wolf symbol remains lit up blue. The same 4 locations always have the paintings, but the order that the paintings are located is randomized. The painting order is what matters, not the location order."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/33.png",
+                                "alt": "First painting. On the way from the power room to the bedrooms."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/34.png",
+                                "alt": "Second painting. In the clock tower."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/35.png",
+                                "alt": "Third painting. In the room below the clock tower."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/36.png",
+                                "alt": "Fourth painting. Upstairs in the church."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Aquire wolf howl arrow",
+                                "description": "Go to the undercroft and interact with the arrow just below the stairs that lead to the first bow. Only the player who holds the arrow can complete the remaining steps."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/38.png",
+                                "alt": "Arrow location in the undercroft"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Shoot the red flag and pick up the skull",
+                                "description": "Go to the rocket and shoot the red flag above and left of the blast doors (with a bow). Interact with the blue wolf skull that drops."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/40.png",
+                                "alt": "Red flag location high above the blast doors (not the red iron cross banner)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/41.png",
+                                "alt": "Wolf skull location"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "4. Interact with the wolf howl box",
+                                "description": "Go to the pyramid and interact with the wolf howl box. Then, follow the wolf spirit."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/42.png",
+                                "alt": "Wolf howl box"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "5. Get kills by the wolf",
+                                "description": "The wolf will stop in 3 locations. In each location, get bow kills until no more souls fly to the glowing blue spot in the ground. Interact with each of the blue spots so the wolf continues to the next."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/43.png",
+                                "alt": "Location 1 - In the courtyard outside the church"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/45.png",
+                                "alt": "Location 2 - Near Double Tap, towards spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/46.png",
+                                "alt": "Location 3 - In the undercroft by Pack-a-Punch"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "6. Shoot the symbol and get the arrow",
+                                "description": "In the undercroft, the wolf will stand under an opening in the wall. When low gravity is active, wall run towards the opening, then shoot the glowing symbol just above the opening (with a bow). A platform will appear that you can stand on. Stand on the platform and pick up the arrow from the skeleton's hand."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/.png",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "7. Get kills by the pyramid",
+                                "description": "Place the arrow in the wolf howl box next to the pyramid. Then, kill zombies next to the pyramid until no more souls fly towards the arrow (kills must be using a bow)."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/49.png",
+                                "alt": "Wolf howl box"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "8. Aquire the upgraded bow",
+                                "description": "Place the original bow in the wolf howl box, then grab the upgraded bow."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/51.png",
+                                "alt": "Finished bow"
+                            }
+                        }
                     ]
                 },
                 {
                     "header": "Void Bow (Demon Gate / Kreegakaleet lu Gosata'ahm)",
                     "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Aquire demon gate arrow",
+                                "description": "Using a bow, shoot the purple symbol above the door next to Double Tap. Then, pick up the arrow. Only the player who holds the arrow can complete the remaining steps."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/24.png",
+                                "alt": "Purple symbol location"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Melee a zombie over the purple square",
+                                "description": "Go to the room under the clock tower. There will be a glowing purple square in the middle. Get a melee kill with the bow on a zombie standing directly over the square, and a hole will open up."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/108.png",
+                                "alt": "Purple square under the clock tower"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/120.png",
+                                "alt": "Hole in the floor after melee kill"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Interact with the glowing purple object",
+                                "description": "When done, the object will rise from the ground and stay floating in the room."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/122.png",
+                                "alt": "Floating object"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "4. Collect the 6 skulls",
+                                "description": "There are 6 skulls located around the map that must be interacted. They are always in the same spots, and will vanish after being interacted."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/121.png",
+                                "alt": "Location 1 - In the tunnel by Mule Kick"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/124.png",
+                                "alt": "Location 2 - Sitting in a window outside the church, on the balcony"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/125.png",
+                                "alt": "Location 3 - Next to Double Tap"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/126.png",
+                                "alt": "Location 4 - In a chest in the bedroom"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/123.png",
+                                "alt": "Location 5 - In a sink in the teleporter room"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/127.png",
+                                "alt": "Location 6 - In the back of a truck, down by the rocket"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "5. Kill zombies and pick up the purple symbol power-ups",
+                                "description": "Until all 6 symbols are placed in the circles around the floating object, zombies will randomly drop them as power-ups when killed with a bow."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/.png",
+                                "alt": "One of the symbol drops"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/.png",
+                                "alt": "Circle with all symbols collected"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "6. Remember the 3 names in the correct order",
+                                "description": "A voice will say three names that must be remembered (in the same order as spoken). The voice will repeat the names if you shoot the floating object with an arrow. The three names will be picked from the following: Crown, Door, Griffin, Heart, Horn, and Stag."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/.png",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "7. Decipher the symbols from the names",
+                                "description": "Go to the power room and find the 6 knights with a symbol beneath them. Interact with the 3 symbols that correspond to the names from before. Remember the 3 symbols in the same order as the names were spoken."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/130.png",
+                                "alt": "Crown knight"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/135.png",
+                                "alt": "Door knight"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/134.png",
+                                "alt": "Griffin knight"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/129.png",
+                                "alt": "Heart knight"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/133.png",
+                                "alt": "Horn knight"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/132.png",
+                                "alt": "Stag knight"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "8. Shoot the 3 symbols in the circle, and pick up the arrow",
+                                "description": "Go back to the room beneath the clock tower. Shoot the 3 symbols in the correct order. If done correctly, pick up the arrow that appears in the middle. If the symbols are wrong, you will take damage or be downed. Leave the room quickly to avoid taking damage."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/.png",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "9. Get kills by the pyramid",
+                                "description": "Place the arrow in the demon gate box next to the pyramid. Then, kill zombies next to the pyramid until no more souls fly towards the arrow (kills must be using a bow)."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/.png",
+                                "alt": "Demon gate box"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "10. Aquire the upgraded bow",
+                                "description": "Place the original bow in the demon gate box, then grab the upgraded bow."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/144.png",
+                                "alt": "Finished bow"
+                            }
+                        }
                     ]
                 }
             ]
@@ -379,6 +984,472 @@
             "header": "Main Quest",
             "collapse": true,
             "subsections": [
+                {
+                    "header": "Requirements",
+                    "elements": [
+                        {
+                            "bullets": [
+                                "Ragnarok DG-4 (all players)",
+                                "Upgraded Bows (1 per player)"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "header": "1. Upgrade at least 1 bow"
+                },
+                {
+                    "header": "2. Shoot all 6 teleporter spokes with starter bow",
+                    "description": "Any player with a starter bow can do this step. If your bow is upgraded, set it back on the correct box, then pick up the starter bow. When shot, the spoke will change from glowing blue to orange. After all 6 are shot, they will all go back to blue and a sound will be heard.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/local/935/de/50.png",
+                                "alt": "Teleporter with all 6 spokes glowing blue"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Shoot 3 electric wisps",
+                    "description": "This step and step 4 must be done within a single round",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Important sound cues",
+                                "description": "At the start of each round, a sound will play to indicate a wisp has spawned. This is the same sound that plays after step 2. A buzzer will play if the step fails, and you will have to try again next round."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Wisp locations",
+                                "description": "There are 8 wisp locations around the map. When a wisp is active, it emits electricity. Shooting an inactive wisp will fail the step. An active wisp must be shot with an upgraded bow. After shooting an active wisp, it will vanish and a new wisp will spawn in (listen for the sound). One location will not be active twice in the same round."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/63.png",
+                                "alt": "Location 1 - In the church, on the clock above the fireplace"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/64.png",
+                                "alt": "Location 2 - In the church, on one of the devices across from Speed Cola"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/96.png",
+                                "alt": "Location 3 - Upstairs between the church and the clock tower, on a clock"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/66.png",
+                                "alt": "Location 4 - In the power room, on a phone"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/65.png",
+                                "alt": "Location 5 - In the bedrooms, on a globe"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/106.png",
+                                "alt": "Location 6 - Above Double Tap, on a box by the hole in the wall"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/83.png",
+                                "alt": "Location 7 - Between spawn and Double Tap, on a car tire"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/116.png",
+                                "alt": "Location 8 - Next to Quick Revive, on a phone"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "4. Time travel",
+                    "description": "This must be done in the same round as the 3 wisps were shot. After teleporting to the past, there is a short timer to complete the step.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Use the teleporter in the undercroft",
+                                "description": "When the wisp step is completed, the teleporter will glow purple, and a sound will be heard. All players must teleport together before the round ends."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Pick up fuses and glowing object in the room",
+                                "description": "Interact with the items to pick them up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/68.png",
+                                "alt": "Small fuses on a wooden box"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/69.png",
+                                "alt": "Glowing object in the corner of the room"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Remember the code on the safe",
+                                "description": "Dr. Groph will input 3 symbols on the safe. You must remember these symbols in the correct order for a later step."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/70.png",
+                                "alt": "The 3 symbols on the safe. There are 4 possible symbols that can be chosen."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "5. Set the Death Ray to protect mode",
+                    "description": "The Death Ray must be used at least once in the game before this step.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Place the fuses in the Death Ray"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/77.png",
+                                "alt": "Location to place the fuses"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Select the protect mode on the other side of the Death Ray"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/76.png",
+                                "alt": "Death Ray on protect mode"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "6. Enter the safe code on the computers outside the clock tower",
+                    "description": "If this step is failed, you must repeat the wisp step and time travel to get a new code",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Interact with 1 symbol at a time. A click will be heard after each interaction. If done correctly, a sound will play."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/78.png",
+                                "alt": "The screens with the 4 possible symbols"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "7. Move the parts from the safe to the Death Ray",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Go to the safe in the teleporter room, and interact with the parts."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/79.png",
+                                "alt": "The unlocked safe with the parts inside"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Place the parts in 2 places around the Death Ray"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/80.png",
+                                "alt": "Location 1"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/81.png",
+                                "alt": "Location 2"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "8. Set the Death Ray back to destroy mode",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/local/935/de/82.png",
+                                "alt": "The Death Ray on destroy mode"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "9. Samantha Says",
+                    "description": "Win a game of Samantha Says at both computer stations. If one fails, you must redo both games.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Interact with the computer station to start the game. Remember the order of the 4 symbols on the small screens, then click the correct screen after a symbol appears on the main screen."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/78.png",
+                                "alt": "Location 1 - Outside the clock tower"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/90.png",
+                                "alt": "Location 2 - At the rocket"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "When both games are complete, there will be white lights on each of the Death Ray towers."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/89.png",
+                                "alt": "One of the towers lit up white"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "10. Shoot down the rocket",
+                    "description": "Both Death Ray towers must be glowing from the previous step",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Interact with the glowing green light on the back of the Death Ray",
+                                "description": "This will cause the Death Ray to shoot down the rocket. It will crash through the clock tower and land in the courtyard."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/91.png",
+                                "alt": "Glowing green button"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Pick up the Vrill Device",
+                                "description": "Under the rocket wreckage in the courtyard, there is a small part to interact with"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/92.png",
+                                "alt": "Vril Device in the snow"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "11. Time travel (again)",
+                    "description": "You can start the next step already, but this will need to be done before the next step can be finished.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Shoot 3 wisps again, and have all players teleport. Once again, this must be done in one round, and the teleporter will glow purple when ready."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "In the past, you must interact with the Kronorium, then pick up the slab"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/117.png",
+                                "alt": "Kronorium sitting on a box"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/118.png",
+                                "alt": "Slab sitting in a small open safe"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "In the present, place the slab in the wall by Double Tap"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/.png",
+                                "alt": "Location to place the slab"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "12. Summon the keeper ghost",
+                    "description": "This can be done before finishing the previous step, but dogs will keep spawning in until the next step is completed",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Place the Vril Device in the crypt next to the starter bow"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/109.png",
+                                "alt": "Hole to place the Vril Device"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Follow the keeper ghost for the next step"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "13. Get kills in each of the 4 keeper ghost locations",
+                    "description": "The location by Double Tap requires the slab from the second time travel step, but the other locations can be done beforehand.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Stand inside the white circle",
+                                "description": "The circle will grow in size for each player inside. You can step outside without kills resetting, but kills only count while you're inside the circle."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/110.png",
+                                "alt": "Location 1 - In the courtyard"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/112.png",
+                                "alt": "Location 2 - By Mule Kick"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/115.png",
+                                "alt": "Location 3 - By Double Tap"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/131.png",
+                                "alt": "Location 4 - In the power room"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Kill zombies with the correct bow",
+                                "description": "Depending on the glow color while standing in the circle, zombies must be killed with a specific upgraded bow. Zombie souls will travel to the slab in the wall if killed with the correct bow."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/111.png",
+                                "alt": "Glow color for lightning bow"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/119.png",
+                                "alt": "Glow color for wolf bow"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/113.png",
+                                "alt": "Glow color for fire bow"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/.png",
+                                "alt": "Glow color for void bow"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "14. Place the missing M.P.D. part",
+                    "description": "An audio scene will play before the M.P.D. teleports to the undercroft.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/local/935/de/138.png",
+                                "alt": "Location to interact with"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "15. Boss fight",
+                    "description": "You cannot leave the boss fight until it's done. Make sure you have perks, a full shield, strong weapons, and any gobblegum you want to bring.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Teleport to the arena",
+                                "description": "All players must have fully charged Ragnaroks and stand on each of the 4 pressure plates. At the exact same time, all players must set the Ragnaroks onto the pressure plates."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/local/935/de/139.png",
+                                "alt": "One of the pressure plates next to the pyramid"
+                            }
+                        }
+                    ]
+                }
             ]
         },
         {
@@ -392,7 +1463,7 @@
                         {
                             "pic": {
                                 "src": "/local/935/de/28.png",
-                                "alt": "Location 1 - In the bedroom between Double Tap and the Power Room"
+                                "alt": "Location 1 - In the bedroom between Double Tap and the power room"
                             }
                         },
                         {
