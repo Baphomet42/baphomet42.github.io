@@ -1,3 +1,5 @@
+var pageData = {'panel': false, 'sections':[], 'current': -1}
+
 function buildPage(data) {
     if(data.rev === 1)
         return pageRev1(data)
@@ -5,31 +7,120 @@ function buildPage(data) {
         return pageRev2(data)
 }
 
-function toggleCollapse(section_id) {
-    let el = document.getElementById(section_id)
-    if(el.style.display === "none")
+function toggleSectionCollapse(section) {
+    if(pageData.sections[section].collapse == 2) {
+        setSectionCollapse(section,0)
+    }
+    else {
+        setSectionCollapse(section,2)
+    }
+}
+
+function collapseAll(mode) {
+    let collapseMode = 2
+    if(mode == 0 || mode == 1)
+        collapseMode = 0
+
+    let sections = document.getElementsByClassName('collapsable')
+    for(let i=0; i<sections.length; i++) {
+        setSectionCollapse(i,collapseMode)
+    }
+}
+
+function setSectionCollapse(section,mode) {
+    pageData.sections[section].collapse = mode
+    let el = document.getElementById('section_'+section)
+
+    if(mode == 0 || mode == 1) {
         el.style.display = "block"
+        if(mode == 0 && (pageData.current<=-1 || pageData.current>=pageData.sections.length || pageData.sections[pageData.current].collapse==2)) {
+            pageData.current = section
+        }
+    }
     else
         el.style.display = "none"
 }
 
-function collapseAll(collapse) {
-    let mode = "none"
-    if(collapse === false) {
-        mode = "block"
+function scrollToSubsection(section, subsection) {
+    setSectionCollapse(section,0)
+    scrollToElement(document.getElementById('section_'+section+'_'+subsection))
+}
+
+function scrollToTop() {
+    scrollToElement(document.getElementById('title-section'))
+}
+
+function scrollToElement(el) {
+    el.scrollIntoView({block: 'start', behavior: 'smooth'})
+}
+
+function cycleSection(cycleUp) {
+    let sections = document.getElementsByClassName('section-group')
+    let current = pageData.current
+    
+    if(!(current>-1 && current<sections.length && pageData.sections[current].collapse==2)) {
+        if(cycleUp === true)
+            current--
+        else
+            current++
     }
 
-    let sections = document.getElementsByClassName('collapsable')
-    for(let i=0; i<sections.length; i++)
-        sections[i].style.display = mode;
+    if(current<-1)
+        current = -1
+    else if(current>sections.length)
+        current = sections.length
+
+    for(let i=0; i<pageData.sections.length; i++) {
+        if(pageData.sections[i].collapse == 1 && current!=i)
+            setSectionCollapse(i,2)
+    }
+
+    if(current<0) {
+        scrollToTop()
+    }
+    else if(current==sections.length) {
+        scrollToElement(sections[current-1])
+    }
+    else {
+        if(pageData.sections[current].collapse == 2)
+            setSectionCollapse(current,1)
+        scrollToElement(sections[current])
+    }
+
+    pageData.current = current
+
+}
+
+function toggleControlPanelVisibility() {
+    if(pageData.panel == true)
+        pageData.panel = false
+    else
+        pageData.panel = true
+
+    console.log('test')
+
+    if(pageData.panel == true) {
+        document.getElementById('control-panel').style.display = "block"
+        document.getElementById('control-panel-hidden-button').innerHTML = ">"
+    }
+    else {
+        document.getElementById('control-panel').style.display = "none"
+        document.getElementById('control-panel-hidden-button').innerHTML = "<"
+    }
 }
 
 function pageRev2(data) {
     var page = ''
-    page += '<div class="section">'
+    page += '<div class="section" id="title-section">'
     page += '<h1 class="center">'+data.name+'</h1>'
     page += '<h3 class="center">'+data.subtext+'</h3>'
+    page += '<div class="header-table"><table><tr>'
+    page += '<td onclick="collapseAll(2)" class="collapse-button header-table-button">[Collapse All]</td>'
+    page += '<td onclick="collapseAll(0)" class="collapse-button header-table-button">[Expand All]</td>'
+    page += '</tr></table></div>'
     page += '</div>'
+
+    pageData.sections = []
 
     if(data.maps) {
         $.each(data.maps, function (mapKey, map) {
@@ -41,8 +132,10 @@ function pageRev2(data) {
     }
     
     $.each(data.sections, function (sectionKey, section) {
+        pageData.sections.push({'collapse': 2})
+
         page += '<div class="section-group">'
-        page += '<div class="section-header" onclick="toggleCollapse(\'section_'+sectionKey+'\')"><h2 class="center">'+section.header+'</h2></div>'
+        page += '<div class="section-header" onclick="toggleSectionCollapse('+sectionKey+')"><h2 class="center">'+section.header+'</h2></div>'
         page += '<div class="section-body collapsable" id="section_'+sectionKey+'" style="display: none">'
 
         if(section.description)
@@ -56,16 +149,16 @@ function pageRev2(data) {
                 page += '<ul>';
                 $.each(section.subsections, function (subKey, sub) {
                     if(sub.header)
-                        page += '<li><a href="#s_'+sectionKey+'_'+subKey+'" class="jump-link">'+sub.header+'</a></li>';
+                        page += '<li onclick="scrollToSubsection('+sectionKey+','+subKey+')" class="jump-link">'+sub.header+'</li>';
                 })
                 page += '</ul></div>';
             }
 
             $.each(section.subsections, function (subKey, sub) {
-                page += '<div class="subsection">'
+                page += '<div class="subsection" id="section_'+sectionKey+'_'+subKey+'">'
 
                 if(sub.header)
-                    page += '<h3 id="s_'+sectionKey+'_'+subKey+'">'+sub.header+'</h3>'
+                    page += '<h3>'+sub.header+'</h3>'
 
                 if(sub.description)
                     page += '<p>'+sub.description+'</p>'
@@ -109,11 +202,19 @@ function pageRev2(data) {
             })
         }
 
-        page += '<div class="section-footer" onclick="toggleCollapse(\'section_'+sectionKey+'\')"><h2 class="center section-footer-text">[Collapse]</h2></div>'
+        page += '<div class="section-footer collapse-button" onclick="setSectionCollapse('+sectionKey+',2)"><h2 class="center section-footer-text">[Collapse]</h2></div>'
         page += '</div></div>'
     })
 
-    page += ''
+    page += '<div id="control-panel" class="control-panel" style="display: none">'
+    page += '<table><tr>'
+    page += '<td class="control-panel-button" onclick="scrollToTop()">⌂</td>'
+    page += '<td class="control-panel-button" onclick="cycleSection(true)">\u2227</td>'
+    page += '<td class="control-panel-button" onclick="cycleSection(false)">\u2228</td>'
+    page += '</tr></table>'
+    page += '</div>'
+    page += '<div id="control-panel-hidden" class="control-panel"><table><tr><td id="control-panel-hidden-button" class="control-panel-button" onclick="toggleControlPanelVisibility()"><</td></tr></table></div>'
+
     return page
 }
 

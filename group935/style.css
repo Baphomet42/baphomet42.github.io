@@ -14,15 +14,15 @@ body {
     background-position: center;
 }
 
-h1 {
-    text-align: center;
+h1, h2, h3, h4, h5, h6 {
     font-family: serif;
+}
+
+h1 {
     font-size: xx-large;
 }
 
 h2 {
-    text-align: center;
-    font-family: serif;
     font-size: x-large;
 }
 
@@ -36,12 +36,38 @@ a {
     text-decoration: none;
 }
 
+table {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+    border-spacing: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header-table {
+    width: 66%;
+    margin-left: 17%;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.header-table-button {
+    padding: .5rem 0 .5rem 0;
+}
+
 .section {
     padding: 2rem;
     background-color: #00000099;
     width: min(95%, 70rem);
     margin: 1rem auto;
     box-sizing: border-box;
+}
+
+#title-section {
+    padding-bottom: 0;
 }
 
 .section-group {
@@ -63,16 +89,20 @@ a {
     background-color: #555555aa;
 }
 
-.section-footer {
-    padding: .25rem 0 .25rem 0;
+.collapse-button {
     background-color: #11111199;
     cursor: pointer;
+    user-select: none;
 }
-.section-footer:hover {
+.collapse-button:hover {
     background-color: #333333aa;
 }
-.section-header:active {
+.collapse-button:active {
     background-color: #555555aa;
+}
+
+.section-footer {
+    padding: .25rem 0 .25rem 0;
 }
 
 .section-body {
@@ -89,8 +119,8 @@ a {
 }
 
 .jump-link-wrap {
-    width: 50%;
-    padding-left: 25%;
+    width: 66%;
+    margin-left: 17%;
     padding-bottom: 1rem;
     color: #FFFF55;
     font-size: medium;
@@ -103,6 +133,7 @@ a {
 
 .jump-link {
     font-weight: bold;
+    cursor: pointer;
 }
 
 .text-wrap {
@@ -256,10 +287,52 @@ a {
     height: 100%;
 }
 
+#control-panel-hidden {
+    right: 0;
+    width: 4rem;
+}
+
+#control-panel {
+    right: 4rem;
+    margin-right: 1px;
+    width: 12rem;
+    border-right: #FFFFFFbb 1px solid;
+    border-left: #FFFFFFbb 1px solid;
+}
+
+.control-panel {
+    position: fixed;
+    bottom: 4.5rem;
+    height: 4rem;
+    background-color: #000000ee;
+}
+
+.control-panel-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    font-size: xx-large;
+    font-family: sans-serif;
+    color: #FFFFFFbb;
+}
+.control-panel-button:hover {
+    background-color: #111111ee;
+}
+
 @media only screen and (max-width: 880px) {
 
     .col-wrap {
         width: 100%;
+    }
+
+    .jump-link-wrap {
+        width: 100%;
+        margin-left: 0;
     }
 
     .game-td {

@@ -984,6 +984,7 @@
                     "header": "Requirements",
                     "elements": [
                         {
+                            "full": true,
                             "bullets": [
                                 "Ragnarok DG-4 (all players)",
                                 "Upgraded Bows (1 per player)"
