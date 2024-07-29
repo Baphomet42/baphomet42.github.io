@@ -194,6 +194,7 @@ table {
 
 .maps-list-table {
     height: 100%;
+    width: auto;
     border: 0;
     border-collapse: collapse;
 }
@@ -331,6 +332,11 @@ table {
     }
 
     .jump-link-wrap {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .header-table {
         width: 100%;
         margin-left: 0;
     }
