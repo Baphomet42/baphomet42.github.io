@@ -123,7 +123,7 @@
     }
 
     .maps-list-wrap-outer {
-        width: calc(min(90vw, 70rem) - 1rem);
+        width: min(90vw, 70rem);
     }
 
 }
