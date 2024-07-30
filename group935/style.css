@@ -322,7 +322,7 @@ table {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    right: 0;
     height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -358,6 +358,10 @@ table {
 
     .maps-list-wrap-outer {
         width: calc(min(90vw, 70rem) - 1rem);
+    }
+
+    #parallax-background {
+        height: 200vw;
     }
 
 }
