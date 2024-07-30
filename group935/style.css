@@ -7,13 +7,6 @@ html {
     color: white;
 }
 
-body {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: serif;
 }
@@ -323,6 +316,19 @@ table {
 }
 .control-panel-button:hover {
     background-color: #111111ee;
+}
+
+#parallax-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
 }
 
 @media only screen and (max-width: 880px) {
