@@ -325,9 +325,7 @@ table {
     bottom: 0;
     right: 0;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
-    background-position: center;
     z-index: -1;
 }
 
