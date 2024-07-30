@@ -6,6 +6,7 @@
     "sections" : [
         {
             "header": "Map Features",
+            "links": true,
             "subsections": [
                 {
                     "header": "Power Switch",
@@ -490,8 +491,14 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/der_eisendrache/assets/.jpg",
+                                "src": "/group935/der_eisendrache/assets/152.jpg",
                                 "alt": "Glowing rock out the blast doors and to the right"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/der_eisendrache/assets/153.jpg",
+                                "alt": "Flaming orb shooting towards the Death Ray"
                             }
                         },
                         {
@@ -731,13 +738,25 @@
                             "full": true,
                             "step": {
                                 "title": "6. Shoot the symbol and get the arrow",
-                                "description": "In the undercroft, the wolf will stand under an opening in the wall. When low gravity is active, wall run towards the opening, then shoot the glowing symbol just above the opening (with a bow). A platform will appear that you can stand on. Stand on the platform and pick up the arrow from the skeleton's hand."
+                                "description": "In the undercroft, the wolf will stand under an opening in the wall. When low gravity is active, wall run towards the opening, then shoot the glowing symbol just above the opening with a bow. A platform will appear that you can stand on. Stand on the platform and interact on the hole to spawn a skeleton. Pick up the arrow from the skeleton's hand."
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/der_eisendrache/assets/.jpg",
-                                "alt": ""
+                                "src": "/group935/der_eisendrache/assets/149.jpg",
+                                "alt": "Glowing symbol above hole in wall"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/der_eisendrache/assets/150.jpg",
+                                "alt": "Where to interact to spawn the skeleton"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/der_eisendrache/assets/151.jpg",
+                                "alt": "The arrow in the skeleton's hand"
                             }
                         },
                         {
@@ -1633,7 +1652,7 @@
                 },
                 {
                     "header": "Replace Zombies with Skeletons",
-                    "description": "Using a bow, shoot 3 floating skulls while using the In Plain Sight gobblegum",
+                    "description": "Using a bow, shoot 3 floating skulls while using the In Plain Sight gobblegum. The skulls are only visible while the gobblegum is active.",
                     "elements": [
                         {
                             "pic": {
@@ -1663,6 +1682,18 @@
                             "pic": {
                                 "src": "/group935/der_eisendrache/assets/29.jpg",
                                 "alt": "Music box location"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Raven",
+                    "description": "The raven above Mule Kick can be shot and killed.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/der_eisendrache/assets/.jpg",
+                                "alt": "The raven"
                             }
                         }
                     ]

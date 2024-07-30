@@ -231,6 +231,11 @@ function pageRev2(data) {
 
 function pageRev1(data) {
     var page = ''
+
+    if(data.background) {
+        page += '<div id="parallax-background" style="background-image: url('+data.background+')"></div>'
+    }
+    
     page += '<div class="section">'
     page += '<h1 class="center">'+data.name+'</h1>'
     page += '<h3 class="center">'+data.subtext+'</h3>'

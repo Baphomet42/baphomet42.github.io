@@ -259,6 +259,18 @@ ul {
     color: #FFFF55;
 }
 
+#parallax-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    z-index: -1;
+}
+
 @media only screen and (max-width: 1000px) {
 
     .card-wrap-mid {
