@@ -154,7 +154,7 @@ function pageRev2(data) {
                 page += '<ul>';
                 $.each(section.subsections, function (subKey, sub) {
                     if(sub.header)
-                        page += '<li onclick="scrollToSubsection('+sectionKey+','+subKey+')" class="jump-link">'+sub.header+'</li>';
+                        page += '<li><span class="link" onclick="scrollToSubsection('+sectionKey+','+subKey+')">'+sub.header+'</span></li>';
                 })
                 page += '</ul></div>';
             }

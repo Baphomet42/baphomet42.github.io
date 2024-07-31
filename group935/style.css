@@ -51,6 +51,14 @@ table {
     padding: .5rem 0 .5rem 0;
 }
 
+.section-full {
+    padding: 2rem;
+    background-color: #00000099;
+    width: 95%;
+    margin: 1rem auto;
+    box-sizing: border-box;
+}
+
 .section {
     padding: 2rem;
     background-color: #00000099;
@@ -122,19 +130,6 @@ table {
 .jump-link-header {
     margin-bottom: .5rem;
     text-align: center;
-}
-
-.jump-link {
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.text-wrap {
-    padding: 2rem;
-    background-color: #00000099;
-    width: 95%;
-    margin: 1rem auto;
-    box-sizing: border-box;
 }
 
 .col-wrap {

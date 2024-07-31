@@ -196,6 +196,14 @@ ul {
     cursor: not-allowed;
 }
 
+.link {
+    font-weight: bold;
+    cursor: pointer;
+}
+.link:hover {
+    text-decoration: underline;
+}
+
 .slider {
     appearance: none;
     background-color: #333333;

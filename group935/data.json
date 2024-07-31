@@ -19,7 +19,7 @@
                 {"name": "Firebase Z", "link": "https://callofduty.fandom.com/wiki/Firebase_Z"},
                 {"name": "Outbreak", "link": "https://callofduty.fandom.com/wiki/Outbreak_(Cold_War)"},
                 {"name": "Mauer der Toten", "link": "https://callofduty.fandom.com/wiki/Mauer_der_Toten"},
-                {"name": "Forsaken", "link": "/group935/forsaken", "img": "https://callofdutymaps.com/wp-content/uploads/Forsaken-1.jpg"}
+                {"name": "Forsaken", "link": "/group935/zm/forsaken", "img": "https://callofdutymaps.com/wp-content/uploads/Forsaken-1.jpg"}
             ]
         },
         {
@@ -46,17 +46,17 @@
             "maps": [
                 {"name": "Shadows of Evil", "link": "https://callofduty.fandom.com/wiki/Shadows_of_Evil"},
                 {"name": "The Giant", "link": "https://callofduty.fandom.com/wiki/The_Giant"},
-                {"name": "Der Eisendrache", "link": "/group935/der_eisendrache", "img": "https://callofdutymaps.com/wp-content/uploads/dereisendracheloadscreen.jpg"},
+                {"name": "Der Eisendrache", "link": "/group935/zm/der_eisendrache", "img": "https://callofdutymaps.com/wp-content/uploads/dereisendracheloadscreen.jpg"},
                 {"name": "Zetsubou No Shima", "link": "https://callofduty.fandom.com/wiki/Zetsubou_No_Shima"},
-                {"name": "Gorod Krovi", "link": "/group935/gorod_krovi", "img": "https://callofdutymaps.com/wp-content/uploads/gorodkrovi29.jpg"},
-                {"name": "Revelations", "link": "/group935/revelations", "img": "https://callofdutymaps.com/wp-content/uploads/revelations1.jpg"},
+                {"name": "Gorod Krovi", "link": "/group935/zm/gorod_krovi", "img": "https://callofdutymaps.com/wp-content/uploads/gorodkrovi29.jpg"},
+                {"name": "Revelations", "link": "/group935/zm/revelations", "img": "https://callofdutymaps.com/wp-content/uploads/revelations1.jpg"},
                 {"name": "Nacht der Untoten", "link": "https://callofduty.fandom.com/wiki/Nacht_der_Untoten"},
                 {"name": "Verrückt", "link": "https://callofduty.fandom.com/wiki/Verrückt"},
                 {"name": "Shi No Numa", "link": "https://callofduty.fandom.com/wiki/Shi_No_Numa"},
                 {"name": "Kino der Toten", "link": "https://callofduty.fandom.com/wiki/Kino_der_Toten"},
                 {"name": "Ascension", "link": "https://callofduty.fandom.com/wiki/Ascension"},
                 {"name": "Shangri-La", "link": "https://callofduty.fandom.com/wiki/Shangri-La"},
-                {"name": "Moon", "link": "/group935/moon", "img": "https://callofdutymaps.com/wp-content/uploads/moon19.jpg"},
+                {"name": "Moon", "link": "/group935/zm/moon", "img": "https://callofdutymaps.com/wp-content/uploads/moon19.jpg"},
                 {"name": "Origins", "link": "https://callofduty.fandom.com/wiki/Origins"}
             ]
         },
@@ -85,7 +85,7 @@
                 {"name": "Ascension", "link": "https://callofduty.fandom.com/wiki/Ascension"},
                 {"name": "Call of the Dead", "link": "https://callofduty.fandom.com/wiki/Call_of_the_Dead"},
                 {"name": "Shangri-La", "link": "https://callofduty.fandom.com/wiki/Shangri-La"},
-                {"name": "Moon", "link": "/group935/moon", "img": "https://callofdutymaps.com/wp-content/uploads/moon19.jpg"},
+                {"name": "Moon", "link": "/group935/zm/moon", "img": "https://callofdutymaps.com/wp-content/uploads/moon19.jpg"},
                 {"name": "Nacht der Untoten", "link": "https://callofduty.fandom.com/wiki/Nacht_der_Untoten"},
                 {"name": "Verrückt", "link": "https://callofduty.fandom.com/wiki/Verrückt"},
                 {"name": "Shi No Numa", "link": "https://callofduty.fandom.com/wiki/Shi_No_Numa"},
