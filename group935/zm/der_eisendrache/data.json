@@ -141,7 +141,7 @@
                         {
                             "pic": {
                                 "src": "/group935/zm/der_eisendrache/assets/.jpg",
-                                "alt": "Location 2 - "
+                                "alt": "Location 2 - Above the door that leads to the teleporter"
                             }
                         },
                         {
@@ -159,7 +159,7 @@
                         {
                             "pic": {
                                 "src": "/group935/zm/der_eisendrache/assets/.jpg",
-                                "alt": "Location 1 - In the bell tower main level"
+                                "alt": "Location 1 - In the bell tower on the floor"
                             }
                         },
                         {
@@ -183,13 +183,13 @@
                         {
                             "pic": {
                                 "src": "/group935/zm/der_eisendrache/assets/2.jpg",
-                                "alt": "Location 1 - On some boxes near a baricade"
+                                "alt": "Location 1 - On some boxes near a barricade"
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/der_eisendrache/assets/.jpg",
-                                "alt": "Location 2 - "
+                                "alt": "Location 2 - At the bottom of some short stairs leading to a barricade"
                             }
                         },
                         {
@@ -225,7 +225,7 @@
                         {
                             "pic": {
                                 "src": "/group935/zm/der_eisendrache/assets/74.jpg",
-                                "alt": ""
+                                "alt": "Part over a dead Panzer"
                             }
                         }
                     ]
