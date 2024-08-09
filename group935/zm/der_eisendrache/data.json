@@ -93,7 +93,7 @@
                     ]
                 },
                 {
-                    "header": "Tram Fuses",
+                    "header": "Tram Fuse",
                     "description": "A tram fuse can be spent in spawn to get a random power-up.",
                     "elements": [
                         {
@@ -296,36 +296,6 @@
             "subsections": [
                 {
                     "header": "Part 1",
-                    "description": "Dropped when killing a Panzer",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/74.jpg",
-                                "alt": "Part over a dead Panzer"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "Part 2",
-                    "description": "Spawns in the sky after using the Death Ray trap (spawns in 2 possible locations). Pick up by using the correct Wundersphere, either in the courtyard or above Double Tap.",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/47.jpg",
-                                "alt": "Death Ray"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/48.jpg",
-                                "alt": "Part floating above the Death Ray (in the path of the courtyard Wundersphere)"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "Part 3",
                     "description": "Wait by the rocket until test launch starts. After the test starts, interact with the lever under the rocket. Then wait behind the blast doors until the test is over, and a control panel will light up. Interact with the panel, then pick up the part inside the teleporter.",
                     "elements": [
                         {
@@ -344,6 +314,42 @@
                             "pic": {
                                 "src": "/group935/zm/der_eisendrache/assets/39.jpg",
                                 "alt": "The part in the teleporter"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Part 2",
+                    "description": "Spawns in the sky after using the Death Ray trap (spawns in 1 of 2 possible locations). Pick up by using the correct Wundersphere, either in the courtyard or above Double Tap.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/der_eisendrache/assets/47.jpg",
+                                "alt": "Death Ray"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/der_eisendrache/assets/48.jpg",
+                                "alt": "Location 1 - In the path of the courtyard Wundersphere"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/der_eisendrache/assets/.jpg",
+                                "alt": "Location 2 - In the path of the Wundersphere above Double Tap"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Part 3",
+                    "description": "Dropped when killing a Panzer",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/der_eisendrache/assets/74.jpg",
+                                "alt": "Part over a dead Panzer"
                             }
                         }
                     ]
@@ -368,24 +374,24 @@
             "subsections": [
                 {
                     "header": "Dragon locations",
-                    "description": "After each kill, wait for the dragon animation to finish before killing the next zombie",
+                    "description": "After each kill, wait for the dragon animation to finish before killing the next zombie. When done, the dragon head will be destroyed.",
                     "elements": [
                         {
                             "pic": {
+                                "src": "/group935/zm/der_eisendrache/assets/8.jpg",
+                                "alt": "Location 1 - In the undercroft by the pyramid"
+                            }
+                        },
+                        {
+                            "pic": {
                                 "src": "/group935/zm/der_eisendrache/assets/6.jpg",
-                                "alt": "Location 1 - Near Double Tap, by the stairs that lead to the undercroft"
+                                "alt": "Location 2 - Near Double Tap, by the stairs that lead to the undercroft"
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/der_eisendrache/assets/7.jpg",
-                                "alt": "Location 2 - In the church near Speed Cola"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/8.jpg",
-                                "alt": "Location 3 - In the undercroft by the pyramid"
+                                "alt": "Location 3 - In the church near Speed Cola"
                             }
                         }
                     ]
@@ -440,14 +446,32 @@
                         },
                         {
                             "pic": {
+                                "src": "/group935/zm/der_eisendrache/assets/195.jpg",
+                                "alt": "Where to aim for location 1"
+                            }
+                        },
+                        {
+                            "pic": {
                                 "src": "/group935/zm/der_eisendrache/assets/53.jpg",
                                 "alt": "Location 2 - Out the spawn door that goes towards Double Tap"
                             }
                         },
                         {
                             "pic": {
+                                "src": "/group935/zm/der_eisendrache/assets/196.jpg",
+                                "alt": "Where to aim for location 2, match the height by where the spotlights switch directions"
+                            }
+                        },
+                        {
+                            "pic": {
                                 "src": "/group935/zm/der_eisendrache/assets/54.jpg",
                                 "alt": "Location 3 - At the rocket"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/der_eisendrache/assets/197.jpg",
+                                "alt": "Where to aim for location 3, a shortcut from above Double Tap. Keep the crosshair just left of the pine tree, and the left crosshair about as high as where the 2 mountains cross"
                             }
                         },
                         {
@@ -493,6 +517,24 @@
                             "step": {
                                 "title": "5. Electrify the 3 fires",
                                 "description": "Pull an arrow next to each of the urns, then shoot the sparking arrow into the nearest fire from step 2. The fire will have lightning around it when complete."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/der_eisendrache/assets/200.jpg",
+                                "alt": "Where to aim for bell tower location"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/der_eisendrache/assets/199.jpg",
+                                "alt": "Where to aim for Double Tap location"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/der_eisendrache/assets/198.jpg",
+                                "alt": "Where to aim for rocket location"
                             }
                         },
                         {
@@ -901,14 +943,14 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "3. Interact with the glowing purple object",
-                                "description": "When done, the object will rise from the ground and stay floating in the room."
+                                "title": "3. Interact with the glowing purple urn",
+                                "description": "When done, the urn will rise from the ground and stay floating in the room."
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/der_eisendrache/assets/122.jpg",
-                                "alt": "Floating object"
+                                "alt": "Floating urn"
                             }
                         },
                         {
@@ -957,27 +999,21 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "5. Kill zombies and pick up the purple symbol power-ups",
-                                "description": "Until all 6 symbols are placed in the circles around the floating object, zombies will randomly drop them as power-ups (only when killed by the player doing this quest)."
+                                "title": "5. Feed 6 crawling zombies to the skulls",
+                                "description": "All 6 skulls will now be floating above a circle in the room with the urn. Bring 6 crawling zombies into the circle, and a skull will kill each one. When done, all the skulls will be gone. Grenades can be used to create crawling zombies without killing them after a few rounds."
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/176.jpg",
-                                "alt": "One of the symbol drops"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/178.jpg",
-                                "alt": "Circle with all symbols collected"
+                                "src": "/group935/zm/der_eisendrache/assets/128.jpg",
+                                "alt": "All 6 skulls floating above the circle"
                             }
                         },
                         {
                             "full": true,
                             "step": {
                                 "title": "6. Remember the 3 names in the correct order",
-                                "description": "A voice will say three names that must be remembered (in the same order as spoken). The voice will repeat the names if you shoot the floating object with an arrow. The three names will be picked from the following: Crown, Door, Griffin, Heart, Horn, and Stag."
+                                "description": "A voice will say three names that must be remembered (in the same order as spoken). The three names will be picked from the following: Crown, Door, Griffin, Heart, Horn, and Stag. The voice will repeat the names if you shoot the floating urn with an arrow."
                             }
                         },
                         {
@@ -1032,8 +1068,27 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "8. Shoot the 3 symbols in the circle, and pick up the arrow",
-                                "description": "Go back to the room beneath the clock tower. Shoot the 3 symbols in the correct order. If done correctly, pick up the arrow that appears in the middle. If the symbols are wrong, you will take damage or be downed. Leave the room quickly to avoid taking damage."
+                                "title": "8. Kill zombies and pick up the purple symbol power-ups",
+                                "description": "Until all 6 symbols are placed in the circles around the floating urn, zombies will randomly drop them as power-ups (only when killed by the player doing this quest)."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/der_eisendrache/assets/176.jpg",
+                                "alt": "One of the symbol drops"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/der_eisendrache/assets/178.jpg",
+                                "alt": "Circle with all symbols collected"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "9. Shoot the 3 symbols in the circle, and pick up the arrow",
+                                "description": "Go back to the room beneath the clock tower. Use a bow to shoot the 3 symbols in the correct order. If done correctly, pick up the arrow that appears in the middle. If the symbols are wrong, you will take damage or be downed. Leave the room quickly to avoid taking damage."
                             }
                         },
                         {
@@ -1045,7 +1100,7 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "9. Get kills by the pyramid",
+                                "title": "10. Get kills by the pyramid",
                                 "description": "Place the arrow in the demon gate box next to the pyramid. Then, kill zombies next to the pyramid until no more souls fly towards the arrow (kills must be using a bow)."
                             }
                         },
@@ -1058,7 +1113,7 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "10. Aquire the upgraded bow",
+                                "title": "11. Aquire the upgraded bow",
                                 "description": "Place the original bow in the demon gate box, then grab the upgraded bow."
                             }
                         },
@@ -1781,19 +1836,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/173.jpg",
+                                "src": "/group935/zm/der_eisendrache/assets/173_edit.jpg",
                                 "alt": "Location 1 - Next to Double Tap"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/174.jpg",
+                                "src": "/group935/zm/der_eisendrache/assets/174_edit.jpg",
                                 "alt": "Location 2 - Behind Mule Kick"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/190.jpg",
+                                "src": "/group935/zm/der_eisendrache/assets/190_edit.jpg",
                                 "alt": "Location 3 - Outside the church, on the balcony"
                             }
                         }
