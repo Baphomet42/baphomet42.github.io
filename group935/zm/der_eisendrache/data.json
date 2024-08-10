@@ -336,7 +336,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/.jpg",
+                                "src": "/group935/zm/der_eisendrache/assets/201.jpg",
                                 "alt": "Location 2 - In the path of the Wundersphere above Double Tap"
                             }
                         }
@@ -620,6 +620,12 @@
                             }
                         },
                         {
+                            "pic": {
+                                "src": "/group935/zm/der_eisendrache/assets/204.jpg",
+                                "alt": "Shortcut location to aim from spawn to hit glowing rock"
+                            }
+                        },
+                        {
                             "full": true,
                             "step": {
                                 "title": "3. Ignite the 3 circles",
@@ -642,6 +648,12 @@
                             "pic": {
                                 "src": "/group935/zm/der_eisendrache/assets/95.jpg",
                                 "alt": "Location 3 - By the Death Ray"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/der_eisendrache/assets/205.jpg",
+                                "alt": "Shortcut location to aim from Death Ray Wundersphere to hit circle by Double Tap. Place left and right crosshairs over the two clouds, and shoot without charging the bow"
                             }
                         },
                         {
@@ -1752,19 +1764,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/71.jpg",
+                                "src": "/group935/zm/der_eisendrache/assets/71_edit.jpg",
                                 "alt": "Location 1 - On the catwalk across from the Double Tap dragon location"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/73.jpg",
+                                "src": "/group935/zm/der_eisendrache/assets/73_edit.jpg",
                                 "alt": "Location 2 - Directly through the door by Quick Revive"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/72.jpg",
+                                "src": "/group935/zm/der_eisendrache/assets/72_edit.jpg",
                                 "alt": "Location 3 - In the power room, near the door that leads to the church"
                             }
                         }
@@ -1796,8 +1808,15 @@
                 },
                 {
                     "header": "Plunger Melee Weapon",
-                    "description": "",
+                    "description": "The plunger replaces the melee attack, but deals the same amount of damage as the base knife. The upgraded attack will 1-hit kill any enemy.",
                     "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Place Ragnaroks by clock gears",
+                                "description": "Shoot the fire bow symbol in the upper floor of the clock tower to reveal the gears. Then, place your Ragnaroks directly next to the gears."
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "/group935/zm/der_eisendrache/assets/192.jpg",
@@ -1811,6 +1830,13 @@
                             }
                         },
                         {
+                            "full": true,
+                            "step": {
+                                "title": "2. Use the lever to set the clock to 9:35",
+                                "description": "Keep your Ragnaroks in the same position until the plunger is aquired. Even after the Ragnaroks run out of power, they will still allow the lever to be used. Interact with the lever to start and stop the clock from ticking, and move it from 1:15 to 9:35. The clock will tick louder every 12 ticks. The fastest you can interact with the lever on and off will normally advance the clock 2 ticks."
+                            }
+                        },
+                        {
                             "pic": {
                                 "src": "/group935/zm/der_eisendrache/assets/194.jpg",
                                 "alt": "Control lever"
@@ -1818,14 +1844,59 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/.jpg",
-                                "alt": ""
+                                "src": "/group935/zm/der_eisendrache/assets/208.jpg",
+                                "alt": "Clock at 9:35"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Time travel",
+                                "description": "Once the clock is successfully stopped at exactly 9:35, a sound will play, and the clock will tick forward once. Go to the undercroft, and there should be a blue orb above the pyramid, indicating the step worked. Then, wallrun over the blue symbol until you are sent to the past."
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/.jpg",
-                                "alt": ""
+                                "src": "/group935/zm/der_eisendrache/assets/202.jpg",
+                                "alt": "Orb above pyramid"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/der_eisendrache/assets/203.jpg",
+                                "alt": "Symbol to wallrun on"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "4. Aquire the plunger",
+                                "description": "You have a short time to pick up the plunger from the desk. Once aquired, it will permanently replace your melee attack. In order to time travel again, you must set the clock back to 9:35."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/der_eisendrache/assets/206.jpg",
+                                "alt": "Plunger sitting on desk"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/der_eisendrache/assets/207.jpg",
+                                "alt": "Plunger melee attack"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "5. Upgrade the plunger",
+                                "description": "Every time you kill a panzer with any weapon, the plunger will become upgraded for a short amount of time. While upgraded, it will 1-hit kill all enemies."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/der_eisendrache/assets/209.jpg",
+                                "alt": "Upgraded plunger attack"
                             }
                         }
                     ]
