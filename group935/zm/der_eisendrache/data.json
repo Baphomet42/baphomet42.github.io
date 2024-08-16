@@ -296,7 +296,7 @@
             "subsections": [
                 {
                     "header": "Part 1",
-                    "description": "Wait by the rocket until test launch starts. After the test starts, interact with the lever under the rocket. Then wait behind the blast doors until the test is over, and a control panel will light up. Interact with the panel, then pick up the part inside the teleporter.",
+                    "description": "Wait by the rocket until test launch starts. After the test starts, interact with the lever under the rocket. Then wait behind the blast doors until the test is over, and a control panel will light up green. Interact with the panel, then pick up the part inside the teleporter.",
                     "elements": [
                         {
                             "pic": {
@@ -1246,7 +1246,7 @@
                     ]
                 },
                 {
-                    "header": "4. Time travel",
+                    "header": "4. Time travel #1",
                     "description": "This must be done in the same round as the 3 wisps were shot. After teleporting to the past, there is a short timer to complete the step.",
                     "elements": [
                         {
@@ -1265,7 +1265,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/68.jpg",
+                                "src": "/group935/zm/der_eisendrache/assets/68_edit.jpg",
                                 "alt": "Small fuses on a wooden box"
                             }
                         },
@@ -1453,7 +1453,7 @@
                     ]
                 },
                 {
-                    "header": "11. Time travel (again)",
+                    "header": "11. Time travel #2",
                     "description": "You can start the next step already, but this will need to be done before the next step can be finished.",
                     "elements": [
                         {
@@ -1502,7 +1502,7 @@
                 },
                 {
                     "header": "12. Summon the keeper ghost",
-                    "description": "This can be done before finishing the previous step, but dogs will keep spawning in until the next step is completed",
+                    "description": "This can be done before finishing the previous step, but dogs will keep spawning in until the next step is completed. It is also recommended to have one bow upgraded per player before doing this step.",
                     "elements": [
                         {
                             "full": true,
@@ -1526,7 +1526,7 @@
                 },
                 {
                     "header": "13. Get kills in each of the 4 keeper ghost locations",
-                    "description": "The location by Double Tap requires the slab from the second time travel step, but the other locations can be done beforehand.",
+                    "description": "The location by Double Tap requires the slab from the second time travel step, but the other locations can be done beforehand. One bow must be upgraded per player to complete this step.",
                     "elements": [
                         {
                             "full": true,
@@ -1788,19 +1788,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/.jpg",
+                                "src": "/group935/zm/der_eisendrache/assets/210.jpg",
                                 "alt": "Flower pot location"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/.jpg",
+                                "src": "/group935/zm/der_eisendrache/assets/211.jpg",
                                 "alt": "Flower pot back in time"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/.jpg",
+                                "src": "/group935/zm/der_eisendrache/assets/212.jpg",
                                 "alt": "Flower pot back in present"
                             }
                         }
