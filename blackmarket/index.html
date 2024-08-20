@@ -23,10 +23,11 @@
                 <p class="item-header">Black Market</p>
                 <br>
                 <p class="item-subtitle">Copy and paste into a command block to get the custom item. You must have operator permissions to run the command.</p>
-                <p class="item-subtitle">Items made for 1.21+</p>
+                <span class="item-subtitle">Data version: </span>
+                <select id="data-version" style="font-size:large" onchange="rebuildPage(this.value)"></select>
             </div></td>
         
-            </tr><tr class="card-table-row" id="item-cards">
+            <tr class="card-table-row" id="item-cards"></tr>
 
         </tr></table>
 
@@ -34,36 +35,72 @@
     <div data-include="/template/footer" id="footer"></div>
 
     <script>
-        var item_cmd = [];
+        var item_cmd = []
+        var data = {}
 
         $(function () {
-            $.getJSON("items.json", function (data) {
-                var i = 0;
-                $.each(data.items_45, function (key, value) {
-                    var item = '';
-                    item += '<td class="card-wrap-item">';
-                    item += '<div class="item-card tooltip">';
-                    item += '<p class="item-name center">' + value.name + '</p>';
-                    item += '<p class="item-desc">' + value.description + '</p>';
-                    item += '<table class="card-table"><tr>';
-                    item += '<td class="item-copy-wrap">';
-                    item += '<button onClick="copyText(' + i + ')" class="copy-button button">Copy</button>';
-                    item += '</td>';
-                    item += '<td class="item-cmd-wrap">';
-                    item += '<input type="text" readonly class="item-cmd" value="/summon item ~ ~ ~ {Item:' + value.item.replace(/"/g,"&quot;").replace(/\u00a7/g,"\\\\u00a7") + '}">';
-                    item += '</td>';
-                    item += '</tr></table>';
-                    item += '</div>';
-                    item += '</td>';
-                    $('#item-cards').append(item);
-                    item_cmd.push("/summon item ~ ~ ~ {Item:" + value.item.replace(/\u00a7/g,"\\\\u00a7") + "}");
-                    i++;
-                });
-            });
+            $.getJSON("items.json", function (json_data) {
+                data = json_data
+                var version_num = 0
+                var default_found = false
+
+                var select_inner = ""
+
+                $.each(data.versions, function (versions_i, version_data) {
+                    if(version_data.version === data.default_version)
+                        default_found = true
+                    version_num = version_data.version
+
+                    select_inner += '<option value="'+version_data.version+'">'+version_data.label+'</option>'
+                })
+
+                if(default_found)
+                    version_num = data.default_version
+
+                var select_list = document.getElementById("data-version")
+                select_list.innerHTML = select_inner
+                select_list.value = version_num
+
+                rebuildPage(version_num)
+            })
         });
 
         function copyText(i) {
-            navigator.clipboard.writeText(item_cmd[i]);
+            navigator.clipboard.writeText(item_cmd[i])
+        }
+
+        function rebuildPage(ver) {
+            var i = 0
+            item_cmd = []
+            item_cards_inner = ""
+
+            $.each(data.versions, function (versions_i, version_data) {
+                if(version_data.version == ver) {
+                    $.each(version_data.items, function (key, value) {
+                        var item = ''
+                        item += '<td class="card-wrap-item">'
+                        item += '<div class="item-card tooltip">'
+                        item += '<p class="item-name center">' + value.name + '</p>'
+                        item += '<p class="item-desc">' + value.description + '</p>'
+                        item += '<table class="card-table"><tr>'
+                        item += '<td class="item-copy-wrap">'
+                        item += '<button onClick="copyText(' + i + ')" class="copy-button button">Copy</button>'
+                        item += '</td>'
+                        item += '<td class="item-cmd-wrap">'
+                        item += '<input type="text" readonly class="item-cmd" value="/summon item ~ ~ ~ {Item:' + value.item.replace(/"/g,"&quot;").replace(/\u00a7/g,"\\\\u00a7") + '}">'
+                        item += '</td>'
+                        item += '</tr></table>'
+                        item += '</div>'
+                        item += '</td>'
+                        item_cards_inner += item
+
+                        item_cmd.push("/summon item ~ ~ ~ {Item:" + value.item.replace(/\u00a7/g,"\\\\u00a7") + "}")
+                        i++
+                    })
+                }
+            })
+            
+            document.getElementById("item-cards").innerHTML = item_cards_inner
         }
     </script>
 
