@@ -4,9 +4,10 @@
             "id": "bo6",
             "name": "Black Ops 6",
             "year": 2024,
+            "img": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blackops6/meta/BO6_LP-meta_image.jpg",
             "maps": [
-                {"name": "Terminus"},
-                {"name": "Liberty Falls"}
+                {"name": "Terminus", "link": "/group935/zm/terminus", "img": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/bo6/BO6-ZOMBIES-888-001.jpg"},
+                {"name": "Liberty Falls", "link": "/group935/zm/liberty_falls", "img": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/bo6/BO6-ZOMBIES-888-002.jpg"}
             ]
         },
         {
