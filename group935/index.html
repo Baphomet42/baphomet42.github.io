@@ -71,10 +71,16 @@
             $.each(value.maps, function (mapKey, mapVal) {
                 game += '<td class="map-td center">'
                 if(mapVal.link) {
-                    if(mapVal.link[0]=='/')
+                    if(mapVal.img)
                         game += '<a href="'+mapVal.link+'" rel="noopener noreferrer"><div class="map-button" style="background-image: url('+mapVal.img+')">'
                     else
-                        game += '<a href="'+mapVal.link+'" rel="noopener noreferrer"><div class="map-button map-nocustom">'
+                        game += '<a href="'+mapVal.link+'" rel="noopener noreferrer"><div class="map-button">'
+                }
+                else if(mapVal.fallback) {
+                    if(mapVal.img)
+                        game += '<a href="'+mapVal.fallback+'" rel="noopener noreferrer" target="_blank"><div class="map-button map-fallback" style="background-image: url('+mapVal.img+')">'
+                    else
+                        game += '<a href="'+mapVal.fallback+'" rel="noopener noreferrer" target="_blank"><div class="map-button map-fallback">'
                 }
                 else
                     game += '<div class="map-button map-nolink">'

@@ -97,9 +97,13 @@
     box-shadow: inset 0 0 .3rem .3rem black;
 }
 
-.map-nocustom:hover {
+.map-fallback {
+    box-shadow: inset 0 0 .3rem .3rem black, inset 0 0 10rem 10rem #33000099;
+}
+
+.map-fallback:hover {
     background-image: radial-gradient(#444444aa, #666666aa);
-    box-shadow: inset 0 0 .3rem .3rem red;
+    box-shadow: inset 0 0 .3rem .3rem red, inset 0 0 10rem 10rem #33000099;
 }
 
 .map-name {
