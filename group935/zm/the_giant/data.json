@@ -4,5 +4,175 @@
     "background": "assets/background.jpg",
     "rev": 2,
     "sections" : [
+        {
+            "header": "Map Features",
+            "links": true,
+            "subsections": [
+                {
+                    "header": "Power Switch",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/the_giant/assets/5.jpg",
+                                "alt": "Power switch location"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Pack-a-Punch",
+                    "description": "Interact with all 3 teleporters to unlock PaP. After interacting with a teleporter, you have a short time to interact with the mainframe.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/the_giant/assets/1.jpg",
+                                "alt": "Teleporter mainframe"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/the_giant/assets/2.jpg",
+                                "alt": "Teleporter A"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/the_giant/assets/3.jpg",
+                                "alt": "Teleporter B"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/the_giant/assets/4.jpg",
+                                "alt": "Teleporter C"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/the_giant/assets/9.jpg",
+                                "alt": "Unlocked Pack-a-Punch machine"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Main Quest (Annihilator Special Weapon)",
+            "links": true,
+            "subsections": [
+                {
+                    "header": "Requirements",
+                    "elements": [
+                        {
+                            "full": true,
+                            "bullets": [
+                                "At least 1 Pack-a-Punched weapon"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "header": "1. Shoot the fly trap panel with an upgraded weapon",
+                    "description": "The panel is located stage-left of the teleporter mainframe, outside a barrier.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/the_giant/assets/12.jpg",
+                                "alt": "The panel seen outside the map"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Shoot the 3 hidden objects",
+                    "description": "Three objects will spawn in the map and can be shot in any order with any weapon.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/the_giant/assets/13.jpg",
+                                "alt": "Location 1 - In a hole in the wall beneath Teleporter A"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/the_giant/assets/14.jpg",
+                                "alt": "Location 2 - In a large vat near Teleporter B"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/the_giant/assets/15.jpg",
+                                "alt": "Location 3 - On a balcony above the power switch"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Obtain the Annihilator",
+                    "description": "Interact with the furnace to get the Annihilator special weapon. Each player who picks up the Annihilator will earn the gateworm for this map.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/the_giant/assets/16.jpg",
+                                "alt": "Furnace location, between the mainframe and Teleporter B"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Song",
+            "subsections": [
+                {
+                    "header": "Beauty of Annihilation (Remix)",
+                    "description": "Interact with 3 jars.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/the_giant/assets/6.jpg",
+                                "alt": "Location 1 - Outside Teleporter A, on a desk"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/the_giant/assets/7.jpg",
+                                "alt": "Location 2 - Outside Teleporter A, on a shelf"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/the_giant/assets/8.jpg",
+                                "alt": "Location 3 - In the side room from Teleporter B, on a desk"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Hidden Perk Side Quest",
+            "subsections": [
+                {
+                    "header": "Unlock either a Stamin-Up or Deadshot Daiquiri perk machine",
+                    "description": "Teleport a monkey bomb using each of the 3 teleporters, then interact with the button at the mainframe.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/the_giant/assets/10.jpg",
+                                "alt": "Button lit up after the monkey bombs were teleported"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/the_giant/assets/11.jpg",
+                                "alt": "The uncovered perk machine"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
     ]
 }

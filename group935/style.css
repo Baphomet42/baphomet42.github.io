@@ -51,6 +51,10 @@ table {
     padding: .5rem 0 .5rem 0;
 }
 
+.back-button-wrap {
+    position: absolute;
+}
+
 .section-full {
     padding: 2rem;
     background-color: #00000099;
@@ -214,6 +218,11 @@ table {
     .header-table {
         width: 100%;
         margin-left: 0;
+    }
+
+    .back-button-wrap {
+        position: static;
+        margin-bottom: 1rem;
     }
 
 }
