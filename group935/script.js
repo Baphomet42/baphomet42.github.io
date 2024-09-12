@@ -243,6 +243,7 @@ function pageRev1(data) {
     }
     
     page += '<div class="section">'
+    page += '<div class="back-button-wrap"><a class="button back-button" href="/group935" rel="noopener noreferrer">< All Maps</a></div>'
     page += '<h1 class="center">'+data.name+'</h1>'
     page += '<h3 class="center">'+data.subtext+'</h3>'
     page += '<br/>'
