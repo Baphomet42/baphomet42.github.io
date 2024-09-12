@@ -120,15 +120,15 @@ function pageRev2(data) {
     page += '<div class="back-button-wrap"><a class="button back-button" href="/group935" rel="noopener noreferrer">< All Maps</a></div>'
     page += '<h1 class="center">'+data.name+'</h1>'
     page += '<h3 class="center">'+data.subtext+'</h3>'
-    page += '<div class="header-table"><table><tr>'
+    if(data.wip) {
+        page += '<h1 class="wip">- WIP -</h1>'
+    }
     if(data.sections.length > 0) {
+        page += '<div class="header-table"><table><tr>'
         page += '<td onclick="collapseAll(2)" class="collapse-button header-table-button">[Collapse All]</td>'
         page += '<td onclick="collapseAll(0)" class="collapse-button header-table-button">[Expand All]</td>'
+        page += '</tr></table></div>'
     }
-    else {
-        page += '<td class="header-table-button"><h1>WIP</h1></td>'
-    }
-    page += '</tr></table></div>'
     page += '</div>'
 
     pageData.sections = []

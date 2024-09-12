@@ -1,38 +1,228 @@
 {
     "name": "Moon",
-    "subtext": "Black Ops | Black Ops 3",
+    "subtext": "Black Ops | Black Ops III",
     "background": "https://callofdutymaps.com/wp-content/uploads/moon19.jpg",
-    "rev": 1,
+    "rev": 2,
+    "wip": true,
     "sections" : [
         {
-            "header": "Main Easter Egg",
-            "rows": [
+            "header": "Map Features",
+            "links": true,
+            "subsections": [
                 {
-                    "cols": [
+                    "header": "Power Switch",
+                    "elements": [
                         {
-                            "header": "Requirements",
-                            "elements": [
-                                {
-                                    "html": [
-                                        "<p>Black Ops version only</p>",
-                                        "<li>2+ players</li>",
-                                        "<li>Call of the Dead easter egg</li>",
-                                        "<li>Shangri-La easter egg</li>",
-                                        "<p>Both versions</p>",
-                                        "<li>Wave Gun (from mystery box)</li>",
-                                        "<li>Q.E.D. (from mystery box)</li>",
-                                        "<li>Gersh Device (from mystery box)</li>"
-                                    ]
-                                }
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": "Power switch location"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Pack-a-Punch",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "P.E.S. (Pressurized External Suit)",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Hacker Device",
+            "links": true,
+            "subsections": [
+                {
+                    "header": "Device Locations",
+                    "description": "The device can only be found if no one currently has it. You cannot have the Hacker Device at the same time as a P.E.S. helmet.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": "Location 1 -"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": "Location 2 -"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": "Location 3 -"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": "Location 4 -"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": "Location 5 -"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": "Location 6 -"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Excavators",
+            "links": true,
+            "subsections": [
+                {
+                    "header": "",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Main Quest",
+            "links": true,
+            "subsections": [
+                {
+                    "header": "Requirements",
+                    "elements": [
+                        {
+                            "full": true,
+                            "bullets": [
+                                "Wave Gun (from Mystery Box)",
+                                "Q.E.D. (from Mystery Box)",
+                                "Gersh Device (from Mystery Box)",
+                                "Black Ops 1 only - 2 or more players",
+                                "Black Ops 1 only - Call of the Dead main quest (at least one player)",
+                                "Black Ops 1 only - Shangri-La main quest (at least one player)"
                             ]
                         }
                     ]
                 },
                 {
-                    "cols": [
+                    "header": "1. ",
+                    "description": ".",
+                    "elements": [
                         {
-                            "header": "Steps",
-                            "elements": [{"youtube": "AeoA2fUTX7Y"}]
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Song",
+            "subsections": [
+                {
+                    "header": "Coming Home",
+                    "description": "Interact with 3 teddy bears.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": "Location 1 - Next to the launch pad beneath the Receiving Bay"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": "Location 2 - In the airlock between Tunnel 6 and the M.P.D. room"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": "Location 3 - On a shelf near Stamin-Up in Tunnel 11"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Side Easter Eggs",
+            "subsections": [
+                {
+                    "header": "Space Dog",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": ""
+                            }
                         }
                     ]
                 }

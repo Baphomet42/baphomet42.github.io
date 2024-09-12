@@ -1,12 +1,13 @@
 {
     "name": "Revelations",
-    "subtext": "Black Ops 3",
+    "subtext": "Black Ops III",
     "background": "https://callofdutymaps.com/wp-content/uploads/revelations1.jpg",
     "rev": 1,
     "maps": [{
         "img": "https://external-preview.redd.it/FP5nbmkR_vpTnVe1b243HbS1X8eBwAEFXhMH0C9F-Uw.jpg?width=1080&crop=smart&auto=webp&s=514e77929b98c50e5fbffd573b337d6866aa9aa1",
         "link": "https://www.reddit.com/r/CODZombies/comments/564net/so_there_wasnt_a_detailed_revelations_map_that/"
     }],
+    "wip": true,
     "sections" : [
         {
             "header": "Power & Pack a Punch",

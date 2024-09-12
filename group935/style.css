@@ -55,6 +55,13 @@ table {
     position: absolute;
 }
 
+.wip {
+    font-family: sans-serif;
+    color: #FF5555;
+    text-shadow: 2px 2px 0 white, 2px -2px 0 white, -2px 2px 0 white, -2px -2px 0 white;
+    padding: .5rem;
+}
+
 .section-full {
     padding: 2rem;
     background-color: #00000099;

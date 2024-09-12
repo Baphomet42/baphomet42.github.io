@@ -3,6 +3,7 @@
     "subtext": "Black Ops 6",
     "background": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/bo6/BO6-ZOMBIES-888-001.jpg",
     "rev": 2,
+    "wip": true,
     "sections" : [
     ]
 }

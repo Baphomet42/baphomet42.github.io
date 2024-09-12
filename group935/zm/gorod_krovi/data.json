@@ -1,11 +1,12 @@
 {
     "name": "Gorod Krovi",
-    "subtext": "Black Ops 3",
+    "subtext": "Black Ops III",
     "background": "https://callofdutymaps.com/wp-content/uploads/gorodkrovi29.jpg",
     "rev": 1,
     "maps": [{
         "img": "https://steamuserimages-a.akamaihd.net/ugc/1484450726083233828/E627AB033A6CC98DE5BBF2FFD7A6AEA320D05BA3/"
     }],
+    "wip": true,
     "sections" : [
         {
             "header": "Main Easter Egg",
