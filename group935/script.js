@@ -247,6 +247,10 @@ function pageRev1(data) {
     page += '<h3 class="center">'+data.subtext+'</h3>'
     page += '<br/>'
     page += '<div class="center"><a href="'+data.wiki+'" rel="noopener noreferrer" target="_blank" class="button">Call of Duty Wiki</a></div>'
+    if(data.wip) {
+        page += '<br/>'
+        page += '<h1 class="wip">- WIP -</h1>'
+    }
     page += '</div>'
 
     if(data.maps) {
