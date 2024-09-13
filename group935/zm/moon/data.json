@@ -50,7 +50,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
+                                "src": "/group935/zm/moon/assets/50.jpg",
                                 "alt": "Teleporter location"
                             }
                         },
@@ -75,7 +75,7 @@
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/21.jpg",
-                                "alt": ""
+                                "alt": "The Bio-Dome after being breached by Excavator Epsilon"
                             }
                         }
                     ]
@@ -88,42 +88,12 @@
             "subsections": [
                 {
                     "header": "Device Locations",
-                    "description": "The device can only be found if no one currently has it. You cannot have the Hacker Device at the same time as a P.E.S. helmet.",
+                    "description": "The device can spawn in any level of the Laboratories and can only be found if no one currently has it. You cannot have the Hacker Device at the same time as a P.E.S. helmet.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/13.jpg",
-                                "alt": "Location 1 -"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": "Location 2 -"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": "Location 3 -"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": "Location 4 -"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": "Location 5 -"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": "Location 6 -"
+                                "alt": "The Hacker Device sitting on a yellow paper"
                             }
                         }
                     ]
@@ -142,7 +112,7 @@
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/22.jpg",
-                                "alt": ""
+                                "alt": "The gates closed around the PaP machine"
                             }
                         },
                         {
@@ -154,8 +124,8 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": ""
+                                "src": "/group935/zm/moon/assets/20.jpg",
+                                "alt": "One of the 3 excavator control panels"
                             }
                         },
                         {
@@ -166,22 +136,10 @@
                             }
                         },
                         {
-                            "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
                             "full": true,
                             "step": {
                                 "title": "Mystery Box Reroll",
                                 "description": "600 points - reroll the weapon in the box. Hack the rerolled weapon to refund 950 points and allow another player to pick up the weapon."
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": ""
                             }
                         },
                         {
@@ -192,22 +150,10 @@
                             }
                         },
                         {
-                            "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
                             "full": true,
                             "step": {
                                 "title": "Perk Machines",
                                 "description": "Free - Refund a perk to get your money back."
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": ""
                             }
                         },
                         {
@@ -218,22 +164,10 @@
                             }
                         },
                         {
-                            "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
                             "full": true,
                             "step": {
                                 "title": "Doors",
                                 "description": "200 points - open the door (this takes over 30 seconds)."
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": ""
                             }
                         },
                         {
@@ -255,12 +189,6 @@
                                 "title": "Barriers",
                                 "description": "Repair the window and receive 100 points. After 2 times, it will start costing money."
                             }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": ""
-                            }
                         }
                     ]
                 }
@@ -277,7 +205,7 @@
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/20.jpg",
-                                "alt": ""
+                                "alt": "A lit up control panel with the lit up excavator in the distance"
                             }
                         }
                     ]
@@ -289,7 +217,7 @@
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/31.jpg",
-                                "alt": ""
+                                "alt": "Excavator Pi blocking Tunnel 6"
                             }
                         }
                     ]
@@ -330,9 +258,9 @@
                         {
                             "full": true,
                             "bullets": [
-                                "Wave Gun (from Mystery Box)",
-                                "Q.E.D. (from Mystery Box)",
-                                "Gersh Device (from Mystery Box)",
+                                "Wave Gun - from Mystery Box",
+                                "Gersh Device - from Mystery Box",
+                                "Quantum Entanglement Device (Q.E.D.) - from Mystery Box",
                                 "Black Ops 1 only - 2 or more players",
                                 "Black Ops 1 only - Call of the Dead main quest (at least one player)",
                                 "Black Ops 1 only - Shangri-La main quest (at least one player)"
@@ -342,12 +270,12 @@
                 },
                 {
                     "header": "1. Samantha Says",
-                    "description": "After turning on the power, the 4 terminals outside Tunnel 6 will flash a color. Interact with the screens to play Samantha Says.",
+                    "description": "After turning on the power, the 4 terminals outside Tunnel 6 will flash a color. Interact with the screens to play Samantha Says. The color order is always Red, Green, Blue, Yellow.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/15.jpg",
-                                "alt": ""
+                                "alt": "Samantha Says location"
                             }
                         }
                     ]
@@ -364,7 +292,7 @@
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/16.jpg",
-                                "alt": ""
+                                "alt": "Location to hack"
                             }
                         },
                         {
@@ -376,7 +304,7 @@
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/17.jpg",
-                                "alt": ""
+                                "alt": "One of the panels lit up green"
                             }
                         },
                         {
@@ -388,7 +316,7 @@
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/18.jpg",
-                                "alt": ""
+                                "alt": "All 4 buttons lit after being pressed in time"
                             }
                         }
                     ]
@@ -400,14 +328,13 @@
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/31.jpg",
-                                "alt": ""
+                                "alt": "Excavator Pi breaching Tunnel 6"
                             }
                         }
                     ]
                 },
                 {
                     "header": "4. Move the Vril Sphere",
-                    "description": "",
                     "elements": [
                         {
                             "full": true,
@@ -418,25 +345,25 @@
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/32.jpg",
-                                "alt": ""
+                                "alt": "Vril Sphere starting location"
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/33.jpg",
-                                "alt": ""
+                                "alt": "Move 1 - on the floor"
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/34.jpg",
-                                "alt": ""
+                                "alt": "Move 2 - by the Tunnel 6 sign"
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/35.jpg",
-                                "alt": ""
+                                "alt": "Move 3 - waiting for the player to open the door"
                             }
                         },
                         {
@@ -448,7 +375,7 @@
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/36.jpg",
-                                "alt": ""
+                                "alt": "Move 4 - on the satellite dish"
                             }
                         },
                         {
@@ -460,37 +387,37 @@
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/37.jpg",
-                                "alt": ""
+                                "alt": "Move 5 - waiting for the player to open the Tunnel 11 door"
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/38.jpg",
-                                "alt": ""
+                                "alt": "Move 6 - on the wall by some pipes"
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/39.jpg",
-                                "alt": ""
+                                "alt": "Move 7 - on the ceiling near a red glowing barrier"
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/40.jpg",
-                                "alt": ""
+                                "alt": "Move 8 - on some boxes by the door"
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/41.jpg",
-                                "alt": ""
+                                "alt": "Move 9 - waiting for the player to open the door"
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/42.jpg",
-                                "alt": ""
+                                "alt": "Vril Sphere in the M.P.D."
                             }
                         }
                     ]
@@ -502,7 +429,7 @@
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/43.jpg",
-                                "alt": ""
+                                "alt": "The empty container"
                             }
                         }
                     ]
@@ -514,38 +441,19 @@
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/44.jpg",
-                                "alt": ""
+                                "alt": "The lever on the wall behind the filled container"
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/45.jpg",
-                                "alt": ""
+                                "alt": "Samantha floating above the opened M.P.D."
                             }
                         }
                     ]
                 },
                 {
-                    "header": "7. Find the Missing Wire",
-                    "description": "This can be picked up during any point of the game, and will spawn in one of X locations. Place the wire into the machine in the Receiving Bay.",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "/group935/zm/moon/assets/14.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": ""
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "8. Teleport the Plates",
-                    "description": "",
+                    "header": "7. Teleport the Plates",
                     "elements": [
                         {
                             "full": true,
@@ -580,7 +488,7 @@
                         {
                             "full": true,
                             "step": {
-                                "description": "Throw a Q.E.D. onto the plates to send them over to the machine where the wire part was placed."
+                                "description": "Throw a Q.E.D. onto the plates to send them over to a machine across the room."
                             }
                         },
                         {
@@ -591,8 +499,44 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
+                                "src": "/group935/zm/moon/assets/51.jpg",
                                 "alt": "The plates in the machine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "8. Find the Missing Wire",
+                    "description": "This can be picked up during any point of the game, and will spawn in one of X(TODO) locations.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/14.jpg",
+                                "alt": "Location 1 - top floor of the Laboratories, on a shelf"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/49.jpg",
+                                "alt": "Location 2 - top floor of the Laboratories, by Deadshot Daiquiri"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "description": "Place the wire into the machine from the previous step."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/52.jpg",
+                                "alt": "The wire connecting a computer to the machine"
                             }
                         }
                     ]
@@ -603,8 +547,20 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": ""
+                                "src": "/group935/zm/moon/assets/53.jpg",
+                                "alt": "The Vril Device in the machine"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/54.jpg",
+                                "alt": "The computer keyboard to interact"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/55.jpg",
+                                "alt": "The fully charged Vril Device"
                             }
                         }
                     ]
@@ -615,8 +571,8 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": ""
+                                "src": "/group935/zm/moon/assets/56.jpg",
+                                "alt": "The 4 empty containers around the M.P.D."
                             }
                         }
                     ]
@@ -627,8 +583,14 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": ""
+                                "src": "/group935/zm/moon/assets/57.jpg",
+                                "alt": "The slot to place the Vril Device"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/59.jpg",
+                                "alt": "Blue-eyed zombies controlled by Richtofen"
                             }
                         }
                     ]
@@ -639,20 +601,20 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": ""
+                                "src": "/group935/zm/moon/assets/58.jpg",
+                                "alt": "Samantha Says location"
                             }
                         }
                     ]
                 },
                 {
                     "header": "13. Move the Vril Sphere Again",
-                    "description": "Throw a Q.E.D. at the front of the M.P.D. to displace the Vril Sphere. Then shoot it until it stops by the Samantha Says terminals.",
+                    "description": "Throw a Q.E.D. at the front of the M.P.D. to displace the Vril Sphere. It will be teleported next to the Samantha Says terminals.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": ""
+                                "src": "/group935/zm/moon/assets/60.jpg",
+                                "alt": "The Vril Sphere after being teleported with the Q.E.D."
                             }
                         }
                     ]
@@ -663,8 +625,8 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": ""
+                                "src": "/group935/zm/moon/assets/61.jpg",
+                                "alt": "A Gersh Device on the Vril Sphere"
                             }
                         }
                     ]
@@ -726,7 +688,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
+                                "src": "/group935/zm/moon/assets/25.jpg",
                                 "alt": "Teddy bear, on a wall inside Bio-Dome"
                             }
                         },
