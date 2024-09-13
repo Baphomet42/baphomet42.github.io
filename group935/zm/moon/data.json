@@ -10,11 +10,35 @@
             "links": true,
             "subsections": [
                 {
+                    "header": "Groom Lake Teleporter",
+                    "description": "At the start of the game, zombies and dogs will spawn forever until all players stand on the teleporter. After teleporting to the moon, all players must equip the P.E.S. helmet before running out of air.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/1.jpg",
+                                "alt": "Teleporter"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "P.E.S. (Pressurized External Suit)",
+                    "description": "The helmet can be found directly next to where players are teleported inside the Receiving Bay. After aquiring a helmet, the player must equip it. The helmet can be removed at any time, but the player will run out of air in most areas of the map. The P.E.S. helmet can also be found in every airlock in the map.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/5.jpg",
+                                "alt": "P.E.S. location"
+                            }
+                        }
+                    ]
+                },
+                {
                     "header": "Power Switch",
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
+                                "src": "/group935/zm/moon/assets/9.jpg",
                                 "alt": "Power switch location"
                             }
                         }
@@ -22,23 +46,35 @@
                 },
                 {
                     "header": "Pack-a-Punch",
-                    "description": "",
+                    "description": "To teleport back to Groom Lake, all players must stand on the teleporter outside of the Bio-Dome. The teleporter will be on cooldown for several minutes after returning.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": ""
+                                "alt": "Teleporter location"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/2.jpg",
+                                "alt": "Pack-a-Punch location"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/23.jpg",
+                                "alt": "Teleporter on cooldown"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "P.E.S. (Pressurized External Suit)",
-                    "description": "",
+                    "header": "Decompression",
+                    "description": "There are only a few places with air and normal gravity. With the exceptions of Groom Lake and the airlocks, these other rooms can all become decompressed during the game, and cannot be undone. The 3 excavators can cause decompression in Tunnel 6, Tunnel 11, and Bio-Dome. In the Receiving Bay and the Laboratories, the glass can be shot out to cause decompression.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
+                                "src": "/group935/zm/moon/assets/21.jpg",
                                 "alt": ""
                             }
                         }
@@ -56,7 +92,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
+                                "src": "/group935/zm/moon/assets/13.jpg",
                                 "alt": "Location 1 -"
                             }
                         },
@@ -93,9 +129,133 @@
                     ]
                 },
                 {
-                    "header": "",
-                    "description": "",
+                    "header": "Hacking",
+                    "description": "The Hacker Device can be used unlimited times on all of the following places.",
                     "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Pack-a-Punch",
+                                "description": "Free - close the gates around the PaP machine to protect anyone inside. The gates will open after a short timer."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/22.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Excavators",
+                                "description": "Free - stops the excavator from breaching the map, or sends it back if it already breached."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Mystery Box Spawn",
+                                "description": "1200 points - cause the box to appear at that location for a single use."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Mystery Box Reroll",
+                                "description": "600 points - reroll the weapon in the box. Hack the rerolled weapon to refund 950 points and allow another player to pick up the weapon."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Power-Ups",
+                                "description": "5000 points - Turn a Max Ammo into a Fire Sale or another power-up into a Max Ammo."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Perk Machines",
+                                "description": "Free - Refund a perk to get your money back."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Players",
+                                "description": "500 points - give 500 points to the player."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Doors",
+                                "description": "200 points - open the door (this takes over 30 seconds)."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Wall Buys",
+                                "description": "3000 points - swap the cost of ammo and PaP ammo for this wall buy."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Barriers",
+                                "description": "Repair the window and receive 100 points. After 2 times, it will start costing money."
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/.jpg",
@@ -111,37 +271,49 @@
             "links": true,
             "subsections": [
                 {
-                    "header": "",
-                    "description": "",
+                    "header": "Warning Announcements",
+                    "description": "At any time during the game, a voice alert can warn that one of the 3 excavators will soon cause decompression in one of 3 locations. Excavator Pi goes to Tunnel 6, Excavator Omicron goes to Tunnel 11, and Excavator Epsilon goes to Bio-Dome.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
+                                "src": "/group935/zm/moon/assets/20.jpg",
                                 "alt": ""
                             }
                         }
                     ]
                 },
                 {
-                    "header": "",
-                    "description": "",
+                    "header": "Decompression",
+                    "description": "After an excavator breaches an area, it will no longer have air and gravity will be reduced. The excavators for Tunnel 6 and Tunnel 11 will also block off parts of the map.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
+                                "src": "/group935/zm/moon/assets/31.jpg",
                                 "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Hacking the Excavators",
+                    "description": "Excavators can be hacked with the Hacker Device to return to their starting positions. Once an area has become decompressed, hacking the excavator will cause it to leave, but will not cause the area to have air again. Hacking an excavator before it reaches the location will stop the decompression from happening.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/11.jpg",
+                                "alt": "Control panel for Excavator Pi / Tunnel 6"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": ""
+                                "src": "/group935/zm/moon/assets/12.jpg",
+                                "alt": "Control panel for Excavator Omicron / Tunnel 11"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": ""
+                                "src": "/group935/zm/moon/assets/10.jpg",
+                                "alt": "Control panel for Excavator Epsilon / Bio-Dome"
                             }
                         }
                     ]
@@ -169,8 +341,325 @@
                     ]
                 },
                 {
-                    "header": "1. ",
-                    "description": ".",
+                    "header": "1. Samantha Says",
+                    "description": "After turning on the power, the 4 terminals outside Tunnel 6 will flash a color. Interact with the screens to play Samantha Says.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/15.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Hack the Laboratory",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "description": "With the Hacker Device, interact with the wall on floor 2 for 500 points. This will start a timer, and the entire step must be finished before the time runs out."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/16.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "description": "Hack the 4 lit up panels spread across all 3 floors of the Laboratories."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/17.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "description": "Quickly interact with all 4 buttons back where the initial 500 points was spent to begin the step. When complete, the 4 buttons will remain locked and lit up."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/18.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Decompress Tunnel 6",
+                    "description": "At a random time, there will be an announcement that Excavator Pi will decompress Tunnel 6. You must allow this to happen, then use the Hacker Device to move the excavator away.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/31.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "4. Move the Vril Sphere",
+                    "description": "",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "description": "The Vril Sphere will start just through the door from the M.P.D. room going into Tunnel 6. Shoot it each time it stops, and walk through the doors to allow it to pass."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/32.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/33.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/34.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/35.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "description": "When the Vril Sphere stops on the satellite dish, shoot it with the combined Wave Gun."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/36.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "description": "Continue shooting the Vril Sphere with any gun as it passes through Tunnel 11. Eventually, it will land in the M.P.D. and the step is completed."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/37.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/38.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/39.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/40.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/41.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/42.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "5. Collect Souls",
+                    "description": "Kill 25 zombies to collect their souls in the container outside of the M.P.D. The range is extremely short, and visible souls will show that it's working.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/43.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "6. Cryogenic Slumber Party",
+                    "description": "Interact with the lever by the filled soul container. This completes the first half of the easter egg, grants the first achievement, and gives each player a Death Machine.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/44.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/45.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "7. Find the Missing Wire",
+                    "description": "This can be picked up during any point of the game, and will spawn in one of X locations. Place the wire into the machine in the Receiving Bay.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/14.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "8. Teleport the Plates",
+                    "description": "",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "description": "In Groom Lake, throw a normal grenade at the shelf with the plates, near the teleporter. Some plates will fall to the ground."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/3.jpg",
+                                "alt": "Shelves with the plates"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/4.jpg",
+                                "alt": "Plates on the ground"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "description": "Throw a Gersh Device at the plates. The plates will be sent on top of the teleporter. Then, teleport back to the moon."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/29.jpg",
+                                "alt": "The plates on the teleporter"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "description": "Throw a Q.E.D. onto the plates to send them over to the machine where the wire part was placed."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/30.jpg",
+                                "alt": "The plates in the Receiving Bay"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": "The plates in the machine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "9. Type on the Computer",
+                    "description": "The player playing as Richtofen must place the Vril Device in the machine from the previous steps, then continuously interact with the keyboard on the terminal. Several audio quotes will be heard, and the player must keep interacting until the Vril Device can be grabbed.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "10. Collect More Souls",
+                    "description": "Feed 25 zombie souls to each of the 4 containers around the M.P.D. The containers will lower into the ground when filled.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "11. Place the Vril Device",
+                    "description": "Interact on the front of the M.P.D. to place the Vril Device. This will give Richtofen all perks and swap souls with Samantha.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "12. Three More Samantha Says",
+                    "description": "Go back and beat Samantha Says 3 more times. The game will show more colors each time than in the original step.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "13. Move the Vril Sphere Again",
+                    "description": "Throw a Q.E.D. at the front of the M.P.D. to displace the Vril Sphere. Then shoot it until it stops by the Samantha Says terminals.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "14. Big Bang Theory",
+                    "description": "Throw a Gersh Device onto the Vril Sphere. This will start an in-game cutscene and grant the second achievement.",
                     "elements": [
                         {
                             "pic": {
@@ -191,20 +680,20 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
+                                "src": "/group935/zm/moon/assets/6.jpg",
                                 "alt": "Location 1 - Next to the launch pad beneath the Receiving Bay"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
+                                "src": "/group935/zm/moon/assets/7.jpg",
                                 "alt": "Location 2 - In the airlock between Tunnel 6 and the M.P.D. room"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": "Location 3 - On a shelf near Stamin-Up in Tunnel 11"
+                                "src": "/group935/zm/moon/assets/8.jpg",
+                                "alt": "Location 3 - In the wall across from Stamin-Up in Tunnel 11"
                             }
                         }
                     ]
@@ -215,13 +704,74 @@
             "header": "Side Easter Eggs",
             "subsections": [
                 {
-                    "header": "Space Dog",
-                    "description": "",
+                    "header": "Space Dog (Black Ops III only)",
                     "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Shoot 3 objects with the combined Wave Gun"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/24.jpg",
+                                "alt": "Dog figurine - outside the map at Groom Lake, under a vehicle"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/26.jpg",
+                                "alt": "Bone - outside the Bio-Dome, in front of some large rocks"
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": ""
+                                "alt": "Teddy bear, on a wall inside Bio-Dome"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Hack the dog bowl with the Hacker Device"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/27.jpg",
+                                "alt": "Dog bowl, on the second floor of the Laboratories"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Fetch souls",
+                                "description": "Kill zombies nearby the dog bowl."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/46.jpg",
+                                "alt": "Dog bowl filling up with zombie souls"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "4. Dog walk",
+                                "description": "Once enough souls are collected, a sound will play. Then, the space dog will be seen walking between the Bio-Dome and the Receiving Bay."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/47.jpg",
+                                "alt": "Space dog outside the Bio-Dome"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/48.jpg",
+                                "alt": "Space dog up close"
                             }
                         }
                     ]
