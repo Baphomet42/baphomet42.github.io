@@ -33,3 +33,7 @@ label {
     font-size: large;
     width: 100%;
 }
+
+#convert-mode {
+    max-width: 100%;
+}

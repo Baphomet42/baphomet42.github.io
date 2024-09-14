@@ -3,7 +3,6 @@
     "subtext": "Black Ops | Black Ops III",
     "background": "https://callofdutymaps.com/wp-content/uploads/moon19.jpg",
     "rev": 2,
-    "wip": true,
     "sections" : [
         {
             "header": "Map Features",
@@ -167,7 +166,7 @@
                             "full": true,
                             "step": {
                                 "title": "Doors",
-                                "description": "200 points - open the door (this takes over 30 seconds)."
+                                "description": "200 points - open the door (this takes over 30 seconds without having Speed Cola)."
                             }
                         },
                         {
@@ -178,16 +177,10 @@
                             }
                         },
                         {
-                            "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
                             "full": true,
                             "step": {
                                 "title": "Barriers",
-                                "description": "Repair the window and receive 100 points. After 2 times, it will start costing money."
+                                "description": "Repair the window and receive 100 points. After a few times, it will start costing money instead."
                             }
                         }
                     ]
@@ -224,7 +217,7 @@
                 },
                 {
                     "header": "Hacking the Excavators",
-                    "description": "Excavators can be hacked with the Hacker Device to return to their starting positions. Once an area has become decompressed, hacking the excavator will cause it to leave, but will not cause the area to have air again. Hacking an excavator before it reaches the location will stop the decompression from happening.",
+                    "description": "Excavators can be hacked with the Hacker Device to return to their starting positions. Once an area has become decompressed, hacking the excavator will cause it to leave, but will not cause the area to have air again. Hacking an excavator before it reaches the location will stop the decompression from happening. All 3 control panels are located in the Receiving Bay.",
                     "elements": [
                         {
                             "pic": {
@@ -270,7 +263,7 @@
                 },
                 {
                     "header": "1. Samantha Says",
-                    "description": "After turning on the power, the 4 terminals outside Tunnel 6 will flash a color. Interact with the screens to play Samantha Says. The color order is always Red, Green, Blue, Yellow.",
+                    "description": "After turning on the power, the 4 terminals outside Tunnel 6 will flash a color. Interact with the screens to play Samantha Says. The color order on the screens are always Red, Green, Blue, Yellow.",
                     "elements": [
                         {
                             "pic": {
@@ -286,7 +279,7 @@
                         {
                             "full": true,
                             "step": {
-                                "description": "With the Hacker Device, interact with the wall on floor 2 for 500 points. This will start a timer, and the entire step must be finished before the time runs out."
+                                "description": "With the Hacker Device, hack a button on the wall of the middle floor of the Laboratories. This costs 500 points, and the entire step must be finished before the timer runs out."
                             }
                         },
                         {
@@ -310,7 +303,7 @@
                         {
                             "full": true,
                             "step": {
-                                "description": "Quickly interact with all 4 buttons back where the initial 500 points was spent to begin the step. When complete, the 4 buttons will remain locked and lit up."
+                                "description": "Quickly interact with all 4 buttons back where the initial 500 points was spent. When complete, the 4 buttons will remain locked and lit up."
                             }
                         },
                         {
@@ -323,7 +316,7 @@
                 },
                 {
                     "header": "3. Decompress Tunnel 6",
-                    "description": "At a random time, there will be an announcement that Excavator Pi will decompress Tunnel 6. You must allow this to happen, then use the Hacker Device to move the excavator away.",
+                    "description": "At a random time, there will be an announcement that Excavator Pi will decompress Tunnel 6. You must allow the excavator to breach the map, then use the Hacker Device to move the excavator away.",
                     "elements": [
                         {
                             "pic": {
@@ -424,7 +417,7 @@
                 },
                 {
                     "header": "5. Collect Souls",
-                    "description": "Kill 25 zombies to collect their souls in the container outside of the M.P.D. The range is extremely short, and visible souls will show that it's working.",
+                    "description": "Kill zombies to collect their souls in the container outside of the M.P.D. The range is extremely short, and visible souls will show that it's working.",
                     "elements": [
                         {
                             "pic": {
@@ -507,24 +500,59 @@
                 },
                 {
                     "header": "8. Find the Missing Wire",
-                    "description": "This can be picked up during any point of the game, and will spawn in one of X(TODO) locations.",
                     "elements": [
                         {
+                            "full": true,
+                            "step": {
+                                "description": "This can be picked up at any point of the game and will spawn in one of 8 locations."
+                            }
+                        },
+                        {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/14.jpg",
-                                "alt": "Location 1 - top floor of the Laboratories, on a shelf"
+                                "src": "/group935/zm/moon/assets/69.jpg",
+                                "alt": "Location 1 - bottom floor of the Laboratories, by some canisters"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/66.jpg",
+                                "alt": "Location 2 - middle floor of the Laboratories, to the left of the buttons from the hacking step"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/71.jpg",
+                                "alt": "Location 3 - middle floor of the Laboratories, in front of a table"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/68.jpg",
+                                "alt": "Location 4 - top floor of the Laboratories, on the top of the stairs"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/70.jpg",
+                                "alt": "Location 5 - top floor of the Laboratories, on a table"
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/49.jpg",
-                                "alt": "Location 2 - top floor of the Laboratories, by Deadshot Daiquiri"
+                                "alt": "Location 6 - top floor of the Laboratories, by Deadshot Daiquiri"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/.jpg",
-                                "alt": ""
+                                "src": "/group935/zm/moon/assets/14.jpg",
+                                "alt": "Location 7 - top floor of the Laboratories, on a shelf"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/67.jpg",
+                                "alt": "Location 8 - just outside of the Laboratories, by a barrel"
                             }
                         },
                         {
@@ -543,7 +571,7 @@
                 },
                 {
                     "header": "9. Type on the Computer",
-                    "description": "The player playing as Richtofen must place the Vril Device in the machine from the previous steps, then continuously interact with the keyboard on the terminal. Several audio quotes will be heard, and the player must keep interacting until the Vril Device can be grabbed.",
+                    "description": "The player playing as Richtofen must do this entire step. Place the Vril Device in the machine from the previous steps, then continuously interact with the keyboard on the terminal. Several audio quotes will be heard, and the player must keep interacting until the Vril Device can be grabbed.",
                     "elements": [
                         {
                             "pic": {
@@ -554,7 +582,7 @@
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/54.jpg",
-                                "alt": "The computer keyboard to interact"
+                                "alt": "The computer keyboard to spam interact on"
                             }
                         },
                         {
@@ -567,7 +595,7 @@
                 },
                 {
                     "header": "10. Collect More Souls",
-                    "description": "Feed 25 zombie souls to each of the 4 containers around the M.P.D. The containers will lower into the ground when filled.",
+                    "description": "Feed zombie souls to each of the 4 containers around the M.P.D. until they are all completely filled.",
                     "elements": [
                         {
                             "pic": {
@@ -579,7 +607,7 @@
                 },
                 {
                     "header": "11. Place the Vril Device",
-                    "description": "Interact on the front of the M.P.D. to place the Vril Device. This will give Richtofen all perks and swap souls with Samantha.",
+                    "description": "Richtofen must interact on the front of the M.P.D. to place the Vril Device. This will give Richtofen all perks and swap souls with Samantha.",
                     "elements": [
                         {
                             "pic": {
@@ -634,7 +662,7 @@
             ]
         },
         {
-            "header": "Song",
+            "header": "Songs",
             "subsections": [
                 {
                     "header": "Coming Home",
@@ -659,6 +687,48 @@
                             }
                         }
                     ]
+                },
+                {
+                    "header": "8 Bit Songs",
+                    "description": "Each song requires power to be turned on. Interact with the specific control panel 3 times to play the song.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Coming Home"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/72.jpg",
+                                "alt": "A computer station to the right of the Excavator Omicron control panel"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Damned"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/73.jpg",
+                                "alt": "A tall device to the right of the door going from Tunnel 11 to the M.P.D. room"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Pareidolia"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/moon/assets/74.jpg",
+                                "alt": "A computer station to the right of the door going from the Laboratories to the Bio-Dome"
+                            }
+                        }
+                    ]
                 }
             ]
         },
@@ -671,25 +741,26 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "1. Shoot 3 objects with the combined Wave Gun"
+                                "title": "1. Shoot 3 objects with the combined Wave Gun",
+                                "description": "After each object is shot, it will teleport by the dog bowl on the second floor of the Laboratories."
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/24.jpg",
-                                "alt": "Dog figurine - outside the map at Groom Lake, under a vehicle"
+                                "alt": "Dog figurine - Outside the map at Groom Lake, under a vehicle. Shoot through the back tires of the vehicle."
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/26.jpg",
-                                "alt": "Bone - outside the Bio-Dome, in front of some large rocks"
+                                "alt": "Bone - Outside the Bio-Dome, in front of some large rocks. Aim just above the pipes."
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/moon/assets/25.jpg",
-                                "alt": "Teddy bear, on a wall inside Bio-Dome"
+                                "alt": "Teddy bear - On top of the wall surrounding the Bio-Dome, behind the Mystery Box location. Stand far back and aim roughly where the hexagon connects with the wall."
                             }
                         },
                         {
