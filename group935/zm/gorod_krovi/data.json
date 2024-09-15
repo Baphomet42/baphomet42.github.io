@@ -13,11 +13,10 @@
             "subsections": [
                 {
                     "header": "Power Switch",
-                    "description": "",
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "src": "/group935/zm/gorod_krovi/assets/1.jpg",
                                 "alt": "Power switch location"
                             }
                         }
@@ -25,36 +24,129 @@
                 },
                 {
                     "header": "Pack-a-Punch",
-                    "description": "",
+                    "description": "To unlock the Hatchery and PaP, you must collect 3 parts by spending Code Cylinders.",
                     "elements": [
                         {
+                            "full": true,
+                            "step": {
+                                "title": "1. Start up Sophia",
+                                "description": "After turning on power, interact on the green light on Sophia so it turns red."
+                            }
+                        },
+                        {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": ""
+                                "src": "/group935/zm/gorod_krovi/assets/3.jpg",
+                                "alt": "The light after interacting"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Get the parts from 3 Groph Pods",
+                                "description": "When zombies drop Code Cylinders, you can use them on the 3 machines to call in Groph Pods. The blue Code Cylinder is used for Dragon Command, yellow is for Supply Depot, and red is for Tank Factory. Defend the pod until it opens up, revealing a part."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/15.jpg",
+                                "alt": "A Code Cylinder power-up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/18.jpg",
+                                "alt": "Groph Pod station in Dragon Command"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/67.jpg",
+                                "alt": "Groph Pod station in Supply Depot"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/27.jpg",
+                                "alt": "Groph Pod station in Tank Factory"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/21.jpg",
+                                "alt": "A Groph Pod under attack"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/22.jpg",
+                                "alt": "One of the parts inside the Groph Pod"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Place the parts and ride the dragon",
+                                "description": "Interact on the device to place all 3 parts. This will enable all 3 dragon stations. Each of the stations will take you to the Hatchery."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/30.jpg",
+                                "alt": "The device with all 3 parts placed"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/31.jpg",
+                                "alt": "Dragon station 1 - at Dragon Command"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/68.jpg",
+                                "alt": "Dragon station 2 - at Supply Depot"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/69.jpg",
+                                "alt": "Dragon station 3 - at Tank Factory"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/10.jpg",
+                                "alt": "PaP machine"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/11.jpg",
+                                "alt": "Sewer to exit the Hatchery back to Belinski Square"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Dragon",
-                    "description": "",
+                    "description": "Throughout the game, the dragon will breath fire on a random location of the map. Your screen will glow orange before the fire starts. Hold the shield or leave the area to prevent fire damage.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": ""
+                                "src": "/group935/zm/gorod_krovi/assets/25.jpg",
+                                "alt": "Screen glowing before the fire starts"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Trials",
-                    "description": "",
+                    "description": "Each player has a headstone with 4 trials. Hover over a trial to view the requirements and interact to get the reward. Each player will see a green flame above their trials.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": ""
+                                "src": "/group935/zm/gorod_krovi/assets/55.jpg",
+                                "alt": "Trials with green flame above"
                             }
                         }
                     ]
@@ -64,50 +156,56 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "src": "/group935/zm/gorod_krovi/assets/48.jpg",
                                 "alt": "Quick Revive"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": "Double Tap II"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": "Mule Kick"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": "Speed Cola"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": "Stamin-Up"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "src": "/group935/zm/gorod_krovi/assets/49.jpg",
                                 "alt": "Juggernog"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": "Wunderfizz location 1"
+                                "src": "/group935/zm/gorod_krovi/assets/50.jpg",
+                                "alt": "Mule Kick"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": "Wunderfizz location 2"
+                                "src": "/group935/zm/gorod_krovi/assets/66.jpg",
+                                "alt": "Stamin-Up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/52.jpg",
+                                "alt": "Speed Cola"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/54.jpg",
+                                "alt": "Double Tap II"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/47.jpg",
+                                "alt": "Wunderfizz location 1 - in the Department Store"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/51.jpg",
+                                "alt": "Wunderfizz location 2 - bottom floor of the Armory"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/53.jpg",
+                                "alt": "Wunderfizz location 3 - top floor of Dragon Command"
                             }
                         }
                     ]
@@ -119,13 +217,13 @@
             "description": "Collect 3 parts and craft at a workbench.",
             "subsections": [
                 {
-                    "header": "Part 1 ()",
+                    "header": "Part 1 (Dragon Head)",
                     "description": "Located  (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": "Location 1 - "
+                                "src": "/group935/zm/gorod_krovi/assets/14.jpg",
+                                "alt": "Location 1 - bottom floor of the Infirmary, on the floor"
                             }
                         },
                         {
@@ -136,14 +234,14 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": "Location 3 - "
+                                "src": "/group935/zm/gorod_krovi/assets/59.jpg",
+                                "alt": "Location 3 - main floor of the Infirmary, on a bunk bed"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Part 2 ()",
+                    "header": "Part 2 (TODO)",
                     "description": "Located  (3 possible locations).",
                     "elements": [
                         {
@@ -154,20 +252,20 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": "Location 2 - "
+                                "src": "/group935/zm/gorod_krovi/assets/56.jpg",
+                                "alt": "Location 2 - between Juggernog and Mule Kick, on the door of a truck"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": "Location 3 - "
+                                "src": "/group935/zm/gorod_krovi/assets/12.jpg",
+                                "alt": "Location 3 - in the Mule Kick room, on a shelf"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Part 3 ()",
+                    "header": "Part 3 (Teeth Window)",
                     "description": "Located  (3 possible locations).",
                     "elements": [
                         {
@@ -178,14 +276,14 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": "Location 2 - "
+                                "src": "/group935/zm/gorod_krovi/assets/58.jpg",
+                                "alt": "Location 2 - below the top floor of the armory, on the wall"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": "Location 3 - "
+                                "src": "/group935/zm/gorod_krovi/assets/13.jpg",
+                                "alt": "Location 3 - top floor of the Armory, on a box"
                             }
                         }
                     ]
@@ -196,8 +294,8 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": "Workbench location"
+                                "src": "/group935/zm/gorod_krovi/assets/17.jpg",
+                                "alt": "Workbench location, across from Mule Kick"
                             }
                         }
                     ]
@@ -214,8 +312,20 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": ""
+                                "src": "/group935/zm/gorod_krovi/assets/33.jpg",
+                                "alt": "Machine to interact"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/34.jpg",
+                                "alt": "Max Ammo spawned by PaP machine between lockdown waves"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/35.jpg",
+                                "alt": "Dragon Strike location"
                             }
                         }
                     ]
@@ -257,9 +367,235 @@
                     ]
                 },
                 {
-                    "header": "1. ",
-                    "description": "",
+                    "header": "1. Valve step",
                     "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Power the generator",
+                                "description": "Destroy a Valkyrie Drone near the generator in the basement of the Hatchery. The generator will glow orange for a few minutes after doing this. Repeat this step if the generator turns off before collecting the cylinder item."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/39.jpg",
+                                "alt": "Generator without power"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/40.jpg",
+                                "alt": "Generator with power"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Configure the valves",
+                                "description": "Locate the valve with the green light and the valve with the pink cylinder. Then interact with each valve to set the correct number based on the tool below.(TODO)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/46.jpg",
+                                "alt": "Green valve"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/74.jpg",
+                                "alt": "Valve with cylinder"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Pick up the cylinder",
+                                "description": "Go back to the valve with the pink cylinder and interact on it."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/76.jpg",
+                                "alt": "Cylinder able to be picked up"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Input password",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Return pink cylinder",
+                                "description": "Give the cylinder from the previous step to Sophia"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/78.jpg",
+                                "alt": "Location to place cylinder"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Select KRONOS",
+                                "description": "Use a bullet gun to shoot the letters until they spell KRONOS"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/80.jpg",
+                                "alt": "KRONOS inputted on the dials"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Press the red light",
+                                "description": "Interact with the green light to input the password. When done correctly, the light will turn red."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/81.jpg",
+                                "alt": "The red light"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Collect trophies",
+                    "description": "There are 6 trophies around the map that must be moved with different weapons, then interacted with to pick up. They can be collected at any time during the game and in any order.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Gersh Trophy",
+                                "description": "Located in front of Dragon Command, must be shot with any gun."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/60.jpg",
+                                "alt": "Trophy built into a wall"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/61.jpg",
+                                "alt": "Trophy fallen onto some rubble"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Valkyrie Trophy",
+                                "description": "Located in Tank Factory, must be shot from a window using the shield blast."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/62.jpg",
+                                "alt": "Where to shoot the window with the shield blast"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/63.jpg",
+                                "alt": "Trophy on the floor in front of the window"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Mangler Trophy",
+                                "description": "Located in Supply Depot, under a grate that must be melted by the trap."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/64.jpg",
+                                "alt": "One of the trap buys"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/65.jpg",
+                                "alt": "Trophy under the destroyed grate"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "935 Trophy",
+                                "description": "Located in the Hatchery, only visible after shooting a green(TODO) light in the sewer."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/70.jpg",
+                                "alt": "Trophy in the toilet"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Nuke Trophy",
+                                "description": "Located outside Supply Depot, must be blown out of the ground using the Dragon Strike."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/72.jpg",
+                                "alt": "Where to aim the Dragon Strike"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/73.jpg",
+                                "alt": "Trophy raised from the ground"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Groph Pod Trophy",
+                                "description": "Located in Operations Bunker, inside a safe that must be smashed open with the punch attack from the Guantlet of Siegfried after launching the whelp."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/90.jpg",
+                                "alt": "The safe to smash open"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/91.jpg",
+                                "alt": "Trophy in the safe"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "4. ",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "/group935/zm/gorod_krovi/assets/.jpg",
@@ -274,24 +610,24 @@
             "header": "Songs",
             "subsections": [
                 {
-                    "header": "",
+                    "header": "Dead Ended",
                     "description": "Interact with 3 vodka bottles",
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "src": "/group935/zm/gorod_krovi/assets/4.jpg",
                                 "alt": "Location 1 - through the front door of the Department Store, on a couch"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "src": "/group935/zm/gorod_krovi/assets/5.jpg",
                                 "alt": "Location 2 - on the ground outside of the TODO room, held by a zombie"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "src": "/group935/zm/gorod_krovi/assets/6.jpg",
                                 "alt": "Location 3 - straight through the door to the Supply Depot, on a bookshelf"
                             }
                         }
@@ -303,20 +639,20 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "src": "/group935/zm/gorod_krovi/assets/7.jpg",
                                 "alt": "Location 1 - upstairs in Dragon Command, on a desk"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "src": "/group935/zm/gorod_krovi/assets/8.jpg",
                                 "alt": "Location 2 - middle level of Tank Factory, on a blackboard"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": "Location 3 - in the room to the right of PaP, in a book"
+                                "src": "/group935/zm/gorod_krovi/assets/9.jpg",
+                                "alt": "Location 3 - in the room to the right of PaP, sticking out of a book"
                             }
                         }
                     ]
