@@ -27,36 +27,36 @@
 
                 <table class="card-table">
                     <tr class="card-table-row">
-                        <td class="card-wrap-third-left">
+                        <td class="card-wrap-third card-wrap-third-small">
                             <label for="file-input">Image:</label>
                         </td>
-                        <td class="card-wrap-third-mid">
+                        <td class="card-wrap-third card-wrap-third-big">
                             <input type="file" id="file-input" style="display: none;"/>
                             <button class="button" onClick="openFile()" style="font-size:x-large">Open Image</button>
                         </td>
-                        <td class="card-wrap-third-right">
+                        <td class="card-wrap-third card-wrap-third-small">
                             <span id="file-label"></span>
                         </td>
                     </tr>
                     <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
                     <tr class="card-table-row">
-                        <td class="card-wrap-third-left">
+                        <td class="card-wrap-third card-wrap-third-small">
                             <label for="scale-input">Scale:</label>
                         </td>
-                        <td class="card-wrap-third-mid">
+                        <td class="card-wrap-third card-wrap-third-big">
                             <input type="range" min="1" max="128" id="scale-input" class="slider" oninput="setScale()"/>
                         </td>
-                        <td class="card-wrap-third-right">
+                        <td class="card-wrap-third card-wrap-third-small">
                             <span id="scale-label"></span>
                         </td>
                     </tr>
                     <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
                     <tr class="card-table-row">
-                        <td class="card-wrap-third-left"></td>
-                        <td class="card-wrap-third-mid">
+                        <td class="card-wrap-third card-wrap-third-small"></td>
+                        <td class="card-wrap-third card-wrap-third-big">
                             <button class="button" onClick="submit()" style="font-size:x-large">Generate</button>
                         </td>
-                        <td class="card-wrap-third-right"></td>
+                        <td class="card-wrap-third card-wrap-third-small"></td>
                     </tr>
                 </table>
 
@@ -157,16 +157,16 @@
                 const originalImageData = ctx.getImageData(0,0,inputWidth,inputHeight)
                 const scaledImageData = ctx.createImageData(width,height)
 
-                for (let y = 0; y < inputHeight; y++) {
-                    for (let x = 0; x < inputWidth; x++) {
+                for(let y = 0; y < inputHeight; y++) {
+                    for(let x = 0; x < inputWidth; x++) {
                         const index = (y * inputWidth + x) * 4
                         const r = originalImageData.data[index]
                         const g = originalImageData.data[index + 1]
                         const b = originalImageData.data[index + 2]
                         const a = originalImageData.data[index + 3]
 
-                        for (let dy = 0; dy < scale; dy++) {
-                            for (let dx = 0; dx < scale; dx++) {
+                        for(let dy = 0; dy < scale; dy++) {
+                            for(let dx = 0; dx < scale; dx++) {
                                 const scaledIndex = ((y * scale + dy) * width + (x * scale + dx)) * 4
                                 scaledImageData.data[scaledIndex] = r
                                 scaledImageData.data[scaledIndex + 1] = g

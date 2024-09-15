@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/mc/style.css">
+    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/71295013?v=4">
+    <link rel="apple-touch-icon" href="https://avatars.githubusercontent.com/u/71295013?v=4">
+    <title>File Converter | BaphomethLabs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="/template/data-include.js"></script>
+</head>
+<body>
+    <article>
+        <div data-include="/mc/header" id="header"></div>
+
+        <table class="card-table"><tr class="card-table-row">
+
+            <td class="card-wrap-mid"><div class="card tooltip center">
+                <p class="item-header">File Converter</p>
+                <br>
+                <p class="item-subtitle">Make changes to 1 or more files at once</p>
+            </div></td>
+
+            <td class="card-wrap-full"><div class="card tooltip center">
+
+                <table class="card-table">
+                    <tr class="card-table-row">
+                        <td class="card-wrap-third"></td>
+                        <td class="card-wrap-third">
+                            <input type="file" id="file-input" style="display: none;" multiple/>
+                            <button class="button" onClick="openFile()" style="font-size:x-large">Open Files</button>
+                        </td>
+                        <td class="card-wrap-third">
+                            <span id="file-label"></span>
+                        </td>
+                    </tr>
+                    <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
+                    <tr class="card-table-row"></tr>
+                        <td class="card-wrap">
+                            <label for="convert-mode">Mode: </label>
+                            <select id="convert-mode" onchange="changeMode()" style="font-size:large">
+                                <option value="png-to-jpg">PNG to JPG</option>
+                                <option value="rename">Rename Incremental</option>
+                            </select>
+                        </td>
+                        <td class="card-wrap">
+                            <span id="convert-options-png-to-jpg">
+                                <label for="convert-option-quality">Quality: </label>
+                                <select id="convert-option-quality" style="font-size:large">
+                                    <option value="70">70%</option>
+                                    <option value="100">100%</option>
+                                </select>
+                            </span>
+                            <span id="convert-options-rename">
+                                <label for="convert-option-number">Starting Value: </label>
+                                <input id="convert-option-number" type="number" value="1" min="0" step="1" onchange="validateOptionNumber(this)" style="font-size:large"/>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
+                    <tr class="card-table-row">
+                        <td class="card-wrap-third"></td>
+                        <td class="card-wrap-third">
+                            <button class="button" onClick="submit()" style="font-size:x-large">Convert</button>
+                        </td>
+                        <td class="card-wrap-third">
+                            <span id="button-label" class="error"></span>
+                        </td>
+                    </tr>
+                </table>
+
+                <br/>
+
+            </div></td>
+
+        </tr></table>
+
+    </article>
+    <div data-include="/template/footer" id="footer"></div>
+
+    <script>
+        var files = null
+
+        $(function () {
+            changeMode()
+        })
+
+        function openFile() {
+            document.getElementById('file-input').click()
+        }
+
+        document.getElementById('file-input').addEventListener('change', function(event) {
+            files = event.target.files
+            let valid = false
+
+            if(files.length > 0) {
+                valid = true
+                for(let i=1; i<files.length; i++)
+                    if(files[i].type != files[0].type)
+                        valid = false
+            }
+
+            if(valid) {
+                document.getElementById('file-label').innerHTML = 'Selected '+files.length+' files (Type: '+files[0].type+')'
+            }
+            else {
+                document.getElementById('file-label').innerHTML = 'All files must be the same type'
+                files = null
+            }
+
+        })
+
+        function changeMode() {
+            document.getElementById('convert-options-png-to-jpg').style.display = "none"
+            document.getElementById('convert-options-rename').style.display = "none"
+            
+            let convertMode = document.getElementById('convert-mode').value
+            if(convertMode === 'png-to-jpg')
+                document.getElementById('convert-options-png-to-jpg').style.display = "block"
+            else if(convertMode === 'rename')
+                document.getElementById('convert-options-rename').style.display = "block"
+        }
+
+        function validateOptionNumber(input) {
+            const regex = /^\d+$/
+            if (!regex.test(input.value))
+                input.value = 1
+        }
+
+        async function submit() {
+            let valid = false
+            let lbl = ''
+            let convertMode = document.getElementById('convert-mode').value
+
+            if(files === null)
+                lbl = 'No file(s) selected'
+            else if(convertMode === 'png-to-jpg') {
+                if(files[0].type === 'image/png')
+                    valid = true
+                else
+                    lbl = 'File(s) must be PNG'
+            }
+            else if(convertMode === 'rename') {
+                valid = true
+            }
+
+            document.getElementById('button-label').innerHTML = lbl
+
+            if(valid) {
+                document.getElementById('button-label').innerHTML = 'Starting conversion...'
+
+                if(convertMode === 'png-to-jpg') {
+                    const zip = new JSZip()
+                    let processedFiles = 0
+
+                    let quality = .7
+                    if(document.getElementById('convert-option-quality').value==='100')
+                        quality = 1
+
+                    console.log('Starting PNG to JPG conversion with Quality: '+quality+' for '+files.length+' files')
+
+                    for(let i=0; i<files.length; i++) {
+                        const reader = new FileReader()
+                        let file = files[i]
+                        
+                        reader.onload = function(e) {
+                            const img = new Image()
+                            
+                            img.onload = function() {
+                                const canvas = document.createElement('canvas')
+                                const ctx = canvas.getContext('2d')
+                                canvas.width = img.width
+                                canvas.height = img.height
+                                ctx.drawImage(img, 0, 0)
+                                
+                                canvas.toBlob(function(blob) {
+                                    const fileName = file.name.replace(/\.[^/.]+$/, '.jpg')
+                                    zip.file(fileName, blob, { binary: true })
+                                    
+                                    processedFiles++
+                                    document.getElementById('button-label').innerHTML = 'Converting file '+processedFiles+'/'+files.length
+
+                                    if(processedFiles === files.length) {
+                                        document.getElementById('button-label').innerHTML = 'Zipping files...'
+                                        zip.generateAsync({ type: 'blob' }).then(function(content) {
+                                            const a = document.createElement('a')
+                                            a.href = URL.createObjectURL(content)
+                                            a.download = 'file_converter_'+getTimestamp()+'.zip'
+                                            document.body.appendChild(a)
+                                            a.click()
+                                            document.body.removeChild(a)
+                                            document.getElementById('button-label').innerHTML = ''
+                                        })
+                                    }
+                                }, 'image/jpeg', quality)
+                            }
+                            
+                            img.src = e.target.result
+                        }
+
+                        reader.readAsDataURL(file)
+                    }
+                }
+                else if(convertMode === 'rename') {
+                    const zip = new JSZip()
+                    let processedFiles = 0
+
+                    let startVal = 1
+                    let inpStart = document.getElementById('convert-option-number').value
+                    const regex = /^\d+$/
+                    if(regex.test(inpStart))
+                        startVal = parseInt(inpStart)
+
+                    console.log('Starting rename with start: '+startVal+' for '+files.length+' files')
+
+                    for(let i=0; i<files.length; i++) {
+                        const reader = new FileReader()
+                        let file = files[i]
+                        let index = i
+                        
+                        reader.onload = function(e) {
+                            const fileNameParts = file.name.split('.');
+                            const fileExtension = (fileNameParts.length > 1) ? fileNameParts.pop() : '';
+
+                            const newFileName = ''+(startVal+index)+'.'+fileExtension
+                            zip.file(newFileName, file)
+
+                            processedFiles++
+                            document.getElementById('button-label').innerHTML = 'Renaming file '+processedFiles+'/'+files.length
+
+                            if(processedFiles === files.length) {
+                                document.getElementById('button-label').innerHTML = 'Zipping files...'
+                                zip.generateAsync({ type: 'blob' }).then(function(content) {
+                                    const a = document.createElement('a')
+                                    a.href = URL.createObjectURL(content)
+                                    a.download = 'file_converter_'+getTimestamp()+'.zip'
+                                    document.body.appendChild(a)
+                                    a.click()
+                                    document.body.removeChild(a)
+                                    document.getElementById('button-label').innerHTML = ''
+                                })
+                            }
+                        }
+
+                        reader.readAsArrayBuffer(file)
+                    }
+                }
+            }
+        }
+
+        function getTimestamp() {
+            const now = new Date()
+            const year = now.getFullYear()
+            const month = String(now.getMonth() + 1).padStart(2, '0')
+            const day = String(now.getDate()).padStart(2, '0')
+            const hours = String(now.getHours()).padStart(2, '0')
+            const minutes = String(now.getMinutes()).padStart(2, '0')
+            const seconds = String(now.getSeconds()).padStart(2, '0')
+
+            return `${year}-${month}-${day}_${hours}.${minutes}.${seconds}`
+        }
+
+    </script>
+
+</body>
+</html>

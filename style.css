@@ -131,32 +131,22 @@ ul {
     align-content: center;
 }
 
-.card-wrap-third-left {
+.card-wrap-third {
     border: 0;
     box-sizing: border-box;
     float: left;
-    height: 2rem;
-    width: 16%;
-    align-content: center;
-}
-
-.card-wrap-third-mid {
-    border: 0;
-    box-sizing: border-box;
-    float: left;
-    height: 2rem;
-    width: 66%;
-    align-content: center;
-}
-
-.card-wrap-third-right {
-    border: 0;
-    box-sizing: border-box;
-    float: left;
-    height: 3rem;
-    width: 16%;
+    min-height: 3rem;
+    width: 33%;
     align-content: center;
     overflow: hidden;
+}
+
+.card-wrap-third-small {
+    width: 16%;
+}
+
+.card-wrap-third-big {
+    width: 66%;
 }
 
 .card {
@@ -294,15 +284,15 @@ ul {
         width: 100%;
     }
 
-    .card-wrap-third-left {
+    .card-wrap-third {
+        width: 100%;
+    }
+
+    .card-wrap-third-small {
         width: 100%;
     }
     
-    .card-wrap-third-mid {
-        width: 100%;
-    }
-    
-    .card-wrap-third-right {
+    .card-wrap-third-big {
         width: 100%;
     }
 

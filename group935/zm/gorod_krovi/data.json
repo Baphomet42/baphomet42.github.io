@@ -2,48 +2,269 @@
     "name": "Gorod Krovi",
     "subtext": "Black Ops III",
     "background": "https://callofdutymaps.com/wp-content/uploads/gorodkrovi29.jpg",
-    "rev": 1,
+    "rev": 2,
     "maps": [{
         "img": "https://steamuserimages-a.akamaihd.net/ugc/1484450726083233828/E627AB033A6CC98DE5BBF2FFD7A6AEA320D05BA3/"
     }],
     "wip": true,
     "sections" : [
         {
-            "header": "Main Easter Egg",
-            "rows": [
+            "header": "Map Features",
+            "subsections": [
                 {
-                    "cols": [
+                    "header": "Power Switch",
+                    "description": "",
+                    "elements": [
                         {
-                            "header": "Requirements",
-                            "elements": [
-                                {
-                                    "html": [
-                                        "<li>Shield</li>",
-                                        "<li>Dragon Strike</li>",
-                                        "<li>Special Weapon from bottom trial</li>"
-                                    ]
-                                }
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Power switch location"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Pack-a-Punch",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Dragon",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Trials",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Perk Machines",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Quick Revive"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Double Tap II"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Mule Kick"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Speed Cola"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Stamin-Up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Juggernog"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Wunderfizz location 1"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Wunderfizz location 2"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Guard of Fafnir (Dragon Shield)",
+            "description": "Collect 3 parts and craft at a workbench.",
+            "subsections": [
+                {
+                    "header": "Part 1 ()",
+                    "description": "Located  (3 possible locations).",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Location 1 - "
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Location 2 - "
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Location 3 - "
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Part 2 ()",
+                    "description": "Located  (3 possible locations).",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Location 1 - "
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Location 2 - "
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Location 3 - "
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Part 3 ()",
+                    "description": "Located  (3 possible locations).",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Location 1 - "
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Location 2 - "
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Location 3 - "
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Craft Shield",
+                    "description": "Build at the workbench TODO",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Workbench location"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Dragon Strike",
+            "description": "Special equipment that can be used to call in an airstrike from a dragon.",
+            "subsections": [
+                {
+                    "header": "Lockdown",
+                    "description": "All players must interact on the machine to start the lockdown. Survive 4 waves to finish the lockdown and get the Dragon Strike.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Guantlet of Siegfried (Special Weapon)",
+            "description": "",
+            "subsections": [
+                {
+                    "header": "",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Main Quest",
+            "subsections": [
+                {
+                    "header": "Requirements",
+                    "elements": [
+                        {
+                            "full": true,
+                            "bullets": [
+                                "Guard of Fafnir",
+                                "Dragon Strike",
+                                "Guantlet of Siegfried"
                             ]
                         }
                     ]
                 },
                 {
-                    "cols": [
+                    "header": "1. ",
+                    "description": "",
+                    "elements": [
                         {
-                            "header": "Valve Step",
-                            "elements": [
-                                {
-                                    "html": [
-                                        "<li type=\"I\">In the basement below PaP, find the vent with a tarp over it</li>",
-                                        "<li type=\"I\">Kill a valkyrie drone near the vent</li>",
-                                        "<li type=\"I\">The vent will light up orange, and the tarp will be moving</li>",
-                                        "<li type=\"I\">The vent will turn off after a short time, so complete the next steps quickly</li>",
-                                        "<li type=\"I\">Set the valves to the correct number based on the values shown in the following link</li>",
-                                        "<br/>",
-                                        "<a href=\"https://www.kronorium.com/blackops3/gorodkrovi/\" rel=\"noopener noreferrer\" target=\"_blank\" class=\"button\">MrRoflWaffles Valve Step Tool</a>"
-                                    ]
-                                }
-                            ]
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": ""
+                            }
                         }
                     ]
                 }
@@ -51,34 +272,69 @@
         },
         {
             "header": "Songs",
-            "rows": [
+            "subsections": [
                 {
-                    "cols": [
+                    "header": "",
+                    "description": "Interact with 3 vodka bottles",
+                    "elements": [
                         {
-                            "header": "Dead Ended",
-                            "elements": [
-                                {
-                                    "html": [
-                                        "<p>Interact with three vodka bottles</p>",
-                                        "<li>Downstairs Dept. Store, on the couch</li>",
-                                        "<li>On the ground just outside the shield room, held by a zombie.</li>",
-                                        "<li>Straight in Supply Depot door, on a bookshelf</li>"
-                                    ]
-                                }
-                            ]
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Location 1 - through the front door of the Department Store, on a couch"
+                            }
                         },
                         {
-                            "header": "Ace of Spades",
-                            "elements": [
-                                {
-                                    "html": [
-                                        "<p>Interact with three playing cards</p>",
-                                        "<li>Upstairs in Dragon Command, on a desk</li>",
-                                        "<li>Mid-level of Tank Factory, on a blackboard</li>",
-                                        "<li>In the room to the right of PaP</li>"
-                                    ]
-                                }
-                            ]
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Location 2 - on the ground outside of the TODO room, held by a zombie"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Location 3 - straight through the door to the Supply Depot, on a bookshelf"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Ace of Spades",
+                    "description": "Interact with 3 ace of spades playing cards",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Location 1 - upstairs in Dragon Command, on a desk"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Location 2 - middle level of Tank Factory, on a blackboard"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": "Location 3 - in the room to the right of PaP, in a book"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Side Easter Eggs",
+            "subsections": [
+                {
+                    "header": "",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": ""
+                            }
                         }
                     ]
                 }

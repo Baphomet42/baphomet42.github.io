@@ -6,7 +6,6 @@
     "sections" : [
         {
             "header": "Map Features",
-            "links": true,
             "subsections": [
                 {
                     "header": "Power Switch",
@@ -59,7 +58,6 @@
         },
         {
             "header": "Main Quest (Annihilator Special Weapon)",
-            "links": true,
             "subsections": [
                 {
                     "header": "Requirements",
@@ -152,10 +150,10 @@
             ]
         },
         {
-            "header": "Hidden Perk Side Quest",
+            "header": "Side Easter Eggs",
             "subsections": [
                 {
-                    "header": "Unlock either a Stamin-Up or Deadshot Daiquiri perk machine",
+                    "header": "Hidden Perk Machine (Stamin-Up or Deadshot Daiquiri)",
                     "description": "Teleport a monkey bomb using each of the 3 teleporters, then interact with the button at the mainframe.",
                     "elements": [
                         {

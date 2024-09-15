@@ -154,7 +154,7 @@ function pageRev2(data) {
 
         if(section.subsections) {
 
-            if(section.links) {
+            if(section.subsections.length > 1) {
                 page += '<div class="jump-link-wrap">';
                 page += '<p class="jump-link-header">Jump to...</p>'
                 page += '<ul>';
@@ -247,11 +247,7 @@ function pageRev1(data) {
     page += '<h1 class="center">'+data.name+'</h1>'
     page += '<h3 class="center">'+data.subtext+'</h3>'
     page += '<br/>'
-    page += '<div class="center"><a href="'+data.wiki+'" rel="noopener noreferrer" target="_blank" class="button">Call of Duty Wiki</a></div>'
-    if(data.wip) {
-        page += '<br/>'
-        page += '<h1 class="wip">- WIP -</h1>'
-    }
+    page += '<h1 class="wip">- WIP -</h1>'
     page += '</div>'
 
     if(data.maps) {

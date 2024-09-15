@@ -6,7 +6,6 @@
     "sections" : [
         {
             "header": "Map Features",
-            "links": true,
             "subsections": [
                 {
                     "header": "Groom Lake Teleporter",
@@ -83,7 +82,6 @@
         },
         {
             "header": "Hacker Device",
-            "links": true,
             "subsections": [
                 {
                     "header": "Device Locations",
@@ -189,7 +187,6 @@
         },
         {
             "header": "Excavators",
-            "links": true,
             "subsections": [
                 {
                     "header": "Warning Announcements",
@@ -243,7 +240,6 @@
         },
         {
             "header": "Main Quest",
-            "links": true,
             "subsections": [
                 {
                     "header": "Requirements",
@@ -504,7 +500,7 @@
                         {
                             "full": true,
                             "step": {
-                                "description": "This can be picked up at any point of the game and will spawn in one of 8 locations."
+                                "description": "This can be picked up at any point of the game and will spawn in one of 8 locations. The locations on Black Ops may vary."
                             }
                         },
                         {
