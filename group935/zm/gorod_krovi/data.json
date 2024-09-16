@@ -4,7 +4,7 @@
     "background": "https://callofdutymaps.com/wp-content/uploads/gorodkrovi29.jpg",
     "rev": 2,
     "maps": [{
-        "img": "https://steamuserimages-a.akamaihd.net/ugc/1484450726083233828/E627AB033A6CC98DE5BBF2FFD7A6AEA320D05BA3/"
+        "img": "/group935/zm/gorod_krovi/assets/map1.jpg"
     }],
     "wip": true,
     "sections" : [
@@ -228,38 +228,38 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": "Location 2 - "
+                                "src": "/group935/zm/gorod_krovi/assets/59.jpg",
+                                "alt": "Location 2 - middle floor of the Infirmary, on a bunk bed"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/59.jpg",
-                                "alt": "Location 3 - main floor of the Infirmary, on a bunk bed"
+                                "src": "/group935/zm/gorod_krovi/assets/19.jpg",
+                                "alt": "Location 3 - top floor of the Infirmary, on a wall"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Part 2 (TODO)",
+                    "header": "Part 2 (Heart)",
                     "description": "Located  (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": "Location 1 - "
+                                "src": "/group935/zm/gorod_krovi/assets/75.jpg",
+                                "alt": "Location 1 - next to Juggernog, on a chair"
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/gorod_krovi/assets/56.jpg",
-                                "alt": "Location 2 - between Juggernog and Mule Kick, on the door of a truck"
+                                "alt": "Location 2 - outside of the Operations Bunker, on the door of a truck"
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/gorod_krovi/assets/12.jpg",
-                                "alt": "Location 3 - in the Mule Kick room, on a shelf"
+                                "alt": "Location 3 - in the Operations Bunker, on a shelf"
                             }
                         }
                     ]
@@ -270,14 +270,14 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": "Location 1 - "
+                                "src": "/group935/zm/gorod_krovi/assets/57.jpg",
+                                "alt": "Location 1 - bottom floor of the Armory, on a wall"
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/gorod_krovi/assets/58.jpg",
-                                "alt": "Location 2 - below the top floor of the armory, on the wall"
+                                "alt": "Location 2 - at the Mystery Box floor of the Armory, on a wall"
                             }
                         },
                         {
@@ -290,12 +290,12 @@
                 },
                 {
                     "header": "Craft Shield",
-                    "description": "Build at the workbench TODO",
+                    "description": "Build at the workbench in the Operations Bunker",
                     "elements": [
                         {
                             "pic": {
                                 "src": "/group935/zm/gorod_krovi/assets/17.jpg",
-                                "alt": "Workbench location, across from Mule Kick"
+                                "alt": "Workbench location"
                             }
                         }
                     ]
@@ -334,16 +334,70 @@
         },
         {
             "header": "Guantlet of Siegfried (Special Weapon)",
-            "description": "",
+            "description": "Complete the bottom trial to unlock the weapon for all players. The trial is the same every game.",
             "subsections": [
                 {
-                    "header": "",
-                    "description": "",
+                    "header": "1. Aquire a Dragon Egg",
+                    "description": "Go to the Hatchery and shoot the egg above the sewer exit. Interact to pick it up.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": ""
+                                "src": "/group935/zm/gorod_krovi/assets/36.jpg",
+                                "alt": "Location to shoot the egg"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/37.jpg",
+                                "alt": "Location to pick up the egg"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Bathe the Dragon Egg in fire",
+                    "description": "Place the egg on one of the nests around the map. After the dragon breathes fire on that part of the map, the egg must cool, and then it can be picked up.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/71.jpg",
+                                "alt": "One of the nests, outside of Dragon Command"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Kill Napalm Zombies",
+                    "description": "Wait for the dragon to breathe fire on the map, and lure zombies into the fire. Kill enough flaming zombies until the challenges advances."
+                },
+                {
+                    "header": "4. Get penetrating multikills",
+                    "description": "Kill multiple zombies with a single bullet and repeat several times. Many guns can do this during Instakill, but snipers can do this normally."
+                },
+                {
+                    "header": "5. Get melee kills",
+                    "description": "Any melee weapon will count, including the shield bash."
+                },
+                {
+                    "header": "6. Incubate the Dragon Egg",
+                    "description": "Go back to the Hatchery and place the egg inside the incubator. Survive a lockdown in the basement, then wait a few rounds for the egg to cool. When the egg is cooled, pick it up.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/86.jpg",
+                                "alt": "Egg in the incubator"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "7. Claim reward",
+                    "description": "All players may claim the bottom trial reward to get the special weapon.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/89.jpg",
+                                "alt": "Special weapon reward from the trial headstone"
                             }
                         }
                     ]
@@ -405,6 +459,12 @@
                             "pic": {
                                 "src": "/group935/zm/gorod_krovi/assets/74.jpg",
                                 "alt": "Valve with cylinder"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": ""
                             }
                         },
                         {
@@ -531,13 +591,13 @@
                             "full": true,
                             "step": {
                                 "title": "935 Trophy",
-                                "description": "Located in the Hatchery, only visible after shooting a green(TODO) light in the sewer."
+                                "description": "Located in the Hatchery, only visible after shooting a red light in the sewer. The light will turn green when shot."
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": ""
+                                "src": "/group935/zm/gorod_krovi/assets/113.jpg",
+                                "alt": "Red light in the sewer"
                             }
                         },
                         {
@@ -587,19 +647,294 @@
                     ]
                 },
                 {
-                    "header": "4. ",
+                    "header": "4. Trophy Challenges",
+                    "description": "Each of the 6 trophies have unique challenge you must complete. The order is randomized, and you have to move to a new round any time you fail. The bomb challenge has potential to end the game, so be prepared.",
                     "elements": [
                         {
                             "full": true,
                             "step": {
-                                "title": "",
-                                "description": ""
+                                "title": "Start a challenge",
+                                "description": "Interact on the large screen to place the 6 trophies from before. Then, interact again to select a random challenge. If you fail, you must start a new round before you can interact again. If you succeed, you can immediately interact again to start the next challenge. All 6 challenges must be beaten before you can move on."
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": ""
+                                "src": "/group935/zm/gorod_krovi/assets/93.jpg",
+                                "alt": "Location to place the trophies and select a random challenge"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Bomb Challenge",
+                                "description": "Failing this step will instantly down all players located nearby any of the bombs. Belinski Square and the Hatchery are completely safe. Upon selecting the challenge, the screen will quickly flash through the 6 bomb locations on the map. Then, it will flash through the 6 locations slower, and this time you must remember the order. Then, there is a short timer before the bombs explode where you must interact with the 6 bombs in the correct order. If you run out of time or interact with a bomb out of order, they will all explode."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/119.jpg",
+                                "alt": "Bomb challenge selected and the screen highlighting a location"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/124.jpg",
+                                "alt": "Dragon Command bomb, upstairs and to the left"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/120.jpg",
+                                "alt": "Tank Factory bomb, top floor and in the room on the left"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/123.jpg",
+                                "alt": "Infirmary bomb, on a pillar when going to the bottom level"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/125.jpg",
+                                "alt": "Armory bomb, on the wall on the bottom level"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/122.jpg",
+                                "alt": "Supply Depot bomb, straight through the door on a wall"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/121.jpg",
+                                "alt": "Dept. Store bomb, under the staircase on the bottom floor"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Groph Pod Challenge",
+                                "description": "A Groph Pod will fall outside of the map at one of the dragon ride locations. Defend it from zombies until it opens, then launch a whelp down to retrieve the part. Pick up the part and return it to Sophia."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/98.jpg",
+                                "alt": "Groph Pod outside Supply Depot"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/100.jpg",
+                                "alt": "Opened Groph Pod with a whelp flying towards it"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/114.jpg",
+                                "alt": "Part dropped off by whelp"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/101.jpg",
+                                "alt": "Location to place part"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Gersh Challenge",
+                                "description": "Shoot Gersh until 3 quotes play and he flies to Sophia. He appears as a glowing yellow orb and leaves a trail behind as he moves. He will randomly move around the map until he's been shot enough to play all 3 quotes, and you can follow the high pitched sound to find him."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/115.jpg",
+                                "alt": "Glowing yellow orb (Gersh)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/116.jpg",
+                                "alt": "Gersh at Dragon Command after all 3 quotes"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Mangler Escort Challenge",
+                                "description": "Escort the green-eyed Mangler to Dragon Command. It can spawn in several locations, including Tank Factory. If it loses line of sight with a player it will sprint away, so stay close and be careful not to kill it."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/117.jpg",
+                                "alt": "Green-eyed Mangler at Tank Factory"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/118.jpg",
+                                "alt": "Location to bring Mangler"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Valkyrie Escort Challenge",
+                                "description": "Escort the damaged Valkyrie drone to Dragon Command. It always spawns in Belinski Square. Unlike the Mangler, it will not move unless you are standing right next to it, but you must still be careful not to kill it. Make sure you have the upper Department Store doors open, otherwise it will freeze its path."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/95.jpg",
+                                "alt": "Damaged Valkyrie in Belinski Square"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/96.jpg",
+                                "alt": "Damaged Valkyrie in Dragon Command"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Lockdown Challenge",
+                                "description": "This challenge will always appear last. Take a part from the challenge area and bring it to the Hatchery. All players must interact with the machine to start a Mangler-only lockdown. After suriving all the waves, pick up the part and bring it back to Sophia."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/102.jpg",
+                                "alt": "Part to pick up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/103.jpg",
+                                "alt": "Machine to start lockdown"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/104.jpg",
+                                "alt": "Location to place part"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "5. Bring the power core to Nikolai",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Grab the power core from Sophia"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/105.jpg",
+                                "alt": "Power core in an open compartment"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "At Belinski Square, give the part to Nikolai",
+                                "description": "Stand near the wall facing Nikolai and launch a whelp. It will carry the part to Nikolai, and a quote will play."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/126.jpg",
+                                "alt": "Whelp flying to Nikolai with the power core"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "6. Boss Fight",
+                    "description": "You cannot leave the boss fight until it's done. Make sure you have perks, a full shield, strong weapons, and any gobblegum you want to bring.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Enter the arena",
+                                "description": "All players must stand on the grate under Sophia, and a sewer will take you to the arena."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/107.jpg",
+                                "alt": "The sewer grate"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Press the button",
+                                "description": "Go to the middle of the arena and press the button to release Nikolai."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/108.jpg",
+                                "alt": "The button"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Shoot the glowing parts of the dragon",
+                                "description": "Hitmarkers will show you when you're doing damage. Different areas of the dragon will start glowing red after being shot by Nikolai. Repeat until the dragon is dead. Throughout the fight, large sections of the arena will start on fire. To avoid damage, go to one of the trenches, hold your shield, or make sure you're wearing the Dragon Wings.(TODO)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/127.jpg",
+                                "alt": "A glowing spot on the dragon"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/128.jpg",
+                                "alt": "Dragon breathing fire"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Defeat Nikolai",
+                                "description": "There are 4 yellow sections on Nikolai's mech suit that must be destroyed. Two yellow lights on top must be destroyed first, and will only be available to shoot at certain times. After that, you can destroy the two yellow lights on the front of the mech suit. During the fight, you will have to defend against R.A.P.S. in addition to the other enemies. Once the fight is done, all players will teleport back to Belinski Square, get the achievement, and can continue playing normally. Now that the dragon is dead, it will no longer light parts of the map on fire."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/129.jpg",
+                                "alt": "First glowing yellow target on top of the mech's head"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/130.jpg",
+                                "alt": "Second glowing yellow target on the other side of the mech's head"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/131.jpg",
+                                "alt": "One of the front yellow lights destroyed and the other still lit up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/132.jpg",
+                                "alt": "R.A.P.S."
                             }
                         }
                     ]
@@ -622,7 +957,7 @@
                         {
                             "pic": {
                                 "src": "/group935/zm/gorod_krovi/assets/5.jpg",
-                                "alt": "Location 2 - on the ground outside of the TODO room, held by a zombie"
+                                "alt": "Location 2 - on the ground outside of the Operations Bunker, held by a zombie"
                             }
                         },
                         {
@@ -663,9 +998,60 @@
             "header": "Side Easter Eggs",
             "subsections": [
                 {
-                    "header": "",
-                    "description": "",
+                    "header": "Hats and Wings",
+                    "description": "There are 2 hats and 1 pair of wings that can be unlocked. Each player can equip only one at a time, and each one gives different abilities.",
                     "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Dragon Wings",
+                                "description": "TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/109.jpg",
+                                "alt": "Mannequin with Dragon Wings, top floor of Department Store"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/110.jpg",
+                                "alt": "Dragon Command teleport location"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/111.jpg",
+                                "alt": "Tank Factory teleport location"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/112.jpg",
+                                "alt": "Supply Depot teleport location"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Mangler Helmet",
+                                "description": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Valkyrie Helmet",
+                                "description": ""
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "/group935/zm/gorod_krovi/assets/.jpg",
