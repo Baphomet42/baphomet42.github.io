@@ -1,9 +1,7 @@
 var pageData = {'panel': false, 'sections':[], 'current': -1}
 
 function buildPage(data) {
-    if(data.rev === 1)
-        return pageRev1(data)
-    else if(data.rev === 2)
+    if(data.rev === 2)
         return pageRev2(data)
 }
 
@@ -135,9 +133,9 @@ function pageRev2(data) {
 
     if(data.maps) {
         $.each(data.maps, function (mapKey, map) {
-            mapLink = map.img;
+            mapLink = map.img
             if(map.link)
-                mapLink = map.link;
+                mapLink = map.link
             page += '<div class="center"><a href="'+mapLink+'" rel="noopener noreferrer" target="_blank"><img src="'+map.img+'" class="img-border img-full"/></a></div>'
         })
     }
@@ -155,14 +153,14 @@ function pageRev2(data) {
         if(section.subsections) {
 
             if(section.subsections.length > 1) {
-                page += '<div class="jump-link-wrap">';
+                page += '<div class="jump-link-wrap">'
                 page += '<p class="jump-link-header">Jump to...</p>'
-                page += '<ul>';
+                page += '<ul>'
                 $.each(section.subsections, function (subKey, sub) {
                     if(sub.header)
-                        page += '<li><span class="link" onclick="scrollToSubsection('+sectionKey+','+subKey+')">'+sub.header+'</span></li>';
+                        page += '<li><span class="link" onclick="scrollToSubsection('+sectionKey+','+subKey+')">'+sub.header+'</span></li>'
                 })
-                page += '</ul></div>';
+                page += '</ul></div>'
             }
 
             $.each(section.subsections, function (subKey, sub) {
@@ -183,25 +181,27 @@ function pageRev2(data) {
                             page += '<td class="col-wrap"><div class="col-cell center-container">'
 
                         if(el.pic) {
-                            page += '<div class="pic-wrap"><img class="pic" src="'+el.pic.src+'"/></div>';
+                            page += '<div class="pic-wrap"><img class="pic" src="'+el.pic.src+'"/></div>'
                             if(el.pic.alt)
-                                page += '<p class="pic-alt">'+el.pic.alt+'</p>';
+                                page += '<p class="pic-alt">'+el.pic.alt+'</p>'
                         }
                         else if(el.step) {
                             if(el.step.title)
-                                page += '<h3>'+el.step.title+'</h3>';
+                                page += '<h3>'+el.step.title+'</h3>'
                             if(el.step.description)
-                                page += '<p>'+el.step.description+'</p>';
+                                page += '<p>'+el.step.description+'</p>'
                         }
                         else if(el.youtube) {
-                            page += '<div class="pic-wrap"><iframe class="pic" src="https://www.youtube.com/embed/'+el.youtube+'" frameborder="0" allowfullscreen></iframe></div>';
+                            page += '<div class="pic-wrap"><iframe class="pic" src="https://www.youtube.com/embed/'+el.youtube.src+'" frameborder="0" allowfullscreen></iframe></div>'
+                            if(el.youtube.alt)
+                                page += '<p class="pic-alt">'+el.youtube.alt+'</p>'
                         }
                         else if(el.bullets) {
-                            page += '<ul>';
+                            page += '<ul>'
                             $.each(el.bullets, function (bulletKey, bullet) {
-                                page += '<li>'+bullet+'</li>';
+                                page += '<li>'+bullet+'</li>'
                             })
-                            page += '</ul>';
+                            page += '</ul>'
                         }
                         else if(el.special) {
                             if(el.special === "gorod_valve") {
@@ -547,80 +547,4 @@ function updateGorodValve() {
     document.getElementById('gorod-valve-armory').innerHTML = outputArmory
     document.getElementById('gorod-valve-supply').innerHTML = outputSupply
     document.getElementById('gorod-valve-dept').innerHTML = outputDept
-}
-
-
-
-
-
-
-
-function pageRev1(data) {
-    var page = ''
-
-    if(data.background) {
-        page += '<div id="parallax-background" style="background-image: url('+data.background+')"></div>'
-    }
-    
-    page += '<div class="section">'
-    page += '<div class="back-button-wrap"><a class="button back-button" href="/group935" rel="noopener noreferrer">< All Maps</a></div>'
-    page += '<h1 class="center">'+data.name+'</h1>'
-    page += '<h3 class="center">'+data.subtext+'</h3>'
-    page += '<br/>'
-    page += '<h1 class="wip">- WIP -</h1>'
-    page += '</div>'
-
-    if(data.maps) {
-        $.each(data.maps, function (mapKey, map) {
-            mapLink = map.img;
-            if(map.link)
-                mapLink = map.link;
-            page += '<div class="center"><a href="'+mapLink+'" rel="noopener noreferrer" target="_blank"><img src="'+map.img+'" class="img-border img-full"/></a></div>'
-        })
-    }
-    
-    $.each(data.sections, function (sectionKey, section) {
-        page += '<div class="section">'
-        page += '<h2 class="center">'+section.header+'</h2>'
-
-        if(section.rows) {
-            page += '<table class="card-table">'
-            $.each(section.rows, function (rowKey, row) {
-                page += '<tr class="card-table-row">'
-        
-                $.each(row.cols, function (colKey, col) {
-                    page += '<td class="col-wrap"><div class="col-cell center-container">'
-
-                    if(col.header) {
-                        page += '<h3>'+col.header+'</h3>'
-                    }
-
-                    if(col.elements) {
-                        $.each(col.elements, function (elKey, el) {
-
-                            if(el.youtube) {
-                                page += '<div class="pic-wrap"><iframe class="pic" src="https://www.youtube.com/embed/'+el.youtube+'" frameborder="0" allowfullscreen></iframe></div>';
-                            }
-                            else if(el.html) {
-                                $.each(el.html, function (htmlKey, html) {
-                                    page += html;
-                                })
-                            }
-
-                        })
-                    }
-
-                    page += "</div></td>"
-                })
-        
-                page += '</tr>'
-            })
-            page += "</table>"
-        }
-
-        page += '</div>'
-    })
-
-    page += ''
-    return page
 }

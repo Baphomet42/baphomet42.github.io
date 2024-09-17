@@ -222,8 +222,8 @@
                         let index = i
                         
                         reader.onload = function(e) {
-                            const fileNameParts = file.name.split('.');
-                            const fileExtension = (fileNameParts.length > 1) ? fileNameParts.pop() : '';
+                            const fileNameParts = file.name.split('.')
+                            const fileExtension = (fileNameParts.length > 1) ? fileNameParts.pop() : ''
 
                             const newFileName = ''+(startVal+index)+'.'+fileExtension
                             zip.file(newFileName, file)

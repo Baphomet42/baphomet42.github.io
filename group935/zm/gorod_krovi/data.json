@@ -29,7 +29,7 @@
                             "full": true,
                             "step": {
                                 "title": "1. Get the parts from 3 Groph Pods",
-                                "description": "When zombies drop Code Cylinders, you can use them on the 3 machines to call in Groph Pods. The blue Code Cylinder is used for Dragon Command, yellow is for Supply Depot, and red is for Tank Factory. Defend the pod until it opens up, revealing a part."
+                                "description": "When zombies drop Code Cylinders, you can use them on the 3 machines to call in Groph Pods. The blue Code Cylinder is used for Dragon Command, red is for Tank Factory, and yellow is for Supply Depot. Defend the pod until it opens up, revealing a part."
                             }
                         },
                         {
@@ -46,14 +46,14 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/67.jpg",
-                                "alt": "Groph Pod station in Supply Depot"
+                                "src": "/group935/zm/gorod_krovi/assets/27.jpg",
+                                "alt": "Groph Pod station in Tank Factory"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/27.jpg",
-                                "alt": "Groph Pod station in Tank Factory"
+                                "src": "/group935/zm/gorod_krovi/assets/67.jpg",
+                                "alt": "Groph Pod station in Supply Depot"
                             }
                         },
                         {
@@ -89,14 +89,14 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/68.jpg",
-                                "alt": "Dragon station 2 - at Supply Depot"
+                                "src": "/group935/zm/gorod_krovi/assets/69.jpg",
+                                "alt": "Dragon station 2 - at Tank Factory"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/69.jpg",
-                                "alt": "Dragon station 3 - at Tank Factory"
+                                "src": "/group935/zm/gorod_krovi/assets/68.jpg",
+                                "alt": "Dragon station 3 - at Supply Depot"
                             }
                         },
                         {
@@ -143,37 +143,37 @@
                         {
                             "pic": {
                                 "src": "/group935/zm/gorod_krovi/assets/48.jpg",
-                                "alt": "Quick Revive"
+                                "alt": "Quick Revive - in Belinski Square"
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/gorod_krovi/assets/49.jpg",
-                                "alt": "Juggernog"
+                                "alt": "Juggernog - in Department Store"
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/gorod_krovi/assets/50.jpg",
-                                "alt": "Mule Kick"
+                                "alt": "Mule Kick - in Operations Bunker"
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/gorod_krovi/assets/66.jpg",
-                                "alt": "Stamin-Up"
+                                "alt": "Stamin-Up - upstairs in the Infirmary"
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/gorod_krovi/assets/52.jpg",
-                                "alt": "Speed Cola"
+                                "alt": "Speed Cola - upstairs at Supply Depot"
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/gorod_krovi/assets/54.jpg",
-                                "alt": "Double Tap II"
+                                "alt": "Double Tap II - in Tank Factory"
                             }
                         },
                         {
@@ -204,7 +204,7 @@
             "subsections": [
                 {
                     "header": "Part 1 (Dragon Head)",
-                    "description": "Located  (3 possible locations).",
+                    "description": "Located in the Infirmary (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
@@ -228,7 +228,7 @@
                 },
                 {
                     "header": "Part 2 (Heart)",
-                    "description": "Located  (3 possible locations).",
+                    "description": "Located near the Department Store or Operations Bunker (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
@@ -252,7 +252,7 @@
                 },
                 {
                     "header": "Part 3 (Teeth Window)",
-                    "description": "Located  (3 possible locations).",
+                    "description": "Located in the Armory (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
@@ -294,7 +294,7 @@
             "subsections": [
                 {
                     "header": "Lockdown",
-                    "description": "All players must interact on the machine to start the lockdown. Survive 4 waves to finish the lockdown and get the Dragon Strike.",
+                    "description": "All players must interact on the machine to start the lockdown. Survive 4 waves to finish the lockdown and get the Dragon Strike. A single Max Ammo power-up will spawn for use at any time during the lockdown.",
                     "elements": [
                         {
                             "pic": {
@@ -305,7 +305,7 @@
                         {
                             "pic": {
                                 "src": "/group935/zm/gorod_krovi/assets/34.jpg",
-                                "alt": "Max Ammo spawned by PaP machine between lockdown waves"
+                                "alt": "Max Ammo spawned by PaP machine"
                             }
                         },
                         {
@@ -444,7 +444,7 @@
                             "full": true,
                             "step": {
                                 "title": "Configure the valves",
-                                "description": "Locate the valve with the pink cylinder and the valve with the green light. Then interact with each valve to set the correct number based on the tool below."
+                                "description": "Locate the valve with the pink cylinder and the valve with the green light. Then, interact with 5 of the valves to set the correct number based on the tool below. The valve with the pink cylinder does not have to be set to anything."
                             }
                         },
                         {
@@ -546,7 +546,7 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "Press the red light",
+                                "title": "Press the light",
                                 "description": "Interact with the green light to input the password. When done correctly, the light will turn red."
                             }
                         },
@@ -560,7 +560,7 @@
                 },
                 {
                     "header": "4. Collect trophies",
-                    "description": "There are 6 trophies around the map that must be moved with different weapons, then interacted with to pick up. They can be collected at any time during the game and in any order.",
+                    "description": "There are 6 trophies around the map that must be moved with different weapons, then interacted to be picked up. They can be collected at any time during the game and in any order.",
                     "elements": [
                         {
                             "full": true,
@@ -798,7 +798,7 @@
                             "full": true,
                             "step": {
                                 "title": "Mangler Escort Challenge",
-                                "description": "Escort the green-eyed Mangler to Dragon Command. It can spawn in several locations, including Tank Factory. If it loses line of sight with a player it will sprint away, so stay close and be careful not to kill it."
+                                "description": "Escort the green-eyed Mangler to Dragon Command. It can spawn in several locations, including Tank Factory. If it loses line of sight with a player, it will sprint away. Stay close and be careful not to kill it."
                             }
                         },
                         {
@@ -836,7 +836,7 @@
                             "full": true,
                             "step": {
                                 "title": "Lockdown Challenge",
-                                "description": "This challenge will always appear last. Take a part from the challenge area and bring it to the Hatchery. All players must interact with the machine to start a Mangler-only lockdown. After suriving all the waves, pick up the part and bring it back to Sophia."
+                                "description": "This challenge will always appear last. Take the part from the challenge area and bring it to the Hatchery. All players must interact with the machine to start a Mangler-only lockdown. After suriving all the waves, go back to the machine, pick up the part, and bring it back to Sophia."
                             }
                         },
                         {
@@ -848,7 +848,7 @@
                         {
                             "pic": {
                                 "src": "/group935/zm/gorod_krovi/assets/103.jpg",
-                                "alt": "Machine to start lockdown"
+                                "alt": "Machine to start lockdown and get part"
                             }
                         },
                         {
@@ -923,7 +923,7 @@
                             "full": true,
                             "step": {
                                 "title": "Shoot the glowing parts of the dragon",
-                                "description": "Hitmarkers will show you when you're doing damage. Different areas of the dragon will start glowing red after being shot by Nikolai. Repeat until the dragon is dead. Throughout the fight, large sections of the arena will start on fire. To avoid damage, go to one of the trenches or hold your shield."
+                                "description": "Hitmarkers will show when you're doing damage. Different areas of the dragon will start glowing red after being shot by Nikolai. Repeat until the dragon is dead. Throughout the fight, large sections of the arena will start on fire. To avoid damage, go to one of the trenches or hold your shield."
                             }
                         },
                         {
@@ -989,7 +989,7 @@
                         {
                             "pic": {
                                 "src": "/group935/zm/gorod_krovi/assets/5.jpg",
-                                "alt": "Location 2 - on the ground outside of the Operations Bunker, held by a zombie"
+                                "alt": "Location 2 - just outside of the Operations Bunker, on the ground by two bodies"
                             }
                         },
                         {
@@ -1045,7 +1045,7 @@
                             "full": true,
                             "step": {
                                 "title": "2. Hide and seek",
-                                "description": "Interact with a grave in Belinski Square to start the game. A particle effect will show the game has started. Then find and shoot Samantha music box figures around the map. They will play a song when you get close."
+                                "description": "Interact with a grave in Belinski Square to start the game. A particle effect will show the game has started. Then, find and shoot Samantha music box figures around the map. They will play a song when you get close."
                             }
                         },
                         {

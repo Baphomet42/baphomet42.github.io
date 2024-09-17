@@ -50,6 +50,12 @@ article {
     flex: 1;
 }
 
+.article-width {
+    width: min(95%, 70rem);
+    margin: auto;
+    box-sizing: border-box;
+}
+
 img {
     width: 100%;
 }
@@ -227,10 +233,9 @@ ul {
 .main-button {
     margin: 0;
     padding: 0;
-    position: absolute;
-    right: 0;
-    margin-right: 7.5rem;
     margin-top: -1.5rem;
+    margin-right: 5rem;
+    float: right;
 }
 
 .center {
@@ -301,7 +306,7 @@ ul {
     }
     
     .main-button {
-        margin-right: 3.5rem;
+        margin-right: 1rem;
     }
 
 }
