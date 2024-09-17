@@ -6,7 +6,6 @@
     "maps": [{
         "img": "/group935/zm/gorod_krovi/assets/map1.jpg"
     }],
-    "wip": true,
     "sections" : [
         {
             "header": "Map Features",
