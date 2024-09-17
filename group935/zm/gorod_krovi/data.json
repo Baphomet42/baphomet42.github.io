@@ -29,20 +29,7 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "1. Start up Sophia",
-                                "description": "After turning on power, interact on the green light on Sophia so it turns red."
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/3.jpg",
-                                "alt": "The light after interacting"
-                            }
-                        },
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "2. Get the parts from 3 Groph Pods",
+                                "title": "1. Get the parts from 3 Groph Pods",
                                 "description": "When zombies drop Code Cylinders, you can use them on the 3 machines to call in Groph Pods. The blue Code Cylinder is used for Dragon Command, yellow is for Supply Depot, and red is for Tank Factory. Defend the pod until it opens up, revealing a part."
                             }
                         },
@@ -85,7 +72,7 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "3. Place the parts and ride the dragon",
+                                "title": "2. Place the parts and ride the dragon",
                                 "description": "Interact on the device to place all 3 parts. This will enable all 3 dragon stations. Each of the stations will take you to the Hatchery."
                             }
                         },
@@ -421,7 +408,19 @@
                     ]
                 },
                 {
-                    "header": "1. Valve step",
+                    "header": "1. Interact with Sophia",
+                    "description": "After turning on power, the red light on Sophia will turn green. Interact with the green light so it turns red again.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/3.jpg",
+                                "alt": "The light after interacting"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Valve step",
                     "elements": [
                         {
                             "full": true,
@@ -446,26 +445,60 @@
                             "full": true,
                             "step": {
                                 "title": "Configure the valves",
-                                "description": "Locate the valve with the green light and the valve with the pink cylinder. Then interact with each valve to set the correct number based on the tool below.(TODO)"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/46.jpg",
-                                "alt": "Green valve"
+                                "description": "Locate the valve with the pink cylinder and the valve with the green light. Then interact with each valve to set the correct number based on the tool below."
                             }
                         },
                         {
                             "pic": {
                                 "src": "/group935/zm/gorod_krovi/assets/74.jpg",
-                                "alt": "Valve with cylinder"
+                                "alt": "Valve with pink cylinder (stuck inside pipe)"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": ""
+                                "src": "/group935/zm/gorod_krovi/assets/46.jpg",
+                                "alt": "Green light valve"
                             }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/41.jpg",
+                                "alt": "Dragon Command Valve - upstairs and to the right"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/45.jpg",
+                                "alt": "Tank Factory Valve - bottom floor"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/42.jpg",
+                                "alt": "Infirmary Valve - main floor by a bed"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/43.jpg",
+                                "alt": "Armory Valve - top floor"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/44.jpg",
+                                "alt": "Supply Depot Valve - bottom floor under the stairs"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/46.jpg",
+                                "alt": "Department Store Valve - top floor, left from the stairs"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "special": "gorod_valve"
                         },
                         {
                             "full": true,
@@ -483,7 +516,7 @@
                     ]
                 },
                 {
-                    "header": "2. Input password",
+                    "header": "3. Input password",
                     "elements": [
                         {
                             "full": true,
@@ -527,7 +560,7 @@
                     ]
                 },
                 {
-                    "header": "3. Collect trophies",
+                    "header": "4. Collect trophies",
                     "description": "There are 6 trophies around the map that must be moved with different weapons, then interacted with to pick up. They can be collected at any time during the game and in any order.",
                     "elements": [
                         {
@@ -647,7 +680,7 @@
                     ]
                 },
                 {
-                    "header": "4. Trophy Challenges",
+                    "header": "5. Trophy Challenges",
                     "description": "Each of the 6 trophies have unique challenge you must complete. The order is randomized, and you have to move to a new round any time you fail. The bomb challenge has potential to end the game, so be prepared.",
                     "elements": [
                         {
@@ -828,7 +861,7 @@
                     ]
                 },
                 {
-                    "header": "5. Bring the power core to Nikolai",
+                    "header": "6. Bring the power core to Nikolai",
                     "elements": [
                         {
                             "full": true,
@@ -858,7 +891,7 @@
                     ]
                 },
                 {
-                    "header": "6. Boss Fight",
+                    "header": "7. Boss Fight",
                     "description": "You cannot leave the boss fight until it's done. Make sure you have perks, a full shield, strong weapons, and any gobblegum you want to bring.",
                     "elements": [
                         {
@@ -891,7 +924,7 @@
                             "full": true,
                             "step": {
                                 "title": "Shoot the glowing parts of the dragon",
-                                "description": "Hitmarkers will show you when you're doing damage. Different areas of the dragon will start glowing red after being shot by Nikolai. Repeat until the dragon is dead. Throughout the fight, large sections of the arena will start on fire. To avoid damage, go to one of the trenches, hold your shield, or make sure you're wearing the Dragon Wings.(TODO)"
+                                "description": "Hitmarkers will show you when you're doing damage. Different areas of the dragon will start glowing red after being shot by Nikolai. Repeat until the dragon is dead. Throughout the fight, large sections of the arena will start on fire. To avoid damage, go to one of the trenches or hold your shield."
                             }
                         },
                         {
@@ -991,6 +1024,129 @@
                             }
                         }
                     ]
+                },
+                {
+                    "header": "Samantha's Sorrow",
+                    "description": "Complete a quest to play the song and get a Max Ammo",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Burn 3 Monkey Bombs",
+                                "description": "Throw 3 Monkey Bombs into 3 different dragon fire locations. You will hear the Monkey Bomb screaming each time."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/156.jpg",
+                                "alt": "Burning Monkey Bomb"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Hide and seek",
+                                "description": "Interact with a grave in Belinski Square to start the game. A particle effect will show the game has started. Then find and shoot Samantha music box figures around the map. They will play a song when you get close."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/157.jpg",
+                                "alt": "The grave to start hide and seek"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/159.jpg",
+                                "alt": "Possible location - top floor of Infirmary, on a cart"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/160.jpg",
+                                "alt": "Possible location - outside of Dragon Command, on the end of the tank barrel"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/161.jpg",
+                                "alt": "Possible location - outside of Dragon Command, hanging below a balcony"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/162.jpg",
+                                "alt": "Possible location - at Supply Depot, looking left from the dragon station"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/163.jpg",
+                                "alt": "Possible location - outside of Tank Factory, in a sewer pipe"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/164.jpg",
+                                "alt": "Possible location - at Belinski Square, on top of a telephone pole"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/165.jpg",
+                                "alt": "Possible location - outside of Supply Depot, hanging from a light"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/166.jpg",
+                                "alt": "Possible location - in Supply Depot, on a box upstairs"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/167.jpg",
+                                "alt": "Possible location - in Department Store, hanging below the broken staircase"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/168.jpg",
+                                "alt": "Possible location - at Tank Factory, looking right from the dragon station"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/169.jpg",
+                                "alt": "Possible location - in the Infirmary, above the destroyed floor ramp"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/170.jpg",
+                                "alt": "Possible location - in the Operations Bunker, through a barrier by Mule Kick"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/171.jpg",
+                                "alt": "Possible location - between the Armory and Supply Depot, outside a barrier on the train car"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Interact with the grave",
+                                "description": "Go back to the grave and interact again. This time, you'll get a Max Ammo and the song will play."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/158.jpg",
+                                "alt": "The grave to get the Max Ammo and song"
+                            }
+                        }
+                    ]
                 }
             ]
         },
@@ -1005,7 +1161,7 @@
                             "full": true,
                             "step": {
                                 "title": "Dragon Wings",
-                                "description": "TODO"
+                                "description": "Unlocks instant teleport to Hatchery, adds 30% explosive damage resistance, and adds 30% fire damage resistance. Unlock by riding the dragon at all 3 stations and having the Dragon Strike and Gauntlet of Siegfried. Equip by interacting with a mannequin."
                             }
                         },
                         {
@@ -1036,26 +1192,273 @@
                             "full": true,
                             "step": {
                                 "title": "Mangler Helmet",
-                                "description": ""
+                                "description": "Adds 30% damage increase to manglers and adds 50% damage reduction from manglers. Unlock by shooting off 5 mangler arm cannons and 5 mangler helmets. Equip by interacting with a mannequin."
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": ""
+                                "src": "/group935/zm/gorod_krovi/assets/137.jpg",
+                                "alt": "Mangler with arm shot off"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/138.jpg",
+                                "alt": "Mangler with helmet shot off"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/134.jpg",
+                                "alt": "Mannequin with Mangler Helmet, middle floor of Department Store"
                             }
                         },
                         {
                             "full": true,
                             "step": {
-                                "title": "Valkyrie Helmet",
-                                "description": ""
+                                "title": "Valkyrie Drone Hat",
+                                "description": "Adds 30% damage increase to valkyrie drones and adds 50% electric damage resistance. Unlock by shooting off all 3 arms from 5 valkyrie drones and 5 cameras from valkyrie drones. Equip by interacting with a mannequin."
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/.jpg",
-                                "alt": ""
+                                "src": "/group935/zm/gorod_krovi/assets/136.jpg",
+                                "alt": "Valkyrie with 2 of its 3 arms shot off"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/135.jpg",
+                                "alt": "Valkyrie with camera shot off"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/133.jpg",
+                                "alt": "Mannequin with Valkyrie Drone Hat, middle floor of Department Store"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Tiamat's Maw (Upgraded Shield)",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Get 50 shield kills",
+                                "description": "Melee attacks and shield blasts both count"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Stand in the fire",
+                                "description": "Hold the shield inside dragon fire for the entire duration of the flames. This must be done twice."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/146.jpg",
+                                "alt": "Using the shield to stand in fire"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Shoot 3 symbols",
+                                "description": "Using the shield blast, shoot 3 purple symbols across the map"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/147.jpg",
+                                "alt": "Location 1 - at Dragon Command, looking left from the dragon station"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/149.jpg",
+                                "alt": "Location 2 - at Tank Factory, looking right from the dragon station"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/148.jpg",
+                                "alt": "Location 3 - at Supply Depot, looking up towards the dragon station when standing by Speed Cola"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "4. Give to the dragon corpse",
+                                "description": "Hold the shield and interact on the dragon corpse by the trials in Belinski Square. The old shield will go in and the new one will be given to you. All players will get the upgrade."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/150.jpg",
+                                "alt": "The shield inside the dragon corpse"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Draconite Controller (Upgraded Dragon Strike)",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Get 50 Dragon Strike kills"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Use the Dragon Strike on a flag",
+                                "description": "There will be 1 flag outside the map for each player. Use the dragon strike on it to destroy the flag."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/140.jpg",
+                                "alt": "Flag outside Dragon Command, straight back from the dragon station"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/141.jpg",
+                                "alt": "Flag outside Tank Factory, seen from the window by Double Tap"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/139.jpg",
+                                "alt": "Flag outside Supply Depot, looking left from the dragon station"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/142.jpg",
+                                "alt": "Flag outside Belinski Square, seen behind the sewer exit by Quick Revive"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Lockdown",
+                                "description": "Go to the Hatchery and start another lockdown. During the lockdown, use the Dragon Strike as much as possible. It will recharge much faster than normal during the lockdown. If successful, all players can pick up the Draconite Controller."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/143.jpg",
+                                "alt": "Location to start the lockdown"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/145.jpg",
+                                "alt": "Using a Dragon Strike at the lockdown"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/144.jpg",
+                                "alt": "Draconite Controller"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Dubstep Monkey Bomb",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Get the flask from Monkey Bomb kills",
+                                "description": "After 50 Monkey Bomb kills, a zombie will drop a flask. Interact to pick it up."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/153.jpg",
+                                "alt": "The flask"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Pick up the flowers",
+                                "description": "Interact with the flowers on the desk in the upstairs of Dragon Command."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/152.jpg",
+                                "alt": "The flowers"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Get the lit candle",
+                                "description": "Use the shield blast to light a candle, then pick it up."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/151.jpg",
+                                "alt": "One of the candle locations, in Supply Depot"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "4. Aquire upgraded Monkey Bomb",
+                                "description": "Throw a Monkey Bomb on your trial headstone, then interact just below the green flame on the prompt. Pick up the Dubstep Monkey Bomb from the skeleton arm."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/154.jpg",
+                                "alt": "Monkey Bomb on the grave"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/155.jpg",
+                                "alt": "Upgraded Monkey Bomb trial reward"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Time Attack",
+                    "description": "Complete rounds under a certain time to unlock melee weapons. Purchase in the Operations Bunker.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/172.jpg",
+                                "alt": "Wrench - 5 rounds under 5 minutes"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/173.jpg",
+                                "alt": "Malice - 10 rounds under 13 minutes"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/174.jpg",
+                                "alt": "Slash N' Burn - 15 rounds under 24 minutes"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "/group935/zm/gorod_krovi/assets/175.jpg",
+                                "alt": "Fury's Song - 20 rounds under 32 minutes"
                             }
                         }
                     ]

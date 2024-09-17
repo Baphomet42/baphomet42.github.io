@@ -70,24 +70,47 @@
             
             $.each(value.maps, function (mapKey, mapVal) {
                 game += '<td class="map-td center">'
-                if(mapVal.link) {
-                    if(mapVal.img)
-                        game += '<a href="'+mapVal.link+'" rel="noopener noreferrer"><div class="map-button" style="background-image: url('+mapVal.img+')">'
-                    else
-                        game += '<a href="'+mapVal.link+'" rel="noopener noreferrer"><div class="map-button">'
+
+                let linkData = ''
+                let linkDataEnd = '</a>'
+                let mapButtonData = ''
+                let imgData = ''
+
+                if(!mapVal.disabled && mapVal.fallback) {
+                    linkData = '<a href="'+mapVal.fallback+'" rel="noopener noreferrer" target="_blank">'
+                    mapButtonData = ' map-fallback'
                 }
-                else if(mapVal.fallback) {
-                    if(mapVal.img)
-                        game += '<a href="'+mapVal.fallback+'" rel="noopener noreferrer" target="_blank"><div class="map-button map-fallback" style="background-image: url('+mapVal.img+')">'
-                    else
-                        game += '<a href="'+mapVal.fallback+'" rel="noopener noreferrer" target="_blank"><div class="map-button map-fallback">'
+                else if(!mapVal.disabled && mapVal.link)
+                    linkData = '<a href="'+mapVal.link+'" rel="noopener noreferrer">'
+                else {
+                    mapButtonData = ' map-nolink'
+                    linkDataEnd = ''
                 }
-                else
-                    game += '<div class="map-button map-nolink">'
+
+                if(mapVal.img)
+                    imgData = ' style="background-image: url('+mapVal.img+')"'
+
+                game += linkData + '<div class="map-button'+mapButtonData+'"'+imgData+'>'
+
+                // if(mapVal.link) {
+                //     if(mapVal.img)
+                //         game += '<a href="'+mapVal.link+'" rel="noopener noreferrer"><div class="map-button" style="background-image: url('+mapVal.img+')">'
+                //     else
+                //         game += '<a href="'+mapVal.link+'" rel="noopener noreferrer"><div class="map-button">'
+                // }
+                // else if(mapVal.fallback) {
+                //     if(mapVal.img)
+                //         game += '<a href="'+mapVal.fallback+'" rel="noopener noreferrer" target="_blank"><div class="map-button map-fallback" style="background-image: url('+mapVal.img+')">'
+                //     else
+                //         game += '<a href="'+mapVal.fallback+'" rel="noopener noreferrer" target="_blank"><div class="map-button map-fallback">'
+                // }
+                // else
+                //     game += '<div class="map-button map-nolink">'
                 game += '<h2 class="map-name">' + mapVal.name + '</h2>'
                 if(mapVal.desc)
                     game += '<p class="map-desc center">'+mapVal.desc+'</p>'
                 game += '</div>'
+                game += linkDataEnd
                 game += '</td>'
             })
 

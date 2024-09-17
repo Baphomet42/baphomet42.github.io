@@ -203,6 +203,41 @@ function pageRev2(data) {
                             })
                             page += '</ul>';
                         }
+                        else if(el.special) {
+                            if(el.special === "gorod_valve") {
+                                page += '<h3>Valve configuration tool</h3>'
+                                page += '<p>Input the locations of the green light valve and pink cylinder valve. Then, interact with each valve to set the number based on the output below. <a href="https://kronorium.com/blackops3/gorodkrovi/" rel="noopener noreferrer" target="_blank" class="link">Credit</a></p>'
+                                page += '<div>'
+                                page += '<label for="gorod-valve-pink">Pink Cylinder Valve: </label><select id="gorod-valve-pink" style="font-size:large" onchange="setGorodValve(\'pink\',this.value)">'
+                                page += '<option value="select">Select Location</option>'
+                                page += '<option value="dragon">Dragon Command</option>'
+                                page += '<option value="tank">Tank Factory</option>'
+                                page += '<option value="infirmary">Infirmary</option>'
+                                page += '<option value="armory">Armory</option>'
+                                page += '<option value="supply">Supply Depot</option>'
+                                page += '<option value="dept">Department Store</option>'
+                                page += '</select>'
+                                page += '</div><br/><div>'
+                                page += '<label for="gorod-valve-green">Green Light Valve: </label><select id="gorod-valve-green" style="font-size:large" onchange="setGorodValve(\'green\',this.value)">'
+                                page += '<option value="select">Select Location</option>'
+                                page += '<option value="dragon">Dragon Command</option>'
+                                page += '<option value="tank">Tank Factory</option>'
+                                page += '<option value="infirmary">Infirmary</option>'
+                                page += '<option value="armory">Armory</option>'
+                                page += '<option value="supply">Supply Depot</option>'
+                                page += '<option value="dept">Department Store</option>'
+                                page += '</select>'
+                                page += '</div><br/>'
+
+                                page += '<p>Set the valves to the following:</p>'
+                                page += '<li>Dragon Command: <span id="gorod-valve-dragon">(Select Valve Locations)</span></li>'
+                                page += '<li>Tank Factory: <span id="gorod-valve-tank">(Select Valve Locations)</span></li>'
+                                page += '<li>Infirmary: <span id="gorod-valve-infirmary">(Select Valve Locations)</span></li>'
+                                page += '<li>Armory: <span id="gorod-valve-armory">(Select Valve Locations)</span></li>'
+                                page += '<li>Supply Depot: <span id="gorod-valve-supply">(Select Valve Locations)</span></li>'
+                                page += '<li>Department Store: <span id="gorod-valve-dept">(Select Valve Locations)</span></li>'
+                            }
+                        }
 
                         page += "</div></td>"
                     })
@@ -227,6 +262,291 @@ function pageRev2(data) {
     page += '<div id="control-panel-hidden" class="control-panel"><table><tr><td id="control-panel-hidden-button" class="control-panel-button" onclick="toggleControlPanelVisibility()"><</td></tr></table></div>'
 
     return page
+}
+
+function setGorodValve(type, location) {
+    if(type === "pink")
+        gorodValvePink = location
+    else
+        gorodValveGreen = location
+
+    updateGorodValve()
+}
+
+var gorodValvePink = ''
+var gorodValveGreen = ''
+function updateGorodValve() {
+    let errorMsg = '(Select Valve Locations)'
+    let endMsg = '(End Point)'
+
+    let outputDragon = errorMsg
+    let outputTank = errorMsg
+    let outputInfirmary = errorMsg
+    let outputArmory = errorMsg
+    let outputSupply = errorMsg
+    let outputDept = errorMsg
+
+    console.log('Setting gorod valves, pink: '+gorodValvePink+', green: '+gorodValveGreen)
+
+    if(gorodValvePink === 'dragon') {
+        if(gorodValveGreen === 'tank') {
+            outputDragon = endMsg
+            outputTank = '1'
+            outputInfirmary = '1'
+            outputArmory = '1'
+            outputSupply = '1'
+            outputDept = '1'
+        }
+        else if(gorodValveGreen === 'infirmary') {
+            outputDragon = endMsg
+            outputTank = '2'
+            outputInfirmary = '2'
+            outputArmory = '3'
+            outputSupply = '2'
+            outputDept = '3'
+        }
+        else if(gorodValveGreen === 'armory') {
+            outputDragon = endMsg
+            outputTank = '2'
+            outputInfirmary = '2'
+            outputArmory = '3'
+            outputSupply = '1'
+            outputDept = '2'
+        }
+        else if(gorodValveGreen === 'supply') {
+            outputDragon = endMsg
+            outputTank = '3'
+            outputInfirmary = '3'
+            outputArmory = '3'
+            outputSupply = '3'
+            outputDept = '2'
+        }
+        else if(gorodValveGreen === 'dept') {
+            outputDragon = endMsg
+            outputTank = '3'
+            outputInfirmary = '2'
+            outputArmory = '1'
+            outputSupply = '1'
+            outputDept = '2'
+        }
+    }
+    else if(gorodValvePink === 'tank') {
+        if(gorodValveGreen === 'dragon') {
+            outputDragon = '3'
+            outputTank = endMsg
+            outputInfirmary = '1'
+            outputArmory = '1'
+            outputSupply = '3'
+            outputDept = '1'
+        }
+        else if(gorodValveGreen === 'infirmary') {
+            outputDragon = '2'
+            outputTank = endMsg
+            outputInfirmary = '3'
+            outputArmory = '1'
+            outputSupply = '3'
+            outputDept = '1'
+        }
+        else if(gorodValveGreen === 'armory') {
+            outputDragon = '1'
+            outputTank = endMsg
+            outputInfirmary = '3'
+            outputArmory = '3'
+            outputSupply = '3'
+            outputDept = '2'
+        }
+        else if(gorodValveGreen === 'supply') {
+            outputDragon = '3'
+            outputTank = endMsg
+            outputInfirmary = '2'
+            outputArmory = '3'
+            outputSupply = '2'
+            outputDept = '3'
+        }
+        else if(gorodValveGreen === 'dept') {
+            outputDragon = '1'
+            outputTank = endMsg
+            outputInfirmary = '3'
+            outputArmory = '2'
+            outputSupply = '2'
+            outputDept = '2'
+        }
+    }
+    else if(gorodValvePink === 'infirmary') {
+        if(gorodValveGreen === 'dragon') {
+            outputDragon = '1'
+            outputTank = '3'
+            outputInfirmary = endMsg
+            outputArmory = '3'
+            outputSupply = '3'
+            outputDept = '2'
+        }
+        else if(gorodValveGreen === 'tank') {
+            outputDragon = '3'
+            outputTank = '2'
+            outputInfirmary = endMsg
+            outputArmory = '3'
+            outputSupply = '2'
+            outputDept = '3'
+        }
+        else if(gorodValveGreen === 'armory') {
+            outputDragon = '2'
+            outputTank = '2'
+            outputInfirmary = endMsg
+            outputArmory = '2'
+            outputSupply = '1'
+            outputDept = '2'
+        }
+        else if(gorodValveGreen === 'supply') {
+            outputDragon = '3'
+            outputTank = '3'
+            outputInfirmary = endMsg
+            outputArmory = '3'
+            outputSupply = '3'
+            outputDept = '3'
+        }
+        else if(gorodValveGreen === 'dept') {
+            outputDragon = '3'
+            outputTank = '2'
+            outputInfirmary = endMsg
+            outputArmory = '2'
+            outputSupply = '1'
+            outputDept = '1'
+        }
+    }
+    else if(gorodValvePink === 'armory') {
+        if(gorodValveGreen === 'dragon') {
+            outputDragon = '1'
+            outputTank = '1'
+            outputInfirmary = '1'
+            outputArmory = endMsg
+            outputSupply = '3'
+            outputDept = '1'
+        }
+        else if(gorodValveGreen === 'tank') {
+            outputDragon = '1'
+            outputTank = '1'
+            outputInfirmary = '1'
+            outputArmory = endMsg
+            outputSupply = '2'
+            outputDept = '3'
+        }
+        else if(gorodValveGreen === 'infirmary') {
+            outputDragon = '2'
+            outputTank = '2'
+            outputInfirmary = '2'
+            outputArmory = endMsg
+            outputSupply = '1'
+            outputDept = '1'
+        }
+        else if(gorodValveGreen === 'supply') {
+            outputDragon = '2'
+            outputTank = '1'
+            outputInfirmary = '3'
+            outputArmory = endMsg
+            outputSupply = '3'
+            outputDept = '1'
+        }
+        else if(gorodValveGreen === 'dept') {
+            outputDragon = '3'
+            outputTank = '2'
+            outputInfirmary = '2'
+            outputArmory = endMsg
+            outputSupply = '2'
+            outputDept = '3'
+        }
+    }
+    else if(gorodValvePink === 'supply') {
+        if(gorodValveGreen === 'dragon') {
+            outputDragon = '2'
+            outputTank = '3'
+            outputInfirmary = '2'
+            outputArmory = '1'
+            outputSupply = endMsg
+            outputDept = '2'
+        }
+        else if(gorodValveGreen === 'tank') {
+            outputDragon = '2'
+            outputTank = '1'
+            outputInfirmary = '3'
+            outputArmory = '1'
+            outputSupply = endMsg
+            outputDept = '1'
+        }
+        else if(gorodValveGreen === 'infirmary') {
+            outputDragon = '2'
+            outputTank = '2'
+            outputInfirmary = '3'
+            outputArmory = '2'
+            outputSupply = endMsg
+            outputDept = '1'
+        }
+        else if(gorodValveGreen === 'armory') {
+            outputDragon = '1'
+            outputTank = '1'
+            outputInfirmary = '1'
+            outputArmory = '2'
+            outputSupply = endMsg
+            outputDept = '3'
+        }
+        else if(gorodValveGreen === 'dept') {
+            outputDragon = '1'
+            outputTank = '1'
+            outputInfirmary = '3'
+            outputArmory = '2'
+            outputSupply = endMsg
+            outputDept = '1'
+        }
+    }
+    else if(gorodValvePink === 'dept') {
+        if(gorodValveGreen === 'dragon') {
+            outputDragon = '1'
+            outputTank = '1'
+            outputInfirmary = '1'
+            outputArmory = '2'
+            outputSupply = '2'
+            outputDept = endMsg
+        }
+        else if(gorodValveGreen === 'tank') {
+            outputDragon = '1'
+            outputTank = '1'
+            outputInfirmary = '3'
+            outputArmory = '3'
+            outputSupply = '2'
+            outputDept = endMsg
+        }
+        else if(gorodValveGreen === 'infirmary') {
+            outputDragon = '1'
+            outputTank = '3'
+            outputInfirmary = '3'
+            outputArmory = '3'
+            outputSupply = '3'
+            outputDept = endMsg
+        }
+        else if(gorodValveGreen === 'armory') {
+            outputDragon = '2'
+            outputTank = '1'
+            outputInfirmary = '3'
+            outputArmory = '1'
+            outputSupply = '3'
+            outputDept = endMsg
+        }
+        else if(gorodValveGreen === 'supply') {
+            outputDragon = '2'
+            outputTank = '1'
+            outputInfirmary = '3'
+            outputArmory = '2'
+            outputSupply = '2'
+            outputDept = endMsg
+        }
+    }
+
+    document.getElementById('gorod-valve-dragon').innerHTML = outputDragon
+    document.getElementById('gorod-valve-tank').innerHTML = outputTank
+    document.getElementById('gorod-valve-infirmary').innerHTML = outputInfirmary
+    document.getElementById('gorod-valve-armory').innerHTML = outputArmory
+    document.getElementById('gorod-valve-supply').innerHTML = outputSupply
+    document.getElementById('gorod-valve-dept').innerHTML = outputDept
 }
 
 

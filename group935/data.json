@@ -6,8 +6,8 @@
             "year": 2024,
             "img": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blackops6/meta/BO6_LP-meta_image.jpg",
             "maps": [
-                {"name": "Terminus", "link": "/group935/zm/terminus", "img": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/bo6/BO6-ZOMBIES-888-001.jpg"},
-                {"name": "Liberty Falls", "link": "/group935/zm/liberty_falls", "img": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/bo6/BO6-ZOMBIES-888-002.jpg"}
+                {"name": "Terminus", "link": "/group935/zm/terminus", "disabled": true, "img": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/bo6/BO6-ZOMBIES-888-001.jpg"},
+                {"name": "Liberty Falls", "link": "/group935/zm/liberty_falls", "disabled": true, "img": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/bo6/BO6-ZOMBIES-888-002.jpg"}
             ]
         },
         {
@@ -20,7 +20,7 @@
                 {"name": "Firebase Z", "img": "https://static.wikia.nocookie.net/callofduty/images/7/7a/FirebaseZ_Promo_BOCW.jpg", "fallback": "https://callofduty.fandom.com/wiki/Firebase_Z"},
                 {"name": "Outbreak", "img": "https://static.wikia.nocookie.net/callofduty/images/6/65/Outbreak_SelectionScreen_BOCW.png", "fallback": "https://callofduty.fandom.com/wiki/Outbreak_(Cold_War)"},
                 {"name": "Mauer der Toten", "img": "https://static.wikia.nocookie.net/callofduty/images/5/56/MauerDerToten_Selection_Screen_BOCW.png", "fallback": "https://callofduty.fandom.com/wiki/Mauer_der_Toten"},
-                {"name": "Forsaken", "link": "/group935/zm/forsaken", "img": "https://static.wikia.nocookie.net/callofduty/images/e/e5/Forsaken_Selection_Screen_BOCW.png"}
+                {"name": "Forsaken", "link": "/group935/zm/forsaken", "img": "https://static.wikia.nocookie.net/callofduty/images/e/e5/Forsaken_Selection_Screen_BOCW.png", "fallback": "https://callofduty.fandom.com/wiki/Forsaken"}
             ]
         },
         {
