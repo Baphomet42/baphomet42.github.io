@@ -10,11 +10,11 @@
     "wip": true,
     "sections" : [
         {
-            "header": "WIP",
+            "header": "Map Features",
             "description": "",
             "subsections": [
                 {
-                    "header": "",
+                    "header": "WIP",
                     "description": "",
                     "elements": [
                         {
@@ -25,46 +25,82 @@
                         },
                         {
                             "youtube": {
-                                "src": "E1KheWSobD0",
-                                "alt": "Dragon Shield"
-                            }
-                        },
-                        {
-                            "youtube": {
                                 "src": "SysILhxXG3E",
                                 "alt": "Keeper Protector"
                             }
-                        },
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "TODO Shield",
+            "description": "",
+            "subsections": [
+                {
+                    "header": "WIP",
+                    "description": "",
+                    "elements": [
                         {
                             "youtube": {
-                                "src": "cnPmpJ7uBDI",
-                                "alt": "Weapon Trading Table & Tommy Gun"
+                                "src": "E1KheWSobD0",
+                                "alt": "Dragon Shield"
                             }
-                        },
-                        {
-                            "youtube": {
-                                "src": "BA87HyIVmvw",
-                                "alt": "Masks"
-                            }
-                        },
-                        {
-                            "youtube": {
-                                "src": "WTGTp5VJNts",
-                                "alt": "Free Perk"
-                            }
-                        },
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "TODO Special Weapon",
+            "description": "",
+            "subsections": [
+            ]
+        },
+        {
+            "header": "Upgraded Apothicon Servant",
+            "description": "",
+            "subsections": [
+                {
+                    "header": "WIP",
+                    "description": "",
+                    "elements": [
                         {
                             "youtube": {
                                 "src": "o3HLZ5z0Nw0",
                                 "alt": "Apothicon Servant Upgrade Guide"
                             }
-                        },
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Hats",
+            "description": "",
+            "subsections": [
+                {
+                    "header": "WIP",
+                    "description": "",
+                    "elements": [
                         {
                             "youtube": {
-                                "src": "0YH6npBuHVg",
-                                "alt": "Main Quest"
+                                "src": "BA87HyIVmvw",
+                                "alt": "Masks"
                             }
-                        },
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Main Quest",
+            "description": "",
+            "subsections": [
+                {
+                    "header": "WIP",
+                    "description": "",
+                    "elements": [
                         {
                             "full": true,
                             "bullets": [
@@ -75,12 +111,54 @@
                             ]
                         },
                         {
+                            "youtube": {
+                                "src": "0YH6npBuHVg",
+                                "alt": "Main Quest"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Song",
+            "description": "",
+            "subsections": [
+                {
+                    "header": "WIP",
+                    "description": "",
+                    "elements": [
+                        {
                             "full": true,
                             "bullets": [
                                 "On the way from Origins to Mob",
                                 "Near the launch pad at Verrückt",
                                 "In a chair in Kino"
                             ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Side Easter Eggs",
+            "description": "",
+            "subsections": [
+                {
+                    "header": "WIP",
+                    "description": "",
+                    "elements": [
+                        {
+                            "youtube": {
+                                "src": "WTGTp5VJNts",
+                                "alt": "Free Perk"
+                            }
+                        },
+                        {
+                            "youtube": {
+                                "src": "cnPmpJ7uBDI",
+                                "alt": "Weapon Trading Table & Tommy Gun"
+                            }
                         }
                     ]
                 }

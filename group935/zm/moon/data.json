@@ -1,7 +1,7 @@
 {
     "name": "Moon",
     "subtext": "Black Ops | Black Ops III",
-    "background": "https://callofdutymaps.com/wp-content/uploads/moon19.jpg",
+    "background": "assets/background.png",
     "rev": 2,
     "sections" : [
         {
@@ -13,7 +13,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/1.jpg",
+                                "src": "assets/1.jpg",
                                 "alt": "Teleporter"
                             }
                         }
@@ -25,7 +25,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/5.jpg",
+                                "src": "assets/5.jpg",
                                 "alt": "P.E.S. location"
                             }
                         }
@@ -36,7 +36,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/9.jpg",
+                                "src": "assets/9.jpg",
                                 "alt": "Power switch location"
                             }
                         }
@@ -48,19 +48,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/50.jpg",
+                                "src": "assets/50.jpg",
                                 "alt": "Teleporter location"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/2.jpg",
+                                "src": "assets/2.jpg",
                                 "alt": "Pack-a-Punch location"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/23.jpg",
+                                "src": "assets/23.jpg",
                                 "alt": "Teleporter on cooldown"
                             }
                         }
@@ -72,7 +72,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/21.jpg",
+                                "src": "assets/21.jpg",
                                 "alt": "The Bio-Dome after being breached by Excavator Epsilon"
                             }
                         }
@@ -89,7 +89,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/13.jpg",
+                                "src": "assets/13.jpg",
                                 "alt": "The Hacker Device sitting on a yellow paper"
                             }
                         }
@@ -108,7 +108,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/22.jpg",
+                                "src": "assets/22.jpg",
                                 "alt": "The gates closed around the PaP machine"
                             }
                         },
@@ -121,7 +121,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/20.jpg",
+                                "src": "assets/20.jpg",
                                 "alt": "One of the 3 excavator control panels"
                             }
                         },
@@ -170,8 +170,8 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "Wall Buys",
-                                "description": "3000 points - swap the cost of ammo and PaP ammo for this wall buy."
+                                "title": "Wall-Buys",
+                                "description": "3000 points - swap the cost of ammo and PaP ammo for this wall-buy."
                             }
                         },
                         {
@@ -194,7 +194,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/20.jpg",
+                                "src": "assets/20.jpg",
                                 "alt": "A lit up control panel with the lit up excavator in the distance"
                             }
                         }
@@ -206,7 +206,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/31.jpg",
+                                "src": "assets/31.jpg",
                                 "alt": "Excavator Pi blocking Tunnel 6"
                             }
                         }
@@ -218,19 +218,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/11.jpg",
+                                "src": "assets/11.jpg",
                                 "alt": "Control panel for Excavator Pi / Tunnel 6"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/12.jpg",
+                                "src": "assets/12.jpg",
                                 "alt": "Control panel for Excavator Omicron / Tunnel 11"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/10.jpg",
+                                "src": "assets/10.jpg",
                                 "alt": "Control panel for Excavator Epsilon / Bio-Dome"
                             }
                         }
@@ -263,7 +263,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/15.jpg",
+                                "src": "assets/15.jpg",
                                 "alt": "Samantha Says location"
                             }
                         }
@@ -280,7 +280,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/16.jpg",
+                                "src": "assets/16.jpg",
                                 "alt": "Location to hack"
                             }
                         },
@@ -292,7 +292,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/17.jpg",
+                                "src": "assets/17.jpg",
                                 "alt": "One of the panels lit up green"
                             }
                         },
@@ -304,7 +304,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/18.jpg",
+                                "src": "assets/18.jpg",
                                 "alt": "All 4 buttons lit after being pressed in time"
                             }
                         }
@@ -316,7 +316,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/31.jpg",
+                                "src": "assets/31.jpg",
                                 "alt": "Excavator Pi breaching Tunnel 6"
                             }
                         }
@@ -333,25 +333,25 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/32.jpg",
+                                "src": "assets/32.jpg",
                                 "alt": "Vril Sphere starting location"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/33.jpg",
+                                "src": "assets/33.jpg",
                                 "alt": "Move 1 - on the floor"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/34.jpg",
+                                "src": "assets/34.jpg",
                                 "alt": "Move 2 - by the Tunnel 6 sign"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/35.jpg",
+                                "src": "assets/35.jpg",
                                 "alt": "Move 3 - waiting for the player to open the door"
                             }
                         },
@@ -363,7 +363,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/36.jpg",
+                                "src": "assets/36.jpg",
                                 "alt": "Move 4 - on the satellite dish"
                             }
                         },
@@ -375,37 +375,37 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/37.jpg",
+                                "src": "assets/37.jpg",
                                 "alt": "Move 5 - waiting for the player to open the Tunnel 11 door"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/38.jpg",
+                                "src": "assets/38.jpg",
                                 "alt": "Move 6 - on the wall by some pipes"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/39.jpg",
+                                "src": "assets/39.jpg",
                                 "alt": "Move 7 - on the ceiling near a red glowing barrier"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/40.jpg",
+                                "src": "assets/40.jpg",
                                 "alt": "Move 8 - on some boxes by the door"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/41.jpg",
+                                "src": "assets/41.jpg",
                                 "alt": "Move 9 - waiting for the player to open the door"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/42.jpg",
+                                "src": "assets/42.jpg",
                                 "alt": "Vril Sphere in the M.P.D."
                             }
                         }
@@ -417,7 +417,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/43.jpg",
+                                "src": "assets/43.jpg",
                                 "alt": "The empty container"
                             }
                         }
@@ -429,13 +429,13 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/44.jpg",
+                                "src": "assets/44.jpg",
                                 "alt": "The lever on the wall behind the filled container"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/45.jpg",
+                                "src": "assets/45.jpg",
                                 "alt": "Samantha floating above the opened M.P.D."
                             }
                         }
@@ -452,13 +452,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/3.jpg",
+                                "src": "assets/3.jpg",
                                 "alt": "Shelves with the plates"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/4.jpg",
+                                "src": "assets/4.jpg",
                                 "alt": "Plates on the ground"
                             }
                         },
@@ -470,7 +470,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/29.jpg",
+                                "src": "assets/29.jpg",
                                 "alt": "The plates on the teleporter"
                             }
                         },
@@ -482,13 +482,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/30.jpg",
+                                "src": "assets/30.jpg",
                                 "alt": "The plates in the Receiving Bay"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/51.jpg",
+                                "src": "assets/51.jpg",
                                 "alt": "The plates in the machine"
                             }
                         }
@@ -505,49 +505,49 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/69.jpg",
+                                "src": "assets/69.jpg",
                                 "alt": "Location 1 - bottom floor of the Laboratories, by some canisters"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/66.jpg",
+                                "src": "assets/66.jpg",
                                 "alt": "Location 2 - middle floor of the Laboratories, to the left of the buttons from the hacking step"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/71.jpg",
+                                "src": "assets/71.jpg",
                                 "alt": "Location 3 - middle floor of the Laboratories, in front of a table"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/68.jpg",
+                                "src": "assets/68.jpg",
                                 "alt": "Location 4 - top floor of the Laboratories, on the top of the stairs"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/70.jpg",
+                                "src": "assets/70.jpg",
                                 "alt": "Location 5 - top floor of the Laboratories, on a table"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/49.jpg",
+                                "src": "assets/49.jpg",
                                 "alt": "Location 6 - top floor of the Laboratories, by Deadshot Daiquiri"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/14.jpg",
+                                "src": "assets/14.jpg",
                                 "alt": "Location 7 - top floor of the Laboratories, on a shelf"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/67.jpg",
+                                "src": "assets/67.jpg",
                                 "alt": "Location 8 - just outside of the Laboratories, by a barrel"
                             }
                         },
@@ -559,7 +559,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/52.jpg",
+                                "src": "assets/52.jpg",
                                 "alt": "The wire connecting a computer to the machine"
                             }
                         }
@@ -571,19 +571,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/53.jpg",
+                                "src": "assets/53.jpg",
                                 "alt": "The Vril Device in the machine"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/54.jpg",
+                                "src": "assets/54.jpg",
                                 "alt": "The computer keyboard to spam interact on"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/55.jpg",
+                                "src": "assets/55.jpg",
                                 "alt": "The fully charged Vril Device"
                             }
                         }
@@ -595,7 +595,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/56.jpg",
+                                "src": "assets/56.jpg",
                                 "alt": "The 4 empty containers around the M.P.D."
                             }
                         }
@@ -607,13 +607,13 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/57.jpg",
+                                "src": "assets/57.jpg",
                                 "alt": "The slot to place the Vril Device"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/59.jpg",
+                                "src": "assets/59.jpg",
                                 "alt": "Blue-eyed zombies controlled by Richtofen"
                             }
                         }
@@ -625,7 +625,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/58.jpg",
+                                "src": "assets/58.jpg",
                                 "alt": "Samantha Says location"
                             }
                         }
@@ -637,7 +637,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/60.jpg",
+                                "src": "assets/60.jpg",
                                 "alt": "The Vril Sphere after being teleported with the Q.E.D."
                             }
                         }
@@ -649,7 +649,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/61.jpg",
+                                "src": "assets/61.jpg",
                                 "alt": "A Gersh Device on the Vril Sphere"
                             }
                         }
@@ -666,19 +666,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/6.jpg",
+                                "src": "assets/6.jpg",
                                 "alt": "Location 1 - Next to the launch pad beneath the Receiving Bay"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/7.jpg",
+                                "src": "assets/7.jpg",
                                 "alt": "Location 2 - In the airlock between Tunnel 6 and the M.P.D. room"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/8.jpg",
+                                "src": "assets/8.jpg",
                                 "alt": "Location 3 - In the wall across from Stamin-Up in Tunnel 11"
                             }
                         }
@@ -696,7 +696,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/72.jpg",
+                                "src": "assets/72.jpg",
                                 "alt": "A computer station to the right of the Excavator Omicron control panel"
                             }
                         },
@@ -708,7 +708,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/73.jpg",
+                                "src": "assets/73.jpg",
                                 "alt": "A tall device to the right of the door going from Tunnel 11 to the M.P.D. room"
                             }
                         },
@@ -720,7 +720,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/74.jpg",
+                                "src": "assets/74.jpg",
                                 "alt": "A computer station to the right of the door going from the Laboratories to the Bio-Dome"
                             }
                         }
@@ -743,19 +743,19 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/24.jpg",
+                                "src": "assets/24.jpg",
                                 "alt": "Dog figurine - Outside the map at Groom Lake, under a vehicle. Shoot through the back tires of the vehicle."
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/26.jpg",
+                                "src": "assets/26.jpg",
                                 "alt": "Bone - Outside the Bio-Dome, in front of some large rocks. Aim just above the pipes."
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/25.jpg",
+                                "src": "assets/25.jpg",
                                 "alt": "Teddy bear - On top of the wall surrounding the Bio-Dome, behind the Mystery Box location. Stand far back and aim roughly where the hexagon connects with the wall."
                             }
                         },
@@ -767,7 +767,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/27.jpg",
+                                "src": "assets/27.jpg",
                                 "alt": "Dog bowl, on the second floor of the Laboratories"
                             }
                         },
@@ -780,7 +780,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/46.jpg",
+                                "src": "assets/46.jpg",
                                 "alt": "Dog bowl filling up with zombie souls"
                             }
                         },
@@ -793,14 +793,86 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/47.jpg",
+                                "src": "assets/47.jpg",
                                 "alt": "Space dog outside the Bio-Dome"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/moon/assets/48.jpg",
+                                "src": "assets/48.jpg",
                                 "alt": "Space dog up close"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Audio Reels",
+                    "description": "There are several audio reels that can be found around the map. Interact to pick up, then interact on the machine on the second floor of the Laboratories to play the reel.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/81.jpg",
+                                "alt": "One of the reels"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/80.jpg",
+                                "alt": "Location to place the reel"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Hide and Seek",
+            "description": "Play Samantha's Lullaby Remix and get a Max Ammo (Black Ops III only)",
+            "subsections": [
+                {
+                    "header": "1. Interact with devices - 3 1 1 4 4 1 4 2 4 2 4 1 1 2 3",
+                    "description": "Using the numbering system below, interact with the devices in this order.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/75_edit.jpg",
+                                "alt": "Labeled devices"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/79.jpg",
+                                "alt": "One of the devices to interact"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Hide and seek",
+                    "description": "Interact with a Samantha doll to the left of the M.P.D. on the ground. A particle effect will show the game has started. Then, shoot all 7 Samantha dolls. If you run out of time, Samantha will laugh, and you have to start the game again at the original doll.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/76.jpg",
+                                "alt": "The doll to start hide and seek"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/77.jpg",
+                                "alt": "The 7 Samantha dolls, in front of the M.P.D."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Interact with the first doll",
+                    "description": "Go back to the original doll and interact again. This time, you'll get a Max Ammo and the song will play.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/78.jpg",
+                                "alt": "The doll to get the Max Ammo and song"
                             }
                         }
                     ]

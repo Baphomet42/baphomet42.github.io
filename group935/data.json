@@ -51,10 +51,10 @@
                 {"name": "Zetsubou No Shima", "img": "https://static.wikia.nocookie.net/callofduty/images/0/06/Zetsubou_No_Shima_Menu_Selection_BO3.png", "fallback": "https://callofduty.fandom.com/wiki/Zetsubou_No_Shima"},
                 {"name": "Gorod Krovi", "link": "/group935/zm/gorod_krovi", "img": "https://static.wikia.nocookie.net/callofduty/images/7/72/Gorod_Krovi_Menu_Selection_BO3.png"},
                 {"name": "Revelations", "link": "/group935/zm/revelations", "img": "https://static.wikia.nocookie.net/callofduty/images/d/de/Revelations_Menu_Selection_BO3.png"},
-                {"name": "Nacht der Untoten", "img": "https://static.wikia.nocookie.net/callofduty/images/6/64/Nacht_Der_Untoten_Menu_Selection_BO3.png", "fallback": "https://callofduty.fandom.com/wiki/Nacht_der_Untoten"},
-                {"name": "Verrückt", "img": "https://static.wikia.nocookie.net/callofduty/images/e/e4/Verruckt_Menu_Selection_BO3.png", "fallback": "https://callofduty.fandom.com/wiki/Verrückt"},
-                {"name": "Shi No Numa", "img": "https://static.wikia.nocookie.net/callofduty/images/1/16/Shi_No_Numa_Menu_Selection_BO3.png", "fallback": "https://callofduty.fandom.com/wiki/Shi_No_Numa"},
-                {"name": "Kino der Toten", "img": "https://static.wikia.nocookie.net/callofduty/images/e/ec/Kino_Der_Toten_Menu_Selection_BO3.png", "fallback": "https://callofduty.fandom.com/wiki/Kino_der_Toten"},
+                {"name": "Nacht der Untoten", "link": "/group935/zm/nacht_der_untoten", "img": "https://static.wikia.nocookie.net/callofduty/images/6/64/Nacht_Der_Untoten_Menu_Selection_BO3.png"},
+                {"name": "Verrückt", "link": "/group935/zm/verruckt", "img": "https://static.wikia.nocookie.net/callofduty/images/e/e4/Verruckt_Menu_Selection_BO3.png"},
+                {"name": "Shi No Numa", "link": "/group935/zm/shi_no_numa", "img": "https://static.wikia.nocookie.net/callofduty/images/1/16/Shi_No_Numa_Menu_Selection_BO3.png"},
+                {"name": "Kino der Toten", "link": "/group935/zm/kino_der_toten", "img": "https://static.wikia.nocookie.net/callofduty/images/e/ec/Kino_Der_Toten_Menu_Selection_BO3.png"},
                 {"name": "Ascension", "img": "https://static.wikia.nocookie.net/callofduty/images/d/d8/Ascension_Menu_Selection_BO3.png", "fallback": "https://callofduty.fandom.com/wiki/Ascension"},
                 {"name": "Shangri-La", "img": "https://static.wikia.nocookie.net/callofduty/images/7/76/Shangri_La_Menu_Selection_BO3.png", "fallback": "https://callofduty.fandom.com/wiki/Shangri-La"},
                 {"name": "Moon", "link": "/group935/zm/moon", "img": "https://static.wikia.nocookie.net/callofduty/images/4/4a/Moon_Menu_Selection_BO3.png"},
@@ -81,15 +81,15 @@
             "year": 2010,
             "img": "https://assets-prd.ignimgs.com/2021/12/30/call-of-duty-black-ops-1-button-1640898530662.jpg",
             "maps": [
-                {"name": "Kino der Toten", "img": "https://static.wikia.nocookie.net/callofduty/images/9/97/Kino_Der_Toten_Menu_Selection_BO.png", "fallback": "https://callofduty.fandom.com/wiki/Kino_der_Toten"},
+                {"name": "Kino der Toten", "link": "/group935/zm/kino_der_toten", "img": "https://static.wikia.nocookie.net/callofduty/images/9/97/Kino_Der_Toten_Menu_Selection_BO.png"},
                 {"name": "\"Five\"", "img": "https://static.wikia.nocookie.net/callofduty/images/3/34/Five_Menu_Selection_BO.png", "fallback": "https://callofduty.fandom.com/wiki/%22Five%22"},
                 {"name": "Ascension", "img": "https://static.wikia.nocookie.net/callofduty/images/f/fd/Ascension_Menu_Selection_BO.png", "fallback": "https://callofduty.fandom.com/wiki/Ascension"},
                 {"name": "Call of the Dead", "img": "https://static.wikia.nocookie.net/callofduty/images/7/78/Call_of_the_Dead_Menu_Selection_BO.png", "fallback": "https://callofduty.fandom.com/wiki/Call_of_the_Dead"},
                 {"name": "Shangri-La", "img": "https://static.wikia.nocookie.net/callofduty/images/d/d5/Shangri-La_Menu_Selection_BO.png", "fallback": "https://callofduty.fandom.com/wiki/Shangri-La"},
                 {"name": "Moon", "link": "/group935/zm/moon", "img": "https://static.wikia.nocookie.net/callofduty/images/c/cc/Moon_Menu_Selection_BO.png"},
-                {"name": "Nacht der Untoten", "img": "https://static.wikia.nocookie.net/callofduty/images/2/2b/Nacht_Der_Untoten_Menu_Selection_WaW.png", "fallback": "https://callofduty.fandom.com/wiki/Nacht_der_Untoten"},
-                {"name": "Verrückt", "img": "https://static.wikia.nocookie.net/callofduty/images/a/a1/Verruckt_Menu_Selection_WaW.png", "fallback": "https://callofduty.fandom.com/wiki/Verrückt"},
-                {"name": "Shi No Numa", "img": "https://static.wikia.nocookie.net/callofduty/images/2/2f/Shi_No_Numa_Menu_Selection_WaW.png", "fallback": "https://callofduty.fandom.com/wiki/Shi_No_Numa"},
+                {"name": "Nacht der Untoten", "link": "/group935/zm/nacht_der_untoten", "img": "https://static.wikia.nocookie.net/callofduty/images/2/2b/Nacht_Der_Untoten_Menu_Selection_WaW.png"},
+                {"name": "Verrückt", "link": "/group935/zm/verruckt", "img": "https://static.wikia.nocookie.net/callofduty/images/a/a1/Verruckt_Menu_Selection_WaW.png"},
+                {"name": "Shi No Numa", "link": "/group935/zm/shi_no_numa", "img": "https://static.wikia.nocookie.net/callofduty/images/2/2f/Shi_No_Numa_Menu_Selection_WaW.png"},
                 {"name": "Der Riese", "img": "https://static.wikia.nocookie.net/callofduty/images/8/86/Der_Riese_Menu_Selection_WaW.png", "fallback": "https://callofduty.fandom.com/wiki/Der_Riese"}
             ]
         },
@@ -99,9 +99,9 @@
             "year": 2008,
             "img": "https://is4-ssl.mzstatic.com/image/thumb/Purple71/v4/e8/4a/cd/e84acd0a-d962-6ed8-9fd6-7ea60d8fba82/source/256x256bb.jpg",
             "maps": [
-                {"name": "Nacht der Untoten", "img": "https://static.wikia.nocookie.net/callofduty/images/2/2b/Nacht_Der_Untoten_Menu_Selection_WaW.png", "fallback": "https://callofduty.fandom.com/wiki/Nacht_der_Untoten"},
-                {"name": "Zombie Verrückt", "img": "https://static.wikia.nocookie.net/callofduty/images/a/a1/Verruckt_Menu_Selection_WaW.png", "fallback": "https://callofduty.fandom.com/wiki/Verrückt"},
-                {"name": "Shi No Numa", "img": "https://static.wikia.nocookie.net/callofduty/images/2/2f/Shi_No_Numa_Menu_Selection_WaW.png", "fallback": "https://callofduty.fandom.com/wiki/Shi_No_Numa"},
+                {"name": "Nacht der Untoten", "link": "/group935/zm/nacht_der_untoten", "img": "https://static.wikia.nocookie.net/callofduty/images/2/2b/Nacht_Der_Untoten_Menu_Selection_WaW.png"},
+                {"name": "Zombie Verrückt", "link": "/group935/zm/verruckt", "img": "https://static.wikia.nocookie.net/callofduty/images/a/a1/Verruckt_Menu_Selection_WaW.png"},
+                {"name": "Shi No Numa", "link": "/group935/zm/shi_no_numa", "img": "https://static.wikia.nocookie.net/callofduty/images/2/2f/Shi_No_Numa_Menu_Selection_WaW.png"},
                 {"name": "Der Riese", "img": "https://static.wikia.nocookie.net/callofduty/images/8/86/Der_Riese_Menu_Selection_WaW.png", "fallback": "https://callofduty.fandom.com/wiki/Der_Riese"}
             ]
         }

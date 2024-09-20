@@ -13,7 +13,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/5.jpg",
+                                "src": "assets/5.jpg",
                                 "alt": "Power switch location"
                             }
                         }
@@ -25,25 +25,25 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/13.jpg",
+                                "src": "assets/13.jpg",
                                 "alt": "Location 1 (Bastion) - Next to the Death Ray"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/12.jpg",
+                                "src": "assets/12.jpg",
                                 "alt": "Location 2 (Undercroft) - In the undercroft between Juggernog and the teleporter"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/14.jpg",
+                                "src": "assets/14.jpg",
                                 "alt": "Location 3 (Rocket Pad) - Up the stairs at the rocket"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/84.jpg",
+                                "src": "assets/84.jpg",
                                 "alt": "Finished Pack-a-Punch machine"
                             }
                         }
@@ -55,7 +55,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/11.jpg",
+                                "src": "assets/11.jpg",
                                 "alt": "Pyramid and surrounding pressure plates"
                             }
                         }
@@ -67,25 +67,25 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/15.jpg",
+                                "src": "assets/15.jpg",
                                 "alt": "Location 1 - In spawn, used for the rocket Wundersphere"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/16.jpg",
+                                "src": "assets/16.jpg",
                                 "alt": "Location 2 - Above Double Tap, used for the courtyard Wundersphere"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/17.jpg",
+                                "src": "assets/17.jpg",
                                 "alt": "Location 3 - Just outside the clock tower, used for the Double Tap Wundersphere"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/18.jpg",
+                                "src": "assets/18.jpg",
                                 "alt": "Location 4 - Outside the rocket blast doors, used for the Death Ray Wundersphere"
                             }
                         }
@@ -97,13 +97,13 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/62.jpg",
+                                "src": "assets/62.jpg",
                                 "alt": "Tram fuse power-up"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/31.jpg",
+                                "src": "assets/31.jpg",
                                 "alt": "Tram fuse control location"
                             }
                         }
@@ -115,7 +115,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/37.jpg",
+                                "src": "assets/37.jpg",
                                 "alt": "Pressure plate location, near Pack-a-Punch and Juggernog"
                             }
                         }
@@ -126,49 +126,49 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/158.jpg",
+                                "src": "assets/158.jpg",
                                 "alt": "Quick Revive - upstairs in spawn"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/159.jpg",
-                                "alt": "Double Tap II - through the bottom floor door in spawn"
+                                "src": "assets/159.jpg",
+                                "alt": "Double Tap Root Beer - through the bottom floor door in spawn"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/157.jpg",
+                                "src": "assets/157.jpg",
                                 "alt": "Mule Kick - in the cave between spawn and the church courtyard"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/162.jpg",
+                                "src": "assets/162.jpg",
                                 "alt": "Speed Cola - in the church"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/163.jpg",
+                                "src": "assets/163.jpg",
                                 "alt": "Stamin-Up - in the power room"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/164.jpg",
+                                "src": "assets/164.jpg",
                                 "alt": "Juggernog - between spawn and the Undercroft"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/160.jpg",
+                                "src": "assets/160.jpg",
                                 "alt": "Wunderfizz location 1 - by the Double Tap dragon"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/161.jpg",
+                                "src": "assets/161.jpg",
                                 "alt": "Wunderfizz location 2 - outside the clock tower"
                             }
                         }
@@ -179,19 +179,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/167.jpg",
+                                "src": "assets/167.jpg",
                                 "alt": "Location 1 - In the undercroft"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/166.jpg",
+                                "src": "assets/166.jpg",
                                 "alt": "Location 2 - In the church"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/165.jpg",
+                                "src": "assets/165.jpg",
                                 "alt": "Location 3 - Above Double Tap"
                             }
                         }
@@ -209,19 +209,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/156.jpg",
+                                "src": "assets/156.jpg",
                                 "alt": "Location 1 - On the metal frame surrounding the pyramid, above the workbench"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/105.jpg",
+                                "src": "assets/105.jpg",
                                 "alt": "Location 2 - Above the door that leads to the teleporter"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/9.jpg",
+                                "src": "assets/9.jpg",
                                 "alt": "Location 3 - On the wall above Pack-a-Punch"
                             }
                         }
@@ -233,19 +233,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/172.jpg",
+                                "src": "assets/172.jpg",
                                 "alt": "Location 1 - In the bell tower on the floor"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/155.jpg",
+                                "src": "assets/155.jpg",
                                 "alt": "Location 2 - At the base of the stairs that lead to the Death Ray"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/4.jpg",
+                                "src": "assets/4.jpg",
                                 "alt": "Location 3 - To the right of the doors that lead to Speed Cola"
                             }
                         }
@@ -257,19 +257,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/2.jpg",
+                                "src": "assets/2.jpg",
                                 "alt": "Location 1 - On some boxes near a barricade"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/154.jpg",
+                                "src": "assets/154.jpg",
                                 "alt": "Location 2 - At the bottom of some short stairs leading to a barricade"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/187.jpg",
+                                "src": "assets/187.jpg",
                                 "alt": "Location 3 - Up the stairs towards the Death Ray"
                             }
                         }
@@ -281,7 +281,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/171.jpg",
+                                "src": "assets/171.jpg",
                                 "alt": "One possible build location, in the undercroft"
                             }
                         }
@@ -299,19 +299,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/19.jpg",
+                                "src": "assets/19.jpg",
                                 "alt": "The lever to start the process"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/20.jpg",
+                                "src": "assets/20.jpg",
                                 "alt": "The control panel to interact with"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/39.jpg",
+                                "src": "assets/39.jpg",
                                 "alt": "The part in the teleporter"
                             }
                         }
@@ -323,19 +323,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/47.jpg",
+                                "src": "assets/47.jpg",
                                 "alt": "Death Ray"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/48.jpg",
+                                "src": "assets/48.jpg",
                                 "alt": "Location 1 - In the path of the courtyard Wundersphere"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/201.jpg",
+                                "src": "assets/201.jpg",
                                 "alt": "Location 2 - In the path of the Wundersphere above Double Tap"
                             }
                         }
@@ -347,7 +347,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/74.jpg",
+                                "src": "assets/74.jpg",
                                 "alt": "Part over a dead Panzer"
                             }
                         }
@@ -359,7 +359,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/75.jpg",
+                                "src": "assets/75.jpg",
                                 "alt": "One possible build location, in the Speed Cola room"
                             }
                         }
@@ -377,19 +377,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/8.jpg",
+                                "src": "assets/8.jpg",
                                 "alt": "Location 1 - In the undercroft by the pyramid"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/6.jpg",
+                                "src": "assets/6.jpg",
                                 "alt": "Location 2 - Near Double Tap, by the stairs that lead to the undercroft"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/7.jpg",
+                                "src": "assets/7.jpg",
                                 "alt": "Location 3 - In the church near Speed Cola"
                             }
                         }
@@ -397,11 +397,11 @@
                 },
                 {
                     "header": "Aquire the bow",
-                    "description": "Interact with the bow down the stairs from Speed Cola. This will replace your active weapon like a wall buy.",
+                    "description": "Interact with the bow down the stairs from Speed Cola. This will replace your active weapon like a wall-buy.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/21.jpg",
+                                "src": "assets/21.jpg",
                                 "alt": "Bow spawn location"
                             }
                         }
@@ -425,7 +425,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/22.jpg",
+                                "src": "assets/22.jpg",
                                 "alt": "Weathervane"
                             }
                         },
@@ -438,37 +438,37 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/52.jpg",
+                                "src": "assets/52.jpg",
                                 "alt": "Location 1 - Behind the clock tower"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/195.jpg",
+                                "src": "assets/195.jpg",
                                 "alt": "Where to aim for location 1"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/53.jpg",
+                                "src": "assets/53.jpg",
                                 "alt": "Location 2 - Out the spawn door that goes towards Double Tap"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/196.jpg",
+                                "src": "assets/196.jpg",
                                 "alt": "Where to aim for location 2, match the height by where the spotlights switch directions"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/54.jpg",
+                                "src": "assets/54.jpg",
                                 "alt": "Location 3 - At the rocket"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/197.jpg",
+                                "src": "assets/197.jpg",
                                 "alt": "Where to aim for location 3, a shortcut from above Double Tap. Keep the crosshair just left of the pine tree, and the left crosshair about as high as where the 2 mountains cross"
                             }
                         },
@@ -481,7 +481,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/55.jpg",
+                                "src": "assets/55.jpg",
                                 "alt": "One of the blinking symbols on the wall"
                             }
                         },
@@ -494,19 +494,19 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/56.jpg",
+                                "src": "assets/56.jpg",
                                 "alt": "Location 1 - In the clock tower"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/57.jpg",
+                                "src": "assets/57.jpg",
                                 "alt": "Location 2 - Above Double Tap"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/59.jpg",
+                                "src": "assets/59.jpg",
                                 "alt": "Location 3 - At the rocket site, inside the blast doors"
                             }
                         },
@@ -519,25 +519,25 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/200.jpg",
+                                "src": "assets/200.jpg",
                                 "alt": "Where to aim for bell tower location"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/199.jpg",
+                                "src": "assets/199.jpg",
                                 "alt": "Where to aim for Double Tap location"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/198.jpg",
+                                "src": "assets/198.jpg",
                                 "alt": "Where to aim for rocket location"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/61.jpg",
+                                "src": "assets/61.jpg",
                                 "alt": "Fire with lightning around it"
                             }
                         },
@@ -550,7 +550,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/85.jpg",
+                                "src": "assets/85.jpg",
                                 "alt": "Blue smoke location"
                             }
                         },
@@ -563,7 +563,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/87.jpg",
+                                "src": "assets/87.jpg",
                                 "alt": "Storm box"
                             }
                         },
@@ -576,7 +576,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/88.jpg",
+                                "src": "assets/88.jpg",
                                 "alt": "Finished bow"
                             }
                         }
@@ -594,7 +594,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/26.jpg",
+                                "src": "assets/26.jpg",
                                 "alt": "Red symbol location"
                             }
                         },
@@ -607,19 +607,19 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/152.jpg",
+                                "src": "assets/152.jpg",
                                 "alt": "Glowing rock out the blast doors and to the right"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/153.jpg",
+                                "src": "assets/153.jpg",
                                 "alt": "Flaming orb shooting towards the Death Ray"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/204.jpg",
+                                "src": "assets/204.jpg",
                                 "alt": "Shortcut location to aim from spawn to hit glowing rock"
                             }
                         },
@@ -632,25 +632,25 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/93.jpg",
+                                "src": "assets/93.jpg",
                                 "alt": "Location 1 - Between spawn and Double Tap"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/94.jpg",
+                                "src": "assets/94.jpg",
                                 "alt": "Location 2 - Outside the clock tower"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/95.jpg",
+                                "src": "assets/95.jpg",
                                 "alt": "Location 3 - By the Death Ray"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/205.jpg",
+                                "src": "assets/205.jpg",
                                 "alt": "Shortcut location to aim from Death Ray Wundersphere to hit circle by Double Tap. Place left and right crosshairs over the two clouds, and shoot without charging the bow"
                             }
                         },
@@ -663,7 +663,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/97.jpg",
+                                "src": "assets/97.jpg",
                                 "alt": "Finished circle"
                             }
                         },
@@ -676,7 +676,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/98.jpg",
+                                "src": "assets/98.jpg",
                                 "alt": "Clock tower gears"
                             }
                         },
@@ -689,31 +689,31 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/100.jpg",
+                                "src": "assets/100.jpg",
                                 "alt": "Fireplace by the Double Tap dragon. Used for the circle outside the clock tower."
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/146.jpg",
+                                "src": "assets/146.jpg",
                                 "alt": "Fireplace in the church. Used for the circle by the Death Ray."
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/148.jpg",
+                                "src": "assets/148.jpg",
                                 "alt": "Fireplace in the bedrooms area. Used for the circle on the way from spawn to Double Tap."
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/101.jpg",
+                                "src": "assets/101.jpg",
                                 "alt": "Flaming rock pile"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/102.jpg",
+                                "src": "assets/102.jpg",
                                 "alt": "Lit fireplace"
                             }
                         },
@@ -726,7 +726,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/103.jpg",
+                                "src": "assets/103.jpg",
                                 "alt": "Flaming orb by the Death Ray"
                             }
                         },
@@ -739,7 +739,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/168.jpg",
+                                "src": "assets/168.jpg",
                                 "alt": "Rune prison box"
                             }
                         },
@@ -752,7 +752,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/107.jpg",
+                                "src": "assets/107.jpg",
                                 "alt": "Finished bow"
                             }
                         }
@@ -770,25 +770,25 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/33.jpg",
+                                "src": "assets/33.jpg",
                                 "alt": "First painting. On the way from the power room to the bedrooms."
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/34.jpg",
+                                "src": "assets/34.jpg",
                                 "alt": "Second painting. In the clock tower."
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/35.jpg",
+                                "src": "assets/35.jpg",
                                 "alt": "Third painting. In the room below the clock tower."
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/36.jpg",
+                                "src": "assets/36.jpg",
                                 "alt": "Fourth painting. Upstairs in the church."
                             }
                         },
@@ -801,7 +801,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/38.jpg",
+                                "src": "assets/38.jpg",
                                 "alt": "Arrow location in the undercroft"
                             }
                         },
@@ -814,13 +814,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/40.jpg",
+                                "src": "assets/40.jpg",
                                 "alt": "Red flag location high above the blast doors (not the red iron cross banner)"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/41.jpg",
+                                "src": "assets/41.jpg",
                                 "alt": "Wolf skull location"
                             }
                         },
@@ -833,7 +833,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/42.jpg",
+                                "src": "assets/42.jpg",
                                 "alt": "Wolf howl box"
                             }
                         },
@@ -846,19 +846,19 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/43.jpg",
+                                "src": "assets/43.jpg",
                                 "alt": "Location 1 - In the courtyard outside the church"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/45.jpg",
+                                "src": "assets/45.jpg",
                                 "alt": "Location 2 - Near Double Tap, towards spawn"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/46.jpg",
+                                "src": "assets/46.jpg",
                                 "alt": "Location 3 - In the undercroft by Pack-a-Punch"
                             }
                         },
@@ -871,19 +871,19 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/149.jpg",
+                                "src": "assets/149.jpg",
                                 "alt": "Glowing symbol above hole in wall"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/150.jpg",
+                                "src": "assets/150.jpg",
                                 "alt": "Where to interact to spawn the skeleton"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/151.jpg",
+                                "src": "assets/151.jpg",
                                 "alt": "The arrow in the skeleton's hand"
                             }
                         },
@@ -896,7 +896,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/49.jpg",
+                                "src": "assets/49.jpg",
                                 "alt": "Wolf howl box"
                             }
                         },
@@ -909,7 +909,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/51.jpg",
+                                "src": "assets/51.jpg",
                                 "alt": "Finished bow"
                             }
                         }
@@ -927,7 +927,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/24.jpg",
+                                "src": "assets/24.jpg",
                                 "alt": "Purple symbol location"
                             }
                         },
@@ -940,13 +940,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/108.jpg",
+                                "src": "assets/108.jpg",
                                 "alt": "Purple square under the clock tower"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/120.jpg",
+                                "src": "assets/120.jpg",
                                 "alt": "Hole in the floor after melee kill"
                             }
                         },
@@ -959,7 +959,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/122.jpg",
+                                "src": "assets/122.jpg",
                                 "alt": "Floating urn"
                             }
                         },
@@ -972,37 +972,37 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/121.jpg",
+                                "src": "assets/121.jpg",
                                 "alt": "Location 1 - In the tunnel by Mule Kick"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/124.jpg",
+                                "src": "assets/124.jpg",
                                 "alt": "Location 2 - Sitting in a window outside the church, on the balcony"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/125.jpg",
+                                "src": "assets/125.jpg",
                                 "alt": "Location 3 - Next to Double Tap"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/126.jpg",
+                                "src": "assets/126.jpg",
                                 "alt": "Location 4 - In a chest in the bedroom"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/123.jpg",
+                                "src": "assets/123.jpg",
                                 "alt": "Location 5 - In a sink in the teleporter room"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/127.jpg",
+                                "src": "assets/127.jpg",
                                 "alt": "Location 6 - In the back of a truck, down by the rocket"
                             }
                         },
@@ -1015,7 +1015,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/128.jpg",
+                                "src": "assets/128.jpg",
                                 "alt": "All 6 skulls floating above the circle"
                             }
                         },
@@ -1028,7 +1028,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/177.jpg",
+                                "src": "assets/177.jpg",
                                 "alt": "Location to shoot to repeat the names"
                             }
                         },
@@ -1041,37 +1041,37 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/130.jpg",
+                                "src": "assets/130.jpg",
                                 "alt": "Crown knight"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/135.jpg",
+                                "src": "assets/135.jpg",
                                 "alt": "Door knight"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/134.jpg",
+                                "src": "assets/134.jpg",
                                 "alt": "Griffin knight"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/129.jpg",
+                                "src": "assets/129.jpg",
                                 "alt": "Heart knight"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/133.jpg",
+                                "src": "assets/133.jpg",
                                 "alt": "Horn knight"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/132.jpg",
+                                "src": "assets/132.jpg",
                                 "alt": "Stag knight"
                             }
                         },
@@ -1084,13 +1084,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/176.jpg",
+                                "src": "assets/176.jpg",
                                 "alt": "One of the symbol drops"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/178.jpg",
+                                "src": "assets/178.jpg",
                                 "alt": "Circle with all symbols collected"
                             }
                         },
@@ -1103,7 +1103,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/185.jpg",
+                                "src": "assets/185.jpg",
                                 "alt": "2 of the 3 symbols selected and floating in the room"
                             }
                         },
@@ -1116,7 +1116,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/169.jpg",
+                                "src": "assets/169.jpg",
                                 "alt": "Demon gate box"
                             }
                         },
@@ -1129,7 +1129,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/144.jpg",
+                                "src": "assets/144.jpg",
                                 "alt": "Finished bow"
                             }
                         }
@@ -1162,13 +1162,13 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/186.jpg",
+                                "src": "assets/186.jpg",
                                 "alt": "5 of the 6 spokes glowing orange"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/50.jpg",
+                                "src": "assets/50.jpg",
                                 "alt": "Teleporter with all 6 spokes glowing blue"
                             }
                         }
@@ -1194,49 +1194,49 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/63.jpg",
+                                "src": "assets/63.jpg",
                                 "alt": "Location 1 - In the church, on the clock above the fireplace"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/64.jpg",
+                                "src": "assets/64.jpg",
                                 "alt": "Location 2 - In the church, on one of the devices across from Speed Cola"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/96.jpg",
+                                "src": "assets/96.jpg",
                                 "alt": "Location 3 - Upstairs between the church and the clock tower, on a clock"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/66.jpg",
+                                "src": "assets/66.jpg",
                                 "alt": "Location 4 - In the power room, on a phone"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/65.jpg",
+                                "src": "assets/65.jpg",
                                 "alt": "Location 5 - In the bedrooms, on a globe"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/106.jpg",
+                                "src": "assets/106.jpg",
                                 "alt": "Location 6 - Above Double Tap, on a box by the hole in the wall"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/83.jpg",
+                                "src": "assets/83.jpg",
                                 "alt": "Location 7 - Between spawn and Double Tap, on a car tire"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/116.jpg",
+                                "src": "assets/116.jpg",
                                 "alt": "Location 8 - Next to Quick Revive, on a phone"
                             }
                         }
@@ -1262,13 +1262,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/68_edit.jpg",
+                                "src": "assets/68_edit.jpg",
                                 "alt": "Small fuses on a wooden box"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/69.jpg",
+                                "src": "assets/69.jpg",
                                 "alt": "Glowing object in the corner of the room"
                             }
                         },
@@ -1281,7 +1281,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/70.jpg",
+                                "src": "assets/70.jpg",
                                 "alt": "The 3 symbols on the safe. There are 4 possible symbols that can be chosen."
                             }
                         }
@@ -1299,7 +1299,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/77.jpg",
+                                "src": "assets/77.jpg",
                                 "alt": "Location to place the fuses"
                             }
                         },
@@ -1311,7 +1311,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/76.jpg",
+                                "src": "assets/76.jpg",
                                 "alt": "Death Ray on protect mode"
                             }
                         }
@@ -1329,7 +1329,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/78.jpg",
+                                "src": "assets/78.jpg",
                                 "alt": "The screens with the 4 possible symbols"
                             }
                         }
@@ -1346,7 +1346,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/79.jpg",
+                                "src": "assets/79.jpg",
                                 "alt": "The unlocked safe with the parts inside"
                             }
                         },
@@ -1358,13 +1358,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/80.jpg",
+                                "src": "assets/80.jpg",
                                 "alt": "Location 1"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/81.jpg",
+                                "src": "assets/81.jpg",
                                 "alt": "Location 2"
                             }
                         }
@@ -1375,7 +1375,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/82.jpg",
+                                "src": "assets/82.jpg",
                                 "alt": "The Death Ray on destroy mode"
                             }
                         }
@@ -1393,13 +1393,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/78.jpg",
+                                "src": "assets/78.jpg",
                                 "alt": "Location 1 - Outside the clock tower"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/90.jpg",
+                                "src": "assets/90.jpg",
                                 "alt": "Location 2 - At the rocket"
                             }
                         },
@@ -1411,7 +1411,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/89.jpg",
+                                "src": "assets/89.jpg",
                                 "alt": "One of the towers lit up white"
                             }
                         }
@@ -1430,7 +1430,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/91.jpg",
+                                "src": "assets/91.jpg",
                                 "alt": "Glowing green button"
                             }
                         },
@@ -1443,7 +1443,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/92.jpg",
+                                "src": "assets/92.jpg",
                                 "alt": "Vril Device in the snow"
                             }
                         }
@@ -1467,13 +1467,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/117.jpg",
+                                "src": "assets/117.jpg",
                                 "alt": "Kronorium sitting on a box"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/118.jpg",
+                                "src": "assets/118.jpg",
                                 "alt": "Slab sitting in a small open safe"
                             }
                         },
@@ -1485,13 +1485,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/170.jpg",
+                                "src": "assets/170.jpg",
                                 "alt": "Location to place the slab"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/189.jpg",
+                                "src": "assets/189.jpg",
                                 "alt": "Slab placed in wall"
                             }
                         }
@@ -1509,7 +1509,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/109.jpg",
+                                "src": "assets/109.jpg",
                                 "alt": "Hole to place the Vril Device"
                             }
                         },
@@ -1534,25 +1534,25 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/110.jpg",
+                                "src": "assets/110.jpg",
                                 "alt": "Location 1 - In the courtyard"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/112.jpg",
+                                "src": "assets/112.jpg",
                                 "alt": "Location 2 - By Mule Kick"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/115.jpg",
+                                "src": "assets/115.jpg",
                                 "alt": "Location 3 - By Double Tap"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/131.jpg",
+                                "src": "assets/131.jpg",
                                 "alt": "Location 4 - In the power room"
                             }
                         },
@@ -1565,25 +1565,25 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/111.jpg",
+                                "src": "assets/111.jpg",
                                 "alt": "Glow color for lightning bow"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/119.jpg",
+                                "src": "assets/119.jpg",
                                 "alt": "Glow color for wolf bow"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/113.jpg",
+                                "src": "assets/113.jpg",
                                 "alt": "Glow color for fire bow"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/191.jpg",
+                                "src": "assets/191.jpg",
                                 "alt": "Glow color for void bow"
                             }
                         }
@@ -1595,7 +1595,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/138.jpg",
+                                "src": "assets/138.jpg",
                                 "alt": "Location to interact with"
                             }
                         }
@@ -1614,7 +1614,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/139.jpg",
+                                "src": "assets/139.jpg",
                                 "alt": "One of the pressure plates next to the pyramid"
                             }
                         },
@@ -1648,7 +1648,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/140.jpg",
+                                "src": "assets/140.jpg",
                                 "alt": "Electricity from storm wave"
                             }
                         },
@@ -1668,7 +1668,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/141.jpg",
+                                "src": "assets/141.jpg",
                                 "alt": "Glowing symbol on the keeper boss"
                             }
                         },
@@ -1694,7 +1694,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/143.jpg",
+                                "src": "assets/143.jpg",
                                 "alt": "Summoning key"
                             }
                         },
@@ -1707,7 +1707,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/145.jpg",
+                                "src": "assets/145.jpg",
                                 "alt": "Computer terminal"
                             }
                         },
@@ -1731,19 +1731,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/28.jpg",
+                                "src": "assets/28.jpg",
                                 "alt": "Location 1 - In the bedroom between Double Tap and the power room"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/30.jpg",
+                                "src": "assets/30.jpg",
                                 "alt": "Location 2 - Across from Juggernog"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/32.jpg",
+                                "src": "assets/32.jpg",
                                 "alt": "Location 3 - In a truck by the rocket"
                             }
                         }
@@ -1760,19 +1760,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/71_edit.jpg",
+                                "src": "assets/71_edit.jpg",
                                 "alt": "Location 1 - On the catwalk across from the Double Tap dragon location"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/73_edit.jpg",
+                                "src": "assets/73_edit.jpg",
                                 "alt": "Location 2 - Directly through the door by Quick Revive"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/72_edit.jpg",
+                                "src": "assets/72_edit.jpg",
                                 "alt": "Location 3 - In the power room, near the door that leads to the church"
                             }
                         }
@@ -1784,19 +1784,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/210.jpg",
+                                "src": "assets/210.jpg",
                                 "alt": "Flower pot location"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/211.jpg",
+                                "src": "assets/211.jpg",
                                 "alt": "Flower pot back in time"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/212.jpg",
+                                "src": "assets/212.jpg",
                                 "alt": "Flower pot back in present"
                             }
                         }
@@ -1815,13 +1815,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/192.jpg",
+                                "src": "assets/192.jpg",
                                 "alt": "Clock gears"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/193.jpg",
+                                "src": "assets/193.jpg",
                                 "alt": "Ragnaroks powering the clock"
                             }
                         },
@@ -1834,13 +1834,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/194.jpg",
+                                "src": "assets/194.jpg",
                                 "alt": "Control lever"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/208.jpg",
+                                "src": "assets/208.jpg",
                                 "alt": "Clock at 9:35"
                             }
                         },
@@ -1853,13 +1853,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/202.jpg",
+                                "src": "assets/202.jpg",
                                 "alt": "Orb above pyramid"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/203.jpg",
+                                "src": "assets/203.jpg",
                                 "alt": "Symbol to wallrun on"
                             }
                         },
@@ -1872,13 +1872,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/206.jpg",
+                                "src": "assets/206.jpg",
                                 "alt": "Plunger sitting on desk"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/207.jpg",
+                                "src": "assets/207.jpg",
                                 "alt": "Plunger melee attack"
                             }
                         },
@@ -1891,7 +1891,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/209.jpg",
+                                "src": "assets/209.jpg",
                                 "alt": "Upgraded plunger attack"
                             }
                         }
@@ -1903,31 +1903,31 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/173_edit.jpg",
+                                "src": "assets/173_edit.jpg",
                                 "alt": "Location 1 - Next to Double Tap"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/174_edit.jpg",
+                                "src": "assets/174_edit.jpg",
                                 "alt": "Location 2 - Behind Mule Kick"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/190_edit.jpg",
+                                "src": "assets/190_edit.jpg",
                                 "alt": "Location 3 - Outside the church, on the balcony"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Samantha's Lullabye",
-                    "description": "Interact with the music box in the bedroom across from the teddy location. Samantha's Lullabye will be audible near the music box.",
+                    "header": "Samantha's Lullaby",
+                    "description": "Interact with the music box in the bedroom across from the teddy location. Samantha's Lullaby will be audible near the music box.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/29.jpg",
+                                "src": "assets/29.jpg",
                                 "alt": "Music box location"
                             }
                         }
@@ -1939,7 +1939,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/der_eisendrache/assets/157.jpg",
+                                "src": "assets/157.jpg",
                                 "alt": "The raven"
                             }
                         }

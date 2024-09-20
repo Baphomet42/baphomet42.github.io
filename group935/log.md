@@ -30,5 +30,20 @@ To ensure a consistent feel, try to stick to these guidelines.
 
 ## Map Page Paralax Pictures
 
-+ Currently mostly from callofdutymaps.com
++ Some from https://callofdutymaps.com/
     + Find an image that represents the map as a whole
++ Some from https://store.steampowered.com/app/581450/Call_of_Duty_Black_Ops_III__Zombies_Chronicles/
++ Some from https://www.pushsquare.com/games/ps4/call_of_duty_black_ops_iii_zombies_chronicles
+    + Official low-res versions at https://support.activision.com/call-of-duty--black-ops-iii/articles/call-of-duty-black-ops-iii-zombies-chronicles
+
+# Image edits
+
++ Keep original jpg and edited file
+    + Edited name like 1_edit.jpg
++ Use same arrow, rotated but no resizing
+    + Color #FF0000
++ Text and numbers added in Pixlr
+    + Font size 100
+    + Font Verdana
+    + Color #FF0000
++ Save as JPG 70% quality

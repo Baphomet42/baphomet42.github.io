@@ -4,7 +4,7 @@
     "background": "https://callofdutymaps.com/wp-content/uploads/gorodkrovi29.jpg",
     "rev": 2,
     "maps": [{
-        "img": "/group935/zm/gorod_krovi/assets/map1.jpg"
+        "img": "assets/map1.png"
     }],
     "sections" : [
         {
@@ -15,7 +15,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/1.jpg",
+                                "src": "assets/1.jpg",
                                 "alt": "Power switch location"
                             }
                         }
@@ -34,37 +34,37 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/15.jpg",
+                                "src": "assets/15.jpg",
                                 "alt": "A Code Cylinder power-up"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/18.jpg",
+                                "src": "assets/18.jpg",
                                 "alt": "Groph Pod station in Dragon Command"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/27.jpg",
+                                "src": "assets/27.jpg",
                                 "alt": "Groph Pod station in Tank Factory"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/67.jpg",
+                                "src": "assets/67.jpg",
                                 "alt": "Groph Pod station in Supply Depot"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/21.jpg",
+                                "src": "assets/21.jpg",
                                 "alt": "A Groph Pod under attack"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/22.jpg",
+                                "src": "assets/22.jpg",
                                 "alt": "One of the parts inside the Groph Pod"
                             }
                         },
@@ -77,37 +77,37 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/30.jpg",
+                                "src": "assets/30.jpg",
                                 "alt": "The device with all 3 parts placed"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/31.jpg",
+                                "src": "assets/31.jpg",
                                 "alt": "Dragon station 1 - at Dragon Command"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/69.jpg",
+                                "src": "assets/69.jpg",
                                 "alt": "Dragon station 2 - at Tank Factory"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/68.jpg",
+                                "src": "assets/68.jpg",
                                 "alt": "Dragon station 3 - at Supply Depot"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/10.jpg",
+                                "src": "assets/10.jpg",
                                 "alt": "PaP machine"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/11.jpg",
+                                "src": "assets/11.jpg",
                                 "alt": "Sewer to exit the Hatchery back to Belinski Square"
                             }
                         }
@@ -119,7 +119,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/25.jpg",
+                                "src": "assets/25.jpg",
                                 "alt": "Screen glowing before the fire starts"
                             }
                         }
@@ -131,7 +131,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/55.jpg",
+                                "src": "assets/55.jpg",
                                 "alt": "Trials with green flame above"
                             }
                         }
@@ -142,55 +142,55 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/48.jpg",
+                                "src": "assets/48.jpg",
                                 "alt": "Quick Revive - in Belinski Square"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/49.jpg",
+                                "src": "assets/49.jpg",
                                 "alt": "Juggernog - in Department Store"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/50.jpg",
+                                "src": "assets/50.jpg",
                                 "alt": "Mule Kick - in Operations Bunker"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/66.jpg",
+                                "src": "assets/66.jpg",
                                 "alt": "Stamin-Up - upstairs in the Infirmary"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/52.jpg",
+                                "src": "assets/52.jpg",
                                 "alt": "Speed Cola - upstairs at Supply Depot"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/54.jpg",
-                                "alt": "Double Tap II - in Tank Factory"
+                                "src": "assets/54.jpg",
+                                "alt": "Double Tap Root Beer - in Tank Factory"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/47.jpg",
+                                "src": "assets/47.jpg",
                                 "alt": "Wunderfizz location 1 - in the Department Store"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/51.jpg",
+                                "src": "assets/51.jpg",
                                 "alt": "Wunderfizz location 2 - bottom floor of the Armory"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/53.jpg",
+                                "src": "assets/53.jpg",
                                 "alt": "Wunderfizz location 3 - top floor of Dragon Command"
                             }
                         }
@@ -208,19 +208,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/14.jpg",
+                                "src": "assets/14.jpg",
                                 "alt": "Location 1 - bottom floor of the Infirmary, on the floor"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/59.jpg",
+                                "src": "assets/59.jpg",
                                 "alt": "Location 2 - middle floor of the Infirmary, on a bunk bed"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/19.jpg",
+                                "src": "assets/19.jpg",
                                 "alt": "Location 3 - top floor of the Infirmary, on a wall"
                             }
                         }
@@ -232,19 +232,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/75.jpg",
+                                "src": "assets/75.jpg",
                                 "alt": "Location 1 - next to Juggernog, on a chair"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/56.jpg",
+                                "src": "assets/56.jpg",
                                 "alt": "Location 2 - outside of the Operations Bunker, on the door of a truck"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/12.jpg",
+                                "src": "assets/12.jpg",
                                 "alt": "Location 3 - in the Operations Bunker, on a shelf"
                             }
                         }
@@ -256,19 +256,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/57.jpg",
+                                "src": "assets/57.jpg",
                                 "alt": "Location 1 - bottom floor of the Armory, on a wall"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/58.jpg",
+                                "src": "assets/58.jpg",
                                 "alt": "Location 2 - at the Mystery Box floor of the Armory, on a wall"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/13.jpg",
+                                "src": "assets/13.jpg",
                                 "alt": "Location 3 - top floor of the Armory, on a box"
                             }
                         }
@@ -280,7 +280,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/17.jpg",
+                                "src": "assets/17.jpg",
                                 "alt": "Workbench location"
                             }
                         }
@@ -298,19 +298,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/33.jpg",
+                                "src": "assets/33.jpg",
                                 "alt": "Machine to interact"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/34.jpg",
+                                "src": "assets/34.jpg",
                                 "alt": "Max Ammo spawned by PaP machine"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/35.jpg",
+                                "src": "assets/35.jpg",
                                 "alt": "Dragon Strike location"
                             }
                         }
@@ -328,13 +328,13 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/36.jpg",
+                                "src": "assets/36.jpg",
                                 "alt": "Location to shoot the egg"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/37.jpg",
+                                "src": "assets/37.jpg",
                                 "alt": "Location to pick up the egg"
                             }
                         }
@@ -346,7 +346,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/71.jpg",
+                                "src": "assets/71.jpg",
                                 "alt": "One of the nests, outside of Dragon Command"
                             }
                         }
@@ -370,7 +370,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/86.jpg",
+                                "src": "assets/86.jpg",
                                 "alt": "Egg in the incubator"
                             }
                         }
@@ -382,7 +382,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/89.jpg",
+                                "src": "assets/89.jpg",
                                 "alt": "Special weapon reward from the trial headstone"
                             }
                         }
@@ -412,7 +412,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/3.jpg",
+                                "src": "assets/3.jpg",
                                 "alt": "The light after interacting"
                             }
                         }
@@ -430,13 +430,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/39.jpg",
+                                "src": "assets/39.jpg",
                                 "alt": "Generator without power"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/40.jpg",
+                                "src": "assets/40.jpg",
                                 "alt": "Generator with power"
                             }
                         },
@@ -449,49 +449,49 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/74.jpg",
+                                "src": "assets/74.jpg",
                                 "alt": "Valve with pink cylinder (stuck inside pipe)"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/46.jpg",
+                                "src": "assets/46.jpg",
                                 "alt": "Green light valve"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/41.jpg",
+                                "src": "assets/41.jpg",
                                 "alt": "Dragon Command Valve - upstairs and to the right"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/45.jpg",
+                                "src": "assets/45.jpg",
                                 "alt": "Tank Factory Valve - bottom floor"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/42.jpg",
+                                "src": "assets/42.jpg",
                                 "alt": "Infirmary Valve - main floor by a bed"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/43.jpg",
+                                "src": "assets/43.jpg",
                                 "alt": "Armory Valve - top floor"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/44.jpg",
+                                "src": "assets/44.jpg",
                                 "alt": "Supply Depot Valve - bottom floor under the stairs"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/46.jpg",
+                                "src": "assets/46.jpg",
                                 "alt": "Department Store Valve - top floor, left from the stairs"
                             }
                         },
@@ -508,7 +508,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/76.jpg",
+                                "src": "assets/76.jpg",
                                 "alt": "Cylinder able to be picked up"
                             }
                         }
@@ -526,7 +526,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/78.jpg",
+                                "src": "assets/78.jpg",
                                 "alt": "Location to place cylinder"
                             }
                         },
@@ -539,7 +539,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/80.jpg",
+                                "src": "assets/80.jpg",
                                 "alt": "KRONOS inputted on the dials"
                             }
                         },
@@ -552,7 +552,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/81.jpg",
+                                "src": "assets/81.jpg",
                                 "alt": "The red light"
                             }
                         }
@@ -571,13 +571,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/60.jpg",
+                                "src": "assets/60.jpg",
                                 "alt": "Trophy built into a wall"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/61.jpg",
+                                "src": "assets/61.jpg",
                                 "alt": "Trophy fallen onto some rubble"
                             }
                         },
@@ -590,13 +590,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/62.jpg",
+                                "src": "assets/62.jpg",
                                 "alt": "Where to shoot the window with the shield blast"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/63.jpg",
+                                "src": "assets/63.jpg",
                                 "alt": "Trophy on the floor in front of the window"
                             }
                         },
@@ -609,13 +609,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/64.jpg",
+                                "src": "assets/64.jpg",
                                 "alt": "One of the trap buys"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/65.jpg",
+                                "src": "assets/65.jpg",
                                 "alt": "Trophy under the destroyed grate"
                             }
                         },
@@ -628,13 +628,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/113.jpg",
+                                "src": "assets/113.jpg",
                                 "alt": "Red light in the sewer"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/70.jpg",
+                                "src": "assets/70.jpg",
                                 "alt": "Trophy in the toilet"
                             }
                         },
@@ -647,13 +647,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/72.jpg",
+                                "src": "assets/72.jpg",
                                 "alt": "Where to aim the Dragon Strike"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/73.jpg",
+                                "src": "assets/73.jpg",
                                 "alt": "Trophy raised from the ground"
                             }
                         },
@@ -666,13 +666,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/90.jpg",
+                                "src": "assets/90.jpg",
                                 "alt": "The safe to smash open"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/91.jpg",
+                                "src": "assets/91.jpg",
                                 "alt": "Trophy in the safe"
                             }
                         }
@@ -691,7 +691,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/93.jpg",
+                                "src": "assets/93.jpg",
                                 "alt": "Location to place the trophies and select a random challenge"
                             }
                         },
@@ -704,43 +704,43 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/119.jpg",
+                                "src": "assets/119.jpg",
                                 "alt": "Bomb challenge selected and the screen highlighting a location"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/124.jpg",
+                                "src": "assets/124.jpg",
                                 "alt": "Dragon Command bomb, upstairs and to the left"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/120.jpg",
+                                "src": "assets/120.jpg",
                                 "alt": "Tank Factory bomb, top floor and in the room on the left"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/123.jpg",
+                                "src": "assets/123.jpg",
                                 "alt": "Infirmary bomb, on a pillar when going to the bottom level"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/125.jpg",
+                                "src": "assets/125.jpg",
                                 "alt": "Armory bomb, on the wall on the bottom level"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/122.jpg",
+                                "src": "assets/122.jpg",
                                 "alt": "Supply Depot bomb, straight through the door on a wall"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/121.jpg",
+                                "src": "assets/121.jpg",
                                 "alt": "Dept. Store bomb, under the staircase on the bottom floor"
                             }
                         },
@@ -753,25 +753,25 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/98.jpg",
+                                "src": "assets/98.jpg",
                                 "alt": "Groph Pod outside Supply Depot"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/100.jpg",
+                                "src": "assets/100.jpg",
                                 "alt": "Opened Groph Pod with a whelp flying towards it"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/114.jpg",
+                                "src": "assets/114.jpg",
                                 "alt": "Part dropped off by whelp"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/101.jpg",
+                                "src": "assets/101.jpg",
                                 "alt": "Location to place part"
                             }
                         },
@@ -784,13 +784,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/115.jpg",
+                                "src": "assets/115.jpg",
                                 "alt": "Glowing yellow orb (Gersh)"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/116.jpg",
+                                "src": "assets/116.jpg",
                                 "alt": "Gersh at Dragon Command after all 3 quotes"
                             }
                         },
@@ -803,13 +803,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/117.jpg",
+                                "src": "assets/117.jpg",
                                 "alt": "Green-eyed Mangler at Tank Factory"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/118.jpg",
+                                "src": "assets/118.jpg",
                                 "alt": "Location to bring Mangler"
                             }
                         },
@@ -822,13 +822,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/95.jpg",
+                                "src": "assets/95.jpg",
                                 "alt": "Damaged Valkyrie in Belinski Square"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/96.jpg",
+                                "src": "assets/96.jpg",
                                 "alt": "Damaged Valkyrie in Dragon Command"
                             }
                         },
@@ -841,19 +841,19 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/102.jpg",
+                                "src": "assets/102.jpg",
                                 "alt": "Part to pick up"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/103.jpg",
+                                "src": "assets/103.jpg",
                                 "alt": "Machine to start lockdown and get part"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/104.jpg",
+                                "src": "assets/104.jpg",
                                 "alt": "Location to place part"
                             }
                         }
@@ -870,7 +870,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/105.jpg",
+                                "src": "assets/105.jpg",
                                 "alt": "Power core in an open compartment"
                             }
                         },
@@ -883,7 +883,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/126.jpg",
+                                "src": "assets/126.jpg",
                                 "alt": "Whelp flying to Nikolai with the power core"
                             }
                         }
@@ -902,7 +902,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/107.jpg",
+                                "src": "assets/107.jpg",
                                 "alt": "The sewer grate"
                             }
                         },
@@ -915,7 +915,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/108.jpg",
+                                "src": "assets/108.jpg",
                                 "alt": "The button"
                             }
                         },
@@ -928,13 +928,13 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/127.jpg",
+                                "src": "assets/127.jpg",
                                 "alt": "A glowing spot on the dragon"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/128.jpg",
+                                "src": "assets/128.jpg",
                                 "alt": "Dragon breathing fire"
                             }
                         },
@@ -947,25 +947,25 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/129.jpg",
+                                "src": "assets/129.jpg",
                                 "alt": "First glowing yellow target on top of the mech's head"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/130.jpg",
+                                "src": "assets/130.jpg",
                                 "alt": "Second glowing yellow target on the other side of the mech's head"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/131.jpg",
+                                "src": "assets/131.jpg",
                                 "alt": "One of the front yellow lights destroyed and the other still lit up"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/132.jpg",
+                                "src": "assets/132.jpg",
                                 "alt": "R.A.P.S."
                             }
                         }
@@ -982,19 +982,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/4.jpg",
+                                "src": "assets/4.jpg",
                                 "alt": "Location 1 - through the front door of the Department Store, on a couch"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/5.jpg",
+                                "src": "assets/5.jpg",
                                 "alt": "Location 2 - just outside of the Operations Bunker, on the ground by two bodies"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/6.jpg",
+                                "src": "assets/6.jpg",
                                 "alt": "Location 3 - straight through the door to the Supply Depot, on a bookshelf"
                             }
                         }
@@ -1006,143 +1006,20 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/7.jpg",
+                                "src": "assets/7.jpg",
                                 "alt": "Location 1 - upstairs in Dragon Command, on a desk"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/8.jpg",
+                                "src": "assets/8.jpg",
                                 "alt": "Location 2 - middle level of Tank Factory, on a blackboard"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/9.jpg",
+                                "src": "assets/9.jpg",
                                 "alt": "Location 3 - in the room to the right of PaP, sticking out of a book"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "Samantha's Sorrow",
-                    "description": "Complete a quest to play the song and get a Max Ammo",
-                    "elements": [
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "1. Burn 3 Monkey Bombs",
-                                "description": "Throw 3 Monkey Bombs into 3 different dragon fire locations. You will hear the Monkey Bomb screaming each time."
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/156.jpg",
-                                "alt": "Burning Monkey Bomb"
-                            }
-                        },
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "2. Hide and seek",
-                                "description": "Interact with a grave in Belinski Square to start the game. A particle effect will show the game has started. Then, find and shoot Samantha music box figures around the map. They will play a song when you get close."
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/157.jpg",
-                                "alt": "The grave to start hide and seek"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/159.jpg",
-                                "alt": "Possible location - top floor of Infirmary, on a cart"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/160.jpg",
-                                "alt": "Possible location - outside of Dragon Command, on the end of the tank barrel"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/161.jpg",
-                                "alt": "Possible location - outside of Dragon Command, hanging below a balcony"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/162.jpg",
-                                "alt": "Possible location - at Supply Depot, looking left from the dragon station"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/163.jpg",
-                                "alt": "Possible location - outside of Tank Factory, in a sewer pipe"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/164.jpg",
-                                "alt": "Possible location - at Belinski Square, on top of a telephone pole"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/165.jpg",
-                                "alt": "Possible location - outside of Supply Depot, hanging from a light"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/166.jpg",
-                                "alt": "Possible location - in Supply Depot, on a box upstairs"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/167.jpg",
-                                "alt": "Possible location - in Department Store, hanging below the broken staircase"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/168.jpg",
-                                "alt": "Possible location - at Tank Factory, looking right from the dragon station"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/169.jpg",
-                                "alt": "Possible location - in the Infirmary, above the destroyed floor ramp"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/170.jpg",
-                                "alt": "Possible location - in the Operations Bunker, through a barrier by Mule Kick"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/171.jpg",
-                                "alt": "Possible location - between the Armory and Supply Depot, outside a barrier on the train car"
-                            }
-                        },
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "3. Interact with the grave",
-                                "description": "Go back to the grave and interact again. This time, you'll get a Max Ammo and the song will play."
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/158.jpg",
-                                "alt": "The grave to get the Max Ammo and song"
                             }
                         }
                     ]
@@ -1165,25 +1042,25 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/109.jpg",
+                                "src": "assets/109.jpg",
                                 "alt": "Mannequin with Dragon Wings, top floor of Department Store"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/110.jpg",
+                                "src": "assets/110.jpg",
                                 "alt": "Dragon Command teleport location"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/111.jpg",
+                                "src": "assets/111.jpg",
                                 "alt": "Tank Factory teleport location"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/112.jpg",
+                                "src": "assets/112.jpg",
                                 "alt": "Supply Depot teleport location"
                             }
                         },
@@ -1196,19 +1073,19 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/137.jpg",
+                                "src": "assets/137.jpg",
                                 "alt": "Mangler with arm shot off"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/138.jpg",
+                                "src": "assets/138.jpg",
                                 "alt": "Mangler with helmet shot off"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/134.jpg",
+                                "src": "assets/134.jpg",
                                 "alt": "Mannequin with Mangler Helmet, middle floor of Department Store"
                             }
                         },
@@ -1221,19 +1098,19 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/136.jpg",
+                                "src": "assets/136.jpg",
                                 "alt": "Valkyrie with 2 of its 3 arms shot off"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/135.jpg",
+                                "src": "assets/135.jpg",
                                 "alt": "Valkyrie with camera shot off"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/133.jpg",
+                                "src": "assets/133.jpg",
                                 "alt": "Mannequin with Valkyrie Drone Hat, middle floor of Department Store"
                             }
                         }
@@ -1258,7 +1135,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/146.jpg",
+                                "src": "assets/146.jpg",
                                 "alt": "Using the shield to stand in fire"
                             }
                         },
@@ -1271,19 +1148,19 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/147.jpg",
+                                "src": "assets/147.jpg",
                                 "alt": "Location 1 - at Dragon Command, looking left from the dragon station"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/149.jpg",
+                                "src": "assets/149.jpg",
                                 "alt": "Location 2 - at Tank Factory, looking right from the dragon station"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/148.jpg",
+                                "src": "assets/148.jpg",
                                 "alt": "Location 3 - at Supply Depot, looking up towards the dragon station when standing by Speed Cola"
                             }
                         },
@@ -1296,7 +1173,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/150.jpg",
+                                "src": "assets/150.jpg",
                                 "alt": "The shield inside the dragon corpse"
                             }
                         }
@@ -1320,25 +1197,25 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/140.jpg",
+                                "src": "assets/140.jpg",
                                 "alt": "Flag outside Dragon Command, straight back from the dragon station"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/141.jpg",
+                                "src": "assets/141.jpg",
                                 "alt": "Flag outside Tank Factory, seen from the window by Double Tap"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/139.jpg",
+                                "src": "assets/139.jpg",
                                 "alt": "Flag outside Supply Depot, looking left from the dragon station"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/142.jpg",
+                                "src": "assets/142.jpg",
                                 "alt": "Flag outside Belinski Square, seen behind the sewer exit by Quick Revive"
                             }
                         },
@@ -1351,19 +1228,19 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/143.jpg",
+                                "src": "assets/143.jpg",
                                 "alt": "Location to start the lockdown"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/145.jpg",
+                                "src": "assets/145.jpg",
                                 "alt": "Using a Dragon Strike at the lockdown"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/144.jpg",
+                                "src": "assets/144.jpg",
                                 "alt": "Draconite Controller"
                             }
                         }
@@ -1381,7 +1258,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/153.jpg",
+                                "src": "assets/153.jpg",
                                 "alt": "The flask"
                             }
                         },
@@ -1394,7 +1271,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/152.jpg",
+                                "src": "assets/152.jpg",
                                 "alt": "The flowers"
                             }
                         },
@@ -1407,7 +1284,7 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/151.jpg",
+                                "src": "assets/151.jpg",
                                 "alt": "One of the candle locations, in Supply Depot"
                             }
                         },
@@ -1420,13 +1297,19 @@
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/154.jpg",
+                                "src": "assets/154.jpg",
                                 "alt": "Monkey Bomb on the grave"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/155.jpg",
+                                "src": "assets/176.jpg",
+                                "alt": "Interaction prompt"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/155.jpg",
                                 "alt": "Upgraded Monkey Bomb trial reward"
                             }
                         }
@@ -1438,26 +1321,152 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/172.jpg",
+                                "src": "assets/172.jpg",
                                 "alt": "Wrench - 5 rounds under 5 minutes"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/173.jpg",
+                                "src": "assets/173.jpg",
                                 "alt": "Malice - 10 rounds under 13 minutes"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/174.jpg",
+                                "src": "assets/174.jpg",
                                 "alt": "Slash N' Burn - 15 rounds under 24 minutes"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/gorod_krovi/assets/175.jpg",
+                                "src": "assets/175.jpg",
                                 "alt": "Fury's Song - 20 rounds under 32 minutes"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Hide and Seek",
+            "description": "Play Samantha's Sorrow and get a Max Ammo",
+            "subsections": [
+                {
+                    "header": "1. Burn 3 Monkey Bombs",
+                    "description": "Throw 3 Monkey Bombs into 3 different dragon fire locations. You will hear the Monkey Bomb screaming each time.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/156.jpg",
+                                "alt": "Burning Monkey Bomb"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Hide and seek",
+                    "description": "Interact with a Samantha doll in Belinski Square. A particle effect will show the game has started. Then, find and shoot 5 Samantha dolls around the map. They will play a song when you get close, and only 1 will be in the map at a time. If you run out of time, Samantha will laugh, and you have to start the game again at the original doll.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/157.jpg",
+                                "alt": "The doll to start hide and seek"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/164.jpg",
+                                "alt": "Location 1 - at Belinski Square, on top of a telephone pole"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/167.jpg",
+                                "alt": "Location 2 - in Department Store, hanging below the broken staircase"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/170.jpg",
+                                "alt": "Location 3 - in the Operations Bunker, through a barrier by Mule Kick"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/160.jpg",
+                                "alt": "Location 4 - outside of Dragon Command, on the end of the tank barrel"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/161.jpg",
+                                "alt": "Location 5 - outside of Dragon Command, hanging below a balcony"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/177.jpg",
+                                "alt": "Location 6 - in Dragon Command, upstairs on a broken pillar"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/163.jpg",
+                                "alt": "Location 7 - outside of Tank Factory, in a sewer pipe"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/168.jpg",
+                                "alt": "Location 8 - at Tank Factory, looking right from the dragon station"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/169.jpg",
+                                "alt": "Location 9 - in the Infirmary, above the destroyed floor ramp"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/159.jpg",
+                                "alt": "Location 10 - top floor of Infirmary, on a cart"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/171.jpg",
+                                "alt": "Location 11 - between the Armory and Supply Depot, outside a barrier on the train car"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/165.jpg",
+                                "alt": "Location 12 - outside of Supply Depot, hanging from a light"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/166.jpg",
+                                "alt": "Location 13 - in Supply Depot, on a box upstairs"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/162.jpg",
+                                "alt": "Location 14 - at Supply Depot, looking left from the dragon station"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Interact with the first doll",
+                    "description": "Go back to the original doll and interact again. This time, you'll get a Max Ammo and the song will play.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/158.jpg",
+                                "alt": "The doll to get the Max Ammo and song"
                             }
                         }
                     ]

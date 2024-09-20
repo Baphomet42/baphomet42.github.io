@@ -3,6 +3,9 @@
     "subtext": "Black Ops III",
     "background": "assets/background.jpg",
     "rev": 2,
+    "maps": [{
+        "img": "https://callofdutymaps.com/wp-content/uploads/thegiantloadscreen.jpg"
+    }],
     "sections" : [
         {
             "header": "Map Features",
@@ -12,7 +15,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/the_giant/assets/5.jpg",
+                                "src": "assets/5.jpg",
                                 "alt": "Power switch location"
                             }
                         }
@@ -24,31 +27,31 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/the_giant/assets/1.jpg",
+                                "src": "assets/1.jpg",
                                 "alt": "Teleporter mainframe"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/the_giant/assets/2.jpg",
+                                "src": "assets/2.jpg",
                                 "alt": "Teleporter A"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/the_giant/assets/3.jpg",
+                                "src": "assets/3.jpg",
                                 "alt": "Teleporter B"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/the_giant/assets/4.jpg",
+                                "src": "assets/4.jpg",
                                 "alt": "Teleporter C"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/the_giant/assets/9.jpg",
+                                "src": "assets/9.jpg",
                                 "alt": "Unlocked Pack-a-Punch machine"
                             }
                         }
@@ -76,7 +79,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/the_giant/assets/12.jpg",
+                                "src": "assets/12.jpg",
                                 "alt": "The panel seen outside the map"
                             }
                         }
@@ -88,19 +91,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/the_giant/assets/13.jpg",
+                                "src": "assets/13.jpg",
                                 "alt": "Location 1 - In a hole in the wall beneath Teleporter A"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/the_giant/assets/14.jpg",
+                                "src": "assets/14.jpg",
                                 "alt": "Location 2 - In a large vat near Teleporter B"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/the_giant/assets/15.jpg",
+                                "src": "assets/15.jpg",
                                 "alt": "Location 3 - On a balcony above the power switch"
                             }
                         }
@@ -112,7 +115,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/the_giant/assets/16.jpg",
+                                "src": "assets/16.jpg",
                                 "alt": "Furnace location, between the mainframe and Teleporter B"
                             }
                         }
@@ -129,19 +132,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/the_giant/assets/6.jpg",
+                                "src": "assets/6.jpg",
                                 "alt": "Location 1 - Outside Teleporter A, on a desk"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/the_giant/assets/7.jpg",
+                                "src": "assets/7.jpg",
                                 "alt": "Location 2 - Outside Teleporter A, on a shelf"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/the_giant/assets/8.jpg",
+                                "src": "assets/8.jpg",
                                 "alt": "Location 3 - In the side room from Teleporter B, on a desk"
                             }
                         }
@@ -158,14 +161,26 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "/group935/zm/the_giant/assets/10.jpg",
+                                "src": "assets/10.jpg",
                                 "alt": "Button lit up after the monkey bombs were teleported"
                             }
                         },
                         {
                             "pic": {
-                                "src": "/group935/zm/the_giant/assets/11.jpg",
+                                "src": "assets/11.jpg",
                                 "alt": "The uncovered perk machine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Burning Monkey Bomb",
+                    "description": "If you throw a Monkey Bomb into the furnace, it will scream.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/17.jpg",
+                                "alt": "Monkey Bomb being thrown into the furnace"
                             }
                         }
                     ]

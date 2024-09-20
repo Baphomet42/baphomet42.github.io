@@ -1,0 +1,291 @@
+{
+    "name": "Nacht der Untoten",
+    "subtext": "World at War | Black Ops | Black Ops III",
+    "background": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/581450/ss_5550daa59daff156b2971bbf3ce61afe41f000cf.1920x1080.jpg",
+    "rev": 2,
+    "sections" : [
+        {
+            "header": "Map Features",
+            "subsections": [
+                {
+                    "header": "Perk Machines",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/1.jpg",
+                                "alt": "Mule Kick (Black Ops & Black Ops III only)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/2.jpg",
+                                "alt": "Wunderfizz (Black Ops III only)"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Song",
+            "subsections": [
+                {
+                    "header": "Undone",
+                    "description": "Black Ops & Black Ops III only. In Black Ops, shoot 3 specific explosive barrels outside the map. In Black Ops III, shoot all 28 barrels.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/18.jpg",
+                                "alt": "Barrels 1 & 2"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/19.jpg",
+                                "alt": "Barrels 3 & 4"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/20.jpg",
+                                "alt": "Barrel 5"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/21.jpg",
+                                "alt": "Barrel 6"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/22.jpg",
+                                "alt": "Barrels 7 & 8"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/39.jpg",
+                                "alt": "Barrel 9"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/23.jpg",
+                                "alt": "Barrels 10 & 11"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/24.jpg",
+                                "alt": "Barrel 12"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/37.jpg",
+                                "alt": "Barrel 13"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/25.jpg",
+                                "alt": "Barrel 14"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/26.jpg",
+                                "alt": "Barrels 15 & 16"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/27.jpg",
+                                "alt": "Barrel 17"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/28.jpg",
+                                "alt": "Barrel 18"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/29.jpg",
+                                "alt": "Barrel 19"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/38.jpg",
+                                "alt": "Barrel 20"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/30.jpg",
+                                "alt": "Barrel 21"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/31.jpg",
+                                "alt": "Barrel 22"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/32.jpg",
+                                "alt": "Barrel 23"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/33.jpg",
+                                "alt": "Barrel 24"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/34.jpg",
+                                "alt": "Barrel 25"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/35.jpg",
+                                "alt": "Barrels 26 & 27"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/36.jpg",
+                                "alt": "Barrel 28"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Side Easter Eggs",
+            "subsections": [
+                {
+                    "header": "Radio Easter Egg",
+                    "description": "Knife a radio to play a random song. In Black Ops III, shoot it instead.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/4.jpg",
+                                "alt": "The radio, next to the Mystery Box"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Hide and Seek",
+            "description": "Play Samantha's Lullaby and get a Max Ammo (Black Ops III only)",
+            "subsections": [
+                {
+                    "header": "1. Press 4 buttons",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/7.jpg",
+                                "alt": "Button 1 - left of Mule Kick, near the ceiling"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/6.jpg",
+                                "alt": "Button 2 - under a shelf to the right of the Mystery Box"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/5.jpg",
+                                "alt": "Button 3 - on the ceiling above the stairs from spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/8.jpg",
+                                "alt": "Button 4 - upstairs to the right of the cabinet"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Hide and seek",
+                    "description": "Interact with a Samantha doll by the RK5 wall-buy. A particle effect will show the game has started. Then, find and shoot 5 Samantha dolls around the map. They will play a song when you get close, and only 1 will be in the map at a time. If you run out of time, Samantha will laugh, and you have to start the game again at the original doll.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/9.jpg",
+                                "alt": "The doll to start hide and seek"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/10.jpg",
+                                "alt": "Location 1 - through a barrier on the bottom floor, on a truck"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/16.jpg",
+                                "alt": "Location 2 - through a barrier on the bottom floor, on the barrel of a tank"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/15.jpg",
+                                "alt": "Location 3 - through a barrier on the bottom floor, on a post"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/14.jpg",
+                                "alt": "Location 4 - upstairs, through a crack in the wall behind the stairs from spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/13.jpg",
+                                "alt": "Location 5 - upstairs, through a barrier and on the floor"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/12.jpg",
+                                "alt": "Location 6 - upstairs, through a hole in the ceiling by the Wunderfizz"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/11.jpg",
+                                "alt": "Location 7 - upstairs, on top of a telephone pole by the cabinet"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Interact with the first doll",
+                    "description": "Go back to the original doll and interact again. This time, you'll get a Max Ammo and the song will play.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/17.jpg",
+                                "alt": "The doll to get the Max Ammo and song"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
