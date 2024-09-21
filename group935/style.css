@@ -57,8 +57,9 @@ table {
 
 .wip {
     font-family: sans-serif;
-    color: #FF5555;
-    text-shadow: 2px 2px 0 white, 2px -2px 0 white, -2px 2px 0 white, -2px -2px 0 white;
+    color: white;
+    background-color: #FF5555;
+    text-shadow: 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black;
     padding: .5rem;
 }
 

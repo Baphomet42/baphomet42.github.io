@@ -14,15 +14,302 @@
             "description": "",
             "subsections": [
                 {
-                    "header": "WIP",
+                    "header": "Power",
+                    "description": "Enable all 4 portals to Nacht der Untoten by overriding the Corruption Engines. Each one gives power to that part of the map.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 1 - The House"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 2 - Mob of the Dead"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 3 - Verrückt"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 3 - Der Eisendrache"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Pack-a-Punch",
+                    "description": "Trap the Apothicon by interacting with the flashing light upstairs in Nacht der Untoten. Then, shoot the 3 yellow guts around the stomach of the Apothicon.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Flashing light to interact when the Apothicon flies by"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "One of the 3 guts to shoot"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Pack-a-Punch machine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Perk Machines",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Quick Revive - "
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Double Tap Root Beer - "
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Mule Kick - "
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Speed Cola - "
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Stamin-Up - "
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Juggernog - "
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Widow's Wine - "
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Wunderfizz location 1 - "
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Wunderfizz location 2 - "
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Guard of Fafnir (Dragon Shield)",
+            "description": "Collect 3 parts and craft at a workbench.",
+            "subsections": [
+                {
+                    "header": "Part 1 (Dragon Head)",
+                    "description": "Located TODO (3 possible locations).",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 3 - TODO"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Part 2 (Heart)",
+                    "description": "Located TODO (3 possible locations).",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 3 - TODO"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Part 3 (Teeth Window)",
+                    "description": "Located TODO (3 possible locations).",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 3 - TODO"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Craft Shield",
+                    "description": "Build at the workbench in Nacht der Untoten",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Workbench location"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Keeper Protector",
+            "description": "Collect 3 parts and craft at TODO. TODO",
+            "subsections": [
+                {
+                    "header": "Part 1 (TODO)",
+                    "description": "Located TODO (3 possible locations).",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 3 - TODO"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Part 2 (TODO)",
+                    "description": "Located TODO (3 possible locations).",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 3 - TODO"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Part 3 (TODO)",
+                    "description": "Located TODO (3 possible locations).",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 3 - TODO"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Craft TODO",
                     "description": "",
                     "elements": [
                         {
-                            "youtube": {
-                                "src": "r4xtsq_skww",
-                                "alt": "Power & Pack a Punch"
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "WIP",
+                    "description": "",
+                    "elements": [
                         {
                             "youtube": {
                                 "src": "SysILhxXG3E",
@@ -31,30 +318,6 @@
                         }
                     ]
                 }
-            ]
-        },
-        {
-            "header": "TODO Shield",
-            "description": "",
-            "subsections": [
-                {
-                    "header": "WIP",
-                    "description": "",
-                    "elements": [
-                        {
-                            "youtube": {
-                                "src": "E1KheWSobD0",
-                                "alt": "Dragon Shield"
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "header": "TODO Special Weapon",
-            "description": "",
-            "subsections": [
             ]
         },
         {
@@ -122,19 +385,28 @@
         },
         {
             "header": "Song",
-            "description": "",
             "subsections": [
                 {
-                    "header": "WIP",
-                    "description": "",
+                    "header": "The Gift",
+                    "description": "Interact with 3 teddy bears.",
                     "elements": [
                         {
-                            "full": true,
-                            "bullets": [
-                                "On the way from Origins to Mob",
-                                "Near the launch pad at Verrückt",
-                                "In a chair in Kino"
-                            ]
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 1 - On the way from Origins to Mob of the Dead"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 2 - Near the launch pad at Verrückt"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 3 - In a chair in Kino der Toten"
+                            }
                         }
                     ]
                 }

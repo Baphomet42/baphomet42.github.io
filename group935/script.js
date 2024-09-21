@@ -120,6 +120,8 @@ function pageRev2(data) {
     page += '<h3 class="center">'+data.subtext+'</h3>'
     if(data.wip) {
         page += '<h1 class="wip">- WIP -</h1>'
+        if(!(data.sections.length > 0))
+            page += '<br/>'
     }
     if(data.sections.length > 0) {
         page += '<div class="header-table"><table><tr>'

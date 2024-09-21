@@ -24,19 +24,7 @@
         </div>
         <br/>
         <br/>
-
-        <!-- <div class="section-full">
-            <h1>Mainline Zombies</h1>
-        </div> -->
         <span id="main-games"></span>
-
-        <!-- <br/>
-
-        <div class="section-full">
-            <h1>Spin-Off Zombies</h1>
-        </div>
-        <span id="other-games"></span> -->
-
         <br/>
         <br/>
 
@@ -49,9 +37,6 @@
                 $.each(data.main, function (key, value) {
                     $('#main-games').append(buildGames(value))
                 })
-                // $.each(data.other, function (key, value) {
-                //     $('#other-games').append(buildGames(value))
-                // })
             })
         })
 
@@ -74,38 +59,30 @@
                 let linkData = ''
                 let linkDataEnd = '</a>'
                 let mapButtonData = ''
+                let mapButtonRed = false
                 let imgData = ''
 
-                if(!mapVal.disabled && mapVal.fallback) {
+                if(mapVal.fallback) {
                     linkData = '<a href="'+mapVal.fallback+'" rel="noopener noreferrer" target="_blank">'
-                    mapButtonData = ' map-fallback'
+                    mapButtonRed = true
                 }
-                else if(!mapVal.disabled && mapVal.link)
+                else if(mapVal.link)
                     linkData = '<a href="'+mapVal.link+'" rel="noopener noreferrer">'
                 else {
                     mapButtonData = ' map-nolink'
                     linkDataEnd = ''
                 }
 
+                if(mapVal.wip)
+                    mapButtonRed = true
+
+                if(mapButtonRed)
+                    mapButtonData += ' map-red'
+
                 if(mapVal.img)
                     imgData = ' style="background-image: url('+mapVal.img+')"'
 
                 game += linkData + '<div class="map-button'+mapButtonData+'"'+imgData+'>'
-
-                // if(mapVal.link) {
-                //     if(mapVal.img)
-                //         game += '<a href="'+mapVal.link+'" rel="noopener noreferrer"><div class="map-button" style="background-image: url('+mapVal.img+')">'
-                //     else
-                //         game += '<a href="'+mapVal.link+'" rel="noopener noreferrer"><div class="map-button">'
-                // }
-                // else if(mapVal.fallback) {
-                //     if(mapVal.img)
-                //         game += '<a href="'+mapVal.fallback+'" rel="noopener noreferrer" target="_blank"><div class="map-button map-fallback" style="background-image: url('+mapVal.img+')">'
-                //     else
-                //         game += '<a href="'+mapVal.fallback+'" rel="noopener noreferrer" target="_blank"><div class="map-button map-fallback">'
-                // }
-                // else
-                //     game += '<div class="map-button map-nolink">'
                 game += '<h2 class="map-name">' + mapVal.name + '</h2>'
                 if(mapVal.desc)
                     game += '<p class="map-desc center">'+mapVal.desc+'</p>'

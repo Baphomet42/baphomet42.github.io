@@ -6,8 +6,8 @@
             "year": 2024,
             "img": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blackops6/meta/BO6_LP-meta_image.jpg",
             "maps": [
-                {"name": "Terminus", "link": "/group935/zm/terminus", "disabled": true, "img": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/bo6/BO6-ZOMBIES-888-001.jpg"},
-                {"name": "Liberty Falls", "link": "/group935/zm/liberty_falls", "disabled": true, "img": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/bo6/BO6-ZOMBIES-888-002.jpg"}
+                {"name": "Terminus", "link": "/group935/zm/terminus", "wip": true, "img": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/bo6/BO6-ZOMBIES-888-001.jpg"},
+                {"name": "Liberty Falls", "link": "/group935/zm/liberty_falls", "wip": true, "img": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/bo6/BO6-ZOMBIES-888-002.jpg"}
             ]
         },
         {
@@ -16,11 +16,11 @@
             "year": 2020,
             "img": "https://styles.redditmedia.com/t5_44083d/styles/communityIcon_r4tglki3aan61.png",
             "maps": [
-                {"name": "Die Maschine", "img": "https://static.wikia.nocookie.net/callofduty/images/8/8b/DieMaschine_New_Selection_Screen_BOCW.png", "fallback": "https://callofduty.fandom.com/wiki/Die_Maschine"},
-                {"name": "Firebase Z", "img": "https://static.wikia.nocookie.net/callofduty/images/7/7a/FirebaseZ_Promo_BOCW.jpg", "fallback": "https://callofduty.fandom.com/wiki/Firebase_Z"},
-                {"name": "Outbreak", "img": "https://static.wikia.nocookie.net/callofduty/images/6/65/Outbreak_SelectionScreen_BOCW.png", "fallback": "https://callofduty.fandom.com/wiki/Outbreak_(Cold_War)"},
-                {"name": "Mauer der Toten", "img": "https://static.wikia.nocookie.net/callofduty/images/5/56/MauerDerToten_Selection_Screen_BOCW.png", "fallback": "https://callofduty.fandom.com/wiki/Mauer_der_Toten"},
-                {"name": "Forsaken", "link": "/group935/zm/forsaken", "img": "https://static.wikia.nocookie.net/callofduty/images/e/e5/Forsaken_Selection_Screen_BOCW.png", "fallback": "https://callofduty.fandom.com/wiki/Forsaken"}
+                {"name": "Die Maschine", "img": "https://static.wikia.nocookie.net/callofduty/images/8/8b/DieMaschine_New_Selection_Screen_BOCW.png"},
+                {"name": "Firebase Z", "img": "https://static.wikia.nocookie.net/callofduty/images/7/7a/FirebaseZ_Promo_BOCW.jpg"},
+                {"name": "Outbreak", "img": "https://static.wikia.nocookie.net/callofduty/images/6/65/Outbreak_SelectionScreen_BOCW.png"},
+                {"name": "Mauer der Toten", "img": "https://static.wikia.nocookie.net/callofduty/images/5/56/MauerDerToten_Selection_Screen_BOCW.png"},
+                {"name": "Forsaken", "link": "/group935/zm/forsaken", "wip": true, "img": "https://static.wikia.nocookie.net/callofduty/images/e/e5/Forsaken_Selection_Screen_BOCW.png"}
             ]
         },
         {
@@ -29,14 +29,14 @@
             "year": 2018,
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGqkYW5tb_4H9WLmv02h5g4pMC-i1Z5Zok0Wv4bP4AWg&s",
             "maps": [
-                {"name": "Voyage of Despair", "img": "https://static.wikia.nocookie.net/callofduty/images/6/65/Voyage_loading_screen.jpg", "fallback": "https://callofduty.fandom.com/wiki/Voyage_of_Despair"},
-                {"name": "IX", "img": "https://static.wikia.nocookie.net/callofduty/images/6/61/IX_Loading_Screen_BO4.jpg", "fallback": "https://callofduty.fandom.com/wiki/IX"},
-                {"name": "Blood of the Dead", "img": "https://static.wikia.nocookie.net/callofduty/images/f/f5/BOTD_Loading_Screen_BO4.jpg", "fallback": "https://callofduty.fandom.com/wiki/Blood_of_the_Dead"},
-                {"name": "Classified", "img": "https://static.wikia.nocookie.net/callofduty/images/f/f0/Classified_Loading_Screen.jpg", "fallback": "https://callofduty.fandom.com/wiki/Classified"},
-                {"name": "Dead of the Night", "img": "https://static.wikia.nocookie.net/callofduty/images/4/4c/Dead_of_the_Night_BO4.jpg", "fallback": "https://callofduty.fandom.com/wiki/Dead_of_the_Night"},
-                {"name": "Ancient Evil", "img": "https://static.wikia.nocookie.net/callofduty/images/6/6e/AncientEvil_LoadingScreen_Zombies_BO4.jpg", "fallback": "https://callofduty.fandom.com/wiki/Ancient_Evil"},
-                {"name": "Alpha Omega", "img": "https://static.wikia.nocookie.net/callofduty/images/2/26/AlphaOmega_LoadingScreen_BO4.png", "fallback": "https://callofduty.fandom.com/wiki/Alpha_Omega"},
-                {"name": "Tag der Toten", "img": "https://static.wikia.nocookie.net/callofduty/images/e/ee/TagDerToten_LoadingScreen_BO4.png", "fallback": "https://callofduty.fandom.com/wiki/Tag_der_Toten"}
+                {"name": "Voyage of Despair", "img": "https://static.wikia.nocookie.net/callofduty/images/6/65/Voyage_loading_screen.jpg"},
+                {"name": "IX", "img": "https://static.wikia.nocookie.net/callofduty/images/6/61/IX_Loading_Screen_BO4.jpg"},
+                {"name": "Blood of the Dead", "img": "https://static.wikia.nocookie.net/callofduty/images/f/f5/BOTD_Loading_Screen_BO4.jpg"},
+                {"name": "Classified", "img": "https://static.wikia.nocookie.net/callofduty/images/f/f0/Classified_Loading_Screen.jpg"},
+                {"name": "Dead of the Night", "img": "https://static.wikia.nocookie.net/callofduty/images/4/4c/Dead_of_the_Night_BO4.jpg"},
+                {"name": "Ancient Evil", "img": "https://static.wikia.nocookie.net/callofduty/images/6/6e/AncientEvil_LoadingScreen_Zombies_BO4.jpg"},
+                {"name": "Alpha Omega", "img": "https://static.wikia.nocookie.net/callofduty/images/2/26/AlphaOmega_LoadingScreen_BO4.png"},
+                {"name": "Tag der Toten", "img": "https://static.wikia.nocookie.net/callofduty/images/e/ee/TagDerToten_LoadingScreen_BO4.png"}
             ]
         },
         {
@@ -45,20 +45,20 @@
             "year": 2015,
             "img": "https://i2.wp.com/www.inforumatik.com/wp-content/uploads/2015/07/Call-Of-Duty-Black-Ops-3-01.png?fit=256%2C256&ssl=1",
             "maps": [
-                {"name": "Shadows of Evil", "img": "https://static.wikia.nocookie.net/callofduty/images/1/14/Shadows_of_Evil_Menu_Selection_BO3.png", "fallback": "https://callofduty.fandom.com/wiki/Shadows_of_Evil"},
+                {"name": "Shadows of Evil", "link": "/group935/zm/shadows_of_evil", "wip": true, "img": "https://static.wikia.nocookie.net/callofduty/images/1/14/Shadows_of_Evil_Menu_Selection_BO3.png"},
                 {"name": "The Giant", "link": "/group935/zm/the_giant", "img": "https://static.wikia.nocookie.net/callofduty/images/4/4d/The_Giant_Menu_Selection_BO3.png"},
                 {"name": "Der Eisendrache", "link": "/group935/zm/der_eisendrache", "img": "https://static.wikia.nocookie.net/callofduty/images/e/e4/Der_Eisendrache_Menu_Selection_BO3.png"},
-                {"name": "Zetsubou No Shima", "img": "https://static.wikia.nocookie.net/callofduty/images/0/06/Zetsubou_No_Shima_Menu_Selection_BO3.png", "fallback": "https://callofduty.fandom.com/wiki/Zetsubou_No_Shima"},
+                {"name": "Zetsubou No Shima", "link": "/group935/zm/zetsubou_no_shima", "wip": true, "img": "https://static.wikia.nocookie.net/callofduty/images/0/06/Zetsubou_No_Shima_Menu_Selection_BO3.png"},
                 {"name": "Gorod Krovi", "link": "/group935/zm/gorod_krovi", "img": "https://static.wikia.nocookie.net/callofduty/images/7/72/Gorod_Krovi_Menu_Selection_BO3.png"},
-                {"name": "Revelations", "link": "/group935/zm/revelations", "img": "https://static.wikia.nocookie.net/callofduty/images/d/de/Revelations_Menu_Selection_BO3.png"},
+                {"name": "Revelations", "link": "/group935/zm/revelations", "wip": true, "img": "https://static.wikia.nocookie.net/callofduty/images/d/de/Revelations_Menu_Selection_BO3.png"},
                 {"name": "Nacht der Untoten", "link": "/group935/zm/nacht_der_untoten", "img": "https://static.wikia.nocookie.net/callofduty/images/6/64/Nacht_Der_Untoten_Menu_Selection_BO3.png"},
                 {"name": "Verrückt", "link": "/group935/zm/verruckt", "img": "https://static.wikia.nocookie.net/callofduty/images/e/e4/Verruckt_Menu_Selection_BO3.png"},
                 {"name": "Shi No Numa", "link": "/group935/zm/shi_no_numa", "img": "https://static.wikia.nocookie.net/callofduty/images/1/16/Shi_No_Numa_Menu_Selection_BO3.png"},
                 {"name": "Kino der Toten", "link": "/group935/zm/kino_der_toten", "img": "https://static.wikia.nocookie.net/callofduty/images/e/ec/Kino_Der_Toten_Menu_Selection_BO3.png"},
-                {"name": "Ascension", "img": "https://static.wikia.nocookie.net/callofduty/images/d/d8/Ascension_Menu_Selection_BO3.png", "fallback": "https://callofduty.fandom.com/wiki/Ascension"},
-                {"name": "Shangri-La", "img": "https://static.wikia.nocookie.net/callofduty/images/7/76/Shangri_La_Menu_Selection_BO3.png", "fallback": "https://callofduty.fandom.com/wiki/Shangri-La"},
+                {"name": "Ascension", "link": "/group935/zm/ascension", "wip": true, "img": "https://static.wikia.nocookie.net/callofduty/images/d/d8/Ascension_Menu_Selection_BO3.png"},
+                {"name": "Shangri-La", "link": "/group935/zm/shangri_la", "wip": true, "img": "https://static.wikia.nocookie.net/callofduty/images/7/76/Shangri_La_Menu_Selection_BO3.png"},
                 {"name": "Moon", "link": "/group935/zm/moon", "img": "https://static.wikia.nocookie.net/callofduty/images/4/4a/Moon_Menu_Selection_BO3.png"},
-                {"name": "Origins", "img": "https://static.wikia.nocookie.net/callofduty/images/0/09/Origins_Menu_Selection_BO3.png", "fallback": "https://callofduty.fandom.com/wiki/Origins"}
+                {"name": "Origins", "link": "/group935/zm/origins", "wip": true, "img": "https://static.wikia.nocookie.net/callofduty/images/0/09/Origins_Menu_Selection_BO3.png"}
             ]
         },
         {
@@ -67,12 +67,12 @@
             "year": 2012,
             "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/8dd91536-f09a-487f-838f-140f69ff9d8a/d5l5phn-53173cdc-17b0-47cc-829a-e0008d2e114b.png",
             "maps": [
-                {"name": "TranZit", "img": "https://static.wikia.nocookie.net/callofduty/images/f/f9/TranZit_lobby_BOII.png", "fallback": "https://callofduty.fandom.com/wiki/TranZit"},
-                {"name": "Nuketown Zombies", "img": "https://static.wikia.nocookie.net/callofduty/images/7/74/Nuketown_menu_selection_BO2.png", "fallback": "https://callofduty.fandom.com/wiki/Nuketown_Zombies"},
-                {"name": "Die Rise", "img": "https://static.wikia.nocookie.net/callofduty/images/6/60/Die_Rise_menu_selection_BO2.png", "fallback": "https://callofduty.fandom.com/wiki/Die_Rise"},
-                {"name": "Mob of the Dead", "img": "https://static.wikia.nocookie.net/callofduty/images/a/aa/Mob_of_the_Dead_menu_selection_BO2.png", "fallback": "https://callofduty.fandom.com/wiki/Mob_of_the_Dead"},
-                {"name": "Buried", "img": "https://static.wikia.nocookie.net/callofduty/images/7/71/Buried_menu_BOII.png", "fallback": "https://callofduty.fandom.com/wiki/Buried"},
-                {"name": "Origins", "img": "https://static.wikia.nocookie.net/callofduty/images/b/b2/Origins_Lobby_Icon_BO2.png", "fallback": "https://callofduty.fandom.com/wiki/Origins"}
+                {"name": "TranZit", "img": "https://static.wikia.nocookie.net/callofduty/images/f/f9/TranZit_lobby_BOII.png"},
+                {"name": "Nuketown Zombies", "img": "https://static.wikia.nocookie.net/callofduty/images/7/74/Nuketown_menu_selection_BO2.png"},
+                {"name": "Die Rise", "img": "https://static.wikia.nocookie.net/callofduty/images/6/60/Die_Rise_menu_selection_BO2.png"},
+                {"name": "Mob of the Dead", "img": "https://static.wikia.nocookie.net/callofduty/images/a/aa/Mob_of_the_Dead_menu_selection_BO2.png"},
+                {"name": "Buried", "img": "https://static.wikia.nocookie.net/callofduty/images/7/71/Buried_menu_BOII.png"},
+                {"name": "Origins", "link": "/group935/zm/origins", "wip": true, "img": "https://static.wikia.nocookie.net/callofduty/images/b/b2/Origins_Lobby_Icon_BO2.png"}
             ]
         },
         {
@@ -82,15 +82,15 @@
             "img": "https://assets-prd.ignimgs.com/2021/12/30/call-of-duty-black-ops-1-button-1640898530662.jpg",
             "maps": [
                 {"name": "Kino der Toten", "link": "/group935/zm/kino_der_toten", "img": "https://static.wikia.nocookie.net/callofduty/images/9/97/Kino_Der_Toten_Menu_Selection_BO.png"},
-                {"name": "\"Five\"", "img": "https://static.wikia.nocookie.net/callofduty/images/3/34/Five_Menu_Selection_BO.png", "fallback": "https://callofduty.fandom.com/wiki/%22Five%22"},
-                {"name": "Ascension", "img": "https://static.wikia.nocookie.net/callofduty/images/f/fd/Ascension_Menu_Selection_BO.png", "fallback": "https://callofduty.fandom.com/wiki/Ascension"},
-                {"name": "Call of the Dead", "img": "https://static.wikia.nocookie.net/callofduty/images/7/78/Call_of_the_Dead_Menu_Selection_BO.png", "fallback": "https://callofduty.fandom.com/wiki/Call_of_the_Dead"},
-                {"name": "Shangri-La", "img": "https://static.wikia.nocookie.net/callofduty/images/d/d5/Shangri-La_Menu_Selection_BO.png", "fallback": "https://callofduty.fandom.com/wiki/Shangri-La"},
+                {"name": "\"Five\"", "link": "/group935/zm/five", "wip": true, "img": "https://static.wikia.nocookie.net/callofduty/images/3/34/Five_Menu_Selection_BO.png"},
+                {"name": "Ascension", "link": "/group935/zm/ascension", "wip": true, "img": "https://static.wikia.nocookie.net/callofduty/images/f/fd/Ascension_Menu_Selection_BO.png"},
+                {"name": "Call of the Dead", "link": "/group935/zm/call_of_the_dead", "wip": true, "img": "https://static.wikia.nocookie.net/callofduty/images/7/78/Call_of_the_Dead_Menu_Selection_BO.png"},
+                {"name": "Shangri-La", "link": "/group935/zm/shangri_la", "wip": true, "img": "https://static.wikia.nocookie.net/callofduty/images/d/d5/Shangri-La_Menu_Selection_BO.png"},
                 {"name": "Moon", "link": "/group935/zm/moon", "img": "https://static.wikia.nocookie.net/callofduty/images/c/cc/Moon_Menu_Selection_BO.png"},
                 {"name": "Nacht der Untoten", "link": "/group935/zm/nacht_der_untoten", "img": "https://static.wikia.nocookie.net/callofduty/images/2/2b/Nacht_Der_Untoten_Menu_Selection_WaW.png"},
                 {"name": "Verrückt", "link": "/group935/zm/verruckt", "img": "https://static.wikia.nocookie.net/callofduty/images/a/a1/Verruckt_Menu_Selection_WaW.png"},
                 {"name": "Shi No Numa", "link": "/group935/zm/shi_no_numa", "img": "https://static.wikia.nocookie.net/callofduty/images/2/2f/Shi_No_Numa_Menu_Selection_WaW.png"},
-                {"name": "Der Riese", "img": "https://static.wikia.nocookie.net/callofduty/images/8/86/Der_Riese_Menu_Selection_WaW.png", "fallback": "https://callofduty.fandom.com/wiki/Der_Riese"}
+                {"name": "Der Riese", "link": "/group935/zm/der_riese", "wip": true, "img": "https://static.wikia.nocookie.net/callofduty/images/8/86/Der_Riese_Menu_Selection_WaW.png"}
             ]
         },
         {
@@ -102,39 +102,7 @@
                 {"name": "Nacht der Untoten", "link": "/group935/zm/nacht_der_untoten", "img": "https://static.wikia.nocookie.net/callofduty/images/2/2b/Nacht_Der_Untoten_Menu_Selection_WaW.png"},
                 {"name": "Zombie Verrückt", "link": "/group935/zm/verruckt", "img": "https://static.wikia.nocookie.net/callofduty/images/a/a1/Verruckt_Menu_Selection_WaW.png"},
                 {"name": "Shi No Numa", "link": "/group935/zm/shi_no_numa", "img": "https://static.wikia.nocookie.net/callofduty/images/2/2f/Shi_No_Numa_Menu_Selection_WaW.png"},
-                {"name": "Der Riese", "img": "https://static.wikia.nocookie.net/callofduty/images/8/86/Der_Riese_Menu_Selection_WaW.png", "fallback": "https://callofduty.fandom.com/wiki/Der_Riese"}
-            ]
-        }
-    ],
-    "other": [
-        {
-            "name": "Dead Ops Arcade",
-            "year": "",
-            "maps": [
-                {"name": "Dead Ops Arcade", "desc": "Black Ops", "fallback": "https://callofduty.fandom.com/wiki/Dead_Ops_Arcade"},
-                {"name": "Dead Ops Arcade 2", "desc": "Black Ops III", "fallback": "https://callofduty.fandom.com/wiki/Dead_Ops_Arcade_II:_Cyber%27s_Avengening"},
-                {"name": "Dead Ops Arcade 3", "desc": "Black Ops Cold War", "fallback": "https://callofduty.fandom.com/wiki/Dead_Ops_Arcade_3:_Rise_of_the_Mamaback"}
-            ]
-        },
-        {
-            "name": "Exo Zombies",
-            "year": "Advanced Warfare",
-            "maps": [
-                {"name": "Outbreak", "fallback": "https://callofduty.fandom.com/wiki/Outbreak"},
-                {"name": "Infection", "fallback": "https://callofduty.fandom.com/wiki/Infection"},
-                {"name": "Carrier", "fallback": "https://callofduty.fandom.com/wiki/Carrier_(Exo_Zombies)"},
-                {"name": "Descent", "fallback": "https://callofduty.fandom.com/wiki/Descent_(Exo_Zombies)"}
-            ]
-        },
-        {
-            "name": "IW Zombies",
-            "year": "Infinite Warfare",
-            "maps": [
-                {"name": "Zombies in Spaceland", "fallback": "https://callofduty.fandom.com/wiki/Zombies_in_Spaceland"},
-                {"name": "Rave in the Redwoods", "fallback": "https://callofduty.fandom.com/wiki/Rave_in_the_Redwoods"},
-                {"name": "Shaolin Shuffle", "fallback": "https://callofduty.fandom.com/wiki/Shaolin_Shuffle"},
-                {"name": "Attack of the Radioactive Thing", "fallback": "https://callofduty.fandom.com/wiki/Attack_of_the_Radioactive_Thing"},
-                {"name": "The Beast from Beyond", "fallback": "https://callofduty.fandom.com/wiki/The_Beast_From_Beyond"}
+                {"name": "Der Riese", "link": "/group935/zm/der_riese", "wip": true, "img": "https://static.wikia.nocookie.net/callofduty/images/8/86/Der_Riese_Menu_Selection_WaW.png"}
             ]
         }
     ]
