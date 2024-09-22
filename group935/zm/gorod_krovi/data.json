@@ -127,7 +127,7 @@
                 },
                 {
                     "header": "Trials",
-                    "description": "Each player has a headstone with 4 trials. Hover over a trial to view the requirements and interact to get the reward. Each player will see a green flame above their trials.",
+                    "description": "Each player has a headstone with 4 trials in Belinski Square. Hover over a trial to view the requirements and interact to get the reward. Each player will see a green flame above their trials.",
                     "elements": [
                         {
                             "pic": {

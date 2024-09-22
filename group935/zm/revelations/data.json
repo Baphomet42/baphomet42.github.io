@@ -11,34 +11,39 @@
     "sections" : [
         {
             "header": "Map Features",
-            "description": "",
             "subsections": [
                 {
                     "header": "Power",
-                    "description": "Enable all 4 portals to Nacht der Untoten by overriding the Corruption Engines. Each one gives power to that part of the map.",
+                    "description": "Enable all 4 portals to Nacht der Untoten by overriding the Corruption Engines. Each one gives power to that part of the map. You only have to survive a short time, and no killing is required.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/1.jpg",
                                 "alt": "Location 1 - The House"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/2.jpg",
                                 "alt": "Location 2 - Mob of the Dead"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/3.jpg",
                                 "alt": "Location 3 - Verrückt"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - Der Eisendrache"
+                                "src": "assets/4.jpg",
+                                "alt": "Location 4 - Der Eisendrache"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/5.jpg",
+                                "alt": "Sign showing all regions powered"
                             }
                         }
                     ]
@@ -49,20 +54,62 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/6.jpg",
+                                "alt": "Portal to Nacht der Untoten"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/28.jpg",
                                 "alt": "Flashing light to interact when the Apothicon flies by"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/31.jpg",
+                                "alt": "Entrance to Apothicon"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/32.jpg",
                                 "alt": "One of the 3 guts to shoot"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/33.jpg",
                                 "alt": "Pack-a-Punch machine"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/34.jpg",
+                                "alt": "Exit Apothicon to MOTD, Verrückt, DE, or The House (gateways from left to right)"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Trials",
+                    "description": "Each player has a statue with 4 trials in Nacht der Untoten. Hover over a trial to view the requirements and interact to get the reward. Each player will see a skull with glowing eyes above their trials.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/8.jpg",
+                                "alt": "Trial statues"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Low Gravity Mode",
+                    "description": "Stand on each of the 4 pressure plates surrounding the pyramid in Der Eisendrache until they light up blue. Once active, low gravity mode will randomly turn on and off during the game.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/22.jpg",
+                                "alt": "Pyramid and surrounding pressure plates"
                             }
                         }
                     ]
@@ -72,56 +119,68 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Quick Revive - "
+                                "src": "assets/9.jpg",
+                                "alt": "Quick Revive - in front of The House"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Double Tap Root Beer - "
+                                "src": "assets/10.jpg",
+                                "alt": "Double Tap Root Beer - in Origins"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Mule Kick - "
+                                "src": "assets/12.jpg",
+                                "alt": "Mule Kick - in Mob of the Dead"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Speed Cola - "
+                                "src": "assets/17.jpg",
+                                "alt": "Speed Cola - in Verrückt"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Stamin-Up - "
+                                "src": "assets/19.jpg",
+                                "alt": "Widow's Wine - upstairs in Kino der Toten"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Juggernog - "
+                                "src": "assets/24.jpg",
+                                "alt": "Stamin-Up - in Shangri-La"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Widow's Wine - "
+                                "src": "assets/25.jpg",
+                                "alt": "Juggernog - in Nacht der Untoten"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Wunderfizz location 1 - "
+                                "src": "assets/11.jpg",
+                                "alt": "Wunderfizz location 1 - in Origins in a trench"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Wunderfizz location 2 - "
+                                "src": "assets/27.jpg",
+                                "alt": "Wunderfizz location 2 - in Origins on the Dig Site"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/14.jpg",
+                                "alt": "Wunderfizz location 3 - in Verrückt"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/20.jpg",
+                                "alt": "Wunderfizz location 4 - between Kino der Toten and Der Eisendrache"
                             }
                         }
                     ]
@@ -134,83 +193,83 @@
             "subsections": [
                 {
                     "header": "Part 1 (Dragon Head)",
-                    "description": "Located TODO (3 possible locations).",
+                    "description": "Located in Origins (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "src": "assets/53.jpg",
+                                "alt": "Location 1 - by the launch pad going to The House"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "src": "assets/29.jpg",
+                                "alt": "Location 2 - on a box in the trenches"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/51.jpg",
+                                "alt": "Location 3 - on a chair in the trenches"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Part 2 (Heart)",
-                    "description": "Located TODO (3 possible locations).",
+                    "description": "Located in Verrückt (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "src": "assets/44.jpg",
+                                "alt": "Location 1 - on a pillar near Speed Cola"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "src": "assets/16.jpg",
+                                "alt": "Location 2 - on a pile of chairs in the room above Speed Cola"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/50.jpg",
+                                "alt": "Location 3 - on a table upstairs"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Part 3 (Teeth Window)",
-                    "description": "Located TODO (3 possible locations).",
+                    "description": "Located in Der Eisendrache (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "src": "assets/49.jpg",
+                                "alt": "Location 1 - on a wall near the pyramid"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "src": "assets/21.jpg",
+                                "alt": "Location 2 - on a wall above the PaP location from the original map"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/45.jpg",
+                                "alt": "Location 3 - on a wall going right from the Corruption Engine"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Craft Shield",
-                    "description": "Build at the workbench in Nacht der Untoten",
+                    "description": "Build at the workbench in Nacht der Untoten.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/30.jpg",
                                 "alt": "Workbench location"
                             }
                         }
@@ -220,100 +279,106 @@
         },
         {
             "header": "Keeper Protector",
-            "description": "Collect 3 parts and craft at TODO. TODO",
+            "description": "Collect 3 parts and build the Summoning Altar. Summon the Keeper Protector for 5000 points.",
             "subsections": [
                 {
-                    "header": "Part 1 (TODO)",
-                    "description": "Located TODO (3 possible locations).",
+                    "header": "Part 1 (Skull of Nan Sapwe)",
+                    "description": "Located in Verrückt (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "src": "assets/52.jpg",
+                                "alt": "Location 1 - on a shelf near Speed Cola"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "src": "assets/36.jpg",
+                                "alt": "Location 2 - up the stairs from the Corruption Engine, on a wheelchair"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/48.jpg",
+                                "alt": "Location 3 - near the launch pad, on a wheelchair"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Part 2 (TODO)",
-                    "description": "Located TODO (3 possible locations).",
+                    "header": "Part 2 (Crystal)",
+                    "description": "Located near Der Eisendrache or Kino der Toten (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "src": "assets/54.jpg",
+                                "alt": "Location 1 - next to the pyramid in Der Eisendrache"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "src": "assets/37.jpg",
+                                "alt": "Location 2 - on a barrel in a small side room from Der Eisendrache"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/46.jpg",
+                                "alt": "Location 3 - on a table near the launch pad in Kino der Toten"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Part 3 (TODO)",
-                    "description": "Located TODO (3 possible locations).",
+                    "header": "Part 3 (Flag)",
+                    "description": "Located near Origins or Mob of the Dead (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "src": "assets/47.jpg",
+                                "alt": "Location 1 - across from Double Tap at Origins"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "src": "assets/43.jpg",
+                                "alt": "Location 2 - on top of the Dig Site at Origins"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/38.jpg",
+                                "alt": "Location 3 - in the Cafeteria at Mob of the Dead"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Craft TODO",
-                    "description": "",
+                    "header": "Build at one of the 4 Summoning Altar locations",
+                    "description": "The Keeper Protector can be summmoned at any location after building it anywhere.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/39.jpg",
+                                "alt": "Location 1 - in Origins"
                             }
-                        }
-                    ]
-                },
-                {
-                    "header": "WIP",
-                    "description": "",
-                    "elements": [
+                        },
                         {
-                            "youtube": {
-                                "src": "SysILhxXG3E",
-                                "alt": "Keeper Protector"
+                            "pic": {
+                                "src": "assets/40.jpg",
+                                "alt": "Location 2 - upstairs in Verrückt"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/41.jpg",
+                                "alt": "Location 3 - on the Stage in Kino der Toten"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/42.jpg",
+                                "alt": "Location 4 - in a small side room from Der Eisendrache"
                             }
                         }
                     ]
@@ -340,7 +405,7 @@
         },
         {
             "header": "Hats",
-            "description": "",
+            "description": "Each player can equip only one at a time, and each one gives different abilities.",
             "subsections": [
                 {
                     "header": "WIP",
@@ -353,26 +418,41 @@
                             }
                         }
                     ]
+                },
+                {
+                    "header": "Al's hat",
+                    "description": "Found in a cell in Mob of the Dead",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/35.jpg",
+                                "alt": "Location to get hat"
+                            }
+                        }
+                    ]
                 }
             ]
         },
         {
             "header": "Main Quest",
-            "description": "",
             "subsections": [
                 {
-                    "header": "WIP",
-                    "description": "",
+                    "header": "Requirements",
                     "elements": [
                         {
                             "full": true,
                             "bullets": [
-                                "Shield",
+                                "Guard of Fafnir",
                                 "Keeper Protector",
-                                "Get Apothicon Servant from box",
-                                "Upgrade Apothicon Servant"
+                                "Upgraded Apothicon Servant (TODO)"
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "WIP",
+                    "description": "",
+                    "elements": [
                         {
                             "youtube": {
                                 "src": "0YH6npBuHVg",
@@ -392,19 +472,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - On the way from Origins to Mob of the Dead"
+                                "src": "assets/13.jpg",
+                                "alt": "Location 1 - in the entrance to Mob of the Dead from the Dig Site"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - Near the launch pad at Verrückt"
+                                "src": "assets/15.jpg",
+                                "alt": "Location 2 - Near a launch pad at Verrückt"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/18.jpg",
                                 "alt": "Location 3 - In a chair in Kino der Toten"
                             }
                         }
@@ -414,16 +494,33 @@
         },
         {
             "header": "Side Easter Eggs",
-            "description": "",
             "subsections": [
                 {
-                    "header": "WIP",
+                    "header": "Free Perk Wallrun",
+                    "description": "Complete the wallrun outside of Der Eisendrache to get a free perk bottle. (TODO blue/green?)",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/23.jpg",
+                                "alt": "Start of wallrun"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/26.jpg",
+                                "alt": "Floating perk bottle"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Weapon Trading & Tommy Gun",
                     "description": "",
                     "elements": [
                         {
-                            "youtube": {
-                                "src": "WTGTp5VJNts",
-                                "alt": "Free Perk"
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
                             }
                         },
                         {
