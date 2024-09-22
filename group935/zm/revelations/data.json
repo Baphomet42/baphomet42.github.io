@@ -386,17 +386,53 @@
             ]
         },
         {
-            "header": "Upgraded Apothicon Servant",
-            "description": "",
+            "header": "Upgrade Apothicon Servant (Estoom-oth)",
+            "description": "You must first obtain the Apothicon Servant (Estulla Astoth) from the Mystery Box. After these steps, you can upgrade it in the Pack-a-Punch machine.",
             "subsections": [
                 {
-                    "header": "WIP",
-                    "description": "",
+                    "header": "1. Shoot blue rocks",
+                    "description": "Shoot 5 floating blue rocks with the Apothicon Servant. After being shot, the rock will disappear.",
                     "elements": [
                         {
-                            "youtube": {
-                                "src": "o3HLZ5z0Nw0",
-                                "alt": "Apothicon Servant Upgrade Guide"
+                            "pic": {
+                                "src": "assets/70.jpg",
+                                "alt": "Location 1 - by the Corruption Engine at Mob of the Dead, facing the blue sun"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/69.jpg",
+                                "alt": "Location 2 - by the launch pad in Verrückt coming from Mob of the Dead, facing the blue sun"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/68.jpg",
+                                "alt": "Location 3 - by the Corruption Engine at Verrückt, to the right of the portal"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/67.jpg",
+                                "alt": "Location 4 - by the Corruption Engine at Der Eisendrache, facing away from the portal"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/66.jpg",
+                                "alt": "Location 5 - upstairs in Nacht der Untoten, facing towards The House"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Upgrade",
+                    "description": "The Apothicon Servant can now be upgraded with the Pack-a-Punch machine as normal.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/71.jpg",
+                                "alt": "Estoom-oth"
                             }
                         }
                     ]
@@ -444,7 +480,7 @@
                             "bullets": [
                                 "Guard of Fafnir",
                                 "Keeper Protector",
-                                "Upgraded Apothicon Servant (TODO)"
+                                "Upgrade Apothicon Servant (Estoom-oth)"
                             ]
                         }
                     ]
@@ -497,7 +533,7 @@
             "subsections": [
                 {
                     "header": "Free Perk Wallrun",
-                    "description": "Complete the wallrun outside of Der Eisendrache to get a free perk bottle. (TODO blue/green?)",
+                    "description": "Complete the wallrun outside of Der Eisendrache to get a free perk bottle. This will grant a random perk for all players. If you fall outside of the map, you will be teleported safely back without dying.",
                     "elements": [
                         {
                             "pic": {
@@ -518,15 +554,90 @@
                     "description": "",
                     "elements": [
                         {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                            "full": true,
+                            "step": {
+                                "title": "1. Get the chalk stick",
+                                "description": "The pink chalk is located on a wall in Der Eisendrache. Wallrun over it and interact to pick it up."
                             }
                         },
                         {
-                            "youtube": {
-                                "src": "cnPmpJ7uBDI",
-                                "alt": "Weapon Trading Table & Tommy Gun"
+                            "pic": {
+                                "src": "assets/55.jpg",
+                                "alt": "The chalk"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Rearrange the chalk writings",
+                                "description": "Interact on a chalk writing to pick it up, then interact on another wall to place it. Interacting in the following order will place all chalk writings correctly."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/56.jpg",
+                                "alt": "Location 1 - spiral stairs in Nacht der Untoten (pick up \"SALVATION LIES ABOVE\")"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/57.jpg",
+                                "alt": "Location 2 - other staircase in Nacht der Untoten (place \"SALVATION LIES ABOVE\")"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/58.jpg",
+                                "alt": "Location 3 - wall in Mob of the Dead (pick up \"KNOWLEDGE ITSELF IS FOR THE TAKING\")"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/59.jpg",
+                                "alt": "Location 4 - Kino der Toten, to the right of where the power switch was in the original (swap \"A SOUL ALONE CAN FOLLOW THE PATH\" for \"KNOWLEDGE ITSELF IS FOR THE TAKING\")"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/60.jpg",
+                                "alt": "Location 5 - same wall in Mob of the Dead (place \"A SOUL ALONE CAN FOLLOW THE PATH\")"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/61.jpg",
+                                "alt": "Location 6 - Der Eisendrache, below where the dragon head was in the Undercroft in the original (pick up \"WISH TOO OFTEN AND YOUR WISHING WELL WILL RUN\")"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/62.jpg",
+                                "alt": "Location 7 - Verrückt, on a floor upstairs (swap \"YOU MUST ASCEND FROM DARKNESS\" for \"WISH TOO OFTEN AND YOUR WISHING WELL WILL RUN\")"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/63.jpg",
+                                "alt": "Location 8 - spiral staircase in Nacht der Untoten again (place \"YOU MUST ASCEND FROM DARKNESS\")"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Rewards",
+                                "description": "After completing the steps, an M1927 wall-buy will be available in Der Eisendrache. The trading table in Nacht der Untoten is unlocked too. Interact on the table to place or pick up a gun."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/64.jpg",
+                                "alt": "M1927 wall-buy"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/65.jpg",
+                                "alt": "Weapon trading table"
                             }
                         }
                     ]
