@@ -50,7 +50,7 @@
                 },
                 {
                     "header": "Pack-a-Punch",
-                    "description": "Trap the Apothicon by interacting with the flashing light upstairs in Nacht der Untoten. Then, shoot the 3 yellow guts around the stomach of the Apothicon.",
+                    "description": "Trap the Apothicon by firing the Tesla Death Ray upstairs in Nacht der Untoten. Then, shoot the 3 yellow guts around the stomach of the Apothicon.",
                     "elements": [
                         {
                             "pic": {
@@ -444,20 +444,357 @@
             "description": "Each player can equip only one at a time, and each one gives different abilities.",
             "subsections": [
                 {
-                    "header": "WIP",
-                    "description": "",
+                    "header": "Apothicon Mask",
+                    "description": "+1 hit from zombies, sprint duration increased, 50% more damage against all enemies, 33% damage reduction from all enemies",
                     "elements": [
                         {
-                            "youtube": {
-                                "src": "BA87HyIVmvw",
-                                "alt": "Masks"
+                            "full": true,
+                            "step": {
+                                "title": "1. Get kills in the green mist inside the Apothicon",
+                                "description": "The kills must be inside the green pool in the Apothicon and during the green mist. You must kill 50 zombies, 15 parasites, 15 spiders, 10 Furies, 5 Keepers, and 3 Margwas. At least 2 different types of Margwas must be killed."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/98.jpg",
+                                "alt": "Zombies in the green pool with green mist"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/93.jpg",
+                                "alt": "Parasite"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/96.jpg",
+                                "alt": "Spider"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/101.jpg",
+                                "alt": "Fury"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/100.jpg",
+                                "alt": "Keeper"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/95.jpg",
+                                "alt": "Normal Margwa"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Equip",
+                                "description": "All players can now equip the Apothicon Mask on the Stage in Kino der Toten."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/92.jpg",
+                                "alt": "Mannequin with Apothicon Mask"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Knight Helmet",
+                    "description": "50% damage reduction from all Boss attacks, 33% more damage to Bosses, no damage from elemental zombies' death effects, sprint duration increased",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Kill 50 zombies with traps",
+                                "description": "A sound will play after you get enough trap kills."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/86.jpg",
+                                "alt": "The electric trap in Verrückt"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Destroy a Panzer's face shield and power core",
+                                "description": "This does not have to be done to the same Panzer. Keep shooting the power core after destroying it until the audio cue is played."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/94.jpg",
+                                "alt": "Panzer with broken power core"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/99.jpg",
+                                "alt": "Panzer with broken face shield"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Equip",
+                                "description": "All players can now equip the Knight Helmet on the Stage in Kino der Toten."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/102.jpg",
+                                "alt": "Mannequin with Knight Helmet"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Keeper Mask",
+                    "description": "+1 hit from zombies, 50% damage reduction from keepers, 33% more damage to keepers, Keeper Protector lasts 30 seconds longer",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Use the Keeper Protector to kill 30 zombies",
+                                "description": "The kills will count over multiple uses of the Keeper Protector and when called from different players."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/85.jpg",
+                                "alt": "The Keeper Protector about to kill a zombie"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Use a Corruption Turret to kill 30 zombies",
+                                "description": "This step is not needed if you already have unlocked the Wolf Mask."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/87.jpg",
+                                "alt": "Using the Corruption Turret in Der Eisendrache"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Equip",
+                                "description": "All players can now equip the Keeper Mask on the Stage in Kino der Toten."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/89.jpg",
+                                "alt": "Mannequin with Keeper Mask"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Fury Mask",
+                    "description": "33% damage reduction from fury melee attacks, 50% more damage to Furies, +1 hit from zombies",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Get 15 Fury headshot kills",
+                                "description": "A sound will play after you get enough headshot kills"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/84.jpg",
+                                "alt": "Aiming at a Fury's head"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Equip",
+                                "description": "All players can now equip the Fury Mask on the Stage in Kino der Toten."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/91.jpg",
+                                "alt": "Mannequin with Fury Mask"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Viking Helmet",
+                    "description": "+1 hit from zombies",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Shoot 935 on the Der Eisendrache clock",
+                                "description": "Using a bullet gun, shoot IX, III, then V on the clock tower."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/79.jpg",
+                                "alt": "Clock location, just outside the portal and looking up"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Get headshot kills near 4 sparking urns",
+                                "description": "Zombie souls will fly to the urn if it was killed within range and the kill was from a headshot. After enough souls, a sound will play. Once all 4 are filled, the hat will be unlocked."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/83.jpg",
+                                "alt": "Location 1 - Der Eisendrache"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/80.jpg",
+                                "alt": "Location 2 - projector room in Kino der Toten"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/81.jpg",
+                                "alt": "Location 3 - Verrückt"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/82.jpg",
+                                "alt": "Location 4 - Origins"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Equip",
+                                "description": "All players can now equip the Viking Helmet on the Stage in Kino der Toten."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/90.jpg",
+                                "alt": "Mannequin with Viking Helmet"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Margwa Mask",
+                    "description": "50% damage reduction from all Margwa attacks, 33% more damage to Margwa heads, sprint duration increased",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Kill a fire or normal Margwa with a sniper",
+                                "description": "Void Margwas do not count."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/103.jpg",
+                                "alt": "Fire Margwa being killed by a sniper"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Kill a void Margwa",
+                                "description": "Any weapon can be used."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/104.jpg",
+                                "alt": "Void Margwa"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Equip",
+                                "description": "All players can now equip the Margwa Mask on the Stage in Kino der Toten."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/105.jpg",
+                                "alt": "Mannequin with Margwa Mask"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Wolf Mask",
+                    "description": "Sprint duration increased",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Throw a grenade in the Wolf King crypt",
+                                "description": "Go to Der Eisendrache and throw a grenade into a hole in the wall containing a coffin. A wolf skull will fall out and land on the ground."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/76.jpg",
+                                "alt": "Location to throw grenade"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/77.jpg",
+                                "alt": "Wolf skull on the ground"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Kill 15 zombies in low gravity",
+                                "description": "When low gravity mode is on, the wolf skull will float and spin around. Kill zombies close enough such that their souls fly into the skull. After enough kills, the skull will disappear and the mask will be unlocked."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/78.jpg",
+                                "alt": "Floating skull"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Equip",
+                                "description": "All players can now equip the Wolf Mask on the Stage in Kino der Toten."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/88.jpg",
+                                "alt": "Mannequin with Wolf Mask"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Al's hat",
-                    "description": "Found in a cell in Mob of the Dead",
+                    "description": "Found in a cell in Mob of the Dead.",
                     "elements": [
                         {
                             "pic": {
@@ -470,7 +807,7 @@
             ]
         },
         {
-            "header": "Main Quest",
+            "header": "Main Quest (TODO 0YH6npBuHVg)",
             "subsections": [
                 {
                     "header": "Requirements",
@@ -486,13 +823,13 @@
                     ]
                 },
                 {
-                    "header": "WIP",
+                    "header": "",
                     "description": "",
                     "elements": [
                         {
-                            "youtube": {
-                                "src": "0YH6npBuHVg",
-                                "alt": "Main Quest"
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
                             }
                         }
                     ]
@@ -551,7 +888,7 @@
                 },
                 {
                     "header": "Weapon Trading & Tommy Gun",
-                    "description": "",
+                    "description": "Unlock a way to trade weapons between players, and also a wall-buy for the M1927.",
                     "elements": [
                         {
                             "full": true,
@@ -638,6 +975,93 @@
                             "pic": {
                                 "src": "assets/65.jpg",
                                 "alt": "Weapon trading table"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Time Attack",
+                    "description": "Complete rounds under a certain time to unlock melee weapons. Purchase between Shangri-La and Der Eisendrache.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/72.jpg",
+                                "alt": "Nunchucks - 5 rounds under 5 minutes"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/73.jpg",
+                                "alt": "Skull Splitter - 10 rounds under 12 minutes"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/74.jpg",
+                                "alt": "Buzz Cut - 15 rounds under 19 minutes"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/75.jpg",
+                                "alt": "Nightbreaker - 20 rounds under 32 minutes"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Wisp Super Easter Egg",
+                    "description": "Unlocks the Path of Sorrows melee weapon and turns all wall-buys and Mystery Box weapons into Pack-a-Punch weapons. At least one player in the lobby must have the Summoning Key and 4 Gateworms from the other main quests in Black Ops III.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Complete the main quest steps up until teleporting to Samantha's room",
+                                "description": "Make sure you don't pick up the wisp until you're ready to teleport."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Teleporter ready to go"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Carry the wisp to the teleporter",
+                                "description": "Interact on the wisp on a truck outside The House to pick it up. If you take damage, the wisp will be lost forever. Bring it to the teleporter and teleport to Samantha's room."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "The wisp on a headlight"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Interact on the \"Mystery Box\" in Samantha's room"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location to interact"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Rewards",
+                                "description": "The Path of Sorrows can be purchased on the Time Attack board in Shangri-La. For the rest of the game, all weapons purchased from wall-buys or the Mystery Box will be Pack-a-Punched."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Path of Sorrows"
                             }
                         }
                     ]

@@ -183,7 +183,11 @@ function pageRev2(data) {
                             page += '<td class="col-wrap"><div class="col-cell center-container">'
 
                         if(el.pic) {
-                            page += '<div class="pic-wrap"><img class="pic" src="'+el.pic.src+'"/></div>'
+                            let src = el.pic.src
+                            if(src.endsWith('/.jpg'))
+                                src = '/assets/wiptexture.png'
+
+                            page += '<div class="pic-wrap"><img class="pic" src="'+src+'"/></div>'
                             if(el.pic.alt)
                                 page += '<p class="pic-alt">'+el.pic.alt+'</p>'
                         }
