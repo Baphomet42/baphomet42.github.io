@@ -95,8 +95,6 @@ function toggleControlPanelVisibility() {
     else
         pageData.panel = true
 
-    console.log('test')
-
     if(pageData.panel == true) {
         document.getElementById('control-panel').style.display = "block"
         document.getElementById('control-panel-hidden-button').innerHTML = ">"
@@ -291,8 +289,6 @@ function updateGorodValve() {
     let outputArmory = errorMsg
     let outputSupply = errorMsg
     let outputDept = errorMsg
-
-    console.log('Setting gorod valves, pink: '+gorodValvePink+', green: '+gorodValveGreen)
 
     if(gorodValvePink === 'dragon') {
         if(gorodValveGreen === 'tank') {
