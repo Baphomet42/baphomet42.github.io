@@ -116,6 +116,9 @@ function pageRev2(data) {
     page += '<div class="back-button-wrap"><a class="button back-button" href="/group935" rel="noopener noreferrer">< All Maps</a></div>'
     page += '<h1 class="center">'+data.name+'</h1>'
     page += '<h3 class="center">'+data.subtext+'</h3>'
+    if(data.notice) {
+        page += '<div class="notice-wrap"><h4 class="notice">⚠ Notice: '+data.notice+'</h4></div>'
+    }
     if(data.wip) {
         page += '<h1 class="wip">- WIP -</h1>'
         if(!(data.sections.length > 0))

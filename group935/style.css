@@ -63,6 +63,20 @@ table {
     padding: .5rem;
 }
 
+.notice-wrap {
+    box-sizing: border-box;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.notice {
+    color: #FFFF55;
+    font-family: sans-serif;
+    font-weight: normal;
+    text-align: center;
+    padding: .5rem;
+}
+
 .section-full {
     padding: 2rem;
     background-color: #00000099;
@@ -217,6 +231,11 @@ table {
 
     .col-wrap {
         width: 100%;
+    }
+
+    .notice-wrap {
+        width: 100%;
+        margin-left: 0;
     }
 
     .jump-link-wrap {
