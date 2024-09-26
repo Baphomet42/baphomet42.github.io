@@ -5,42 +5,135 @@
     "rev": 2,
     "wip": true,
     "notice": "The main quest requires at least one player has the 'Anywhere But Here!' Gobblegum equipped.",
+    "maps": [
+        {"img": "assets/1.jpg"},
+        {"img": "assets/83.jpg"}
+    ],
     "sections" : [
         {
             "header": "Map Features",
             "subsections": [
                 {
                     "header": "Power",
-                    "description": "",
                     "elements": [
                         {
+                            "full": true,
+                            "step": {
+                                "title": "1. Power Lab A and Lab B, then open the Bunker",
+                                "description": "Place a full bucket of any type of water into the generator in Lab A and Lab B. While the temporary power is on, interact on the Bunker door to open it. The door will remain open even if the temporary power runs out."
+                            }
+                        },
+                        {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/3.jpg",
+                                "alt": "Generator in Lab A"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/5.jpg",
+                                "alt": "Generator in Lab B"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/7.jpg",
+                                "alt": "Bunker door"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Unclog the underwater turbines",
+                                "description": "In the Power Room of the Bunker, tear off the underwater webs to begin a short lockdown. Kill zombies until the door unlocks, then interact on the power switch. There are a few pockets of air in the lockdown area."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/11.jpg",
+                                "alt": "Underwater webs"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/12.jpg",
+                                "alt": "Power switch"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Pack-a-Punch",
-                    "description": "",
+                    "description": "Collect 3 Machine Tools parts and drain the water around the PaP machine.",
                     "elements": [
                         {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                            "full": true,
+                            "step": {
+                                "title": "Part 1 (Wheel)",
+                                "description": "Located in the underwater tunnel near Mule Kick in the Specimen Room of the Bunker (TODO possible locations)."
                             }
-                        }
-                    ]
-                },
-                {
-                    "header": "Trials",
-                    "description": "Each player has a TODO with 3 trials by TODO. Hover over a trial to view the requirements and interact to get the reward. Each player will see TODO above their trials.",
-                    "elements": [
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/16.jpg",
+                                "alt": "Location 1 - TODO"
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Location 2 - TODO"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Part 2 (Pipe)",
+                                "description": "After unclogging the underwater turbines to enable power, the part will eject from the clogged turbine once the lockdown is done."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/15.jpg",
+                                "alt": "The pipe"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Part 3 (Pressure Gauge)",
+                                "description": "Go to the Living Quarters of the Bunker and knife the hanging bodies wrapped in cobwebs. The part will fall out of one of the cobwebs at random."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/13.jpg",
+                                "alt": "Some of the hanging bodies"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/14.jpg",
+                                "alt": "The pressure gauge"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Drain water",
+                                "description": "There are 3 pumps around the PaP machine that must be interacted using the Machine Tools to drain the water. After all 3 are interacted, the water will be fully drained and the door to Pack-a-Punch will open."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/19.jpg",
+                                "alt": "One of the pumps to drain the water"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/20.jpg",
+                                "alt": "Pack-a-Punch machine"
                             }
                         }
                     ]
@@ -50,44 +143,38 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Quick Revive - TODO"
+                                "src": "assets/26.jpg",
+                                "alt": "Quick Revive - spawns TODO, between spawn and either Lab A or Lab B"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Double Tap Root Beer - TODO"
+                                "src": "assets/27.jpg",
+                                "alt": "Double Tap Root Beer - spawns TODO, between spawn and either Lab A or Lab B"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Mule Kick - TODO"
+                                "src": "assets/25.jpg",
+                                "alt": "Stamin-Up - behind Lab A"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Speed Cola - TODO"
+                                "src": "assets/28.jpg",
+                                "alt": "Speed Cola - behind Lab B, above the sewer pipes"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Stamin-Up - TODO"
+                                "src": "assets/24.jpg",
+                                "alt": "Juggernog - in the entrance of the Bunker"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Juggernog - TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Wunderfizz location 1 - TODO"
+                                "src": "assets/29.jpg",
+                                "alt": "Mule Kick - in the Specimen Room of the Bunker"
                             }
                         }
                     ]
@@ -97,8 +184,20 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - "
+                                "src": "assets/45.jpg",
+                                "alt": "Location 1 - in Lab A"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/46.jpg",
+                                "alt": "Location 2 - in Lab B"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/44.jpg",
+                                "alt": "Location 3 - in the Living Quarters of the Bunker"
                             }
                         }
                     ]
@@ -110,13 +209,13 @@
             "description": "Collect 3 parts and craft at a workbench.",
             "subsections": [
                 {
-                    "header": "Part 1 (TODO)",
-                    "description": "Located at TODO (3 possible locations).",
+                    "header": "Part 1 (Window)",
+                    "description": "Located near the Fan Trap by the A.A. Gun in the Bunker (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - "
+                                "src": "assets/42.jpg",
+                                "alt": "Location 1 - on a rock by a planter"
                             }
                         },
                         {
@@ -135,12 +234,12 @@
                 },
                 {
                     "header": "Part 2 (TODO)",
-                    "description": "Located at TODO (3 possible locations).",
+                    "description": "Located outside Lab A (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - "
+                                "src": "assets/40.jpg",
+                                "alt": "Location 1 - on a pillar below the lab"
                             }
                         },
                         {
@@ -159,7 +258,7 @@
                 },
                 {
                     "header": "Part 3 (TODO)",
-                    "description": "Located at TODO (3 possible locations).",
+                    "description": "Located outside Lab B (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
@@ -175,8 +274,8 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - "
+                                "src": "assets/38.jpg",
+                                "alt": "Location 3 - on a tree going up the hill towards the Bunker from spawn"
                             }
                         }
                     ]
@@ -187,8 +286,8 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Workbench location TODO"
+                                "src": "assets/48.jpg",
+                                "alt": "One possible build location, in Lab A"
                             }
                         }
                     ]
@@ -201,7 +300,7 @@
             "subsections": [
                 {
                     "header": "Part 1 (TODO)",
-                    "description": "Located at TODO (3 possible locations).",
+                    "description": "Located behind Lab B (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
@@ -217,15 +316,15 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - "
+                                "src": "assets/39.jpg",
+                                "alt": "Location 3 - on a box up above the sewers by Speed Cola"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Part 2 (TODO)",
-                    "description": "Located at TODO (3 possible locations).",
+                    "description": "Located near the Plane Trap between spawn and Lab A (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
@@ -241,20 +340,20 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - "
+                                "src": "assets/41.jpg",
+                                "alt": "Location 3 - hanging on the plane wreckage"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Part 3 (TODO)",
-                    "description": "Located at TODO (3 possible locations).",
+                    "description": "Located at the Docks (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - "
+                                "src": "assets/43.jpg",
+                                "alt": "Location 1 - on a rock by a wall-buy"
                             }
                         },
                         {
@@ -277,8 +376,8 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Workbench location TODO"
+                                "src": "assets/47.jpg",
+                                "alt": "One possible build location, in Lab B"
                             }
                         }
                     ]
@@ -287,26 +386,465 @@
         },
         {
             "header": "Skull of Nan Sapwe",
-            "description": "",
             "subsections": [
-            ]
-        },
-        {
-            "header": "Spider Boss",
-            "description": "",
-            "subsections": [
+                {
+                    "header": "1. Cleanse the 4 Skulls",
+                    "description": "In the middle of the 4 trial pillars between spawn and Lab B, there is an altar with 4 red skulls. Each skull has 2 to 3 symbols next to it. Pick up a skull and place it on an altar around the map with the matching symbols (the 4 locations will randomize which one has which symbols each game). This will start a small ritual where the skull must be defended. After successfully defending the skull, it will be cleansed and can be placed back on the orignal altar. Each player can only hold 1 skull at a time.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/30.jpg",
+                                "alt": "Altar with 4 skulls"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/31.jpg",
+                                "alt": "Ritual location 1 - spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/32.jpg",
+                                "alt": "Ritual location 2 - between spawn and Lab A, by the Plane Trap"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/33.jpg",
+                                "alt": "Ritual location 3 - at the Docks"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/34.jpg",
+                                "alt": "Ritual location 4 - in the Specimen Room in the Bunker"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/36.jpg",
+                                "alt": "A cleansed skull after the ritual"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/35.jpg",
+                                "alt": "A cleansed skull returned to the original altar"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Keeper Ritual",
+                    "description": "After all 4 cleansed skulls are placed on the altar, a tree will be lifted up, revealing a staircase going down to a small room. Interact with the Skull of Nan Sapwe in the middle of the room to start a short ritual. After killing enough Keepers, you can pick up the Skull of Nan Sapwe on in the middle of the room.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/37.jpg",
+                                "alt": "Location to start the Keeper Ritual and get the Skull of Nan Sapwe"
+                            }
+                        }
+                    ]
+                }
             ]
         },
         {
             "header": "Planting",
-            "description": "",
+            "description": "Plant seeds and use different combinations of water to get different results.",
             "subsections": [
+                {
+                    "header": "Basics",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Seeds and Planters",
+                                "description": "Seeds can randomly drop as power-ups by killing zombies. Each player can hold up to 3 seeds at a time. Seeds can be planted by interacting on a planter. Planters are found around the entire map, and apart from 1 hidden planter for the Masamune, it doesn't matter where you plant the seeds."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "A seed power-up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/104.jpg",
+                                "alt": "A planter without a seed"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Buckets",
+                                "description": "There are 4 buckets around the map in random locations, but one is always in the spawn room. Once you find a bucket, you will have it for the rest of the game. Buckets can be filled with different kinds of water, and can be used 3 times on plants or 1 time in a Lab generator before needing to be refilled."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/2.jpg",
+                                "alt": "A bucket on the ground"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Growing",
+                                "description": "Each seed can be watered at most 3 times, and only once per round. The planter will glow if it's been watered this round. At the start of each round, each seed that was not previously watered and each seed that has been watered 3 times will grow into a plant. After the plant is used, a dead plant will remain in the planter for a few rounds before the planter can be used again."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/106.jpg",
+                                "alt": "A glowing planter after being watered"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/107.jpg",
+                                "alt": "A dead plant"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Water Sources",
+                    "description": "There are 4 sources of water around the map, and each one will change which plants will grow.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/8.jpg",
+                                "alt": "Blue water, behind Lab A"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/9.jpg",
+                                "alt": "Green water, behind Lab B"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/10.jpg",
+                                "alt": "Purple water, in the Living Quarters in the Bunker"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/54.jpg",
+                                "alt": "Rainbow water, in the sewer pipe (interact on the glowing blue rock while traveling from the Bunker to Lab B)"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Simple Recipes",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Special Recipes",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                }
             ]
         },
         {
             "header": "KT-4 & Masamune",
-            "description": "",
             "subsections": [
+                {
+                    "header": "KT-4",
+                    "description": "Collect 3 parts and build in the Specimen Room in the Bunker",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Part 1 (Green Vial)",
+                                "description": "Stay around Lab B by the green water source and let new zombies spawn. Eventually, a zombie will spawn with a glowing vial on it. After killing the zombie, interact to pick up the vial."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/70.jpg",
+                                "alt": "Zombie with the vial near the green water source"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/58.jpg",
+                                "alt": "Green vial"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Part 2 (Spider Venom)",
+                                "description": "Lower the cage at Lab A and bring a spider to it. The spider will go inside and the cage will close. Then, raise the cage and a machine will extract purple spider venom, killing the spider. Interact to pick up the spider venom."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/55.jpg",
+                                "alt": "Location to lower the cage"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/59.jpg",
+                                "alt": "Spider inside the cage"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/60.jpg",
+                                "alt": "Spider venom part"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Part 3 (Flower)",
+                                "description": "Swim all the way to the end of the underwater cave by Mule Kick in the Specimen Room of the Bunker. Interact to pick up the flower. There will be a spore at the end of the cave that you can shoot to refresh your air. Wearing a Gas Mask will allow you to stay underwater for longer too."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/57.jpg",
+                                "alt": "The flower"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Build the KT-4",
+                                "description": "Interact on the left machine in the Specimen Room of the Bunker to create the KT-4 Formula. Then, 1 player may interact to replace their weapon with the KT-4 (Kusanagi-no-Tsurugi)."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/62.jpg",
+                                "alt": "The built KT-4 in the left machine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Masamune Upgrade",
+                    "description": "Collect 3 parts to unlock the Masamune upgrade to the KT-4. All players may upgrade their KT-4 into the Masamune using the machine.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Part 1 (Blue Vial)",
+                                "description": "After all players complete all 3 of their trials, the trial area will randomly get hit by lightning. Hold your shield in the trial area until it gets hit, at which point it will be electrified for one use. Melee the cage controls in Lab B with the electric shield to open the cage. Then, one player must enter the cage to be lowered down. In solo, the cage will lower and raise automatically. In co-op, one player must use the control to lower and raise the cage for the other player. While lowered into the ground, interact on the blue vial in the skeleton to pick it up."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/69.jpg",
+                                "alt": "Electrified shield"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/77.jpg",
+                                "alt": "Panel to melee"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/78.jpg",
+                                "alt": "Opened cage"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/79.jpg",
+                                "alt": "Blue vial in the skeleton"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Part 2 (Spider Fang)",
+                                "description": "Aquired from the corpse of the Spider Boss."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/63.jpg",
+                                "alt": "The fang"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Part 3 (Divinium Flower)",
+                                "description": "Use the Mesmerize ability of the Skull of Nan Sapwe on a ripped poster in the Living Quarters of the Bunker to make the rest of the poster appear. Then, use the Mesmerize ability on the right wall at the end of the underwater cave to reveal a hidden underwater planter. Plant a seed and water it with rainbow water 3 rounds in a row. The rainbow water can be aquired in the sewer pipe going from the Specimen Room of the Bunker to Lab B. In the sewer, there is a 115 rock that must be interacted as you pass by in order to get the special water. Interact to pick up the flower after it grows."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/74.jpg",
+                                "alt": "Poster to Mesmerize"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/75.jpg",
+                                "alt": "Full poster"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/102.jpg",
+                                "alt": "Sewer entrance in the Specimen Room of the Bunker"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/54.jpg",
+                                "alt": "Blue 115 rock to get the rainbow water"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/76.jpg",
+                                "alt": "Cave wall to Mesmerize"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/66.jpg",
+                                "alt": "Underwater planter"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/67.jpg",
+                                "alt": "The flower"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Upgrade the KT-4",
+                                "description": "While holding the KT-4, interact on the right machine in the Specimen Room of the Bunker to upgrade the KT-4. Then, 1 player may interact to pick up the upgraded weapon. The machine can be used unlimited times to upgrade each players' KT-4 into the Masamune."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/82.jpg",
+                                "alt": "The Masamune in the right machine"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Trials",
+            "subsections": [
+                {
+                    "header": "Trials Overview",
+                    "description": "Each player has a pillar with 3 trials between spawn and Lab B. Hover over a trial to view the requirements and interact to get the reward. Each player will see their trials as glowing brighter than the others (TODO).",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/68.jpg",
+                                "alt": "3 glowing trial symbols on a pillar (TODO completed?)"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Spider Boss",
+            "description": "This requires at least 1 player has the KT-4 or Masamune. Free Widow's Wine will be available for the rest of the game after the fight.",
+            "subsections": [
+                {
+                    "header": "1. Destroy the Cobwebs",
+                    "description": "Behind Lab A, next to Stamin-Up, there are some large blue cobwebs covering a cave entrance. Shoot them with the KT-4 or Masamune to destroy them.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/71.jpg",
+                                "alt": "Blue cobwebs covering the cave entrance"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Kill the Giant Spider",
+                    "description": "Any number of players may enter the cave entrance to join the fight. No one may leave until the fight is over. During the fight, you must shoot the spider's mouth when it glows yellow to deal damage. The spider will attempt to deal damage with its legs and by shooting blue acid.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/72.jpg",
+                                "alt": "The spider's glowing yellow mouth"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/73.jpg",
+                                "alt": "The blue acid attack"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Rewards",
+                    "description": "You may enter the cave at any time later in the game to get the rewards. On the way out, there is a small pool of purple liquid. Step inside the liquid and interact for free Widow's Wine.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/64.jpg",
+                                "alt": "Pool of Widow's Wine"
+                            }
+                        }
+                    ]
+                }
             ]
         },
         {
@@ -318,8 +856,247 @@
                         {
                             "full": true,
                             "bullets": [
-                                ""
+                                "One player with the 'Anywhere But Here!' Gobblegum",
+                                "Shield",
+                                "Gas Mask",
+                                "Skull of Nan Sapwe",
+                                "Complete all 3 trials for each player",
+                                "KT-4 or Masamune",
+                                "Kill the Spider Boss"
                             ]
+                        }
+                    ]
+                },
+                {
+                    "header": "1. Teleport to the Secret Room (Gear #1)",
+                    "description": "The gears can be collected in any order.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Use 'Anywhere But Here!'",
+                                "description": "After opening most of the map, use the 'Anywhere But Here!' Gobblegum until you teleport to a secret room above Lab A. Interact on the gear sitting on the floor. Jump down into Lab A to leave the secret room."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/84.jpg",
+                                "alt": "The gear on the floor"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Shoot Down the Plane (Gear #2)",
+                    "description": "The gears can be collected in any order.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Grow an artillery shell",
+                                "description": "Plant a seed and water it with blue water for 3 rounds in a row. Each round after watering it, shoot it with the KT-4 or Masamune (TODO). The plant will have green particles when shot with the wonder weapon. After the 3rd round, it will most likely give an artillery shell item."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/94.jpg",
+                                "alt": "Plant after being watered with blue water and shot with the KT-4"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/86.jpg",
+                                "alt": "Plant with the artillery shell"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Shoot the plane",
+                                "description": "Go to the Anti-Aircraft Platform in the Bunker. Interact on the back of the A.A. Gun to load the shell. A sound will play after loading the shell. Then, when the large plane flies by, interact on the back of the A.A. Gun to shoot down the plane. Wait for the plane to get fairly close before shooting. If done correctly, the plane will explode and the gear will fall to the map in 1 of 3 places."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/95.jpg",
+                                "alt": "Location to place the artillery shell"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/96.jpg",
+                                "alt": "When to shoot the plane"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/97.jpg",
+                                "alt": "The plane exploding"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Gear location 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/87.jpg",
+                                "alt": "Gear location 2 - behind Lab B, near the green water source"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Gear location 3 - TODO"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Jump Off the Zipline (Gear #3)",
+                    "description": "The gears can be collected in any order.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Electrify a shield",
+                                "description": "After all players complete all 3 of their trials, the trial area will randomly get hit by lightning. Hold your shield in the trial area until it gets hit, at which point it will be electrified for one use."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/69.jpg",
+                                "alt": "Electrified shield"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Electrify the zipline",
+                                "description": "This step changes depending on if the game is solo or co-op (TODO). In solo, melee the zipline panel with the electrified shield, then quickly use the zipline. When you're over the dock, melee to jump off the zipline. In co-op, one player must use the zipline, and the other must melee the control panel with the electrified shield as the other player is over the dock. In both solo and co-op, if the player melees at the wrong time, the player on the zipline will fall out of the map and instantly die and spectate. By using the zipline at the bottom instead of from Lab A, you can melee right away to more safely time the fall."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/85.jpg",
+                                "alt": "The zipline panel to melee"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/92.jpg",
+                                "alt": "The electrified zipline panel"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Get the gear",
+                                "description": "After landing, pick up the gear at the end of the dock. Then, walk back into the map."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/93.jpg",
+                                "alt": "Gear on the dock"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "4. Fix the Elevator",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Mesmerize the maintenance door",
+                                "description": "Go to the first room of the Bunker and use the Mesmerize ability of the Skull of Nan Sapwe on the door to the left of the broken elevator. This will open a small room."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/103.jpg",
+                                "alt": "Opened door after Mesmerizing"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Place the gears",
+                                "description": "Interact on the machine to place the 3 gears"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/89.jpg",
+                                "alt": "All 3 gears placed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "5. Boss Fight",
+                    "description": "Make sure each player has a full Gas Mask and Shield before starting the fight. The KT-4 or Masamune is required for the fight.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Descend",
+                                "description": "All players must stand in the elevator and interact to go to the basement."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/90.jpg",
+                                "alt": "The elevator"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Clear the way",
+                                "description": "Shoot all of the glowing yellow spots to clear the way to the arena."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/98.jpg",
+                                "alt": "Glowing yellow spots"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Boss fight",
+                                "description": "Shoot the glowing yellow spots on the monster's arms to start the fight. Then, kill the Thrashers until more glowing yellow spots appear on the monster's arms. After all of the monster's arms have been destroyed, the fight will end."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/99.jpg",
+                                "alt": "Yellow spots to start the fight"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/100.jpg",
+                                "alt": "Final yellow spot to end the fight"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Leave the arena",
+                                "description": "After the boss is killed, a cutscene will play and all players will get the achievement. Then, go back to the elevator and interact to get back to the main map."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/91.jpg",
+                                "alt": "The elevator"
+                            }
                         }
                     ]
                 }
@@ -330,24 +1107,24 @@
             "subsections": [
                 {
                     "header": "Dead Flowers",
-                    "description": "Interact with 3 TODO.",
+                    "description": "Interact with 3 stuffed monkeys.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - "
+                                "src": "assets/22.jpg",
+                                "alt": "Location 1 - behind Lab A to the left of Stamin-Up"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - "
+                                "src": "assets/21.jpg",
+                                "alt": "Location 2 - upstairs in Lab B, on a desk"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - "
+                                "src": "assets/23.jpg",
+                                "alt": "Location 3 - in the Specimen Room of the Bunker, on an operating table at the back wall"
                             }
                         }
                     ]
@@ -357,6 +1134,18 @@
         {
             "header": "Side Easter Eggs",
             "subsections": [
+                {
+                    "header": "Round 50 Monster",
+                    "description": "At the start of round 50, a monster can be heard in the distance outside of Lab B. Its silhouette can be seen moving left to right behind the trees.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/101_edit.jpg",
+                                "alt": "Monster in the distance"
+                            }
+                        }
+                    ]
+                }
             ]
         }
     ]
