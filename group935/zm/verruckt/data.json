@@ -128,7 +128,7 @@
                     ]
                 },
                 {
-                    "header": "2. Hide and seek",
+                    "header": "2. Hide and Seek",
                     "description": "Interact with a Samantha doll by the Wunderfizz. A particle effect will show the game has started. Then, find and shoot 5 Samantha dolls around the map. They will play a song when you get close, and only 1 will be in the map at a time. If you run out of time, Samantha will laugh, and you have to start the game again at the original doll.",
                     "elements": [
                         {
@@ -200,7 +200,7 @@
                     ]
                 },
                 {
-                    "header": "3. Interact with the first doll",
+                    "header": "3. Interact with the First Doll",
                     "description": "Go back to the original doll and interact again. This time, you'll get a Max Ammo and the song will play.",
                     "elements": [
                         {

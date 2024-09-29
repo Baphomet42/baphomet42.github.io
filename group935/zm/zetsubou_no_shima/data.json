@@ -269,14 +269,14 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/119.jpg",
-                                "alt": "Location 1 - on a tree at the base of the hill going towards spawn"
+                                "src": "assets/111.jpg",
+                                "alt": "Location 1 - on a tree by the cliff to the trial area"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/111.jpg",
-                                "alt": "Location 2 - on a tree by the cliff to the trial area"
+                                "src": "assets/119.jpg",
+                                "alt": "Location 2 - on a tree at the base of the hill going towards spawn"
                             }
                         },
                         {
@@ -657,7 +657,7 @@
                             "full": true,
                             "step": {
                                 "title": "Part 3 (Flower)",
-                                "description": "Swim all the way to the end of the underwater cave by Mule Kick in the Specimen Room of the Bunker. Interact to pick up the flower. There will be a spore at the end of the cave that you can shoot to refresh your air. Wearing a Gas Mask will allow you to stay underwater for longer too."
+                                "description": "Swim all the way to the end of the underwater cave by Mule Kick in the Specimen Room of the Bunker. Interact to pick up the flower. There will be a spore at the end of the cave that you can shoot to refresh your air. Wearing a Gas Mask will also allow you to stay underwater for longer."
                             }
                         },
                         {
@@ -1008,6 +1008,37 @@
                             }
                         }
                     ]
+                },
+                {
+                    "header": "Electrified Shield",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Electrify a shield",
+                                "description": "After all players complete all 3 of their trials, the trial area will randomly get hit by lightning. Hold your shield in the trial area until it gets hit, at which point it will be electrified for one use."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/69.jpg",
+                                "alt": "Electrified shield"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
                 }
             ]
         },
@@ -1080,7 +1111,7 @@
                     ]
                 },
                 {
-                    "header": "1. Open the maintenance door",
+                    "header": "1. Open the Maintenance Door",
                     "elements": [
                         {
                             "full": true,

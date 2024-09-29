@@ -176,7 +176,7 @@
             "description": "Play Samantha's Sorrow and get a Max Ammo (Black Ops III only)",
             "subsections": [
                 {
-                    "header": "1. Knife the door pattern",
+                    "header": "1. Knife the Door Pattern",
                     "description": "Every few minutes, a knocking pattern will be heard from the blue door in the Alley. The knocking will represent 3 numbers, with brief pauses between them. You must immediately knife the door in the same pattern. If you mess up, there will be 6 rapid knocks followed by silence. If you succeed, a new pattern will be knocked immediately. You must successfully match the knocking patterns 3 times in a row.",
                     "elements": [
                         {
@@ -188,7 +188,7 @@
                     ]
                 },
                 {
-                    "header": "2. Hide and seek",
+                    "header": "2. Hide and Seek",
                     "description": "Interact with a Samantha doll on the right of the stairs leading to the Stage. A particle effect will show the game has started. Then, find and shoot 5 Samantha dolls around the map. They will play a song when you get close, and only 1 will be in the map at a time. If you run out of time, Samantha will laugh, and you have to start the game again at the original doll.",
                     "elements": [
                         {
@@ -260,7 +260,7 @@
                     ]
                 },
                 {
-                    "header": "3. Interact with the first doll",
+                    "header": "3. Interact with the First Doll",
                     "description": "Go back to the original doll and interact again. This time, you'll get a Max Ammo and the song will play.",
                     "elements": [
                         {

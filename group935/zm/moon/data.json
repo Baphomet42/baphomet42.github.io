@@ -830,7 +830,7 @@
             "description": "Play Samantha's Lullaby Remix and get a Max Ammo (Black Ops III only)",
             "subsections": [
                 {
-                    "header": "1. Interact with devices - 3 1 1 4 4 1 4 2 4 2 4 1 1 2 3",
+                    "header": "1. Interact with Devices - 3 1 1 4 4 1 4 2 4 2 4 1 1 2 3",
                     "description": "Using the numbering system below, interact with the devices in this order.",
                     "elements": [
                         {
@@ -848,7 +848,7 @@
                     ]
                 },
                 {
-                    "header": "2. Hide and seek",
+                    "header": "2. Hide and Seek",
                     "description": "Interact with a Samantha doll to the left of the M.P.D. on the ground. A particle effect will show the game has started. Then, shoot all 7 Samantha dolls. If you run out of time, Samantha will laugh, and you have to start the game again at the original doll.",
                     "elements": [
                         {
@@ -866,7 +866,7 @@
                     ]
                 },
                 {
-                    "header": "3. Interact with the first doll",
+                    "header": "3. Interact with the First Doll",
                     "description": "Go back to the original doll and interact again. This time, you'll get a Max Ammo and the song will play.",
                     "elements": [
                         {

@@ -353,7 +353,7 @@
                     ]
                 },
                 {
-                    "header": "Build at one of the 4 Summoning Altar locations",
+                    "header": "Build at 1 of the 4 Summoning Altar Locations",
                     "description": "The Keeper Protector can be summmoned at any location after building it anywhere.",
                     "elements": [
                         {
@@ -389,7 +389,7 @@
             "description": "You must first obtain the Apothicon Servant (Estulla Astoth) from the Mystery Box. After these steps, you can upgrade it in the Pack-a-Punch machine.",
             "subsections": [
                 {
-                    "header": "1. Shoot blue rocks",
+                    "header": "1. Shoot Blue Rocks",
                     "description": "Shoot 5 floating blue rocks with the Apothicon Servant. After being shot, the rock will disappear.",
                     "elements": [
                         {
@@ -792,13 +792,13 @@
                     ]
                 },
                 {
-                    "header": "Al's hat",
+                    "header": "Al's Hat",
                     "description": "Found in a cell in Mob of the Dead.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/35.jpg",
-                                "alt": "Location to get hat"
+                                "alt": "Location to get Al's hat"
                             }
                         }
                     ]
@@ -822,7 +822,7 @@
                     ]
                 },
                 {
-                    "header": "1. Shoot the graves",
+                    "header": "1. Shoot the Graves",
                     "description": "There are 4 graves outside The House with the names Takeo Masaki, Edward Richtofen, Tank Dempsey, and Nikolai Belinski. Shoot them in the order Richtofen, Dempsey, Takeo, Nikolai (2, 3, 1, 4). A flame will appear when done correctly.",
                     "elements": [
                         {
@@ -988,7 +988,7 @@
                     ]
                 },
                 {
-                    "header": "4. Sophia's skeleton (Reel #3)",
+                    "header": "4. Sophia's Skeleton (Reel #3)",
                     "description": "The upgraded Apothicon Servant (Estoom-oth) and a Pack-a-Punched weapon are both required for this step.",
                     "elements": [
                         {
@@ -1129,7 +1129,7 @@
                     ]
                 },
                 {
-                    "header": "7. Teleport to Samantha's room",
+                    "header": "7. Teleport to Samantha's Room",
                     "description": "Before teleporting, you can optionally do the Wisp Super Easter Egg step now. With all players in the teleporter on the Stage in Kino der Toten, interact to teleport to Samantha's room. In Samantha's room, pick up the Kronorium from the bed. You can teleport again on the next round if you failed to pick up the book in time.",
                     "elements": [
                         {
@@ -1159,7 +1159,7 @@
                     ]
                 },
                 {
-                    "header": "9. Egg hunt",
+                    "header": "9. Egg Hunt",
                     "description": "A purple sigil will be in the projector room of Kino der Toten, and it requires 4 runes to be complete. This step must be completed 4 times, one for each rune, but multiple players can work on different runes at the same time. Each player can only hold one egg or one Gateworm at a time.",
                     "elements": [
                         {
@@ -1301,7 +1301,7 @@
                     ]
                 },
                 {
-                    "header": "10. Boss fight #1",
+                    "header": "10. Boss Fight #1",
                     "elements": [
                         {
                             "full": true,
@@ -1448,7 +1448,7 @@
                     ]
                 },
                 {
-                    "header": "12. Boss fight #2",
+                    "header": "12. Boss Fight #2",
                     "description": "After teleporting, you won't be able to come back, even after finishing the main quest.",
                     "elements": [
                         {

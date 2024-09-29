@@ -74,7 +74,7 @@
                     ]
                 },
                 {
-                    "header": "1. Shoot the fly trap panel with a PaP weapon",
+                    "header": "1. Shoot the Fly Trap Panel with a PaP Weapon",
                     "description": "The panel is located stage-left of the teleporter mainframe, outside a barrier.",
                     "elements": [
                         {
@@ -86,7 +86,7 @@
                     ]
                 },
                 {
-                    "header": "2. Shoot the 3 hidden objects",
+                    "header": "2. Shoot the 3 Hidden Objects",
                     "description": "Three objects will spawn in the map and can be shot in any order with any weapon.",
                     "elements": [
                         {

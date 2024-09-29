@@ -341,7 +341,7 @@
                     ]
                 },
                 {
-                    "header": "2. Bathe the Dragon Egg in fire",
+                    "header": "2. Bathe the Dragon Egg in Fire",
                     "description": "Place the egg on one of the nests around the map. After the dragon breathes fire on that part of the map, the egg must cool, and then it can be picked up.",
                     "elements": [
                         {
@@ -357,11 +357,11 @@
                     "description": "Wait for the dragon to breathe fire on the map, and lure zombies into the fire. Kill enough flaming zombies until the challenges advances."
                 },
                 {
-                    "header": "4. Get penetrating multikills",
+                    "header": "4. Get Penetrating Multikills",
                     "description": "Kill multiple zombies with a single bullet and repeat several times. Many guns can do this during Instakill, but snipers can do this normally."
                 },
                 {
-                    "header": "5. Get melee kills",
+                    "header": "5. Get Melee Kills",
                     "description": "Any melee weapon will count, including the shield bash."
                 },
                 {
@@ -377,7 +377,7 @@
                     ]
                 },
                 {
-                    "header": "7. Claim reward",
+                    "header": "7. Claim Reward",
                     "description": "All players may claim the bottom trial reward to get the special weapon.",
                     "elements": [
                         {
@@ -419,7 +419,7 @@
                     ]
                 },
                 {
-                    "header": "2. Valve step",
+                    "header": "2. Valve Step",
                     "elements": [
                         {
                             "full": true,
@@ -515,7 +515,7 @@
                     ]
                 },
                 {
-                    "header": "3. Input password",
+                    "header": "3. Input Password",
                     "elements": [
                         {
                             "full": true,
@@ -559,7 +559,7 @@
                     ]
                 },
                 {
-                    "header": "4. Collect trophies",
+                    "header": "4. Collect Trophies",
                     "description": "There are 6 trophies around the map that must be moved with different weapons, then interacted to be picked up. They can be collected at any time during the game and in any order.",
                     "elements": [
                         {
@@ -860,7 +860,7 @@
                     ]
                 },
                 {
-                    "header": "6. Bring the power core to Nikolai",
+                    "header": "6. Bring the Power Core to Nikolai",
                     "elements": [
                         {
                             "full": true,
@@ -1364,7 +1364,7 @@
                     ]
                 },
                 {
-                    "header": "2. Hide and seek",
+                    "header": "2. Hide and Seek",
                     "description": "Interact with a Samantha doll in Belinski Square. A particle effect will show the game has started. Then, find and shoot 5 Samantha dolls around the map. They will play a song when you get close, and only 1 will be in the map at a time. If you run out of time, Samantha will laugh, and you have to start the game again at the original doll.",
                     "elements": [
                         {
@@ -1460,7 +1460,7 @@
                     ]
                 },
                 {
-                    "header": "3. Interact with the first doll",
+                    "header": "3. Interact with the First Doll",
                     "description": "Go back to the original doll and interact again. This time, you'll get a Max Ammo and the song will play.",
                     "elements": [
                         {

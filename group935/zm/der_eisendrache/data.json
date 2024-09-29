@@ -1153,11 +1153,11 @@
                     ]
                 },
                 {
-                    "header": "1. Upgrade at least 1 bow",
+                    "header": "1. Upgrade At Least 1 Bow",
                     "description": "It doesn't matter which one is done first, and only one player needs an upgraded bow for now"
                 },
                 {
-                    "header": "2. Shoot all 6 teleporter spokes with starter bow",
+                    "header": "2. Shoot All 6 Teleporter Spokes with the Starter Bow",
                     "description": "Any player with a starter bow can do this step. If your bow is upgraded, set it back on the correct box, then pick up the starter bow. When shot, the spoke will change from glowing blue to orange. After all 6 are shot, they will all go back to blue and a sound will be heard.",
                     "elements": [
                         {
@@ -1175,7 +1175,7 @@
                     ]
                 },
                 {
-                    "header": "3. Shoot 3 electric wisps",
+                    "header": "3. Shoot 3 Electric Wisps",
                     "description": "This step and step 4 must be done within a single round",
                     "elements": [
                         {
@@ -1243,7 +1243,7 @@
                     ]
                 },
                 {
-                    "header": "4. Time travel #1",
+                    "header": "4. Time Travel #1",
                     "description": "This must be done in the same round as the 3 wisps were shot. After teleporting to the past, there is a short timer to complete the step.",
                     "elements": [
                         {
@@ -1288,7 +1288,7 @@
                     ]
                 },
                 {
-                    "header": "5. Set the Death Ray to protect mode",
+                    "header": "5. Set the Death Ray to Protect Mode",
                     "description": "The Death Ray must be used at least once in the game before this step.",
                     "elements": [
                         {
@@ -1318,7 +1318,7 @@
                     ]
                 },
                 {
-                    "header": "6. Enter the safe code on the computers outside the clock tower",
+                    "header": "6. Enter the Safe Code on the Computers Outside the Clock Tower",
                     "description": "If this step is failed, you must repeat the wisp step and time travel to get a new code",
                     "elements": [
                         {
@@ -1336,7 +1336,7 @@
                     ]
                 },
                 {
-                    "header": "7. Move the parts from the safe to the Death Ray",
+                    "header": "7. Move the Parts from the Safe to the Death Ray",
                     "elements": [
                         {
                             "full": true,
@@ -1371,7 +1371,7 @@
                     ]
                 },
                 {
-                    "header": "8. Set the Death Ray back to destroy mode",
+                    "header": "8. Set the Death Ray Back to Destroy Mode",
                     "elements": [
                         {
                             "pic": {
@@ -1418,7 +1418,7 @@
                     ]
                 },
                 {
-                    "header": "10. Shoot down the rocket",
+                    "header": "10. Shoot Down the Rocket",
                     "description": "Both Death Ray towers must be glowing from the previous step",
                     "elements": [
                         {
@@ -1450,7 +1450,7 @@
                     ]
                 },
                 {
-                    "header": "11. Time travel #2",
+                    "header": "11. Time Travel #2",
                     "description": "You can start the next step already, but this will need to be done before the next step can be finished.",
                     "elements": [
                         {
@@ -1498,7 +1498,7 @@
                     ]
                 },
                 {
-                    "header": "12. Summon the Keeper ghost",
+                    "header": "12. Summon the Keeper Ghost",
                     "description": "This can be done before finishing the previous step, but dogs will keep spawning in until the next step is completed. It is also recommended to have one bow upgraded per player before doing this step.",
                     "elements": [
                         {
@@ -1522,7 +1522,7 @@
                     ]
                 },
                 {
-                    "header": "13. Get kills in each of the 4 Keeper ghost locations",
+                    "header": "13. Get Kills in Each of the 4 Keeper Ghost Locations",
                     "description": "The location by Double Tap requires the slab from the second time travel step, but the other locations can be done beforehand. One bow must be upgraded per player to complete this step.",
                     "elements": [
                         {
@@ -1590,7 +1590,7 @@
                     ]
                 },
                 {
-                    "header": "14. Place the missing M.P.D. part",
+                    "header": "14. Place the Missing M.P.D. Part",
                     "description": "An audio scene will play before the M.P.D. teleports to the undercroft.",
                     "elements": [
                         {
@@ -1602,7 +1602,7 @@
                     ]
                 },
                 {
-                    "header": "15. Boss fight",
+                    "header": "15. Boss Fight",
                     "description": "You cannot leave the boss fight until it's done. Make sure you have perks, a full shield, strong weapons, and any gobblegum you want to bring.",
                     "elements": [
                         {
@@ -1682,7 +1682,7 @@
                     ]
                 },
                 {
-                    "header": "16. Start the cutscene",
+                    "header": "16. Start the Cutscene",
                     "description": "You can continue playing as normal after the cutscene is done.",
                     "elements": [
                         {
