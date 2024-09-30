@@ -547,55 +547,97 @@
                     ]
                 },
                 {
-                    "header": "Simple Recipes",
+                    "header": "Plant Recipes",
+                    "description": "Mixing different colors or using rainbow water will randomize the plant.",
                     "elements": [
                         {
                             "full": true,
                             "step": {
-                                "title": "",
-                                "description": ""
+                                "title": "Basic plant",
+                                "description": "Made when no water is given. It usually gives a bad reward."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/166.jpg",
+                                "alt": "Basic plant"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Reward plant",
+                                "description": "Made with 3 blue water. It gives a better reward (including power-ups)."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/173.jpg",
+                                "alt": "Reward plant"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Killer plant",
+                                "description": "Made with 3 purple water. It attracts zombies and kills them."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/167.jpg",
+                                "alt": "Killer plant"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Grabber plant",
+                                "description": "Made with 3 green water. It holds a zombie for a 5 minutes without killing it."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/169.jpg",
+                                "alt": "Grabber plant"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Fruit plant",
+                                "description": "Made with 1 blue, 1 green, and 1 purple water. The fruit has a chance at giving a free random perk."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/171.jpg",
+                                "alt": "Fruit plant"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Imprint plant",
+                                "description": "Made by shooting the plant with the KT-4 or Masamune all 3 rounds (and giving no water). Killing the Spider Boss and getting the Skull of Nan Sapwe are required to grow the plant, and the plant has only a small chance of growing each time. Imprint on the plant and you will appear there after dying with all of your gear."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/175.jpg",
+                                "alt": "Imprint plant"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Advanced Recipes",
+                    "header": "Upgrading Plants",
+                    "description": "Plants can be upgraded by shooting them with the KT-4 or Masamune each time you water it. Green particles will show the plant has been shot with the wonder weapon.",
                     "elements": [
                         {
-                            "full": true,
-                            "step": {
-                                "title": "",
-                                "description": ""
-                            }
-                        },
-                        {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "Special Recipes",
-                    "elements": [
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "",
-                                "description": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/94.jpg",
+                                "alt": "Plant after being watered with and shot with the wonder weapon"
                             }
                         }
                     ]
@@ -823,12 +865,12 @@
                             "full": true,
                             "step": {
                                 "title": "Eat a fruit grown from a plant.",
-                                "description": ""
+                                "description": "Water a plant with blue, green, and purple water (in any order) for a chance at making a fruit plant. Interact to eat the fruit."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/171.jpg",
                                 "alt": "A fruit in a plant"
                             }
                         },
@@ -887,38 +929,38 @@
                             "full": true,
                             "step": {
                                 "title": "Kill a mutated zombie before it becomes enraged.",
-                                "description": ""
+                                "description": "Thrashers will become enraged if you get too close, shoot its head, or on their own after a short time. Quickly using the Skull of Nan Sapwe after a Thrasher spawns in will almost always work to complete the trial."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/141.jpg",
+                                "alt": "Using the Skull of Nan Sapwe on a Thrasher"
                             }
                         },
                         {
                             "full": true,
                             "step": {
                                 "title": "Kill 15 zombies that are attracted to plants.",
-                                "description": ""
+                                "description": "Water a plant 3 times with purple water for a chance at creating a killer plant. Kill zombies as they go to the plant."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/168.jpg",
+                                "alt": "Zombies attracted to a killer plant"
                             }
                         },
                         {
                             "full": true,
                             "step": {
                                 "title": "Obtain a power-up from a plant.",
-                                "description": ""
+                                "description": "Water a plant 3 times with blue water for a chance at creating a reward plant. There is a chance for the reward to be a power-up."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/172.jpg",
                                 "alt": "A power-up in a plant"
                             }
                         },
@@ -1404,24 +1446,141 @@
             "subsections": [
                 {
                     "header": "Spider Bait",
-                    "description": "",
+                    "description": "The Spider Boss must first be killed before doing these steps. On a spider round, Mesmerize the spiders to see the one spider with red smoke. Take the red smoke spider to all 3 water sources and it will stop to drink the water. Shooting the spores before walking with the spider will prevent it from dying. Then, bring the spider to the cage at Lab A, and lift it up. Shock the control panel with the electrified shield, then lower the cage. The cage will go underground for a few rounds and can be lifted up after the next spider round ends. All players can then interact on the red Spider Bait to collect it. Spider Bait allows you to control a spider and shoot at zombies.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/156.jpg",
+                                "alt": "Red smoke around a spider while Mesmerizing"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/159.jpg",
+                                "alt": "Spider drinking water"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/160.jpg",
+                                "alt": "Spider inside the cage"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/161.jpg",
+                                "alt": "Meleeing the control panel with electrified shield"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/163.jpg",
+                                "alt": "Cage lowered underground"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/164.jpg",
+                                "alt": "Spider Bait"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/165.jpg",
+                                "alt": "Controlling a spider"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Friendly Thrasher",
-                    "description": "",
                     "elements": [
                         {
+                            "full": true,
+                            "step": {
+                                "title": "1. Mesmerize the poster",
+                                "description": "This is the same poster to Mesmerize for various other uses, and only has to be done once. Use the Mesmerize ability of the Skull of Nan Sapwe on a ripped poster in the Living Quarters of the Bunker to make the rest of the poster appear."
+                            }
+                        },
+                        {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/74.jpg",
+                                "alt": "Poster to Mesmerize"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/75.jpg",
+                                "alt": "Full poster"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Reveal the spore",
+                                "description": "Go to the Specimen Room of the Bunker with the green vats containing bodies. Facing the stairs going up, Mesmerize the wall to the right of the stairs. Then, shoot the vines with the Masamune."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/146.jpg",
+                                "alt": "Wall to Mesmerize"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/147.jpg",
+                                "alt": "Shooting roots with the Masamune"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Convert a zombie",
+                                "description": "Shoot the spore and lure a zombie into the gas. It will transform into a Friendly Thrasher, follow you around, and kill zombies for you. Each time the spore regrows, you can make another Friendly Thrasher."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/148.jpg",
+                                "alt": "Friendly Thrasher"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Secret Room Max Ammo",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Mesmerize the poster",
+                                "description": "This is the same poster to Mesmerize for various other uses, and only has to be done once. Use the Mesmerize ability of the Skull of Nan Sapwe on a ripped poster in the Living Quarters of the Bunker to make the rest of the poster appear."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/74.jpg",
+                                "alt": "Poster to Mesmerize"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/75.jpg",
+                                "alt": "Full poster"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Mesmerize the wall by the A.A. Gun",
+                                "description": "Use the Skull of Nan Sapwe to Mesmerize the wall straight behind the A.A. Gun in the Bunker. There will be a Max Ammo inside."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/149.jpg",
+                                "alt": "Wall to Mesmerize"
                             }
                         }
                     ]
@@ -1431,9 +1590,98 @@
                     "description": "Can be used unlimited times without having to refill.",
                     "elements": [
                         {
+                            "full": true,
+                            "step": {
+                                "title": "1. Make 5 unique plants",
+                                "description": "Make one plant without water, one with 3 blue water, one with 3 green water, one with 3 purple water, and one with a combination of blue, green, and purple."
+                            }
+                        },
+                        {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/166.jpg",
+                                "alt": "Basic plant (no water)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/173.jpg",
+                                "alt": "Reward plant (3 blue water)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/167.jpg",
+                                "alt": "Killer plant (3 purple water)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/169.jpg",
+                                "alt": "Grabber plant (3 green water)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/171.jpg",
+                                "alt": "Fruit plant (1 blue, 1 green, and 1 purple water)"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Mesmerize the poster",
+                                "description": "This is the same poster to Mesmerize for various other uses, and only has to be done once. Use the Mesmerize ability of the Skull of Nan Sapwe on a ripped poster in the Living Quarters of the Bunker to make the rest of the poster appear."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/74.jpg",
+                                "alt": "Poster to Mesmerize"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/75.jpg",
+                                "alt": "Full poster"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Mesmerize some roots",
+                                "description": "Go under Lab B and Mesmerize a specific group of roots across from the spore. This will reveal a hidden planter."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/150.jpg",
+                                "alt": "Roots to Mesmerize"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "4. Plant your bucket",
+                                "description": "Interact on the hidden planter to plant your bucket. This will cause 3 new planters to come out of the ground, all under Lab B."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "5. Defend the plants",
+                                "description": "Plant a seed in each of the 3 new planters under Lab B. You don't need to water them, and they will grow quickly in the same round. Defend the plants from zombies, and plant new seeds if any of the plants die. After enough time, the planters will go away and the golden bucket will be available in the original hidden planter. Everyone can pick up the golden bucket."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/154.jpg",
+                                "alt": "Grown bucket plant"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/155.jpg",
+                                "alt": "Golden bucket reward"
                             }
                         }
                     ]
