@@ -70,19 +70,19 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Location 1 - Outside Teleporter A, on a desk"
+                                "alt": "Location 1 - outside Teleporter A, on a desk"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Location 2 - Outside Teleporter A, on a shelf"
+                                "alt": "Location 2 - outside Teleporter A, on a shelf"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Location 3 - In the side room from Teleporter B, on a desk"
+                                "alt": "Location 3 - in the side room from Teleporter B, on a desk"
                             }
                         }
                     ]

@@ -26,19 +26,19 @@
                         {
                             "pic": {
                                 "src": "assets/13.jpg",
-                                "alt": "Location 1 (Bastion) - Next to the Death Ray"
+                                "alt": "Location 1 (Bastion) - next to the Death Ray"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/12.jpg",
-                                "alt": "Location 2 (Undercroft) - In the undercroft between Juggernog and the teleporter"
+                                "alt": "Location 2 (Undercroft) - in the Undercroft between Juggernog and the teleporter"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/14.jpg",
-                                "alt": "Location 3 (Rocket Pad) - Up the stairs at the rocket"
+                                "alt": "Location 3 (Rocket Pad) - up the stairs at the rocket"
                             }
                         },
                         {
@@ -68,25 +68,25 @@
                         {
                             "pic": {
                                 "src": "assets/15.jpg",
-                                "alt": "Location 1 - In spawn, used for the rocket Wundersphere"
+                                "alt": "Location 1 - in spawn, used for the rocket Wundersphere"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/16.jpg",
-                                "alt": "Location 2 - Above Double Tap, used for the courtyard Wundersphere"
+                                "alt": "Location 2 - above Double Tap, used for the courtyard Wundersphere"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/17.jpg",
-                                "alt": "Location 3 - Just outside the clock tower, used for the Double Tap Wundersphere"
+                                "alt": "Location 3 - just outside the clock tower, used for the Double Tap Wundersphere"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/18.jpg",
-                                "alt": "Location 4 - Outside the rocket blast doors, used for the Death Ray Wundersphere"
+                                "alt": "Location 4 - outside the rocket blast doors, used for the Death Ray Wundersphere"
                             }
                         }
                     ]
@@ -180,19 +180,19 @@
                         {
                             "pic": {
                                 "src": "assets/167.jpg",
-                                "alt": "Location 1 - In the undercroft"
+                                "alt": "Location 1 - in the Undercroft"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/166.jpg",
-                                "alt": "Location 2 - In the church"
+                                "alt": "Location 2 - in the church"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/165.jpg",
-                                "alt": "Location 3 - Above Double Tap"
+                                "alt": "Location 3 - above Double Tap"
                             }
                         }
                     ]
@@ -205,24 +205,24 @@
             "subsections": [
                 {
                     "header": "Part 1 (Shield Window)",
-                    "description": "Located in the undercroft (3 possible locations). Low gravity mode required.",
+                    "description": "Located in the Undercroft (3 possible locations). Low gravity mode required.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/156.jpg",
-                                "alt": "Location 1 - On the metal frame surrounding the pyramid, above the workbench"
+                                "alt": "Location 1 - on the metal frame surrounding the pyramid, above the workbench"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/105.jpg",
-                                "alt": "Location 2 - Above the door that leads to the teleporter"
+                                "alt": "Location 2 - above the door that leads to the teleporter"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/9.jpg",
-                                "alt": "Location 3 - On the wall above Pack-a-Punch"
+                                "alt": "Location 3 - on the wall above Pack-a-Punch"
                             }
                         }
                     ]
@@ -234,19 +234,19 @@
                         {
                             "pic": {
                                 "src": "assets/172.jpg",
-                                "alt": "Location 1 - In the bell tower on the floor"
+                                "alt": "Location 1 - in the bell tower on the floor"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/155.jpg",
-                                "alt": "Location 2 - At the base of the stairs that lead to the Death Ray"
+                                "alt": "Location 2 - at the base of the stairs that lead to the Death Ray"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/4.jpg",
-                                "alt": "Location 3 - To the right of the doors that lead to Speed Cola"
+                                "alt": "Location 3 - to the right of the doors that lead to Speed Cola"
                             }
                         }
                     ]
@@ -258,19 +258,19 @@
                         {
                             "pic": {
                                 "src": "assets/2.jpg",
-                                "alt": "Location 1 - On some boxes near a barricade"
+                                "alt": "Location 1 - on some boxes near a barricade"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/154.jpg",
-                                "alt": "Location 2 - At the bottom of some short stairs leading to a barricade"
+                                "alt": "Location 2 - at the bottom of some short stairs leading to a barricade"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/187.jpg",
-                                "alt": "Location 3 - Up the stairs towards the Death Ray"
+                                "alt": "Location 3 - up the stairs towards the Death Ray"
                             }
                         }
                     ]
@@ -282,7 +282,7 @@
                         {
                             "pic": {
                                 "src": "assets/171.jpg",
-                                "alt": "One possible build location, in the undercroft"
+                                "alt": "One possible build location, in the Undercroft"
                             }
                         }
                     ]
@@ -330,13 +330,13 @@
                         {
                             "pic": {
                                 "src": "assets/48.jpg",
-                                "alt": "Location 1 - In the path of the courtyard Wundersphere"
+                                "alt": "Location 1 - in the path of the courtyard Wundersphere"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/201.jpg",
-                                "alt": "Location 2 - In the path of the Wundersphere above Double Tap"
+                                "alt": "Location 2 - in the path of the Wundersphere above Double Tap"
                             }
                         }
                     ]
@@ -378,19 +378,19 @@
                         {
                             "pic": {
                                 "src": "assets/8.jpg",
-                                "alt": "Location 1 - In the undercroft by the pyramid"
+                                "alt": "Location 1 - in the Undercroft by the pyramid"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/6.jpg",
-                                "alt": "Location 2 - Near Double Tap, by the stairs that lead to the undercroft"
+                                "alt": "Location 2 - near Double Tap, by the stairs that lead to the Undercroft"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/7.jpg",
-                                "alt": "Location 3 - In the church near Speed Cola"
+                                "alt": "Location 3 - in the church near Speed Cola"
                             }
                         }
                     ]
@@ -439,7 +439,7 @@
                         {
                             "pic": {
                                 "src": "assets/52.jpg",
-                                "alt": "Location 1 - Behind the clock tower"
+                                "alt": "Location 1 - behind the clock tower"
                             }
                         },
                         {
@@ -451,7 +451,7 @@
                         {
                             "pic": {
                                 "src": "assets/53.jpg",
-                                "alt": "Location 2 - Out the spawn door that goes towards Double Tap"
+                                "alt": "Location 2 - out the spawn door that goes towards Double Tap"
                             }
                         },
                         {
@@ -463,7 +463,7 @@
                         {
                             "pic": {
                                 "src": "assets/54.jpg",
-                                "alt": "Location 3 - At the rocket"
+                                "alt": "Location 3 - at the rocket"
                             }
                         },
                         {
@@ -476,7 +476,7 @@
                             "full": true,
                             "step": {
                                 "title": "3. Wallrun over the symbols",
-                                "description": "In the undercroft, wallrun over the 5 blinking symbols without touching the ground. When finished, they will stay lit up."
+                                "description": "In the Undercroft, wallrun over the 5 blinking symbols without touching the ground. When finished, they will stay lit up."
                             }
                         },
                         {
@@ -495,19 +495,19 @@
                         {
                             "pic": {
                                 "src": "assets/56.jpg",
-                                "alt": "Location 1 - In the clock tower"
+                                "alt": "Location 1 - in the clock tower"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/57.jpg",
-                                "alt": "Location 2 - Above Double Tap"
+                                "alt": "Location 2 - above Double Tap"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/59.jpg",
-                                "alt": "Location 3 - At the rocket site, inside the blast doors"
+                                "alt": "Location 3 - at the rocket site, inside the blast doors"
                             }
                         },
                         {
@@ -633,19 +633,19 @@
                         {
                             "pic": {
                                 "src": "assets/93.jpg",
-                                "alt": "Location 1 - Between spawn and Double Tap"
+                                "alt": "Location 1 - between spawn and Double Tap"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/94.jpg",
-                                "alt": "Location 2 - Outside the clock tower"
+                                "alt": "Location 2 - outside the clock tower"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/95.jpg",
-                                "alt": "Location 3 - By the Death Ray"
+                                "alt": "Location 3 - by the Death Ray"
                             }
                         },
                         {
@@ -796,13 +796,13 @@
                             "full": true,
                             "step": {
                                 "title": "2. Aquire wolf howl arrow",
-                                "description": "Go to the undercroft and interact with the arrow just below the stairs that lead to the first bow. Only the player who holds the arrow can complete the remaining steps."
+                                "description": "Go to the Undercroft and interact with the arrow just below the stairs that lead to the first bow. Only the player who holds the arrow can complete the remaining steps."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/38.jpg",
-                                "alt": "Arrow location in the undercroft"
+                                "alt": "Arrow location in the Undercroft"
                             }
                         },
                         {
@@ -847,26 +847,26 @@
                         {
                             "pic": {
                                 "src": "assets/43.jpg",
-                                "alt": "Location 1 - In the courtyard outside the church"
+                                "alt": "Location 1 - in the courtyard outside the church"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/45.jpg",
-                                "alt": "Location 2 - Near Double Tap, towards spawn"
+                                "alt": "Location 2 - near Double Tap, towards spawn"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/46.jpg",
-                                "alt": "Location 3 - In the undercroft by Pack-a-Punch"
+                                "alt": "Location 3 - in the Undercroft by Pack-a-Punch"
                             }
                         },
                         {
                             "full": true,
                             "step": {
                                 "title": "6. Shoot the symbol and get the arrow",
-                                "description": "In the undercroft, the wolf will stand under an opening in the wall. When low gravity is active, wall run towards the opening, then shoot the glowing symbol just above the opening with a bow. A platform will appear that you can stand on. Stand on the platform and interact on the hole to spawn a skeleton. Pick up the arrow from the skeleton's hand."
+                                "description": "In the Undercroft, the wolf will stand under an opening in the wall. When low gravity is active, wall run towards the opening, then shoot the glowing symbol just above the opening with a bow. A platform will appear that you can stand on. Stand on the platform and interact on the hole to spawn a skeleton. Pick up the arrow from the skeleton's hand."
                             }
                         },
                         {
@@ -973,37 +973,37 @@
                         {
                             "pic": {
                                 "src": "assets/121.jpg",
-                                "alt": "Location 1 - In the tunnel by Mule Kick"
+                                "alt": "Location 1 - in the tunnel by Mule Kick"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/124.jpg",
-                                "alt": "Location 2 - Sitting in a window outside the church, on the balcony"
+                                "alt": "Location 2 - sitting in a window outside the church, on the balcony"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/125.jpg",
-                                "alt": "Location 3 - Next to Double Tap"
+                                "alt": "Location 3 - next to Double Tap"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/126.jpg",
-                                "alt": "Location 4 - In a chest in the bedroom"
+                                "alt": "Location 4 - in a chest in the bedroom"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/123.jpg",
-                                "alt": "Location 5 - In a sink in the teleporter room"
+                                "alt": "Location 5 - in a sink in the teleporter room"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/127.jpg",
-                                "alt": "Location 6 - In the back of a truck, down by the rocket"
+                                "alt": "Location 6 - in the back of a truck, down by the rocket"
                             }
                         },
                         {
@@ -1195,49 +1195,49 @@
                         {
                             "pic": {
                                 "src": "assets/63.jpg",
-                                "alt": "Location 1 - In the church, on the clock above the fireplace"
+                                "alt": "Location 1 - in the church, on the clock above the fireplace"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/64.jpg",
-                                "alt": "Location 2 - In the church, on one of the devices across from Speed Cola"
+                                "alt": "Location 2 - in the church, on one of the devices across from Speed Cola"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/96.jpg",
-                                "alt": "Location 3 - Upstairs between the church and the clock tower, on a clock"
+                                "alt": "Location 3 - upstairs between the church and the clock tower, on a clock"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/66.jpg",
-                                "alt": "Location 4 - In the power room, on a phone"
+                                "alt": "Location 4 - in the power room, on a phone"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/65.jpg",
-                                "alt": "Location 5 - In the bedrooms, on a globe"
+                                "alt": "Location 5 - in the bedrooms, on a globe"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/106.jpg",
-                                "alt": "Location 6 - Above Double Tap, on a box by the hole in the wall"
+                                "alt": "Location 6 - above Double Tap, on a box by the hole in the wall"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/83.jpg",
-                                "alt": "Location 7 - Between spawn and Double Tap, on a car tire"
+                                "alt": "Location 7 - between spawn and Double Tap, on a car tire"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/116.jpg",
-                                "alt": "Location 8 - Next to Quick Revive, on a phone"
+                                "alt": "Location 8 - next to Quick Revive, on a phone"
                             }
                         }
                     ]
@@ -1249,7 +1249,7 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "Use the teleporter in the undercroft",
+                                "title": "Use the teleporter in the Undercroft",
                                 "description": "When the wisp step is completed, the teleporter will glow purple, and a sound will be heard. All players must teleport together before the round ends."
                             }
                         },
@@ -1394,13 +1394,13 @@
                         {
                             "pic": {
                                 "src": "assets/78.jpg",
-                                "alt": "Location 1 - Outside the clock tower"
+                                "alt": "Location 1 - outside the clock tower"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/90.jpg",
-                                "alt": "Location 2 - At the rocket"
+                                "alt": "Location 2 - at the rocket"
                             }
                         },
                         {
@@ -1535,25 +1535,25 @@
                         {
                             "pic": {
                                 "src": "assets/110.jpg",
-                                "alt": "Location 1 - In the courtyard"
+                                "alt": "Location 1 - in the courtyard"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/112.jpg",
-                                "alt": "Location 2 - By Mule Kick"
+                                "alt": "Location 2 - by Mule Kick"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/115.jpg",
-                                "alt": "Location 3 - By Double Tap"
+                                "alt": "Location 3 - by Double Tap"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/131.jpg",
-                                "alt": "Location 4 - In the power room"
+                                "alt": "Location 4 - in the power room"
                             }
                         },
                         {
@@ -1591,7 +1591,7 @@
                 },
                 {
                     "header": "14. Place the Missing M.P.D. Part",
-                    "description": "An audio scene will play before the M.P.D. teleports to the undercroft.",
+                    "description": "An audio scene will play before the M.P.D. teleports to the Undercroft.",
                     "elements": [
                         {
                             "pic": {
@@ -1676,7 +1676,7 @@
                             "full": true,
                             "step": {
                                 "title": "Killing the boss",
-                                "description": "After enough damage has been done, the boss will spin into the air, and everyone will teleport back to the undercroft. It will always take 3 successful attacks to kill the boss. If not enough damage was dealt during one stun, the damage will carry over to the next stun, meaning it will take more than 3 stuns to finish all 3 attacks."
+                                "description": "After enough damage has been done, the boss will spin into the air, and everyone will teleport back to the Undercroft. It will always take 3 successful attacks to kill the boss. If not enough damage was dealt during one stun, the damage will carry over to the next stun, meaning it will take more than 3 stuns to finish all 3 attacks."
                             }
                         }
                     ]
@@ -1723,7 +1723,7 @@
             ]
         },
         {
-            "header": "Song",
+            "header": "Songs",
             "subsections": [
                 {
                     "header": "Dead Again",
@@ -1732,19 +1732,43 @@
                         {
                             "pic": {
                                 "src": "assets/28.jpg",
-                                "alt": "Location 1 - In the bedroom between Double Tap and the power room"
+                                "alt": "Location 1 - in the bedroom between Double Tap and the power room"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/30.jpg",
-                                "alt": "Location 2 - Across from Juggernog"
+                                "alt": "Location 2 - across from Juggernog"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/32.jpg",
-                                "alt": "Location 3 - In a truck by the rocket"
+                                "alt": "Location 3 - in a truck by the rocket"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Dies irae",
+                    "description": "Interact with 3 gramophones.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/216.jpg",
+                                "alt": "Location 1 - in the bedroom between Double Tap and the power room"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/217.jpg",
+                                "alt": "Location 2 - in the church"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/218.jpg",
+                                "alt": "Location 3 - in the Undercroft"
                             }
                         }
                     ]
@@ -1761,26 +1785,26 @@
                         {
                             "pic": {
                                 "src": "assets/71_edit.jpg",
-                                "alt": "Location 1 - On the catwalk across from the Double Tap dragon location"
+                                "alt": "Location 1 - on the catwalk across from the Double Tap dragon location"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/73_edit.jpg",
-                                "alt": "Location 2 - Directly through the door by Quick Revive"
+                                "alt": "Location 2 - directly through the door by Quick Revive"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/72_edit.jpg",
-                                "alt": "Location 3 - In the power room, near the door that leads to the church"
+                                "alt": "Location 3 - in the power room, near the door that leads to the church"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Flower Pot Gobblegum",
-                    "description": "Pick up the flower pot in the teleporter room in the undercroft. Then place it in the same spot while time traveling. Finally, interact with it in the present to get a random gobblegum.",
+                    "description": "Pick up the flower pot in the teleporter room in the Undercroft. Then place it in the same spot while time traveling. Finally, interact with it in the present to get a random gobblegum.",
                     "elements": [
                         {
                             "pic": {
@@ -1798,6 +1822,36 @@
                             "pic": {
                                 "src": "assets/212.jpg",
                                 "alt": "Flower pot back in present"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Disco Party",
+                    "description": "On the ceiling of the church, there are 3 spinning objects representing the Earth, Moon, and a rocket. Use explosives, such as a Ray Gun, on all 3 so they stop moving. If all 3 are stopped at the same time, the church will have a disco party.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/219.jpg",
+                                "alt": "Church disco party"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Left Gondola",
+                    "description": "Immediately after the game starts, throw 2 grenades into the left gondola before it moves away. The 5th Tram Fuse you spend in the game will move the left gondola instead of the right one. The reward will be much greater than the normal gondola.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/213.jpg",
+                                "alt": "Throwing grenades into the left gondola"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/215.jpg",
+                                "alt": "PaP Haymaker reward in the left gondola"
                             }
                         }
                     ]
@@ -1848,7 +1902,7 @@
                             "full": true,
                             "step": {
                                 "title": "3. Time travel",
-                                "description": "Once the clock is successfully stopped at exactly 9:35, a sound will play, and the clock will tick forward once. Go to the undercroft, and there should be a blue orb above the pyramid, indicating the step worked. Then, wallrun over the blue symbol until you are sent to the past."
+                                "description": "Once the clock is successfully stopped at exactly 9:35, a sound will play, and the clock will tick forward once. Go to the Undercroft, and there should be a blue orb above the pyramid, indicating the step worked. Then, wallrun over the blue symbol until you are sent to the past."
                             }
                         },
                         {
@@ -1904,19 +1958,37 @@
                         {
                             "pic": {
                                 "src": "assets/173_edit.jpg",
-                                "alt": "Location 1 - Next to Double Tap"
+                                "alt": "Location 1 - next to Double Tap"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/174_edit.jpg",
-                                "alt": "Location 2 - Behind Mule Kick"
+                                "alt": "Location 2 - behind Mule Kick"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/190_edit.jpg",
-                                "alt": "Location 3 - Outside the church, on the balcony"
+                                "alt": "Location 3 - outside the church, on the balcony"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "BRM Wall-Buy",
+                    "description": "There are 5 blue pressure plates on the walls of the Undercroft. Wallrun over all 5 of them to create a BRM wall-buy above the workbench and to the left.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/220.jpg",
+                                "alt": "One of the pressure plates on the wall"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/221.jpg",
+                                "alt": "BRM wall-buy"
                             }
                         }
                     ]
@@ -1929,6 +2001,71 @@
                             "pic": {
                                 "src": "assets/29.jpg",
                                 "alt": "Music box location"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Dev Family Photo",
+                    "description": "This cannot be done if you start the game with the RK5 after completing the super easter egg. Playing an offline local game will allow you to play as normal with only the MR6.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Destroy barriers on round 2",
+                                "description": "After the game starts, allow the zombies to break down all the barriers. Advance to round 2 and stay on round 2 for the rest of the steps."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Repair with MR6",
+                                "description": "Don't buy any weapons yet. For each of the 5 barriers, repair exactly 2 boards."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/222.jpg",
+                                "alt": "Barrier with 2 boards"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Repair with RK5",
+                                "description": "Buy the RK5, then repair 2 more boards on each barrier."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/223.jpg",
+                                "alt": "Barrier with 4 boards"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "4. Repair with Sheiva",
+                                "description": "Trade out your RK5 for the Sheiva, then repair 1 more board on each barrier."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/224.jpg",
+                                "alt": "Barrier with 5 boards"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "5. RK5 and door",
+                                "description": "Trade out your Sheiva for the RK5 again, then quickly open the door on the bottom floor. There will be a dev's family photo outside the map."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/226.jpg",
+                                "alt": "Family photo in a heart frame"
                             }
                         }
                     ]

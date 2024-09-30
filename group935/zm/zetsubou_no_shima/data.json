@@ -3,8 +3,7 @@
     "subtext": "Black Ops III",
     "background": "assets/background.jpg",
     "rev": 2,
-    "wip": true,
-    "notice": "The main quest requires at least one player has the 'Anywhere But Here!' Gobblegum equipped.",
+    "notice": "The main quest requires at least one player with the 'Anywhere But Here!' Gobblegum equipped.",
     "maps": [
         {"img": "assets/1.jpg"},
         {"img": "assets/83.jpg"}
@@ -499,7 +498,7 @@
                             "full": true,
                             "step": {
                                 "title": "Growing",
-                                "description": "Each seed can be watered at most 3 times, and only once per round. The planter will glow if it's been watered this round. At the start of each round, each seed that was not previously watered and each seed that has been watered 3 times will grow into a plant. After the plant is used, a dead plant will remain in the planter for a few rounds before the planter can be used again."
+                                "description": "Each seed can be watered at most 3 times, and only once per round. The planter will glow if it's been watered this round. At the start of each round, each seed that was not previously watered and each seed that has been watered 3 times will grow into a plant. After the plant is used, a dead plant will remain in the planter before the planter can be used again."
                             }
                         },
                         {
@@ -593,7 +592,7 @@
                             "full": true,
                             "step": {
                                 "title": "Grabber plant",
-                                "description": "Made with 3 green water. It holds a zombie for a 5 minutes without killing it."
+                                "description": "Made with 3 green water. It holds a zombie for 5 minutes without killing it."
                             }
                         },
                         {
@@ -632,7 +631,7 @@
                 },
                 {
                     "header": "Upgrading Plants",
-                    "description": "Plants can be upgraded by shooting them with the KT-4 or Masamune each time you water it. Green particles will show the plant has been shot with the wonder weapon.",
+                    "description": "Plants can be upgraded by shooting them with the KT-4 or Masamune each time you water it. Green particles will show the plant has been shot with the wonder weapon. An upgraded reward plant will give better rewards, an upgraded killer plant will kill faster, an upgraded grabber plant will hold zombies for much longer, and an upgraded fruit plant will always give a free perk. The imprint plant cannot be upgraded.",
                     "elements": [
                         {
                             "pic": {
@@ -731,7 +730,7 @@
                             "full": true,
                             "step": {
                                 "title": "Part 1 (Blue Vial)",
-                                "description": "After all players complete all 3 of their trials, the trial area will randomly get hit by lightning. Hold your shield in the trial area until it gets hit, at which point it will be electrified for one use. Melee the cage controls in Lab B with the electric shield to open the cage. Then, one player must enter the cage to be lowered down. In solo, the cage will lower and raise automatically. In co-op, one player must use the control to lower and raise the cage for the other player. While lowered into the ground, interact on the blue vial in the skeleton to pick it up."
+                                "description": "After all players complete all 3 of their trials, the trial area will randomly get hit by lightning every few minutes. Hold your shield in the trial area until it gets hit, at which point it will be electrified for one use. Melee the cage controls in Lab B with the electric shield to open the cage. Then, one player must enter the cage to be lowered down. In solo, the cage will lower and raise automatically. In co-op, one player must use the control to lower and raise the cage for the other player. While lowered into the ground, interact on the blue vial in the skeleton to pick it up."
                             }
                         },
                         {
@@ -1058,7 +1057,7 @@
                             "full": true,
                             "step": {
                                 "title": "Electrify a shield",
-                                "description": "After all players complete all 3 of their trials, the trial area will randomly get hit by lightning. Hold your shield in the trial area until it gets hit, at which point it will be electrified for one use."
+                                "description": "After all players complete all 3 of their trials, the trial area will randomly get hit by lightning every few minutes. Hold your shield in the trial area until it gets hit, at which point it will be electrified for one use."
                             }
                         },
                         {
@@ -1070,14 +1069,14 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "",
-                                "description": ""
+                                "title": "Uses",
+                                "description": "The electrified shield is required for several other steps. It can also be used to melee Perk Machines and Gobblegum Machines to reduce the price by half, for one use."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/178.jpg",
+                                "alt": "Electrified Perk Machine"
                             }
                         }
                     ]
@@ -1291,7 +1290,7 @@
                             "full": true,
                             "step": {
                                 "title": "Electrify a shield",
-                                "description": "After all players complete all 3 of their trials, the trial area will randomly get hit by lightning. Hold your shield in the trial area until it gets hit, at which point it will be electrified for one use."
+                                "description": "After all players complete all 3 of their trials, the trial area will randomly get hit by lightning every few minutes. Hold your shield in the trial area until it gets hit, at which point it will be electrified for one use."
                             }
                         },
                         {
@@ -1530,7 +1529,7 @@
                         {
                             "pic": {
                                 "src": "assets/147.jpg",
-                                "alt": "Shooting roots with the Masamune"
+                                "alt": "Shooting vines with the Masamune"
                             }
                         },
                         {
@@ -1687,13 +1686,49 @@
                     ]
                 },
                 {
-                    "header": "Jumpscare",
-                    "description": "",
+                    "header": "Samantha's Lullaby",
+                    "description": "To the left of the purple water source, there are 6 yellow plant bulbs, and a 7th yellow plant at the end. Use a bucket to fill the 6 bulbs in the correct pattern, then interact on the rightmost yellow plant to play the song. If done correctly, the full song will continue playing after the bulbs play their notes. From left to right, fill them: 1, 3, 5, 6, 7, 5.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/177_edit.jpg",
+                                "alt": "The 6 bulbs and the plant to interact"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Hallucinations",
+                    "description": "These can be triggered in a few places around the map, including both Labs and the Specimen Room. Stand within the spore gas for the full duration of the spore, and repeat for at least 3 spores. The next time you enter one of the possible rooms, hallucinations will change the appearance of the room. This can be done once per round.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/180.jpg",
+                                "alt": "Coughing in spore gas without a Gas Mask"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/181.jpg",
+                                "alt": "Hallucination in the Specimen Room"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Jumpscare",
+                    "description": "This requires 2 or more players in the game. Go to the Specimen Room of the Bunker with the vats containing bodies. Aim down a sniper scope at the last vat on the right, and move the scope around to try to aim at the exact center of the vat. Then, spin around so the doppelganger can spawn. Walking up to the doppelganger will trigger the jumpscare.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/182.jpg",
+                                "alt": "Standing back a little from the vat"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/183.jpg",
+                                "alt": "Roughly where to aim"
                             }
                         }
                     ]

@@ -92,19 +92,19 @@
                         {
                             "pic": {
                                 "src": "assets/13.jpg",
-                                "alt": "Location 1 - In a hole in the wall beneath Teleporter A"
+                                "alt": "Location 1 - in a hole in the wall beneath Teleporter A"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/14.jpg",
-                                "alt": "Location 2 - In a large vat near Teleporter B"
+                                "alt": "Location 2 - in a large vat near Teleporter B"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/15.jpg",
-                                "alt": "Location 3 - On a balcony above the power switch"
+                                "alt": "Location 3 - on a balcony above the power switch"
                             }
                         }
                     ]
@@ -133,19 +133,19 @@
                         {
                             "pic": {
                                 "src": "assets/6.jpg",
-                                "alt": "Location 1 - Outside Teleporter A, on a desk"
+                                "alt": "Location 1 - outside Teleporter A, on a desk"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/7.jpg",
-                                "alt": "Location 2 - Outside Teleporter A, on a shelf"
+                                "alt": "Location 2 - outside Teleporter A, on a shelf"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/8.jpg",
-                                "alt": "Location 3 - In the side room from Teleporter B, on a desk"
+                                "alt": "Location 3 - in the side room from Teleporter B, on a desk"
                             }
                         }
                     ]
