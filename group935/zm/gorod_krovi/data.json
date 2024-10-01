@@ -1344,6 +1344,30 @@
                             }
                         }
                     ]
+                },
+                {
+                    "header": "Ace of Spades Boss Fight",
+                    "description": "While fighting Nikolai, 3 speakers will appear that play the Soviet anthem. Shooting all 3 speakers before the song ends will turn on Ace of Spades.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/179_edit.jpg",
+                                "alt": "Location 1 - on the left side"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/178_edit.jpg",
+                                "alt": "Location 2 - on the right side"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/180_edit.jpg",
+                                "alt": "Location 3 - straight back"
+                            }
+                        }
+                    ]
                 }
             ]
         },
