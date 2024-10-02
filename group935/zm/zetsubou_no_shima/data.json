@@ -5,8 +5,8 @@
     "rev": 2,
     "notice": "The main quest requires at least one player with the 'Anywhere But Here!' Gobblegum equipped.",
     "maps": [
-        {"img": "assets/1.jpg"},
-        {"img": "assets/83.jpg"}
+        {"img": "assets/map1.png"},
+        {"img": "assets/map2.png"}
     ],
     "sections" : [
         {

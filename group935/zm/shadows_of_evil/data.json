@@ -5,90 +5,395 @@
     "rev": 2,
     "wip": true,
     "notice": "The main quest requires 4 players.",
+    "maps": [
+        {"img": "assets/map1.png"},
+        {"img": "assets/map2.png"}
+    ],
     "sections" : [
         {
             "header": "Map Features",
             "subsections": [
                 {
+                    "header": "Beast Mode",
+                    "description": "Interact on a Beast Mode pedestal to temporarily turn into the Beast. In the mode, you can melee, shock, and grapple. You can only turn into the Beast once per round, and each pedestal can also only be used once per round. This is required to power Perk Machines and open certain parts of the map.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/6.jpg",
+                                "alt": "Pedestal to enter Beast Mode"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/43.jpg",
+                                "alt": "Power panel to shock"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/42.jpg",
+                                "alt": "Wooden door to melee"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/46.jpg",
+                                "alt": "Eagle head to grapple to"
+                            }
+                        }
+                    ]
+                },
+                {
                     "header": "Pack-a-Punch",
-                    "description": "",
                     "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Aquire the Summoning Key",
+                                "description": "Use Beast Mode to melee a box in the spawn area containing the Summoning Key."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/44.jpg",
+                                "alt": "Crate to melee"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/9.jpg",
+                                "alt": "Summoning Key"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Perform 4 Rituals",
+                                "description": "The rituals can be done in any order. Each ritual requires getting an artifact and opening the ritual room, both of which require Beast Mode. After exiting Beast Mode, pick up the artifact and bring it to the ritual room. Interact to place the artifact, then interact again to start the ritual. The ritual will last a short time, and killing the Keepers is optional. After the ritual is finished, collect the Gateworm from the table where the ritual was started."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/12.jpg",
+                                "alt": "Gateworm"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Nero Blackstone's Ritual (Junction)",
+                                "description": "In Beast Mode, shock the power panel on the crane to drop the artifact. Then, grapple to a balcony above Easy Street, run through the building to the stairs behind Easy Street, and shock the power panel to unlock the stairs."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/45.jpg",
+                                "alt": "Power panel to shock"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/46.jpg",
+                                "alt": "Eagle head to grapple to"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/72.jpg",
+                                "alt": "Power panel to shock"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/10.jpg",
+                                "alt": "Pen artifact"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/11.jpg",
+                                "alt": "Ritual location (Nero's Apartment)"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Jack Vincent's Ritual (Canal District)",
+                                "description": "In Beast Mode, melee a crate at the start of the canal and shock a power panel at the end of the canal. Then, grapple to a balcony on the Ruby Rabbit, run to the bottom floor, and shock the power panel to unlock the stairs."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/53.jpg",
+                                "alt": "Crate to melee"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/54.jpg",
+                                "alt": "Power panel to shock"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/75.jpg",
+                                "alt": "Eagle head to grapple to"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/55.jpg",
+                                "alt": "Power panel to shock"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/56.jpg",
+                                "alt": "Badge artifact"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/57.jpg",
+                                "alt": "Ritual location (Ruby Rabbit)"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Jessica Rose's Ritual (Footlight District)",
+                                "description": "In Beast Mode, jump to a ledge near the Perk Machine and melee a crate. Then, grapple to The Black Lace Burlesque building and shock the power panel to unlock the door."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/52.jpg",
+                                "alt": "Crate to melee"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/74.jpg",
+                                "alt": "Eagle head to grapple to"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/47.jpg",
+                                "alt": "Power panel to shock"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/64.jpg",
+                                "alt": "Hairpiece artifact"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/22.jpg",
+                                "alt": "Ritual location (The Black Lace Burlesque)"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Floyd Campbell's Ritual (Waterfront District)",
+                                "description": "In Beast Mode, grapple to a balcony and melee a crate. Then, run down to the water and melee the door to The Anvil."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/73.jpg",
+                                "alt": "Eagle head to grapple to"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/50.jpg",
+                                "alt": "Crate to melee"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/51.jpg",
+                                "alt": "Door to melee"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/20.jpg",
+                                "alt": "Belt artifact"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/21.jpg",
+                                "alt": "Ritual location (The Anvil)"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Teleport to the Subway Station",
+                                "description": "There are 3 wooden doors that can be meleed while in Beast Mode that lead to rifts (one in each district). Interact on a rift to spawn the portal, then use it to enter the Subway Station. You are only required to open one rift, but the others can be opened too. Inside the Subway Station, you can use Beast Mode to shock a power panel to open the stairs leading up to the Junction."
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Location 1 - Canal District, in the canal"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 2 - Footlight District, to the right when going from the city to the Junction"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 3 - Waterfront District, to the left when going from the Train Station to the Junction"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/16.jpg",
+                                "alt": "Rift to interact"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/17.jpg",
+                                "alt": "Portal to the Subway Station"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Power panel to open the door to the Junction"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Unlock Pack-a-Punch",
+                                "description": "After all 4 Gateworms are collected, go to the Subway Station and a wall will vanish when you approach it. Place the 4 Gateworms on pedestals, then place the Summoning Key on the table at the entrance. After placing the first 2 Gateworms, walls will appear that you can wallrun on to get to the other side. Survive the ritual to unlock Pack-a-Punch."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/58.jpg",
+                                "alt": "Wall to walk up to"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/59.jpg",
+                                "alt": "One of the Gateworm pedestals"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/60.jpg",
+                                "alt": "Table to place the Summoning Key"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/61.jpg",
+                                "alt": "Pack-a-Punch"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Fumigators & Pods (TODO)",
-                    "description": "",
+                    "header": "Fumigators & Pods",
+                    "description": "Plant pods will grow all around the map that can be fumigated to get a reward. Each player must collect a fumigator from around the map before collecting the rewards. The pods will start green and eventually turn red and then purple, after several rounds. The rewards are better for fumigating a higher level pod.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/2.jpg",
+                                "alt": "Fumigator location 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/1.jpg",
+                                "alt": "Green pod"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/8.jpg",
+                                "alt": "Red pod"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/7.jpg",
+                                "alt": "Purple pod"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Tram (TODO)",
-                    "description": "",
+                    "header": "Train",
+                    "description": "The train can move between the 3 districts and can be purchased for 500 points.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/76.jpg",
+                                "alt": "Green button to activate train and lever to change destination"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Perk Machines",
-                    "description": "(TODO: power, light colors)",
+                    "description": "Juggernog, Speed Cola, and Double Tap Root Beer will be randomized between the 3 districts. Next to each door that leads to a district, there is a box with a glowing bottle that represents which Perk Machine is in that district.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Quick Revive - TODO"
+                                "src": "assets/13.jpg",
+                                "alt": "Quick Revive - on Easy Street"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Double Tap Root Beer - TODO"
+                                "src": "assets/14.jpg",
+                                "alt": "Stamin-Up - in the Junction"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Mule Kick - TODO"
+                                "src": "assets/26.jpg",
+                                "alt": "Juggernog - in one of the 3 districts"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Speed Cola - TODO"
+                                "src": "assets/15.jpg",
+                                "alt": "Speed Cola - in one of the 3 districts"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Widow's Wine - TODO"
+                                "src": "assets/18.jpg",
+                                "alt": "Double Tap Root Beer - in one of the 3 districts"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Stamin-Up - TODO"
+                                "src": "assets/24.jpg",
+                                "alt": "Widow's Wine - in the Subway Station"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Juggernog - TODO"
+                                "src": "assets/23.jpg",
+                                "alt": "Mule Kick - on the stairs going from the Junction to the Subway Station"
                             }
                         }
                     ]
@@ -98,38 +403,20 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "src": "assets/33.jpg",
+                                "alt": "Location 1 - Canal District, at the bottom of the stairs that lead to the Train Station"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "src": "assets/25.jpg",
+                                "alt": "Location 2 - Footlight District, on the bridge between the Train Station and the Perk Machine"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "header": "Beast Mode (TODO)",
-            "description": "",
-            "subsections": [
-                {
-                    "header": "",
-                    "description": "",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/35.jpg",
+                                "alt": "Location 3 - Waterfront District, towards the ritual room from the Train Station by a Beat Mode pedestal"
                             }
                         }
                     ]
@@ -138,15 +425,15 @@
         },
         {
             "header": "Rocket Shield",
-            "description": "Collect 3 parts and craft at a workbench (TODO).",
+            "description": "Collect 3 parts and craft at a workbench.",
             "subsections": [
                 {
-                    "header": "Part 1 (TODO)",
-                    "description": "Located at TODO (3 possible locations).",
+                    "header": "Part 1 (Shield Window)",
+                    "description": "Located in Footlight District (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/29.jpg",
                                 "alt": "Location 1 - TODO"
                             }
                         },
@@ -165,12 +452,12 @@
                     ]
                 },
                 {
-                    "header": "Part 2 (TODO)",
-                    "description": "Located in TODO (3 possible locations).",
+                    "header": "Part 2 (Eagle)",
+                    "description": "Located in Canal District (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/27.jpg",
                                 "alt": "Location 1 - TODO"
                             }
                         },
@@ -189,12 +476,12 @@
                     ]
                 },
                 {
-                    "header": "Part 3 (TODO)",
-                    "description": "Located in TODO (3 possible locations).",
+                    "header": "Part 3 (Fuel Canisters)",
+                    "description": "Located in Waterfront District (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/31.jpg",
                                 "alt": "Location 1 - TODO"
                             }
                         },
@@ -214,12 +501,12 @@
                 },
                 {
                     "header": "Craft Shield",
-                    "description": "Build at one of the TODO workbenches. Each player can equip the shield.",
+                    "description": "Build at one of the 3 workbenches. Each player can equip the shield.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "One possible build location, in TODO"
+                                "src": "assets/34.jpg",
+                                "alt": "One possible build location, in Canal District"
                             }
                         }
                     ]
@@ -228,10 +515,10 @@
         },
         {
             "header": "Civil Protector",
-            "description": "Collect 3 TODOs and build TODO. Summon the Civil Protector for 5000(TODO) points.",
+            "description": "Collect 3 fuses and place them in the Subway Station. Summon the Civil Protector at 1 of 4 locations around the map.",
             "subsections": [
                 {
-                    "header": "Part 1 (TODO)",
+                    "header": "Fuse 1",
                     "description": "Located in TODO (3 possible locations).",
                     "elements": [
                         {
@@ -255,8 +542,8 @@
                     ]
                 },
                 {
-                    "header": "Part 2 (TODO)",
-                    "description": "Located near TODO (3 possible locations).",
+                    "header": "Fuse 2",
+                    "description": "Located in TODO (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
@@ -279,8 +566,8 @@
                     ]
                 },
                 {
-                    "header": "Part 3 (TODO)",
-                    "description": "Located near TODO (3 possible locations).",
+                    "header": "Fuse 3",
+                    "description": "Located in TODO (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
@@ -303,31 +590,43 @@
                     ]
                 },
                 {
-                    "header": "Build at TODO",
-                    "description": "The Civil Protector can be summmoned at any location after building it anywhere (TODO).",
+                    "header": "Place Fuses",
+                    "description": "Place the fuses in the Emergency Response Master Switch in the Subway Station.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "src": "assets/36.jpg",
+                                "alt": "All 3 fuses placed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Summon Civil Protector",
+                    "description": "Summon at any of the 4 locations around the map for 2000 points.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/37.jpg",
+                                "alt": "Location 1 - the Junction"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "src": "assets/41.jpg",
+                                "alt": "Location 2 - Canal District"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/40.jpg",
+                                "alt": "Location 3 - Footlight District"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 4 - TODO"
+                                "src": "assets/39.jpg",
+                                "alt": "Location 4 - Waterfront District"
                             }
                         }
                     ]
@@ -335,12 +634,36 @@
             ]
         },
         {
-            "header": "Swords (TODO)",
-            "description": "",
+            "header": "Apothicon Servant",
+            "description": "Collect 3 parts and craft at a workbench.",
             "subsections": [
                 {
-                    "header": "",
-                    "description": "",
+                    "header": "Part 1 (Margwa Heart)",
+                    "description": "Drops after killing a Margwa.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/48.jpg",
+                                "alt": "Margwa Heart"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Part 2 (Xenomatter)",
+                    "description": "Sometimes drops when killing a Parasite or Meatball (Insanity Elemental).",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/49.jpg",
+                                "alt": "Xenomatter"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Part 3 (TODO)",
+                    "description": "Random reward from fumigating a purple pod.",
                     "elements": [
                         {
                             "pic": {
@@ -349,11 +672,23 @@
                             }
                         }
                     ]
+                },
+                {
+                    "header": "Craft Apothicon Servant",
+                    "description": "Build at one of the 3 workbenches. Only 1 player can pick up the Apothicon Servant.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "One possible build location, in Footlight District"
+                            }
+                        }
+                    ]
                 }
             ]
         },
         {
-            "header": "Apothicon Servant (TODO)",
+            "header": "Swords (TODO)",
             "description": "",
             "subsections": [
                 {
@@ -403,25 +738,55 @@
             "header": "Songs",
             "subsections": [
                 {
-                    "header": "",
-                    "description": "Interact with 3 TODOs.",
+                    "header": "Snakeskin Boots",
+                    "description": "Interact with 3 wooden radios.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "src": "assets/67.jpg",
+                                "alt": "Location 1 - Canal District, on a table through the entrance of the Ruby Rabbit and to the left"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "src": "assets/65.jpg",
+                                "alt": "Location 2 - Footlight District, on a bench in the Train Station"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/66.jpg",
+                                "alt": "Location 3 - Waterfront District, upstairs in The Anvil"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Cold Hard Cash",
+                    "description": "Interact to pick up 3 objects, then interact on the microphone on the stage in The Black Lace Burlesque.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/69.jpg",
+                                "alt": "Object 1 (Microphone stand) - in Nero's Apartment, to the left of the knife target"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/68.jpg",
+                                "alt": "Object 2 (Wire) - Canal District, under the stairs in the canal that lead up towards the Ruby Rabbit"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/70.jpg",
+                                "alt": "Object 3 (Microphone) - in the Subway Station, on the ground by a bench near the portal to Waterfront District"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/71.jpg",
+                                "alt": "Microphone to start song"
                             }
                         }
                     ]
