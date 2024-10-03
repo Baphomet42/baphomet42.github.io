@@ -68,7 +68,7 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "Perform 4 Rituals",
+                                "title": "Sacrifice Rituals",
                                 "description": "The rituals can be done in any order. Each ritual requires getting an artifact and opening the ritual room, both of which require Beast Mode. After exiting Beast Mode, pick up the artifact and bring it to the ritual room. Interact to place the artifact, then interact again to start the ritual. The ritual will last a short time, and killing the Keepers is optional. After the ritual is finished, collect the Gateworm from the table where the ritual was started."
                             }
                         },
@@ -241,19 +241,19 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/130.jpg",
                                 "alt": "Location 1 - Canal District, in the canal"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/131.jpg",
                                 "alt": "Location 2 - Footlight District, to the right when going from the city to the Junction"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/132.jpg",
                                 "alt": "Location 3 - Waterfront District, to the left when going from the Train Station to the Junction"
                             }
                         },
@@ -271,7 +271,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/84.jpg",
                                 "alt": "Power panel to open the door to the Junction"
                             }
                         },
@@ -310,12 +310,12 @@
                 },
                 {
                     "header": "Fumigators & Pods",
-                    "description": "Plant pods will grow all around the map that can be fumigated to get a reward. Each player must collect a fumigator from around the map before collecting the rewards. The pods will start green and eventually turn red and then purple, after several rounds. The rewards are better for fumigating a higher level pod.",
+                    "description": "Plant pods will grow all around the map that can be harvested to get a reward. Each player must collect a Fumigator from around the map before collecting the rewards. Fumigators can spawn around the whole map, but one will always spawn somewhere on Easy Street. The pods will start green and eventually turn red and then purple, after several rounds. The rewards are better for harvesting a higher level pod.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/2.jpg",
-                                "alt": "Fumigator location 1 - TODO"
+                                "alt": "Possible Fumigator location on Easy Street"
                             }
                         },
                         {
@@ -340,7 +340,7 @@
                 },
                 {
                     "header": "Train",
-                    "description": "The train can move between the 3 districts and can be purchased for 500 points.",
+                    "description": "The train can move between the 3 districts and can be purchased for 500 points. The starting district is randomized each game, but it can be seen moving at the start of the game after opening the first door.",
                     "elements": [
                         {
                             "pic": {
@@ -433,20 +433,20 @@
                     "elements": [
                         {
                             "pic": {
+                                "src": "assets/80.jpg",
+                                "alt": "Location 1 - across from the Perk Machine"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/133.jpg",
+                                "alt": "Location 2 - to the left of the Perk Machine"
+                            }
+                        },
+                        {
+                            "pic": {
                                 "src": "assets/29.jpg",
-                                "alt": "Location 1 - TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "alt": "Location 3 - in the room just past the Perk Machine"
                             }
                         }
                     ]
@@ -458,19 +458,19 @@
                         {
                             "pic": {
                                 "src": "assets/27.jpg",
-                                "alt": "Location 1 - TODO"
+                                "alt": "Location 1 - up the stairs from the Junction"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "src": "assets/83.jpg",
+                                "alt": "Location 2 - on the bridge from the Perk Machine to the Junction"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/135.jpg",
+                                "alt": "Location 3 - by the Perk Machine"
                             }
                         }
                     ]
@@ -481,20 +481,20 @@
                     "elements": [
                         {
                             "pic": {
+                                "src": "assets/139.jpg",
+                                "alt": "Location 1 - up the stairs towards the Perk Machine"
+                            }
+                        },
+                        {
+                            "pic": {
                                 "src": "assets/31.jpg",
-                                "alt": "Location 1 - TODO"
+                                "alt": "Location 2 - to the right of the Perk Machine"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/136.jpg",
+                                "alt": "Location 3 - by the door going from the Perk Machine to the Train Station"
                             }
                         }
                     ]
@@ -519,72 +519,72 @@
             "subsections": [
                 {
                     "header": "Fuse 1",
-                    "description": "Located in TODO (3 possible locations).",
+                    "description": "Located in Waterfront District (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "src": "assets/19.jpg",
+                                "alt": "Location 1 - on a barrel between the Perk Machine and the Train Station"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "src": "assets/138.jpg",
+                                "alt": "Location 2 - on the railing up by the Train Station"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/81.jpg",
+                                "alt": "Location 3 - on a box just outside the Train Station"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Fuse 2",
-                    "description": "Located in TODO (3 possible locations).",
+                    "description": "Located in Canal District (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "src": "assets/82.jpg",
+                                "alt": "Location 1 - on a box on the bridge from the Perk Machine to the Train Station"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "src": "assets/28.jpg",
+                                "alt": "Location 2 - on a cart on the bridge from the Perk Machine to the Train Station"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/134.jpg",
+                                "alt": "Location 3 - on the railing on the bridge from the Perk Machine to the Train Station"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Fuse 3",
-                    "description": "Located in TODO (3 possible locations).",
+                    "description": "Located in Footlight District (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "src": "assets/79.jpg",
+                                "alt": "Location 1 - on a barrel from the Perk Machine to the Train Station"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "src": "assets/30.jpg",
+                                "alt": "Location 2 - on the bridge from the Perk Machine to the Train Station"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/137.jpg",
+                                "alt": "Location 3 - on the ground outside the Train Station going towards the Perk Machine"
                             }
                         }
                     ]
@@ -662,13 +662,13 @@
                     ]
                 },
                 {
-                    "header": "Part 3 (TODO)",
-                    "description": "Random reward from fumigating a purple pod.",
+                    "header": "Part 3 (Margwa Tentacle)",
+                    "description": "Random reward from harvesting a purple pod.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/115.jpg",
+                                "alt": "Margwa Tentacle"
                             }
                         }
                     ]
@@ -679,7 +679,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/101.jpg",
                                 "alt": "One possible build location, in Footlight District"
                             }
                         }
@@ -688,17 +688,176 @@
             ]
         },
         {
-            "header": "Swords (TODO)",
-            "description": "",
+            "header": "Swords and Upgrades (Special Weapon)",
             "subsections": [
                 {
-                    "header": "",
-                    "description": "",
+                    "header": "Apothicon Swords (Starter Sword)",
                     "elements": [
                         {
+                            "full": true,
+                            "step": {
+                                "title": "1. Open the sword statue room",
+                                "description": "Take the train through each district to find the 3 hidden groups of symbols. The symbol groups will be through building windows at eye height while riding the train, and they are randomized each game. Then, enter Beast Mode in the Subway Station and shock the 3 matching groups of symbols on the wall across from the PaP room. If done correctly, the wall will open up. If you enter the wrong symbols, you must wait until the next round to try again."
+                            }
+                        },
+                        {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/102.jpg",
+                                "alt": "Canal District window, looking left after leaving the station"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/104.jpg",
+                                "alt": "Footlight District window, looking left after leaving the station"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/103.jpg",
+                                "alt": "Waterfront District window, looking right after leaving the station"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/62.jpg",
+                                "alt": "Wall with symbols (only seen in Beast Mode)"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Feed souls to the eggs",
+                                "description": "Each player must pick up an egg from the sword statue and place it on egg holder statues around the map. Each player must place the egg on all 4 egg holder statues and kill enough zombies around it until it can be picked up again. All 4 egg holder statues are inside wooden crates that must be meleed in Beast Mode to open."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/85.jpg",
+                                "alt": "Location to get egg"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/63.jpg",
+                                "alt": "Wooden crate to melee"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/86.jpg",
+                                "alt": "Statue in the Subway Station"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/87.jpg",
+                                "alt": "Statue in Canal District"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/88.jpg",
+                                "alt": "Statue in Footlight District"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/89.jpg",
+                                "alt": "Statue in Waterfront District"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/90.jpg",
+                                "alt": "Egg placed on a statue"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/91.jpg",
+                                "alt": "Glowing egg after getting enough souls at this location"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Return egg",
+                                "description": "After collecting souls at all 4 statues, return your egg to the sword statue in the Subway Station. Then, interact again to pick up your sword."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/92.jpg",
+                                "alt": "Location to get sword"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Keeper Swords (Upgraded Sword)",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Aquire a new egg",
+                                "description": "Each player must pick up an egg from a Keeper ghost in their own ritual room. Nero Blackstone's room is in his apartment in the Junction. Jack Vincent's room is in the Ruby Rabbit in Canal District. Jessica Rose's room is in The Black Lace Burlesque in Footlight District. Floyd Campbell's room is in The Anvil in Waterfront District."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/93.jpg",
+                                "alt": "Keeper ghost offering an egg for Nero"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Kill Margwas",
+                                "description": "There are 4 red circles around the map, and each player must place their egg in all 4 circles. Each player can only do this once per round, and no one else can do this while someone else has an active circle. After activating a circle, Margwas will spawn and target the player who activated it. After killing the Margwas, the circle will dim and your egg will be automatically returned."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/94.jpg",
+                                "alt": "Location 1 - the Junction"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/97.jpg",
+                                "alt": "Location 2 - Canal District"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/96.jpg",
+                                "alt": "Location 3 - Footlight District"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/95.jpg",
+                                "alt": "Location 4 - Waterfront District"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/98.jpg",
+                                "alt": "Active circle"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Retrieve upgraded sword",
+                                "description": "After finishing your 4 circles, return to your Keeper ghost and interact to return the egg. Interact again to pick up the upgraded sword."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/99.jpg",
+                                "alt": "Upgraded sword"
                             }
                         }
                     ]
@@ -715,19 +874,195 @@
                             "full": true,
                             "bullets": [
                                 "4 players in the lobby",
-                                ""
+                                "Upgraded sword for each player"
                             ]
                         }
                     ]
                 },
                 {
-                    "header": "1. ",
-                    "description": "",
+                    "header": "1. Interact on the Book",
+                    "description": "After all players get the upgraded sword, a book can be interacted on the floor in Nero's Apartment.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/100.jpg",
+                                "alt": "Book to interact"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/108.jpg",
+                                "alt": "Floating book after interacting"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Defend the Flags",
+                    "description": "After interacting on the book, a Keeper flag will appear in the Subway Station. One player must pick up the flag and place it on an electric spot on the map. There are 8 spots to place the flag, and they can be done in any order. After placing the flag, defend it from Meatballs, Parasites, and the Shadowman. The Shadowman will randomly appear floating near the flag, and will usually destroy the flag in one shot. If the flag breaks, you can pick up a new one in the Subway Station. If you successfully defend the flag, it will make a sound and can be picked up. After picking it back up, you must place it on one of the other electric spots and defend it again. There will now be large glowing symbols on the ground that must be avoided too. If you successfully defend it the second time, pick it up and deliver it to a Keeper ghost in one of the 4 ritual rooms. This must be done 4 times in total, one for each Keeper ghost and ritual room. Each time you deliver a flag, the 2 spots you defended the flag at will no longer be there, and you must wait a round before the flag can be picked up again in the Subway Station.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/109.jpg",
+                                "alt": "Flag spawn location, in the Subway Station"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/111.jpg",
+                                "alt": "Flag placed in a defend location"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/112.jpg",
+                                "alt": "Shadowman winding up an attack"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/114.jpg",
+                                "alt": "Flag brought to one of the 4 Keeper ghosts"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/110.jpg",
+                                "alt": "Defend location 1 - up the stairs from the Subway Station"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/113.jpg",
+                                "alt": "Defend location 2 - near the entrance to Footlight District"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/116.jpg",
+                                "alt": "Defend location 3 - near the entrance to Waterfront District"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/118.jpg",
+                                "alt": "Defend location 4 - in the Junction, just outside Easy Street"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/117.jpg",
+                                "alt": "Defend location 5 - by the portal to Waterfront District"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/119.jpg",
+                                "alt": "Defend location 6 - by the stairs to the Train Station in Waterfront District"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/120.jpg",
+                                "alt": "Defend location 7 - near the entrance to Canal District"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/121.jpg",
+                                "alt": "Defend location 8 - across the canal from the Ruby Rabbit in Canal District"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Boss Fight",
+                    "description": "You cannot leave the boss fight until it's done. Make sure you have perks, a full shield, strong weapons, and any gobblegum you want to bring.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Start the fight",
+                                "description": "All 4 players must give their Keeper Sword to one of the 4 Keepers in the Pack-a-Punch room."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/122.jpg",
+                                "alt": "Keeper to give sword to"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Shoot the Shadowman",
+                                "description": "After giving the 4 swords to the Keepers, they will temporarily disable the Shadowman's shield. Shoot the Shadowman to deal damage, and he will teleport around the arena as he takes damage."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/124.jpg",
+                                "alt": "Shadowman without a shield"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Disable the Shield",
+                                "description": "After a time, the Shadowman will regain his shield and return to the center of the arena. Interact on the Keepers to disable his shield again. Repeat whenever the shield comes back."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/123.jpg",
+                                "alt": "Keepers disabling the shield"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Trap the Shadowman",
+                                "description": "After dealing enough damage, the Shadowman will teleport back above the ritual table. While he's hovering over the table, one player must interact on the table to trap the Shadowman in the Summoning Key."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/125.jpg",
+                                "alt": "Trapping the Shadowman"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "4. Toxic Map",
+                    "description": "The final 2 steps require 4 players in the game. The map will slowly start to kill you, and you must keep running into the glowing white symbols to refresh your health. Each time a Margwa is killed, one of the Beast Mode pedestals will be enabled. Entering Beast Mode will allow you to stay for much longer."
+                },
+                {
+                    "header": "5. Defeat the Apothicon",
+                    "description": "Each of the 3 Train Stations have a box that must be shocked in Beast Mode to electrify the rail. The rail will only be powered a short time before needing to be shocked again. One player should wait in Beast Mode in the Junction, two players should be in Beast Mode ready to shock the boxes, and the last player should be near the other Train Station and not in Beast Mode. The player not in Beast Mode should call the train to their location, then quickly enter Beast Mode. Then, the 3 players by the Train Stations should shock the boxes so all 3 rails are electrified at the same time, while the train is still moving, and before the train passes through the Junction. As soon as the train passes through the Junction, if all 3 rails are electrified, the player standing in the Junction must shock the 3 Keepers under the circle of the rail track. If done correctly, the cutscene will play and the quest is finished.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/126.jpg",
+                                "alt": "Canal District box to shock"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/127.jpg",
+                                "alt": "Footlight District box to shock"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/128.jpg",
+                                "alt": "Waterfront District box to shock"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/129.jpg",
+                                "alt": "Location where the 3 Keepers will be that must be shocked"
                             }
                         }
                     ]
@@ -739,7 +1074,7 @@
             "subsections": [
                 {
                     "header": "Snakeskin Boots",
-                    "description": "Interact with 3 wooden radios.",
+                    "description": "Interact with 3 wooden radios. To play the instrumental version instead, interact on the first radio twice and the other two radios once.",
                     "elements": [
                         {
                             "pic": {
@@ -796,6 +1131,42 @@
         {
             "header": "Side Easter Eggs",
             "subsections": [
+                {
+                    "header": "Skipping Rounds",
+                    "description": "Just after starting the game, you can shoot the Shadowman to skip rounds. The first skip goes to round 5 with 1500 points. The next skip is round 10 with 5500 points. The final skip is round 15 with 16500 points.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/140.jpg",
+                                "alt": "The Shadowman"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Jumpscare",
+                    "description": "Pack-a-Punch must be unlocked first. Go to Waterfront District and look out to the water and to the left. Using a sniper, aim down the sniper scope to a window.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/106.jpg",
+                                "alt": "Location to stand"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/107.jpg",
+                                "alt": "Window to aim at"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/141.jpg",
+                                "alt": "Jumpscare"
+                            }
+                        }
+                    ]
+                },
                 {
                     "header": "",
                     "description": "",
