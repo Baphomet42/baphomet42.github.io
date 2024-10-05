@@ -45,7 +45,7 @@
             "year": 2015,
             "img": "https://i2.wp.com/www.inforumatik.com/wp-content/uploads/2015/07/Call-Of-Duty-Black-Ops-3-01.png?fit=256%2C256&ssl=1",
             "maps": [
-                {"name": "Shadows of Evil", "link": "/group935/zm/shadows_of_evil", "wip": true, "img": "https://static.wikia.nocookie.net/callofduty/images/1/14/Shadows_of_Evil_Menu_Selection_BO3.png"},
+                {"name": "Shadows of Evil", "link": "/group935/zm/shadows_of_evil", "img": "https://static.wikia.nocookie.net/callofduty/images/1/14/Shadows_of_Evil_Menu_Selection_BO3.png"},
                 {"name": "The Giant", "link": "/group935/zm/the_giant", "img": "https://static.wikia.nocookie.net/callofduty/images/4/4d/The_Giant_Menu_Selection_BO3.png"},
                 {"name": "Der Eisendrache", "link": "/group935/zm/der_eisendrache", "img": "https://static.wikia.nocookie.net/callofduty/images/e/e4/Der_Eisendrache_Menu_Selection_BO3.png"},
                 {"name": "Zetsubou No Shima", "link": "/group935/zm/zetsubou_no_shima", "img": "https://static.wikia.nocookie.net/callofduty/images/0/06/Zetsubou_No_Shima_Menu_Selection_BO3.png"},

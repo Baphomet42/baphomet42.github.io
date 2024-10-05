@@ -3,7 +3,6 @@
     "subtext": "Black Ops III",
     "background": "https://callofdutymaps.com/wp-content/uploads/shadowsofevil32.jpg",
     "rev": 2,
-    "wip": true,
     "notice": "The main quest requires 4 players.",
     "maps": [
         {"img": "assets/map1.png"},
@@ -236,7 +235,7 @@
                             "full": true,
                             "step": {
                                 "title": "Teleport to the Subway Station",
-                                "description": "There are 3 wooden doors that can be meleed while in Beast Mode that lead to rifts (one in each district). Interact on a rift to spawn the portal, then use it to enter the Subway Station. You are only required to open one rift, but the others can be opened too. Inside the Subway Station, you can use Beast Mode to shock a power panel to open the stairs leading up to the Junction."
+                                "description": "There are 3 wooden doors that can be meleed while in Beast Mode (one in each district). Each door leads to a different rift. Interact on a rift to spawn the portal, then use it to enter the Subway Station. You are only required to open one rift, but the others can be opened too. Inside the Subway Station, you can use Beast Mode to shock a power panel to open the stairs leading up to the Junction."
                             }
                         },
                         {
@@ -352,7 +351,7 @@
                 },
                 {
                     "header": "Perk Machines",
-                    "description": "Juggernog, Speed Cola, and Double Tap Root Beer will be randomized between the 3 districts. Next to each door that leads to a district, there is a box with a glowing bottle that represents which Perk Machine is in that district.",
+                    "description": "Juggernog, Speed Cola, and Double Tap Root Beer will be randomized between the 3 districts. Next to each door that leads to a district, there is a box with a glowing bottle that represents which Perk Machine is in that district. Every Perk Machine has a power panel next to it that must be shocked in Beast Mode before the machine can be used.",
                     "elements": [
                         {
                             "pic": {
@@ -728,7 +727,7 @@
                             "full": true,
                             "step": {
                                 "title": "2. Feed souls to the eggs",
-                                "description": "Each player must pick up an egg from the sword statue and place it on egg holder statues around the map. Each player must place the egg on all 4 egg holder statues and kill enough zombies around it until it can be picked up again. All 4 egg holder statues are inside wooden crates that must be meleed in Beast Mode to open."
+                                "description": "Each player must pick up an Apothicon Egg from the sword statue and place it on egg holder statues around the map. Each player must place their egg on all 4 egg holder statues and kill enough zombies around it until it can be picked up again. All 4 egg holder statues are inside wooden crates that must be meleed in Beast Mode to open."
                             }
                         },
                         {
@@ -757,13 +756,13 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/88.jpg",
+                                "src": "assets/89.jpg",
                                 "alt": "Statue in Footlight District"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/89.jpg",
+                                "src": "assets/88.jpg",
                                 "alt": "Statue in Waterfront District"
                             }
                         },
@@ -801,7 +800,7 @@
                             "full": true,
                             "step": {
                                 "title": "1. Aquire a new egg",
-                                "description": "Each player must pick up an egg from a Keeper ghost in their own ritual room. Nero Blackstone's room is in his apartment in the Junction. Jack Vincent's room is in the Ruby Rabbit in Canal District. Jessica Rose's room is in The Black Lace Burlesque in Footlight District. Floyd Campbell's room is in The Anvil in Waterfront District."
+                                "description": "After getting the Apothicon Sword, each player must pick up an egg from a Keeper ghost in their own ritual room. Nero Blackstone's room is in his apartment in the Junction. Jack Vincent's room is in the Ruby Rabbit in Canal District. Jessica Rose's room is in The Black Lace Burlesque in Footlight District. Floyd Campbell's room is in The Anvil in Waterfront District."
                             }
                         },
                         {
@@ -899,7 +898,7 @@
                 },
                 {
                     "header": "2. Defend the Flags",
-                    "description": "After interacting on the book, a Keeper flag will appear in the Subway Station. One player must pick up the flag and place it on an electric spot on the map. There are 8 spots to place the flag, and they can be done in any order. After placing the flag, defend it from Meatballs, Parasites, and the Shadowman. The Shadowman will randomly appear floating near the flag, and will usually destroy the flag in one shot. If the flag breaks, you can pick up a new one in the Subway Station. If you successfully defend the flag, it will make a sound and can be picked up. After picking it back up, you must place it on one of the other electric spots and defend it again. There will now be large glowing symbols on the ground that must be avoided too. If you successfully defend it the second time, pick it up and deliver it to a Keeper ghost in one of the 4 ritual rooms. This must be done 4 times in total, one for each Keeper ghost and ritual room. Each time you deliver a flag, the 2 spots you defended the flag at will no longer be there, and you must wait a round before the flag can be picked up again in the Subway Station.",
+                    "description": "After interacting on the book, a Keeper flag will appear in the Subway Station. One player must pick up the flag and place it on an electric spot on the map. There are 8 spots to place the flag, and they can be done in any order. After placing the flag, defend it from Meatballs, Parasites, and the Shadowman. The Shadowman will randomly appear floating near the flag, and will usually destroy the flag in one shot. If the flag breaks, you can pick up a new one in the Subway Station. If you successfully defend the flag, it will make a sound and can be picked up. After picking it back up, you must place it on one of the other electric spots and defend it again. There will now be large glowing symbols on the ground that must be avoided too. If you successfully defend it the second time, pick it up and deliver it to a Keeper ghost in one of the 4 ritual rooms. This must be done 4 times in total, one for each Keeper ghost and ritual room. Each time you deliver a flag to a Keeper ghost, the 2 spots you defended the flag at will no longer be there, and you must wait a round before the flag can be picked up again in the Subway Station.",
                     "elements": [
                         {
                             "pic": {
@@ -1009,7 +1008,7 @@
                             "full": true,
                             "step": {
                                 "title": "Disable the Shield",
-                                "description": "After a time, the Shadowman will regain his shield and return to the center of the arena. Interact on the Keepers to disable his shield again. Repeat whenever the shield comes back."
+                                "description": "After a time, the Shadowman will regain his shield and return to the center of the arena. Interact on all 4 Keepers to disable his shield again. Repeat whenever the shield comes back."
                             }
                         },
                         {
@@ -1035,7 +1034,7 @@
                 },
                 {
                     "header": "4. Toxic Map",
-                    "description": "The final 2 steps require 4 players in the game. The map will slowly start to kill you, and you must keep running into the glowing white symbols to refresh your health. Each time a Margwa is killed, one of the Beast Mode pedestals will be enabled. Entering Beast Mode will allow you to stay for much longer."
+                    "description": "The final 2 steps require 4 players in the game. The map will slowly start to kill you, and you must keep running into the glowing white symbols to refresh your health. Each time a Margwa is killed, one of the Beast Mode pedestals will be enabled. You will be able to stay in Beast Mode as long as you don't take enough damage from Margwas or by not standing in the white circles enough."
                 },
                 {
                     "header": "5. Defeat the Apothicon",
@@ -1144,6 +1143,126 @@
                     ]
                 },
                 {
+                    "header": "Upgrade Li'l Arnies",
+                    "description": "Kill 100 zombies with Li'l Arnies, then throw a Li'l Arnie at 3 objects around the map. The objects will disappear when done successfully. Lastly, throw a Li'l Arnie at the ritual location in Footlight District. Some Gateworms and a Li'l Arnie will do a dance, and your Li'l Arnies will be upgraded.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/160.jpg",
+                                "alt": "Location 1 - a tophat on a mannequin head in Nero's Apartment"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/159.jpg",
+                                "alt": "Location 2 - a cane in Canal District, on the first floor of the Ruby Rabbit"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/161.jpg",
+                                "alt": "Location 3 - a bowtie on a shelf in Waterfront District, in a back room of The Anvil"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/162.jpg",
+                                "alt": "Ritual location in The Black Lace Burlesque"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/163.jpg",
+                                "alt": "Upgrade dance"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/164.jpg",
+                                "alt": "A purple upgraded Li'l Arnie"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Goddard Apparatus (Upgraded Shield)",
+                    "description": "Score a perfect game in bowling. Use the Rocket Shield boost to kill 10 zombies in a single boost, and repeat for 12 times in a row. Each time you successfully get 10 in 1 boost, you will hear a bowling pin sound effect. If you don't kill 10 in a single boost, the counter will reset. After 12 in a row, your shield will upgrade and hold a max of 4 boosts.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/158.jpg",
+                                "alt": "Lining up zombies for the Rocket Shield"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Pastry Trip Mines",
+                    "description": "There are 4 Devil-O Donuts carts and 3 Holly's Cream Cakes carts around the map. Get a Trip Mine kill in front of each of the donut carts or each of the cream cake carts. After you've damaged each of the opposing side's carts, your Trip Mines will have the opposite pastry's effect after exploding.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/145.jpg",
+                                "alt": "Trip Mine wall-buy, in Waterfront District on the side of The Anvil"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/146.jpg",
+                                "alt": "Donut cart 1 - in the Junction, near the door to Waterfront District"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/148.jpg",
+                                "alt": "Donut cart 2 - Canal District, going left from the Junction below the Perk Machine room"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/150.jpg",
+                                "alt": "Donut cart 3 - Footlight District, between the Perk Machine and the Train Station"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/152.jpg",
+                                "alt": "Donut cart 4 - Waterfront District, near the portal location"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/153.jpg",
+                                "alt": "Cream cake Trip Mine after sabotaging the donut carts"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/149.jpg",
+                                "alt": "Cream cake cart 1 - in the Junction, near Stamin-Up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/147.jpg",
+                                "alt": "Cream cake cart 2 - Canal District, across from the Ruby Rabbit"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/151.jpg",
+                                "alt": "Cream cake cart 3 - Footlight District, across from the Perk Machine"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/165.jpg",
+                                "alt": "Donut Trip Mine after sabotaging the cream cake carts"
+                            }
+                        }
+                    ]
+                },
+                {
                     "header": "Jumpscare",
                     "description": "Pack-a-Punch must be unlocked first. Go to Waterfront District and look out to the water and to the left. Using a sniper, aim down the sniper scope to a window.",
                     "elements": [
@@ -1168,13 +1287,79 @@
                     ]
                 },
                 {
-                    "header": "",
+                    "header": "Margwa Mask",
                     "description": "",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
                                 "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Noir Mode",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Free 500 Points",
+                    "description": "Go to the laundry store at the exit of Easy Street in the Junction. Explode a grenade on the suit with the laundry ticket. A Widow's Wine grenade will make it easier to explode on the suit. Then, interact on the laundry ticket that lands on the box.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/142_edit.jpg",
+                                "alt": "Laundry ticket on the suit"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/143.jpg",
+                                "alt": "Sal's laundry ticket"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Free Gobblegum",
+                    "description": "Go to Canal District and up the stairs near the Junction. In the room with the 4 lion statues, throw a Widow's Wine grenade into each of the 4 lion mouths. When done successfully, one of the statues will have a white Gobblegum in its mouth that can be interacted to pick up. Place the gum on a plate in the ice cream store in the Junction next to Stamin-Up. After a few rounds, the gum will grow slightly larger. Interact to get a random Gobblegum.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/144.jpg",
+                                "alt": "4 lion statues"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/155.jpg",
+                                "alt": "Widow's Wine grenade in lion's mouth"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/154.jpg",
+                                "alt": "Gobblegum in lion's mouth"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/156.jpg",
+                                "alt": "Plate to place the Gobblegum"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/157.jpg",
+                                "alt": "Grown Gobblegum"
                             }
                         }
                     ]
