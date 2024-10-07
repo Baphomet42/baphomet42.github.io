@@ -68,7 +68,7 @@
                             "full": true,
                             "step": {
                                 "title": "Sacrifice Rituals",
-                                "description": "The rituals can be done in any order. Each ritual requires getting an artifact and opening the ritual room, both of which require Beast Mode. After exiting Beast Mode, pick up the artifact and bring it to the ritual room. Interact to place the artifact, then interact again to start the ritual. The ritual will last a short time, and killing the Keepers is optional. After the ritual is finished, collect the Gateworm from the table where the ritual was started."
+                                "description": "The rituals can be done in any order. Each ritual requires getting an artifact and opening the ritual room, both of which require Beast Mode. After exiting Beast Mode, pick up the artifact and bring it to the ritual room. Interact to place the artifact, then interact again to begin the ritual. The ritual will last a short time, and killing the Keepers is optional. After the ritual is finished, collect the Gateworm from the table where the ritual was started."
                             }
                         },
                         {
@@ -105,7 +105,7 @@
                         {
                             "pic": {
                                 "src": "assets/10.jpg",
-                                "alt": "Pen artifact"
+                                "alt": "Golden Fountain Pen artifact"
                             }
                         },
                         {
@@ -222,7 +222,7 @@
                         {
                             "pic": {
                                 "src": "assets/20.jpg",
-                                "alt": "Belt artifact"
+                                "alt": "Championship Belt artifact"
                             }
                         },
                         {
@@ -1287,25 +1287,87 @@
                     ]
                 },
                 {
-                    "header": "Margwa Mask",
-                    "description": "",
+                    "header": "Margwa Head",
+                    "description": "At least 6 Margwas must be killed before doing these steps.",
                     "elements": [
                         {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                            "full": true,
+                            "step": {
+                                "title": "Shoot the 6 Margwa hearts",
+                                "description": "After 6 Margwas have been killed, 6 Margwa hearts will be seen around the map. Shoot all 6 hearts while riding the train, and in no more than 2 uses of the train. The hearts will respawn if the train was used more than twice before all 6 hearts have been shot. The order of locations shown here are from Waterfront District to Footlight District, then Footlight District to Canal District."
                             }
-                        }
-                    ]
-                },
-                {
-                    "header": "Noir Mode",
-                    "description": "",
-                    "elements": [
+                        },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/167.jpg",
+                                "alt": "Location 1 - looking left after leaving Waterfront District, on a sign"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/168.jpg",
+                                "alt": "Location 2 - looking left after leaving Waterfront District, on a building wall"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/169.jpg",
+                                "alt": "Location 3 - looking left going towards Footlight District, on the 'H' of a theater sign"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/170.jpg",
+                                "alt": "Location 4 - looking left going towards Footlight District, very briefly visible on a coffee sign"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/171.jpg",
+                                "alt": "Location 5 - looking right after leaving Footlight District, in the Junction on a Devil-O Donuts sign by the circle in the track"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/172.jpg",
+                                "alt": "Location 6 - looking right going towards Canal District, on the 'Y' of the Ruby Rabbit sign"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Find the head",
+                                "description": "The head is invisible but can be equipped by interacting on the correct location. A white shimmer will occasionally flash at the location. There are 4 possibe locations, and only 1 of them will be available for 1 specific player at a time. Another hat will spawn after the other one was equipped by the correct player."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/174.jpg",
+                                "alt": "Location 1 - in the Junction, on a table in Nero's Apartment"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/176.jpg",
+                                "alt": "Location 2 - Canal District, on a balcony on the top floor of the Ruby Rabbit"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/177.jpg",
+                                "alt": "Location 3 - Footlight District, on the stage in the The Black Lace Burlesque"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/173.jpg",
+                                "alt": "Location 4 - Waterfront District, by some lockers in the back room of The Anvil"
+                            }
+                        },
+                        { 
+                            "pic": {
+                                "src": "assets/175.jpg",
+                                "alt": "Location 5 - in the Subway Station, in the train car in the middle of the room"
                             }
                         }
                     ]
@@ -1360,6 +1422,18 @@
                             "pic": {
                                 "src": "assets/157.jpg",
                                 "alt": "Grown Gobblegum"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Noir Mode",
+                    "description": "Changes your screen to black and white for the rest of the game. Go to Waterfront District, upstairs in The Anvil. While looking at the correct picture, reload your weapon while crouching.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/166.jpg",
+                                "alt": "The picture to aim at"
                             }
                         }
                     ]

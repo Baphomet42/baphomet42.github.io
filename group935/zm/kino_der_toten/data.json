@@ -23,6 +23,30 @@
                     ]
                 },
                 {
+                    "header": "Pack-a-Punch",
+                    "description": "Interact with the teleporter on the Stage, then interact with the mainframe in the Lobby to link the teleporters. Use the teleporter on the Stage to teleport to Pack-a-Punch. The telporters must be linked each time before teleporting, and there is a cooldown before it can be linked again.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/12.jpg",
+                                "alt": "Teleporter"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/13.jpg",
+                                "alt": "Teleporter mainframe"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/14.jpg",
+                                "alt": "PaP machine"
+                            }
+                        }
+                    ]
+                },
+                {
                     "header": "Perk Machines",
                     "elements": [
                         {
@@ -59,30 +83,6 @@
                             "pic": {
                                 "src": "assets/4.jpg",
                                 "alt": "Wunderfizz (Black Ops III only)"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "Pack-a-Punch",
-                    "description": "Interact with the teleporter on the Stage, then interact with the mainframe in the Lobby to link the teleporters. Use the teleporter on the Stage to teleport to Pack-a-Punch. The telporters must be linked each time before teleporting, and there is a cooldown before it can be linked again.",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/12.jpg",
-                                "alt": "Teleporter"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/13.jpg",
-                                "alt": "Teleporter mainframe"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/14.jpg",
-                                "alt": "PaP machine"
                             }
                         }
                     ]

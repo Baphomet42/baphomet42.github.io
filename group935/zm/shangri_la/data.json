@@ -3,7 +3,265 @@
     "subtext": "Black Ops | Black Ops III",
     "background": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/581450/ss_2dc8235d2853bbec598d199ee89308a43a1809e2.1920x1080.jpg?t=1646763448",
     "rev": 2,
+    "notice": "The main quest requires 4 players.",
     "wip": true,
     "sections" : [
+        {
+            "header": "Map Features",
+            "subsections": [
+                {
+                    "header": "Power Switch",
+                    "description": "Both switches must be enabled.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/1.jpg",
+                                "alt": "Power switch locations"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Pack-a-Punch",
+                    "description": "There are 4 pressure plates that must be stood on to open Pack-a-Punch. For lobbies with under 4 players, some pressure plates will already be activated. After a short timer, the pyramid will flood and the pressure plates must be stood on again.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/3.jpg",
+                                "alt": "Pressure plate 1 - in spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/4.jpg",
+                                "alt": "Pressure plate 2 - in the tunnel near the minecart"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/2.jpg",
+                                "alt": "Pressure plate 3 - in the power room"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/14.jpg",
+                                "alt": "Pressure plate 4 - across the rope bridge from spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/5.jpg",
+                                "alt": "Pyramid with Pack-a-Punch machine"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Main Quest",
+            "subsections": [
+                {
+                    "header": "Requirements",
+                    "elements": [
+                        {
+                            "full": true,
+                            "bullets": [
+                                "4 players in the lobby",
+                                "Pack-a-Punched 31-79 JGb215 (Baby Gun) - from Mystery Box",
+                                "Any explosive weapon",
+                                "Black Ops 1 only - Spikemore",
+                                "Black Ops III only - Trip Mine"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "header": "",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Song",
+            "subsections": [
+                {
+                    "header": "Pareidolia",
+                    "description": "Interact with 3 Element 115 meteorites.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/15.jpg",
+                                "alt": "Location 1 - in spawn, near the door that leads to the minecart"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/16.jpg",
+                                "alt": "Location 2 - at the end of the bridge across from the PaP pressure plate"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/17.jpg",
+                                "alt": "Location 3 - one room towards the power room from the end of the water slide"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Side Easter Eggs",
+            "subsections": [
+                {
+                    "header": "Monkey Rocket",
+                    "description": "Pick up a power-up before it's stolen by a monkey, then let the monkey hit you. The monkey will run to the pyramid and launch into the sky.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/18.jpg",
+                                "alt": "Rocket launching from the pyramid"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Hide and Seek",
+            "description": "Play Samantha's Sorrow and get a Max Ammo (Black Ops III only)",
+            "subsections": [
+                {
+                    "header": "1. Knife the Gongs",
+                    "description": "There are 8 gongs on the map that can be meleed. 4 of them will have a quiet whistle sound that plays in addition to the gong sound when meleed. Knife the 4 gongs that don't whistle in a row, without knifing one of the gongs that do whistle.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/20.jpg",
+                                "alt": "Location 1 - in spawn, near the door that leads to the minecart"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/21.jpg",
+                                "alt": "Location 2 - by the minecart"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/22.jpg",
+                                "alt": "Location 3 - down the hill from the minecart, near the tunnel entrance"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/23.jpg",
+                                "alt": "Location 4 - down the hill from the minecart, closer to the door to spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/24.jpg",
+                                "alt": "Location 5 - before the mud maze"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/25.jpg",
+                                "alt": "Location 6 - after the mud maze"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/27.jpg",
+                                "alt": "Location 7 - after the mud maze and down the steps"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/26.jpg",
+                                "alt": "Location 8 - at the end of the bridge near the PaP pressure plate"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Shoot 115",
+                    "description": "At the bottom of the water slide, there are 5 pots and pans hanging above a workbench. Using the M1911, shoot the first one twice and the last one once.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/19.jpg",
+                                "alt": "The pots and pans"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Hide and Seek",
+                    "description": "Interact with a Samantha doll near the minecart by a sign. A particle effect will show the game has started. Then, find and shoot 5 Samantha dolls around the map. They will play a song when you get close, and only 1 will be in the map at a time. If you run out of time, Samantha will laugh, and you have to start the game again at the original doll.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/28.jpg",
+                                "alt": "The doll to start hide and seek"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/29.jpg",
+                                "alt": "Location 1 - at the start of the minecart ride, hanging from the roof"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/30.jpg",
+                                "alt": "Location 2 - on a lantern on the left, while riding the minecart"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/31.jpg",
+                                "alt": "Location 3 - hanging from the roof, while riding the minecart"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/32.jpg",
+                                "alt": "Location 4 - at the exit of the minecart ride, hanging from the roof"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/33.jpg",
+                                "alt": "Location 5 - on the boulder in the middle of the water area after leaving the minecart"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "4. Interact with the First Doll",
+                    "description": "Go back to the original doll and interact again. This time, you'll get a Max Ammo and the song will play.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/34.jpg",
+                                "alt": "The doll to get the Max Ammo and song"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
     ]
 }
