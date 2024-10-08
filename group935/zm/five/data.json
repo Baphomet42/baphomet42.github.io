@@ -3,7 +3,151 @@
     "subtext": "Black Ops",
     "background": "https://callofdutymaps.com/wp-content/uploads/zombiesfive35.jpg",
     "rev": 2,
-    "wip": true,
     "sections" : [
+        {
+            "header": "Map Features",
+            "subsections": [
+                {
+                    "header": "Power Switch",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/1.jpg",
+                                "alt": "Power switch location"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Teleporters",
+                    "description": "After turning on power, several teleporters will be enabled around the map. Each one takes you to a random location.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/2.jpg",
+                                "alt": "Teleporter in power switch room"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Pack-a-Punch",
+                    "description": "Interact with all 4 DEFCON switches in the War Room. At DEFCON 5, the teleporters will go to the Panic Room containing the Pack-a-Punch machine.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/18.jpg",
+                                "alt": "One of the DEFCON panels"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/19.jpg",
+                                "alt": "Teleporter to Panic Room"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/20.jpg",
+                                "alt": "Pack-a-Punch machine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Perk Machines",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/3.jpg",
+                                "alt": "Quick Revive"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/4.jpg",
+                                "alt": "Speed Cola"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/5.jpg",
+                                "alt": "Double Tap Root Beer"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/6.jpg",
+                                "alt": "Mule Kick"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/7.jpg",
+                                "alt": "Juggernog"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Song",
+            "subsections": [
+                {
+                    "header": "Won't Back Down",
+                    "description": "Interact with 3 red phones.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/9.jpg",
+                                "alt": "Location 1 - top level, next to Quick Revive"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/14.jpg",
+                                "alt": "Location 2 - bottom level, in the power switch room"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/10.jpg",
+                                "alt": "Location 3 - Panic Room, on a table"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Side Easter Eggs",
+            "subsections": [
+                {
+                    "header": "Traps",
+                    "description": "There are 2 metal detectors on the top level of the map that require an operational component. Pick up the trap pieces and place them in the metal detectors to enable the traps.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/8.jpg",
+                                "alt": "Trap piece 1 - in the War Room"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/11.jpg",
+                                "alt": "Trap piece 2 - bottom level, by the Bowie Knife wall-buy"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/12.jpg",
+                                "alt": "One of the 2 metal detectors to place the trap piece"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
     ]
 }

@@ -82,7 +82,7 @@
             "img": "https://assets-prd.ignimgs.com/2021/12/30/call-of-duty-black-ops-1-button-1640898530662.jpg",
             "maps": [
                 {"name": "Kino der Toten", "link": "/group935/zm/kino_der_toten", "img": "https://static.wikia.nocookie.net/callofduty/images/9/97/Kino_Der_Toten_Menu_Selection_BO.png"},
-                {"name": "\"Five\"", "link": "/group935/zm/five", "wip": true, "img": "https://static.wikia.nocookie.net/callofduty/images/3/34/Five_Menu_Selection_BO.png"},
+                {"name": "\"Five\"", "link": "/group935/zm/five", "img": "https://static.wikia.nocookie.net/callofduty/images/3/34/Five_Menu_Selection_BO.png"},
                 {"name": "Ascension", "link": "/group935/zm/ascension", "img": "https://static.wikia.nocookie.net/callofduty/images/f/fd/Ascension_Menu_Selection_BO.png"},
                 {"name": "Call of the Dead", "link": "/group935/zm/call_of_the_dead", "wip": true, "img": "https://static.wikia.nocookie.net/callofduty/images/7/78/Call_of_the_Dead_Menu_Selection_BO.png"},
                 {"name": "Shangri-La", "link": "/group935/zm/shangri_la", "img": "https://static.wikia.nocookie.net/callofduty/images/d/d5/Shangri-La_Menu_Selection_BO.png"},
