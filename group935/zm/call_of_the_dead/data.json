@@ -3,7 +3,316 @@
     "subtext": "Black Ops",
     "background": "https://callofdutymaps.com/wp-content/uploads/zombiescallofthedead20.jpg",
     "rev": 2,
+    "notice": "The main quest is altered in solo.",
     "wip": true,
     "sections" : [
+        {
+            "header": "Map Features",
+            "subsections": [
+                {
+                    "header": "George A. Romero",
+                    "description": "Zombie George will always follow you and can never be fully killed. He will become enraged and sprint whenever he takes damage or if he gets too close to a player. Bring George into any water to calm him down and stop him from sprinting. George can temporarily be killed with a massive amount of firepower (TODO) or using the V-R11 (TODO), but he will respawn after a couple rounds. George will drop a power-up (TODO) when killed using other weapons (TODO).",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/1.jpg",
+                                "alt": "Zombie George"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Power Switch",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/4.jpg",
+                                "alt": "Power switch location, at the top of the ship"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Pack-a-Punch",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/13.jpg",
+                                "alt": "Pack-a-Punch location 1 - in spawn, next to Quick Revive"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/16.jpg",
+                                "alt": "Pack-a-Punch location 2 - behind the lighthouse, on the way to Stamin-Up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/17.jpg",
+                                "alt": "Pack-a-Punch location 3 - in the ship, down the stairs from Juggernog"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Perk Machines",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/8.jpg",
+                                "alt": "Quick Revive"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/14.jpg",
+                                "alt": "Double Tap Root Beer"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/6.jpg",
+                                "alt": "Juggernog"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/7.jpg",
+                                "alt": "Mule Kick"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/9.jpg",
+                                "alt": "PhD Flopper"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/12.jpg",
+                                "alt": "Speed Cola"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/11.jpg",
+                                "alt": "Stamin-Up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/15.jpg",
+                                "alt": "Deadshot Daiquiri"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Main Quest",
+            "description": "The full quest requires 2 or more players, but there is a shorter solo version that doesn't require every step. The solo version will not unlock the Vril Device for the Moon main quest.",
+            "subsections": [
+                {
+                    "header": "Requirements",
+                    "elements": [
+                        {
+                            "full": true,
+                            "bullets": [
+                                "1 player (for Stand-in)",
+                                "2 or more players (for Ensemble Cast)",
+                                "V-R11 (Human Gun) - from Mystery Box"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "header": "1. Knife the Door",
+                    "description": "Go to the lighthouse building and down the stairs from PhD Flopper. When the power is turned on, you will hear the Ultimis characters speaking from behind a metal door. Knife the door, then Richtofen will ask for a fuse.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/18.jpg",
+                                "alt": "Door to melee"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Find a Fuse",
+                    "description": "After Richtofen is done speaking, a fuse will spawn in 1 of 3 locations in the room with PhD Flopper. Pick it up and place it in the fuse box to the right of the metal door.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Fuse location 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Fuse location 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/19.jpg",
+                                "alt": "Fuse location 3 - on a table across from PhD Flopper"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/21.jpg",
+                                "alt": "Location to place fuse"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Deactivate the TODO",
+                    "description": "There are 4 TODO around the map that must be exploded. Grenades and other explosive weapons will all work, and the red light will turn off when hit successfully.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/22.jpg",
+                                "alt": "Location 1 - across from the metal door"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/24.jpg",
+                                "alt": "Location 2 - on the way from the lighthouse to the ship (TODO ship to quick rev?)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 3 - "
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 4 - "
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/23.jpg",
+                                "alt": "TODO with light turned off"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "4. ",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "5. ",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "6. ",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "7. ",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Song",
+            "subsections": [
+                {
+                    "header": "Not Ready to Die",
+                    "description": "Interact with 3 Element 115 meteorites.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/2.jpg",
+                                "alt": "Location 1 - in spawn, on a canister near the tunnel to the lighthouse"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/5.jpg",
+                                "alt": "Location 2 - in the ship, on a chair a few levels below the power switch"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/10.jpg",
+                                "alt": "Location 3 - in the lighthouse building, under a table next to PhD Flopper"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Side Easter Eggs",
+            "subsections": [
+                {
+                    "header": "V-R11 Side Effects",
+                    "description": "(TODO stuntman, zombie blood, instakill)",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Avenged Sevenfold Poster",
+                    "description": "The members of A7X can be seen on a Soviet propaganda poster in the room below PhD Flopper.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/20.jpg",
+                                "alt": "Shadows, Vengeance, Gates, Christ, and The Rev"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
     ]
 }
