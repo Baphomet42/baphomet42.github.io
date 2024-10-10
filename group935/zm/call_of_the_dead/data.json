@@ -171,8 +171,8 @@
                     ]
                 },
                 {
-                    "header": "3. Deactivate the TODO",
-                    "description": "There are 4 TODO around the map that must be exploded. Grenades and other explosive weapons will all work, and the red light will turn off when hit successfully.",
+                    "header": "3. Deactivate the Security System",
+                    "description": "There are 4 security system power sources around the map that must be exploded. Grenades and other explosive weapons will all work, and the red light will turn off when hit successfully. After all 4 are destroyed, knife the metal door.",
                     "elements": [
                         {
                             "pic": {
@@ -182,74 +182,287 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/24.jpg",
-                                "alt": "Location 2 - on the way from the lighthouse to the ship (TODO ship to quick rev?)"
+                                "src": "assets/25.jpg",
+                                "alt": "Location 2 - between the halves of the broken ship"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - "
+                                "src": "assets/26.jpg",
+                                "alt": "Location 3 - in front of the ship to the left, seen in the corner near Double Tap Root Beer"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 4 - "
+                                "src": "assets/27.jpg",
+                                "alt": "Location 4 - through a window behind Stamin-Up"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/23.jpg",
-                                "alt": "TODO with light turned off"
+                                "alt": "Destroyed power source with light turned off"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/18.jpg",
+                                "alt": "Door to melee"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "4. ",
-                    "description": "",
+                    "header": "4. Find Vodka for Nikolai (Co-Op Only)",
+                    "description": "There are 4 possible vodka locations around the map, and the vodka bottle will be encased in ice on a railing. One player must melee the ice to drop the bottle, and another player must be standing below it to catch the bottle. If the bottle hits the floor, it will spawn in a new location. After catching the bottle, return it to the metal door. There is a white tube to place the bottle to the left of the metal door.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/40_edit.jpg",
+                                "alt": "Vodka location 1 - on top of the lighthouse building, to the right of the Mystery Box location"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/41_edit.jpg",
+                                "alt": "Vodka location 2 - on the stairs going from the PhD Flopper room to the top of the lighthouse building"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/43_edit.jpg",
+                                "alt": "Vodka location 3 - on the ship, up the first staircase going from Double Tap Root Beer towards the power room"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/42_edit.jpg",
+                                "alt": "Vodka location 4 - on the bridge going from the front of the ship to the back"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/36.jpg",
+                                "alt": "Location to place vodka bottle"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "5. ",
-                    "description": "",
+                    "header": "5. Control the Ship",
+                    "description": "Go to the power room in the ship. Interact on the steering wheel until the brown handle is facing down and to the right. There are 3 levers to the right of the steering wheel. Interact with the left lever 1 time and the right lever 3 times. (TODO sub with green light?)",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/30.jpg",
+                                "alt": "Steering wheel and 3 levers"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "6. ",
-                    "description": "",
+                    "header": "6. Activate 4 Foghorns (Co-Op Only)",
+                    "description": "There are 4 foghorns that must be interacted in the correct order. They can only be interacted while the map is foggy. If done incorrectly, wait until the next round when the submarine plays the horn sequence again. (TODO how know success)",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/44.jpg",
+                                "alt": "Foghorn 1 - by the water between the lighthouse and ship"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/45.jpg",
+                                "alt": "Foghorn 2 - by the exit to the ice slide near Speed Cola"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/46.jpg",
+                                "alt": "Foghorn 3 - outside the lighthouse, by the stairs that go to the building with the metal door"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/47.jpg",
+                                "alt": "Foghorn 4 - by a rock before the dropoff going from the ice slide to the lighthouse"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "7. ",
-                    "description": "",
+                    "header": "7. Morse Code Sequence (Co-Op Only)",
+                    "description": "There are 4 morse code radios that must be interacted in the correct order. If a radio is interacted in the wrong order, finish the set of 4, and then start again. To fix the sequence if it's out of sync, interact location 1 twice followed by the other 3 locations, and repeat until successful. (TODO how know success)",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/48.jpg",
+                                "alt": "Radio 1 - in the ship, down the stairs from the power room and on some equipment"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/49.jpg",
+                                "alt": "Radio 2 - next to Stamin-Up, on a canister"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/50.jpg",
+                                "alt": "Radio 3 - on the ship, on the way from Mule Kick to Juggernog(TODO)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/51.jpg",
+                                "alt": "Radio 4 - under the stairs going from PhD Flopper to the metal door"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "8. Set the Dials (Co-Op Only)",
+                    "description": "In the lighthouse, there are 4 dials with numbers from 0 to 9, with one dial on each level. From bottom to top, the dials are colored purple, blue, orange, and yellow. Interacting with one dial will also move the dials above and below by 1 number. The correct order, from bottom to top, is 6 4 7 2. The dials start randomized, but the following steps will set them all correctly.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/55.jpg",
+                                "alt": "Purple dial"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/54.jpg",
+                                "alt": "Blue dial"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/53.jpg",
+                                "alt": "Orange dial"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/52.jpg",
+                                "alt": "Yellow dial"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Set the purple dial to 6"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Interact on the orange dial until the blue dial is 4",
+                                "description": "Do not interact on the blue dial directly, since it would mess up the purple dial."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Interact on the yellow dial until the orange dial is 7",
+                                "description": "Do not interact on the orange dial directly, since it would mess up the blue dial."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "4. Set the yellow dial to 2, then turn the purple dial the same number of times you had to turn the yellow dial"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "5. Set the blue dial back to 4",
+                                "description": "All 4 dials will now be set correctly."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/59.jpg",
+                                "alt": "Purple dial on 6"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/58.jpg",
+                                "alt": "Blue dial on 4"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/57.jpg",
+                                "alt": "Orange dial on 7"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/56.jpg",
+                                "alt": "Yellow dial on 2"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "9. Aquire the Vril Device",
+                    "description": "(TODO green light submarine?) Turn a zombie into a human using the V-R11. Follow him to the lighthouse, and he will start floating up in the center of the stairs. Shoot him so he stops moving, then wait for his corpse to reach the top of the lighthouse. The Vril Device will drop all the way down to the bottom and can be interacted to pick up.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/32.jpg",
+                                "alt": "Zombie turned human with the V-R11"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/33.jpg",
+                                "alt": "Human floating up in the lighthouse"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/34.jpg",
+                                "alt": "Corpse floating up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/35.jpg",
+                                "alt": "Location to get Vril Device"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "10. Give the Vril Device to Richtofen",
+                    "description": "To the left of the metal door, there is a white tube. Interact to place the Vril Device.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/36.jpg",
+                                "alt": "Location to place Vril Device"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "11. Knife the Fuse Box",
+                    "description": "After the quote is done playing, the fuse box will begin sparking. Knife the fuse box to fix it and complete the main quest. A Wunderwaffe power-up will spawn in front of the door, and all players will unlock either the solo or co-op achievement.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/37.jpg",
+                                "alt": "Fuse box to knife"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/38.jpg",
+                                "alt": "Wunderwaffe power-up"
                             }
                         }
                     ]
