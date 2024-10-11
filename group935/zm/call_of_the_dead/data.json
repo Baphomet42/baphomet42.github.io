@@ -11,12 +11,12 @@
             "subsections": [
                 {
                     "header": "George A. Romero",
-                    "description": "Zombie George will always follow you and can never be fully killed. He will become enraged and sprint whenever he takes damage or if he gets too close to a player. Bring George into any water to calm him down and stop him from sprinting. George can temporarily be killed with a massive amount of firepower (TODO) or using the V-R11 (TODO), but he will respawn after a couple rounds. George will drop a power-up (TODO) when killed using other weapons (TODO).",
+                    "description": "A zombified George Romero will always follow you and can never be fully killed. He will become enraged and sprint whenever he takes damage or if he gets too close to a player. Bring George into any water to calm him down and stop him from sprinting. George can temporarily be killed (TODO) with a massive amount of firepower, and he will drop a Death Machine power-up and a perk bottle power-up each time. Using the V-R11 will make George temporarily leave too, but he won't drop anything (TODO). In either case, he will respawn after a couple rounds.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/1.jpg",
-                                "alt": "Zombie George"
+                                "alt": "George"
                             }
                         }
                     ]
@@ -34,7 +34,7 @@
                 },
                 {
                     "header": "Pack-a-Punch",
-                    "description": "",
+                    "description": "After power is turned on, the Pack-a-Punch machine will randomly appear and disappear throughout the game. The lighthouse will shine a light on the PaP location whenever it's in the map, and the machine has 3 possible locations.",
                     "elements": [
                         {
                             "pic": {
@@ -189,7 +189,7 @@
                         {
                             "pic": {
                                 "src": "assets/26.jpg",
-                                "alt": "Location 3 - in front of the ship to the left, seen in the corner near Double Tap Root Beer"
+                                "alt": "Location 3 - near Double Tap Root Beer, on the shoreline below the ship"
                             }
                         },
                         {
@@ -214,7 +214,7 @@
                 },
                 {
                     "header": "4. Find Vodka for Nikolai (Co-Op Only)",
-                    "description": "There are 4 possible vodka locations around the map, and the vodka bottle will be encased in ice on a railing. One player must melee the ice to drop the bottle, and another player must be standing below it to catch the bottle. If the bottle hits the floor, it will spawn in a new location. After catching the bottle, return it to the metal door. There is a white tube to place the bottle to the left of the metal door.",
+                    "description": "There are 4 possible vodka locations around the map, and the vodka bottle will be encased in ice on a railing. One player must melee the ice to drop the bottle, and another player must be standing below it to catch the bottle. The player who catches the bottle must interact to pick it up before it hits the ground. If the bottle hits the floor, it will spawn in a new location. After catching the bottle, return it to the metal door. There is a white tube to place the bottle to the left of the metal door.",
                     "elements": [
                         {
                             "pic": {
@@ -237,7 +237,7 @@
                         {
                             "pic": {
                                 "src": "assets/42_edit.jpg",
-                                "alt": "Vodka location 4 - on the bridge going from the front of the ship to the back"
+                                "alt": "Vodka location 4 - on the bridge connecting the two halves of the ship"
                             }
                         },
                         {
@@ -249,8 +249,8 @@
                     ]
                 },
                 {
-                    "header": "5. Control the Ship",
-                    "description": "Go to the power room in the ship. Interact on the steering wheel until the brown handle is facing down and to the right. There are 3 levers to the right of the steering wheel. Interact with the left lever 1 time and the right lever 3 times. (TODO sub with green light?)",
+                    "header": "5. Control the Ship (TODO rename submarine?)",
+                    "description": "Go to the power room in the ship. Interact on the steering wheel until the brown handle is facing down and to the right. There are 3 levers to the right of the steering wheel. Interact with the left lever 1 time and the right lever 3 times. (TODO submarine float?)",
                     "elements": [
                         {
                             "pic": {
@@ -262,7 +262,7 @@
                 },
                 {
                     "header": "6. Activate 4 Foghorns (Co-Op Only)",
-                    "description": "There are 4 foghorns that must be interacted in the correct order. They can only be interacted while the map is foggy. If done incorrectly, wait until the next round when the submarine plays the horn sequence again. (TODO how know success)",
+                    "description": "There are 4 foghorns that must be interacted in the correct order. They can only be interacted while the map is foggy. If done incorrectly, wait until the next round when the submarine plays the horn sequence again (TODO verify). (TODO how know success)",
                     "elements": [
                         {
                             "pic": {
@@ -292,7 +292,7 @@
                 },
                 {
                     "header": "7. Morse Code Sequence (Co-Op Only)",
-                    "description": "There are 4 morse code radios that must be interacted in the correct order. If a radio is interacted in the wrong order, finish the set of 4, and then start again. To fix the sequence if it's out of sync, interact location 1 twice followed by the other 3 locations, and repeat until successful. (TODO how know success)",
+                    "description": "There are 4 morse code radios that must be interacted in the correct order. If a radio is interacted in the wrong order, finish the set of 4, and then start again. To fix the sequence if it's out of sync, interact location 1 twice followed by the other 3 locations, and repeat until successful. (TODO green light blinking and beeping after success)",
                     "elements": [
                         {
                             "pic": {
@@ -309,7 +309,7 @@
                         {
                             "pic": {
                                 "src": "assets/50.jpg",
-                                "alt": "Radio 3 - on the ship, on the way from Mule Kick to Juggernog(TODO)"
+                                "alt": "Radio 3 - on the ship, on the way from Mule Kick to Juggernog(TODO near bottom of zipline from lighthouse)"
                             }
                         },
                         {
@@ -322,7 +322,7 @@
                 },
                 {
                     "header": "8. Set the Dials (Co-Op Only)",
-                    "description": "In the lighthouse, there are 4 dials with numbers from 0 to 9, with one dial on each level. From bottom to top, the dials are colored purple, blue, orange, and yellow. Interacting with one dial will also move the dials above and below by 1 number. The correct order, from bottom to top, is 6 4 7 2. The dials start randomized, but the following steps will set them all correctly.",
+                    "description": "In the lighthouse, there are 4 dials with numbers from 0 to 9, with one dial on each level. From bottom to top, the dials are colored purple, blue, orange, and yellow. Interacting with one dial will also move the dials above and below by 1 number. The dials start randomized, but the following steps will set them all correctly. The correct order, from bottom to top, is 6 4 7 2. (TODO how know success?)",
                     "elements": [
                         {
                             "pic": {
@@ -351,33 +351,33 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "1. Set the purple dial to 6"
+                                "title": "i. Set the purple dial to 6"
                             }
                         },
                         {
                             "full": true,
                             "step": {
-                                "title": "2. Interact on the orange dial until the blue dial is 4",
+                                "title": "ii. Interact on the orange dial until the blue dial is 4",
                                 "description": "Do not interact on the blue dial directly, since it would mess up the purple dial."
                             }
                         },
                         {
                             "full": true,
                             "step": {
-                                "title": "3. Interact on the yellow dial until the orange dial is 7",
+                                "title": "iii. Interact on the yellow dial until the orange dial is 7",
                                 "description": "Do not interact on the orange dial directly, since it would mess up the blue dial."
                             }
                         },
                         {
                             "full": true,
                             "step": {
-                                "title": "4. Set the yellow dial to 2, then turn the purple dial the same number of times you had to turn the yellow dial"
+                                "title": "iv. Set the yellow dial to 2, then turn the purple dial the same number of times you had to turn the yellow dial"
                             }
                         },
                         {
                             "full": true,
                             "step": {
-                                "title": "5. Set the blue dial back to 4",
+                                "title": "v. Set the blue dial back to 4",
                                 "description": "All 4 dials will now be set correctly."
                             }
                         },
@@ -409,8 +409,14 @@
                 },
                 {
                     "header": "9. Aquire the Vril Device",
-                    "description": "(TODO green light submarine?) Turn a zombie into a human using the V-R11. Follow him to the lighthouse, and he will start floating up in the center of the stairs. Shoot him so he stops moving, then wait for his corpse to reach the top of the lighthouse. The Vril Device will drop all the way down to the bottom and can be interacted to pick up.",
+                    "description": "If the previous steps are all done correctly, a submarine will be shining a green light on the lighthouse. Go near the lighthouse and turn a zombie into a human using the V-R11. Follow him inside the lighthouse, and he will start floating up in the center of the stairs. Shoot him until he gets downed, then wait for his corpse to reach the top of the lighthouse. The Vril Device will drop all the way down to the bottom and can be interacted to pick up.",
                     "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/31.jpg",
+                                "alt": "Submarine shining a green light on the lighthouse"
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "assets/32.jpg",
@@ -451,7 +457,7 @@
                 },
                 {
                     "header": "11. Knife the Fuse Box",
-                    "description": "After the quote is done playing, the fuse box will begin sparking. Knife the fuse box to fix it and complete the main quest. A Wunderwaffe power-up will spawn in front of the door, and all players will unlock either the solo or co-op achievement.",
+                    "description": "After the quote is done playing, the fuse box will begin sparking. Knife the fuse box to fix it and complete the main quest. A Wunderwaffe DG-2 power-up will spawn in front of the door, and all players will unlock either the solo or co-op achievement. For all future games, killing George will drop a Wunderwaffe DG-2 power-up instead of a Death Machine power-up (TODO).",
                     "elements": [
                         {
                             "pic": {
@@ -462,7 +468,7 @@
                         {
                             "pic": {
                                 "src": "assets/38.jpg",
-                                "alt": "Wunderwaffe power-up"
+                                "alt": "Wunderwaffe DG-2 power-up"
                             }
                         }
                     ]
