@@ -1,22 +1,39 @@
 {
     "name": "Call of the Dead",
     "subtext": "Black Ops",
-    "background": "https://callofdutymaps.com/wp-content/uploads/zombiescallofthedead20.jpg",
+    "background": "assets/background.png",
     "rev": 2,
     "notice": "The main quest is altered in solo.",
-    "wip": true,
     "sections" : [
         {
             "header": "Map Features",
             "subsections": [
                 {
                     "header": "George A. Romero",
-                    "description": "A zombified George Romero will always follow you and can never be fully killed. He will become enraged and sprint whenever he takes damage or if he gets too close to a player. Bring George into any water to calm him down and stop him from sprinting. George can temporarily be killed (TODO) with a massive amount of firepower, and he will drop a Death Machine power-up and a perk bottle power-up each time. Using the V-R11 will make George temporarily leave too, but he won't drop anything (TODO). In either case, he will respawn after a couple rounds.",
+                    "description": "A zombified George Romero will always follow you and can never be fully killed. He will become enraged and sprint whenever he takes damage or if he gets too close to a player. Zombies hit by George will become electrified and cannot be frozen. Bring George into any water to calm him down and stop him from sprinting. George will leave the map for a couple rounds after being shot with a massive amount of firepower, and he will drop a Death Machine power-up and a perk bottle power-up each time. His light will dim as he takes damage.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/1.jpg",
                                 "alt": "George"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/67.jpg",
+                                "alt": "Electrified zombies"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/68.jpg",
+                                "alt": "Calming George in water"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/60.jpg",
+                                "alt": "George leaving after enough damage"
                             }
                         }
                     ]
@@ -113,7 +130,7 @@
         },
         {
             "header": "Main Quest",
-            "description": "The full quest requires 2 or more players, but there is a shorter solo version that doesn't require every step. The solo version will not unlock the Vril Device for the Moon main quest.",
+            "description": "The full quest requires 2 or more players, but there is a shorter solo version that has less steps. The solo version will not unlock the Vril Device for the Moon main quest.",
             "subsections": [
                 {
                     "header": "Requirements",
@@ -146,20 +163,20 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Fuse location 1 - TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Fuse location 2 - TODO"
+                                "src": "assets/72.jpg",
+                                "alt": "Fuse location 1 - on the table next to PhD Flopper"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/19.jpg",
-                                "alt": "Fuse location 3 - on a table across from PhD Flopper"
+                                "alt": "Fuse location 2 - on a table across from PhD Flopper"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/61.jpg",
+                                "alt": "Fuse location 3 - on the floor next to a cabinet"
                             }
                         },
                         {
@@ -188,7 +205,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/26.jpg",
+                                "src": "assets/62.jpg",
                                 "alt": "Location 3 - near Double Tap Root Beer, on the shoreline below the ship"
                             }
                         },
@@ -206,7 +223,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/18.jpg",
+                                "src": "assets/66.jpg",
                                 "alt": "Door to melee"
                             }
                         }
@@ -214,30 +231,34 @@
                 },
                 {
                     "header": "4. Find Vodka for Nikolai (Co-Op Only)",
-                    "description": "There are 4 possible vodka locations around the map, and the vodka bottle will be encased in ice on a railing. One player must melee the ice to drop the bottle, and another player must be standing below it to catch the bottle. The player who catches the bottle must interact to pick it up before it hits the ground. If the bottle hits the floor, it will spawn in a new location. After catching the bottle, return it to the metal door. There is a white tube to place the bottle to the left of the metal door.",
+                    "description": "There are 4 possible vodka locations around the map, and the vodka bottle will be encased in ice on a railing. One player must melee the ice to drop the bottle, and another player must be standing below it to catch the bottle. If the bottle hits the floor, it will spawn in a new location. After catching the bottle, return it to the metal door. There is a white tube to place the bottle to the left of the metal door. After placing the bottle in the tube, knife the metal door.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/40_edit.jpg",
-                                "alt": "Vodka location 1 - on top of the lighthouse building, to the right of the Mystery Box location"
+                                "alt": "Vodka location 1 - on top of the lighthouse building, to the right of the Mystery Box location",
+                                "disclaimer": "Vodka and ice unpictured"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/41_edit.jpg",
-                                "alt": "Vodka location 2 - on the stairs going from the PhD Flopper room to the top of the lighthouse building"
+                                "alt": "Vodka location 2 - on the stairs going from the PhD Flopper room to the top of the lighthouse building",
+                                "disclaimer": "Vodka and ice unpictured"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/43_edit.jpg",
-                                "alt": "Vodka location 3 - on the ship, up the first staircase going from Double Tap Root Beer towards the power room"
+                                "alt": "Vodka location 3 - on the ship, up the first staircase going from Double Tap Root Beer towards the power room",
+                                "disclaimer": "Vodka and ice unpictured"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/42_edit.jpg",
-                                "alt": "Vodka location 4 - on the bridge connecting the two halves of the ship"
+                                "alt": "Vodka location 4 - on the bridge connecting the two halves of the ship",
+                                "disclaimer": "Vodka and ice unpictured"
                             }
                         },
                         {
@@ -245,84 +266,18 @@
                                 "src": "assets/36.jpg",
                                 "alt": "Location to place vodka bottle"
                             }
-                        }
-                    ]
-                },
-                {
-                    "header": "5. Control the Ship (TODO rename submarine?)",
-                    "description": "Go to the power room in the ship. Interact on the steering wheel until the brown handle is facing down and to the right. There are 3 levers to the right of the steering wheel. Interact with the left lever 1 time and the right lever 3 times. (TODO submarine float?)",
-                    "elements": [
+                        },
                         {
                             "pic": {
-                                "src": "assets/30.jpg",
-                                "alt": "Steering wheel and 3 levers"
+                                "src": "assets/66.jpg",
+                                "alt": "Door to melee"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "6. Activate 4 Foghorns (Co-Op Only)",
-                    "description": "There are 4 foghorns that must be interacted in the correct order. They can only be interacted while the map is foggy. If done incorrectly, wait until the next round when the submarine plays the horn sequence again (TODO verify). (TODO how know success)",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/44.jpg",
-                                "alt": "Foghorn 1 - by the water between the lighthouse and ship"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/45.jpg",
-                                "alt": "Foghorn 2 - by the exit to the ice slide near Speed Cola"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/46.jpg",
-                                "alt": "Foghorn 3 - outside the lighthouse, by the stairs that go to the building with the metal door"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/47.jpg",
-                                "alt": "Foghorn 4 - by a rock before the dropoff going from the ice slide to the lighthouse"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "7. Morse Code Sequence (Co-Op Only)",
-                    "description": "There are 4 morse code radios that must be interacted in the correct order. If a radio is interacted in the wrong order, finish the set of 4, and then start again. To fix the sequence if it's out of sync, interact location 1 twice followed by the other 3 locations, and repeat until successful. (TODO green light blinking and beeping after success)",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/48.jpg",
-                                "alt": "Radio 1 - in the ship, down the stairs from the power room and on some equipment"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/49.jpg",
-                                "alt": "Radio 2 - next to Stamin-Up, on a canister"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/50.jpg",
-                                "alt": "Radio 3 - on the ship, on the way from Mule Kick to Juggernog(TODO near bottom of zipline from lighthouse)"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/51.jpg",
-                                "alt": "Radio 4 - under the stairs going from PhD Flopper to the metal door"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "8. Set the Dials (Co-Op Only)",
-                    "description": "In the lighthouse, there are 4 dials with numbers from 0 to 9, with one dial on each level. From bottom to top, the dials are colored purple, blue, orange, and yellow. Interacting with one dial will also move the dials above and below by 1 number. The dials start randomized, but the following steps will set them all correctly. The correct order, from bottom to top, is 6 4 7 2. (TODO how know success?)",
+                    "header": "5. Set the Dials (Co-Op Only)",
+                    "description": "In the lighthouse, there are 4 dials with numbers from 0 to 9, with one dial on each level. From bottom to top, the dials are colored purple, blue, orange, and yellow. Interacting with one dial will also move the dials above and below by 1 number. The dials start randomized, but the following steps will set them all correctly. The correct order, from bottom to top, is 6 4 7 2.",
                     "elements": [
                         {
                             "pic": {
@@ -408,13 +363,103 @@
                     ]
                 },
                 {
-                    "header": "9. Aquire the Vril Device",
-                    "description": "If the previous steps are all done correctly, a submarine will be shining a green light on the lighthouse. Go near the lighthouse and turn a zombie into a human using the V-R11. Follow him inside the lighthouse, and he will start floating up in the center of the stairs. Shoot him until he gets downed, then wait for his corpse to reach the top of the lighthouse. The Vril Device will drop all the way down to the bottom and can be interacted to pick up.",
+                    "header": "6. Morse Code Sequence (Co-Op Only)",
+                    "description": "There are 4 morse code radios that must be interacted in the correct order. If a radio is interacted in the wrong order, finish the set of 4, and then start again. To fix the sequence if it's out of sync, interact location 1 twice followed by the other 3 locations, and repeat until successful. When done successfully, a green blinking light will be seen in the sky and a beeping will be heard.",
                     "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/48.jpg",
+                                "alt": "Radio 1 - in the ship, down the stairs from the power room and on some equipment"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/49.jpg",
+                                "alt": "Radio 2 - next to Stamin-Up, on a canister"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/50.jpg",
+                                "alt": "Radio 3 - to the right of the zipline after going from the lighthouse to the ship"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/51.jpg",
+                                "alt": "Radio 4 - under the stairs going from PhD Flopper to the metal door"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/63.jpg",
+                                "alt": "Blinking light in the sky"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "7. Control the Ship",
+                    "description": "Go to the power room in the ship. Interact on the steering wheel until the brown handle is facing down and to the right. There are 3 levers to the right of the steering wheel. Interact with the left lever 1 time and the right lever 3 times. After this is done, the beeping and blinking light will stop, and a submarine will surface near the front half of the ship.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/30.jpg",
+                                "alt": "Steering wheel and 3 levers"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/64.jpg",
+                                "alt": "Submarine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "8. Activate 4 Foghorns (Co-Op Only)",
+                    "description": "After the previous steps are completed, a submarine will come out of the water and 4 horns will be heard. There are 4 foghorns that must be interacted in the correct order to match the horn sequence. They can only be interacted while the map is foggy. If done incorrectly, or if you run out of time, wait until the next round when the submarine plays the horn sequence again. When done successfully, the submarine will shine a green light at the lighthouse.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/44.jpg",
+                                "alt": "Foghorn 1 - by the water between the lighthouse and ship"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/45.jpg",
+                                "alt": "Foghorn 2 - by the exit to the ice slide near Speed Cola"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/46.jpg",
+                                "alt": "Foghorn 3 - outside the lighthouse, by the stairs that go to the building with the metal door"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/47.jpg",
+                                "alt": "Foghorn 4 - by a rock before the dropoff going from the ice slide to the lighthouse"
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "assets/31.jpg",
                                 "alt": "Submarine shining a green light on the lighthouse"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "9. Aquire the Vril Device",
+                    "description": "If the previous steps are all done correctly, a green light will be shining down the center of the lighthouse stairs. Go near the lighthouse and turn a zombie into a human using the V-R11. Follow him inside the lighthouse, and he will start floating up in the center of the stairs. Shoot him until he gets downed, then wait for his corpse to reach the top of the lighthouse. The Vril Device will drop all the way down to the bottom and can be interacted to pick up.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/65.jpg",
+                                "alt": "Green light in the lighthouse"
                             }
                         },
                         {
@@ -457,7 +502,7 @@
                 },
                 {
                     "header": "11. Knife the Fuse Box",
-                    "description": "After the quote is done playing, the fuse box will begin sparking. Knife the fuse box to fix it and complete the main quest. A Wunderwaffe DG-2 power-up will spawn in front of the door, and all players will unlock either the solo or co-op achievement. For all future games, killing George will drop a Wunderwaffe DG-2 power-up instead of a Death Machine power-up (TODO).",
+                    "description": "After the quote is done playing, the fuse box will begin sparking. Knife the fuse box to fix it and complete the main quest. A Wunderwaffe DG-2 power-up will spawn in front of the door, and all players will unlock either the solo or co-op achievement. For all future games, killing George will drop a Wunderwaffe DG-2 power-up instead of a Death Machine power-up.",
                     "elements": [
                         {
                             "pic": {
@@ -491,13 +536,13 @@
                         {
                             "pic": {
                                 "src": "assets/5.jpg",
-                                "alt": "Location 2 - in the ship, on a chair a few levels below the power switch"
+                                "alt": "Location 2 - in the ship, on a booth seat a few levels below the power switch"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/10.jpg",
-                                "alt": "Location 3 - in the lighthouse building, under a table next to PhD Flopper"
+                                "alt": "Location 3 - in the lighthouse building, under a table across from PhD Flopper"
                             }
                         }
                     ]
@@ -509,12 +554,44 @@
             "subsections": [
                 {
                     "header": "V-R11 Side Effects",
-                    "description": "(TODO stuntman, zombie blood, instakill)",
                     "elements": [
                         {
+                            "full": true,
+                            "step": {
+                                "title": "Shooting George",
+                                "description": "George can be temporarily calmed for a few seconds by being shot with the V-R11, but will then become enraged again. Using the PaP V-R11 on George while he's standing in water will make him temporarily leave the map, but he won't drop any power-ups."
+                            }
+                        },
+                        {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/69.jpg",
+                                "alt": "Temporarily calming George with the V-R11"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/70.jpg",
+                                "alt": "George leaving from the PaP V-R11"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Shooting a Player",
+                                "description": "Shooting the V-R11 at another player will cause zombies to ignore them for a few seconds. The PaP V-R11 will also give the player an insta-kill effect during this time."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Stuntman Explosion",
+                                "description": "Shooting a zombie with the PaP V-R11 and then shooting the human 2 more times will cause a large explosion and grant the 'Stuntman' achievement."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/71.jpg",
+                                "alt": "Explosion from PaP V-R11"
                             }
                         }
                     ]

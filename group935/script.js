@@ -187,10 +187,14 @@ function pageRev2(data) {
                             let src = el.pic.src
                             if(src.endsWith('/.jpg'))
                                 src = '/assets/wiptexture.png'
-
                             page += '<div class="pic-wrap"><img class="pic" src="'+src+'"/></div>'
+
+                            let disclaimer = ''
+                            if(el.pic.disclaimer)
+                                disclaimer = '<span class="pic-disclaimer"><br/>('+el.pic.disclaimer+')</span>'
+
                             if(el.pic.alt)
-                                page += '<p class="pic-alt">'+el.pic.alt+'</p>'
+                                page += '<p class="pic-alt">'+el.pic.alt+disclaimer+'</p>'
                         }
                         else if(el.step) {
                             if(el.step.title)

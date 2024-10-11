@@ -1038,30 +1038,31 @@
                 },
                 {
                     "header": "5. Defeat the Apothicon",
-                    "description": "Each of the 3 Train Stations have a box that must be shocked in Beast Mode to electrify the rail. The rail will only be powered a short time before needing to be shocked again. One player should wait in Beast Mode in the Junction, two players should be in Beast Mode ready to shock the boxes, and the last player should be near the other Train Station and not in Beast Mode. The player not in Beast Mode should call the train to their location, then quickly enter Beast Mode. Then, the 3 players by the Train Stations should shock the boxes so all 3 rails are electrified at the same time, while the train is still moving, and before the train passes through the Junction. As soon as the train passes through the Junction, if all 3 rails are electrified, the player standing in the Junction must shock the 3 Keepers under the circle of the rail track. If done correctly, the cutscene will play and the quest is finished.",
+                    "description": "Each of the 3 Train Stations have a box that must be shocked in Beast Mode to electrify the rail. The rail will only be powered a short time before needing to be shocked again. One player should wait in Beast Mode in the Junction, two players should be in Beast Mode ready to shock the boxes, and the last player should be near the other Train Station and not in Beast Mode. The player not in Beast Mode should call the train to their location, then quickly enter Beast Mode. Then, the 3 players by the Train Stations should shock the boxes so all 3 rails are electrified at the same time, while the train is still moving, and before the train passes through the Junction. When the train passes through the Junction, if all 3 rails are electrified, the large Gateworm will be destroyed by the train. As soon as this happens, the player standing in the Junction must shock the 3 Keepers under the circle of the rail track. If done correctly, the cutscene will play and the quest is finished.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/126.jpg",
+                                "src": "assets/126_edit.jpg",
                                 "alt": "Canal District box to shock"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/127.jpg",
+                                "src": "assets/127_edit.jpg",
                                 "alt": "Footlight District box to shock"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/128.jpg",
+                                "src": "assets/128_edit.jpg",
                                 "alt": "Waterfront District box to shock"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/129.jpg",
-                                "alt": "Location where the 3 Keepers will be that must be shocked"
+                                "alt": "Location where the 3 Keepers will be that must be shocked",
+                                "disclaimer": "Keepers unpictured"
                             }
                         }
                     ]

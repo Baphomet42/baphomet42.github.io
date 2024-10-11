@@ -190,6 +190,18 @@ table {
     min-height: 4rem;
 }
 
+.pic-alt {
+    text-align: left;
+}
+
+.pic-disclaimer {
+    color: #FFFF55;
+    font-family: sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-style: italic;
+}
+
 #control-panel-hidden {
     right: 0;
     width: 4rem;

@@ -9,7 +9,7 @@
             "subsections": [
                 {
                     "header": "Power Switch",
-                    "description": "Located between the church and the bedrooms",
+                    "description": "Located between the church and the bedrooms.",
                     "elements": [
                         {
                             "pic": {
@@ -229,7 +229,7 @@
                 },
                 {
                     "header": "Part 2 (Eagle)",
-                    "description": "Located around courtyard outside of Speed Cola room (3 possible locations)",
+                    "description": "Located around courtyard outside of Speed Cola room (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
@@ -253,7 +253,7 @@
                 },
                 {
                     "header": "Part 3 (Fuel Canisters)",
-                    "description": "Located near Double Tap (3 possible locations)",
+                    "description": "Located near Double Tap (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
