@@ -1,37 +1,32 @@
 * {
-    font-family: 'Minecraft-Seven_v2';
-}
-
-@font-face {
-    font-family: 'Minecraft-Seven_v2';
-    src: url('/assets/mojang/Minecraft-Seven_v2.woff') format('woff'),
-    url('/assets/mojang/Minecraft-Seven_v2.ttf') format('truetype');
+    font-family: var(--font-mc);
 }
 
 .item-subtitle {
-    color: #AAAAAA;
+    color: var(--mc-gray);
 }
 
 .item-header {
     font-size: xx-large;
     margin:0;
-    color: #FFFFFF;
+    color: var(--mc-white);
 }
 
 .item-name {
     font-size: x-large;
     margin: 0;
-    color: #FFFFFF;
+    color: var(--mc-white);
 }
 
 label {
-    color: white;
+    color: var(--mc-white);
     font-size: x-large;
 }
 
 .uuid-input {
     font-size: large;
-    width: 100%;
+    align-self: center;
+    width: 90%;
 }
 
 #convert-mode {

@@ -177,7 +177,7 @@ function pageRev2(data) {
         page += '<div class="section-body collapsable" id="section_'+sectionKey+'" style="display: none">'
 
         if(section.description)
-            page += '<h3 class="center">'+section.description+'</h3>'
+            page += '<p class="section-description">'+section.description+'</p>'
 
         if(section.subsections) {
 

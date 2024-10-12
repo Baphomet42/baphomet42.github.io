@@ -47,31 +47,37 @@
     
                 <td class="card-wrap"><div class="card">
                     <h1>Setup</h1>
-                    <li>Subscribe to a console enabler mod like this one: <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=772261373" rel="noopener noreferrer" target="_blank" class="link">Console Enabler by AZA</a></li>
-                    <li>On the main menu, open MODS and enable the Console Enabler mod</li>
-                    <li>Press the backtick (`) key at any time to open the console</li>
-                    <li>In order to allow cheats in game, run the command "/developer 2" before starting a game</li>
-                    <li>Once inside a game, you can run "/developer 0" to remove debug lines (cheats will still be enabled)</li>
+                    <ul>
+                        <li>Subscribe to a console enabler mod like this one: <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=772261373" rel="noopener noreferrer" target="_blank" class="link">Console Enabler by AZA</a></li>
+                        <li>On the main menu, open MODS and enable the Console Enabler mod</li>
+                        <li>Press the backtick (<span class="codeblock">`</span>) key at any time to open the console</li>
+                        <li>In order to allow cheats in game, run the command <span class="codeblock">/developer 2</span> before starting a game</li>
+                        <li>Once inside a game, you can run <span class="codeblock">/developer 0</span> to remove debug lines (cheats will still be enabled)</li>
+                    </ul>
                 </div></td>
     
                 <td class="card-wrap"><div class="card">
                     <h1>Common Commands</h1>
-                    <li>"/god" - prevents all damage</li>
-                    <li>"/noclip" - fly through walls (hold shift to fly faster)</li>
-                    <li>"/ui_enabled 0" and "/cg_draw2d 0" - remove HUD and crosshair</li>
-                    <li>"/timescale 1" - speed up or slow down the game by setting a value .001 to 10</li>
-                    <li>"/give ammo" - refill all guns and equipment</li>
-                    <li>"/r_fog 0" - disable fog</li>
-                    <li>"/fast_restart" - reset the level without going back to the main menu</li>
-                    <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=772912807" rel="noopener noreferrer" target="_blank" class="link">View More</a></li>
+                    <ul>
+                        <li><span class="codeblock">/god</span> - prevents all damage</li>
+                        <li><span class="codeblock">/noclip</span> - fly through walls (hold shift to fly faster)</li>
+                        <li><span class="codeblock">/ui_enabled 0</span> and <span class="codeblock">/cg_draw2d 0</span> - remove HUD and crosshair</li>
+                        <li><span class="codeblock">/timescale 1</span> - speed up or slow down the game by setting a value .001 to 10</li>
+                        <li><span class="codeblock">/give ammo</span> - refill all guns and equipment</li>
+                        <li><span class="codeblock">/r_fog 0</span> - disable fog</li>
+                        <li><span class="codeblock">/fast_restart</span> - reset the level without going back to the main menu</li>
+                        <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=772912807" rel="noopener noreferrer" target="_blank" class="link">View More</a></li>
+                    </ul>
                 </div></td>
     
                 <td class="card-wrap"><div class="card">
                     <h1>Weapon Codes</h1>
-                    <li>Used for the give command (Ex: "/give ray_gun") to replace your current weapon</li>
-                    <li>Add "_upgraded" to the end of the ID for the PaP version for many guns (Ex: "/give ray_gun_upgraded")</li>
-                    <li>Some weapons and grenades will not work properly when given through this command (such as Cymbal Monkey, Wave Gun, Q.E.D., Gersh Device, etc)</li>
-                    <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=772912807" rel="noopener noreferrer" target="_blank" class="link">See Weapon List</a></li>
+                    <ul>
+                        <li>Used for the give command (Ex: <span class="codeblock">/give ray_gun</span>) to replace your current weapon</li>
+                        <li>Add <span class="codeblock">_upgraded</span> to the end of the ID for the PaP version for many guns (Ex: <span class="codeblock">/give ray_gun_upgraded</span>)</li>
+                        <li>Some weapons and grenades will not work properly when given through this command (such as Cymbal Monkey, Wave Gun, Q.E.D., Gersh Device, etc)</li>
+                        <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=772912807" rel="noopener noreferrer" target="_blank" class="link">See Weapon List</a></li>
+                    </ul>
                 </div></td>
     
             </tr></table>
@@ -82,27 +88,31 @@
     
                 <td class="card-wrap"><div class="card">
                     <h1>Setup</h1>
-                    <li>Navigate to "C:\Program Files (x86)\Steam\steamapps\common\Call of Duty Black Ops\players"</li>
-                    <li>Open "config.cfg"</li>
-                    <li>Change the line `seta monkeytoy "1"` to `seta monkeytoy "0"`</li>
-                    <li>Add keybinds for commands to use ingame</li>
-                    <li>Open "Properties" and set file to "Read-only"</li>
+                    <ul>
+                        <li>Navigate to <span class="codeblock">C:\Program Files (x86)\Steam\steamapps\common\Call of Duty Black Ops\players</span></li>
+                        <li>Open <span class="codeblock">config.cfg</span></li>
+                        <li>Change the line <span class="codeblock">seta monkeytoy "1"</span> to <span class="codeblock">seta monkeytoy "0"</span></li>
+                        <li>Add keybinds for commands to use ingame</li>
+                        <li>Open <span class="codeblock">Properties</span> and set file to <span class="codeblock">Read-only</span></li>
+                    </ul>
                 </div></td>
     
                 <td class="card-wrap"><div class="card">
                     <h1>Adding Keybinds</h1>
-                    <p>To add a new bind, make a new line with `bind (KEY) "(COMMAND)"`</p>
+                    <p>To add a new bind, make a new line with <span class="codeblock">bind (KEY) "(COMMAND)"</span></p>
                     <h1>Examples</h1>
-                    <li>bind N "god"</li>
-                    <li>bind M "noclip"</li>
-                    <li>bind H "cg_draw2D 0"</li>
-                    <li>bind J "cg_draw2D 1"</li>
-                    <li>bind K "give ammo"</li>
-                    <li>bind L "give ray_gun_upgraded_zm"</li>
-                    <li>bind Y "cg_fov 100"</li>
-                    <li>bind U "timescale .001"</li>
-                    <li>bind I "timescale 1"</li>
-                    <li>bind O "timescale 10"</li>
+                    <ul>
+                        <li><span class="codeblock">bind N "god"</span></li>
+                        <li><span class="codeblock">bind M "noclip"</span></li>
+                        <li><span class="codeblock">bind H "cg_draw2D 0"</span></li>
+                        <li><span class="codeblock">bind J "cg_draw2D 1"</span></li>
+                        <li><span class="codeblock">bind K "give ammo"</span></li>
+                        <li><span class="codeblock">bind L "give ray_gun_upgraded_zm"</span></li>
+                        <li><span class="codeblock">bind Y "cg_fov 100"</span></li>
+                        <li><span class="codeblock">bind U "timescale .001"</span></li>
+                        <li><span class="codeblock">bind I "timescale 1"</span></li>
+                        <li><span class="codeblock">bind O "timescale 10"</span></li>
+                    </ul>
                 </div></td>
     
             </tr></table>

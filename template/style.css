@@ -25,17 +25,17 @@
 .header-cell-page {
     border-width: 2px;
     border-style: solid;
-    border-color: white;
+    border-color: var(--header-borders);
     border-top: 0;
     border-bottom: 0;
     box-sizing: border-box;
     margin: -6px;
-    padding-left:1rem;
-    padding-right:1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 #footer-gold {
-    color: #FFAA00;
+    color: var(--mc-gold);
 }
 
 #ee0 {
@@ -43,7 +43,7 @@
     height: 1rem;
     width: 1rem;
     cursor: not-allowed;
-    color: #111111;
+    color: var(--jigsaw-gray);
     opacity: 0;
     right: 1rem;
     margin-top:-2rem;

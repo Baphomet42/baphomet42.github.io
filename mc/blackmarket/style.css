@@ -5,14 +5,14 @@
 
 .item-desc {
     font-style: italic;
-    color: #AA00AA;
+    color: var(--mc-dark-purple);
     margin-left: 0;
     margin-right: 0;
 }
 
 .item-cmd {
-    background-color: black;
-    color: white;
+    background-color: var(--mc-black);
+    color: var(--mc-white);
     width: 100%;
 }
 

@@ -1,15 +1,50 @@
 :root {
     color-scheme: dark;
+    --main-background-color: #000000;
+    --main-text-color: #FFFFFF;
+    --header-borders: #FFFFFF;
+    --mc-black: #000000;
+    --mc-gray: #AAAAAA;
+    --mc-gold: #FFAA00;
+    --mc-dark-purple: #AA00AA;
+    --mc-red: #FF5555;
+    --mc-yellow: #FFFF55;
+    --mc-white: #FFFFFF;
+    --tooltip-background: #100010F0;
+    --tooltip-border-top: #5000FF50;
+    --tooltip-border-bottom: #28007F50;
+    --jigsaw-gray: #111111;
+    --jigsaw-purple: #271C2A;
+    --jigsaw-white: #D7C2D7;
+    --button-background: #222222;
+    --button-text: #FFFFFF;
+    --button-background-hover: #111111;
+    --button-top: #333333;
+    --button-bottom: #000000;
+    --scrollbar-background: #00000000;
+    --scrollbar-slider: #AAAAAA99;
+
+    --font-serif: serif;
+    --font-sans: sans-serif;
+    --font-mono: monospace;
+    --font-mc: 'Minecraft-Seven_v2', var(--font-sans);
+}
+
+@font-face {
+    font-family: 'Minecraft-Seven_v2';
+    src: url('/assets/mojang/Minecraft-Seven_v2.woff') format('woff'),
+    url('/assets/mojang/Minecraft-Seven_v2.ttf') format('truetype');
 }
 
 * {
     touch-action: manipulation;
+    scrollbar-color: var(--scrollbar-slider) var(--scrollbar-background);
 }
 
 html {
-    background-color: #271C2A;
-    color: #D7C2D7;
-    font-family: serif;
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+    font-family: var(--font-sans);
     font-size: large;
 }
 
@@ -18,6 +53,11 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+input, textarea {
+    color: var(--mc-white);
+    background-color: var(--mc-black);
 }
 
 br {
@@ -31,7 +71,7 @@ br {
     right: 0;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #111111;
+    background-color: var(--jigsaw-gray);
     font-size: 2rem;
     text-align: center;
 }
@@ -41,9 +81,10 @@ br {
     left: 0;
     right: 0;
     height: 4rem;
-    background-color: #111111;
+    background-color: var(--jigsaw-gray);
     font-size: 1rem;
     text-align: center;
+    font-family: var(--font-serif);
 }
 
 footer {
@@ -81,10 +122,8 @@ a {
     text-decoration: none;
 }
 
-h1 {
-    margin: 0;
-    text-align: center;
-    font-family: sans-serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
 }
 
 ul {
@@ -166,33 +205,33 @@ ul {
 }
 
 .tooltip {
-    background-color: #100010F0;
+    background-color: var(--tooltip-background);
     border: 4px solid;
-    border-image: linear-gradient(to bottom, #5000FF50, #28007F50);
+    border-image: linear-gradient(to bottom, var(--tooltip-border-top), var(--tooltip-border-bottom));
     border-image-slice: 1;
-    box-shadow: 4px 0 0 0 #100010F0, -4px 0 0 0 #100010F0, 0 4px 0 0 #100010F0, 0 -4px 0 0 #100010F0;
+    box-shadow: 4px 0 0 0 var(--tooltip-background), -4px 0 0 0 var(--tooltip-background), 0 4px 0 0 var(--tooltip-background), 0 -4px 0 0 var(--tooltip-background);
 }
 
 .button {
     font-size: large;
-    background-color: #222222;
-    color: white;
+    background-color: var(--button-background);
+    color: var(--button-text);
     padding: .2rem .5rem .2rem .5rem;
-    border-top: .2rem solid #333333;
-    border-left: .2rem solid #333333;
-    border-right: .2rem solid #000000;
-    border-bottom: .2rem solid #000000;
+    border-top: .2rem solid var(--button-top);
+    border-left: .2rem solid var(--button-top);
+    border-right: .2rem solid var(--button-bottom);
+    border-bottom: .2rem solid var(--button-bottom);
     user-select: none;
     -webkit-user-select: none;
 }
 .button:hover {
-    background-color: #111111;
+    background-color: var(--button-background-hover);
 }
 .button:active {
-    border-top: .2rem solid #000000;
-    border-left: .2rem solid #000000;
-    border-right: .2rem solid #333333;
-    border-bottom: .2rem solid #333333;
+    border-top: .2rem solid var(--button-bottom);
+    border-left: .2rem solid var(--button-bottom);
+    border-right: .2rem solid var(--button-top);
+    border-bottom: .2rem solid var(--button-top);
 }
 
 .button-disabled {
@@ -209,7 +248,7 @@ ul {
 
 .slider {
     appearance: none;
-    background-color: #333333;
+    background-color: var(--button-background);
     height: .5rem;
     width: 100%;
 }
@@ -217,24 +256,15 @@ ul {
     appearance: none;
     width: .75rem;
     height: 1.5rem;
-    background-color: #D7C2D7;
+    background-color: var(--jigsaw-white);
 }
 
 .text-box {
     resize: none;
     width: 100%;
     height: 20rem;
-    background-color: black;
-    color: white;
     font-size: large;
     font-family: inherit;
-}
-
-.main-title {
-    margin: 0;
-    padding: 0;
-    margin-left: 5rem;
-    text-align: left;
 }
 
 .main-button {
@@ -267,11 +297,38 @@ ul {
 }
 
 .error {
-    color: #FF5555;
+    color: var(--mc-red);
 }
 
 .warn {
-    color: #FFFF55;
+    color: var(--mc-yellow);
+}
+
+.jigsaw-white {
+    color: var(--jigsaw-white);
+}
+
+.codeblock {
+    font-family: var(--font-mono);
+    color: var(--mc-white);
+    background-color: var(--mc-black);
+    text-decoration: underline;
+}
+
+.serif {
+    font-family: var(--font-serif);
+}
+
+.sans {
+    font-family: var(--font-sans);
+}
+
+.mono {
+    font-family: var(--font-mono);
+}
+
+.mc {
+    font-family: var(--font-mc);
 }
 
 #parallax-background {
@@ -311,10 +368,6 @@ ul {
     
     .card-wrap-third-big {
         width: 100%;
-    }
-
-    .main-title {
-        margin-left: 1rem;
     }
     
     .main-button {

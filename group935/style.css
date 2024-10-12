@@ -1,18 +1,15 @@
-* {
-    scrollbar-color: #aaaaaa99 #00000000;
-}
-
-html {
-    background-color: black;
-    color: white;
+:root {
+    --section-background: #000000cc;
+    --section-clickable: #00000099;
+    --section-clickable-hover: #33333399;
+    --section-clickable-press: #66666699;
+    --accent-color: #FFFF55;
+    --subsection-border: #888888;
+    --header-borders: var(--mc-gray);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: serif;
-}
-
-p, li, label {
-    font-family: sans-serif;
+    font-family: var(--font-mono);
 }
 
 h1 {
@@ -20,6 +17,10 @@ h1 {
 }
 
 h2 {
+    font-size: x-large;
+}
+
+h3 {
     font-size: x-large;
 }
 
@@ -63,9 +64,9 @@ ul {
 }
 
 .wip {
-    font-family: sans-serif;
-    color: white;
-    background-color: #FF5555;
+    color: var(--mc-white);
+    background-color: var(--mc-red);
+    text-align: center;
     text-shadow: 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black;
     padding: .5rem;
 }
@@ -77,8 +78,8 @@ ul {
 }
 
 .notice {
-    color: #FFFF55;
-    font-family: sans-serif;
+    color: var(--accent-color);
+    font-family: var(--font-sans);
     font-weight: normal;
     text-align: center;
     padding: .5rem;
@@ -86,7 +87,7 @@ ul {
 
 .section-full {
     padding: 2rem;
-    background-color: #000000cc;
+    background-color: var(--section-background);
     width: 95%;
     margin: 1rem auto;
     box-sizing: border-box;
@@ -94,7 +95,7 @@ ul {
 
 .section {
     padding: 2rem;
-    background-color: #000000cc;
+    background-color: var(--section-background);
     width: min(95%, 70rem);
     margin: 1rem auto;
     box-sizing: border-box;
@@ -105,7 +106,7 @@ ul {
 }
 
 .section-group {
-    background-color: #000000cc;
+    background-color: var(--section-background);
     width: min(95%, 70rem);
     margin: 1rem auto;
     box-sizing: border-box;
@@ -113,18 +114,18 @@ ul {
 
 .section-header {
     padding: .5rem;
-    background-color: #00000099;
+    background-color: var(--section-clickable);
     cursor: pointer;
 }
 .section-header:hover {
-    background-color: #33333399;
+    background-color: var(--section-clickable-hover);
 }
 .section-header:active {
-    background-color: #66666699;
+    background-color: var(--section-clickable-press);
 }
 
 .section-header-collapse-icon {
-    font-family: monospace;
+    font-family: var(--font-mono);
     font-size: 2rem;
     font-weight: bolder;
     text-align: left;
@@ -133,14 +134,14 @@ ul {
 }
 
 .collapse-button {
-    background-color: #00000099;
+    background-color: var(--section-clickable);
     cursor: pointer;
 }
 .collapse-button:hover {
-    background-color: #33333399;
+    background-color: var(--section-clickable-hover);
 }
 .collapse-button:active {
-    background-color: #66666699;
+    background-color: var(--section-clickable-press);
 }
 
 .section-footer {
@@ -155,9 +156,14 @@ ul {
     font-size: medium;
 }
 
+.section-description {
+    text-align: center;
+    font-size: large;
+}
+
 .subsection {
-    border-top: .2rem solid #888888;
-    border-bottom: .2rem solid #888888;
+    border-top: .2rem solid var(--subsection-border);
+    border-bottom: .2rem solid var(--subsection-border);
 }
 
 .subsection-header {
@@ -165,7 +171,7 @@ ul {
 }
 
 .link {
-    color: #FFFF55;
+    color: var(--accent-color);
 }
 
 .col-wrap {
@@ -205,8 +211,7 @@ ul {
 }
 
 .pic-disclaimer {
-    color: #FFFF55;
-    font-family: sans-serif;
+    color: var(--accent-color);
     font-weight: normal;
     text-align: center;
     font-style: italic;
@@ -241,7 +246,6 @@ ul {
     cursor: pointer;
     text-align: center;
     font-size: xx-large;
-    font-family: sans-serif;
     color: #FFFFFFbb;
 }
 .control-panel-button:hover {
