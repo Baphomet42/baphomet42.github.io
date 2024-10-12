@@ -1,6 +1,6 @@
 {
+    "id": "origins",
     "name": "Origins",
-    "subtext": "Black Ops II | Black Ops III",
     "background": "assets/background.png",
     "rev": 2,
     "wip": true,
@@ -21,7 +21,7 @@
                     ]
                 },
                 {
-                    "header": "TODO Mechs",
+                    "header": "Giant Robots",
                     "description": "",
                     "elements": [
                         {
@@ -45,18 +45,48 @@
                     ]
                 },
                 {
+                    "header": "Digging",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Tank",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Trials (TODO)",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
                     "header": "Perk Machines",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
                                 "alt": "Quick Revive - TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Double Tap Root Beer - TODO"
                             }
                         },
                         {
@@ -346,7 +376,25 @@
             ]
         },
         {
-            "header": "TODO thunderpunch",
+            "header": "TODO punch and upgrade",
+            "description": "",
+            "subsections": [
+                {
+                    "header": "",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "TODO g strike",
             "description": "",
             "subsections": [
                 {
@@ -395,7 +443,7 @@
             "header": "Songs",
             "subsections": [
                 {
-                    "header": "",
+                    "header": "Archangel",
                     "description": "Interact with 3 TODOs.",
                     "elements": [
                         {
@@ -419,7 +467,19 @@
                     ]
                 },
                 {
-                    "header": "",
+                    "header": "Shepherd of Fire",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Aether",
                     "description": "",
                     "elements": [
                         {
@@ -436,6 +496,18 @@
             "header": "Side Easter Eggs",
             "subsections": [
                 {
+                    "header": "Jumpscare",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
                     "header": "",
                     "description": "",
                     "elements": [
@@ -451,7 +523,7 @@
         },
         {
             "header": "Hide and Seek",
-            "description": "Play Samantha's Sorrow(TODO) and get a Max Ammo (Black Ops III only)",
+            "description": "Play (TODO Remember Forever) and get a Max Ammo (Black Ops III only)",
             "subsections": [
                 {
                     "header": "1. TODO",

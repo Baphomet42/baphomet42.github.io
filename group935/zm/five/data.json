@@ -1,7 +1,7 @@
 {
+    "id": "five",
     "name": "\"Five\"",
-    "subtext": "Black Ops",
-    "background": "https://callofdutymaps.com/wp-content/uploads/zombiesfive35.jpg",
+    "background": "assets/background.png",
     "rev": 2,
     "sections" : [
         {

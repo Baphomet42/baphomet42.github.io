@@ -1,8 +1,11 @@
 var pageData = {'panel': false, 'sections':[], 'current': -1}
+var gameData = []
 
-function buildPage(data) {
-    if(data.rev === 2)
-        return pageRev2(data)
+function buildPage(pageData, gamesData) {
+    gameData = gamesData.games
+
+    if(pageData.rev === 2)
+        return pageRev2(pageData)
 }
 
 function toggleSectionCollapse(section) {
@@ -28,15 +31,19 @@ function collapseAll(mode) {
 function setSectionCollapse(section,mode) {
     pageData.sections[section].collapse = mode
     let el = document.getElementById('section_'+section)
+    let el_collapse_icon = document.getElementById('section_'+section+'_collapse_icon')
 
     if(mode == 0 || mode == 1) {
         el.style.display = "block"
+        el_collapse_icon.innerHTML = "\u2014"
         if(mode == 0 && (pageData.current<=-1 || pageData.current>=pageData.sections.length || pageData.sections[pageData.current].collapse==2)) {
             pageData.current = section
         }
     }
-    else
+    else {
         el.style.display = "none"
+        el_collapse_icon.innerHTML = "+"
+    }
 }
 
 function scrollToSubsection(section, subsection) {
@@ -115,7 +122,22 @@ function pageRev2(data) {
     page += '<div class="section" id="title-section">'
     page += '<div class="back-button-wrap"><a class="button back-button" href="/group935" rel="noopener noreferrer">< All Maps</a></div>'
     page += '<h1 class="center">'+data.name+'</h1>'
-    page += '<h3 class="center">'+data.subtext+'</h3>'
+
+    let foundGames = [] 
+    $.each(gameData, function (gameKey, game) {
+        $.each(game.maps, function (mapKey, map) {
+            if(map.id === data.id)
+                foundGames.push(game.name)
+        })
+    })
+    let subtext = ''
+    for(let i=0; i<foundGames.length; i++) {
+        if(i>0)
+            subtext += ' | '
+        subtext += foundGames[foundGames.length-1-i]
+    }
+    page += '<h3 class="center">'+subtext+'</h3>'
+
     if(data.notice) {
         page += '<div class="notice-wrap"><h4 class="notice">⚠ Notice: '+data.notice+'</h4></div>'
     }
@@ -126,8 +148,8 @@ function pageRev2(data) {
     }
     if(data.sections.length > 0) {
         page += '<div class="header-table"><table><tr>'
-        page += '<td onclick="collapseAll(2)" class="collapse-button header-table-button">[Collapse All]</td>'
-        page += '<td onclick="collapseAll(0)" class="collapse-button header-table-button">[Expand All]</td>'
+        page += '<td onclick="collapseAll(2)" class="collapse-button header-table-button no-select">[Collapse All]</td>'
+        page += '<td onclick="collapseAll(0)" class="collapse-button header-table-button no-select">[Expand All]</td>'
         page += '</tr></table></div>'
     }
     page += '</div>'
@@ -147,7 +169,11 @@ function pageRev2(data) {
         pageData.sections.push({'collapse': 2})
 
         page += '<div class="section-group">'
-        page += '<div class="section-header" onclick="toggleSectionCollapse('+sectionKey+')"><h2 class="center">'+section.header+'</h2></div>'
+        page += '<div class="section-header no-select" onclick="toggleSectionCollapse('+sectionKey+')"><table><tr>'
+        page += '<td class="section-header-collapse-icon mobile-hide"></td>'
+        page += '<td><h2 class="center">'+section.header+'</h2></td>'
+        page += '<td class="section-header-collapse-icon no-select" id="section_'+sectionKey+'_collapse_icon">+</td>'
+        page += '</tr></table></div>'
         page += '<div class="section-body collapsable" id="section_'+sectionKey+'" style="display: none">'
 
         if(section.description)
@@ -156,21 +182,21 @@ function pageRev2(data) {
         if(section.subsections) {
 
             if(section.subsections.length > 1) {
-                page += '<div class="jump-link-wrap">'
-                page += '<p class="jump-link-header">Jump to...</p>'
-                page += '<ul>'
+                page += '<div class="subsection">'
+                page += '<h3 class="subsection-header">Jump to...</h3>'
+                page += '<table class="card-table"><tr class="card-table-row"><td class="col-wrap-full"><div class="col-cell center-container"><ul>'
                 $.each(section.subsections, function (subKey, sub) {
                     if(sub.header)
                         page += '<li><span class="link" onclick="scrollToSubsection('+sectionKey+','+subKey+')">'+sub.header+'</span></li>'
                 })
-                page += '</ul></div>'
+                page += '</ul></div></td></tr></table></div>'
             }
 
             $.each(section.subsections, function (subKey, sub) {
                 page += '<div class="subsection" id="section_'+sectionKey+'_'+subKey+'">'
 
                 if(sub.header)
-                    page += '<h3>'+sub.header+'</h3>'
+                    page += '<h3 class="subsection-header">'+sub.header+'</h3>'
 
                 if(sub.description)
                     page += '<p>'+sub.description+'</p>'
@@ -215,39 +241,8 @@ function pageRev2(data) {
                             page += '</ul>'
                         }
                         else if(el.special) {
-                            if(el.special === "gorod_valve") {
-                                page += '<h3>Valve configuration tool</h3>'
-                                page += '<p>Input the locations of the green light valve and pink cylinder valve. Then, interact with each valve to set the number based on the output below. <a href="https://kronorium.com/blackops3/gorodkrovi/" rel="noopener noreferrer" target="_blank" class="link">Credit</a></p>'
-                                page += '<div>'
-                                page += '<label for="gorod-valve-pink">Pink Cylinder Valve: </label><select id="gorod-valve-pink" style="font-size:large" onchange="setGorodValve(\'pink\',this.value)">'
-                                page += '<option value="select">Select Location</option>'
-                                page += '<option value="dragon">Dragon Command</option>'
-                                page += '<option value="tank">Tank Factory</option>'
-                                page += '<option value="infirmary">Infirmary</option>'
-                                page += '<option value="armory">Armory</option>'
-                                page += '<option value="supply">Supply Depot</option>'
-                                page += '<option value="dept">Department Store</option>'
-                                page += '</select>'
-                                page += '</div><br/><div>'
-                                page += '<label for="gorod-valve-green">Green Light Valve: </label><select id="gorod-valve-green" style="font-size:large" onchange="setGorodValve(\'green\',this.value)">'
-                                page += '<option value="select">Select Location</option>'
-                                page += '<option value="dragon">Dragon Command</option>'
-                                page += '<option value="tank">Tank Factory</option>'
-                                page += '<option value="infirmary">Infirmary</option>'
-                                page += '<option value="armory">Armory</option>'
-                                page += '<option value="supply">Supply Depot</option>'
-                                page += '<option value="dept">Department Store</option>'
-                                page += '</select>'
-                                page += '</div><br/>'
-
-                                page += '<p>Set the valves to the following:</p>'
-                                page += '<li>Dragon Command: <span id="gorod-valve-dragon">(Select Valve Locations)</span></li>'
-                                page += '<li>Tank Factory: <span id="gorod-valve-tank">(Select Valve Locations)</span></li>'
-                                page += '<li>Infirmary: <span id="gorod-valve-infirmary">(Select Valve Locations)</span></li>'
-                                page += '<li>Armory: <span id="gorod-valve-armory">(Select Valve Locations)</span></li>'
-                                page += '<li>Supply Depot: <span id="gorod-valve-supply">(Select Valve Locations)</span></li>'
-                                page += '<li>Department Store: <span id="gorod-valve-dept">(Select Valve Locations)</span></li>'
-                            }
+                            if(el.special === "gorod_valve")
+                                page += buildGorodValveStep()
                         }
 
                         page += "</div></td>"
@@ -259,18 +254,58 @@ function pageRev2(data) {
             })
         }
 
-        page += '<div class="section-footer collapse-button" onclick="setSectionCollapse('+sectionKey+',2)"><h2 class="center section-footer-text">[Collapse]</h2></div>'
+        page += '<div class="section-footer collapse-button no-select" onclick="setSectionCollapse('+sectionKey+',2)"><h2 class="center section-footer-text">[Collapse]</h2></div>'
         page += '</div></div>'
     })
 
     page += '<div id="control-panel" class="control-panel" style="display: none">'
     page += '<table><tr>'
-    page += '<td class="control-panel-button" onclick="scrollToTop()">⌂</td>'
-    page += '<td class="control-panel-button" onclick="cycleSection(true)">\u2227</td>'
-    page += '<td class="control-panel-button" onclick="cycleSection(false)">\u2228</td>'
+    page += '<td class="control-panel-button no-select" onclick="scrollToTop()">⌂</td>'
+    page += '<td class="control-panel-button no-select" onclick="cycleSection(true)">\u2227</td>'
+    page += '<td class="control-panel-button no-select" onclick="cycleSection(false)">\u2228</td>'
     page += '</tr></table>'
     page += '</div>'
-    page += '<div id="control-panel-hidden" class="control-panel"><table><tr><td id="control-panel-hidden-button" class="control-panel-button" onclick="toggleControlPanelVisibility()"><</td></tr></table></div>'
+    page += '<div id="control-panel-hidden" class="control-panel"><table><tr><td id="control-panel-hidden-button" class="control-panel-button no-select" onclick="toggleControlPanelVisibility()"><</td></tr></table></div>'
+
+    return page
+}
+
+function buildGorodValveStep() {
+    let page = ''
+    
+    page += '<h3>Valve configuration tool</h3>'
+    page += '<p>Input the locations of the green light valve and pink cylinder valve. Then, interact with each valve to set the number based on the output below. <a href="https://kronorium.com/blackops3/gorodkrovi/" rel="noopener noreferrer" target="_blank" class="link">Credit</a></p>'
+    page += '<div>'
+    page += '<label for="gorod-valve-pink">Pink Cylinder Valve: </label><select id="gorod-valve-pink" style="font-size:large" onchange="setGorodValve(\'pink\',this.value)">'
+    page += '<option value="select">Select Location</option>'
+    page += '<option value="dragon">Dragon Command</option>'
+    page += '<option value="tank">Tank Factory</option>'
+    page += '<option value="infirmary">Infirmary</option>'
+    page += '<option value="armory">Armory</option>'
+    page += '<option value="supply">Supply Depot</option>'
+    page += '<option value="dept">Department Store</option>'
+    page += '</select>'
+    page += '</div><br/><div>'
+    page += '<label for="gorod-valve-green">Green Light Valve: </label><select id="gorod-valve-green" style="font-size:large" onchange="setGorodValve(\'green\',this.value)">'
+    page += '<option value="select">Select Location</option>'
+    page += '<option value="dragon">Dragon Command</option>'
+    page += '<option value="tank">Tank Factory</option>'
+    page += '<option value="infirmary">Infirmary</option>'
+    page += '<option value="armory">Armory</option>'
+    page += '<option value="supply">Supply Depot</option>'
+    page += '<option value="dept">Department Store</option>'
+    page += '</select>'
+    page += '</div><br/>'
+
+    page += '<p>Set the valves to the following:</p>'
+    page += '<ul>'
+    page += '<li>Dragon Command: <span id="gorod-valve-dragon">(Select Valve Locations)</span></li>'
+    page += '<li>Tank Factory: <span id="gorod-valve-tank">(Select Valve Locations)</span></li>'
+    page += '<li>Infirmary: <span id="gorod-valve-infirmary">(Select Valve Locations)</span></li>'
+    page += '<li>Armory: <span id="gorod-valve-armory">(Select Valve Locations)</span></li>'
+    page += '<li>Supply Depot: <span id="gorod-valve-supply">(Select Valve Locations)</span></li>'
+    page += '<li>Department Store: <span id="gorod-valve-dept">(Select Valve Locations)</span></li>'
+    page += '</ul>'
 
     return page
 }

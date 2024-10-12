@@ -1,6 +1,6 @@
 {
+    "id": "call_of_the_dead",
     "name": "Call of the Dead",
-    "subtext": "Black Ops",
     "background": "assets/background.png",
     "rev": 2,
     "notice": "The main quest is altered in solo.",

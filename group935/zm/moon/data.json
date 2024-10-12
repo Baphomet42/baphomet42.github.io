@@ -1,6 +1,6 @@
 {
+    "id": "moon",
     "name": "Moon",
-    "subtext": "Black Ops | Black Ops III",
     "background": "assets/background.png",
     "rev": 2,
     "sections" : [

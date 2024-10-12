@@ -11,6 +11,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: serif;
 }
 
+p, li, label {
+    font-family: sans-serif;
+}
+
 h1 {
     font-size: xx-large;
 }
@@ -20,7 +24,6 @@ h2 {
 }
 
 p {
-    font-family: sans-serif;
     font-size: medium;
 }
 
@@ -37,6 +40,10 @@ table {
     border-spacing: 0;
     width: 100%;
     height: 100%;
+}
+
+ul {
+    list-style: square inside;
 }
 
 .header-table {
@@ -79,7 +86,7 @@ table {
 
 .section-full {
     padding: 2rem;
-    background-color: #00000099;
+    background-color: #000000cc;
     width: 95%;
     margin: 1rem auto;
     box-sizing: border-box;
@@ -87,7 +94,7 @@ table {
 
 .section {
     padding: 2rem;
-    background-color: #00000099;
+    background-color: #000000cc;
     width: min(95%, 70rem);
     margin: 1rem auto;
     box-sizing: border-box;
@@ -98,7 +105,7 @@ table {
 }
 
 .section-group {
-    background-color: #00000099;
+    background-color: #000000cc;
     width: min(95%, 70rem);
     margin: 1rem auto;
     box-sizing: border-box;
@@ -106,26 +113,34 @@ table {
 
 .section-header {
     padding: .5rem;
-    background-color: #11111199;
+    background-color: #00000099;
     cursor: pointer;
 }
 .section-header:hover {
-    background-color: #333333aa;
+    background-color: #33333399;
 }
 .section-header:active {
-    background-color: #555555aa;
+    background-color: #66666699;
+}
+
+.section-header-collapse-icon {
+    font-family: monospace;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: left;
+    width: 2.5rem;
+    padding-left: 1rem;
 }
 
 .collapse-button {
-    background-color: #11111199;
+    background-color: #00000099;
     cursor: pointer;
-    user-select: none;
 }
 .collapse-button:hover {
-    background-color: #333333aa;
+    background-color: #33333399;
 }
 .collapse-button:active {
-    background-color: #555555aa;
+    background-color: #66666699;
 }
 
 .section-footer {
@@ -145,17 +160,12 @@ table {
     border-bottom: .2rem solid #888888;
 }
 
-.jump-link-wrap {
-    width: 66%;
-    margin-left: 17%;
-    padding-bottom: 1rem;
-    color: #FFFF55;
-    font-size: medium;
+.subsection-header {
+    margin-bottom: 0;
 }
 
-.jump-link-header {
-    margin-bottom: .5rem;
-    text-align: center;
+.link {
+    color: #FFFF55;
 }
 
 .col-wrap {
@@ -229,7 +239,6 @@ table {
     width: 4rem;
     height: 4rem;
     cursor: pointer;
-    user-select: none;
     text-align: center;
     font-size: xx-large;
     font-family: sans-serif;
@@ -240,6 +249,10 @@ table {
 }
 
 @media only screen and (max-width: 880px) {
+
+    .mobile-hide {
+        width: 0;
+    }
 
     .col-wrap {
         width: 100%;

@@ -24,7 +24,7 @@
         </div>
         <br/>
         <br/>
-        <span id="main-games"></span>
+        <span id="all-games"></span>
         <br/>
         <br/>
 
@@ -34,15 +34,15 @@
     <script>
         $(function () {
             $.getJSON("data.json", function (data) {
-                $.each(data.main, function (key, value) {
-                    $('#main-games').append(buildGames(value))
+                $.each(data.games, function (key, value) {
+                    $('#all-games').append(buildGames(value))
                 })
             })
         })
 
         function buildGames(value) {
             var game = ''
-            game += '<div class="game-wrap"><table class="game-table"><tr class="game-row">'
+            game += '<div class="game-wrap no-select"><table class="game-table"><tr class="game-row">'
             if(value.img)
                 game += '<td class="game-td center" style="background-image: url('+value.img+')">'
             else {
@@ -59,25 +59,19 @@
                 let linkData = ''
                 let linkDataEnd = '</a>'
                 let mapButtonData = ''
-                let mapButtonRed = false
                 let imgData = ''
 
-                if(mapVal.fallback) {
-                    linkData = '<a href="'+mapVal.fallback+'" rel="noopener noreferrer" target="_blank">'
-                    mapButtonRed = true
+                if(mapVal.wip)
+                    mapButtonData += ' map-red'
+
+                if(mapVal.id) {
+                    linkData = '<a href="/group935/zm/'+mapVal.id+'" rel="noopener noreferrer">'
+                    //imgData = ' style="background-image: url(/group935/zm/'+mapVal.id+'/icon.jpg)"'
                 }
-                else if(mapVal.link)
-                    linkData = '<a href="'+mapVal.link+'" rel="noopener noreferrer">'
                 else {
                     mapButtonData = ' map-nolink'
                     linkDataEnd = ''
                 }
-
-                if(mapVal.wip)
-                    mapButtonRed = true
-
-                if(mapButtonRed)
-                    mapButtonData += ' map-red'
 
                 if(mapVal.img)
                     imgData = ' style="background-image: url('+mapVal.img+')"'

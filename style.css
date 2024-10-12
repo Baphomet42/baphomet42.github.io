@@ -20,6 +20,11 @@ body {
     flex-direction: column;
 }
 
+br {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
 #header {
     top: 0;
     left: 0;
@@ -177,6 +182,8 @@ ul {
     border-left: .2rem solid #333333;
     border-right: .2rem solid #000000;
     border-bottom: .2rem solid #000000;
+    user-select: none;
+    -webkit-user-select: none;
 }
 .button:hover {
     background-color: #111111;
@@ -236,6 +243,11 @@ ul {
     margin-top: -1.5rem;
     margin-right: 5rem;
     float: right;
+}
+
+.no-select {
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .center {

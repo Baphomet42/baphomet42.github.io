@@ -22,9 +22,12 @@
     <div data-include="/template/footer" id="footer"></div>
 
     <script>
+        // map script
         $(function () {
-            $.getJSON("data.json", function (data) {
-                $('#page-data').append(buildPage(data))
+            $.getJSON("data.json", function (pageData) {
+                $.getJSON("../../data.json", function (gamesData) {
+                    $('#page-data').append(buildPage(pageData, gamesData))
+                })
             })
         })
     </script>
