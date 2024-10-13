@@ -2,6 +2,7 @@
     "id": "der_eisendrache",
     "name": "Der Eisendrache",
     "background": "https://callofdutymaps.com/wp-content/uploads/dereisendracheloadscreen.jpg",
+    "style": "primis",
     "rev": 2,
     "sections" : [
         {

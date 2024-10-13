@@ -2,6 +2,7 @@
     "id": "the_giant",
     "name": "The Giant",
     "background": "assets/background.jpg",
+    "style": "primis",
     "rev": 2,
     "maps": [{
         "img": "https://callofdutymaps.com/wp-content/uploads/thegiantloadscreen.jpg"

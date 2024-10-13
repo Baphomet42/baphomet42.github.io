@@ -2,6 +2,7 @@
     "id": "nacht_der_untoten",
     "name": "Nacht der Untoten",
     "background": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/581450/ss_5550daa59daff156b2971bbf3ce61afe41f000cf.1920x1080.jpg",
+    "style": "ultimis",
     "rev": 2,
     "sections" : [
         {

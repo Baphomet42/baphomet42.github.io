@@ -2,6 +2,7 @@
     "id": "kino_der_toten",
     "name": "Kino der Toten",
     "background": "assets/background.png",
+    "style": "ultimis",
     "rev": 2,
     "maps": [{
         "img": "assets/map1.png"

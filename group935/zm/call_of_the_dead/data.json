@@ -2,6 +2,7 @@
     "id": "call_of_the_dead",
     "name": "Call of the Dead",
     "background": "assets/background.png",
+    "style": "ultimis",
     "rev": 2,
     "notice": "The main quest is altered in solo.",
     "sections" : [

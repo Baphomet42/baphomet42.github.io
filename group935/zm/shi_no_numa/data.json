@@ -2,6 +2,7 @@
     "id": "shi_no_numa",
     "name": "Shi No Numa",
     "background": "assets/background.png",
+    "style": "ultimis",
     "rev": 2,
     "maps": [{
         "img": "https://callofdutymaps.com/wp-content/uploads/shinonumaloadscreen.jpg"

@@ -2,6 +2,7 @@
     "id": "shadows_of_evil",
     "name": "Shadows of Evil",
     "background": "https://callofdutymaps.com/wp-content/uploads/shadowsofevil32.jpg",
+    "style": "primis",
     "rev": 2,
     "notice": "The main quest requires 4 players.",
     "maps": [

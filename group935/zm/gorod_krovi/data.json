@@ -2,6 +2,7 @@
     "id": "gorod_krovi",
     "name": "Gorod Krovi",
     "background": "https://callofdutymaps.com/wp-content/uploads/gorodkrovi29.jpg",
+    "style": "primis",
     "rev": 2,
     "maps": [{
         "img": "assets/map1.png"
@@ -448,6 +449,10 @@
                             }
                         },
                         {
+                            "full": true,
+                            "special": "gorod_valve"
+                        },
+                        {
                             "pic": {
                                 "src": "assets/74.jpg",
                                 "alt": "Valve with pink cylinder (stuck inside pipe)"
@@ -494,10 +499,6 @@
                                 "src": "assets/46.jpg",
                                 "alt": "Department Store Valve - top floor, left from the stairs"
                             }
-                        },
-                        {
-                            "full": true,
-                            "special": "gorod_valve"
                         },
                         {
                             "full": true,

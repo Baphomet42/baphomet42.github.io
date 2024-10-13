@@ -2,6 +2,7 @@
     "id": "five",
     "name": "\"Five\"",
     "background": "assets/background.png",
+    "style": "ultimis",
     "rev": 2,
     "sections" : [
         {

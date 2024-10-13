@@ -3,9 +3,9 @@
     --section-clickable: #00000099;
     --section-clickable-hover: #33333399;
     --section-clickable-press: #66666699;
-    --accent-color: #FFFF55;
-    --subsection-border: #888888;
-    --header-borders: var(--mc-gray);
+    --accent-text: #FF5555;
+    --accent-color: #AA0000;
+    --header-borders: var(--accent-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -47,6 +47,13 @@ ul {
     list-style: square inside;
 }
 
+li {
+    color: var(--main-text-color);
+}
+li::marker {
+    color: var(--accent-color);
+}
+
 .header-table {
     width: 66%;
     margin-left: 17%;
@@ -78,7 +85,7 @@ ul {
 }
 
 .notice {
-    color: var(--accent-color);
+    color: var(--accent-text);
     font-family: var(--font-sans);
     font-weight: normal;
     text-align: center;
@@ -135,6 +142,7 @@ ul {
 
 .collapse-button {
     background-color: var(--section-clickable);
+    color: var(--accent-text);
     cursor: pointer;
 }
 .collapse-button:hover {
@@ -152,18 +160,14 @@ ul {
     padding: 0 2rem;
 }
 
-.section-footer-text {
-    font-size: medium;
-}
-
 .section-description {
     text-align: center;
     font-size: large;
 }
 
 .subsection {
-    border-top: .2rem solid var(--subsection-border);
-    border-bottom: .2rem solid var(--subsection-border);
+    border-top: .2rem solid var(--accent-color);
+    border-bottom: .2rem solid var(--accent-color);
 }
 
 .subsection-header {
@@ -171,7 +175,7 @@ ul {
 }
 
 .link {
-    color: var(--accent-color);
+    color: var(--accent-text);
 }
 
 .col-wrap {
@@ -211,7 +215,7 @@ ul {
 }
 
 .pic-disclaimer {
-    color: var(--accent-color);
+    color: var(--accent-text);
     font-weight: normal;
     text-align: center;
     font-style: italic;
@@ -250,6 +254,14 @@ ul {
 }
 .control-panel-button:hover {
     background-color: #111111ee;
+}
+
+.accent-color {
+    color: var(--accent-color)
+}
+
+.accent-text {
+    color: var(--accent-text)
 }
 
 @media only screen and (max-width: 880px) {

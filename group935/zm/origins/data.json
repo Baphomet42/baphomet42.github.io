@@ -2,6 +2,7 @@
     "id": "origins",
     "name": "Origins",
     "background": "assets/background.png",
+    "style": "victis",
     "rev": 2,
     "wip": true,
     "sections" : [

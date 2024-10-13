@@ -2,6 +2,7 @@
     "id": "ascension",
     "name": "Ascension",
     "background": "assets/background.png",
+    "style": "ultimis",
     "rev": 2,
     "notice": "The main quest requires 4 players.",
     "wip": true,

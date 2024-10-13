@@ -120,7 +120,7 @@ function pageRev2(data) {
     }
     
     page += '<div class="section" id="title-section">'
-    page += '<div class="back-button-wrap"><a class="button back-button" href="/group935" rel="noopener noreferrer">< All Maps</a></div>'
+    page += '<div class="back-button-wrap"><a class="button back-button" href="/group935" rel="noopener noreferrer"><span class="accent-text"><</span> All Maps</a></div>'
     page += '<h1 class="center">'+data.name+'</h1>'
 
     let foundGames = [] 
@@ -130,12 +130,14 @@ function pageRev2(data) {
                 foundGames.push(game.name)
         })
     })
-    let subtext = ''
+    var subtext_separator = '<span class="accent-color"> | </span>'
+    let subtext = subtext_separator
     for(let i=0; i<foundGames.length; i++) {
         if(i>0)
-            subtext += ' | '
+            subtext += subtext_separator
         subtext += foundGames[foundGames.length-1-i]
     }
+    subtext += subtext_separator
     page += '<h3 class="center">'+subtext+'</h3>'
 
     if(data.notice) {
@@ -148,11 +150,24 @@ function pageRev2(data) {
     }
     if(data.sections.length > 0) {
         page += '<div class="header-table"><table><tr>'
-        page += '<td onclick="collapseAll(2)" class="collapse-button header-table-button no-select">[Collapse All]</td>'
-        page += '<td onclick="collapseAll(0)" class="collapse-button header-table-button no-select">[Expand All]</td>'
+        page += '<td onclick="collapseAll(2)" class="collapse-button header-table-button no-select"><span class="accent-color">[</span>Collapse All<span class="accent-color">]</span></td>'
+        page += '<td onclick="collapseAll(0)" class="collapse-button header-table-button no-select"><span class="accent-color">[</span>Expand All<span class="accent-color">]</span></td>'
         page += '</tr></table></div>'
     }
     page += '</div>'
+
+    if(data.style) {
+        if(data.style === 'ultimis')
+            setColors('#FF5555','#AA0000')
+        else if(data.style === 'victis')
+            setColors('#55FFFF','#00CCFF')
+        else if(data.style === 'primis')
+            setColors('#FFAA00','#FF6600')
+        else if(data.style === 'aether')
+            setColors('#FFFF55','#DEB12D')
+        else if(data.style === 'dark_aether')
+            setColors('#7078F1','#5C49A4')
+    }
 
     pageData.sections = []
 
@@ -172,7 +187,7 @@ function pageRev2(data) {
         page += '<div class="section-header no-select" onclick="toggleSectionCollapse('+sectionKey+')"><table><tr>'
         page += '<td class="section-header-collapse-icon mobile-hide"></td>'
         page += '<td><h2 class="center">'+section.header+'</h2></td>'
-        page += '<td class="section-header-collapse-icon no-select" id="section_'+sectionKey+'_collapse_icon">+</td>'
+        page += '<td class="section-header-collapse-icon no-select accent-text" id="section_'+sectionKey+'_collapse_icon">+</td>'
         page += '</tr></table></div>'
         page += '<div class="section-body collapsable" id="section_'+sectionKey+'" style="display: none">'
 
@@ -254,7 +269,7 @@ function pageRev2(data) {
             })
         }
 
-        page += '<div class="section-footer collapse-button no-select" onclick="setSectionCollapse('+sectionKey+',2)"><h2 class="center section-footer-text">[Collapse]</h2></div>'
+        page += '<div class="section-footer collapse-button no-select" onclick="setSectionCollapse('+sectionKey+',2)"><table><tr><td class="header-table-button center"><span class="accent-color">[</span>Collapse<span class="accent-color">]</span></td></tr></table></div>'
         page += '</div></div>'
     })
 
@@ -268,6 +283,12 @@ function pageRev2(data) {
     page += '<div id="control-panel-hidden" class="control-panel"><table><tr><td id="control-panel-hidden-button" class="control-panel-button no-select" onclick="toggleControlPanelVisibility()"><</td></tr></table></div>'
 
     return page
+}
+
+function setColors(text, accent) {
+    const root = document.documentElement
+    root.style.setProperty('--accent-text',text)
+    root.style.setProperty('--accent-color',accent)
 }
 
 function buildGorodValveStep() {
@@ -299,12 +320,12 @@ function buildGorodValveStep() {
 
     page += '<p>Set the valves to the following:</p>'
     page += '<ul>'
-    page += '<li>Dragon Command: <span id="gorod-valve-dragon">(Select Valve Locations)</span></li>'
-    page += '<li>Tank Factory: <span id="gorod-valve-tank">(Select Valve Locations)</span></li>'
-    page += '<li>Infirmary: <span id="gorod-valve-infirmary">(Select Valve Locations)</span></li>'
-    page += '<li>Armory: <span id="gorod-valve-armory">(Select Valve Locations)</span></li>'
-    page += '<li>Supply Depot: <span id="gorod-valve-supply">(Select Valve Locations)</span></li>'
-    page += '<li>Department Store: <span id="gorod-valve-dept">(Select Valve Locations)</span></li>'
+    page += '<li>Dragon Command: <span id="gorod-valve-dragon" class="accent-text">(Select Valve Locations)</span></li>'
+    page += '<li>Tank Factory: <span id="gorod-valve-tank" class="accent-text">(Select Valve Locations)</span></li>'
+    page += '<li>Infirmary: <span id="gorod-valve-infirmary" class="accent-text">(Select Valve Locations)</span></li>'
+    page += '<li>Armory: <span id="gorod-valve-armory" class="accent-text">(Select Valve Locations)</span></li>'
+    page += '<li>Supply Depot: <span id="gorod-valve-supply" class="accent-text">(Select Valve Locations)</span></li>'
+    page += '<li>Department Store: <span id="gorod-valve-dept" class="accent-text">(Select Valve Locations)</span></li>'
     page += '</ul>'
 
     return page

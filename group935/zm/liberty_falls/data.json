@@ -2,6 +2,7 @@
     "id": "liberty_falls",
     "name": "Liberty Falls",
     "background": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/bo6/BO6-ZOMBIES-888-002.jpg",
+    "style": "dark_aether",
     "rev": 2,
     "wip": true,
     "sections" : [

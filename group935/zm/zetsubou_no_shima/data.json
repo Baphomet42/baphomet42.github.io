@@ -2,6 +2,7 @@
     "id": "zetsubou_no_shima",
     "name": "Zetsubou No Shima",
     "background": "assets/background.jpg",
+    "style": "primis",
     "rev": 2,
     "notice": "The main quest requires at least one player with the 'Anywhere But Here!' Gobblegum equipped.",
     "maps": [

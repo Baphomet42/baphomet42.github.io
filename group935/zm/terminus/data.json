@@ -2,6 +2,7 @@
     "id": "terminus",
     "name": "Terminus",
     "background": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/bo6/BO6-ZOMBIES-888-001.jpg",
+    "style": "dark_aether",
     "rev": 2,
     "wip": true,
     "sections" : [

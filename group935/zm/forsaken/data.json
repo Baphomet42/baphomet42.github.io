@@ -2,6 +2,7 @@
     "id": "forsaken",
     "name": "Forsaken",
     "background": "https://callofdutymaps.com/wp-content/uploads/Forsaken-1.jpg",
+    "style": "dark_aether",
     "rev": 2,
     "wip": true,
     "maps": [
