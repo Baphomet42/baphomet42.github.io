@@ -114,10 +114,6 @@ function toggleControlPanelVisibility() {
 
 function pageRev2(data) {
     var page = ''
-
-    if(data.background) {
-        page += '<div id="parallax-background" style="background-image: url('+data.background+')"></div>'
-    }
     
     page += '<div class="section" id="title-section">'
     page += '<div class="back-button-wrap"><a class="button back-button" href="/group935" rel="noopener noreferrer"><span class="accent-text"><</span> All Maps</a></div>'
@@ -156,17 +152,13 @@ function pageRev2(data) {
     }
     page += '</div>'
 
-    if(data.style) {
-        if(data.style === 'ultimis')
-            setColors('#FF5555','#AA0000')
-        else if(data.style === 'victis')
-            setColors('#55FFFF','#00CCFF')
-        else if(data.style === 'primis')
-            setColors('#FFAA00','#FF6600')
-        else if(data.style === 'aether')
-            setColors('#FFFF55','#DEB12D')
-        else if(data.style === 'dark_aether')
-            setColors('#7078F1','#5C49A4')
+    if(data.style)
+        setColors('var(--accent-text-'+data.style+')','var(--accent-color-'+data.style+')')
+    if(data.background) {
+        let background = data.background
+        if(background.startsWith('assets/'))
+            background = 'group935/zm/'+data.id+'/'+background
+        setBackground('url('+background+')')
     }
 
     pageData.sections = []
@@ -289,6 +281,11 @@ function setColors(text, accent) {
     const root = document.documentElement
     root.style.setProperty('--accent-text',text)
     root.style.setProperty('--accent-color',accent)
+}
+
+function setBackground(background) {
+    const root = document.documentElement
+    root.style.setProperty('--parallax-background',background)
 }
 
 function buildGorodValveStep() {

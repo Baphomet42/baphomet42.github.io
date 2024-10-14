@@ -11,11 +11,16 @@
     <title>Group 935</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="/template/data-include.js"></script>
+    <style>
+        :root {
+            --parallax-background: url(https://steamuserimages-a.akamaihd.net/ugc/782986633776353161/7EB88A5CEBDF6B8A8B1A8DE37A8F2C65101DC14F/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+        }
+    </style>
 </head>
 <body>
     <article>
         <div data-include="/group935/header" id="header"></div>
-        <div id="parallax-background" style="background-image: url(https://steamuserimages-a.akamaihd.net/ugc/782986633776353161/7EB88A5CEBDF6B8A8B1A8DE37A8F2C65101DC14F/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false)"></div>
+        <div id="parallax-background"></div>
 
         <br/>
         <div class="section-full">
@@ -66,7 +71,10 @@
 
                 if(mapVal.id) {
                     linkData = '<a href="/group935/zm/'+mapVal.id+'" rel="noopener noreferrer">'
-                    //imgData = ' style="background-image: url(/group935/zm/'+mapVal.id+'/icon.jpg)"'
+                    if(!mapVal.img_alt)
+                        imgData = ' style="background-image: url(/group935/zm/'+mapVal.id+'/assets/icon.jpg)"'
+                    else
+                        imgData = ' style="background-image: url(/group935/zm/'+mapVal.id+'/assets/icon_'+mapVal.img_alt+'.jpg)"'
                 }
                 else {
                     mapButtonData = ' map-nolink'
@@ -76,11 +84,11 @@
                 if(mapVal.img)
                     imgData = ' style="background-image: url('+mapVal.img+')"'
 
-                game += linkData + '<div class="map-button'+mapButtonData+'"'+imgData+'>'
+                game += linkData + '<div class="map-button-wrap"><div class="map-button'+mapButtonData+'"'+imgData+'>'
                 game += '<h2 class="map-name">' + mapVal.name + '</h2>'
                 if(mapVal.desc)
                     game += '<p class="map-desc center">'+mapVal.desc+'</p>'
-                game += '</div>'
+                game += '</div></div>'
                 game += linkDataEnd
                 game += '</td>'
             })

@@ -3,9 +3,24 @@
     --section-clickable: #00000099;
     --section-clickable-hover: #33333399;
     --section-clickable-press: #66666699;
-    --accent-text: #FF5555;
-    --accent-color: #AA0000;
     --header-borders: var(--accent-color);
+    --parallax-background: url(https://steamuserimages-a.akamaihd.net/ugc/782986633776353161/7EB88A5CEBDF6B8A8B1A8DE37A8F2C65101DC14F/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+
+    --accent-text-ultimis: #FF5555;
+    --accent-color-ultimis: #AA0000;
+    --accent-text-victis: #55FFFF;
+    --accent-color-victis: #00CCFF;
+    --accent-text-primis: #FFAA00;
+    --accent-color-primis: #FF6600;
+    --accent-text-aether: #FFFF55;
+    --accent-color-aether: #DEB12D;
+    --accent-text-dark_aether: #7078F1;
+    --accent-color-dark_aether: #5C49A4;
+    --accent-text-grayscale: #AAAAAA;
+    --accent-color-grayscale: #555555;
+
+    --accent-text: var(--accent-text-ultimis);
+    --accent-color: var(--accent-color-ultimis);
 }
 
 h1, h2, h3, h4, h5, h6 {

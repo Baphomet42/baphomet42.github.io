@@ -26,7 +26,13 @@ To ensure a consistent feel, try to stick to these guidelines.
 ## Map Selection Pictures
 
 + Currently mostly from COD fandom
-    + Maps in multiple games can have different image depending on game
+    + Maps in multiple games can have different image (and name) depending on game
++ Scale image min length to 320, trim canvas to square, and adjust to fit in frame
+    + Save as JPG at 70% quality
++ Chronicles pics unstretch
+    + Original pictures 1148x484 (~64/27)
+    + Rescale to 16/9 (~861 width)
+    + Origins different, scale to 1050x484
 
 ## Map Page Paralax Pictures
 

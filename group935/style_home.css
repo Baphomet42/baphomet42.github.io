@@ -67,6 +67,10 @@
     box-sizing: border-box;
 }
 
+.map-button-wrap {
+    background-color: var(--section-clickable);
+}
+
 .map-button {
     align-content: center;
     align-items: center;
