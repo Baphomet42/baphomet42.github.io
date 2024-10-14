@@ -11,11 +11,6 @@
     <title>Group 935</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="/template/data-include.js"></script>
-    <style>
-        :root {
-            --parallax-background: url(https://steamuserimages-a.akamaihd.net/ugc/782986633776353161/7EB88A5CEBDF6B8A8B1A8DE37A8F2C65101DC14F/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
-        }
-    </style>
 </head>
 <body>
     <article>
@@ -48,13 +43,7 @@
         function buildGames(value) {
             var game = ''
             game += '<div class="game-wrap no-select"><table class="game-table"><tr class="game-row">'
-            if(value.img)
-                game += '<td class="game-td center" style="background-image: url('+value.img+')">'
-            else {
-                game += '<td class="game-td center">'
-                game += '<h2 class="game-name">' + value.name + '</h2>'
-                game += '<p class="map-desc center">' + value.year + '</p>'
-            }
+            game += '<td class="game-td center" style="background-image: url(/group935/assets/'+value.id+'.jpg)">'
             game += '</td>'
             game += '<td class="maps-td"><div class="maps-list-wrap-outer"><div class="maps-list-wrap"><table class="maps-list-table"><tr class="maps-row">'
             

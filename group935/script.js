@@ -252,7 +252,7 @@ function pageRev2(data) {
                                 page += buildGorodValveStep()
                         }
 
-                        page += "</div></td>"
+                        page += '</div></td>'
                     })
                     page += '</tr></table>'
                 }

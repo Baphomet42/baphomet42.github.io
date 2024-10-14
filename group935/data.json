@@ -4,17 +4,15 @@
             "id": "bo6",
             "name": "Black Ops 6",
             "year": 2024,
-            "img": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blackops6/meta/BO6_LP-meta_image.jpg",
             "maps": [
-                {"id": "terminus", "name": "Terminus", "wip": true, "img": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/bo6/BO6-ZOMBIES-888-001.jpg"},
-                {"id": "liberty_falls", "name": "Liberty Falls", "wip": true, "img": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/bo6/BO6-ZOMBIES-888-002.jpg"}
+                {"id": "terminus", "name": "Terminus", "wip": true},
+                {"id": "liberty_falls", "name": "Liberty Falls", "wip": true}
             ]
         },
         {
             "id": "bocw",
             "name": "Black Ops Cold War",
             "year": 2020,
-            "img": "https://styles.redditmedia.com/t5_44083d/styles/communityIcon_r4tglki3aan61.png",
             "maps": [
                 {"id": "die_maschine", "name": "Die Maschine", "wip": true},
                 {"id": "firebase_z", "name": "Firebase Z", "wip": true},
@@ -25,9 +23,8 @@
         },
         {
             "id": "bo4",
-            "name": "Black Ops IIII",
+            "name": "Black Ops 4",
             "year": 2018,
-            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGqkYW5tb_4H9WLmv02h5g4pMC-i1Z5Zok0Wv4bP4AWg&s",
             "maps": [
                 {"id": "voyage_of_despair", "name": "Voyage of Despair", "wip": true},
                 {"id": "ix", "name": "IX", "wip": true},
@@ -43,7 +40,6 @@
             "id": "bo3",
             "name": "Black Ops III",
             "year": 2015,
-            "img": "https://i2.wp.com/www.inforumatik.com/wp-content/uploads/2015/07/Call-Of-Duty-Black-Ops-3-01.png?fit=256%2C256&ssl=1",
             "maps": [
                 {"id": "shadows_of_evil", "name": "Shadows of Evil"},
                 {"id": "the_giant", "name": "The Giant"},
@@ -65,21 +61,19 @@
             "id": "bo2",
             "name": "Black Ops II",
             "year": 2012,
-            "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/8dd91536-f09a-487f-838f-140f69ff9d8a/d5l5phn-53173cdc-17b0-47cc-829a-e0008d2e114b.png",
             "maps": [
-                {"id": "tranzit", "name": "TranZit", "wip": true, "img": "https://static.wikia.nocookie.net/callofduty/images/f/f9/TranZit_lobby_BOII.png"},
-                {"id": "nuketown_zombies", "name": "Nuketown Zombies", "wip": true, "img": "https://static.wikia.nocookie.net/callofduty/images/7/74/Nuketown_menu_selection_BO2.png"},
-                {"id": "die_rise", "name": "Die Rise", "wip": true, "img": "https://static.wikia.nocookie.net/callofduty/images/6/60/Die_Rise_menu_selection_BO2.png"},
-                {"id": "mob_of_the_dead", "name": "Mob of the Dead", "wip": true, "img": "https://static.wikia.nocookie.net/callofduty/images/a/aa/Mob_of_the_Dead_menu_selection_BO2.png"},
-                {"id": "buried", "name": "Buried", "wip": true, "img": "https://static.wikia.nocookie.net/callofduty/images/7/71/Buried_menu_BOII.png"},
-                {"id": "origins", "name": "Origins", "wip": true, "img": "https://static.wikia.nocookie.net/callofduty/images/b/b2/Origins_Lobby_Icon_BO2.png"}
+                {"id": "tranzit", "name": "TranZit", "wip": true},
+                {"id": "nuketown_zombies", "name": "Nuketown Zombies", "wip": true},
+                {"id": "die_rise", "name": "Die Rise", "wip": true},
+                {"id": "mob_of_the_dead", "name": "Mob of the Dead", "wip": true},
+                {"id": "buried", "name": "Buried", "wip": true},
+                {"id": "origins", "name": "Origins", "wip": true}
             ]
         },
         {
             "id": "bo1",
             "name": "Black Ops",
             "year": 2010,
-            "img": "https://assets-prd.ignimgs.com/2021/12/30/call-of-duty-black-ops-1-button-1640898530662.jpg",
             "maps": [
                 {"id": "kino_der_toten", "name": "Kino der Toten"},
                 {"id": "five", "name": "\"Five\""},
@@ -97,7 +91,6 @@
             "id": "waw",
             "name": "World at War",
             "year": 2008,
-            "img": "https://is4-ssl.mzstatic.com/image/thumb/Purple71/v4/e8/4a/cd/e84acd0a-d962-6ed8-9fd6-7ea60d8fba82/source/256x256bb.jpg",
             "maps": [
                 {"id": "nacht_der_untoten", "name": "Nacht der Untoten"},
                 {"id": "verruckt", "name": "Zombie Verrückt"},

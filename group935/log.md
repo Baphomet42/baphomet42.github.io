@@ -33,6 +33,9 @@ To ensure a consistent feel, try to stick to these guidelines.
     + Original pictures 1148x484 (~64/27)
     + Rescale to 16/9 (~861 width)
     + Origins different, scale to 1050x484
++ Bo2 pics without name
+    + From https://callofduty.fandom.com/pl/wiki/
+    + Resized from 480x270 to 480x221
 
 ## Map Page Paralax Pictures
 

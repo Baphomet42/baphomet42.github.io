@@ -313,7 +313,7 @@ ul {
     font-family: var(--font-mono);
     color: var(--mc-white);
     background-color: var(--mc-black);
-    text-decoration: underline;
+    border-bottom: 1px solid var(--mc-gray);
 }
 
 .serif {
