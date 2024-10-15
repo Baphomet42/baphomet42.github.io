@@ -4,7 +4,11 @@
     --section-clickable-hover: #33333399;
     --section-clickable-press: #66666699;
     --header-borders: var(--accent-color);
-    --parallax-background: url(https://steamuserimages-a.akamaihd.net/ugc/782986633776353161/7EB88A5CEBDF6B8A8B1A8DE37A8F2C65101DC14F/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+
+    --parallax-home: url(https://steamuserimages-a.akamaihd.net/ugc/782986633776353161/7EB88A5CEBDF6B8A8B1A8DE37A8F2C65101DC14F/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+    --parallax-agartha: url(https://steamuserimages-a.akamaihd.net/ugc/2470862070662434079/CF4646244724DE85E95ED3E98FEC1F7E5ED8F38B/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+    --parallax-unknown: url(https://callofdutymaps.com/wp-content/uploads/kinodertoten45.jpg);
+    --parallax-background: var(--parallax-unknown);
 
     --accent-text-ultimis: #FF5555;
     --accent-color-ultimis: #AA0000;
@@ -18,7 +22,6 @@
     --accent-color-dark_aether: #5C49A4;
     --accent-text-grayscale: #AAAAAA;
     --accent-color-grayscale: #555555;
-
     --accent-text: var(--accent-text-ultimis);
     --accent-color: var(--accent-color-ultimis);
 }

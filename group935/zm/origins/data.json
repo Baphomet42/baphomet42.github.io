@@ -4,6 +4,9 @@
     "background": "assets/background.png",
     "style": "victis",
     "rev": 2,
+    "maps": [{
+        "img": "assets/map1.png"
+    }],
     "wip": true,
     "sections" : [
         {
@@ -11,36 +14,84 @@
             "subsections": [
                 {
                     "header": "Power Generators",
-                    "description": "",
+                    "description": "There are 6 generators around the map that give power to the surrounding areas. Interact on a generator to start the process, then stand on the metal floor until it's fully powered. TODO templars attacking",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/17.jpg",
+                                "alt": "Generator 1 - in spawn"
                             }
-                        }
-                    ]
-                },
-                {
-                    "header": "Giant Robots",
-                    "description": "",
-                    "elements": [
+                        },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/18.jpg",
+                                "alt": "Generator 2 - between spawn and the Workshop"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/19.jpg",
+                                "alt": "Generator 3 - between spawn and the Workshop"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/20.jpg",
+                                "alt": "Generator 4 - in No Man's Land"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/21.jpg",
+                                "alt": "Generator 5 - in No Man's Land"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/22.jpg",
+                                "alt": "Generator 6 - behind the Church"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Pack-a-Punch",
-                    "description": "",
+                    "description": "Once all 6 power generators are active, the Pack-a-Punch machine will be unlocked at the top of the Excavation Site.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/3.jpg",
+                                "alt": "Pack-a-Punch machine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Giant Robots",
+                    "description": "There are 3 Giant Robots that occasionally walk through the map. Thor walks through the trenches, Odin walks across the Excavation Site, and Freya walks by the Church. The Giant Robots always walk on the same footprints, and red lights will blink before they step in the footprint. Being stepped on will instantly down you. Sometimes, one of the 2 feet will have a yellow circle on the bottom that can be shot to open a door. Being stepped on with the door opened will take you to the Giant Robot's head.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/83.jpg",
+                                "alt": "Flashing red lights around footprint"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/82.jpg",
+                                "alt": "Foot with no door"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/81.jpg",
+                                "alt": "Foot with a door"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/84.jpg",
+                                "alt": "Shooting the door open"
                             }
                         }
                     ]
@@ -51,7 +102,13 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/5.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/24.jpg",
                                 "alt": ""
                             }
                         }
@@ -63,16 +120,22 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/46.jpg",
+                                "alt": "The Tank"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Trials (TODO)",
+                    "header": "Rituals of the Ancients",
                     "description": "",
                     "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/69.jpg",
+                                "alt": ""
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
@@ -86,44 +149,68 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Quick Revive - TODO"
+                                "src": "assets/6.jpg",
+                                "alt": "Quick Revive - near Generator 1"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Mule Kick - TODO"
+                                "src": "assets/10.jpg",
+                                "alt": "Mule Kick - downstairs at the Excavation Site"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Speed Cola - TODO"
+                                "src": "assets/7.jpg",
+                                "alt": "Speed Cola - near Generator 3"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Stamin-Up - TODO"
+                                "src": "assets/8.jpg",
+                                "alt": "Stamin-Up - near Generator 5"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Juggernog - TODO"
+                                "src": "assets/9.jpg",
+                                "alt": "Juggernog - near Generator 4"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Wunderfizz location 1 - TODO"
+                                "src": "assets/11.jpg",
+                                "alt": "Wunderfizz location 1 - near Generator 1"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Wunderfizz location 2 - TODO"
+                                "src": "assets/12.jpg",
+                                "alt": "Wunderfizz location 2 - near Generator 2"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/13.jpg",
+                                "alt": "Wunderfizz location 3 - near Generator 3"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/14.jpg",
+                                "alt": "Wunderfizz location 4 - near Generator 4"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/15.jpg",
+                                "alt": "Wunderfizz location 5 - near Generator 5"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/16.jpg",
+                                "alt": "Wunderfizz location 6 - near Generator 6"
                             }
                         }
                     ]
@@ -133,20 +220,20 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "src": "assets/28.jpg",
+                                "alt": "Location 1 - downstairs in the Workshop"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "src": "assets/29.jpg",
+                                "alt": "Location 2 - in the Wind Tunnel near Generator 4"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/27.jpg",
+                                "alt": "Location 3 - downstairs in the Church"
                             }
                         }
                     ]
@@ -154,89 +241,89 @@
             ]
         },
         {
-            "header": "TODO Shield",
+            "header": "Zombie Shield",
             "description": "Collect 3 parts and craft at a workbench.",
             "subsections": [
                 {
-                    "header": "Part 1 (TODO)",
-                    "description": "Located TODO (3 possible locations).",
+                    "header": "Part 1 (Shield Window)",
+                    "description": "Located between Generator 1 and Generator 3 (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "src": "assets/23.jpg",
+                                "alt": "Location 1 - in a wheelbarrow near the door to spawn"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "src": "assets/59.jpg",
+                                "alt": "Location 2 - at the end of the Fire Tunnel"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/56.jpg",
+                                "alt": "Location 3 - in the trench between Generator 3 and Speed Cola"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Part 2 (TODO)",
-                    "description": "Located TODO (3 possible locations).",
+                    "description": "Located in Giant Robot footprints around the Excavation Site (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "src": "assets/26.jpg",
+                                "alt": "Location 1 - in the right footprint between the Excavation Site and Generator 5"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "src": "assets/60.jpg",
+                                "alt": "Location 2 - in the right footprint between the Excavation Site and Generator 4"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/66.jpg",
+                                "alt": "Location 3 - in the right footprint by Generator 4"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Part 3 (TODO)",
-                    "description": "Located TODO (3 possible locations).",
+                    "description": "Located between Generator 1 and Generator 2 (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "src": "assets/55.jpg",
+                                "alt": "Location 1 - next to a wheelbarrow near the door to spawn"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "src": "assets/25.jpg",
+                                "alt": "Location 2 - in the Giant Robot footprint on the building next to Generator 2"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/58.jpg",
+                                "alt": "Location 3 - in a wheelbarrow at the end of the trench past the door to the Workshop"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Craft Shield",
-                    "description": "Build at one of the TODO workbenches. Each player can equip the shield.",
+                    "description": "Build at one of the 3 workbenches. Each player can equip the shield.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "One possible build location, TODO"
+                                "src": "assets/32.jpg",
+                                "alt": "One possible build location, in the Wind Tunnel near Generator 4"
                             }
                         }
                     ]
@@ -244,89 +331,77 @@
             ]
         },
         {
-            "header": "TODO drone",
+            "header": "Maxis Drone",
             "description": "Collect 3 parts and craft at a workbench.",
             "subsections": [
                 {
                     "header": "Part 1 (TODO)",
-                    "description": "Located TODO (3 possible locations).",
+                    "description": "Located near the Church (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "src": "assets/47.jpg",
+                                "alt": "Location 1 - in the mud in front of the Tank's path"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "src": "assets/57.jpg",
+                                "alt": "Location 2 - in the mud behind the Tank's path"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/61.jpg",
+                                "alt": "Location 3 - at the end of the Ice Tunnel"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Part 2 (TODO)",
-                    "description": "Located TODO (3 possible locations).",
+                    "header": "Part 2 (Brain)",
+                    "description": "Located in spawn.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/31.jpg",
+                                "alt": "Brain location"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Part 3 (TODO)",
-                    "description": "Located TODO (3 possible locations).",
+                    "description": "Located around the Excavation Site (3 possible locations).",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "src": "assets/64.jpg",
+                                "alt": "Location 1 - at the top of the Excavation Site, to the PaP machine's right"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "src": "assets/63.jpg",
+                                "alt": "Location 2 - at the top of the secret stairs, to the left of the Gramophone table"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/48.jpg",
+                                "alt": "Location 3 - on some scaffolding next to the statues"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Craft TODO",
-                    "description": "Build at one of the TODO workbenches. Only 1 player can equip the TODO.",
+                    "header": "Craft Maxis Drone",
+                    "description": "Build at one of the 3 workbenches. Only 1 player can equip the Maxis Drone.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "One possible build location, TODO"
+                                "src": "assets/49.jpg",
+                                "alt": "One possible build location, in the Church (TODO move to Workshop?)"
                             }
                         }
                     ]
@@ -334,36 +409,59 @@
             ]
         },
         {
-            "header": "TODO crazy place",
+            "header": "Elemental Staffs",
             "description": "",
             "subsections": [
                 {
-                    "header": "",
+                    "header": "Gramophone & Black Record",
                     "description": "",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/67.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/36.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/65.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/62.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/35.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/37.jpg",
                                 "alt": ""
                             }
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "header": "TODO staff/upgrades",
-            "description": "",
-            "subsections": [
+                },
                 {
-                    "header": "",
+                    "header": "Staff of Fire",
                     "description": "",
                     "elements": [
                         {
-                            "full": true,
-                            "step": {
-                                "title": "",
-                                "description": ""
+                            "pic": {
+                                "src": "assets/1.jpg",
+                                "alt": ""
                             }
                         },
                         {
@@ -371,13 +469,241 @@
                                 "src": "assets/.jpg",
                                 "alt": ""
                             }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/41.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/75.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/77.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/68.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/45.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Kagutsuchi's Blood (TODO) (Upgraded Fire Staff)",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Staff of Wind",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/40.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/86.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/85.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/70.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/79.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/74.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/44.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Boreas' Fury (TODO) (Upgraded Wind Staff)",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Staff of Lightning",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/76.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/78.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/71.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/43.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Kimat's Bite (TODO) (Upgraded Lightning Staff)",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Staff of Ice",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/72.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/80.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/73.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/42.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Ull's Arrow (TODO) (Upgraded Ice Staff)",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
                         }
                     ]
                 }
             ]
         },
         {
-            "header": "TODO punch and upgrade",
+            "header": "One Inch Punch (TODO)",
             "description": "",
             "subsections": [
                 {
@@ -395,7 +721,7 @@
             ]
         },
         {
-            "header": "TODO g strike",
+            "header": "G-Strike (TODO)",
             "description": "",
             "subsections": [
                 {
@@ -413,7 +739,7 @@
             ]
         },
         {
-            "header": "Main Quest",
+            "header": "Main Quest (Little Lost Girl)",
             "subsections": [
                 {
                     "header": "Requirements",
@@ -427,7 +753,91 @@
                     ]
                 },
                 {
-                    "header": "",
+                    "header": "1. TODO (Secure the Keys)",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. TODO (Ascend from Darkness)",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. TODO (Rain Fire)",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "4. TODO (Unleash the Horde)",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "5. TODO (Skewer the Winged Beast)",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "6. TODO (Wield a Fist of Iron)",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "7. TODO (Raise Hell)",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "8. TODO (Freedom)",
                     "description": "",
                     "elements": [
                         {
@@ -445,48 +855,66 @@
             "subsections": [
                 {
                     "header": "Archangel",
-                    "description": "Interact with 3 TODOs.",
+                    "description": "Interact with 3 green Element 115 meteorites.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "src": "assets/4.jpg",
+                                "alt": "Location 1 - in spawn, near the door to Generator 3"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "src": "assets/34.jpg",
+                                "alt": "Location 2 - in the Workshop, near the door to No Man's Land"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/33.jpg",
+                                "alt": "Location 3 - on some scaffolding near Pack-a-Punch"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Shepherd of Fire",
-                    "description": "",
+                    "description": "Interact with 3 radios.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/52.jpg",
+                                "alt": "Location 1 - downstairs at the Excavation Site, on some scaffolding"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/54.jpg",
+                                "alt": "Location 2 - in The Crazy Place, hugging the wall between the Fire and Lightning sections"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/53.jpg",
+                                "alt": "Location 3 - in the Freya Giant Robot that walks by the Church"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Aether",
-                    "description": "",
+                    "description": "Go prone and interact on both number 1 icons at Generator 1, then do the same for one of the number 5 icons at Generator 5.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/50.jpg",
+                                "alt": "Number 1 icon at Generator 1"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/51.jpg",
+                                "alt": "Number 5 icon at Generator 5"
                             }
                         }
                     ]

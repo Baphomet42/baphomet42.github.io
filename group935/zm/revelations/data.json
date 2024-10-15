@@ -168,7 +168,7 @@
                         {
                             "pic": {
                                 "src": "assets/27.jpg",
-                                "alt": "Wunderfizz location 2 - at Origins on the Dig Site"
+                                "alt": "Wunderfizz location 2 - at Origins on the Excavation Site"
                             }
                         },
                         {
@@ -342,7 +342,7 @@
                         {
                             "pic": {
                                 "src": "assets/43.jpg",
-                                "alt": "Location 2 - on top of the Dig Site at Origins"
+                                "alt": "Location 2 - on top of the Excavation Site at Origins"
                             }
                         },
                         {
@@ -807,7 +807,8 @@
             ]
         },
         {
-            "header": "Main Quest",
+            "header": "Main Quest (For the Good of All)",
+            "description": "Doing the quest after the 4 previous Black Ops III quests are done will grant the super easter egg, A Better Tomorrow.",
             "subsections": [
                 {
                     "header": "Requirements",
@@ -1064,7 +1065,7 @@
                             "full": true,
                             "step": {
                                 "title": "Play the reel",
-                                "description": "After Sophia's corpse is teleported away, a reel will be in its place. Pick it up, then place it on the audio device on the Dig Site at Origins."
+                                "description": "After Sophia's corpse is teleported away, a reel will be in its place. Pick it up, then place it on the audio device on the Excavation Site at Origins."
                             }
                         },
                         {
@@ -1076,7 +1077,7 @@
                         {
                             "pic": {
                                 "src": "assets/141.jpg",
-                                "alt": "Audio device on the Dig Site at Origins"
+                                "alt": "Audio device on the Excavation Site at Origins"
                             }
                         }
                     ]
@@ -1437,7 +1438,7 @@
                         {
                             "pic": {
                                 "src": "assets/186.jpg",
-                                "alt": "Location 6 - at Origins, on a grave seen from the Dig Site"
+                                "alt": "Location 6 - at Origins, on a grave seen from the Excavation Site"
                             }
                         },
                         {
@@ -1523,7 +1524,7 @@
                         {
                             "pic": {
                                 "src": "assets/13.jpg",
-                                "alt": "Location 1 - in the entrance to Mob of the Dead from the Dig Site"
+                                "alt": "Location 1 - in the entrance to Mob of the Dead from the Excavation Site"
                             }
                         },
                         {

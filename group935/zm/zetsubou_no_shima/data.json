@@ -212,11 +212,11 @@
             ]
         },
         {
-            "header": "Shield",
+            "header": "Zombie Shield",
             "description": "Collect 3 parts and craft at a workbench.",
             "subsections": [
                 {
-                    "header": "Part 1 (Window)",
+                    "header": "Part 1 (Shield Window)",
                     "description": "Located near the Fan Trap by the A.A. Gun in the Bunker (3 possible locations).",
                     "elements": [
                         {
@@ -1133,7 +1133,7 @@
             ]
         },
         {
-            "header": "Main Quest",
+            "header": "Main Quest (Seeds of Doubt)",
             "subsections": [
                 {
                     "header": "Requirements",
@@ -1142,7 +1142,7 @@
                             "full": true,
                             "bullets": [
                                 "One player with the 'Anywhere But Here!' Gobblegum",
-                                "Shield",
+                                "Zombie Shield",
                                 "Gas Mask",
                                 "Skull of Nan Sapwe",
                                 "Kill the Spider Boss",

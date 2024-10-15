@@ -240,7 +240,8 @@
             ]
         },
         {
-            "header": "Main Quest",
+            "header": "Main Quest (Richtofen's Grand Scheme)",
+            "description": "The full quest consists of Cryogenic Slumber Party and Bing Bang Theory.",
             "subsections": [
                 {
                     "header": "Requirements",
