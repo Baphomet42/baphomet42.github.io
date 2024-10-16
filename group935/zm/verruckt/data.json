@@ -29,37 +29,37 @@
                         {
                             "pic": {
                                 "src": "assets/8.jpg",
-                                "alt": "Quick Revive"
+                                "alt": "Quick Revive - bottom floor by the morgue"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/6.jpg",
-                                "alt": "Juggernog"
+                                "alt": "Juggernog - bottom floor by the operation chair"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/7.jpg",
-                                "alt": "Speed Cola"
+                                "alt": "Speed Cola - upstairs on the Quick Revive side"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/4.jpg",
-                                "alt": "Double Tap Root Beer"
+                                "alt": "Double Tap Root Beer - upstairs on the Juggernog side"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/5.jpg",
-                                "alt": "Mule Kick (Black Ops & Black Ops III only)"
+                                "alt": "Mule Kick (Black Ops & Black Ops III only) - down the stairs from Speed Cola"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/3.jpg",
-                                "alt": "Wunderfizz (Black Ops III only)"
+                                "alt": "Wunderfizz (Black Ops III only) - upstairs, between the power switch and toilets"
                             }
                         }
                     ]
@@ -93,7 +93,7 @@
                         {
                             "pic": {
                                 "src": "assets/1.jpg",
-                                "alt": "The wheel, main floor by Juggernog"
+                                "alt": "The wheel, bottom floor by Juggernog"
                             }
                         }
                     ]

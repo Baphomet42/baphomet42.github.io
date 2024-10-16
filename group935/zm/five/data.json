@@ -10,6 +10,7 @@
             "subsections": [
                 {
                     "header": "Power Switch",
+                    "description": "Located in the labs down the elevator from the War Room.",
                     "elements": [
                         {
                             "pic": {
@@ -61,31 +62,31 @@
                         {
                             "pic": {
                                 "src": "assets/3.jpg",
-                                "alt": "Quick Revive"
+                                "alt": "Quick Revive - top level"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/4.jpg",
-                                "alt": "Speed Cola"
+                                "alt": "Speed Cola - top level, near the elevator"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/5.jpg",
-                                "alt": "Double Tap Root Beer"
+                                "alt": "Double Tap Root Beer - War Room, by the elevator that goes up"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/6.jpg",
-                                "alt": "Mule Kick"
+                                "alt": "Mule Kick - War Room, to the left of the Panic Room doors"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/7.jpg",
-                                "alt": "Juggernog"
+                                "alt": "Juggernog - War Room, next to the Panic Room doors"
                             }
                         }
                     ]

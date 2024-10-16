@@ -13,6 +13,7 @@
             "subsections": [
                 {
                     "header": "Power Switch",
+                    "description": "Located below the drawbridge.",
                     "elements": [
                         {
                             "pic": {
@@ -54,6 +55,42 @@
                             "pic": {
                                 "src": "assets/9.jpg",
                                 "alt": "Unlocked Pack-a-Punch machine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Perk Machines",
+                    "description": "The machines are randomized each game.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/19.jpg",
+                                "alt": "Quick Revive"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/20.jpg",
+                                "alt": "Double Tap Root Beer"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/21.jpg",
+                                "alt": "Speed Cola"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/22.jpg",
+                                "alt": "Juggernog"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/23.jpg",
+                                "alt": "Mule Kick"
                             }
                         }
                     ]
@@ -168,8 +205,14 @@
                         },
                         {
                             "pic": {
+                                "src": "assets/18.jpg",
+                                "alt": "Uncovered Stamin-Up"
+                            }
+                        },
+                        {
+                            "pic": {
                                 "src": "assets/11.jpg",
-                                "alt": "The uncovered perk machine"
+                                "alt": "Uncovered Deadshot Daiquiri"
                             }
                         }
                     ]

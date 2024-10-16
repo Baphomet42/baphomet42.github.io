@@ -126,7 +126,7 @@ function pageRev2(data) {
                 foundGames.push(game.name)
         })
     })
-    var subtext_separator = '<span class="accent-color"> | </span>'
+    var subtext_separator = '<span class="accent-color"> Ξ </span>'
     let subtext = subtext_separator
     for(let i=0; i<foundGames.length; i++) {
         if(i>0)

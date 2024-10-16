@@ -14,7 +14,7 @@
             "subsections": [
                 {
                     "header": "Power Generators",
-                    "description": "There are 6 generators around the map that give power to the surrounding areas. Interact on a generator to start the process, then stand on the metal floor until it's fully powered. TODO templars attacking",
+                    "description": "There are 6 generators around the map that give power to the surrounding areas. Interact on a generator to start the process, then stand on the metal floor until it's fully powered. Later during the game, the generators can be attacked by Templars. If the Templars successfully unpower a generator, it can be powered again the same way.",
                     "elements": [
                         {
                             "pic": {
@@ -50,6 +50,12 @@
                             "pic": {
                                 "src": "assets/22.jpg",
                                 "alt": "Generator 6 - behind the Church"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/96.jpg",
+                                "alt": "Templars attacking a generator"
                             }
                         }
                     ]
@@ -98,48 +104,54 @@
                 },
                 {
                     "header": "Digging",
-                    "description": "",
+                    "description": "Around the map there are small piles of dirt and skulls that you can dig for rewards. Each player must first find a shovel around the map, then they can dig unlimited piles. It is recommended to wait for the map to be snowing before digging so the Ice Staff parts can be found quicker.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/5.jpg",
-                                "alt": ""
+                                "alt": "A shovel"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/24.jpg",
-                                "alt": ""
+                                "alt": "Location to dig"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Tank",
-                    "description": "",
+                    "description": "The Tank can be ridden around the map and moves between the Church and the Tank Station by Generator 2. It always starts in the Church, and moving the tank costs 500 points.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/46.jpg",
-                                "alt": "The Tank"
+                                "alt": "The Tank in the Church"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Rituals of the Ancients",
-                    "description": "",
+                    "description": "Each player has 3 trials they can complete, and there is an additional fourth trial shared between all players. The trials can be seen next to Generators 1 and 6. Hover over a trial to view the requirements and interact to get the reward. Each player will see their character's name above their trials. Upon powering up Generator 1 the first time, the ritual box will spawn a power-up that can be collected at any time. It is recommended to keep the power-up for a later step if it's a Zombie Blood.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/69.jpg",
-                                "alt": ""
+                                "alt": "Rituals seen by Generator 1"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/87.jpg",
+                                "alt": "Rituals seen by Generator 6"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Zombie Blood power-up in the ritual box by Generator 1"
                             }
                         }
                     ]
@@ -269,7 +281,7 @@
                     ]
                 },
                 {
-                    "header": "Part 2 (TODO)",
+                    "header": "Part 2 (Base)",
                     "description": "Located in Giant Robot footprints around the Excavation Site (3 possible locations).",
                     "elements": [
                         {
@@ -293,7 +305,7 @@
                     ]
                 },
                 {
-                    "header": "Part 3 (TODO)",
+                    "header": "Part 3 (Scrap Metal)",
                     "description": "Located between Generator 1 and Generator 2 (3 possible locations).",
                     "elements": [
                         {
@@ -305,7 +317,7 @@
                         {
                             "pic": {
                                 "src": "assets/25.jpg",
-                                "alt": "Location 2 - in the Giant Robot footprint on the building next to Generator 2"
+                                "alt": "Location 2 - in the Giant Robot footprint on the roof of the Tank Station next to Generator 2"
                             }
                         },
                         {
@@ -335,7 +347,7 @@
             "description": "Collect 3 parts and craft at a workbench.",
             "subsections": [
                 {
-                    "header": "Part 1 (TODO)",
+                    "header": "Part 1 (Base)",
                     "description": "Located near the Church (3 possible locations).",
                     "elements": [
                         {
@@ -371,7 +383,7 @@
                     ]
                 },
                 {
-                    "header": "Part 3 (TODO)",
+                    "header": "Part 3 (Rotor)",
                     "description": "Located around the Excavation Site (3 possible locations).",
                     "elements": [
                         {
@@ -413,43 +425,64 @@
             "description": "",
             "subsections": [
                 {
-                    "header": "Gramophone & Black Record",
-                    "description": "",
+                    "header": "Gramophone & Black Record (Musical Parts)",
+                    "description": "The Gramophone and Black Record are required to build(TODO) the staffs.",
                     "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Find the Black Record",
+                                "description": "Located around the Excavation Site (3 possible locations)."
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "assets/67.jpg",
-                                "alt": ""
+                                "alt": "Location 1 - at the start of the ramp going from the Workshop door to the top of the Excavation Site"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/36.jpg",
-                                "alt": ""
+                                "alt": "Location 2 - in a wheelbarrow to the left of the Pack-a-Punch machine"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/65.jpg",
-                                "alt": ""
+                                "alt": "Location 3 - on the wall between Generator 5 and the Church"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Pick up the Gramophone",
+                                "description": "Located down the stairs at the Excavation Site (2 possible locations)."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/62.jpg",
-                                "alt": ""
+                                "alt": "Location 1 - to the right of the table"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/35.jpg",
-                                "alt": ""
+                                "alt": "Location 2 - to the left of the table"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Unlock the secret stairs",
+                                "description": "After getting the Gramophone and Black Record, place the Gramophone on the table down the stairs at the Excavation Site. Once the stairs have opened, you can pick up the Gramophone. The Gramophone can only be placed in one location around the map at a time, and must be picked up before it can be placed in a new location. When the Gramophone is picked up, it is accessible for all players to place it down somewhere else."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/37.jpg",
-                                "alt": ""
+                                "alt": "Gramophone on the table to unlock the secret stairs"
                             }
                         }
                     ]
@@ -458,6 +491,13 @@
                     "header": "Staff of Fire",
                     "description": "",
                     "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Collect 3 staff parts",
+                                "description": ""
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "assets/1.jpg",
@@ -483,26 +523,53 @@
                             }
                         },
                         {
+                            "full": true,
+                            "step": {
+                                "title": "Find the Fire Record",
+                                "description": "Located near the Church (3 possible locations)."
+                            }
+                        },
+                        {
                             "pic": {
                                 "src": "assets/75.jpg",
-                                "alt": ""
+                                "alt": "Location 1 - on the pillar by the stairs that lead upstairs into the Church (seen easier after the Tank is moved)"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/77.jpg",
-                                "alt": ""
+                                "alt": "Location 2 - on a pew upstairs in the Church"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/68.jpg",
-                                "alt": ""
+                                "alt": "Location 3 - on a box by Generator 6"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/45.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
                                 "alt": ""
                             }
                         }
@@ -525,6 +592,13 @@
                     "description": "",
                     "elements": [
                         {
+                            "full": true,
+                            "step": {
+                                "title": "Collect 3 staff parts",
+                                "description": ""
+                            }
+                        },
+                        {
                             "pic": {
                                 "src": "assets/40.jpg",
                                 "alt": ""
@@ -543,26 +617,53 @@
                             }
                         },
                         {
+                            "full": true,
+                            "step": {
+                                "title": "Find the Wind Record",
+                                "description": "Located near Generator 5 (3 possible locations)."
+                            }
+                        },
+                        {
                             "pic": {
                                 "src": "assets/70.jpg",
-                                "alt": ""
+                                "alt": "Location 1 - to the right of Stamin-Up"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/79.jpg",
-                                "alt": ""
+                                "alt": "Location 2 - on some boxes outside the entrance to the Lightning Tunnel"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/74.jpg",
-                                "alt": ""
+                                "alt": "Location 3 - on a table inside the entrance of the Lightning Tunnel"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/44.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
                                 "alt": ""
                             }
                         }
@@ -585,9 +686,10 @@
                     "description": "",
                     "elements": [
                         {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                            "full": true,
+                            "step": {
+                                "title": "Collect 3 staff parts",
+                                "description": ""
                             }
                         },
                         {
@@ -600,29 +702,62 @@
                             "pic": {
                                 "src": "assets/.jpg",
                                 "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Find the Lightning Record",
+                                "description": "Located near Generator 4 (3 possible locations)."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/76.jpg",
-                                "alt": ""
+                                "alt": "Location 1 - on a cart between Generator 4 and the Excavation Site"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/78.jpg",
-                                "alt": ""
+                                "alt": "Location 2 - to the left of Juggernog"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/71.jpg",
-                                "alt": ""
+                                "alt": "Location 3 - at the end of the Wind Tunnel"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/43.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
                                 "alt": ""
                             }
                         }
@@ -645,9 +780,10 @@
                     "description": "",
                     "elements": [
                         {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                            "full": true,
+                            "step": {
+                                "title": "Collect 3 staff parts",
+                                "description": ""
                             }
                         },
                         {
@@ -660,29 +796,62 @@
                             "pic": {
                                 "src": "assets/.jpg",
                                 "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Find the Ice Record",
+                                "description": "Located in the Tank Station by Generator 2 (3 possible locations)."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/72.jpg",
-                                "alt": ""
+                                "alt": "Location 1 - on a desk by the door leading to Generator 2"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/80.jpg",
-                                "alt": ""
+                                "alt": "Location 2 - to the right of the Mystery Box location"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/73.jpg",
-                                "alt": ""
+                                "alt": "Location 3 - on some shelves by the exit to the mud Tank path"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/42.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
                                 "alt": ""
                             }
                         }
@@ -703,17 +872,53 @@
             ]
         },
         {
-            "header": "One Inch Punch (TODO)",
-            "description": "",
+            "header": "One Inch Punch",
+            "description": "Complete the shared bottom trial of the Rituals of the Ancients. Taking(TODO) the reward will upgrade your melee attack to a powerful punch.",
             "subsections": [
                 {
-                    "header": "",
-                    "description": "",
+                    "header": "Fill 4 Chests to Capacity",
+                    "description": "There are 4 chests in the Giant Robot footprints that must be filled with zombie souls. Kill enough zombies next to each chests until they disappear. If a Giant Robot steps on the chest, its progress will be reset.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/89.jpg",
+                                "alt": "Chest 1 - by the Excavation Site"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/88.jpg",
+                                "alt": "Chest 2 - next to Generator 4"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/90.jpg",
+                                "alt": "Chest 3 - next to Generator 5"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/91.jpg",
+                                "alt": "Chest 4 - by the Church"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Take the Reward (TODO)",
+                    "description": "All players can now go to either of the 2 Rituals of the Ancients locations and claim the reward(TODO).",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/97.jpg",
+                                "alt": "Glowing reward at the bottom"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/98.jpg",
+                                "alt": "One Inch Punch reward"
                             }
                         }
                     ]
@@ -721,17 +926,53 @@
             ]
         },
         {
-            "header": "G-Strike (TODO)",
-            "description": "",
+            "header": "G-Strike Beacon",
+            "description": "Each player must cleanse a tablet to unlock the G-Strike Beacon.",
             "subsections": [
                 {
-                    "header": "",
-                    "description": "",
+                    "header": "Aquire a Tablet",
+                    "description": "Go to the Tank Station next to Generator 2. In the back of the room, there is a table with 4 tablets on it. Each player can take one tablet.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/92.jpg",
+                                "alt": "Table with tablets"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Cleanse the Tablet in the Church",
+                    "description": "Place the tablet in the holy water upstairs in the Church. Get melee kills next to the tablet until enough zombie souls have been collected.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/93.jpg",
+                                "alt": "Tablet in the holy water"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Carefully Carry the Tablet to the Tank Station",
+                    "description": "Pick up the tablet from the holy water, then walk back to the Tank Station without touching any mud. If you step on any mud on the way back, you have to cleanse it in the Church again. Place the cleansed tablet on the original table in the Tank Station.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/94.jpg",
+                                "alt": "Table to place cleansed tablet"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Unlock the G-Strike Beacon",
+                    "description": "Get more melee kills next to the tablet until the G-Strike Beacon appears on the table. Interact to pick up the G-Strike Beacon.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/95.jpg",
+                                "alt": "G-Strike Beacon"
                             }
                         }
                     ]

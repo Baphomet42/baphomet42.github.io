@@ -11,8 +11,8 @@
             "header": "Map Features",
             "subsections": [
                 {
-                    "header": "Power Switch",
-                    "description": "Both switches must be enabled.",
+                    "header": "Power Switches",
+                    "description": "Both switches must be enabled to turn on power. They are located underground.",
                     "elements": [
                         {
                             "pic": {
@@ -54,6 +54,60 @@
                             "pic": {
                                 "src": "assets/5.jpg",
                                 "alt": "Pyramid with Pack-a-Punch machine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Perk Machines",
+                    "description": "The machines are randomized each game.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/36.jpg",
+                                "alt": "Quick Revive - always in spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/40.jpg",
+                                "alt": "Speed Cola - through one of the 2 doors from spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/39.jpg",
+                                "alt": "Juggernog - through one of the 2 doors from spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/37.jpg",
+                                "alt": "Mule Kick - always by the waterfall"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/38.jpg",
+                                "alt": "Double Tap Root Beer - underground"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/41.jpg",
+                                "alt": "Stamin-Up - underground"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/42.jpg",
+                                "alt": "Deadshot Daiquiri - underground"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/35.jpg",
+                                "alt": "Widow's Wine (or PhD Flopper in Black Ops) - underground"
                             }
                         }
                     ]

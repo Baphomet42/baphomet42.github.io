@@ -30,37 +30,37 @@
                         {
                             "pic": {
                                 "src": "assets/7.jpg",
-                                "alt": "Quick Revive"
+                                "alt": "Quick Revive - in spawn for Black Ops III, otherwise in one of the 4 huts"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/1.jpg",
-                                "alt": "Speed Cola"
+                                "alt": "Speed Cola - in one of the 4 huts"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/5.jpg",
-                                "alt": "Juggernog"
+                                "alt": "Juggernog - in one of the 4 huts"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/4.jpg",
-                                "alt": "Double Tap Root Beer"
+                                "alt": "Double Tap Root Beer - in one of the 4 huts"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/3.jpg",
-                                "alt": "Mule Kick (Black Ops & Black Ops III only)"
+                                "alt": "Mule Kick (Black Ops & Black Ops III only) - in spawn for Black Ops, in one of the 4 huts for Black Ops III"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/2.jpg",
-                                "alt": "Wunderfizz (Black Ops III only)"
+                                "alt": "Wunderfizz (Black Ops III only) - out the door towards the Storage Hut"
                             }
                         }
                     ]

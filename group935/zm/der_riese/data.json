@@ -14,6 +14,7 @@
             "subsections": [
                 {
                     "header": "Power Switch",
+                    "description": "Located below the drawbridge.",
                     "elements": [
                         {
                             "pic": {
@@ -55,6 +56,42 @@
                             "pic": {
                                 "src": "assets/.jpg",
                                 "alt": "Unlocked Pack-a-Punch machine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Perk Machines",
+                    "description": "The machines are randomized each game. (TODO)",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Quick Revive - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Double Tap Root Beer - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Speed Cola - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Juggernog - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Mule Kick (Black Ops only) - TODO"
                             }
                         }
                     ]

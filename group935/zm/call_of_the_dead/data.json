@@ -41,11 +41,12 @@
                 },
                 {
                     "header": "Power Switch",
+                    "description": "Located at the top of the ship.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/4.jpg",
-                                "alt": "Power switch location, at the top of the ship"
+                                "alt": "Power switch location"
                             }
                         }
                     ]
@@ -80,49 +81,49 @@
                         {
                             "pic": {
                                 "src": "assets/8.jpg",
-                                "alt": "Quick Revive"
+                                "alt": "Quick Revive - in spawn"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/14.jpg",
-                                "alt": "Double Tap Root Beer"
+                                "alt": "Double Tap Root Beer - at the back of the ship"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/6.jpg",
-                                "alt": "Juggernog"
+                                "alt": "Juggernog - near the front of the ship, downstairs near the water"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/7.jpg",
-                                "alt": "Mule Kick"
+                                "alt": "Mule Kick - at the front of the ship"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/9.jpg",
-                                "alt": "PhD Flopper"
+                                "alt": "PhD Flopper - in the building connected to the lighthouse"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/12.jpg",
-                                "alt": "Speed Cola"
+                                "alt": "Speed Cola - at the bottom of the ice slide from the lighthouse"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/11.jpg",
-                                "alt": "Stamin-Up"
+                                "alt": "Stamin-Up - behind the lighthouse in a small building"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/15.jpg",
-                                "alt": "Deadshot Daiquiri"
+                                "alt": "Deadshot Daiquiri - at the top of the lighthouse"
                             }
                         }
                     ]

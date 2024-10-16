@@ -34,6 +34,7 @@
                 },
                 {
                     "header": "Power Switch",
+                    "description": "Located in the M.P.D. room.",
                     "elements": [
                         {
                             "pic": {
@@ -75,6 +76,60 @@
                             "pic": {
                                 "src": "assets/21.jpg",
                                 "alt": "The Bio-Dome after being breached by Excavator Epsilon"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Perk Machines",
+                    "description": "The machine at Groom Lake will randomly switch between Juggernog and Speed Cola each time you teleport there.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/82.jpg",
+                                "alt": "Juggernog - at Groom Lake (randomly switches with Speed Cola when teleporting)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/89.jpg",
+                                "alt": "Speed Cola - at Groom Lake (randomly switches with Juggernog when teleporting)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/83.jpg",
+                                "alt": "Quick Revive - in the Receiving Bay"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/88.jpg",
+                                "alt": "Stamin-Up - in Tunnel 11"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/87.jpg",
+                                "alt": "Double Tap Root Beer - bottom floor of the Laboratories"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/85.jpg",
+                                "alt": "Deadshot Daiquiri - top floor of the Laboratories"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/84.jpg",
+                                "alt": "Mule Kick - outside of the Laboratories"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/86.jpg",
+                                "alt": "Widow's Wine (or PhD Flopper in Black Ops) - in Bio-Dome"
                             }
                         }
                     ]

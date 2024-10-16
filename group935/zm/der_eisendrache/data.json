@@ -123,6 +123,18 @@
                     ]
                 },
                 {
+                    "header": "115 Well",
+                    "description": "Enter the blue room in the Undercroft to fly up through the well and into the courtyard.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/227.jpg",
+                                "alt": "Entrance to well"
+                            }
+                        }
+                    ]
+                },
+                {
                     "header": "Perk Machines",
                     "elements": [
                         {
@@ -169,8 +181,26 @@
                         },
                         {
                             "pic": {
+                                "src": "assets/228.jpg",
+                                "alt": "Wunderfizz location 2 - in the bedrooms"
+                            }
+                        },
+                        {
+                            "pic": {
                                 "src": "assets/161.jpg",
-                                "alt": "Wunderfizz location 2 - outside the clock tower"
+                                "alt": "Wunderfizz location 3 - outside the clock tower"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/229.jpg",
+                                "alt": "Wunderfizz location 4 - in the church"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/230.jpg",
+                                "alt": "Wunderfizz location 5 - by the rocket"
                             }
                         }
                     ]
