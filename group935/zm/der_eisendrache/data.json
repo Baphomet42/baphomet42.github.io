@@ -111,18 +111,6 @@
                     ]
                 },
                 {
-                    "header": "Trigger a Rocket Test",
-                    "description": "Wallrun on a blue pressure plate to attempt to trigger a rocket test launch. The first attempt will also spawn a Death Machine above the workbench by the pyramid.",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/37.jpg",
-                                "alt": "Pressure plate location, near Pack-a-Punch and Juggernog"
-                            }
-                        }
-                    ]
-                },
-                {
                     "header": "115 Well",
                     "description": "Enter the blue room in the Undercroft to fly up through the well and into the courtyard.",
                     "elements": [
@@ -1809,6 +1797,18 @@
         {
             "header": "Side Easter Eggs",
             "subsections": [
+                {
+                    "header": "Trigger a Rocket Test",
+                    "description": "Wallrun on a blue pressure plate to attempt to trigger a rocket test launch. The first attempt will also spawn a Death Machine above the workbench by the pyramid.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/37.jpg",
+                                "alt": "Pressure plate location, near Pack-a-Punch and Juggernog"
+                            }
+                        }
+                    ]
+                },
                 {
                     "header": "Panzer Claw Helmet",
                     "description": "Kill 3 Panzers using Panzer Claws to grant all players the helmet. The map has 3 Panzer Claws that may each be used a single time. Shoot the claw once to make it fall down from the ceiling, then again to fire it forward (requires a bullet gun or knife melee). If the claw hits one or more Panzers, they are instantly killed.",
