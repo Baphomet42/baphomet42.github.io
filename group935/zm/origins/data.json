@@ -74,7 +74,7 @@
                 },
                 {
                     "header": "Giant Robots",
-                    "description": "There are 3 Giant Robots that occasionally walk through the map. Thor walks through the trenches, Odin walks across No Man's Land, and Freya walks by the Church. The Giant Robots always walk on the same footprints, and red lights will blink before they step in the footprint. Being stepped on will instantly down you. Sometimes, one of the 2 feet will have a yellow circle on the bottom that can be shot to open a door. Being stepped on with the door opened will take you inside the Giant Robot's head.",
+                    "description": "There are 3 Giant Robots that occasionally walk through the map. Thor walks through the trenches, Odin walks across No Man's Land, and Freya walks by the Church. The Giant Robots always walk on the same footprints, and red lights will blink before they step in the footprint. Being stepped on will instantly down you. One of the 2 feet will have a yellow circle on the bottom that can be shot to open a door, and the correct foot is randomized each time. Being stepped on with the door opened will take you inside the Giant Robot's head.",
                     "elements": [
                         {
                             "pic": {
@@ -104,7 +104,7 @@
                 },
                 {
                     "header": "Digging",
-                    "description": "Around the map there are small piles of dirt and skulls that you can dig for rewards. Each player must first find a shovel around the map, then they can dig unlimited piles. It is recommended to wait for the map to be snowing before digging so the Staff of Ice parts can be found quicker.",
+                    "description": "Around the map there are small piles of dirt and skulls that you can dig for rewards. Each player must first find a shovel around the map, then they can dig unlimited piles. It is recommended to wait for the map to be snowing before digging so the Ice Staff parts can be found quicker.",
                     "elements": [
                         {
                             "pic": {
@@ -499,7 +499,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/192.jpg",
                                 "alt": "Glowing plane to shoot down"
                             }
                         },
@@ -544,7 +544,7 @@
                             "full": true,
                             "step": {
                                 "title": "Get the Fire Crystal",
-                                "description": "Enter the Fire Tunnel between Generator 1 and Generator 3 and place the Gramophone to open the portal to The Crazy Place. Go through the portal and pick up the Fire Crystal. Interact on the glowing circle to create a portal to leave. After returning to the tunnel, it is recommended to pick up the Gramophone."
+                                "description": "Enter the Fire Tunnel between Generator 1 and Generator 3 and place the Gramophone to open the portal to The Crazy Place. Go through the portal and pick up the Fire Crystal. Interact on the glowing circle to acess a Teleporter to leave. After returning to the tunnel, it is recommended to pick up the Gramophone."
                             }
                         },
                         {
@@ -568,7 +568,7 @@
                         {
                             "pic": {
                                 "src": "assets/169.jpg",
-                                "alt": "Portal to exit"
+                                "alt": "Teleporter to exit"
                             }
                         },
                         {
@@ -580,7 +580,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/194.jpg",
                                 "alt": "Staff of Fire"
                             }
                         }
@@ -643,7 +643,7 @@
                             "full": true,
                             "step": {
                                 "title": "Get the Wind Crystal",
-                                "description": "Enter the Wind Tunnel by Generator 4 and place the Gramophone to open the portal to The Crazy Place. Go through the portal and pick up the Wind Crystal. Interact on the glowing circle to create a portal to leave. After returning to the tunnel, it is recommended to pick up the Gramophone."
+                                "description": "Enter the Wind Tunnel by Generator 4 and place the Gramophone to open the portal to The Crazy Place. Go through the portal and pick up the Wind Crystal. Interact on the glowing circle to acess a Teleporter to leave. After returning to the tunnel, it is recommended to pick up the Gramophone."
                             }
                         },
                         {
@@ -667,7 +667,7 @@
                         {
                             "pic": {
                                 "src": "assets/159.jpg",
-                                "alt": "Portal to exit"
+                                "alt": "Teleporter to exit"
                             }
                         },
                         {
@@ -679,7 +679,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/195.jpg",
                                 "alt": "Staff of Wind"
                             }
                         }
@@ -760,7 +760,7 @@
                             "full": true,
                             "step": {
                                 "title": "Get the Lightning Crystal",
-                                "description": "Enter the Lightning Tunnel by Generator 5 and place the Gramophone to open the portal to The Crazy Place. Go through the portal and pick up the Lightning Crystal. Interact on the glowing circle to create a portal to leave. After returning to the tunnel, it is recommended to pick up the Gramophone."
+                                "description": "Enter the Lightning Tunnel by Generator 5 and place the Gramophone to open the portal to The Crazy Place. Go through the portal and pick up the Lightning Crystal. Interact on the glowing circle to acess a Teleporter to leave. After returning to the tunnel, it is recommended to pick up the Gramophone."
                             }
                         },
                         {
@@ -784,7 +784,7 @@
                         {
                             "pic": {
                                 "src": "assets/161.jpg",
-                                "alt": "Portal to exit"
+                                "alt": "Teleporter to exit"
                             }
                         },
                         {
@@ -796,7 +796,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/193.jpg",
                                 "alt": "Staff of Lightning"
                             }
                         }
@@ -859,7 +859,7 @@
                             "full": true,
                             "step": {
                                 "title": "Get the Ice Crystal",
-                                "description": "Enter the Ice Tunnel by Generator 6 and place the Gramophone to open the portal to The Crazy Place. Go through the portal and pick up the Ice Crystal. Interact on the glowing circle to create a portal to leave. After returning to the tunnel, it is recommended to pick up the Gramophone."
+                                "description": "Enter the Ice Tunnel by Generator 6 and place the Gramophone to open the portal to The Crazy Place. Go through the portal and pick up the Ice Crystal. Interact on the glowing circle to acess a Teleporter to leave. After returning to the tunnel, it is recommended to pick up the Gramophone."
                             }
                         },
                         {
@@ -883,7 +883,7 @@
                         {
                             "pic": {
                                 "src": "assets/166.jpg",
-                                "alt": "Portal to exit"
+                                "alt": "Teleporter to exit"
                             }
                         },
                         {
@@ -895,7 +895,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/199.jpg",
                                 "alt": "Staff of Ice"
                             }
                         }
@@ -914,15 +914,15 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "Unique upgrade steps",
+                                "title": "1. Unique upgrade steps",
                                 "description": "After crafting the staff, it must be used for a unique step in The Crazy Place. Then, it must be used for a unique step in the normal map. See below for more info."
                             }
                         },
                         {
                             "full": true,
                             "step": {
-                                "title": "Set the levers",
-                                "description": "Go downstairs in the Excavation Site. There are 4 levers that each cycle the color on one of the circles in the middle of the room. Interact with the levers until all 4 circles glow the correct color for the staff. The Staff of Fire requires red, the Staff of Wind requires yellow, the Staff of Lightning requires purple, and the Staff of Ice require blue."
+                                "title": "2. Set the levers",
+                                "description": "Once the unique steps in The Crazy Place and normal map are completed, go downstairs in the Excavation Site. There are 4 levers that each cycle the color on one of the circles in the middle of the room. Interact with the levers until all 4 circles glow the correct color for the staff. The Fire Staff requires red, the Wind Staff requires yellow, the Lightning Staff requires purple, and the Ice Staff require blue."
                             }
                         },
                         {
@@ -950,9 +950,15 @@
                             }
                         },
                         {
+                            "pic": {
+                                "src": "assets/197.jpg",
+                                "alt": "All 4 circles the same color"
+                            }
+                        },
+                        {
                             "full": true,
                             "step": {
-                                "title": "Shoot the orb",
+                                "title": "3. Shoot the orb",
                                 "description": "After the 4 circles are set correctly, shoot the orb with the staff. It will rise into the sky and disappear. Each staff has a different colored orb."
                             }
                         },
@@ -965,7 +971,7 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "Get kills in The Crazy Place",
+                                "title": "4. Get kills in The Crazy Place",
                                 "description": "Enter The Crazy Place through any of the 4 portals, then place the staff on the corresponding pedestal. Kill zombies next to the staff until enough souls have been collected. After enough kills, pick up the upgraded staff."
                             }
                         },
@@ -978,7 +984,7 @@
                     ]
                 },
                 {
-                    "header": "Upgraded Fire Staff (Kagutsuchi's Blood) TODO",
+                    "header": "Upgraded Fire Staff (Kagutsuchi's Blood)",
                     "description": "After these steps, follow the upgrade process steps above.",
                     "elements": [
                         {
@@ -998,13 +1004,13 @@
                             "full": true,
                             "step": {
                                 "title": "Shoot the torches in the Church",
-                                "description": "There are 7 symbols upstairs in the Church and TODO will be glowing. Use the image below to match the symbols to a set of numbers. Downstairs in the Church there are 7 torches, each with a number next to it. Quickly shoot the TODO torches corresponding to the numbers from the image."
+                                "description": "There are 7 symbols upstairs in the Church and 4 of them will be glowing. Use the image below to match the symbols to a set of numbers. Downstairs in the Church there are 7 torches, each with a number next to it. The unlabeled torch between 7 and 9 is torch 4. Using the Staff of Fire, quickly shoot the 4 torches corresponding to the numbers in the image next to the 4 glowing symbols. For example, the image shown would require shooting 11, 9, 6, and 4 in any order."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/121.jpg",
-                                "alt": "(TODO edit) The 7 symbols and corresponding numbers"
+                                "src": "assets/121_edit.jpg",
+                                "alt": "The 7 symbols and corresponding numbers"
                             }
                         },
                         {
@@ -1012,18 +1018,24 @@
                                 "src": "assets/122.jpg",
                                 "alt": "Some of the torches downstairs"
                             }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/198.jpg",
+                                "alt": "Torch 4, the unlabeled torch between 7 and 9"
+                            }
                         }
                     ]
                 },
                 {
-                    "header": "Upgraded Wind Staff (Boreas' Fury) TODO",
+                    "header": "Upgraded Wind Staff (Boreas' Fury)",
                     "description": "After these steps, follow the upgrade process steps above.",
                     "elements": [
                         {
                             "full": true,
                             "step": {
                                 "title": "Spin the 4 circles",
-                                "description": "Go to the Wind section in The Crazy Place. On the ceiling there are 4 circles with symbols on them. Shoot the circles with the Staff of Wind until they match the symbol order below."
+                                "description": "Go to the Wind section in The Crazy Place. On the ceiling there are 4 circles with symbols on them. Shoot the circles with the Staff of Wind until they match the symbol order below. When done correctly, the circles will move up slightly."
                             }
                         },
                         {
@@ -1035,14 +1047,14 @@
                         {
                             "pic": {
                                 "src": "assets/111.jpg",
-                                "alt": "Close-up of the symbol order pointing towards the TODO section"
+                                "alt": "Close-up of the symbol order pointing towards the Fire section"
                             }
                         },
                         {
                             "full": true,
                             "step": {
                                 "title": "Shoot the 3 smoking stones",
-                                "description": "There are 3 stones around No Man's Land that must be shot in the correct direction. Shoot the stone with the Excavation Site behind it so the smoke flies towards the Excavation Site."
+                                "description": "There are 3 stones around No Man's Land that must be shot in the correct direction. Using the Staff of Wind, shoot the stone while aiming in the direction of the Excavation Site so the smoke flies towards the Excavation Site."
                             }
                         },
                         {
@@ -1059,33 +1071,27 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/196.jpg",
                                 "alt": "Location 3 - by the mud path between the Church and Generator 5"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Upgraded Lightning Staff (Kimat's Bite) TODO",
+                    "header": "Upgraded Lightning Staff (Kimat's Bite)",
                     "description": "After these steps, follow the upgrade process steps above.",
                     "elements": [
                         {
                             "full": true,
                             "step": {
                                 "title": "Shoot 3 sets of 3 symbols",
-                                "description": "Go to the Lightning section in The Crazy Place. Using the numbering system on the image, shoot these 3 sets of symbols in any order using the Staff of Lightning: 1-3-6, 3-5-7, 2-4-6."
+                                "description": "Go to the Lightning section in The Crazy Place. Using the numbering system on the image, shoot these 3 sets of symbols using the Staff of Lightning: 1-3-6, 5-7-3, 2-4-6. When done correctly, the electricity will go away and the symbols will not longer make sound when shot."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/131.jpg",
-                                "alt": "(TODO edit) The numbered symbols"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/132.jpg",
-                                "alt": "TODO"
+                                "src": "assets/131_edit.jpg",
+                                "alt": "The numbered symbols"
                             }
                         },
                         {
@@ -1097,50 +1103,50 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/133.jpg",
+                                "src": "assets/133_edit.jpg",
                                 "alt": "Dial 1 - by Generator 1, set left"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/134.jpg",
+                                "src": "assets/134_edit.jpg",
                                 "alt": "Dial 2 - by Generator 2, set down"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/135.jpg",
+                                "src": "assets/135_edit.jpg",
                                 "alt": "Dial 3 - by Generator 4, set up"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/136.jpg",
+                                "src": "assets/136_edit.jpg",
                                 "alt": "Dial 4 - by Generator 5, set down"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/139.jpg",
+                                "src": "assets/139_edit.jpg",
                                 "alt": "Dial 5 - near the Excavation Site by the path going to the Church, set up"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/137.jpg",
+                                "src": "assets/137_edit.jpg",
                                 "alt": "Dial 6 - downstairs in the Church, set right"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/138.jpg",
+                                "src": "assets/138_edit.jpg",
                                 "alt": "Dial 7 - upstairs in the Church, set up"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Upgraded Ice Staff (Ull's Arrow) TODO",
+                    "header": "Upgraded Ice Staff (Ull's Arrow)",
                     "description": "After these steps, follow the upgrade process steps above.",
                     "elements": [
                         {
@@ -1199,7 +1205,7 @@
         },
         {
             "header": "One Inch Punch",
-            "description": "Complete the shared bottom trial of the Rituals of the Ancients. Taking(TODO) the reward will upgrade your melee attack to a powerful punch.",
+            "description": "Complete the shared bottom trial of the Rituals of the Ancients. Taking the reward will upgrade your melee attack to a powerful punch.",
             "subsections": [
                 {
                     "header": "Fill 4 Chests to Capacity",
@@ -1232,8 +1238,8 @@
                     ]
                 },
                 {
-                    "header": "Take the Reward (TODO)",
-                    "description": "All players can now go to either of the 2 Rituals of the Ancients locations and claim the reward(TODO).",
+                    "header": "Take the Reward",
+                    "description": "All players can now go to either of the 2 Rituals of the Ancients locations and claim the reward.",
                     "elements": [
                         {
                             "pic": {
@@ -1352,7 +1358,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/200.jpg",
                                 "alt": "Wind Staff pedestal - in the Odin Giant Robot that walks across No Man's Land"
                             }
                         },
@@ -1366,7 +1372,7 @@
                 },
                 {
                     "header": "3. Press the Button and Fire the G-Strike Beacon (Rain Fire)",
-                    "description": "All 3 Giant Robots will keep marching across the map, and each time they march, one of the feet can be entered. One player must enter the Giant Robot and press the red button inside its head. Quickly after pressing the button, throw a G-Strike Beacon at a small TODO outside of Generator 5. When done correctly, TODO hole.",
+                    "description": "All 3 Giant Robots will keep marching across the map, and each time they march, only one of the 6 feet can be entered. One player must enter the Giant Robot and press the red button inside its head. Quickly after pressing the button, throw a G-Strike Beacon at the cracked stone outside of Generator 5. When done correctly, the stone will be destroyed, revealing a pit.",
                     "elements": [
                         {
                             "pic": {
@@ -1383,14 +1389,14 @@
                         {
                             "pic": {
                                 "src": "assets/181.jpg",
-                                "alt": "Hole in the ground"
+                                "alt": "Opened pit"
                             }
                         }
                     ]
                 },
                 {
                     "header": "4. Launch the Maxis Drone and Kill Panzers (Unleash the Horde)",
-                    "description": "Release the Maxis Drone near the hole in the ground from the previous step. It will fly inside, then several Panzers will fly out. Kill all the Panzers.",
+                    "description": "Release the Maxis Drone near the pit from the previous step. It will fly inside, then several Panzers will fly out. Kill all the Panzers.",
                     "elements": [
                         {
                             "pic": {
@@ -1408,7 +1414,7 @@
                 },
                 {
                     "header": "5. Shoot Down the Plane and Kill the Pilot (Skewer the Winged Beast)",
-                    "description": "Shoot the glowing orange plane flying around the map. The plane is only visible while using Zombie Blood. After being shot down, the pilot zombie will run around the Excavation Site area clockwise. The zombie can only be seen while using Zombie Blood, but it can be a different use of Zombie Blood than the one that was used to shoot down the plane. Run around counterclockwise to find the zombie, then kill it so it drops the Maxis Drone. Pick up the Maxis Drone.",
+                    "description": "Shoot the glowing orange plane flying around the map. The plane is only visible while using Zombie Blood. After being shot down, the pilot zombie will run around the Excavation Site area clockwise (it will not be up by Pack-a-Punch, but just the surrounding Giant Robot footsteps and paths going in a circle). The zombie can only be seen while using Zombie Blood, but it can be a different use of Zombie Blood than the one that was used to shoot down the plane. Run around counterclockwise to find the zombie, then kill it so it drops the Maxis Drone. The zombie will look like a normal zombie, and the easiest way to find it is to kill all zombies running clockwise around the Excavation Site area. Pick up the Maxis Drone to complete the step.",
                     "elements": [
                         {
                             "pic": {
@@ -1419,7 +1425,7 @@
                         {
                             "pic": {
                                 "src": "assets/185.jpg",
-                                "alt": "Pilot zombie (TODO)"
+                                "alt": "Pilot zombie"
                             }
                         },
                         {
@@ -1444,7 +1450,7 @@
                 },
                 {
                     "header": "7. Kill Templar Zombies in The Crazy Place (Raise Hell)",
-                    "description": "Before starting this step, make sure all 6 generators are powered. Go to The Crazy Place and place all 4 upgraded staffs in the altars. Then, kill templar zombies until enough souls fly up in the middle. After enough kills, a rift will appear in the air.",
+                    "description": "Before starting this step, make sure all 6 generators are powered. Go to The Crazy Place and insert all 4 upgraded staffs in the altars. Then, kill templar zombies until enough souls fly up in the middle. Picking up the Staffs will stop souls from being collected until they are inserted back into the altars. After enough kills, a rift will appear in the air.",
                     "elements": [
                         {
                             "pic": {
@@ -1562,7 +1568,7 @@
             "subsections": [
                 {
                     "header": "Free Zombie Blood",
-                    "description": "This can be activated once per round. Shoot the 3 flaming carts with the Staff of Ice, then pick up the Zombie Blood from the top of the Excavation Site.",
+                    "description": "This can be activated once per round. Shoot the 3 flaming carts with the Ice Staff, then pick up the Zombie Blood from the top of the Excavation Site.",
                     "elements": [
                         {
                             "pic": {
@@ -1658,7 +1664,7 @@
             "subsections": [
                 {
                     "header": "1. Shoot 4 Wisps with the Staffs",
-                    "description": "Go downstairs in the Excavation Site by the staff statues. Looking up, there is a circle with 4 invisible wisps on each side. Looking at the wisps while in Zombie Blood will reveal their colors, but this is not required. Shoot each of the 4 wisps with the corresponding Elemental Staff.",
+                    "description": "Go downstairs in the Excavation Site by the staff statues. Looking up, there is a circle with 4 invisible wisps on each side. Looking at the wisps while in Zombie Blood will reveal their colors, but this is not required as they can be shot without Zombie Blood and are in the same locations every game. Shoot each of the 4 wisps with the corresponding Elemental Staff. Standing under the circle and facing towards Mule Kick, the Fire wisp is in front facing Mule Kick, the Ice wisp is on the left, the Lightning wisp is on the back facing the staff statues, and the Wind wisp is on the right.",
                     "elements": [
                         {
                             "pic": {

@@ -55,4 +55,10 @@ To ensure a consistent feel, try to stick to these guidelines.
     + Font size 100
     + Font Verdana
     + Color #FF0000
+    + Sometimes add outline, black, size 50
 + Save as JPG 70% quality
++ Image overlay outer glow
+    + Color #FF0000
+    + Size 15px
+    + Feather 50%
+    + Opacity 100%
