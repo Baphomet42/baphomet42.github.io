@@ -7,7 +7,6 @@
     "maps": [{
         "img": "assets/map1.png"
     }],
-    "wip": true,
     "sections" : [
         {
             "header": "Map Features",
@@ -104,12 +103,42 @@
                 },
                 {
                     "header": "Digging",
-                    "description": "Around the map there are small piles of dirt and skulls that you can dig for rewards. Each player must first find a shovel around the map, then they can dig unlimited piles. It is recommended to wait for the map to be snowing before digging so the Ice Staff parts can be found quicker.",
+                    "description": "All around the map there are small piles of dirt and skulls that you can dig for rewards. Each player must first find a shovel around the map, then they can dig unlimited piles. The piles take a few rounds to come back, so it is recommended to wait for the map to be snowing before digging until all 3 Ice Staff parts are found. There are 6 possible shovel spawns, and each game there will be exactly 4 shovels.",
                     "elements": [
                         {
                             "pic": {
+                                "src": "assets/202.jpg",
+                                "alt": "Shovel location 1 - near Generator 1, in the spawn room"
+                            }
+                        },
+                        {
+                            "pic": {
                                 "src": "assets/5.jpg",
-                                "alt": "A shovel"
+                                "alt": "Shovel location 2 - near Generator 1, by the door to Generator 3"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/203.jpg",
+                                "alt": "Shovel location 3 - in the Wind Tunnel near Generator 4"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/204.jpg",
+                                "alt": "Shovel location 4 - in the Lightning Tunnel by Generator 5"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/205.jpg",
+                                "alt": "Shovel location 5 - downstairs in the Church, leaning against a box"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/206.jpg",
+                                "alt": "Shovel location 6 - downstairs in the Church, leaning against a pillar"
                             }
                         },
                         {
@@ -122,7 +151,7 @@
                 },
                 {
                     "header": "Tank",
-                    "description": "The Tank can be ridden around the map and moves between the Church and the Tank Station by Generator 2. It always starts in the Church, and moving the tank costs 500 points.",
+                    "description": "The Tank can be ridden around the map and moves between the Church and the Tank Station by Generator 2. It always starts in the Church, and moving the Tank costs 500 points.",
                     "elements": [
                         {
                             "pic": {
@@ -915,14 +944,14 @@
                             "full": true,
                             "step": {
                                 "title": "1. Unique upgrade steps",
-                                "description": "After crafting the staff, it must be used for a unique step in The Crazy Place. Then, it must be used for a unique step in the normal map. See below for more info."
+                                "description": "After crafting the staff, it must be used for a unique step in The Crazy Place. Then, it must be used for a unique step in the normal map. See the below sections for more info."
                             }
                         },
                         {
                             "full": true,
                             "step": {
                                 "title": "2. Set the levers",
-                                "description": "Once the unique steps in The Crazy Place and normal map are completed, go downstairs in the Excavation Site. There are 4 levers that each cycle the color on one of the circles in the middle of the room. Interact with the levers until all 4 circles glow the correct color for the staff. The Fire Staff requires red, the Wind Staff requires yellow, the Lightning Staff requires purple, and the Ice Staff require blue."
+                                "description": "Once the unique steps in The Crazy Place and normal map are completed, go downstairs in the Excavation Site. There are 4 levers that each cycle the color on one of the circles in the middle of the room. Interact with the levers until all 4 circles glow the correct color for the staff. The Fire Staff requires red, the Wind Staff requires yellow, the Lightning Staff requires purple, and the Ice Staff requires blue."
                             }
                         },
                         {
@@ -985,12 +1014,11 @@
                 },
                 {
                     "header": "Upgraded Fire Staff (Kagutsuchi's Blood)",
-                    "description": "After these steps, follow the upgrade process steps above.",
                     "elements": [
                         {
                             "full": true,
                             "step": {
-                                "title": "Kill zombies to light the fires",
+                                "title": "1. Kill zombies to light the fires",
                                 "description": "Go to the Fire section in The Crazy Place. Kill zombies with the Staff of Fire over the metal grates on the floor. After enough kills, all 4 fires will be lit."
                             }
                         },
@@ -1003,7 +1031,7 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "Shoot the torches in the Church",
+                                "title": "2. Shoot the torches in the Church",
                                 "description": "There are 7 symbols upstairs in the Church and 4 of them will be glowing. Use the image below to match the symbols to a set of numbers. Downstairs in the Church there are 7 torches, each with a number next to it. The unlabeled torch between 7 and 9 is torch 4. Using the Staff of Fire, quickly shoot the 4 torches corresponding to the numbers in the image next to the 4 glowing symbols. For example, the image shown would require shooting 11, 9, 6, and 4 in any order."
                             }
                         },
@@ -1024,17 +1052,29 @@
                                 "src": "assets/198.jpg",
                                 "alt": "Torch 4, the unlabeled torch between 7 and 9"
                             }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Upgrade",
+                                "description": "Set the levers, shoot the orb, then feed souls to the staff. See the upgrade process section above for more info."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/123.jpg",
+                                "alt": "Kagutsuchi's Blood"
+                            }
                         }
                     ]
                 },
                 {
                     "header": "Upgraded Wind Staff (Boreas' Fury)",
-                    "description": "After these steps, follow the upgrade process steps above.",
                     "elements": [
                         {
                             "full": true,
                             "step": {
-                                "title": "Spin the 4 circles",
+                                "title": "1. Spin the 4 circles",
                                 "description": "Go to the Wind section in The Crazy Place. On the ceiling there are 4 circles with symbols on them. Shoot the circles with the Staff of Wind until they match the symbol order below. When done correctly, the circles will move up slightly."
                             }
                         },
@@ -1053,7 +1093,7 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "Shoot the 3 smoking stones",
+                                "title": "2. Shoot the 3 smoking stones",
                                 "description": "There are 3 stones around No Man's Land that must be shot in the correct direction. Using the Staff of Wind, shoot the stone while aiming in the direction of the Excavation Site so the smoke flies towards the Excavation Site."
                             }
                         },
@@ -1074,17 +1114,29 @@
                                 "src": "assets/196.jpg",
                                 "alt": "Location 3 - by the mud path between the Church and Generator 5"
                             }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Upgrade",
+                                "description": "Set the levers, shoot the orb, then feed souls to the staff. See the upgrade process section above for more info."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/119.jpg",
+                                "alt": "Boreas' Fury"
+                            }
                         }
                     ]
                 },
                 {
                     "header": "Upgraded Lightning Staff (Kimat's Bite)",
-                    "description": "After these steps, follow the upgrade process steps above.",
                     "elements": [
                         {
                             "full": true,
                             "step": {
-                                "title": "Shoot 3 sets of 3 symbols",
+                                "title": "1. Shoot 3 sets of 3 symbols",
                                 "description": "Go to the Lightning section in The Crazy Place. Using the numbering system on the image, shoot these 3 sets of symbols using the Staff of Lightning: 1-3-6, 5-7-3, 2-4-6. When done correctly, the electricity will go away and the symbols will not longer make sound when shot."
                             }
                         },
@@ -1097,7 +1149,7 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "Set the 7 dials",
+                                "title": "2. Set the 7 dials",
                                 "description": "There are 7 dials around the map that must be turned to a certain direction."
                             }
                         },
@@ -1142,18 +1194,30 @@
                                 "src": "assets/138_edit.jpg",
                                 "alt": "Dial 7 - upstairs in the Church, set up"
                             }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Upgrade",
+                                "description": "Set the levers, shoot the orb, then feed souls to the staff. See the upgrade process section above for more info."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/141.jpg",
+                                "alt": "Kimat's Bite"
+                            }
                         }
                     ]
                 },
                 {
                     "header": "Upgraded Ice Staff (Ull's Arrow)",
-                    "description": "After these steps, follow the upgrade process steps above.",
                     "elements": [
                         {
                             "full": true,
                             "step": {
-                                "title": "Match the 6 symbols",
-                                "description": "Go to the Ice section in The Crazy Place. There is a wall with a glowing symbol on it, and there are 6 stones with symbols in the air. The chart below shows which wall symbols correspond to which stone symbols. Using the Staff of Ice, shoot the stone that corresponds to the symbol on the wall and repeat until all 6 stones are facing up."
+                                "title": "1. Match the 6 symbols",
+                                "description": "Go to the Ice section in The Crazy Place. There is a wall with a glowing symbol on it, and there are 6 stones with symbols in the air. The chart below shows which stone symbol corresponds to each of the wall symbols. Using the Staff of Ice, shoot the stone that corresponds to the symbol on the wall and repeat until all 6 stones remain facing up."
                             }
                         },
                         {
@@ -1169,15 +1233,16 @@
                             }
                         },
                         {
+                            "full": true,
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/ice_symbols.jpg",
                                 "alt": "Chart to match the symbols"
                             }
                         },
                         {
                             "full": true,
                             "step": {
-                                "title": "Destroy 3 graves",
+                                "title": "2. Destroy 3 graves",
                                 "description": "There are 3 graves that must be shot with the Staff of Ice to be frozen, then shot with a bullet gun to be destroyed."
                             }
                         },
@@ -1197,6 +1262,19 @@
                             "pic": {
                                 "src": "assets/128.jpg",
                                 "alt": "Location 3 - on the Excavation Site hill"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Upgrade",
+                                "description": "Set the levers, shoot the orb, then feed souls to the staff. See the upgrade process section above for more info."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/130.jpg",
+                                "alt": "Ull's Arrow"
                             }
                         }
                     ]
@@ -1377,7 +1455,7 @@
                         {
                             "pic": {
                                 "src": "assets/180.jpg",
-                                "alt": "Red button inside the Giant Robot head"
+                                "alt": "Red button inside the Giant Robot's head"
                             }
                         },
                         {
@@ -1414,7 +1492,7 @@
                 },
                 {
                     "header": "5. Shoot Down the Plane and Kill the Pilot (Skewer the Winged Beast)",
-                    "description": "Shoot the glowing orange plane flying around the map. The plane is only visible while using Zombie Blood. After being shot down, the pilot zombie will run around the Excavation Site area clockwise (it will not be up by Pack-a-Punch, but just the surrounding Giant Robot footsteps and paths going in a circle). The zombie can only be seen while using Zombie Blood, but it can be a different use of Zombie Blood than the one that was used to shoot down the plane. Run around counterclockwise to find the zombie, then kill it so it drops the Maxis Drone. The zombie will look like a normal zombie, and the easiest way to find it is to kill all zombies running clockwise around the Excavation Site area. Pick up the Maxis Drone to complete the step.",
+                    "description": "Shoot the glowing orange plane flying around the map. The plane is only visible while using Zombie Blood. After being shot down, the pilot zombie will run around the Excavation Site area clockwise (it will not be up by Pack-a-Punch, but just the surrounding paths going in a circle). The zombie can only be seen while using Zombie Blood, but it can be a different use of Zombie Blood than the one that was used to shoot down the plane. Run around counterclockwise to find the zombie, then kill it so it drops the Maxis Drone. The zombie will look like a normal zombie, and the easiest way to find it is to kill all zombies that run clockwise around the Excavation Site area. Pick up the Maxis Drone to complete the step.",
                     "elements": [
                         {
                             "pic": {
@@ -1474,7 +1552,7 @@
                 },
                 {
                     "header": "8. Release the Maxis Drone (Freedom)",
-                    "description": "Release the Maxis Drone so it flies into the rift. (TODO enter light?, paste achievement and cutscene info) If the cutscene does not start, powering all 6 generators should fix it.",
+                    "description": "Release the Maxis Drone so it flies into the rift. Then, all players must interact on the light in the center of The Crazy Place. This will end the game and grant the achievement for all players. If the cutscene does not start, powering all 6 generators should fix it.",
                     "elements": [
                         {
                             "pic": {
@@ -1485,7 +1563,7 @@
                         {
                             "pic": {
                                 "src": "assets/191.jpg",
-                                "alt": "TODO"
+                                "alt": "Light beam to interact"
                             }
                         }
                     ]
@@ -1568,7 +1646,7 @@
             "subsections": [
                 {
                     "header": "Free Zombie Blood",
-                    "description": "This can be activated once per round. Shoot the 3 flaming carts with the Ice Staff, then pick up the Zombie Blood from the top of the Excavation Site.",
+                    "description": "This can be activated whenever the carts are flaming (once per round unless it rains). Shoot the 3 flaming carts with the Ice Staff, then pick up the Zombie Blood from the top of the Excavation Site.",
                     "elements": [
                         {
                             "pic": {
@@ -1597,25 +1675,159 @@
                     ]
                 },
                 {
-                    "header": "Golden Shovel (TODO)",
-                    "description": "",
+                    "header": "Free Magna Collider",
+                    "description": "Bring the Maxis Drone to 4 yellow discs around the map. Each time, the drone will fly to the disc and collect it, and it doesn't have to be a single use of the Maxis Drone. After collecting all 4 discs, the Maxis Drone will fly to the Excavation Site and drop a free Magna Collider (PaP MG08/15) in front of the Pack-a-Punch machine.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/209_edit.jpg",
+                                "alt": "Disc 1 - on the Church roof, near the front entrance to the basement"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/208_edit.jpg",
+                                "alt": "Disc 2 - on top of the Excavation Site, on some scaffolding"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/207_edit.jpg",
+                                "alt": "Disc 3 - near Generator 5, on a wooden beam"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/210_edit.jpg",
+                                "alt": "Disc 4 - directly out the door from Generator 1 towards Generator 2, on a pile of burning wood"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/211.jpg",
+                                "alt": "Magna Collider in front of the Pack-a-Punch machine"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Golden Helmet (TODO)",
-                    "description": "",
+                    "header": "Golden Shovel",
+                    "description": "Each player can unlock the Golden Shovel by digging 30 piles. On the 30th pile, a sound will be heard and the shovel icon on the HUD will change to be golden. Dig pile rewards will be better when using the Golden Shovel, and it also unlocks the ability to get the Golden Helmet and hidden red dig piles.",
                     "elements": [
                         {
+                            "full": true,
+                            "step": {
+                                "title": "Golden Helmet",
+                                "description": "When digging with the Golden Shovel, there is a chance to unlock the Golden Helmet. A sound will be heard and the Golden Helmet will be seen on the HUD. When wearing the Golden Helmet, you will not be downed when stepped on by a Giant Robot."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Hidden red dig piles",
+                                "description": "When Zombie Blood is active, a red dig pile will be visible somewhere in the map. There are 16 possible locations, and exactly 1 pile will be in the map at a time. The pile will remain in the same location until it's dug, even across multiple uses of Zombie Blood. After it's dug, a different location will get the red pile, but not until starting the next round. Locations will never be repeated, and each player can only get 4 red piles during a game. Digging the red pile with the Golden Shovel will grant a permanent empty perk bottle power-up. For each empty perk bottle obtained, your max perk count increases by 1."
+                            }
+                        },
+                        {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/212.jpg",
+                                "alt": "Empty perk bottle power-up from a red dig pile"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/218.jpg",
+                                "alt": "Location 1 - near Generator 5, in the footprint where the One Inch Punch chest is"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/224.jpg",
+                                "alt": "Location 2 - between Generator 5 and the Church, in the footprint"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/220.jpg",
+                                "alt": "Location 3 - on the mud Tank path between Generator 5 and the Church (can be seen from the dropoff in the path)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/225.jpg",
+                                "alt": "Location 4 - on the mud Tank path between Generator 5 and Generator 2"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/217.jpg",
+                                "alt": "Location 5 - near Generator 2, in the trench that goes under the Tank path that leads to Generator 5"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/221.jpg",
+                                "alt": "Location 6 - near Generator 2, out the back door of the Tank Station"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/216.jpg",
+                                "alt": "Location 7 - between Generator 2 and Generator 1, next to a wall-buy"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/213.jpg",
+                                "alt": "Location 8 - just out the door of Generator 1 that goes to Generator 2"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/223.jpg",
+                                "alt": "Location 9 - down the Fire Tunnel between Generator 1 and Generator 3"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/222.jpg",
+                                "alt": "Location 10 - between Generator 1 and Generator 3, in a dead end of the trenches"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/214.jpg",
+                                "alt": "Location 11 - right next to Generator 3"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/219.jpg",
+                                "alt": "Location 12 - between Generator 4 and the Excavation Site, between 2 footprints"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/226.jpg",
+                                "alt": "Location 13 - on the mud Tank path between Generator 4 and Generator 3"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/227.jpg",
+                                "alt": "Location 14 - right next to Generator 4"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/215.jpg",
+                                "alt": "Location 15 - on the mud Tank path between Generator 4 and the Church (can be seen from the dropoff in the path)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/228.jpg",
+                                "alt": "Location 16 - right next to Generator 6"
                             }
                         }
                     ]
@@ -1640,18 +1852,6 @@
                             "pic": {
                                 "src": "assets/170.jpg",
                                 "alt": "Jumpscare"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "",
-                    "description": "",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
                             }
                         }
                     ]

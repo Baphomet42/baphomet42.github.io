@@ -54,7 +54,7 @@
                 {"id": "ascension", "name": "Ascension", "img_alt": "bo3"},
                 {"id": "shangri_la", "name": "Shangri-La", "img_alt": "bo3"},
                 {"id": "moon", "name": "Moon", "img_alt": "bo3"},
-                {"id": "origins", "name": "Origins", "wip": true, "img_alt": "bo3"}
+                {"id": "origins", "name": "Origins", "img_alt": "bo3"}
             ]
         },
         {
@@ -67,7 +67,7 @@
                 {"id": "die_rise", "name": "Die Rise", "wip": true},
                 {"id": "mob_of_the_dead", "name": "Mob of the Dead", "wip": true},
                 {"id": "buried", "name": "Buried", "wip": true},
-                {"id": "origins", "name": "Origins", "wip": true}
+                {"id": "origins", "name": "Origins"}
             ]
         },
         {

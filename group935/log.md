@@ -62,3 +62,9 @@ To ensure a consistent feel, try to stick to these guidelines.
     + Size 15px
     + Feather 50%
     + Opacity 100%
++ Unique
+    + Origins ice staff upgrade symbols
+        + Set canvas to 500x220
+        + Add wall texture to left and stone to right both with 220 height
+        + Resize canvas to 640x270
+        + Combine 12 images
