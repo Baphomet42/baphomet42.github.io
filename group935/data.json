@@ -5,8 +5,8 @@
             "name": "Black Ops 6",
             "year": 2024,
             "maps": [
-                {"id": "terminus", "name": "Terminus", "wip": true},
-                {"id": "liberty_falls", "name": "Liberty Falls", "wip": true}
+                {"id": "terminus", "name": "Terminus"},
+                {"id": "liberty_falls", "name": "Liberty Falls"}
             ]
         },
         {

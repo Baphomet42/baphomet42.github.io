@@ -6,5 +6,179 @@
     "rev": 2,
     "wip": true,
     "sections" : [
+        {
+            "header": "Map Features",
+            "subsections": [
+                {
+                    "header": "Power",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Pack-a-Punch",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Pack-a-Punch machine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Exfil",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Perk Machines",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Quick Revive - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Speed Cola - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Juggernog - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Melee Macchiato - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "PhD Flopper - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Stamin-Up - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Elemental Pop - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Deadshot Daiquiri - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Der Wunderfizz - TODO"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Main Quest (TODO)",
+            "subsections": [
+                {
+                    "header": "Requirements",
+                    "elements": [
+                        {
+                            "full": true,
+                            "bullets": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "header": "",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Song",
+            "subsections": [
+                {
+                    "header": "",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Side Easter Eggs",
+            "subsections": [
+                {
+                    "header": "",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
     ]
 }

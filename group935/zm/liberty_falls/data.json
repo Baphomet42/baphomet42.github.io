@@ -6,5 +6,233 @@
     "rev": 2,
     "wip": true,
     "sections" : [
+        {
+            "header": "Map Features",
+            "subsections": [
+                {
+                    "header": "Pack-a-Punch",
+                    "description": "Located in the Church.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/13.jpg",
+                                "alt": "Pack-a-Punch machine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Dark Aether Crystals",
+                    "description": "The dark aether crystals in the Church can be broken to drop random loot, including Salvage.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/14.jpg",
+                                "alt": "Crystals"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Vault",
+                    "description": "Find 3 numbers on yellow notes and enter them on the Vault in the Savings & Loan building by Juggernog.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/5.jpg",
+                                "alt": "Number 1 - Savings & Loan by Juggernog, on the front desk"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/4.jpg",
+                                "alt": "Number 2 - Olly's Comics by Quick Revive, on a shelf in the desk in the middle of the room"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/1.jpg",
+                                "alt": "Number 3 - Fuller's Liberty Lanes by Stamin-Up, on the concessions desk"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/6.jpg",
+                                "alt": "Vault door"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/7.jpg",
+                                "alt": "Location to enter the Vault"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Exfil",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/17.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Arsenal Machines",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/11.jpg",
+                                "alt": "Location 1 - Hilltop"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Level 3 Armor",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 1 - Cemetery"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Perk Machines",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/8.jpg",
+                                "alt": "Quick Revive - Olly's Comics"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/10.jpg",
+                                "alt": "Speed Cola - Washington Ave."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/9.jpg",
+                                "alt": "Juggernog - Savings & Loan"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/12.jpg",
+                                "alt": "Melee Macchiato - Forecourt"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/15.jpg",
+                                "alt": "PhD Flopper - Hilltop Stairs"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/16.jpg",
+                                "alt": "Stamin-Up - Fuller's Liberty Lanes"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Der Wunderfizz - TODO"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Main Quest (TODO)",
+            "subsections": [
+                {
+                    "header": "Requirements",
+                    "elements": [
+                        {
+                            "full": true,
+                            "bullets": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "header": "",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Song",
+            "subsections": [
+                {
+                    "header": "",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Side Easter Eggs",
+            "subsections": [
+                {
+                    "header": "Pool Table",
+                    "description": "Shoot any pool ball to cause all the balls to go in. 100 Essence will drop next to the pool table.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/2.jpg",
+                                "alt": "Pool table, in Fuller's Liberty Lanes"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/3.jpg",
+                                "alt": "100 Essence"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
     ]
 }
