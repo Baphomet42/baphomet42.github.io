@@ -11,7 +11,7 @@
             "subsections": [
                 {
                     "header": "Pack-a-Punch",
-                    "description": "Located in the Church.",
+                    "description": "Located in the Dark Aether Church.",
                     "elements": [
                         {
                             "pic": {
@@ -71,12 +71,12 @@
                 },
                 {
                     "header": "Exfil",
-                    "description": "",
+                    "description": "The exfil radio is located on East Main Street by spawn.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/17.jpg",
-                                "alt": ""
+                                "alt": "Exfil radio"
                             }
                         }
                     ]
