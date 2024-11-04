@@ -34,42 +34,6 @@
                     ]
                 },
                 {
-                    "header": "Vault",
-                    "description": "Find 3 numbers on yellow notes and enter them on the Vault in the Savings & Loan building by Juggernog.",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/5.jpg",
-                                "alt": "Number 1 - Savings & Loan by Juggernog, on the front desk"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/4.jpg",
-                                "alt": "Number 2 - Olly's Comics by Quick Revive, on a shelf in the desk in the middle of the room"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/1.jpg",
-                                "alt": "Number 3 - Fuller's Liberty Lanes by Stamin-Up, on the concessions desk"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/6.jpg",
-                                "alt": "Vault door"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/7.jpg",
-                                "alt": "Location to enter the Vault"
-                            }
-                        }
-                    ]
-                },
-                {
                     "header": "Exfil",
                     "description": "The exfil radio is located on East Main Street by spawn.",
                     "elements": [
@@ -147,7 +111,65 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Der Wunderfizz - TODO"
+                                "alt": "Der Wunderfizz - TODO (spawns at the start of round 25)"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Vault",
+            "description": "Find 3 numbers on yellow notes and enter them on the Vault in the Savings & Loan building by Juggernog.",
+            "subsections": [
+                {
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/5.jpg",
+                                "alt": "Number 1 - Savings & Loan by Juggernog, on the front desk"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/4.jpg",
+                                "alt": "Number 2 - Olly's Comics by Quick Revive, on a shelf in the desk in the middle of the room"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/1.jpg",
+                                "alt": "Number 3 - Fuller's Liberty Lanes by Stamin-Up, on the concessions desk"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/6.jpg",
+                                "alt": "Vault door"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/7.jpg",
+                                "alt": "Location to enter the Vault"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Jet Gun",
+            "description": "",
+            "subsections": [
+                {
+                    "header": "",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
                             }
                         }
                     ]
@@ -194,6 +216,18 @@
                                 "src": "assets/.jpg",
                                 "alt": ""
                             }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
                         }
                     ]
                 }
@@ -202,6 +236,42 @@
         {
             "header": "Side Easter Eggs",
             "subsections": [
+                {
+                    "header": "Bowling",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Aetherella",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Hidden Power-Ups",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
                 {
                     "header": "Pool Table",
                     "description": "Shoot any pool ball to cause all the balls to go in. 100 Essence will drop next to the pool table.",
@@ -221,7 +291,79 @@
                     ]
                 },
                 {
-                    "header": "",
+                    "header": "Raining Zombies",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Vending Machine",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Mr. Peeks Car",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Screaming Jenny Pool",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Gravedigger Shovel",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Church Candle Trap",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Dancing Zombie",
                     "description": "",
                     "elements": [
                         {

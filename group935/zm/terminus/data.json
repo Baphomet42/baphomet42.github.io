@@ -46,13 +46,49 @@
                     ]
                 },
                 {
-                    "header": "Exfil",
+                    "header": "Armory",
                     "description": "",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Location to enter the Armory"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Exfil",
+                    "description": "The exfil radio is located TODO.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Exfil radio"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Arsenal Machines",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 1 - TODO"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Level 3 Armor",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 1 - TODO"
                             }
                         }
                     ]
@@ -111,7 +147,25 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Der Wunderfizz - TODO"
+                                "alt": "Der Wunderfizz - TODO (spawns at the start of round 25)"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Beamsmasher",
+            "description": "",
+            "subsections": [
+                {
+                    "header": "",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
                             }
                         }
                     ]
@@ -166,6 +220,36 @@
         {
             "header": "Side Easter Eggs",
             "subsections": [
+                {
+                    "header": "Fish Recipe",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Pool Table",
+                    "description": "Shoot any pool ball to cause all the balls to go in. 100 Essence will drop next to the pool table.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Pool table, in TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "100 Essence"
+                            }
+                        }
+                    ]
+                },
                 {
                     "header": "",
                     "description": "",
