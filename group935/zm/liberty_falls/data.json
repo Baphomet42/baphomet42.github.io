@@ -15,7 +15,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/13.jpg",
+                                "src": "assets/.jpg",
                                 "alt": "Pack-a-Punch machine"
                             }
                         }
@@ -27,7 +27,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/14.jpg",
+                                "src": "assets/.jpg",
                                 "alt": "Crystals"
                             }
                         }
@@ -39,32 +39,20 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/17.jpg",
+                                "src": "assets/.jpg",
                                 "alt": "Exfil radio"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Arsenal Machines",
-                    "description": "",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/11.jpg",
-                                "alt": "Location 1 - Hilltop"
-                            }
-                        }
-                    ]
-                },
-                {
                     "header": "Level 3 Armor",
-                    "description": "",
+                    "description": "Located in the Cemetery.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - Cemetery"
+                                "src": "assets/40.jpg",
+                                "alt": ""
                             }
                         }
                     ]
@@ -74,43 +62,43 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/8.jpg",
+                                "src": "assets/18.jpg",
                                 "alt": "Quick Revive - Olly's Comics"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/10.jpg",
+                                "src": "assets/19.jpg",
                                 "alt": "Speed Cola - Washington Ave."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/9.jpg",
+                                "src": "assets/20.jpg",
                                 "alt": "Juggernog - Savings & Loan"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/12.jpg",
+                                "src": "assets/22.jpg",
                                 "alt": "Melee Macchiato - Forecourt"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/15.jpg",
+                                "src": "assets/21.jpg",
                                 "alt": "PhD Flopper - Hilltop Stairs"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/16.jpg",
+                                "src": "assets/17.jpg",
                                 "alt": "Stamin-Up - Fuller's Liberty Lanes"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/113.jpg",
                                 "alt": "Der Wunderfizz - TODO (spawns at the start of round 25)"
                             }
                         }
@@ -126,31 +114,43 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/5.jpg",
+                                "src": "assets/58.jpg",
                                 "alt": "Number 1 - Savings & Loan by Juggernog, on the front desk"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/4.jpg",
+                                "src": "assets/62.jpg",
                                 "alt": "Number 2 - Olly's Comics by Quick Revive, on a shelf in the desk in the middle of the room"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/1.jpg",
+                                "src": "assets/60.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/61.jpg",
                                 "alt": "Number 3 - Fuller's Liberty Lanes by Stamin-Up, on the concessions desk"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/6.jpg",
+                                "src": "assets/59.jpg",
                                 "alt": "Vault door"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/7.jpg",
+                                "src": "assets/63.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/64.jpg",
                                 "alt": "Location to enter the Vault"
                             }
                         }
@@ -159,17 +159,113 @@
             ]
         },
         {
-            "header": "Jet Gun",
-            "description": "",
+            "header": "Jet Gun (TODO)",
+            "description": "Collect 3 parts and craft at the workbench.",
             "subsections": [
                 {
-                    "header": "",
+                    "header": "Part 1 (Electrical Wires)",
                     "description": "",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/9.jpg",
+                                "alt": "Door to shoot with Mangler Cannon"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/10.jpg",
+                                "alt": "Trash pile to interact"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/11.jpg",
+                                "alt": "Electrical Wires"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Part 2 (Handbrake)",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/2.jpg",
+                                "alt": "Groundskeeper zombie"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/3.jpg",
+                                "alt": "Toolshed Key"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/4.jpg",
+                                "alt": "Toolshed"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/5.jpg",
+                                "alt": "Handbrake"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Part 3 (Water Pressure Guage)",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/1.jpg",
                                 "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/6.jpg",
+                                "alt": "Panel to break"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/7.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/8.jpg",
+                                "alt": "Water Pressure Guage"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Assemble the Thrustodyne M23",
+                    "description": "Build at the workbench in TODO",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/12.jpg",
+                                "alt": "Zombies opening the door"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/13.jpg",
+                                "alt": "Workbench location"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/14.jpg",
+                                "alt": "Thrustodyne M23"
                             }
                         }
                     ]
@@ -177,7 +273,7 @@
             ]
         },
         {
-            "header": "Main Quest (TODO)",
+            "header": "Main Quest (Bye-Bye, Dark Aether)",
             "subsections": [
                 {
                     "header": "Requirements",
@@ -185,18 +281,210 @@
                         {
                             "full": true,
                             "bullets": [
-                                ""
+                                "Jet Gun (TODO)"
                             ]
                         }
                     ]
                 },
                 {
-                    "header": "",
+                    "header": "1. Interact on the TODO",
                     "description": "",
                     "elements": [
                         {
                             "pic": {
+                                "src": "assets/80.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Collect 3 Parts with the Jet Gun",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/81.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/78.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/79.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Craft the TODO",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/82.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/83.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "4. Aether Canister #1",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/84.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/85.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/86.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/88.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/89.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/90.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "5. TODO",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/93.jpg",
+                                "alt": "Strauss Counter"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/95.jpg",
+                                "alt": "Location 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/94.jpg",
+                                "alt": "Location 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/97.jpg",
+                                "alt": "Location 3 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/98.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "6. Aether Canister #2",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/96.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
                                 "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/99.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/101.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/102.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/103.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "7. Boss Fight",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/109.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/111.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/110.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/112.jpg",
                                 "alt": ""
                             }
                         }
@@ -209,24 +497,24 @@
             "subsections": [
                 {
                     "header": "",
-                    "description": "",
+                    "description": "Interact with 3 Mister Peeks headphones.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/24.jpg",
+                                "alt": "Location 1 - TODO"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/25.jpg",
+                                "alt": "Location 2 - TODO"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/26.jpg",
+                                "alt": "Location 3 - TODO"
                             }
                         }
                     ]
@@ -242,6 +530,42 @@
                     "elements": [
                         {
                             "pic": {
+                                "src": "assets/27.jpg",
+                                "alt": "Shoes location 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/30.jpg",
+                                "alt": "Shoes location 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/32.jpg",
+                                "alt": "Shoes location 3 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/41.jpg",
+                                "alt": "Shoes location 4 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/38.jpg",
+                                "alt": "Shoes location 5 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/42.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
                                 "src": "assets/.jpg",
                                 "alt": ""
                             }
@@ -254,7 +578,73 @@
                     "elements": [
                         {
                             "pic": {
+                                "src": "assets/69.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/70.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/72.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/73.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/71.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/74.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/75.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/76.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/77.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/91.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
                                 "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/92.jpg",
                                 "alt": ""
                             }
                         }
@@ -269,23 +659,53 @@
                                 "src": "assets/.jpg",
                                 "alt": ""
                             }
-                        }
-                    ]
-                },
-                {
-                    "header": "Pool Table",
-                    "description": "Shoot any pool ball to cause all the balls to go in. 100 Essence will drop next to the pool table.",
-                    "elements": [
+                        },
                         {
                             "pic": {
-                                "src": "assets/2.jpg",
-                                "alt": "Pool table, in Fuller's Liberty Lanes"
+                                "src": "assets/.jpg",
+                                "alt": ""
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/3.jpg",
-                                "alt": "100 Essence"
+                                "src": "assets/46.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/48.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/49.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/50.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/51.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Free Deadshot Daiquiri",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
                             }
                         }
                     ]
@@ -296,7 +716,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/52.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/53.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/54.jpg",
                                 "alt": ""
                             }
                         }
@@ -308,6 +740,18 @@
                     "elements": [
                         {
                             "pic": {
+                                "src": "assets/28.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/29.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
                                 "src": "assets/.jpg",
                                 "alt": ""
                             }
@@ -315,12 +759,42 @@
                     ]
                 },
                 {
-                    "header": "Mr. Peeks Car",
+                    "header": "Mister Peeks Car",
                     "description": "",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/31.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/33.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/37.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/36.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/34.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/35.jpg",
                                 "alt": ""
                             }
                         }
@@ -332,7 +806,43 @@
                     "elements": [
                         {
                             "pic": {
+                                "src": "assets/15.jpg",
+                                "alt": "Throwing semtex into the blood pool"
+                            }
+                        },
+                        {
+                            "pic": {
                                 "src": "assets/.jpg",
+                                "alt": "Screaming Jenny"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/16.jpg",
+                                "alt": "Loot on the ground"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Church Candle Trap",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/66.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/68.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/67.jpg",
                                 "alt": ""
                             }
                         }
@@ -344,19 +854,31 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/104.jpg",
                                 "alt": ""
                             }
-                        }
-                    ]
-                },
-                {
-                    "header": "Church Candle Trap",
-                    "description": "",
-                    "elements": [
+                        },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/106.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/105.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/107.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/108.jpg",
                                 "alt": ""
                             }
                         }
@@ -368,8 +890,38 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/55.jpg",
                                 "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/56.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/57.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Pool Table",
+                    "description": "Shoot any pool ball to cause all the balls to go in. 100 Essence will drop next to the pool table.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Pool table, in Fuller's Liberty Lanes"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "100 Essence"
                             }
                         }
                     ]
