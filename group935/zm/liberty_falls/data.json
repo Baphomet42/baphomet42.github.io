@@ -11,7 +11,7 @@
             "subsections": [
                 {
                     "header": "Pack-a-Punch",
-                    "description": "Located in the Dark Aether Church.",
+                    "description": "Located in the church.",
                     "elements": [
                         {
                             "pic": {
@@ -23,7 +23,7 @@
                 },
                 {
                     "header": "Dark Aether Crystals",
-                    "description": "The dark aether crystals in the Church can be broken to drop random loot, including Salvage.",
+                    "description": "The dark aether crystals in the church can be broken to drop random loot, including Salvage.",
                     "elements": [
                         {
                             "pic": {
@@ -35,7 +35,7 @@
                 },
                 {
                     "header": "Exfil",
-                    "description": "The exfil radio is located on East Main Street by spawn.",
+                    "description": "The exfil radio is located in spawn near the gas station.",
                     "elements": [
                         {
                             "pic": {
@@ -47,7 +47,7 @@
                 },
                 {
                     "header": "Level 3 Armor",
-                    "description": "Located in the Cemetery.",
+                    "description": "Located in the cemetery.",
                     "elements": [
                         {
                             "pic": {
@@ -108,32 +108,32 @@
         },
         {
             "header": "Vault",
-            "description": "Find 3 numbers on yellow notes and enter them on the Vault in the Savings & Loan building by Juggernog.",
+            "description": "Find 3 numbers on yellow notes and enter them on the Vault in the bank with Juggernog.",
             "subsections": [
                 {
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/58.jpg",
-                                "alt": "Number 1 - Savings & Loan by Juggernog, on the front desk"
+                                "alt": "Number 1 - in the bank with Juggernog, on the front desk"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/62.jpg",
-                                "alt": "Number 2 - Olly's Comics by Quick Revive, on a shelf in the desk in the middle of the room"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/60.jpg",
-                                "alt": ""
+                                "alt": "Number 2 - in the comic store with Quick Revive, on a shelf in the desk in the middle of the room"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/61.jpg",
-                                "alt": "Number 3 - Fuller's Liberty Lanes by Stamin-Up, on the concessions desk"
+                                "alt": "Number 3 - in the bowling alley with Stamin-Up, on the concessions desk (under some bottles that must be shot out of the way)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/60.jpg",
+                                "alt": "Bottles to shoot to reveal the 3rd yellow note"
                             }
                         },
                         {
@@ -145,7 +145,7 @@
                         {
                             "pic": {
                                 "src": "assets/63.jpg",
-                                "alt": ""
+                                "alt": "Entering the combination"
                             }
                         },
                         {
@@ -164,7 +164,7 @@
             "subsections": [
                 {
                     "header": "Part 1 (Electrical Wires)",
-                    "description": "",
+                    "description": "Go near the comic store and find the closed door to the Radio House building. Using a Mangler Cannon or Mutant Injection, shoot the door so it opens the building. There are multiple trash piles in the building that can be interacted. One of the piles will drop the Electrical Wires, and the other piles can drop Salvage or spawn Vermin.",
                     "elements": [
                         {
                             "pic": {
@@ -188,7 +188,7 @@
                 },
                 {
                     "header": "Part 2 (Handbrake)",
-                    "description": "",
+                    "description": "Go to the cemetery by the church and wait for the Groundskeeper zombie to appear. Kill the Groundskeeper and pick up the Toolshed Key that it drops. Use the key to open the toolshed between the cemetery and Juggernog, near the Crafting Table location. Inside the shed, pick up the Handbrake.",
                     "elements": [
                         {
                             "pic": {
@@ -218,12 +218,12 @@
                 },
                 {
                     "header": "Part 3 (Water Pressure Guage)",
-                    "description": "",
+                    "description": "Interact on the Water Valve to the right of Speed Cola to pick it up. Then, destroy the panel on the wall in the bowling alley and place the Water Valve. Hold interact on the valve until the water pressure TODO. After completing, the Water Pressure Guage will drop on the ground and can be picked up.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/1.jpg",
-                                "alt": ""
+                                "alt": "Water Valve"
                             }
                         },
                         {
@@ -248,12 +248,12 @@
                 },
                 {
                     "header": "Assemble the Thrustodyne M23",
-                    "description": "Build at the workbench in TODO",
+                    "description": "Build at the workbench upstairs in the motel by spawn. When first walking up to the correct door, a bunch of zombies will break down the door to reveal the room.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/12.jpg",
-                                "alt": "Zombies opening the door"
+                                "alt": "Zombies breaking down the door"
                             }
                         },
                         {
@@ -300,7 +300,7 @@
                 },
                 {
                     "header": "2. Collect 3 Parts with the Jet Gun",
-                    "description": "",
+                    "description": "Hold the normal fire(TODO) button on the Jet Gun while aiming at the parts until they are collected.",
                     "elements": [
                         {
                             "pic": {
@@ -323,7 +323,7 @@
                     ]
                 },
                 {
-                    "header": "3. Craft the TODO",
+                    "header": "3. Craft the L.T.G.",
                     "description": "",
                     "elements": [
                         {
@@ -651,54 +651,6 @@
                     ]
                 },
                 {
-                    "header": "Hidden Power-Ups",
-                    "description": "",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/46.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/48.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/49.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/50.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/51.jpg",
-                                "alt": ""
-                            }
-                        }
-                    ]
-                },
-                {
                     "header": "Free Deadshot Daiquiri",
                     "description": "",
                     "elements": [
@@ -915,13 +867,65 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Pool table, in Fuller's Liberty Lanes"
+                                "alt": "Pool table, in the bowling alley"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
                                 "alt": "100 Essence"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Hidden Power-Ups",
+            "description": "There are hidden power-ups around the map that can be shot or exploded to collect.",
+            "subsections": [
+                {
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Max Ammo - on the bridge seen from spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Double Points - on the water tower structure, seen from spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/46.jpg",
+                                "alt": "Bonus Points - on an A/C unit above the comic store"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/48.jpg",
+                                "alt": "Max Armor - through a window near Speed Cola by the stairs that lead towards Quick Revive"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/49.jpg",
+                                "alt": "Insta-Kill - on the church roof, seen from the cemetery"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/50.jpg",
+                                "alt": "Full Power - by the road block outside of the bowling alley"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/51.jpg",
+                                "alt": "Nuke - on a chandelier in the bank, seen from the roof"
                             }
                         }
                     ]

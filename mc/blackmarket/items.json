@@ -37,7 +37,7 @@
                 },
                 {
                     "name": "Nova 6",
-                    "description": "Insta kill against creative players",
+                    "description": "Insta-kill against creative players",
                     "item": "{components:{\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'{\"bold\":true,\"color\":\"dark_green\",\"text\":\"Nova 6\"}',\"minecraft:lore\":['\"\"','{\"color\":\"gold\",\"text\":\"BaphomethLabs\"}'],\"minecraft:potion_contents\":{custom_color:10943277,custom_effects:[{amplifier:125b,duration:10,id:\"minecraft:instant_health\",show_icon:0b,show_particles:0b}]}},count:1,id:\"minecraft:splash_potion\"}"
                 },
                 {
@@ -313,7 +313,7 @@
                 },
                 {
                     "name": "Nova 6",
-                    "description": "Insta kill against creative players",
+                    "description": "Insta-kill against creative players",
                     "item": "{components:{\"minecraft:custom_name\":'{\"bold\":true,\"color\":\"dark_green\",\"italic\":false,\"text\":\"Nova 6\"}',\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'{\"bold\":true,\"color\":\"dark_green\",\"text\":\"Nova 6\"}',\"minecraft:lore\":['\"\"','{\"color\":\"gold\",\"text\":\"BaphomethLabs\"}'],\"minecraft:potion_contents\":{custom_color:10943277,custom_effects:[{amplifier:125b,duration:10,id:\"minecraft:instant_health\",show_icon:0b,show_particles:0b}]}},count:1,id:\"minecraft:splash_potion\"}"
                 },
                 {
