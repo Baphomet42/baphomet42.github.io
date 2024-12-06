@@ -6,7 +6,8 @@
             "year": 2024,
             "maps": [
                 {"id": "terminus", "name": "Terminus"},
-                {"id": "liberty_falls", "name": "Liberty Falls"}
+                {"id": "liberty_falls", "name": "Liberty Falls"},
+                {"id": "citadelle_des_morts", "name": "Citadelle des Morts"}
             ]
         },
         {
