@@ -1,5 +1,6 @@
 {
     "default_version": 57,
+    "file_format": 2,
     "versions": [
         {
             "version": 57,
