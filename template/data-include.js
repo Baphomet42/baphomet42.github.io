@@ -1,7 +1,7 @@
 $(function () {
-    var includes = $('[data-include]')
+    let includes = $('[data-include]')
     $.each(includes, function () {
-        var file = $(this).data('include') + '.html'
+        let file = $(this).data('include') + '.html'
         $(this).load(file)
     })
 })

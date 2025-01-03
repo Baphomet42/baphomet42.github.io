@@ -1,5 +1,5 @@
-var pageData = {'panel': false, 'sections':[], 'current': -1}
-var gameData = []
+let pageData = {'panel': false, 'sections':[], 'current': -1}
+let gameData = []
 
 function buildPage(pageData, gamesData) {
     gameData = gamesData.games
@@ -113,7 +113,7 @@ function toggleControlPanelVisibility() {
 }
 
 function pageRev2(data) {
-    var page = ''
+    let page = ''
     
     page += '<div class="section" id="title-section">'
     page += '<div class="back-button-wrap"><a class="button back-button" href="/group935" rel="noopener noreferrer"><span class="accent-text"><</span> All Maps</a></div>'
@@ -126,7 +126,7 @@ function pageRev2(data) {
                 foundGames.push(game.name)
         })
     })
-    var subtext_separator = '<span class="accent-color"> Ξ </span>'
+    let subtext_separator = '<span class="accent-color"> Ξ </span>'
     let subtext = subtext_separator
     for(let i=0; i<foundGames.length; i++) {
         if(i>0)
@@ -337,8 +337,8 @@ function setGorodValve(type, location) {
     updateGorodValve()
 }
 
-var gorodValvePink = ''
-var gorodValveGreen = ''
+let gorodValvePink = ''
+let gorodValveGreen = ''
 function updateGorodValve() {
     let errorMsg = '(Select Valve Locations)'
     let endMsg = '(End Point)'

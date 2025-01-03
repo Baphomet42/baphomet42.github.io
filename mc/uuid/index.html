@@ -68,15 +68,15 @@
     <div data-include="/template/footer" id="footer"></div>
 
     <script>
-        var editing = false
+        let editing = false
         reset()
 
         function copyIntArray() {
-            var input = document.getElementById('uuid-int-array')
+            let input = document.getElementById('uuid-int-array')
             navigator.clipboard.writeText(input.value)
         }
         function copyHex() {
-            var input = document.getElementById('uuid-hex')
+            let input = document.getElementById('uuid-hex')
             navigator.clipboard.writeText(input.value)
         }
 

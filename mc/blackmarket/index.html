@@ -41,16 +41,16 @@
     <div data-include="/template/footer" id="footer"></div>
 
     <script>
-        var item_cmd = []
-        var data = {}
+        let item_cmd = []
+        let data = {}
 
         $(function () {
             $.getJSON("items.json", function (json_data) {
                 data = json_data
-                var version_num = 0
-                var default_found = false
+                let version_num = 0
+                let default_found = false
 
-                var select_inner = ""
+                let select_inner = ""
 
                 $.each(data.versions, function (versions_i, version_data) {
                     if(version_data.version === data.default_version)
@@ -63,7 +63,7 @@
                 if(default_found)
                     version_num = data.default_version
 
-                var select_list = document.getElementById("data-version")
+                let select_list = document.getElementById("data-version")
                 select_list.innerHTML = select_inner
                 select_list.value = version_num
 
@@ -76,14 +76,14 @@
         }
 
         function rebuildPage(ver) {
-            var i = 0
+            let i = 0
             item_cmd = []
             item_cards_inner = ""
 
             $.each(data.versions, function (versions_i, version_data) {
                 if(version_data.version == ver) {
                     $.each(version_data.items, function (key, value) {
-                        var item = ''
+                        let item = ''
                         item += '<td class="card-wrap-item">'
                         item += '<div class="item-card tooltip">'
                         item += '<p class="item-name center">' + value.name + '</p>'
