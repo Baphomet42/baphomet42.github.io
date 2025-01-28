@@ -2,6 +2,21 @@
 
 To ensure a consistent feel, try to stick to these guidelines.
 
+## New Game/Map
+
++ New game:
+    + Add info to `group935/data.json`
+    + Place jpg in `group935/assets/<id>.jpg`
++ New map:
+    + Create folder `group935/zm/<id>/`
+        + Copy `index.html` from another map and change the map name in the `<head><title>`
+        + Copy `data.json` from another map and set the `id` and `name`. Remove most other data.
+            + Set `"wip": true`
+        + Create `icon.jpg` using rules below
+    + Edit `group935/data.json` to add map to game(s)
+        + Set `id` and `name`, and optionally `img_alt`
+        + Add `"wip": true`
+
 ## Guide Steps
 
 + Test everything in game
