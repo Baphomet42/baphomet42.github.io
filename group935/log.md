@@ -50,7 +50,7 @@ To ensure a consistent feel, try to stick to these guidelines.
     + Rescale to 16/9 (~861 width)
     + Origins different, scale to 1050x484
 + Bo2 pics without name
-    + From https://callofduty.fandom.com/pl/wiki/
+    + From https://callofduty.fandom.com/
     + Resized from 480x270 to 480x221
 
 ## Map Page Paralax Pictures
@@ -60,6 +60,15 @@ To ensure a consistent feel, try to stick to these guidelines.
 + Some from https://store.steampowered.com/app/581450/Call_of_Duty_Black_Ops_III__Zombies_Chronicles/
 + Some from https://www.pushsquare.com/games/ps4/call_of_duty_black_ops_iii_zombies_chronicles
     + Official low-res versions at https://support.activision.com/call-of-duty--black-ops-iii/articles/call-of-duty-black-ops-iii-zombies-chronicles
+
+## Map Diagrams
+
++ If ingame, use screenshot
++ Some from https://callofdutymaps.com/
++ Bo6:
+    + From https://callofduty.fandom.com/
+    + Position all map layers horizontally
+    + Save as jpg 90%
 
 # Image edits
 

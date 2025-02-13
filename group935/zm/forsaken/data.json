@@ -6,14 +6,8 @@
     "rev": 2,
     "wip": true,
     "maps": [
-        {
-            "img": "https://callofdutymaps.com/wp-content/uploads/Forsaken-facility-minimap.png",
-            "link": "https://callofdutymaps.com/zombies/forsaken/"
-        },
-        {
-            "img": "https://callofdutymaps.com/wp-content/uploads/Forsaken-bunker-minimap.png",
-            "link": "https://callofdutymaps.com/zombies/forsaken/"
-        }
+        {"img": "https://callofdutymaps.com/wp-content/uploads/Forsaken-facility-minimap.png", "link": "https://callofdutymaps.com/zombies/forsaken/"},
+        {"img": "https://callofdutymaps.com/wp-content/uploads/Forsaken-bunker-minimap.png", "link": "https://callofdutymaps.com/zombies/forsaken/"}
     ],
     "sections" : [
     ]

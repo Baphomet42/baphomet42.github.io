@@ -5,6 +5,7 @@
     "style": "dark_aether",
     "rev": 2,
     "wip": true,
+    "maps": [{"img": "assets/maps.jpg", "link": "https://callofduty.fandom.com/wiki/The_Tomb?file=TheTomb+Excavation+MiniMap+BO6.png"}],
     "sections" : [
         {
             "header": "Map Features",

@@ -4,6 +4,7 @@
     "background": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/bo6/BO6-ZOMBIES-888-002.jpg",
     "style": "dark_aether",
     "rev": 2,
+    "maps": [{"img": "assets/map1.jpg", "link": "https://callofduty.fandom.com/wiki/Liberty_Falls?file=LibertyFalls_MiniMap_BO6.png"}],
     "sections" : [
         {
             "header": "Map Features",

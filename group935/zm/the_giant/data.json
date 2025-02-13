@@ -4,9 +4,7 @@
     "background": "assets/background.jpg",
     "style": "primis",
     "rev": 2,
-    "maps": [{
-        "img": "https://callofdutymaps.com/wp-content/uploads/thegiantloadscreen.jpg"
-    }],
+    "maps": [{"img": "https://callofdutymaps.com/wp-content/uploads/thegiantloadscreen.jpg"}],
     "sections" : [
         {
             "header": "Map Features",

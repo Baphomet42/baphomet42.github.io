@@ -4,9 +4,7 @@
     "background": "assets/background.png",
     "style": "ultimis",
     "rev": 2,
-    "maps": [{
-        "img": "assets/map1.png"
-    }],
+    "maps": [{"img": "assets/map1.png"}],
     "sections" : [
         {
             "header": "Map Features",

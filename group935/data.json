@@ -5,8 +5,8 @@
             "name": "Black Ops 6",
             "year": 2024,
             "maps": [
-                {"id": "terminus", "name": "Terminus", "wip": true},
                 {"id": "liberty_falls", "name": "Liberty Falls"},
+                {"id": "terminus", "name": "Terminus", "wip": true},
                 {"id": "citadelle_des_morts", "name": "Citadelle des Morts", "wip": true},
                 {"id": "the_tomb", "name": "The Tomb", "wip": true}
             ]

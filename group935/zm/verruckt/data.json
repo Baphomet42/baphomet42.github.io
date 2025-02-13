@@ -4,9 +4,7 @@
     "background": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/581450/ss_8857a9e4d476e725d7de18253c99193aa0a89bc4.1920x1080.jpg",
     "style": "ultimis",
     "rev": 2,
-    "maps": [{
-        "img": "https://callofdutymaps.com/wp-content/uploads/verrucktloadscreen.jpg"
-    }],
+    "maps": [{"img": "https://callofdutymaps.com/wp-content/uploads/verrucktloadscreen.jpg"}],
     "sections" : [
         {
             "header": "Map Features",
