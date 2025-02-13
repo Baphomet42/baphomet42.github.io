@@ -46,20 +46,8 @@
                     ]
                 },
                 {
-                    "header": "Armory",
-                    "description": "",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location to enter the Armory"
-                            }
-                        }
-                    ]
-                },
-                {
                     "header": "Exfil",
-                    "description": "The exfil radio is located TODO.",
+                    "description": "The radio is located TODO, and the exfil location will be TODO (if open).",
                     "elements": [
                         {
                             "pic": {
@@ -70,25 +58,13 @@
                     ]
                 },
                 {
-                    "header": "Arsenal Machines",
-                    "description": "",
+                    "header": "Level III Armor Vest",
+                    "description": "Located TODO.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "Level 3 Armor",
-                    "description": "",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "alt": "Level 3 armor wall-buy"
                             }
                         }
                     ]
@@ -96,54 +72,6 @@
                 {
                     "header": "Perk Machines",
                     "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Quick Revive - TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Speed Cola - TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Juggernog - TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Melee Macchiato - TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "PhD Flopper - TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Stamin-Up - TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Elemental Pop - TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Deadshot Daiquiri - TODO"
-                            }
-                        },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
@@ -231,12 +159,24 @@
                             }
                         }
                     ]
+                },
+                {
+                    "header": "Pool Table",
+                    "description": "Shoot any pool ball to sink them all. 100 Essence will drop next to the pool table.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Pool table, TODO"
+                            }
+                        }
+                    ]
                 }
             ]
         },
         {
             "header": "Hidden Power-Ups",
-            "description": "There are hidden power-ups around the map that can be shot or exploded to collect.",
+            "description": "There are 8 hidden power-ups around the map that can be shot or exploded to collect.",
             "subsections": [
                 {
                     "elements": [
@@ -280,6 +220,12 @@
                             "pic": {
                                 "src": "assets/.jpg",
                                 "alt": "Nuke - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Fire Sale - TODO (spawns after the 7 other hidden power-ups have been collected)"
                             }
                         }
                     ]

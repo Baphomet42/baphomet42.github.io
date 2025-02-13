@@ -4,18 +4,17 @@
     "background": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/bo6/BO6-ZOMBIES-888-002.jpg",
     "style": "dark_aether",
     "rev": 2,
-    "wip": true,
     "sections" : [
         {
             "header": "Map Features",
             "subsections": [
                 {
                     "header": "Pack-a-Punch",
-                    "description": "Located in the church.",
+                    "description": "Located in the Church.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/115.jpg",
                                 "alt": "Pack-a-Punch machine"
                             }
                         }
@@ -23,11 +22,11 @@
                 },
                 {
                     "header": "Dark Aether Crystals",
-                    "description": "The dark aether crystals in the church can be broken to drop random loot, including Salvage.",
+                    "description": "The dark aether crystals in the Church can be broken to drop random loot, including Salvage.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/114.jpg",
                                 "alt": "Crystals"
                             }
                         }
@@ -35,24 +34,24 @@
                 },
                 {
                     "header": "Exfil",
-                    "description": "The exfil radio is located in spawn near the gas station.",
+                    "description": "The radio is located in spawn near the gas station, and the exfil location will be the roof of the Bank (if open).",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/47.jpg",
                                 "alt": "Exfil radio"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Level 3 Armor",
+                    "header": "Level III Armor Vest",
                     "description": "Located in the cemetery.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/40.jpg",
-                                "alt": ""
+                                "alt": "Level 3 armor wall-buy"
                             }
                         }
                     ]
@@ -63,43 +62,43 @@
                         {
                             "pic": {
                                 "src": "assets/18.jpg",
-                                "alt": "Quick Revive - Olly's Comics"
+                                "alt": "Quick Revive - in the comic shop"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/19.jpg",
-                                "alt": "Speed Cola - Washington Ave."
+                                "alt": "Speed Cola - on the street outside of the Juggernog room"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/20.jpg",
-                                "alt": "Juggernog - Savings & Loan"
+                                "alt": "Juggernog - in the Bank"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/22.jpg",
-                                "alt": "Melee Macchiato - Forecourt"
+                                "alt": "Melee Macchiato - outside of the Church"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/21.jpg",
-                                "alt": "PhD Flopper - Hilltop Stairs"
+                                "alt": "PhD Flopper - on the stairs going up from Liberty Lanes to the Church"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/17.jpg",
-                                "alt": "Stamin-Up - Fuller's Liberty Lanes"
+                                "alt": "Stamin-Up - in Liberty Lanes"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/113.jpg",
-                                "alt": "Der Wunderfizz - TODO (spawns at the start of round 25)"
+                                "alt": "Der Wunderfizz - on the roof of the Bank (spawns at the start of round 25)"
                             }
                         }
                     ]
@@ -108,31 +107,31 @@
         },
         {
             "header": "Vault",
-            "description": "Find 3 numbers on yellow notes and enter them on the Vault in the bank with Juggernog.",
+            "description": "Find 3 numbers on yellow notes and enter them on the Vault in the Bank with Juggernog.",
             "subsections": [
                 {
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/58.jpg",
-                                "alt": "Number 1 - in the bank with Juggernog, on the front desk"
+                                "alt": "Number 1 - in the Bank with Juggernog, on the front desk"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/62.jpg",
-                                "alt": "Number 2 - in the comic store with Quick Revive, on a shelf in the desk in the middle of the room"
+                                "alt": "Number 2 - in the comic shop with Quick Revive, on a shelf in the desk in the middle of the room"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/61.jpg",
-                                "alt": "Number 3 - in the bowling alley with Stamin-Up, on the concessions desk (under some bottles that must be shot out of the way)"
+                                "alt": "Number 3 - in Liberty Lanes with Stamin-Up, on the concessions desk (under some bottles that must be shot out of the way)"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/60.jpg",
+                                "src": "assets/60_edit.jpg",
                                 "alt": "Bottles to shoot to reveal the 3rd yellow note"
                             }
                         },
@@ -159,12 +158,12 @@
             ]
         },
         {
-            "header": "Jet Gun (TODO)",
+            "header": "Jet Gun (Thrustodyne M23)",
             "description": "Collect 3 parts and craft at the workbench.",
             "subsections": [
                 {
                     "header": "Part 1 (Electrical Wires)",
-                    "description": "Go near the comic store and find the closed door to the Radio House building. Using a Mangler Cannon or Mutant Injection, shoot the door so it opens the building. There are multiple trash piles in the building that can be interacted. One of the piles will drop the Electrical Wires, and the other piles can drop Salvage or spawn Vermin.",
+                    "description": "Go near the comic shop and find the closed door to the Radio House building. Using a Mangler Cannon or Mutant Injection, shoot the door so it opens the building. Shooting the arm off of the first Mangler will guarantee it drops a Mangler Cannon. There are multiple piles of debris in the building that can be interacted. One of the piles will drop the Electrical Wires, and the other piles can drop Salvage or spawn Vermin.",
                     "elements": [
                         {
                             "pic": {
@@ -188,7 +187,7 @@
                 },
                 {
                     "header": "Part 2 (Handbrake)",
-                    "description": "Go to the cemetery by the church and wait for the Groundskeeper zombie to appear. Kill the Groundskeeper and pick up the Toolshed Key that it drops. Use the key to open the toolshed between the cemetery and Juggernog, near the Crafting Table location. Inside the shed, pick up the Handbrake.",
+                    "description": "Go to the cemetery by the Church and wait for the Groundskeeper zombie to appear. Kill the Groundskeeper and pick up the Toolshed Key that it drops. Use the key to open the toolshed between the cemetery and Juggernog, near the Crafting Table location. Inside the shed, pick up the Handbrake.",
                     "elements": [
                         {
                             "pic": {
@@ -218,11 +217,11 @@
                 },
                 {
                     "header": "Part 3 (Water Pressure Guage)",
-                    "description": "Interact on the Water Valve to the right of Speed Cola to pick it up. Then, destroy the panel on the wall in the bowling alley and place the Water Valve. Hold interact on the valve until the water pressure TODO. After completing, the Water Pressure Guage will drop on the ground and can be picked up.",
+                    "description": "Interact on the Water Valve to the right of Speed Cola to pick it up. Then, break open the utility panel in Liberty Lanes and place the Water Valve. Hold interact to turn the valve until the water pressure fill up. After completing, the Water Pressure Guage will drop on the ground and can be picked up.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/1.jpg",
+                                "src": "assets/1_edit.jpg",
                                 "alt": "Water Valve"
                             }
                         },
@@ -235,7 +234,7 @@
                         {
                             "pic": {
                                 "src": "assets/7.jpg",
-                                "alt": ""
+                                "alt": "Turning the water valve"
                             }
                         },
                         {
@@ -248,7 +247,7 @@
                 },
                 {
                     "header": "Assemble the Thrustodyne M23",
-                    "description": "Build at the workbench upstairs in the motel by spawn. When first walking up to the correct door, a bunch of zombies will break down the door to reveal the room.",
+                    "description": "Build at the workbench upstairs in the Motel by spawn. When first walking up to the correct door, a bunch of zombies will break down the door to reveal the room.",
                     "elements": [
                         {
                             "pic": {
@@ -281,110 +280,137 @@
                         {
                             "full": true,
                             "bullets": [
-                                "Jet Gun (TODO)"
+                                "Jet Gun (Thrustodyne M23)"
                             ]
                         }
                     ]
                 },
                 {
-                    "header": "1. Interact on the TODO",
-                    "description": "",
+                    "header": "1. Interact on the S.D.G. Generator in the Church",
+                    "description": "After interacting, the screen will flash white and a character will begin talking.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/80.jpg",
-                                "alt": ""
+                                "alt": "S.D.G. Generator"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "2. Collect 3 Parts with the Jet Gun",
-                    "description": "Hold the normal fire(TODO) button on the Jet Gun while aiming at the parts until they are collected.",
+                    "header": "2. Retrieve 3 Parts with the Jet Gun",
+                    "description": "Hold the normal fire button on the Jet Gun while aiming at the parts until they are collected.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/81.jpg",
-                                "alt": ""
+                                "src": "assets/81_edit.jpg",
+                                "alt": "Part 1 - floating in the Church"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/78.jpg",
-                                "alt": ""
+                                "src": "assets/78_edit.jpg",
+                                "alt": "Part 2 - in the ceiling in the comic shop"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/79.jpg",
-                                "alt": ""
+                                "src": "assets/79_edit.jpg",
+                                "alt": "Part 3 - in a window above Speed Cola, seen when standing on the truck"
                             }
                         }
                     ]
                 },
                 {
                     "header": "3. Craft the L.T.G.",
-                    "description": "",
+                    "description": "Go to the roof of the Bank, craft the L.T.G., and pick it up.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/82.jpg",
-                                "alt": ""
+                                "alt": "Workbench on the roof of the Bank"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/83.jpg",
-                                "alt": ""
+                                "alt": "Crafted L.T.G."
                             }
                         }
                     ]
                 },
                 {
                     "header": "4. Aether Canister #1",
-                    "description": "",
                     "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Prepare the Aether Canister",
+                                "description": "In the S.D.G. Generator, an Aether Canister can be picked up. While holding the canister, the player moves slowly. Bring the canister to spawn and drop it near one of the Trap Emitters."
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "assets/84.jpg",
-                                "alt": ""
+                                "alt": "Aether Canister in the S.D.G."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/85.jpg",
-                                "alt": ""
+                                "alt": "Location to place Aether Canister"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Summon an H.V.T.",
+                                "description": "Place the L.T.G. near the bus outside the comic shop, under the storm cloud. Defend the Gateway until an H.V.T. Abomination or Mangler appears."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/86.jpg",
-                                "alt": ""
+                                "alt": "L.T.G. powering up"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Fill the Aether Canister",
+                                "description": "Weaken the H.V.T. and bring it to the Aether Canister. Then, power on the trap and kill the H.V.T. inside the active trap. This will fill the Aether Canister."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/88.jpg",
-                                "alt": ""
+                                "alt": "Aether Canister collecting the H.V.T."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/89.jpg",
-                                "alt": ""
+                                "alt": "Powered Aether Canister"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Return the Aether Canister to the Church",
+                                "description": "Pick up the Aether Canister and bring it back to the S.D.G. Generator."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/90.jpg",
-                                "alt": ""
+                                "alt": "Location to place Aether Canister"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "5. TODO",
-                    "description": "",
+                    "header": "5. Strauss Counter",
+                    "description": "Pick up a Strauss Counter from the S.D.G. (this will replace your Tactical equipment). Bring the device to 3 Particle Projectors around the map and hold the Tactical button. Note the color on the Strauss Counter, then put it away and interact on the Particle Projector to configure the color. If the Strauss Counter was yellow, set the Particle Projector to yellow. If the Strauss Counter was red or green, set the Particle Projector to the opposite color. When all 3 are configured, purple electricity will shoot from each Particle Projector to an Aether Canister in spawn.",
                     "elements": [
                         {
                             "pic": {
@@ -395,97 +421,112 @@
                         {
                             "pic": {
                                 "src": "assets/95.jpg",
-                                "alt": "Location 1 - TODO"
+                                "alt": "Location 1 - up the hill from Speed Cola"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/94.jpg",
-                                "alt": "Location 2 - TODO"
+                                "alt": "Location 2 - on the hill above Liberty Lanes"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/97.jpg",
-                                "alt": "Location 3 - TODO"
+                                "alt": "Location 3 - on a rooftop dropping down from the Bank roof"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/98.jpg",
-                                "alt": ""
+                                "alt": "All 3 Particle Projectors shooting electricity at spawn"
                             }
                         }
                     ]
                 },
                 {
                     "header": "6. Aether Canister #2",
-                    "description": "",
                     "elements": [
                         {
-                            "pic": {
-                                "src": "assets/96.jpg",
-                                "alt": ""
+                            "full": true,
+                            "step": {
+                                "title": "Prepare the Aether Canister",
+                                "description": "Carry the Aether Canister from spawn to the trap by Speed Cola and drop it near one of the Trap Emitters."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/121.jpg",
+                                "alt": "Aether Canister"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/99.jpg",
-                                "alt": ""
+                                "alt": "Location to place Aether Canister"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Summon an H.V.T.",
+                                "description": "Pick up the L.T.G. and place it under the storm cloud in the graveyard. Defend the Gateway until another H.V.T. appears."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/96.jpg",
+                                "alt": "L.T.G. still near the bus from the first Aether Canister step"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/101.jpg",
-                                "alt": ""
+                                "alt": "Location to place the L.T.G."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Fill the Aether Canister",
+                                "description": "Weaken the H.V.T. and bring it to the Aether Canister. Then, power on the trap and kill the H.V.T. inside the active trap. This will fill the Aether Canister."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/102.jpg",
-                                "alt": ""
+                                "alt": "Aether Canister collecting the H.V.T."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Return the Aether Canister to the Church",
+                                "description": "Pick up the Aether Canister and bring it back to the S.D.G. Generator."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/103.jpg",
-                                "alt": ""
+                                "alt": "Placing the final Aether Canister into the S.D.G."
                             }
                         }
                     ]
                 },
                 {
                     "header": "7. Boss Fight",
-                    "description": "",
+                    "description": "You cannot leave the boss fight until it's done. Make sure you have perks, armor, strong weapons, and anything else you want to bring. Interact on the S.D.G. to start the boss fight, then kill multiple waves of H.V.T.'s and zombies until the cutscene plays.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/109.jpg",
-                                "alt": ""
+                                "alt": "Location to start boss fight"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/111.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/110.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/112.jpg",
-                                "alt": ""
+                                "alt": "H.V.T.'s to kill"
                             }
                         }
                     ]
@@ -496,25 +537,25 @@
             "header": "Song",
             "subsections": [
                 {
-                    "header": "",
+                    "header": "Destroy Something Beautiful",
                     "description": "Interact with 3 Mister Peeks headphones.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/24.jpg",
-                                "alt": "Location 1 - TODO"
+                                "alt": "Location 1 - under a bench at the top of the stairs going from Speed Cola to Quick Revive"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/25.jpg",
-                                "alt": "Location 2 - TODO"
+                                "alt": "Location 2 - on a pew in the Church"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/26.jpg",
-                                "alt": "Location 3 - TODO"
+                                "alt": "Location 3 - near the workbench between Liberty Lanes and spawn"
                             }
                         }
                     ]
@@ -526,354 +567,366 @@
             "subsections": [
                 {
                     "header": "Bowling",
-                    "description": "",
+                    "description": "There are 5 pairs of bowling shoes through barriers around the map. Shoot each pair so they disappear, then all players will teleport to Liberty Lanes for a minigame. Each player must bowl to hit zombies until the time is up, at which point they will each get a prize depending on how many zombies they hit. A calling card is unlocked for getting a score of 300. After 5 rounds, a new pair of bowling shoes will appear in a toilet in Liberty Lanes, through a barrier. Shooting this pair will redo the bowling minigame and can be repeated once more after another 5 rounds.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/27.jpg",
-                                "alt": "Shoes location 1 - TODO"
+                                "src": "assets/122.jpg",
+                                "alt": "Barrier location 1 - gas station at spawn"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/30.jpg",
-                                "alt": "Shoes location 2 - TODO"
+                                "src": "assets/27_edit.jpg",
+                                "alt": "Shoes location 1 - on the counter"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/32.jpg",
-                                "alt": "Shoes location 3 - TODO"
+                                "src": "assets/123.jpg",
+                                "alt": "Barrier location 2 - Frank's Hardware building across from the comic shop"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/41.jpg",
-                                "alt": "Shoes location 4 - TODO"
+                                "src": "assets/30_edit.jpg",
+                                "alt": "Shoes location 2 - on a tilted shelf"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/38.jpg",
-                                "alt": "Shoes location 5 - TODO"
+                                "src": "assets/124.jpg",
+                                "alt": "Barrier location 3 - house at the top of the hill up from Speed Cola"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/32_edit.jpg",
+                                "alt": "Shoes location 3 - under a chair"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/129.jpg",
+                                "alt": "Barrier location 4 - in the graveyard by the armor wall-buy"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/41_edit.jpg",
+                                "alt": "Shoes location 4 - hanging from a tree"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/125.jpg",
+                                "alt": "Barrier location 5 - funeral home by Liberty Lanes"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/38_edit.jpg",
+                                "alt": "Shoes location 5 - on a casket"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/42.jpg",
-                                "alt": ""
+                                "alt": "Bowling minigame"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/50_edit.jpg",
+                                "alt": "Shoes in toilet"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Aetherella",
-                    "description": "",
+                    "description": "There are 4 miniature Aetherella dolls in the comic shop and 5 elsewhere around the map. Use the Jet Gun to collect all 9 dolls, then the player who collected the final doll will transform into Aetherella for a short time. During this time, the player cannot be killed and will instakill zombies with laser-eyes. If you buy the Aetherella trap while in Aetherella mode, you will turn into Dark Aetherella.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/69.jpg",
-                                "alt": ""
+                                "src": "assets/70_edit.jpg",
+                                "alt": "Doll 1 - in the comic shop, by the back door"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/70.jpg",
-                                "alt": ""
+                                "src": "assets/72_edit.jpg",
+                                "alt": "Doll 2 - in the comic shop, on a shelf"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/72.jpg",
-                                "alt": ""
+                                "src": "assets/73_edit.jpg",
+                                "alt": "Doll 3 - in the comic shop, by the front door in a window display"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/73.jpg",
-                                "alt": ""
+                                "src": "assets/71_edit.jpg",
+                                "alt": "Doll 4 - in the comic shop, right inside the front door"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/71.jpg",
-                                "alt": ""
+                                "src": "assets/69_edit.jpg",
+                                "alt": "Doll 5 - on the side of the Motel in spawn"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/74.jpg",
-                                "alt": ""
+                                "src": "assets/74_edit.jpg",
+                                "alt": "Doll 6 - near Speed Cola, on a window (visible by climbing up near a zipline that leads to the Bank roof)"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/75.jpg",
-                                "alt": ""
+                                "src": "assets/75_edit.jpg",
+                                "alt": "Doll 7 - on the front of the Church, up and to the right of the front door"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/76.jpg",
-                                "alt": ""
+                                "src": "assets/76_edit.jpg",
+                                "alt": "Doll 8 - by the Liberty Lanes sign (visible when standing on the bus)"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/77.jpg",
-                                "alt": ""
+                                "src": "assets/77_edit.jpg",
+                                "alt": "Doll 9 - between two air ducts on a building, seen from dropping down from the Bank roof"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/91.jpg",
-                                "alt": ""
+                                "alt": "Controlling Aetherella"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/119.jpg",
+                                "alt": "Aetherella trap location"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/92.jpg",
-                                "alt": ""
+                                "alt": "Dark Aetherella"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Free Deadshot Daiquiri",
-                    "description": "",
+                    "description": "There are 5 cans sitting on a fence outside the map, seen from the graveyard. Quickly shoot all 5 in a row to get free Deadshot Daiquiri. If enough time has passed after shooting the first can, the rest will fall off the fence and you will not get the perk.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/128.jpg",
+                                "alt": "Barrier in the graveyard"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/126.jpg",
+                                "alt": "5 cans to shoot"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Raining Zombies",
-                    "description": "",
+                    "description": "Throw an explosive at the zombie head on top of the Church. If the head blows up, several zombies will fall from the sky, dying instantly and dropping various loot.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/52.jpg",
-                                "alt": ""
+                                "src": "assets/52_edit.jpg",
+                                "alt": "Zombie head"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/53.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/54.jpg",
-                                "alt": ""
+                                "alt": "Raining zombies"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Vending Machine",
-                    "description": "",
+                    "description": "The left vending machine by the Motel will give random loot (or trash) when you melee the retrieval door. This can be done once per round. Using Melee Macchiato will permanently destroy the machine.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/28.jpg",
-                                "alt": ""
+                                "src": "assets/117.jpg",
+                                "alt": "Vending machines by the Motel"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/29.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/118.jpg",
+                                "alt": "Location to melee"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Mister Peeks Car",
-                    "description": "",
+                    "description": "There are 3 cars on the map that can spawn Mister Peeks. Using a Mangler Cannon, shoot the car with Mister Peeks in it, and it will drop some loot. After 5 rounds, Mister Peeks will appear in a new car until all 3 have been destroyed.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/31.jpg",
-                                "alt": ""
+                                "alt": "Location 1 - by the comic shop"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/33.jpg",
-                                "alt": ""
+                                "alt": "Location 2 - in front of the Church"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/37.jpg",
-                                "alt": ""
+                                "alt": "Location 3 - up the hill from Speed Cola, near the Groundskeeper's shed"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/36.jpg",
-                                "alt": ""
+                                "alt": "Mister Peeks in the back seat"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/34.jpg",
-                                "alt": ""
+                                "alt": "Using a Mangler Cannon on the car"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/35.jpg",
-                                "alt": ""
+                                "alt": "Loot dropped from the car"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Screaming Jenny Pool",
-                    "description": "",
+                    "header": "Blood Pool Orb",
+                    "description": "Throw 3 semtex grenades in a row into the blood pool next to Liberty Lanes. After a few seconds, an orb will fly out and drop some loot. This can be done again after 5 rounds, then once more after another 5 rounds, at which point it will drop a Fire Sale.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/15.jpg",
-                                "alt": "Throwing semtex into the blood pool"
+                                "src": "assets/131.jpg",
+                                "alt": "Blood pool"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Screaming Jenny"
+                                "src": "assets/15.jpg",
+                                "alt": "Throwing a semtex into the pool"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/16.jpg",
-                                "alt": "Loot on the ground"
+                                "alt": "Red orb"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Church Candle Trap",
-                    "description": "",
+                    "description": "There are 2 candle displays in the Church that can be ignited using Napalm Burst. After both are lit, the floor in the Church will be covered in purple flames, dealing damage to both enemies and players.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/66.jpg",
-                                "alt": ""
+                                "alt": "Candle display 1"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/68.jpg",
-                                "alt": ""
+                                "alt": "Candle display 2"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/67.jpg",
-                                "alt": ""
+                                "alt": "Purple flames"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Gravedigger Shovel",
-                    "description": "",
+                    "description": "A shovel can be optained by destroying a barrel up the hill from Speed Cola. The barrel can be destroyed using a Chopper Gunner, and the shovel can be used to dig up graves to get loot.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/104.jpg",
-                                "alt": ""
+                                "src": "assets/104_edit.jpg",
+                                "alt": "The barrel seen from ground level"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/106.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/105.jpg",
-                                "alt": ""
+                                "alt": "Shooting the barrel with a Chopper Gunner"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/107.jpg",
-                                "alt": ""
+                                "alt": "Shovel on the ground"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/108.jpg",
-                                "alt": ""
+                                "alt": "Digging graves in the graveyard"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Dancing Zombie",
-                    "description": "",
+                    "description": "There are 2 coin-operated binoculars between spawn and the comic shop. Use each one and look around until a dancing zombie can be seen. After the second binoculars are used to see the dancing zombie, a dance party will start around the area.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/55.jpg",
-                                "alt": ""
+                                "alt": "Binoculars on either side of the Mystery Box location"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/56.jpg",
-                                "alt": ""
+                                "alt": "Dancing zombie after the party has started"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/57.jpg",
-                                "alt": ""
+                                "alt": "Dance party"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Pool Table",
-                    "description": "Shoot any pool ball to cause all the balls to go in. 100 Essence will drop next to the pool table.",
+                    "description": "Shoot any pool ball to sink them all. 100 Essence will drop next to the pool table.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Pool table, in the bowling alley"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "100 Essence"
+                                "src": "assets/28.jpg",
+                                "alt": "Pool table, in Liberty Lanes"
                             }
                         }
                     ]
@@ -882,50 +935,56 @@
         },
         {
             "header": "Hidden Power-Ups",
-            "description": "There are hidden power-ups around the map that can be shot or exploded to collect.",
+            "description": "There are 8 hidden power-ups around the map that can be shot or exploded to collect.",
             "subsections": [
                 {
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Max Ammo - on the bridge seen from spawn"
+                                "src": "assets/120_edit.jpg",
+                                "alt": "Max Ammo - on the bridge by spawn"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Double Points - on the water tower structure, seen from spawn"
+                                "src": "assets/127_edit.jpg",
+                                "alt": "Double Points - on the water tower structure, seen from the Groundskeeper's shed"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/46.jpg",
-                                "alt": "Bonus Points - on an A/C unit above the comic store"
+                                "src": "assets/46_edit.jpg",
+                                "alt": "Bonus Points - on an A/C unit above the comic shop"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/48.jpg",
-                                "alt": "Max Armor - through a window near Speed Cola by the stairs that lead towards Quick Revive"
+                                "src": "assets/48_edit.jpg",
+                                "alt": "Max Armor - through a window near Speed Cola, by the stairs that lead towards Quick Revive (sitting on the bottom shelf of a cart)"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/49.jpg",
-                                "alt": "Insta-Kill - on the church roof, seen from the cemetery"
+                                "src": "assets/49_edit.jpg",
+                                "alt": "Insta-Kill - on the Church roof, seen from the cemetery"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/50.jpg",
-                                "alt": "Full Power - by the road block outside of the bowling alley"
+                                "src": "assets/116_edit.jpg",
+                                "alt": "Full Power - by the road block outside of Liberty Lanes"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/51.jpg",
-                                "alt": "Nuke - on a chandelier in the bank, seen from the roof"
+                                "src": "assets/51_edit.jpg",
+                                "alt": "Nuke - on a chandelier in the Bank, seen from the roof"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/130.jpg",
+                                "alt": "Fire Sale - in a trash can next to PhD Flopper (spawns after the 7 other hidden power-ups have been collected)"
                             }
                         }
                     ]

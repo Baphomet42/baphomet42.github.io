@@ -59,7 +59,7 @@
                 },
                 {
                     "header": "Exfil",
-                    "description": "The exfil radio is located TODO.",
+                    "description": "The radio is located TODO, and the exfil location will be TODO (if open).",
                     "elements": [
                         {
                             "pic": {
@@ -70,25 +70,13 @@
                     ]
                 },
                 {
-                    "header": "Arsenal Machines",
-                    "description": "",
+                    "header": "Level III Armor Vest",
+                    "description": "Located TODO.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "Level 3 Armor",
-                    "description": "",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "alt": "Level 3 armor wall-buy"
                             }
                         }
                     ]
@@ -233,24 +221,6 @@
                     ]
                 },
                 {
-                    "header": "Pool Table",
-                    "description": "Shoot any pool ball to cause all the balls to go in. 100 Essence will drop next to the pool table.",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Pool table, in TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "100 Essence"
-                            }
-                        }
-                    ]
-                },
-                {
                     "header": "",
                     "description": "",
                     "elements": [
@@ -261,12 +231,24 @@
                             }
                         }
                     ]
+                },
+                {
+                    "header": "Pool Table",
+                    "description": "Shoot any pool ball to sink them all. 100 Essence will drop next to the pool table.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Pool table, TODO"
+                            }
+                        }
+                    ]
                 }
             ]
         },
         {
             "header": "Hidden Power-Ups",
-            "description": "There are hidden power-ups around the map that can be shot or exploded to collect.",
+            "description": "There are 8 hidden power-ups around the map that can be shot or exploded to collect.",
             "subsections": [
                 {
                     "elements": [
@@ -310,6 +292,12 @@
                             "pic": {
                                 "src": "assets/.jpg",
                                 "alt": "Nuke - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Fire Sale - TODO (spawns after the 7 other hidden power-ups have been collected)"
                             }
                         }
                     ]

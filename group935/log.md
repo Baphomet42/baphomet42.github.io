@@ -29,14 +29,15 @@ To ensure a consistent feel, try to stick to these guidelines.
 
 ## Guide Screenshots
 
-+ All
++ Files
     + 1920x1080 png converted to jpg with 70% quality
     + Add red arrow only when needed and helpful
     + All images should be stored on site (no links)
-+ Black Ops III
++ Ingame
     + FOV 100
     + Disable HUD and crosshair
         + Some screenshots may show gun/crosshair/etc if helpful
+        + Minimap can be shown if useful
 
 ## Map Selection Pictures
 
