@@ -1,7 +1,7 @@
 {
     "id": "the_tomb",
     "name": "The Tomb",
-    "background": "",
+    "background": "https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/seasons/blackops6/season-2/S02_Maps_Tomb.webp",
     "style": "dark_aether",
     "rev": 2,
     "wip": true,
@@ -133,13 +133,25 @@
             "header": "Song",
             "subsections": [
                 {
-                    "header": "",
+                    "header": "Dig",
                     "description": "",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Location 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 3 - TODO"
                             }
                         }
                     ]

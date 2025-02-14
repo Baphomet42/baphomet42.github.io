@@ -1,7 +1,7 @@
 {
     "id": "citadelle_des_morts",
     "name": "Citadelle des Morts",
-    "background": "",
+    "background": "https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/guides/games/blackops6/zombies/COD-BO6-RBZ-CITADELLE-TOUT.webp",
     "style": "dark_aether",
     "rev": 2,
     "wip": true,
@@ -133,13 +133,25 @@
             "header": "Song",
             "subsections": [
                 {
-                    "header": "",
-                    "description": "",
+                    "header": "Slave",
+                    "description": "Interact with 3 Mister Peeks headphones.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Location 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 3 - TODO"
                             }
                         }
                     ]

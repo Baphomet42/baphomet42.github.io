@@ -12,59 +12,83 @@
             "subsections": [
                 {
                     "header": "Power",
-                    "description": "",
+                    "description": "Turn on 3 AMP Generators and defend each one until it stays powered on. Once all 3 are powered, the entire map will have power.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/9.jpg",
+                                "alt": "Location 1 - spawn"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Location 2 - by Juggernog"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/23.jpg",
+                                "alt": "Location 3 - the lab"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Pack-a-Punch",
-                    "description": "",
+                    "description": "After turning on power, dive into the water and resurface the Inclined Lift.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/1.jpg",
+                                "alt": "Inclined Lift under water"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/2.jpg",
                                 "alt": "Pack-a-Punch machine"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Armory",
-                    "description": "",
+                    "header": "Digging",
+                    "description": "All around the map there are small piles of dirt and skulls that you can dig for rewards. Each player must first find a shovel around the map, then they can dig unlimited piles.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location to enter the Armory"
+                                "src": "assets/14.jpg",
+                                "alt": "Shovel"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/20.jpg",
+                                "alt": "Dig pile"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Armory",
+                    "description": "Loot Keys will occasionally drop from enemies and can be exchanged for loot.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/11.jpg",
+                                "alt": "Location to enter the Armory, near Stamin-Up"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Exfil",
-                    "description": "The radio is located TODO, and the exfil location will be TODO (if open).",
+                    "description": "The radio is located by Stamin-Up, and the exfil location will be Castle Rock Island (if open).",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/29.jpg",
                                 "alt": "Exfil radio"
                             }
                         }
@@ -72,12 +96,17 @@
                 },
                 {
                     "header": "Level III Armor Vest",
-                    "description": "Located TODO.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Level 3 armor wall-buy"
+                                "src": "assets/3.jpg",
+                                "alt": "Location 1 - in the lab"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/68.jpg",
+                                "alt": "Location 2 - Crab Island"
                             }
                         }
                     ]
@@ -87,50 +116,50 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Quick Revive - TODO"
+                                "src": "assets/10.jpg",
+                                "alt": "Stamin-Up - by spawn, through the door by the AMP Generator"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Speed Cola - TODO"
+                                "src": "assets/8.jpg",
+                                "alt": "Quick Revive - by spawn, down the stairs from the AMP Generator"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Juggernog - TODO"
+                                "src": "assets/7.jpg",
+                                "alt": "Juggernog - at the top of the Inclined Lift"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Melee Macchiato - TODO"
+                                "src": "assets/5.jpg",
+                                "alt": "Elemental Pop - in the Sea Tower(TODO)"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "PhD Flopper - TODO"
+                                "src": "assets/12.jpg",
+                                "alt": "Deadshot Daiquiri - on the way from Juggernog to Speed Cola"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Stamin-Up - TODO"
+                                "src": "assets/19.jpg",
+                                "alt": "PhD Flopper - in TODO cave"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Elemental Pop - TODO"
+                                "src": "assets/21.jpg",
+                                "alt": "Speed Cola - in TODO cave"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Deadshot Daiquiri - TODO"
+                                "src": "assets/15.jpg",
+                                "alt": "Melee Macchiato - in the lab"
                             }
                         },
                         {
@@ -144,17 +173,228 @@
             ]
         },
         {
-            "header": "Beamsmasher",
+            "header": "DRI-11 Beamsmasher",
             "description": "",
             "subsections": [
                 {
-                    "header": "",
-                    "description": "",
+                    "header": "1. Interact with 3 laptops",
+                    "description": "There are 3 laptops randomly labelled 'X', 'Y', or 'Z' each game. Interact with them in the order XYZ.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/30.jpg",
+                                "alt": "Location 1 - near Quick Revive"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/31.jpg",
+                                "alt": "Location 2 - near Stamin-Up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/13.jpg",
+                                "alt": "Location 3 - outside the caves near the water"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Shock the electric boxes",
+                    "description": "5 electric boxes must be shot with a Pack-a-Punched gun with Dead Wire. After the final box is shot, a door will open to the Beamsmasher room.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/76.jpg",
+                                "alt": "Location 1 - in a room seen when moving on the Inclined Lift and facing away from the PaP machine"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/78.jpg",
+                                "alt": "Location 2 - on the wall when moving on the Inclined Lift and facing left (from the perspective of moving upwards)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/56.jpg",
+                                "alt": "Location 3 - on the wall at the top of the Inclined Lift"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/57.jpg",
+                                "alt": "Location 4 - above the AMP Generator next to Juggernog"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/58.jpg",
+                                "alt": "Location 5 - just outside the Juggernog room by a locked door"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Opened door"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Collect the TODO",
+                    "description": "Enter the Beamsmasher room and kill the zombie stuck under the TODO. It will drop a TODO that must be picked up.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Zombie to kill"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "TODO"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "4. Collect the Multiphasic Resonator",
+                    "description": "Next to Elemental Pop is a briefcase with a hand attached. Open the briefcase and pick up the part. A large group of Vermin will spawn after the briefcase is opened.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/60.jpg",
+                                "alt": "The briefcase"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/61.jpg",
+                                "alt": "Multiphasic Resonator"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "5. Enter the code",
+                    "description": "Go back to the Beamsmasher room and interact on the computer. The computer can be interacted again to enter a code. A whiteboard in the back of the room will have formulas that can be used to solve for the code (they are different every game). Alternatively, after entering a wrong code, Peck can be payed 5000 points to reveal the correct code.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/62.jpg",
+                                "alt": "Computer"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/59.jpg",
+                                "alt": "Whiteboard with formulas"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/63.jpg",
+                                "alt": "Box to pay Peck"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/64.jpg",
+                                "alt": "Correct code from Peck"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/65.jpg",
+                                "alt": "Entering the code into the computer"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "6. Collect the AMP Munition",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Pick up the Multiphasic Resonator",
+                                "description": "After the previous round has ended, the computer will highlight one of the islands. Pick up the Multiphasic Resonator from the computer, then go to the selected island."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/69.jpg",
+                                "alt": "Selected island and Multiphasic Resonator to pick up"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Feed the orb",
+                                "description": "Interact on the glowing orb to place the Multiphasic Resonator. Wait until it shocks a zombie, then kill the zombie so it drops a small orb of energy. Pick up the smaller orb and bring it to the larger orb, then repeat until the large orb flies away. This must be done twice more on different islands, and the orb will be a different color each time. Remember to pick up the Multiphasic Resonator each time before moving to the next island. After the final orb, the AMP Munition will drop."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/80.jpg",
+                                "alt": "Blue orb on Castle Rock Island"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/82.jpg",
+                                "alt": "Dropped energy orb"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/81.jpg",
+                                "alt": "Carrying the dropped orb to the large orb"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/83.jpg",
+                                "alt": "Orb flying to the next island, leaving the Multiphasic Resonator to pick up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/84.jpg",
+                                "alt": "Green orb on Crab Island"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/85.jpg",
+                                "alt": "Purple orb on Temple Island"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/86.jpg",
+                                "alt": "AMP Munition"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "7. Assemble the DRI-11 Beamsmasher",
+                    "description": "Build at the workbench in the Beamsmasher room.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/73.jpg",
+                                "alt": "Workbench location"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/74.jpg",
+                                "alt": "DRI-11 Beamsmasher"
                             }
                         }
                     ]
@@ -162,7 +402,7 @@
             ]
         },
         {
-            "header": "Main Quest (TODO)",
+            "header": "Main Quest (No Mo' Modi)",
             "subsections": [
                 {
                     "header": "Requirements",
@@ -170,7 +410,7 @@
                         {
                             "full": true,
                             "bullets": [
-                                ""
+                                "DRI-11 Beamsmasher"
                             ]
                         }
                     ]
@@ -184,6 +424,18 @@
                                 "src": "assets/.jpg",
                                 "alt": ""
                             }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/43.jpg",
+                                "alt": "TODO missing tube by boat"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/44.jpg",
+                                "alt": "TODO missing tube in Speed Cola cave"
+                            }
                         }
                     ]
                 }
@@ -193,13 +445,25 @@
             "header": "Song",
             "subsections": [
                 {
-                    "header": "",
-                    "description": "",
+                    "header": "Can You Hear Me? Come In",
+                    "description": "Interact with 3 Mister Peeks headphones.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/6.jpg",
+                                "alt": "Location 1 - outside the door to Juggernog, on a cable drum"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/32.jpg",
+                                "alt": "Location 2 - next to PhD Flopper, on a barrel"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/33.jpg",
+                                "alt": "Location 3 - in the lab, upstairs above the armor wall-buy and sitting on a TODO"
                             }
                         }
                     ]
@@ -210,7 +474,74 @@
             "header": "Side Easter Eggs",
             "subsections": [
                 {
-                    "header": "Fish Recipe",
+                    "header": "TODO Culinary Delight",
+                    "description": "",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/16.jpg",
+                                "alt": "Brain TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/24.jpg",
+                                "alt": "Cooking Oil TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/25.jpg",
+                                "alt": "Pans TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/26.jpg",
+                                "alt": "TODO plant thing"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/28.jpg",
+                                "alt": "Snowball TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/47.jpg",
+                                "alt": "Fish TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "TODO fish perkaholic",
+                    "description": "TODO kill 50 fish to instantly get perkaholic in addition to other fish rewards, also note all locations and reset each round?",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "TODO fish for friends",
                     "description": "",
                     "elements": [
                         {
@@ -222,13 +553,354 @@
                     ]
                 },
                 {
-                    "header": "",
+                    "header": "Cursed Talisman (Treasure Hunter)",
+                    "description": "",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Find the treasure map",
+                                "description": "Use Melee Macchiato in the Speed Cola cave to break some rocks."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/45.jpg",
+                                "alt": "Rocks to punch"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Retrieve the watch",
+                                "description": "Use the red X on the treasure map to find the location of the watch around Terminus Island (TODO different each game?). Pick up the watch and give it to the skeleton."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/49.jpg",
+                                "alt": "Treasure map with red X"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/50.jpg",
+                                "alt": "Watch under the water"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Collect the 3 coins",
+                                "description": "After TODO is done talking, there will be 3 new red X's on the map. Bring Molotov(TODO) or Thermite(TODO) to each location and throw one at the skeleton. This will spawn an H.V.T. that must be killed to collect a coin. After picking up the Cursed Coin, your screen will glow purple until you return the coin to TODO in the cave."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/51.jpg",
+                                "alt": "Map showing 3 locations"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/41.jpg",
+                                "alt": "Location 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/66.jpg",
+                                "alt": "Location 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/70.jpg",
+                                "alt": "Location 3 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/53.jpg",
+                                "alt": "H.V.T."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/54.jpg",
+                                "alt": "Cursed Coin"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "4. Return the coins",
+                                "description": "Give the 3 coins to the skeleton in the cave to get some loot. The final step will now be available after 3 rounds."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/71.jpg",
+                                "alt": "Loot from the skeleton"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/72.jpg",
+                                "alt": "Map showing final location"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "5. Find the treasure chest",
+                                "description": "3 rounds after the previous step, Crab Island will become stormy and continuously struck by lightning (dont have to stay on island?). Find the treasure chest on the island to get a Cursed Talisman. With the talisman equipped, kills will be worth twice as many points, but you will lose some points each time you get hit. You can place the talisman back into the chest to remove the effect or give it to another player. A Dark Ops challenge can be unlocked for getting 25k points, without taking any damage, while holding the talisman."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Cursed Talisman in the treasure chest"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "TODO Boat Race",
                     "description": "",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
                                 "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Whack-a-Crab",
+                    "description": "Go to Crab Island and throw an explosive at the TODO on a cliff. Melee one of the crabs on the ground to start a game of Whack-a-Crab. A Random Perk power-up will be granted after the game. Other crabs may be found later on Crab Island and can be meleed to start another game and give more loot.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/87.jpg",
+                                "alt": "TODO to destroy"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/88.jpg",
+                                "alt": "Whack-a-Crab"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Meteor Loot (TODO or satellite or something?)",
+                    "description": "Quickly shoot 2 antenna towers with Dead Wire (also need pap?) so that both towers stay lit up red. Then, use the TODO trap to kill enough zombies to fully charge TODO. When TODO, use the TODO trap again and it will shoot a meteor out of the sky. Go to Castle Rock Island to find the meteor crash and some loot.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Tower 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Tower 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "TODO trap charging"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Meteor crash site"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Zombie Cages Free Perk",
+                    "description": "In the lab, there are some cages containing zombies up above the armor wall-buy, and another group of cages to the left of these. Kill all the zombies in all the cages, then wait a round. Now, kill all the Vermin that spawned in the cages, and do the same thing for the Manglers in the following round. After the Manglers are killed, a Random Perk power-up will be granted.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/36.jpg",
+                                "alt": "Cages with zombies"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/37.jpg",
+                                "alt": "Cages with Vermin"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/38.jpg",
+                                "alt": "Cages with a Mangler"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Basketball",
+                    "description": "There is a basketball on the roof above Juggernog that can be shot at a specific angle to go into a hoop. If it makes a basket, it will drop some loot.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Where to aim to make a basket"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Loot after making a basket"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Oxygen Tank",
+                    "description": "Jump into the water near Pack-a-Punch and destroy a specific rock with an explosive. All players can now pick up an oxygen tank to extend the time it takes to drown.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/34.jpg",
+                                "alt": "Location to find the rock"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/35.jpg",
+                                "alt": "Rock to explode"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/75.jpg",
+                                "alt": "Oxygen tank"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Haunted Elevator",
+                    "description": "Buy the elevator from spawn to go to the lab, then quickly start jumping until the elevator stutters. The elevator ride will then be spooky.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/79.jpg",
+                                "alt": "Spooky elevator"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Island Spores Loot",
+                    "description": "Each round, one of the small islands will have a few spores on it. For 3 rounds straight, shoot every single spore on the island. On the 4th round, the spores will now be in the Speed Cola cave, and after destroying them all, you'll get some loot and a Random Perk power-up.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/48.jpg",
+                                "alt": "Spores on an island"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/52.jpg",
+                                "alt": "Spores in the Speed Cola cave on the 4th round"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "TODO Underwater Chests Free Perk",
+                    "description": "TODO 10 chests?, mention death perception",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "TODO Fast Travel",
+                    "description": "beamsmasher on temple island sentinel artifact send near spawn, also from trap to send random location",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/89.jpg",
+                                "alt": "Sentinal Artifact symbol to TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Mega-Stuffy",
+                    "description": "Collect all 6 stuffed animals, in any order, by interacting on them. Then go to the beds near Juggernog and interact on them to turn them into the Mega-Stuffy and drop some loot. The Mega-Stuffy will last several rounds and can revive players.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/39.jpg",
+                                "alt": "Location 1 (Unicorn) - to the left of Stamin-Up, in a locker"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/4.jpg",
+                                "alt": "Location 2 (Monkey) - at the start of the bridge going from Juggernog to Elemental Pop, on the right"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/17.jpg",
+                                "alt": "Location 3 (Bear) - in the lab, between the armor wall-buy and TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/22.jpg",
+                                "alt": "Location 4 (Elephant) - in the cave with PhD Flopper, TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/40.jpg",
+                                "alt": "Location 5 (Giraffe) - on Crab Island next to a light, on the right side of the path when coming from the Crafting Bench(TODO)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/42.jpg",
+                                "alt": "Location 6 (Duck) - on the shipwreck in a dumpster"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/46.jpg",
+                                "alt": "Stuffed animals on beds"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/77.jpg",
+                                "alt": "Mega-Stuffy"
                             }
                         }
                     ]
@@ -239,8 +911,8 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Pool table, TODO"
+                                "src": "assets/27.jpg",
+                                "alt": "Pool table, upstairs from Juggernog"
                             }
                         }
                     ]
@@ -261,8 +933,8 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Double Points - TODO"
+                                "src": "assets/18.jpg",
+                                "alt": "Double Points - in the lab, upstairs from the armor wall-buy and sitting on a TODO (some boxes will be partially covering the power-up and can be shot away)"
                             }
                         },
                         {
@@ -291,8 +963,8 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Nuke - TODO"
+                                "src": "assets/67.jpg",
+                                "alt": "Nuke - on Crab Island in a barrier TODO"
                             }
                         },
                         {

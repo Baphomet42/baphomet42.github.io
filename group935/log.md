@@ -57,9 +57,12 @@ To ensure a consistent feel, try to stick to these guidelines.
 
 + Some from https://callofdutymaps.com/
     + Find an image that represents the map as a whole
-+ Some from https://store.steampowered.com/app/581450/Call_of_Duty_Black_Ops_III__Zombies_Chronicles/
-+ Some from https://www.pushsquare.com/games/ps4/call_of_duty_black_ops_iii_zombies_chronicles
-    + Official low-res versions at https://support.activision.com/call-of-duty--black-ops-iii/articles/call-of-duty-black-ops-iii-zombies-chronicles
++ Bo3 Chronicles:
+    + Some from https://store.steampowered.com/app/581450/Call_of_Duty_Black_Ops_III__Zombies_Chronicles/
+    + Some from https://www.pushsquare.com/games/ps4/call_of_duty_black_ops_iii_zombies_chronicles
+        + Official low-res versions at https://support.activision.com/call-of-duty--black-ops-iii/articles/call-of-duty-black-ops-iii-zombies-chronicles
++ Bo6:
+    + Link to callofduty.com (ideally without any logos or watermarks)
 
 ## Map Diagrams
 

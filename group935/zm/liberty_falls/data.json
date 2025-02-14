@@ -108,7 +108,7 @@
         },
         {
             "header": "Vault",
-            "description": "Find 3 numbers on yellow notes and enter them on the Vault in the Bank with Juggernog.",
+            "description": "Find 3 numbers on yellow notes and enter them on the Vault in the Bank with Juggernog. Loot Keys can then be exchanged for loot.",
             "subsections": [
                 {
                     "elements": [
