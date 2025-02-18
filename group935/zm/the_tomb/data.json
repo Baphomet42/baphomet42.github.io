@@ -14,24 +14,6 @@
                     "header": "Power",
                     "description": "",
                     "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        }
                     ]
                 },
                 {
@@ -41,14 +23,44 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Pack-a-Punch machine"
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Pods (TODO)",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Dark Aether Crystals",
+                    "description": "The dark aether crystals in the Dark Aether Nexus can be broken to drop random loot, including Salvage.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Crystals"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Exfil",
-                    "description": "The radio is located TODO, and the exfil location will be TODO (if open).",
+                    "description": "The radio is located in the Dig Site, and the exfil location will be TODO (if open).",
                     "elements": [
                         {
                             "pic": {
@@ -60,7 +72,7 @@
                 },
                 {
                     "header": "Level III Armor Vest",
-                    "description": "Located TODO.",
+                    "description": "Located by Quick Revive.",
                     "elements": [
                         {
                             "pic": {
@@ -76,7 +88,49 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Der Wunderfizz - TODO (spawns at the start of round 25)"
+                                "alt": "PhD Flopper - in the Dig Site (through the Blue Portal)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Deadshot Daiquiri - between spawn and Speed Cola"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Speed Cola - through the Green Portal"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Quick Revive - through the Red Portal"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/4.jpg",
+                                "alt": "Stamin-Up - through the Yellow Portal"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Death Perception - between spawn and Stamin-Up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/5.jpg",
+                                "alt": "Juggernog - in the Dark Aether Nexus, by the Yellow Portal"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Der Wunderfizz - in the Dark Aether Nexus, by the Green Portal (spawns at the start of round 25)"
                             }
                         }
                     ]
@@ -84,7 +138,7 @@
             ]
         },
         {
-            "header": "",
+            "header": "Ice Staff (TODO)",
             "description": "",
             "subsections": [
                 {
@@ -134,24 +188,24 @@
             "subsections": [
                 {
                     "header": "Dig",
-                    "description": "",
+                    "description": "Interact with 3 Mister Peeks headphones.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "src": "assets/1_edit.jpg",
+                                "alt": "Location 1 - near Speed Cola, to the right of the Green Portal"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "src": "assets/2_edit.jpg",
+                                "alt": "Location 2 - in the Dark Aether Nexus, between the Red and Yellow Portals"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/3_edit.jpg",
+                                "alt": "Location 3 - just left of Stamin-Up"
                             }
                         }
                     ]
