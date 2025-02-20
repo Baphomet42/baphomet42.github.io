@@ -759,24 +759,6 @@
                     ]
                 },
                 {
-                    "header": "Vending Machine",
-                    "description": "The left vending machine by the Motel will give random loot (or trash) when you melee the retrieval door. This can be done once per round. Using Melee Macchiato will permanently destroy the machine.",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/117.jpg",
-                                "alt": "Vending machines by the Motel"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/118.jpg",
-                                "alt": "Location to melee"
-                            }
-                        }
-                    ]
-                },
-                {
                     "header": "Mister Peeks Car",
                     "description": "There are 3 cars on the map that can spawn Mister Peeks. Using a Mangler Cannon, shoot the car with Mister Peeks in it, and it will drop some loot. After 5 rounds, Mister Peeks will appear in a new car until all 3 have been destroyed.",
                     "elements": [
@@ -921,6 +903,24 @@
                     ]
                 },
                 {
+                    "header": "Vending Machine",
+                    "description": "The left vending machine by the Motel will give random loot (or trash) when you melee the retrieval door. This can be done once per round. Using Melee Macchiato will permanently destroy the machine.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/117.jpg",
+                                "alt": "Vending machines by the Motel"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/118.jpg",
+                                "alt": "Location to melee"
+                            }
+                        }
+                    ]
+                },
+                {
                     "header": "Pool Table",
                     "description": "Shoot any pool ball to sink them all. 100 Essence will drop next to the pool table.",
                     "elements": [
@@ -939,53 +939,90 @@
             "description": "There are 8 hidden power-ups around the map that can be shot or exploded to collect.",
             "subsections": [
                 {
+                    "header": "Max Ammo",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/120_edit.jpg",
-                                "alt": "Max Ammo - on the bridge by spawn"
+                                "alt": "On the bridge by spawn"
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Double Points",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/127_edit.jpg",
-                                "alt": "Double Points - on the water tower structure, seen from the Groundskeeper's shed"
+                                "alt": "On the water tower structure, seen from the Groundskeeper's shed"
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Bonus Points",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/46_edit.jpg",
-                                "alt": "Bonus Points - on an A/C unit above the comic shop"
+                                "alt": "On an A/C unit above the comic shop"
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Max Armor",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/48_edit.jpg",
-                                "alt": "Max Armor - through a window near Speed Cola, by the stairs that lead towards Quick Revive (sitting on the bottom shelf of a cart)"
+                                "alt": "Through a window near Speed Cola, by the stairs that lead towards Quick Revive (sitting on the bottom shelf of a cart)"
                             }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/49_edit.jpg",
-                                "alt": "Insta-Kill - on the Church roof, seen from the cemetery"
-                            }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Full Power",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/116_edit.jpg",
-                                "alt": "Full Power - by the road block outside of Liberty Lanes"
+                                "alt": "By the road block outside of Liberty Lanes"
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Insta-Kill",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/49_edit.jpg",
+                                "alt": "On the Church roof, seen from the cemetery"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Nuke",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/51_edit.jpg",
-                                "alt": "Nuke - on a chandelier in the Bank, seen from the roof"
+                                "alt": "On a chandelier in the Bank, seen from the roof"
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Fire Sale",
+                    "description": "Spawns after all 7 other hidden power-ups have been collected.",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/130.jpg",
-                                "alt": "Fire Sale - in a trash can next to PhD Flopper (spawns after the 7 other hidden power-ups have been collected)"
+                                "alt": "In a trash can next to PhD Flopper"
                             }
                         }
                     ]

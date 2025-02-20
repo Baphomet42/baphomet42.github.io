@@ -11,25 +11,19 @@
             "header": "Map Features",
             "subsections": [
                 {
-                    "header": "Power",
-                    "description": "",
-                    "elements": [
-                    ]
-                },
-                {
                     "header": "Pack-a-Punch",
-                    "description": "",
+                    "description": "After opening the Doorway to Nowhere, Pack-a-Punch will start in the Dark Aether Nexus. Throughout the game, the PaP machine will teleport between the Dark Aether Nexus and the Dig Site (spawn).",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Location 1 - Dark Aether Nexus"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Location 2 - Dig Site"
                             }
                         }
                     ]
@@ -72,7 +66,7 @@
                 },
                 {
                     "header": "Level III Armor Vest",
-                    "description": "Located by Quick Revive.",
+                    "description": "Located near Quick Revive in the Subterranean Temple.",
                     "elements": [
                         {
                             "pic": {
@@ -88,7 +82,7 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "PhD Flopper - in the Dig Site (through the Blue Portal)"
+                                "alt": "PhD Flopper - in the Dig Site (through the Blue Gateway)"
                             }
                         },
                         {
@@ -100,19 +94,19 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Speed Cola - through the Green Portal"
+                                "alt": "Speed Cola - through the Green Gateway"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Quick Revive - through the Red Portal"
+                                "alt": "Quick Revive - through the Red Gateway"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/4.jpg",
-                                "alt": "Stamin-Up - through the Yellow Portal"
+                                "alt": "Stamin-Up - through the Yellow Gateway"
                             }
                         },
                         {
@@ -124,13 +118,13 @@
                         {
                             "pic": {
                                 "src": "assets/5.jpg",
-                                "alt": "Juggernog - in the Dark Aether Nexus, by the Yellow Portal"
+                                "alt": "Juggernog - in the Dark Aether Nexus, by the Yellow Gateway"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Der Wunderfizz - in the Dark Aether Nexus, by the Green Portal (spawns at the start of round 25)"
+                                "alt": "Der Wunderfizz - in the Dark Aether Nexus, by the Green Gateway (spawns at the start of round 25)"
                             }
                         }
                     ]
@@ -193,13 +187,13 @@
                         {
                             "pic": {
                                 "src": "assets/1_edit.jpg",
-                                "alt": "Location 1 - near Speed Cola, to the right of the Green Portal"
+                                "alt": "Location 1 - near Speed Cola, to the right of the Green Gateway"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/2_edit.jpg",
-                                "alt": "Location 2 - in the Dark Aether Nexus, between the Red and Yellow Portals"
+                                "alt": "Location 2 - in the Dark Aether Nexus, between the Red and Yellow Gateways"
                             }
                         },
                         {
@@ -226,18 +220,6 @@
                             }
                         }
                     ]
-                },
-                {
-                    "header": "Pool Table",
-                    "description": "Shoot any pool ball to sink them all. 100 Essence will drop next to the pool table.",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Pool table, TODO"
-                            }
-                        }
-                    ]
                 }
             ]
         },
@@ -246,53 +228,90 @@
             "description": "There are 8 hidden power-ups around the map that can be shot or exploded to collect.",
             "subsections": [
                 {
+                    "header": "Max Ammo",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Max Ammo - TODO"
+                                "alt": ""
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Double Points",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Double Points - TODO"
+                                "alt": ""
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Bonus Points",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Bonus Points - TODO"
+                                "alt": ""
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Max Armor",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Max Armor - TODO"
+                                "alt": ""
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Full Power",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Insta-Kill - TODO"
+                                "alt": ""
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Insta-Kill",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Full Power - TODO"
+                                "alt": ""
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Nuke",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Nuke - TODO"
+                                "alt": ""
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Fire Sale",
+                    "description": "Spawns after all 7 other hidden power-ups have been collected.",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Fire Sale - TODO (spawns after the 7 other hidden power-ups have been collected)"
+                                "alt": ""
                             }
                         }
                     ]

@@ -192,53 +192,90 @@
             "description": "There are 8 hidden power-ups around the map that can be shot or exploded to collect.",
             "subsections": [
                 {
+                    "header": "Max Ammo",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Max Ammo - TODO"
+                                "alt": ""
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Double Points",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Double Points - TODO"
+                                "alt": ""
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Bonus Points",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Bonus Points - TODO"
+                                "alt": ""
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Max Armor",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Max Armor - TODO"
+                                "alt": ""
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Full Power",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Insta-Kill - TODO"
+                                "alt": ""
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Insta-Kill",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Full Power - TODO"
+                                "alt": ""
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Nuke",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Nuke - TODO"
+                                "alt": ""
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Fire Sale",
+                    "description": "Spawns after all 7 other hidden power-ups have been collected.",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Fire Sale - TODO (spawns after the 7 other hidden power-ups have been collected)"
+                                "alt": ""
                             }
                         }
                     ]

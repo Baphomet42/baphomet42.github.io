@@ -12,7 +12,7 @@
             "subsections": [
                 {
                     "header": "Power",
-                    "description": "Turn on 3 AMP Generators and defend each one until it stays powered on. Once all 3 are powered, the entire map will have power.",
+                    "description": "Turn on 3 AMP Generators and defend each one until it stays powered on. Each generator supplies power to part of the map.",
                     "elements": [
                         {
                             "pic": {
@@ -29,7 +29,7 @@
                         {
                             "pic": {
                                 "src": "assets/23.jpg",
-                                "alt": "Location 3 - the lab"
+                                "alt": "Location 3 - Bio Lab"
                             }
                         }
                     ]
@@ -71,6 +71,18 @@
                     ]
                 },
                 {
+                    "header": "TODO Underwater Chests",
+                    "description": "TODO free perk 10 chests?, mention death perception",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
                     "header": "Armory",
                     "description": "Loot Keys will occasionally drop from enemies and can be exchanged for loot.",
                     "elements": [
@@ -100,7 +112,7 @@
                         {
                             "pic": {
                                 "src": "assets/3.jpg",
-                                "alt": "Location 1 - in the lab"
+                                "alt": "Location 1 - Bio Lab"
                             }
                         },
                         {
@@ -135,7 +147,7 @@
                         {
                             "pic": {
                                 "src": "assets/5.jpg",
-                                "alt": "Elemental Pop - in the Sea Tower(TODO)"
+                                "alt": "Elemental Pop - in the Sea Tower"
                             }
                         },
                         {
@@ -147,25 +159,134 @@
                         {
                             "pic": {
                                 "src": "assets/19.jpg",
-                                "alt": "PhD Flopper - in TODO cave"
+                                "alt": "PhD Flopper - in the Mining Tunnels"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/21.jpg",
-                                "alt": "Speed Cola - in TODO cave"
+                                "alt": "Speed Cola - in the Sea Caves"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/15.jpg",
-                                "alt": "Melee Macchiato - in the lab"
+                                "alt": "Melee Macchiato - in Bio Lab"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
                                 "alt": "Der Wunderfizz - TODO (spawns at the start of round 25)"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Fish",
+            "description": "TODO optional",
+            "subsections": [
+                {
+                    "header": "TODO spawn locations",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "TODO Culinary Delight",
+                    "description": "TODO Mess Hall",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/16.jpg",
+                                "alt": "Brain TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/24.jpg",
+                                "alt": "Cooking Oil TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/25.jpg",
+                                "alt": "Pans TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/26.jpg",
+                                "alt": "TODO plant thing"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/28.jpg",
+                                "alt": "Snowball TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/47.jpg",
+                                "alt": "Fish TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "TODO perkaholic",
+                    "description": "TODO kill 50 fish to instantly get perkaholic in addition to other fish rewards, also note all locations and reset each round?",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "TODO fish for friends",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "TODO ammo mods",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
                             }
                         }
                     ]
@@ -195,7 +316,7 @@
                         {
                             "pic": {
                                 "src": "assets/13.jpg",
-                                "alt": "Location 3 - outside the caves near the water"
+                                "alt": "Location 3 - outside the caves near the Sea (TODO docks?)"
                             }
                         }
                     ]
@@ -463,7 +584,7 @@
                         {
                             "pic": {
                                 "src": "assets/33.jpg",
-                                "alt": "Location 3 - in the lab, upstairs above the armor wall-buy and sitting on a TODO"
+                                "alt": "Location 3 - in Bio Lab, upstairs above the armor wall-buy and sitting on a TODO"
                             }
                         }
                     ]
@@ -473,85 +594,6 @@
         {
             "header": "Side Easter Eggs",
             "subsections": [
-                {
-                    "header": "TODO Culinary Delight",
-                    "description": "",
-                    "elements": [
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "",
-                                "description": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/16.jpg",
-                                "alt": "Brain TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/24.jpg",
-                                "alt": "Cooking Oil TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/25.jpg",
-                                "alt": "Pans TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/26.jpg",
-                                "alt": "TODO plant thing"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/28.jpg",
-                                "alt": "Snowball TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/47.jpg",
-                                "alt": "Fish TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "TODO fish perkaholic",
-                    "description": "TODO kill 50 fish to instantly get perkaholic in addition to other fish rewards, also note all locations and reset each round?",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "TODO fish for friends",
-                    "description": "",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        }
-                    ]
-                },
                 {
                     "header": "Cursed Talisman (Treasure Hunter)",
                     "description": "",
@@ -696,6 +738,60 @@
                     ]
                 },
                 {
+                    "header": "Mega-Stuffy",
+                    "description": "Collect all 6 stuffed animals, in any order, by interacting on them. Then go to the beds near Juggernog and interact on them to turn them into the Mega-Stuffy and drop some loot. The Mega-Stuffy will last several rounds and can revive players.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/39.jpg",
+                                "alt": "Location 1 (Unicorn) - to the left of Stamin-Up, in a locker"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/4.jpg",
+                                "alt": "Location 2 (Monkey) - at the start of the bridge going from Juggernog to Elemental Pop, on the right"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/17.jpg",
+                                "alt": "Location 3 (Bear) - in Bio Lab, between the armor wall-buy and TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/22.jpg",
+                                "alt": "Location 4 (Elephant) - in the Mining Tunnels near PhD Flopper, TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/40.jpg",
+                                "alt": "Location 5 (Giraffe) - on Crab Island next to a light, on the right side of the path when coming from the Crafting Bench(TODO)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/42.jpg",
+                                "alt": "Location 6 (Duck) - on the shipwreck in a dumpster"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/46.jpg",
+                                "alt": "Stuffed animals on beds"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/77.jpg",
+                                "alt": "Mega-Stuffy"
+                            }
+                        }
+                    ]
+                },
+                {
                     "header": "Meteor Loot (TODO or satellite or something?)",
                     "description": "Quickly shoot 2 antenna towers with Dead Wire (also need pap?) so that both towers stay lit up red. Then, use the TODO trap to kill enough zombies to fully charge TODO. When TODO, use the TODO trap again and it will shoot a meteor out of the sky. Go to Castle Rock Island to find the meteor crash and some loot.",
                     "elements": [
@@ -727,7 +823,7 @@
                 },
                 {
                     "header": "Zombie Cages Free Perk",
-                    "description": "In the lab, there are some cages containing zombies up above the armor wall-buy, and another group of cages to the left of these. Kill all the zombies in all the cages, then wait a round. Now, kill all the Vermin that spawned in the cages, and do the same thing for the Manglers in the following round. After the Manglers are killed, a Random Perk power-up will be granted.",
+                    "description": "In Bio Lab, there are some cages containing zombies up above the armor wall-buy, and another group of cages to the left of these. Kill all the zombies in all the cages, then wait a round. Now, kill all the Vermin that spawned in the cages, and do the same thing for the Manglers in the following round. After the Manglers are killed, a Random Perk power-up will be granted.",
                     "elements": [
                         {
                             "pic": {
@@ -745,24 +841,6 @@
                             "pic": {
                                 "src": "assets/38.jpg",
                                 "alt": "Cages with a Mangler"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "Basketball",
-                    "description": "There is a basketball on the roof above Juggernog that can be shot at a specific angle to go into a hoop. If it makes a basket, it will drop some loot.",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Where to aim to make a basket"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Loot after making a basket"
                             }
                         }
                     ]
@@ -792,19 +870,7 @@
                     ]
                 },
                 {
-                    "header": "Haunted Elevator",
-                    "description": "Buy the elevator from spawn to go to the lab, then quickly start jumping until the elevator stutters. The elevator ride will then be spooky.",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/79.jpg",
-                                "alt": "Spooky elevator"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "Island Spores Loot",
+                    "header": "Island Spores",
                     "description": "Each round, one of the small islands will have a few spores on it. For 3 rounds straight, shoot every single spore on the island. On the 4th round, the spores will now be in the Speed Cola cave, and after destroying them all, you'll get some loot and a Random Perk power-up.",
                     "elements": [
                         {
@@ -822,13 +888,31 @@
                     ]
                 },
                 {
-                    "header": "TODO Underwater Chests Free Perk",
-                    "description": "TODO 10 chests?, mention death perception",
+                    "header": "Basketball",
+                    "description": "There is a basketball on the roof above Juggernog that can be shot at a specific angle to go into a hoop. If it makes a basket, it will drop some loot.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Where to aim to make a basket"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Loot after making a basket"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Haunted Elevator",
+                    "description": "Buy the elevator from spawn to go to Bio Lab, then quickly start jumping until the elevator stutters. The elevator ride will then be spooky.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/79.jpg",
+                                "alt": "Spooky elevator"
                             }
                         }
                     ]
@@ -852,60 +936,6 @@
                     ]
                 },
                 {
-                    "header": "Mega-Stuffy",
-                    "description": "Collect all 6 stuffed animals, in any order, by interacting on them. Then go to the beds near Juggernog and interact on them to turn them into the Mega-Stuffy and drop some loot. The Mega-Stuffy will last several rounds and can revive players.",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/39.jpg",
-                                "alt": "Location 1 (Unicorn) - to the left of Stamin-Up, in a locker"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/4.jpg",
-                                "alt": "Location 2 (Monkey) - at the start of the bridge going from Juggernog to Elemental Pop, on the right"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/17.jpg",
-                                "alt": "Location 3 (Bear) - in the lab, between the armor wall-buy and TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/22.jpg",
-                                "alt": "Location 4 (Elephant) - in the cave with PhD Flopper, TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/40.jpg",
-                                "alt": "Location 5 (Giraffe) - on Crab Island next to a light, on the right side of the path when coming from the Crafting Bench(TODO)"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/42.jpg",
-                                "alt": "Location 6 (Duck) - on the shipwreck in a dumpster"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/46.jpg",
-                                "alt": "Stuffed animals on beds"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/77.jpg",
-                                "alt": "Mega-Stuffy"
-                            }
-                        }
-                    ]
-                },
-                {
                     "header": "Pool Table",
                     "description": "Shoot any pool ball to sink them all. 100 Essence will drop next to the pool table.",
                     "elements": [
@@ -924,53 +954,90 @@
             "description": "There are 8 hidden power-ups around the map that can be shot or exploded to collect.",
             "subsections": [
                 {
+                    "header": "Max Ammo",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Max Ammo - TODO"
+                                "alt": ""
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Double Points",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/18.jpg",
-                                "alt": "Double Points - in the lab, upstairs from the armor wall-buy and sitting on a TODO (some boxes will be partially covering the power-up and can be shot away)"
+                                "alt": "In Bio Lab, upstairs from the armor wall-buy and sitting on a TODO (some boxes will be partially covering the power-up and can be shot away)"
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Bonus Points",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Bonus Points - TODO"
+                                "alt": ""
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Max Armor",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Max Armor - TODO"
+                                "alt": ""
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Full Power",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Insta-Kill - TODO"
+                                "alt": ""
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Insta-Kill",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Full Power - TODO"
+                                "alt": ""
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Nuke",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/67.jpg",
-                                "alt": "Nuke - on Crab Island in a barrier TODO"
+                                "alt": "On Crab Island in a barrier TODO"
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "Fire Sale",
+                    "description": "Spawns after all 7 other hidden power-ups have been collected.",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Fire Sale - TODO (spawns after the 7 other hidden power-ups have been collected)"
+                                "alt": ""
                             }
                         }
                     ]
