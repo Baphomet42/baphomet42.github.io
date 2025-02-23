@@ -448,7 +448,7 @@
                             "full": true,
                             "step": {
                                 "title": "1. Get kills in the green mist inside the Apothicon",
-                                "description": "The kills must be inside the green pool in the Apothicon and during the green mist. You must kill 50 zombies, 15 parasites, 15 spiders, 10 Furies, 5 Keepers, and 3 Margwas. At least 2 different types of Margwas must be killed."
+                                "description": "The kills must be inside the green pool in the Apothicon and during the green mist. You must kill 50 zombies, 15 Parasites, 15 spiders, 10 Furies, 5 Keepers, and 3 Margwas. At least 2 different types of Margwas must be killed."
                             }
                         },
                         {

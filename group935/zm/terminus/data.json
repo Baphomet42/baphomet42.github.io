@@ -22,7 +22,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/90.jpg",
                                 "alt": "Location 2 - by Juggernog"
                             }
                         },
@@ -71,13 +71,13 @@
                     ]
                 },
                 {
-                    "header": "TODO Underwater Chests",
-                    "description": "TODO free perk 10 chests?, mention death perception",
+                    "header": "Underwater Loot Crates",
+                    "description": "Each game, 10 loot crates will spawn underwater in 16 set locations. Each crate will give some loot when interacted, and a Random Perk power-up will spawn after all 10 are interacted. There are 4 possible spawns in the Bio Lab (2 near Melee Macchiato, and 1 in each water tunnel), 4 around Crab Island, 3 around the Shipwreck, 3 around Temple Island, and 2 around Castle Rock Island.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/92.jpg",
+                                "alt": "A loot crate with a shining green light"
                             }
                         }
                     ]
@@ -96,7 +96,7 @@
                 },
                 {
                     "header": "Exfil",
-                    "description": "The radio is located by Stamin-Up, and the exfil location will be Castle Rock Island (if open).",
+                    "description": "The radio is located by Stamin-Up, and the exfil location will be Temple Island (if open).",
                     "elements": [
                         {
                             "pic": {
@@ -176,8 +176,8 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Der Wunderfizz - TODO (spawns at the start of round 25)"
+                                "src": "assets/111.jpg",
+                                "alt": "Der Wunderfizz - on the Shipwreck at the bow (spawns at the start of round 25)"
                             }
                         }
                     ]
@@ -186,107 +186,106 @@
         },
         {
             "header": "Fish",
-            "description": "TODO optional",
+            "description": "Groups of fish spawn around the map and can be killed for loot. The fish can then be fried for extra rewards.",
             "subsections": [
                 {
-                    "header": "TODO spawn locations",
-                    "description": "",
+                    "header": "Fish Loot",
+                    "description": "Fish can spawn all around the map, often seen in shallow water next to land where you can walk. Killing fish is easiest done using explosives or a Ray Gun, and some loot will drop for each killed fish. If 50 fish have been killed in the game, you will instantly be given all the perks.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/47.jpg",
+                                "alt": "Fish swimming around the Docks"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/99.jpg",
+                                "alt": "Loot from fish"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "TODO Culinary Delight",
-                    "description": "TODO Mess Hall",
+                    "header": "Frying Fish",
+                    "description": "There are 2 pans in the Mess Hall (between Deadshot Daiquiri and Juggernog) that can be used to fry fish. Interact on the oil next to the pans to pick it up, then interact on a pan to place the oil. For each fish killed in the game, it will be added to a hidden inventory (you do not need to interact on the dead fish), and can be interacted to place it in the pan after the oil. On the next round, the fish can be eaten. If the fish sits for an additional round, it will ignite.",
                     "elements": [
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "",
-                                "description": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/16.jpg",
-                                "alt": "Brain TODO"
-                            }
-                        },
                         {
                             "pic": {
                                 "src": "assets/24.jpg",
-                                "alt": "Cooking Oil TODO"
+                                "alt": "Cooking Oil, to the right of the pans"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/25.jpg",
-                                "alt": "Pans TODO"
+                                "src": "assets/107.jpg",
+                                "alt": "Pans to fry fish"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/109.jpg",
+                                "alt": "Fish frying in oil"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/102.jpg",
+                                "alt": "Burnt fish"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Culinary Delight",
+                    "description": "After placing a fish in a pan, you may add 1 to 5 ingredients to give the fish an effect when eaten. Interact on an ingredient to pick it up, then interact on the frying fish to add it. The ingredients always spawn in the same locations, and will respawn later in the game to be used again. TODO",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/100.jpg",
+                                "alt": "Beans (Napalm Burst) - in the Mess Hall, between some crates"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/26.jpg",
-                                "alt": "TODO plant thing"
+                                "alt": "Purple plant (Shadow Rift) - outside the Mess Hall, by some stairs leading towards Quick Revive"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/28.jpg",
-                                "alt": "Snowball TODO"
+                                "alt": "Snowball (Cryo Freeze) - upstairs in the building with Juggernog, on top of a fridge"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/47.jpg",
-                                "alt": "Fish TODO"
+                                "src": "assets/91.jpg",
+                                "alt": "Battery (Dead Wire) - in the room between Juggernog and Elemental Pop, just beneath the purple arrow"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/16.jpg",
+                                "alt": "Brain (Brain Rot) - in Bio Lab, just through the entrance from the Speed Cola cave"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/121.jpg",
+                                "alt": "Frying a fish with all 5 added ingredients"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "TODO perkaholic",
-                    "description": "TODO kill 50 fish to instantly get perkaholic in addition to other fish rewards, also note all locations and reset each round?",
+                    "header": "Dr. Peck Bribe Refund",
+                    "description": "If Dr. Peck was bribed for the Beamsmasher calibrator code, you can give him a fried fish to refund the 5000 points. After frying a fish with no added ingredients, there will be a prompt to either 'take fried fish' or 'eat fried fish'. Take the fish and give it to Dr. Peck using the same box as the bribe money.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "TODO fish for friends",
-                    "description": "",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "TODO ammo mods",
-                    "description": "",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/120.jpg",
+                                "alt": "Giving fried fish to Dr. Peck"
                             }
                         }
                     ]
@@ -295,35 +294,10 @@
         },
         {
             "header": "DRI-11 Beamsmasher",
-            "description": "",
             "subsections": [
                 {
-                    "header": "1. Interact with 3 laptops",
-                    "description": "There are 3 laptops randomly labelled 'X', 'Y', or 'Z' each game. Interact with them in the order XYZ.",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/30.jpg",
-                                "alt": "Location 1 - near Quick Revive"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/31.jpg",
-                                "alt": "Location 2 - near Stamin-Up"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/13.jpg",
-                                "alt": "Location 3 - outside the caves near the Sea (TODO docks?)"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "2. Shock the electric boxes",
-                    "description": "5 electric boxes must be shot with a Pack-a-Punched gun with Dead Wire. After the final box is shot, a door will open to the Beamsmasher room.",
+                    "header": "1. Shock the electric boxes",
+                    "description": "5 electric boxes must be shot using a gun with Dead Wire. After the final box is shot, a door will open to the Beamsmasher room.",
                     "elements": [
                         {
                             "pic": {
@@ -357,32 +331,32 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/93.jpg",
                                 "alt": "Opened door"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "3. Collect the TODO",
-                    "description": "Enter the Beamsmasher room and kill the zombie stuck under the TODO. It will drop a TODO that must be picked up.",
+                    "header": "2. Collect the EMF Fob",
+                    "description": "Enter the Beamsmasher room and kill the zombie stuck under the bookshelf. It will drop the part to pick up.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/94.jpg",
                                 "alt": "Zombie to kill"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "TODO"
+                                "src": "assets/95.jpg",
+                                "alt": "EMF Fob"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "4. Collect the Multiphasic Resonator",
+                    "header": "3. Collect the Multiphasic Resonator",
                     "description": "Next to Elemental Pop is a briefcase with a hand attached. Open the briefcase and pick up the part. A large group of Vermin will spawn after the briefcase is opened.",
                     "elements": [
                         {
@@ -400,8 +374,32 @@
                     ]
                 },
                 {
+                    "header": "4. Interact with 3 laptops",
+                    "description": "There are 3 laptops randomly labelled 'X', 'Y', or 'Z' each game. All 3 must be interacted in any order, and each will show a randomized symbol to correspond with the labelled letter. The 3 letters and their matching symbols will be displayed on notes in the Beamsmasher room after interacting with the laptops, so there is no need to memorize them.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/30.jpg",
+                                "alt": "Location 1 - near Quick Revive"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/31.jpg",
+                                "alt": "Location 2 - near Stamin-Up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/13.jpg",
+                                "alt": "Location 3 - between the caves and the Docks"
+                            }
+                        }
+                    ]
+                },
+                {
                     "header": "5. Enter the code",
-                    "description": "Go back to the Beamsmasher room and interact on the computer. The computer can be interacted again to enter a code. A whiteboard in the back of the room will have formulas that can be used to solve for the code (they are different every game). Alternatively, after entering a wrong code, Peck can be payed 5000 points to reveal the correct code.",
+                    "description": "Go back to the Beamsmasher room and interact on the computer. The computer can be interacted again to enter a code. A whiteboard in the back of the room will have formulas that can be used to solve for the code (they are different every game). Alternatively, after entering any wrong code, Dr. Peck can be paid 5000 points to reveal the correct code.",
                     "elements": [
                         {
                             "pic": {
@@ -411,20 +409,20 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/59.jpg",
+                                "src": "assets/96.jpg",
                                 "alt": "Whiteboard with formulas"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/63.jpg",
-                                "alt": "Box to pay Peck"
+                                "alt": "Box to bribe for calibrator code"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/64.jpg",
-                                "alt": "Correct code from Peck"
+                                "alt": "Code from Dr. Peck"
                             }
                         },
                         {
@@ -549,13 +547,19 @@
                         {
                             "pic": {
                                 "src": "assets/43.jpg",
-                                "alt": "TODO missing tube by boat"
+                                "alt": "TODO missing tube on Crab Island near the Shipwreck"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/44.jpg",
                                 "alt": "TODO missing tube in Speed Cola cave"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/59.jpg",
+                                "alt": "TODO missing tube under Sea Tower"
                             }
                         }
                     ]
@@ -584,7 +588,7 @@
                         {
                             "pic": {
                                 "src": "assets/33.jpg",
-                                "alt": "Location 3 - in Bio Lab, upstairs above the armor wall-buy and sitting on a TODO"
+                                "alt": "Location 3 - in Bio Lab, upstairs from the armor wall-buy and sitting on a cabinet"
                             }
                         }
                     ]
@@ -596,7 +600,7 @@
             "subsections": [
                 {
                     "header": "Cursed Talisman (Treasure Hunter)",
-                    "description": "",
+                    "description": "Complete a quest from Captain Gregg to get some loot and a special Cursed Talisman item that permanently doubles points (with a cost).",
                     "elements": [
                         {
                             "full": true,
@@ -615,7 +619,7 @@
                             "full": true,
                             "step": {
                                 "title": "2. Retrieve the watch",
-                                "description": "Use the red X on the treasure map to find the location of the watch around Terminus Island (TODO different each game?). Pick up the watch and give it to the skeleton."
+                                "description": "Use the red X on the treasure map to find the location of the watch around Terminus Island. The spawn location is randomized each game, but will always be underwater. Pick up the watch and give it to Captain Gregg (the skeleton in the cave)."
                             }
                         },
                         {
@@ -634,7 +638,7 @@
                             "full": true,
                             "step": {
                                 "title": "3. Collect the 3 coins",
-                                "description": "After TODO is done talking, there will be 3 new red X's on the map. Bring Molotov(TODO) or Thermite(TODO) to each location and throw one at the skeleton. This will spawn an H.V.T. that must be killed to collect a coin. After picking up the Cursed Coin, your screen will glow purple until you return the coin to TODO in the cave."
+                                "description": "After Captain Gregg is done talking, there will be 3 new red X's on the map. Each red X marks a skeleton around the map, and the locations are the same every game. Bring Molotovs or Thermo Grenades to each location and throw one at the skeleton. This will spawn an H.V.T. that must be killed to collect a coin. After picking up the Cursed Coin, your screen will glow purple until you return the coin to Captain Gregg (you can wait and return all 3 at once or return each coin after retrieving it)."
                             }
                         },
                         {
@@ -646,19 +650,19 @@
                         {
                             "pic": {
                                 "src": "assets/41.jpg",
-                                "alt": "Location 1 - TODO"
+                                "alt": "Location 1 - on the Shipwreck, at the base of the mast"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/66.jpg",
-                                "alt": "Location 2 - TODO"
+                                "alt": "Location 2 - on Temple Island, laying on some stone"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/70.jpg",
-                                "alt": "Location 3 - TODO"
+                                "alt": "Location 3 - on Castle Rock Island, by a lantern"
                             }
                         },
                         {
@@ -677,13 +681,13 @@
                             "full": true,
                             "step": {
                                 "title": "4. Return the coins",
-                                "description": "Give the 3 coins to the skeleton in the cave to get some loot. The final step will now be available after 3 rounds."
+                                "description": "Give the 3 coins to Captain Gregg to get some loot. The final step will now be available after 3 rounds."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/71.jpg",
-                                "alt": "Loot from the skeleton"
+                                "alt": "Loot from Captain Gregg"
                             }
                         },
                         {
@@ -696,21 +700,51 @@
                             "full": true,
                             "step": {
                                 "title": "5. Find the treasure chest",
-                                "description": "3 rounds after the previous step, Crab Island will become stormy and continuously struck by lightning (dont have to stay on island?). Find the treasure chest on the island to get a Cursed Talisman. With the talisman equipped, kills will be worth twice as many points, but you will lose some points each time you get hit. You can place the talisman back into the chest to remove the effect or give it to another player. A Dark Ops challenge can be unlocked for getting 25k points, without taking any damage, while holding the talisman."
+                                "description": "3 rounds after the previous step, Crab Island will become stormy and continuously struck by lightning. The lightning will go away after some time, and will only return every 3-4 rounds until the treasure is found. While the island is storming, find and interact on the treasure chest to get a Cursed Talisman. With the Talisman equipped, kills will be worth twice as many points, but you will lose some points each time you get hit. You can return the Talisman back into the chest to remove the effect or give it to another player. A Dark Ops challenge can be unlocked for getting 25k points, without taking any damage, while holding the Talisman."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Cursed Talisman in the treasure chest"
+                                "src": "assets/122.jpg",
+                                "alt": "Crab Island being struck by lightning"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/123.jpg",
+                                "alt": "Treasure chest to interact during storm"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/124.jpg",
+                                "alt": "Cursed Talisman"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "TODO Boat Race",
-                    "description": "",
+                    "header": "Boat Race",
+                    "description": "There are 3 small toy boats around the map, nearby the 3 islands. One of the boats at random will be blinking red, and can be interacted to start a boat racing minigame. TODO repeat",
                     "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/128.jpg",
+                                "alt": "Location 1 - at Crab Island, from the beach by the armor wall-buy and around the shore going to the right"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 2 - at Temple Island, TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 3 - at Castle Rock Island, TODO"
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
@@ -720,26 +754,50 @@
                     ]
                 },
                 {
-                    "header": "Whack-a-Crab",
-                    "description": "Go to Crab Island and throw an explosive at the TODO on a cliff. Melee one of the crabs on the ground to start a game of Whack-a-Crab. A Random Perk power-up will be granted after the game. Other crabs may be found later on Crab Island and can be meleed to start another game and give more loot.",
+                    "header": "Whac-a-Crab",
+                    "description": "Go to Crab Island and throw an explosive at the crab trap on a cliff. There will now be 4 locations around the island where a group of crabs can be found. Melee one of the crabs on the ground to start a game of Whac-a-Crab. You will receive loot (or grenades) depending on your score, and the 4 locations each have different loot.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/87.jpg",
-                                "alt": "TODO to destroy"
+                                "alt": "Crab trap to destroy"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 3 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 4 - TODO"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/88.jpg",
-                                "alt": "Whack-a-Crab"
+                                "alt": "Whac-a-Crab"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Mega-Stuffy",
-                    "description": "Collect all 6 stuffed animals, in any order, by interacting on them. Then go to the beds near Juggernog and interact on them to turn them into the Mega-Stuffy and drop some loot. The Mega-Stuffy will last several rounds and can revive players.",
+                    "description": "Collect all 6 stuffed animals, in any order, by interacting on them. Then, go to the Living Quarters (by Juggernog) and interact on one of the stuffed animals on the beds. Each stuffed animal will drop some loot, and they will all combine into the Mega-Stuffy. The Mega-Stuffy will last several rounds and can revive players.",
                     "elements": [
                         {
                             "pic": {
@@ -756,25 +814,25 @@
                         {
                             "pic": {
                                 "src": "assets/17.jpg",
-                                "alt": "Location 3 (Bear) - in Bio Lab, between the armor wall-buy and TODO"
+                                "alt": "Location 3 (Bear) - in Bio Lab, between the armor wall-buy and the Speed Cola cave"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/22.jpg",
-                                "alt": "Location 4 (Elephant) - in the Mining Tunnels near PhD Flopper, TODO"
+                                "alt": "Location 4 (Elephant) - in the Mining Tunnels with PhD Flopper, under a barrier by the Gobblegum Machine"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/40.jpg",
-                                "alt": "Location 5 (Giraffe) - on Crab Island next to a light, on the right side of the path when coming from the Crafting Bench(TODO)"
+                                "alt": "Location 5 (Giraffe) - on Crab Island next to a light, on the right side of the path when coming from the Crafting Table"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/42.jpg",
-                                "alt": "Location 6 (Duck) - on the shipwreck in a dumpster"
+                                "alt": "Location 6 (Duck) - on the Shipwreck in a dumpster"
                             }
                         },
                         {
@@ -792,31 +850,31 @@
                     ]
                 },
                 {
-                    "header": "Meteor Loot (TODO or satellite or something?)",
-                    "description": "Quickly shoot 2 antenna towers with Dead Wire (also need pap?) so that both towers stay lit up red. Then, use the TODO trap to kill enough zombies to fully charge TODO. When TODO, use the TODO trap again and it will shoot a meteor out of the sky. Go to Castle Rock Island to find the meteor crash and some loot.",
+                    "header": "Satellite Loot",
+                    "description": "Standing on the Gun Platform by the Void Cannon trap, use a weapon with Dead Wire to quickly shoot the 2 blinking blue sparks on 2 antenna towers. The antennas will light up red for a short time after being shot successfully, but will both remain red if they are hit fast enough. Then, use the Void Cannon trap to kill enough zombies until the cannon shoots a satellite out of the sky. Go to Castle Rock Island to find the crash and loot.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Tower 1 - TODO"
+                                "src": "assets/97.jpg",
+                                "alt": "Blue sparks to shoot"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Tower 2 - TODO"
+                                "src": "assets/98.jpg",
+                                "alt": "Both towers red"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "TODO trap charging"
+                                "src": "assets/116.jpg",
+                                "alt": "Void Cannon hitting the satellite"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Meteor crash site"
+                                "src": "assets/119.jpg",
+                                "alt": "Crash site"
                             }
                         }
                     ]
@@ -847,7 +905,7 @@
                 },
                 {
                     "header": "Oxygen Tank",
-                    "description": "Jump into the water near Pack-a-Punch and destroy a specific rock with an explosive. All players can now pick up an oxygen tank to extend the time it takes to drown.",
+                    "description": "Jump into the water near Pack-a-Punch and destroy a specific rock with an explosive. This can be done easiest using a Frag or C4. All players can now pick up an oxygen tank to extend the time it takes to drown.",
                     "elements": [
                         {
                             "pic": {
@@ -871,7 +929,7 @@
                 },
                 {
                     "header": "Island Spores",
-                    "description": "Each round, one of the small islands will have a few spores on it. For 3 rounds straight, shoot every single spore on the island. On the 4th round, the spores will now be in the Speed Cola cave, and after destroying them all, you'll get some loot and a Random Perk power-up.",
+                    "description": "Each round, one of the small islands will have a few spores on it. For 3 rounds straight, shoot every single spore on the island (killing the Parasites is not required). On the 4th round, the spores will now be in the Speed Cola cave, and after destroying them all, you'll get some loot and a Random Perk power-up.",
                     "elements": [
                         {
                             "pic": {
@@ -893,13 +951,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Where to aim to make a basket"
+                                "src": "assets/104.jpg",
+                                "alt": "Box to stand on"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/103.jpg",
+                                "alt": "Where to aim"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/105.jpg",
                                 "alt": "Loot after making a basket"
                             }
                         }
@@ -918,19 +982,19 @@
                     ]
                 },
                 {
-                    "header": "TODO Fast Travel",
-                    "description": "beamsmasher on temple island sentinel artifact send near spawn, also from trap to send random location",
+                    "header": "Fast Travel",
+                    "description": "There are 2 fast travel locations around the map. Standing in the Void Cannon trap for long enough will teleport you to a random position around the map. The other method requires using the alt fire(TODO) of the Beamsmasher on a symbol at Temple Island, which will teleport you to spawn.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/89.jpg",
-                                "alt": "Sentinal Artifact symbol to TODO"
+                                "src": "assets/25.jpg",
+                                "alt": "Void Cannon"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/89.jpg",
+                                "alt": "Sentinel Artifact symbol on Temple Island"
                             }
                         }
                     ]
@@ -958,8 +1022,8 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/113.jpg",
+                                "alt": "On the watchtower by spawn, in the window facing away from spawn"
                             }
                         }
                     ]
@@ -970,7 +1034,7 @@
                         {
                             "pic": {
                                 "src": "assets/18.jpg",
-                                "alt": "In Bio Lab, upstairs from the armor wall-buy and sitting on a TODO (some boxes will be partially covering the power-up and can be shot away)"
+                                "alt": "In Bio Lab, upstairs from the armor wall-buy and sitting on a cabinet (some boxes will be partially covering the power-up and can be shot away)"
                             }
                         }
                     ]
@@ -980,8 +1044,8 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/126.jpg",
+                                "alt": "On Temple Island, up on a stone wall of the temple"
                             }
                         }
                     ]
@@ -991,8 +1055,8 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/112.jpg",
+                                "alt": "Through a barrier by Quick Revive, inside a pail"
                             }
                         }
                     ]
@@ -1002,8 +1066,8 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/114.jpg",
+                                "alt": "On another Sea Tower, seen from the Sea Tower with Elemental Pop"
                             }
                         }
                     ]
@@ -1013,8 +1077,8 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/125.jpg",
+                                "alt": "On the Shipwreck, in the top right window"
                             }
                         }
                     ]
@@ -1025,7 +1089,7 @@
                         {
                             "pic": {
                                 "src": "assets/67.jpg",
-                                "alt": "On Crab Island in a barrier TODO"
+                                "alt": "On Crab Island, in a barrier near the armor wall-buy"
                             }
                         }
                     ]
@@ -1036,8 +1100,8 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/127.jpg",
+                                "alt": "Between spawn and Stamin-Up, on a barrel through a barrier"
                             }
                         }
                     ]
