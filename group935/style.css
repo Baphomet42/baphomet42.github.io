@@ -239,6 +239,67 @@ li::marker {
     font-style: italic;
 }
 
+.terminus-code-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+.terminus-code-group tr {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 4.5rem;
+    min-height: 4.5rem;
+    max-height: 4.5rem;
+    align-items: center;
+}
+.terminus-code-group td {
+    width: 4.5rem;
+    min-width: 4.5rem;
+    max-width: 4.5rem;
+    height: 4.5rem;
+    min-height: 4.5rem;
+    max-height: 4.5rem;
+    padding: .25rem;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin: 0;
+    float: left;
+}
+.terminus-code-group label {
+    width: 4rem;
+    text-align: center;
+}
+.terminus-code-group input {
+    display: none;
+}
+.terminus-code-group img {
+    width: 4rem;
+    height: 4rem;
+    border: .5rem solid transparent;
+    cursor: pointer;
+}
+.terminus-code-group input:checked + img {
+    border-color: var(--accent-text);
+}
+.terminus-code-output-line {
+    font-size: large;
+}
+#terminus-code-output {
+    font-size: x-large;
+    font-weight: bold;
+}
+
 #control-panel-hidden {
     right: 0;
     width: 4rem;

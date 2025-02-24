@@ -208,11 +208,11 @@
                 },
                 {
                     "header": "Frying Fish",
-                    "description": "There are 2 pans in the Mess Hall (between Deadshot Daiquiri and Juggernog) that can be used to fry fish. Interact on the oil next to the pans to pick it up, then interact on a pan to place the oil. For each fish killed in the game, it will be added to a hidden inventory (you do not need to interact on the dead fish), and can be interacted to place it in the pan after the oil. On the next round, the fish can be eaten. If the fish sits for an additional round, it will ignite.",
+                    "description": "There are 2 pans in the Mess Hall (between Deadshot Daiquiri and Juggernog) that can be used to fry fish. Interact on the oil next to the pans to pick it up, then interact on a pan to place the oil. For each fish killed in the game, it will be added to a hidden inventory (you do not need to interact on the dead fish). A fish can be added to a frying pan after the oil is added. On the next round, the fish can be eaten. If the fish sits for an additional round, it will burst into flames and damage you if you try to eat it.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/24.jpg",
+                                "src": "assets/24_edit.jpg",
                                 "alt": "Cooking Oil, to the right of the pans"
                             }
                         },
@@ -237,36 +237,36 @@
                     ]
                 },
                 {
-                    "header": "Culinary Delight",
-                    "description": "After placing a fish in a pan, you may add 1 to 5 ingredients to give the fish an effect when eaten. Interact on an ingredient to pick it up, then interact on the frying fish to add it. The ingredients always spawn in the same locations, and will respawn later in the game to be used again. TODO",
+                    "header": "Special Ingredients",
+                    "description": "After placing a fish in a pan, you may add 1 to 5 ingredients to temporarily upgrade the corresponding Ammo Mod upon eating the fish (this will unlock the Culinary Delight achievement). The upgraded Ammo Mods will trigger their effect every time. Interact on an ingredient to pick it up, then interact on the frying fish to add it. The ingredients always spawn in the same locations, and will respawn later in the game to be used again.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/100.jpg",
+                                "src": "assets/100_edit.jpg",
                                 "alt": "Beans (Napalm Burst) - in the Mess Hall, between some crates"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/26.jpg",
+                                "src": "assets/26_edit.jpg",
                                 "alt": "Purple plant (Shadow Rift) - outside the Mess Hall, by some stairs leading towards Quick Revive"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/28.jpg",
+                                "src": "assets/28_edit.jpg",
                                 "alt": "Snowball (Cryo Freeze) - upstairs in the building with Juggernog, on top of a fridge"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/91.jpg",
+                                "src": "assets/91_edit.jpg",
                                 "alt": "Battery (Dead Wire) - in the room between Juggernog and Elemental Pop, just beneath the purple arrow"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/16.jpg",
+                                "src": "assets/16_edit.jpg",
                                 "alt": "Brain (Brain Rot) - in Bio Lab, just through the entrance from the Speed Cola cave"
                             }
                         },
@@ -293,6 +293,126 @@
             ]
         },
         {
+            "header": "Cursed Talisman",
+            "description": "Complete a quest from Captain Gregg to get some loot and a special Cursed Talisman item that permanently doubles points (with a cost). This will unlock the Treasure Hunter achievement.",
+            "subsections": [
+                {
+                    "header": "1. Find the treasure map",
+                    "description": "Use Melee Macchiato in the Speed Cola cave to break some rocks.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/45.jpg",
+                                "alt": "Rocks to punch"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Retrieve the watch",
+                    "description": "Use the red X on the treasure map to find the location of the watch around Terminus Island. The spawn location is randomized each game, but will always be underwater. Pick up the watch and give it to Captain Gregg (the skeleton in the cave).",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/49.jpg",
+                                "alt": "Treasure map with red X"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/50.jpg",
+                                "alt": "Watch under the water"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Collect the 3 coins",
+                    "description": "After Captain Gregg is done talking, there will be 3 new red X's on the map. Each red X marks a skeleton around the map, and the locations are the same every game. Bring Molotovs or Thermo Grenades to each location and throw one at the skeleton. This will spawn an H.V.T. that must be killed to collect a coin. After picking up the Cursed Coin, your screen will glow purple until you return the coin to Captain Gregg (you can wait and return all 3 at once or return each coin after retrieving it).",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/51.jpg",
+                                "alt": "Map showing 3 locations"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/41.jpg",
+                                "alt": "Location 1 - on the Shipwreck, at the base of the mast"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/66.jpg",
+                                "alt": "Location 2 - on Temple Island, laying on some stone"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/70.jpg",
+                                "alt": "Location 3 - on Castle Rock Island, by a lantern"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/53.jpg",
+                                "alt": "H.V.T."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/54.jpg",
+                                "alt": "Cursed Coin"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "4. Return the coins",
+                    "description": "Give the 3 coins to Captain Gregg to get some loot. The final step will now be available after 3 rounds.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/71.jpg",
+                                "alt": "Loot from Captain Gregg"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/72.jpg",
+                                "alt": "Map showing final location"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "5. Find the treasure chest",
+                    "description": "3 rounds after the previous step, Crab Island will become stormy and continuously struck by lightning. The lightning will go away after some time, and will only return every 3-4 rounds until the treasure is found. While the island is storming, find and interact on the treasure chest to get a Cursed Talisman. With the Talisman equipped, kills will be worth twice as many points, but you will lose some points each time you get hit. You can return the Talisman back into the chest to remove the effect or give it to another player. A Dark Ops challenge can be unlocked for getting 25k points without taking any damage, while holding the Talisman.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/122.jpg",
+                                "alt": "Crab Island being struck by lightning"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/123.jpg",
+                                "alt": "Treasure chest to interact during storm"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/124.jpg",
+                                "alt": "Cursed Talisman"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "header": "DRI-11 Beamsmasher",
             "subsections": [
                 {
@@ -301,7 +421,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/76.jpg",
+                                "src": "assets/76_edit.jpg",
                                 "alt": "Location 1 - in a room seen when moving on the Inclined Lift and facing away from the PaP machine"
                             }
                         },
@@ -375,7 +495,7 @@
                 },
                 {
                     "header": "4. Interact with 3 laptops",
-                    "description": "There are 3 laptops randomly labelled 'X', 'Y', or 'Z' each game. All 3 must be interacted in any order, and each will show a randomized symbol to correspond with the labelled letter. The 3 letters and their matching symbols will be displayed on notes in the Beamsmasher room after interacting with the laptops, so there is no need to memorize them.",
+                    "description": "There are 3 laptops labelled 'X', 'Y', and 'Z'. All 3 must be interacted in any order, and each will show a randomized symbol to correspond with the labelled letter. The 3 letters and their matching symbols will be displayed on notes in the Beamsmasher room after interacting with the laptops, so there is no need to memorize them.",
                     "elements": [
                         {
                             "pic": {
@@ -399,7 +519,7 @@
                 },
                 {
                     "header": "5. Enter the code",
-                    "description": "Go back to the Beamsmasher room and interact on the computer. The computer can be interacted again to enter a code. A whiteboard in the back of the room will have formulas that can be used to solve for the code (they are different every game). Alternatively, after entering any wrong code, Dr. Peck can be paid 5000 points to reveal the correct code.",
+                    "description": "Go back to the Beamsmasher room and interact on the computer. The computer can be interacted again to enter a code. Whiteboards in the back of the room can be used to solve the code depending on the symbols on the laptops. Alternatively, after entering any wrong code, Dr. Peck can be paid 5000 points to reveal the correct code.",
                     "elements": [
                         {
                             "pic": {
@@ -409,9 +529,13 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/96.jpg",
-                                "alt": "Whiteboard with formulas"
+                                "src": "assets/65.jpg",
+                                "alt": "Entering the code into the computer"
                             }
+                        },
+                        {
+                            "full": true,
+                            "special": "terminus_code"
                         },
                         {
                             "pic": {
@@ -423,12 +547,6 @@
                             "pic": {
                                 "src": "assets/64.jpg",
                                 "alt": "Code from Dr. Peck"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/65.jpg",
-                                "alt": "Entering the code into the computer"
                             }
                         }
                     ]
@@ -599,133 +717,8 @@
             "header": "Side Easter Eggs",
             "subsections": [
                 {
-                    "header": "Cursed Talisman (Treasure Hunter)",
-                    "description": "Complete a quest from Captain Gregg to get some loot and a special Cursed Talisman item that permanently doubles points (with a cost).",
-                    "elements": [
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "1. Find the treasure map",
-                                "description": "Use Melee Macchiato in the Speed Cola cave to break some rocks."
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/45.jpg",
-                                "alt": "Rocks to punch"
-                            }
-                        },
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "2. Retrieve the watch",
-                                "description": "Use the red X on the treasure map to find the location of the watch around Terminus Island. The spawn location is randomized each game, but will always be underwater. Pick up the watch and give it to Captain Gregg (the skeleton in the cave)."
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/49.jpg",
-                                "alt": "Treasure map with red X"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/50.jpg",
-                                "alt": "Watch under the water"
-                            }
-                        },
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "3. Collect the 3 coins",
-                                "description": "After Captain Gregg is done talking, there will be 3 new red X's on the map. Each red X marks a skeleton around the map, and the locations are the same every game. Bring Molotovs or Thermo Grenades to each location and throw one at the skeleton. This will spawn an H.V.T. that must be killed to collect a coin. After picking up the Cursed Coin, your screen will glow purple until you return the coin to Captain Gregg (you can wait and return all 3 at once or return each coin after retrieving it)."
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/51.jpg",
-                                "alt": "Map showing 3 locations"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/41.jpg",
-                                "alt": "Location 1 - on the Shipwreck, at the base of the mast"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/66.jpg",
-                                "alt": "Location 2 - on Temple Island, laying on some stone"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/70.jpg",
-                                "alt": "Location 3 - on Castle Rock Island, by a lantern"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/53.jpg",
-                                "alt": "H.V.T."
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/54.jpg",
-                                "alt": "Cursed Coin"
-                            }
-                        },
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "4. Return the coins",
-                                "description": "Give the 3 coins to Captain Gregg to get some loot. The final step will now be available after 3 rounds."
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/71.jpg",
-                                "alt": "Loot from Captain Gregg"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/72.jpg",
-                                "alt": "Map showing final location"
-                            }
-                        },
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "5. Find the treasure chest",
-                                "description": "3 rounds after the previous step, Crab Island will become stormy and continuously struck by lightning. The lightning will go away after some time, and will only return every 3-4 rounds until the treasure is found. While the island is storming, find and interact on the treasure chest to get a Cursed Talisman. With the Talisman equipped, kills will be worth twice as many points, but you will lose some points each time you get hit. You can return the Talisman back into the chest to remove the effect or give it to another player. A Dark Ops challenge can be unlocked for getting 25k points, without taking any damage, while holding the Talisman."
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/122.jpg",
-                                "alt": "Crab Island being struck by lightning"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/123.jpg",
-                                "alt": "Treasure chest to interact during storm"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/124.jpg",
-                                "alt": "Cursed Talisman"
-                            }
-                        }
-                    ]
-                },
-                {
                     "header": "Boat Race",
-                    "description": "There are 3 small toy boats around the map, nearby the 3 islands. One of the boats at random will be blinking red, and can be interacted to start a boat racing minigame. TODO repeat",
+                    "description": "There are 3 small toy boats around the map, nearby the 3 islands. One of the boats at random will be blinking red, and can be interacted to start a boat racing minigame. The race can be repeated after 5 rounds when a different boat lights up, and once more 5 rounds after the second race.",
                     "elements": [
                         {
                             "pic": {
@@ -735,20 +728,20 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - at Temple Island, TODO"
+                                "src": "assets/134.jpg",
+                                "alt": "Location 2 - at Temple Island, out a ways from the Sentinel Artifact fast travel symbol"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - at Castle Rock Island, TODO"
+                                "src": "assets/133.jpg",
+                                "alt": "Location 3 - at Castle Rock Island, behind the island not far from the shore"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/116.jpg",
+                                "alt": "Boat racing"
                             }
                         }
                     ]
@@ -759,32 +752,32 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/87.jpg",
+                                "src": "assets/87_edit.jpg",
                                 "alt": "Crab trap to destroy"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "src": "assets/132.jpg",
+                                "alt": "Perk can location - just below where the crab trap was shot"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "src": "assets/129.jpg",
+                                "alt": "Salvage location - up the left hill from the Crafting Table"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/130.jpg",
+                                "alt": "Essence location - in front of the armor wall-buy"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 4 - TODO"
+                                "src": "assets/131.jpg",
+                                "alt": "Gun location - on the beach past the armor wall-buy"
                             }
                         },
                         {
@@ -801,37 +794,37 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/39.jpg",
+                                "src": "assets/39_edit.jpg",
                                 "alt": "Location 1 (Unicorn) - to the left of Stamin-Up, in a locker"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/4.jpg",
+                                "src": "assets/4_edit.jpg",
                                 "alt": "Location 2 (Monkey) - at the start of the bridge going from Juggernog to Elemental Pop, on the right"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/17.jpg",
+                                "src": "assets/17_edit.jpg",
                                 "alt": "Location 3 (Bear) - in Bio Lab, between the armor wall-buy and the Speed Cola cave"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/22.jpg",
+                                "src": "assets/22_edit.jpg",
                                 "alt": "Location 4 (Elephant) - in the Mining Tunnels with PhD Flopper, under a barrier by the Gobblegum Machine"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/40.jpg",
+                                "src": "assets/40_edit.jpg",
                                 "alt": "Location 5 (Giraffe) - on Crab Island next to a light, on the right side of the path when coming from the Crafting Table"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/42.jpg",
+                                "src": "assets/42_edit.jpg",
                                 "alt": "Location 6 (Duck) - on the Shipwreck in a dumpster"
                             }
                         },
@@ -851,11 +844,11 @@
                 },
                 {
                     "header": "Satellite Loot",
-                    "description": "Standing on the Gun Platform by the Void Cannon trap, use a weapon with Dead Wire to quickly shoot the 2 blinking blue sparks on 2 antenna towers. The antennas will light up red for a short time after being shot successfully, but will both remain red if they are hit fast enough. Then, use the Void Cannon trap to kill enough zombies until the cannon shoots a satellite out of the sky. Go to Castle Rock Island to find the crash and loot.",
+                    "description": "Standing on the Gun Platform by the Void Cannon trap, use a weapon with Dead Wire to quickly shoot the 2 blinking blue sparks on 2 antenna towers (they can also be shot from other locations closer to the towers). The antennas will light up red for a short time after being shot successfully, but will both remain red if they are hit fast enough. Then, go to the next round and use the Void Cannon trap, and a satellite will be shot out of the sky (the trap does not have to kill any zombies). Go to Castle Rock Island to find the crash and loot.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/97.jpg",
+                                "src": "assets/97_edit.jpg",
                                 "alt": "Blue sparks to shoot"
                             }
                         },
@@ -867,14 +860,14 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/116.jpg",
+                                "src": "assets/115.jpg",
                                 "alt": "Void Cannon hitting the satellite"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/119.jpg",
-                                "alt": "Crash site"
+                                "alt": "Crash site on Castle Rock Island"
                             }
                         }
                     ]
@@ -915,7 +908,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/35.jpg",
+                                "src": "assets/35_edit.jpg",
                                 "alt": "Rock to explode"
                             }
                         },
@@ -983,7 +976,7 @@
                 },
                 {
                     "header": "Fast Travel",
-                    "description": "There are 2 fast travel locations around the map. Standing in the Void Cannon trap for long enough will teleport you to a random position around the map. The other method requires using the alt fire(TODO) of the Beamsmasher on a symbol at Temple Island, which will teleport you to spawn.",
+                    "description": "There are 2 fast travel locations around the map. Standing in the Void Cannon trap for long enough will teleport you to a random position around the map. The other method requires using the alt fire of the DRI-11 Beamsmasher on a symbol at Temple Island, which will teleport you to spawn.",
                     "elements": [
                         {
                             "pic": {
@@ -1022,7 +1015,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/113.jpg",
+                                "src": "assets/113_edit.jpg",
                                 "alt": "On the watchtower by spawn, in the window facing away from spawn"
                             }
                         }
@@ -1033,7 +1026,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/18.jpg",
+                                "src": "assets/18_edit.jpg",
                                 "alt": "In Bio Lab, upstairs from the armor wall-buy and sitting on a cabinet (some boxes will be partially covering the power-up and can be shot away)"
                             }
                         }
@@ -1044,7 +1037,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/126.jpg",
+                                "src": "assets/126_edit.jpg",
                                 "alt": "On Temple Island, up on a stone wall of the temple"
                             }
                         }
@@ -1055,7 +1048,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/112.jpg",
+                                "src": "assets/112_edit.jpg",
                                 "alt": "Through a barrier by Quick Revive, inside a pail"
                             }
                         }
@@ -1066,7 +1059,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/114.jpg",
+                                "src": "assets/114_edit.jpg",
                                 "alt": "On another Sea Tower, seen from the Sea Tower with Elemental Pop"
                             }
                         }
@@ -1077,7 +1070,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/125.jpg",
+                                "src": "assets/125_edit.jpg",
                                 "alt": "On the Shipwreck, in the top right window"
                             }
                         }
@@ -1088,7 +1081,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/67.jpg",
+                                "src": "assets/67_edit.jpg",
                                 "alt": "On Crab Island, in a barrier near the armor wall-buy"
                             }
                         }
@@ -1100,7 +1093,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/127.jpg",
+                                "src": "assets/127_edit.jpg",
                                 "alt": "Between spawn and Stamin-Up, on a barrel through a barrier"
                             }
                         }

@@ -250,6 +250,8 @@ function pageRev2(data) {
                         else if(el.special) {
                             if(el.special === "gorod_valve")
                                 page += buildGorodValveStep()
+                            else if(el.special === "terminus_code")
+                                page += buildTerminusCodeStep()
                         }
 
                         page += '</div></td>'
@@ -326,6 +328,91 @@ function buildGorodValveStep() {
     page += '</ul>'
 
     return page
+}
+
+function buildTerminusCodeStep() {
+    let page = ''
+    
+    page += '<h3>Code solver tool</h3>'
+    page += '<p>Select the symbol corresponding to each of the 3 letters, as seen on both the laptops and the yellow notes. Then, enter the code using the output below.</p>'
+    page += '<div><table class="terminus-code-group"><tr>'
+    page += '<td><label for="terminus-code-x">X: </label></td>'
+    page += '<td><label><input type="radio" name="terminus-code-x" value="0" onchange="setTerminusSymbol(0,0)"/><img src="assets/code_symbol_0.png"/></label></td>'
+    page += '<td><label><input type="radio" name="terminus-code-x" value="1" onchange="setTerminusSymbol(0,1)"/><img src="assets/code_symbol_1.png"/></label></td>'
+    page += '<td><label><input type="radio" name="terminus-code-x" value="2" onchange="setTerminusSymbol(0,2)"/><img src="assets/code_symbol_2.png"/></label></td>'
+    page += '<td><label><input type="radio" name="terminus-code-x" value="3" onchange="setTerminusSymbol(0,3)"/><img src="assets/code_symbol_3.png"/></label></td>'
+    page += '<td><label><input type="radio" name="terminus-code-x" value="4" onchange="setTerminusSymbol(0,4)"/><img src="assets/code_symbol_4.png"/></label></td>'
+    page += '<td><label><input type="radio" name="terminus-code-x" value="5" onchange="setTerminusSymbol(0,5)"/><img src="assets/code_symbol_5.png"/></label></td>'
+    page += '</tr></table></div><br/>'
+    page += '<div><table class="terminus-code-group"><tr>'
+    page += '<td><label for="terminus-code-y">Y: </label></td>'
+    page += '<td><label><input type="radio" name="terminus-code-y" value="0" onchange="setTerminusSymbol(1,0)"/><img src="assets/code_symbol_0.png"/></label></td>'
+    page += '<td><label><input type="radio" name="terminus-code-y" value="1" onchange="setTerminusSymbol(1,1)"/><img src="assets/code_symbol_1.png"/></label></td>'
+    page += '<td><label><input type="radio" name="terminus-code-y" value="2" onchange="setTerminusSymbol(1,2)"/><img src="assets/code_symbol_2.png"/></label></td>'
+    page += '<td><label><input type="radio" name="terminus-code-y" value="3" onchange="setTerminusSymbol(1,3)"/><img src="assets/code_symbol_3.png"/></label></td>'
+    page += '<td><label><input type="radio" name="terminus-code-y" value="4" onchange="setTerminusSymbol(1,4)"/><img src="assets/code_symbol_4.png"/></label></td>'
+    page += '<td><label><input type="radio" name="terminus-code-y" value="5" onchange="setTerminusSymbol(1,5)"/><img src="assets/code_symbol_5.png"/></label></td>'
+    page += '</tr></table></div><br/>'
+    page += '<div><table class="terminus-code-group"><tr>'
+    page += '<td><label for="terminus-code-z">Z: </label></td>'
+    page += '<td><label><input type="radio" name="terminus-code-z" value="0" onchange="setTerminusSymbol(2,0)"/><img src="assets/code_symbol_0.png"/></label></td>'
+    page += '<td><label><input type="radio" name="terminus-code-z" value="1" onchange="setTerminusSymbol(2,1)"/><img src="assets/code_symbol_1.png"/></label></td>'
+    page += '<td><label><input type="radio" name="terminus-code-z" value="2" onchange="setTerminusSymbol(2,2)"/><img src="assets/code_symbol_2.png"/></label></td>'
+    page += '<td><label><input type="radio" name="terminus-code-z" value="3" onchange="setTerminusSymbol(2,3)"/><img src="assets/code_symbol_3.png"/></label></td>'
+    page += '<td><label><input type="radio" name="terminus-code-z" value="4" onchange="setTerminusSymbol(2,4)"/><img src="assets/code_symbol_4.png"/></label></td>'
+    page += '<td><label><input type="radio" name="terminus-code-z" value="5" onchange="setTerminusSymbol(2,5)"/><img src="assets/code_symbol_5.png"/></label></td>'
+    page += '</tr></table></div><br/>'
+
+    page += '<p class="terminus-code-output-line">Calculated code: <span id="terminus-code-output" class="accent-text">(Select all 3 symbols)</span></p>'
+
+    return page
+}
+
+function setTerminusSymbol(letter, symbol) {
+    if(letter >= 0 && letter < 3 && symbol >= 0 && symbol < 6)
+        terminusSymbols[letter] = symbol
+    else
+        terminusSymbols = [-1, -1, -1]
+
+    updateTerminusCode()
+}
+
+let terminusSymbols = [-1, -1, -1]
+function updateTerminusCode() {
+    let output = '(Select all 3 symbols)'
+
+    let nums = [-1, -1, -1]
+    let error = false
+
+    for(let i=0; i<3; i++) {
+        if(terminusSymbols[i] === 0)
+            nums[i] = 0
+        else if(terminusSymbols[i] === 1)
+            nums[i] = 11
+        else if(terminusSymbols[i] === 2)
+            nums[i] = 10
+        else if(terminusSymbols[i] === 3)
+            nums[i] = 22
+        else if(terminusSymbols[i] === 4)
+            nums[i] = 21
+        else if(terminusSymbols[i] === 5)
+            nums[i] = 20
+        else
+            error = true
+    }
+
+    if(!error) {
+        output = '| '
+            + formatTerminusCodeNum(Math.abs(2*nums[0]+11)) + ' | '
+            + formatTerminusCodeNum(Math.abs(2*nums[2]+nums[1]-5)) + ' | '
+            + formatTerminusCodeNum(Math.abs(nums[1]+nums[2]-nums[0])) + ' |'
+    }
+
+    document.getElementById('terminus-code-output').innerHTML = output
+}
+
+function formatTerminusCodeNum(num) {
+    return num.toString().padStart(2,'0')
 }
 
 function setGorodValve(type, location) {
