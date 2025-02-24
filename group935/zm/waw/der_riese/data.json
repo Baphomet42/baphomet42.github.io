@@ -1,0 +1,189 @@
+{
+    "id": "waw/der_riese",
+    "name": "Der Riese",
+    "background": "https://callofdutymaps.com/wp-content/uploads/worldatwwarderriese43.jpg",
+    "style": "ultimis",
+    "rev": 2,
+    "wip": true,
+    "maps": [{"img": "https://callofdutymaps.com/wp-content/uploads/derrieseloadscreen.jpg"}],
+    "sections" : [
+        {
+            "header": "Map Features",
+            "subsections": [
+                {
+                    "header": "Power Switch",
+                    "description": "Located below the drawbridge.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Power switch location"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Pack-a-Punch",
+                    "description": "Interact with all 3 teleporters to unlock PaP. After interacting with a teleporter, you have a short time to interact with the mainframe.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Teleporter mainframe"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Teleporter A"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Teleporter B"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Teleporter C"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Unlocked Pack-a-Punch machine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Perk Machines",
+                    "description": "The machines are randomized each game. (TODO)",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Quick Revive - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Double Tap Root Beer - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Speed Cola - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Juggernog - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Mule Kick (Black Ops only) - TODO"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Song",
+            "subsections": [
+                {
+                    "header": "Beauty of Annihilation",
+                    "description": "Interact with 3 jars.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 1 - outside Teleporter A, on a desk"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 2 - outside Teleporter A, on a shelf"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 3 - in the side room from Teleporter B, on a desk"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Side Easter Eggs",
+            "subsections": [
+                {
+                    "header": "Fly Trap",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Shoot the fly trap panel with a PaP weapon",
+                                "description": "The panel is located stage-left of the teleporter mainframe, outside a barrier."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "The panel seen outside the map"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Shoot the 3 hidden objects",
+                                "description": "Three objects will spawn in the map and can be shot in any order with any weapon."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 3 - TODO"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Burning Monkey Bomb",
+                    "description": "If you throw a Monkey Bomb into the furnace, a quote will play. (TODO power-up note)",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Monkey Bomb being thrown into the furnace"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

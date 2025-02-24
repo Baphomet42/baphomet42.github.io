@@ -1,0 +1,616 @@
+{
+    "id": "bo1/call_of_the_dead",
+    "name": "Call of the Dead",
+    "background": "assets/background.png",
+    "style": "ultimis",
+    "rev": 2,
+    "notice": "The main quest is altered in solo.",
+    "sections" : [
+        {
+            "header": "Map Features",
+            "subsections": [
+                {
+                    "header": "George A. Romero",
+                    "description": "A zombified George Romero will always follow you and can never be fully killed. He will become enraged and sprint whenever he takes damage or if he gets too close to a player. Zombies hit by George will become electrified and cannot be frozen. Bring George into any water to calm him down and stop him from sprinting. George will leave the map for a couple rounds after being shot with a massive amount of firepower, and he will drop a Death Machine power-up and a perk bottle power-up each time. His light will dim as he takes damage.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/1.jpg",
+                                "alt": "George"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/67.jpg",
+                                "alt": "Electrified zombies"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/68.jpg",
+                                "alt": "Calming George in water"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/60.jpg",
+                                "alt": "George leaving after enough damage"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Power Switch",
+                    "description": "Located at the top of the ship.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/4.jpg",
+                                "alt": "Power switch location"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Pack-a-Punch",
+                    "description": "After power is turned on, the Pack-a-Punch machine will randomly appear and disappear throughout the game. The lighthouse will shine a light on the PaP location whenever it's in the map, and the machine has 3 possible locations.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/13.jpg",
+                                "alt": "Pack-a-Punch location 1 - in spawn, next to Quick Revive"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/16.jpg",
+                                "alt": "Pack-a-Punch location 2 - behind the lighthouse, on the way to Stamin-Up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/17.jpg",
+                                "alt": "Pack-a-Punch location 3 - in the ship, down the stairs from Juggernog"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Perk Machines",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/8.jpg",
+                                "alt": "Quick Revive - in spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/14.jpg",
+                                "alt": "Double Tap Root Beer - at the back of the ship"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/6.jpg",
+                                "alt": "Juggernog - near the front of the ship, downstairs near the water"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/7.jpg",
+                                "alt": "Mule Kick - at the front of the ship"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/9.jpg",
+                                "alt": "PhD Flopper - in the building connected to the lighthouse"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/12.jpg",
+                                "alt": "Speed Cola - at the bottom of the ice slide from the lighthouse"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/11.jpg",
+                                "alt": "Stamin-Up - behind the lighthouse in a small building"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/15.jpg",
+                                "alt": "Deadshot Daiquiri - at the top of the lighthouse"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Main Quest (Stand-in / Ensemble Cast)",
+            "description": "The full quest requires 2 or more players, but there is a shorter solo version that has less steps. The solo version will not unlock the Vril Device for the Moon main quest.",
+            "subsections": [
+                {
+                    "header": "Requirements",
+                    "elements": [
+                        {
+                            "full": true,
+                            "bullets": [
+                                "1 player (for Stand-in)",
+                                "2 or more players (for Ensemble Cast)",
+                                "V-R11 (Human Gun) - from Mystery Box"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "header": "1. Knife the Door",
+                    "description": "Go to the lighthouse building and down the stairs from PhD Flopper. When the power is turned on, you will hear the Ultimis characters speaking from behind a metal door. Knife the door, then Richtofen will ask for a fuse.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/18.jpg",
+                                "alt": "Door to melee"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Find a Fuse",
+                    "description": "After Richtofen is done speaking, a fuse will spawn in 1 of 3 locations in the room with PhD Flopper. Pick it up and place it in the fuse box to the right of the metal door.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/72.jpg",
+                                "alt": "Fuse location 1 - on the table next to PhD Flopper"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/19.jpg",
+                                "alt": "Fuse location 2 - on a table across from PhD Flopper"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/61.jpg",
+                                "alt": "Fuse location 3 - on the floor next to a cabinet"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/21.jpg",
+                                "alt": "Location to place fuse"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Deactivate the Security System",
+                    "description": "There are 4 security system power sources around the map that must be exploded. Grenades and other explosive weapons will all work, and the red light will turn off when hit successfully. After all 4 are destroyed, knife the metal door.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/22.jpg",
+                                "alt": "Location 1 - across from the metal door"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/25.jpg",
+                                "alt": "Location 2 - between the halves of the broken ship"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/62.jpg",
+                                "alt": "Location 3 - near Double Tap Root Beer, on the shoreline below the ship"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/27.jpg",
+                                "alt": "Location 4 - through a window behind Stamin-Up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/23.jpg",
+                                "alt": "Destroyed power source with light turned off"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/66.jpg",
+                                "alt": "Door to melee"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "4. Find Vodka for Nikolai (Co-Op Only)",
+                    "description": "There are 4 possible vodka locations around the map, and the vodka bottle will be encased in ice on a railing. One player must melee the ice to drop the bottle, and another player must be standing below it to catch the bottle. If the bottle hits the floor, it will spawn in a new location. After catching the bottle, return it to the metal door. There is a white tube to place the bottle to the left of the metal door. After placing the bottle in the tube, knife the metal door.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/40_edit.jpg",
+                                "alt": "Vodka location 1 - on top of the lighthouse building, to the right of the Mystery Box location",
+                                "disclaimer": "Vodka and ice unpictured"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/41_edit.jpg",
+                                "alt": "Vodka location 2 - on the stairs going from the PhD Flopper room to the top of the lighthouse building",
+                                "disclaimer": "Vodka and ice unpictured"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/43_edit.jpg",
+                                "alt": "Vodka location 3 - on the ship, up the first staircase going from Double Tap Root Beer towards the power room",
+                                "disclaimer": "Vodka and ice unpictured"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/42_edit.jpg",
+                                "alt": "Vodka location 4 - on the bridge connecting the two halves of the ship",
+                                "disclaimer": "Vodka and ice unpictured"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/36.jpg",
+                                "alt": "Location to place vodka bottle"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/66.jpg",
+                                "alt": "Door to melee"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "5. Set the Dials (Co-Op Only)",
+                    "description": "In the lighthouse, there are 4 dials with numbers from 0 to 9, with one dial on each level. From bottom to top, the dials are colored purple, blue, orange, and yellow. Interacting with one dial will also move the dials above and below by 1 number. The dials start randomized, but the following steps will set them all correctly. The correct order, from bottom to top, is 6 4 7 2.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/55.jpg",
+                                "alt": "Purple dial"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/54.jpg",
+                                "alt": "Blue dial"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/53.jpg",
+                                "alt": "Orange dial"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/52.jpg",
+                                "alt": "Yellow dial"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "i. Set the purple dial to 6"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "ii. Interact on the orange dial until the blue dial is 4",
+                                "description": "Do not interact on the blue dial directly, since it would mess up the purple dial."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "iii. Interact on the yellow dial until the orange dial is 7",
+                                "description": "Do not interact on the orange dial directly, since it would mess up the blue dial."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "iv. Set the yellow dial to 2, then turn the purple dial the same number of times you had to turn the yellow dial"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "v. Set the blue dial back to 4",
+                                "description": "All 4 dials will now be set correctly."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/59.jpg",
+                                "alt": "Purple dial on 6"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/58.jpg",
+                                "alt": "Blue dial on 4"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/57.jpg",
+                                "alt": "Orange dial on 7"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/56.jpg",
+                                "alt": "Yellow dial on 2"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "6. Morse Code Sequence (Co-Op Only)",
+                    "description": "There are 4 morse code radios that must be interacted in the correct order. If a radio is interacted in the wrong order, finish the set of 4, and then start again. To fix the sequence if it's out of sync, interact location 1 twice followed by the other 3 locations, and repeat until successful. When done successfully, a green blinking light will be seen in the sky and a beeping will be heard.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/48.jpg",
+                                "alt": "Radio 1 - in the ship, down the stairs from the power room and on some equipment"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/49.jpg",
+                                "alt": "Radio 2 - next to Stamin-Up, on a canister"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/50.jpg",
+                                "alt": "Radio 3 - to the right of the zipline after going from the lighthouse to the ship"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/51.jpg",
+                                "alt": "Radio 4 - under the stairs going from PhD Flopper to the metal door"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/63.jpg",
+                                "alt": "Blinking light in the sky"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "7. Control the Ship",
+                    "description": "Go to the power room in the ship. Interact on the steering wheel until the brown handle is facing down and to the right. There are 3 levers to the right of the steering wheel. Interact with the left lever 1 time and the right lever 3 times. After this is done, the beeping and blinking light will stop, and a submarine will surface near the front half of the ship.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/30.jpg",
+                                "alt": "Steering wheel and 3 levers"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/64.jpg",
+                                "alt": "Submarine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "8. Activate 4 Foghorns (Co-Op Only)",
+                    "description": "After the previous steps are completed, a submarine will come out of the water and 4 horns will be heard. There are 4 foghorns that must be interacted in the correct order to match the horn sequence. They can only be interacted while the map is foggy. If done incorrectly, or if you run out of time, wait until the next round when the submarine plays the horn sequence again. When done successfully, the submarine will shine a green light at the lighthouse.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/44.jpg",
+                                "alt": "Foghorn 1 - by the water between the lighthouse and ship"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/45.jpg",
+                                "alt": "Foghorn 2 - by the exit to the ice slide near Speed Cola"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/46.jpg",
+                                "alt": "Foghorn 3 - outside the lighthouse, by the stairs that go to the building with the metal door"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/47.jpg",
+                                "alt": "Foghorn 4 - by a rock before the dropoff going from the ice slide to the lighthouse"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/31.jpg",
+                                "alt": "Submarine shining a green light on the lighthouse"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "9. Aquire the Vril Device",
+                    "description": "If the previous steps are all done correctly, a green light will be shining down the center of the lighthouse stairs. Go near the lighthouse and turn a zombie into a human using the V-R11. Follow him inside the lighthouse, and he will start floating up in the center of the stairs. Shoot him until he gets downed, then wait for his corpse to reach the top of the lighthouse. The Vril Device will drop all the way down to the bottom and can be interacted to pick up.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/65.jpg",
+                                "alt": "Green light in the lighthouse"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/32.jpg",
+                                "alt": "Zombie turned human with the V-R11"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/33.jpg",
+                                "alt": "Human floating up in the lighthouse"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/34.jpg",
+                                "alt": "Corpse floating up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/35.jpg",
+                                "alt": "Location to get Vril Device"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "10. Give the Vril Device to Richtofen",
+                    "description": "To the left of the metal door, there is a white tube. Interact to place the Vril Device.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/36.jpg",
+                                "alt": "Location to place Vril Device"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "11. Knife the Fuse Box",
+                    "description": "After the quote is done playing, the fuse box will begin sparking. Knife the fuse box to fix it and complete the main quest. A Wunderwaffe DG-2 power-up will spawn in front of the door, and all players will unlock either the solo or co-op achievement. For all future games, killing George will drop a Wunderwaffe DG-2 power-up instead of a Death Machine power-up.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/37.jpg",
+                                "alt": "Fuse box to knife"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/38.jpg",
+                                "alt": "Wunderwaffe DG-2 power-up"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Song",
+            "subsections": [
+                {
+                    "header": "Not Ready to Die",
+                    "description": "Interact with 3 Element 115 meteorites.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/2.jpg",
+                                "alt": "Location 1 - in spawn, on a canister near the tunnel to the lighthouse"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/5.jpg",
+                                "alt": "Location 2 - in the ship, on a booth seat a few levels below the power switch"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/10.jpg",
+                                "alt": "Location 3 - in the lighthouse building, under a table across from PhD Flopper"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Side Easter Eggs",
+            "subsections": [
+                {
+                    "header": "V-R11 Side Effects",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Shooting George",
+                                "description": "George can be temporarily calmed for a few seconds by being shot with the V-R11, but will then become enraged again. Using the PaP V-R11 on George while he's standing in water will make him temporarily leave the map, but he won't drop any power-ups."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/69.jpg",
+                                "alt": "Temporarily calming George with the V-R11"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/70.jpg",
+                                "alt": "George leaving from the PaP V-R11"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Shooting a Player",
+                                "description": "Shooting the V-R11 at another player will cause zombies to ignore them for a few seconds. The PaP V-R11 will also give the player an insta-kill effect during this time."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Stuntman Explosion",
+                                "description": "Shooting a zombie with the PaP V-R11 and then shooting the human 2 more times will cause a large explosion and grant the 'Stuntman' achievement."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/71.jpg",
+                                "alt": "Explosion from PaP V-R11"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Avenged Sevenfold Poster",
+                    "description": "The members of A7X can be seen on a Soviet propaganda poster in the room below PhD Flopper.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/20.jpg",
+                                "alt": "Shadows, Vengeance, Gates, Christ, and The Rev"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

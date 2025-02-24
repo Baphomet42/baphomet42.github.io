@@ -1,0 +1,352 @@
+{
+    "id": "bo1/ascension",
+    "name": "Ascension",
+    "background": "assets/background.png",
+    "style": "ultimis",
+    "rev": 2,
+    "notice": "The main quest requires 4 players.",
+    "wip": true,
+    "sections" : [
+        {
+            "header": "Map Features",
+            "subsections": [
+                {
+                    "header": "Power Switch",
+                    "description": "Located all the way upstairs.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/1.jpg",
+                                "alt": "Power switch location"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Landers",
+                    "description": "There are 4 Lander locations around the map that can be used to fly to a different location.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/9.jpg",
+                                "alt": "Location 1 - in spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/10.jpg",
+                                "alt": "Location 2 - near Widow's Wine (or PhD Flopper in Black Ops)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/11.jpg",
+                                "alt": "Location 3 - past Stamin-Up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/12.jpg",
+                                "alt": "Location 4 - past Speed Cola"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Pack-a-Punch",
+                    "description": "Use a Lander to travel from all 3 locations back to spawn. Then, interact on a button near the power switch to activate the launch sequence. After the rocket is gone, the blast doors will open that lead to Pack-a-Punch.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/13.jpg",
+                                "alt": "Button to activate launch sequence"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/14.jpg",
+                                "alt": "Open blast doors"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/15.jpg",
+                                "alt": "Pack-a-Punch machine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Perk Machines",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/2.jpg",
+                                "alt": "Quick Revive - in spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/4.jpg",
+                                "alt": "Widow's Wine (or PhD Flopper in Black Ops) - near the Lander to the right out the top door of spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/5.jpg",
+                                "alt": "Juggernog - a few levels below the power switch"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/8.jpg",
+                                "alt": "Stamin-Up - on the way to the Lander to the left out the top door of spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/7.jpg",
+                                "alt": "Mule Kick - between the power switch and the Lander upstairs"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/6.jpg",
+                                "alt": "Speed Cola - near the Lander upstairs"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/3.jpg",
+                                "alt": "Der Wunderfizz (Black Ops III only) - to the right out the top door of spawn"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Main Quest (Casimir Mechanism)",
+            "subsections": [
+                {
+                    "header": "Requirements",
+                    "elements": [
+                        {
+                            "full": true,
+                            "bullets": [
+                                "4 players in the lobby",
+                                "Gersh Device - from Mystery Box",
+                                "Matryoshka Dolls - from Mystery Box",
+                                "Pack-a-Punched Thunder Gun",
+                                "Black Ops 1 only - Pack-a-Punched Ray Gun",
+                                "Black Ops III only - 2 players with Pack-a-Punched Ray Gun Mark II"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "header": "",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Song",
+            "subsections": [
+                {
+                    "header": "Abracadavre",
+                    "description": "Interact with 3 teddy bears.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/16.jpg",
+                                "alt": "Location 1 - on the catwalk in spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/18.jpg",
+                                "alt": "Location 2 - outside a gate by the Stamin-Up Lander"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/17.jpg",
+                                "alt": "Location 3 - on a wall near the Speed Cola Lander"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Side Easter Eggs",
+            "subsections": [
+                {
+                    "header": "Blow Up the Rocket",
+                    "description": "As the rocket is launching, shoot it with a powerful weapon like the Ray Gun. It will explode, and a power-up will be sitting beneath it.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/23.jpg",
+                                "alt": "Exploded rocket"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/37.jpg",
+                                "alt": "Power-up behind the blast doors"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Ultimis Matryoshka Dolls",
+                    "description": "There are 4 Ultimis Matryoshka dolls around the map that can be interacted to play a quote.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/19.jpg",
+                                "alt": "Takeo doll, next to Widow's Wine (or PhD Flopper in Black Ops)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/22.jpg",
+                                "alt": "Richtofen doll, on a desk in the room above Juggernog"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/21.jpg",
+                                "alt": "Dempsey doll, near the Stamin-Up Lander by a wall-buy"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/20.jpg",
+                                "alt": "Nikolai doll, next to Speed Cola"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Red Phones",
+                    "description": "There are 3 red phones that can be interacted while ringing to play a quote.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/24.jpg",
+                                "alt": "Phone in spawn - rings after playing Abracadavre"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/26.jpg",
+                                "alt": "Phone by Widow's Wine (or PhD Flopper in Black Ops) - rings after getting a Ray Gun from the Mystery Box"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/25.jpg",
+                                "alt": "Phone near Mule Kick - rings during a Fire Sale"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Hide and Seek",
+            "description": "Play Samantha's Sorrow and get a Max Ammo (Black Ops III only)",
+            "subsections": [
+                {
+                    "header": "1. Throw a Gersh Device at 3 Samantha Dolls",
+                    "description": "The dolls must be collected in the following order.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/27.jpg",
+                                "alt": "Doll 1 - under Pack-a-Punch"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/28.jpg",
+                                "alt": "Doll 2 - on the wall of the building with the power switch"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/29.jpg",
+                                "alt": "Doll 3 - above some pipes near Stamin-Up"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Hide and Seek",
+                    "description": "Interact with a Samantha doll outside the blast doors by a small fire. A particle effect will show the game has started. Then, find and shoot 5 Samantha dolls around the map. They will play a song when you get close, and only 1 will be in the map at a time. If you run out of time, Samantha will laugh, and you have to start the game again at the original doll.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/30.jpg",
+                                "alt": "The doll to start hide and seek"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/31.jpg",
+                                "alt": "Location 1 - in the area between PaP and the Widow's Wine Lander"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/32.jpg",
+                                "alt": "Location 2 - outside the upper door from spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/33.jpg",
+                                "alt": "Location 3 - below the pipes from the 3rd Samantha Doll that was collected with a Gersh Device"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/34.jpg",
+                                "alt": "Location 4 - on the ground near the Stamin-Up Lander"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/35.jpg",
+                                "alt": "Location 5 - just above the 4th location"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Interact with the First Doll",
+                    "description": "Go back to the original doll and interact again. This time, you'll get a Max Ammo and the song will play.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/36.jpg",
+                                "alt": "The doll to get the Max Ammo and song"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

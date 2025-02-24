@@ -1,0 +1,276 @@
+{
+    "id": "bo1/kino_der_toten",
+    "name": "Kino der Toten",
+    "background": "assets/background.png",
+    "style": "ultimis",
+    "rev": 2,
+    "maps": [{"img": "assets/map1.png"}],
+    "sections" : [
+        {
+            "header": "Map Features",
+            "subsections": [
+                {
+                    "header": "Power Switch",
+                    "description": "Located on the Stage.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/5.jpg",
+                                "alt": "Power switch location"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Pack-a-Punch",
+                    "description": "Interact with the teleporter on the Stage, then interact with the mainframe in the Lobby to link the teleporters. Use the teleporter on the Stage to teleport to Pack-a-Punch. The telporters must be linked each time before teleporting, and there is a cooldown before it can be linked again.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/12.jpg",
+                                "alt": "Teleporter"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/13.jpg",
+                                "alt": "Teleporter mainframe"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/14.jpg",
+                                "alt": "PaP machine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Perk Machines",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/1.jpg",
+                                "alt": "Quick Revive - in the Lobby"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/3.jpg",
+                                "alt": "Speed Cola - out the Dressing Room door away from the Stage"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/6.jpg",
+                                "alt": "Juggernog - in the Theater near the door going to the Lobby"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/7.jpg",
+                                "alt": "Double Tap Root Beer - in the Alley"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/2.jpg",
+                                "alt": "Mule Kick - through the top door in the Lobby"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/4.jpg",
+                                "alt": "Der Wunderfizz (Black Ops III only) - on the Stage"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Song",
+            "subsections": [
+                {
+                    "header": "115",
+                    "description": "Interact with 3 Element 115 meteorites.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/8.jpg",
+                                "alt": "Location 1 - in the Lobby, between the stairs"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/9.jpg",
+                                "alt": "Location 2 - in the Dressing Room, between 2 lockers"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/10.jpg",
+                                "alt": "Location 3 - in the room above the Alley, on a shelf"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Side Easter Eggs",
+            "subsections": [
+                {
+                    "header": "Portrait Quotes",
+                    "description": "Interact on a portrait to play a quote. Each player has different quotes for each portrait.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/11.jpg",
+                                "alt": "The portraits, near Mule Kick"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Rocket Launch",
+                    "description": "Jump in front of a specific mannequin in the Dressing Room 5 times to enable the rocket. The jumps must be at least a second apart, all in a row, and directly in front of the mannequin. Interact with the rocket in one of the temporary teleportation rooms to launch it.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/17.jpg",
+                                "alt": "The mannequin"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/16.jpg",
+                                "alt": "The rocket launching into the air"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Film Reels",
+                    "description": "There are 3 film reels that can be found in the rooms you are momentarily teleported to. Interact to pick up, then interact on the projecter in the Pack-a-Punch room to play the reel.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/18.jpg",
+                                "alt": "One of the reels"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/15.jpg",
+                                "alt": "Location to place the reel"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Hide and Seek",
+            "description": "Play Samantha's Sorrow and get a Max Ammo (Black Ops III only)",
+            "subsections": [
+                {
+                    "header": "1. Knife the Door Pattern",
+                    "description": "Every few minutes, a knocking pattern will be heard from the blue door in the Alley. The knocking will represent 3 numbers, with brief pauses between them. You must immediately knife the door in the same pattern. If you mess up, there will be 6 rapid knocks followed by silence. If you succeed, a new pattern will be knocked immediately. You must successfully match the knocking patterns 3 times in a row.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/19.jpg",
+                                "alt": "The door"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Hide and Seek",
+                    "description": "Interact with a Samantha doll on the right of the stairs leading to the Stage. A particle effect will show the game has started. Then, find and shoot 5 Samantha dolls around the map. They will play a song when you get close, and only 1 will be in the map at a time. If you run out of time, Samantha will laugh, and you have to start the game again at the original doll.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/27.jpg",
+                                "alt": "The doll to start hide and seek"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/29.jpg",
+                                "alt": "Location 1 - in a seat in the front row, stage left"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/21.jpg",
+                                "alt": "Location 2 - above the original doll"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/22.jpg",
+                                "alt": "Location 3 - in a seat towards Juggernog"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/25.jpg",
+                                "alt": "Location 4 - to the right of Juggernog"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/24.jpg",
+                                "alt": "Location 5 - by a barrier in front of the seats, stage right"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/28.jpg",
+                                "alt": "Location 6 - on a wooden beam on the Stage"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/26.jpg",
+                                "alt": "Location 7 - on a catwalk outside of the Dressing Room"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/23.jpg",
+                                "alt": "Location 8 - in the window to the projector room"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/30.jpg",
+                                "alt": "Location 9 - above the seats on a light, stage left"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/20.jpg",
+                                "alt": "Location 10 - hanging from the main chandelier"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Interact with the First Doll",
+                    "description": "Go back to the original doll and interact again. This time, you'll get a Max Ammo and the song will play.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/31.jpg",
+                                "alt": "The doll to get the Max Ammo and song"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

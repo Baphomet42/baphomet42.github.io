@@ -1,0 +1,216 @@
+{
+    "id": "waw/verruckt",
+    "name": "Verrückt",
+    "background": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/581450/ss_8857a9e4d476e725d7de18253c99193aa0a89bc4.1920x1080.jpg",
+    "style": "ultimis",
+    "rev": 2,
+    "maps": [{"img": "https://callofdutymaps.com/wp-content/uploads/verrucktloadscreen.jpg"}],
+    "sections" : [
+        {
+            "header": "Map Features",
+            "subsections": [
+                {
+                    "header": "Power Switch",
+                    "description": "Located upstairs.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/2.jpg",
+                                "alt": "Power switch location"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Perk Machines",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/8.jpg",
+                                "alt": "Quick Revive - bottom floor by the morgue"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/6.jpg",
+                                "alt": "Juggernog - bottom floor by the operation chair"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/7.jpg",
+                                "alt": "Speed Cola - upstairs on the Quick Revive side"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/4.jpg",
+                                "alt": "Double Tap Root Beer - upstairs on the Juggernog side"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/5.jpg",
+                                "alt": "Mule Kick (Black Ops & Black Ops III only) - down the stairs from Speed Cola"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/3.jpg",
+                                "alt": "Der Wunderfizz (Black Ops III only) - upstairs, between the power switch and toilets"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Song",
+            "subsections": [
+                {
+                    "header": "Lullaby for a Deadman",
+                    "description": "Flush the left toilet 3 times.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/9.jpg",
+                                "alt": "The toilet, upstairs near the power room"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Side Easter Eggs",
+            "subsections": [
+                {
+                    "header": "Operation Chair",
+                    "description": "Interact on the wheel on an operation chair to hear a sound effect.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/1.jpg",
+                                "alt": "The wheel, bottom floor by Juggernog"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "MG 42",
+                    "description": "Under the map below the fountain, there is an MG 42 with disembodied hands.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/16.jpg",
+                                "alt": "MG 42"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Hide and Seek",
+            "description": "Play Samantha's Sorrow and get a Max Ammo (Black Ops III only)",
+            "subsections": [
+                {
+                    "header": "1. Flush 935",
+                    "description": "Going from the right toilet to the left, flush 9 times, 3 times, and then 5 times.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/10.jpg",
+                                "alt": "The toilets, near the power room"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Hide and Seek",
+                    "description": "Interact with a Samantha doll by Der Wunderfizz. A particle effect will show the game has started. Then, find and shoot 5 Samantha dolls around the map. They will play a song when you get close, and only 1 will be in the map at a time. If you run out of time, Samantha will laugh, and you have to start the game again at the original doll.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/11.jpg",
+                                "alt": "The doll to start hide and seek"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/12.jpg",
+                                "alt": "Location 1 - bottom floor near Quick Revive, on a morgue tray in the wall"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/13.jpg",
+                                "alt": "Location 2 - bottom floor near Juggernog, on the operation chair"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/14.jpg",
+                                "alt": "Location 3 - bottom floor near Mule Kick, on the ceiling through a barrier"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/17.jpg",
+                                "alt": "Location 4 - on the fountain"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/18.jpg",
+                                "alt": "Location 5 - up the stairs from Juggernog, on a mannequin"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/20.jpg",
+                                "alt": "Location 6 - upstairs, in a toilet near the power room"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/19.jpg",
+                                "alt": "Location 7 - through a barrier down the stairs in the power room"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/15.jpg",
+                                "alt": "Location 8 - upstairs, in a pot outside the power room"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/21.jpg",
+                                "alt": "Location 9 - upstairs near Speed Cola, through a window"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/22.jpg",
+                                "alt": "Location 10 - upstairs above Mule Kick, through a hole in the ceiling"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Interact with the First Doll",
+                    "description": "Go back to the original doll and interact again. This time, you'll get a Max Ammo and the song will play.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/23.jpg",
+                                "alt": "The doll to get the Max Ammo and song"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

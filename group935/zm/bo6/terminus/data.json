@@ -1,0 +1,1105 @@
+{
+    "id": "bo6/terminus",
+    "name": "Terminus",
+    "background": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/bo6/BO6-ZOMBIES-888-001.jpg",
+    "style": "dark_aether",
+    "rev": 2,
+    "wip": true,
+    "maps": [{"img": "assets/maps.jpg", "link": "https://callofduty.fandom.com/wiki/Terminus_(Zombies)?file=Terminus+MiniMap+BO6.png"}],
+    "sections" : [
+        {
+            "header": "Map Features",
+            "subsections": [
+                {
+                    "header": "Power",
+                    "description": "Turn on 3 AMP Generators and defend each one until it stays powered on. Each generator supplies power to part of the map.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/9.jpg",
+                                "alt": "Location 1 - spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/90.jpg",
+                                "alt": "Location 2 - by Juggernog"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/23.jpg",
+                                "alt": "Location 3 - Bio Lab"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Pack-a-Punch",
+                    "description": "After turning on power, dive into the water and resurface the Inclined Lift.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/1.jpg",
+                                "alt": "Inclined Lift under water"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/2.jpg",
+                                "alt": "Pack-a-Punch machine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Digging",
+                    "description": "All around the map there are small piles of dirt and skulls that you can dig for rewards. Each player must first find a shovel around the map, then they can dig unlimited piles.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/14.jpg",
+                                "alt": "Shovel"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/20.jpg",
+                                "alt": "Dig pile"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Underwater Loot Crates",
+                    "description": "Each game, 10 loot crates will spawn underwater in 16 set locations. Each crate will give some loot when interacted, and a Random Perk power-up will spawn after all 10 are interacted. There are 4 possible spawns in the Bio Lab (2 near Melee Macchiato, and 1 in each water tunnel), 4 around Crab Island, 3 around the Shipwreck, 3 around Temple Island, and 2 around Castle Rock Island.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/92.jpg",
+                                "alt": "A loot crate with a shining green light"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Armory",
+                    "description": "Loot Keys will occasionally drop from enemies and can be exchanged for loot.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/11.jpg",
+                                "alt": "Location to enter the Armory, near Stamin-Up"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Exfil",
+                    "description": "The radio is located by Stamin-Up, and the exfil location will be Temple Island (if open).",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/29.jpg",
+                                "alt": "Exfil radio"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Level III Armor Vest",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/3.jpg",
+                                "alt": "Location 1 - Bio Lab"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/68.jpg",
+                                "alt": "Location 2 - Crab Island"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Perk Machines",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/10.jpg",
+                                "alt": "Stamin-Up - by spawn, through the door by the AMP Generator"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/8.jpg",
+                                "alt": "Quick Revive - by spawn, down the stairs from the AMP Generator"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/7.jpg",
+                                "alt": "Juggernog - at the top of the Inclined Lift"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/5.jpg",
+                                "alt": "Elemental Pop - in the Sea Tower"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/12.jpg",
+                                "alt": "Deadshot Daiquiri - on the way from Juggernog to Speed Cola"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/19.jpg",
+                                "alt": "PhD Flopper - in the Mining Tunnels"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/21.jpg",
+                                "alt": "Speed Cola - in the Sea Caves"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/15.jpg",
+                                "alt": "Melee Macchiato - in Bio Lab"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/111.jpg",
+                                "alt": "Der Wunderfizz - on the Shipwreck at the bow (spawns at the start of round 25)"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Fish",
+            "description": "Groups of fish spawn around the map and can be killed for loot. The fish can then be fried for extra rewards.",
+            "subsections": [
+                {
+                    "header": "Fish Loot",
+                    "description": "Fish can spawn all around the map, often seen in shallow water next to land where you can walk. Killing fish is easiest done using explosives or a Ray Gun, and some loot will drop for each killed fish. If 50 fish have been killed in the game, you will instantly be given all the perks.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/47.jpg",
+                                "alt": "Fish swimming around the Docks"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/99.jpg",
+                                "alt": "Loot from fish"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Frying Fish",
+                    "description": "There are 2 pans in the Mess Hall (between Deadshot Daiquiri and Juggernog) that can be used to fry fish. Interact on the oil next to the pans to pick it up, then interact on a pan to place the oil. For each fish killed in the game, it will be added to a hidden inventory (you do not need to interact on the dead fish). A fish can be added to a frying pan after the oil is added. On the next round, the fish can be eaten. If the fish sits for an additional round, it will burst into flames and damage you if you try to eat it.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/24_edit.jpg",
+                                "alt": "Cooking Oil, to the right of the pans"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/107.jpg",
+                                "alt": "Pans to fry fish"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/109.jpg",
+                                "alt": "Fish frying in oil"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/102.jpg",
+                                "alt": "Burnt fish"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Special Ingredients",
+                    "description": "After placing a fish in a pan, you may add 1 to 5 ingredients to temporarily upgrade the corresponding Ammo Mod upon eating the fish (this will unlock the Culinary Delight achievement). The upgraded Ammo Mods will trigger their effect every time. Interact on an ingredient to pick it up, then interact on the frying fish to add it. The ingredients always spawn in the same locations, and will respawn later in the game to be used again.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/100_edit.jpg",
+                                "alt": "Beans (Napalm Burst) - in the Mess Hall, between some crates"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/26_edit.jpg",
+                                "alt": "Purple plant (Shadow Rift) - outside the Mess Hall, by some stairs leading towards Quick Revive"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/28_edit.jpg",
+                                "alt": "Snowball (Cryo Freeze) - upstairs in the building with Juggernog, on top of a fridge"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/91_edit.jpg",
+                                "alt": "Battery (Dead Wire) - in the room between Juggernog and Elemental Pop, just beneath the purple arrow"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/16_edit.jpg",
+                                "alt": "Brain (Brain Rot) - in Bio Lab, just through the entrance from the Speed Cola cave"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/121.jpg",
+                                "alt": "Frying a fish with all 5 added ingredients"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Dr. Peck Bribe Refund",
+                    "description": "If Dr. Peck was bribed for the Beamsmasher calibrator code, you can give him a fried fish to refund the 5000 points. After frying a fish with no added ingredients, there will be a prompt to either 'take fried fish' or 'eat fried fish'. Take the fish and give it to Dr. Peck using the same box as the bribe money.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/120.jpg",
+                                "alt": "Giving fried fish to Dr. Peck"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Cursed Talisman",
+            "description": "Complete a quest from Captain Gregg to get some loot and a special Cursed Talisman item that permanently doubles points (with a cost). This will unlock the Treasure Hunter achievement.",
+            "subsections": [
+                {
+                    "header": "1. Find the treasure map",
+                    "description": "Use Melee Macchiato in the Speed Cola cave to break some rocks.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/45.jpg",
+                                "alt": "Rocks to punch"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Retrieve the watch",
+                    "description": "Use the red X on the treasure map to find the location of the watch around Terminus Island. The spawn location is randomized each game, but will always be underwater. Pick up the watch and give it to Captain Gregg (the skeleton in the cave).",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/49.jpg",
+                                "alt": "Treasure map with red X"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/50.jpg",
+                                "alt": "Watch under the water"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Collect the 3 coins",
+                    "description": "After Captain Gregg is done talking, there will be 3 new red X's on the map. Each red X marks a skeleton around the map, and the locations are the same every game. Bring Molotovs or Thermo Grenades to each location and throw one at the skeleton. This will spawn an H.V.T. that must be killed to collect a coin. After picking up the Cursed Coin, your screen will glow purple until you return the coin to Captain Gregg (you can wait and return all 3 at once or return each coin after retrieving it).",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/51.jpg",
+                                "alt": "Map showing 3 locations"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/41.jpg",
+                                "alt": "Location 1 - on the Shipwreck, at the base of the mast"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/66.jpg",
+                                "alt": "Location 2 - on Temple Island, laying on some stone"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/70.jpg",
+                                "alt": "Location 3 - on Castle Rock Island, by a lantern"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/53.jpg",
+                                "alt": "H.V.T."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/54.jpg",
+                                "alt": "Cursed Coin"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "4. Return the coins",
+                    "description": "Give the 3 coins to Captain Gregg to get some loot. The final step will now be available after 3 rounds.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/71.jpg",
+                                "alt": "Loot from Captain Gregg"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/72.jpg",
+                                "alt": "Map showing final location"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "5. Find the treasure chest",
+                    "description": "3 rounds after the previous step, Crab Island will become stormy and continuously struck by lightning. The lightning will go away after some time, and will only return every 3-4 rounds until the treasure is found. While the island is storming, find and interact on the treasure chest to get a Cursed Talisman. With the Talisman equipped, kills will be worth twice as many points, but you will lose some points each time you get hit. You can return the Talisman back into the chest to remove the effect or give it to another player. A Dark Ops challenge can be unlocked for getting 25k points without taking any damage, while holding the Talisman.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/122.jpg",
+                                "alt": "Crab Island being struck by lightning"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/123.jpg",
+                                "alt": "Treasure chest to interact during storm"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/124.jpg",
+                                "alt": "Cursed Talisman"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "DRI-11 Beamsmasher",
+            "subsections": [
+                {
+                    "header": "1. Shock the electric boxes",
+                    "description": "5 electric boxes must be shot using a gun with Dead Wire. After the final box is shot, a door will open to the Beamsmasher room.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/76_edit.jpg",
+                                "alt": "Location 1 - in a room seen when moving on the Inclined Lift and facing away from the PaP machine"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/78.jpg",
+                                "alt": "Location 2 - on the wall when moving on the Inclined Lift and facing left (from the perspective of moving upwards)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/56.jpg",
+                                "alt": "Location 3 - on the wall at the top of the Inclined Lift"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/57.jpg",
+                                "alt": "Location 4 - above the AMP Generator next to Juggernog"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/58.jpg",
+                                "alt": "Location 5 - just outside the Juggernog room by a locked door"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/93.jpg",
+                                "alt": "Opened door"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Collect the EMF Fob",
+                    "description": "Enter the Beamsmasher room and kill the zombie stuck under the bookshelf. It will drop the part to pick up.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/94.jpg",
+                                "alt": "Zombie to kill"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/95.jpg",
+                                "alt": "EMF Fob"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Collect the Multiphasic Resonator",
+                    "description": "Next to Elemental Pop is a briefcase with a hand attached. Open the briefcase and pick up the part. A large group of Vermin will spawn after the briefcase is opened.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/60.jpg",
+                                "alt": "The briefcase"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/61.jpg",
+                                "alt": "Multiphasic Resonator"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "4. Interact with 3 laptops",
+                    "description": "There are 3 laptops labelled 'X', 'Y', and 'Z'. All 3 must be interacted in any order, and each will show a randomized symbol to correspond with the labelled letter. The 3 letters and their matching symbols will be displayed on notes in the Beamsmasher room after interacting with the laptops, so there is no need to memorize them.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/30.jpg",
+                                "alt": "Location 1 - near Quick Revive"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/31.jpg",
+                                "alt": "Location 2 - near Stamin-Up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/13.jpg",
+                                "alt": "Location 3 - between the caves and the Docks"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "5. Enter the code",
+                    "description": "Go back to the Beamsmasher room and interact on the computer. The computer can be interacted again to enter a code. Whiteboards in the back of the room can be used to solve the code depending on the symbols on the laptops. Alternatively, after entering any wrong code, Dr. Peck can be paid 5000 points to reveal the correct code.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/62.jpg",
+                                "alt": "Computer"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/65.jpg",
+                                "alt": "Entering the code into the computer"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "special": "terminus_code"
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/63.jpg",
+                                "alt": "Box to bribe for calibrator code"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/64.jpg",
+                                "alt": "Code from Dr. Peck"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "6. Collect the AMP Munition",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Pick up the Multiphasic Resonator",
+                                "description": "After the previous round has ended, the computer will highlight one of the islands. Pick up the Multiphasic Resonator from the computer, then go to the selected island."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/69.jpg",
+                                "alt": "Selected island and Multiphasic Resonator to pick up"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Feed the orb",
+                                "description": "Interact on the glowing orb to place the Multiphasic Resonator. Wait until it shocks a zombie, then kill the zombie so it drops a small orb of energy. Pick up the smaller orb and bring it to the larger orb, then repeat until the large orb flies away. This must be done twice more on different islands, and the orb will be a different color each time. Remember to pick up the Multiphasic Resonator each time before moving to the next island. After the final orb, the AMP Munition will drop."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/80.jpg",
+                                "alt": "Blue orb on Castle Rock Island"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/82.jpg",
+                                "alt": "Dropped energy orb"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/81.jpg",
+                                "alt": "Carrying the dropped orb to the large orb"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/83.jpg",
+                                "alt": "Orb flying to the next island, leaving the Multiphasic Resonator to pick up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/84.jpg",
+                                "alt": "Green orb on Crab Island"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/85.jpg",
+                                "alt": "Purple orb on Temple Island"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/86.jpg",
+                                "alt": "AMP Munition"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "7. Assemble the DRI-11 Beamsmasher",
+                    "description": "Build at the workbench in the Beamsmasher room.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/73.jpg",
+                                "alt": "Workbench location"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/74.jpg",
+                                "alt": "DRI-11 Beamsmasher"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Main Quest (No Mo' Modi)",
+            "subsections": [
+                {
+                    "header": "Requirements",
+                    "elements": [
+                        {
+                            "full": true,
+                            "bullets": [
+                                "DRI-11 Beamsmasher"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "header": "",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/43.jpg",
+                                "alt": "TODO missing tube on Crab Island near the Shipwreck"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/44.jpg",
+                                "alt": "TODO missing tube in Speed Cola cave"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/59.jpg",
+                                "alt": "TODO missing tube under Sea Tower"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Song",
+            "subsections": [
+                {
+                    "header": "Can You Hear Me? Come In",
+                    "description": "Interact with 3 Mister Peeks headphones.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/6.jpg",
+                                "alt": "Location 1 - outside the door to Juggernog, on a cable drum"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/32.jpg",
+                                "alt": "Location 2 - next to PhD Flopper, on a barrel"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/33.jpg",
+                                "alt": "Location 3 - in Bio Lab, upstairs from the armor wall-buy and sitting on a cabinet"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Side Easter Eggs",
+            "subsections": [
+                {
+                    "header": "Boat Race",
+                    "description": "There are 3 small toy boats around the map, nearby the 3 islands. One of the boats at random will be blinking red, and can be interacted to start a boat racing minigame. The race can be repeated after 5 rounds when a different boat lights up, and once more 5 rounds after the second race.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/128.jpg",
+                                "alt": "Location 1 - at Crab Island, from the beach by the armor wall-buy and around the shore going to the right"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/134.jpg",
+                                "alt": "Location 2 - at Temple Island, out a ways from the Sentinel Artifact fast travel symbol"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/133.jpg",
+                                "alt": "Location 3 - at Castle Rock Island, behind the island not far from the shore"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/116.jpg",
+                                "alt": "Boat racing"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Whac-a-Crab",
+                    "description": "Go to Crab Island and throw an explosive at the crab trap on a cliff. There will now be 4 locations around the island where a group of crabs can be found. Melee one of the crabs on the ground to start a game of Whac-a-Crab. You will receive loot (or grenades) depending on your score, and the 4 locations each have different loot.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/87_edit.jpg",
+                                "alt": "Crab trap to destroy"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/132.jpg",
+                                "alt": "Perk can location - just below where the crab trap was shot"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/129.jpg",
+                                "alt": "Salvage location - up the left hill from the Crafting Table"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/130.jpg",
+                                "alt": "Essence location - in front of the armor wall-buy"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/131.jpg",
+                                "alt": "Gun location - on the beach past the armor wall-buy"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/88.jpg",
+                                "alt": "Whac-a-Crab"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Mega-Stuffy",
+                    "description": "Collect all 6 stuffed animals, in any order, by interacting on them. Then, go to the Living Quarters (by Juggernog) and interact on one of the stuffed animals on the beds. Each stuffed animal will drop some loot, and they will all combine into the Mega-Stuffy. The Mega-Stuffy will last several rounds and can revive players.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/39_edit.jpg",
+                                "alt": "Location 1 (Unicorn) - to the left of Stamin-Up, in a locker"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/4_edit.jpg",
+                                "alt": "Location 2 (Monkey) - at the start of the bridge going from Juggernog to Elemental Pop, on the right"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/17_edit.jpg",
+                                "alt": "Location 3 (Bear) - in Bio Lab, between the armor wall-buy and the Speed Cola cave"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/22_edit.jpg",
+                                "alt": "Location 4 (Elephant) - in the Mining Tunnels with PhD Flopper, under a barrier by the Gobblegum Machine"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/40_edit.jpg",
+                                "alt": "Location 5 (Giraffe) - on Crab Island next to a light, on the right side of the path when coming from the Crafting Table"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/42_edit.jpg",
+                                "alt": "Location 6 (Duck) - on the Shipwreck in a dumpster"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/46.jpg",
+                                "alt": "Stuffed animals on beds"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/77.jpg",
+                                "alt": "Mega-Stuffy"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Satellite Loot",
+                    "description": "Standing on the Gun Platform by the Void Cannon trap, use a weapon with Dead Wire to quickly shoot the 2 blinking blue sparks on 2 antenna towers (they can also be shot from other locations closer to the towers). The antennas will light up red for a short time after being shot successfully, but will both remain red if they are hit fast enough. Then, go to the next round and use the Void Cannon trap, and a satellite will be shot out of the sky (the trap does not have to kill any zombies). Go to Castle Rock Island to find the crash and loot.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/97_edit.jpg",
+                                "alt": "Blue sparks to shoot"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/98.jpg",
+                                "alt": "Both towers red"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/115.jpg",
+                                "alt": "Void Cannon hitting the satellite"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/119.jpg",
+                                "alt": "Crash site on Castle Rock Island"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Zombie Cages Free Perk",
+                    "description": "In Bio Lab, there are some cages containing zombies up above the armor wall-buy, and another group of cages to the left of these. Kill all the zombies in all the cages, then wait a round. Now, kill all the Vermin that spawned in the cages, and do the same thing for the Manglers in the following round. After the Manglers are killed, a Random Perk power-up will be granted.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/36.jpg",
+                                "alt": "Cages with zombies"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/37.jpg",
+                                "alt": "Cages with Vermin"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/38.jpg",
+                                "alt": "Cages with a Mangler"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Oxygen Tank",
+                    "description": "Jump into the water near Pack-a-Punch and destroy a specific rock with an explosive. This can be done easiest using a Frag or C4. All players can now pick up an oxygen tank to extend the time it takes to drown.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/34.jpg",
+                                "alt": "Location to find the rock"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/35_edit.jpg",
+                                "alt": "Rock to explode"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/75.jpg",
+                                "alt": "Oxygen tank"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Island Spores",
+                    "description": "Each round, one of the small islands will have a few spores on it. For 3 rounds straight, shoot every single spore on the island (killing the Parasites is not required). On the 4th round, the spores will now be in the Speed Cola cave, and after destroying them all, you'll get some loot and a Random Perk power-up.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/48.jpg",
+                                "alt": "Spores on an island"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/52.jpg",
+                                "alt": "Spores in the Speed Cola cave on the 4th round"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Basketball",
+                    "description": "There is a basketball on the roof above Juggernog that can be shot at a specific angle to go into a hoop. If it makes a basket, it will drop some loot.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/104.jpg",
+                                "alt": "Box to stand on"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/103.jpg",
+                                "alt": "Where to aim"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/105.jpg",
+                                "alt": "Loot after making a basket"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Haunted Elevator",
+                    "description": "Buy the elevator from spawn to go to Bio Lab, then quickly start jumping until the elevator stutters. The elevator ride will then be spooky.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/79.jpg",
+                                "alt": "Spooky elevator"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Fast Travel",
+                    "description": "There are 2 fast travel locations around the map. Standing in the Void Cannon trap for long enough will teleport you to a random position around the map. The other method requires using the alt fire of the DRI-11 Beamsmasher on a symbol at Temple Island, which will teleport you to spawn.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/25.jpg",
+                                "alt": "Void Cannon"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/89.jpg",
+                                "alt": "Sentinel Artifact symbol on Temple Island"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Pool Table",
+                    "description": "Shoot any pool ball to sink them all. 100 Essence will drop next to the pool table.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/27.jpg",
+                                "alt": "Pool table, upstairs from Juggernog"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Hidden Power-Ups",
+            "description": "There are 8 hidden power-ups around the map that can be shot or exploded to collect.",
+            "subsections": [
+                {
+                    "header": "Max Ammo",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/113_edit.jpg",
+                                "alt": "On the watchtower by spawn, in the window facing away from spawn"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Double Points",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/18_edit.jpg",
+                                "alt": "In Bio Lab, upstairs from the armor wall-buy and sitting on a cabinet (some boxes will be partially covering the power-up and can be shot away)"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Bonus Points",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/126_edit.jpg",
+                                "alt": "On Temple Island, up on a stone wall of the temple"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Max Armor",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/112_edit.jpg",
+                                "alt": "Through a barrier by Quick Revive, inside a pail"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Full Power",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/114_edit.jpg",
+                                "alt": "On another Sea Tower, seen from the Sea Tower with Elemental Pop"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Insta-Kill",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/125_edit.jpg",
+                                "alt": "On the Shipwreck, in the top right window"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Nuke",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/67_edit.jpg",
+                                "alt": "On Crab Island, in a barrier near the armor wall-buy"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Fire Sale",
+                    "description": "Spawns after all 7 other hidden power-ups have been collected.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/127_edit.jpg",
+                                "alt": "Between spawn and Stamin-Up, on a barrel through a barrier"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

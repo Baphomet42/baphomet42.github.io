@@ -5,10 +5,10 @@
             "name": "Black Ops 6",
             "year": 2024,
             "maps": [
-                {"id": "liberty_falls", "name": "Liberty Falls"},
-                {"id": "terminus", "name": "Terminus"},
-                {"id": "citadelle_des_morts", "name": "Citadelle des Morts", "wip": true},
-                {"id": "the_tomb", "name": "The Tomb", "wip": true}
+                {"id": "bo6/liberty_falls", "name": "Liberty Falls"},
+                {"id": "bo6/terminus", "name": "Terminus"},
+                {"id": "bo6/citadelle_des_morts", "name": "Citadelle des Morts", "wip": true},
+                {"id": "bo6/the_tomb", "name": "The Tomb", "wip": true}
             ]
         },
         {
@@ -16,11 +16,11 @@
             "name": "Black Ops Cold War",
             "year": 2020,
             "maps": [
-                {"id": "die_maschine", "name": "Die Maschine", "wip": true},
-                {"id": "firebase_z", "name": "Firebase Z", "wip": true},
-                {"id": "outbreak", "name": "Outbreak", "wip": true},
-                {"id": "mauer_der_toten", "name": "Mauer der Toten", "wip": true},
-                {"id": "forsaken", "name": "Forsaken", "wip": true}
+                {"id": "bocw/die_maschine", "name": "Die Maschine", "wip": true},
+                {"id": "bocw/firebase_z", "name": "Firebase Z", "wip": true},
+                {"id": "bocw/outbreak", "name": "Outbreak", "wip": true},
+                {"id": "bocw/mauer_der_toten", "name": "Mauer der Toten", "wip": true},
+                {"id": "bocw/forsaken", "name": "Forsaken", "wip": true}
             ]
         },
         {
@@ -28,14 +28,14 @@
             "name": "Black Ops 4",
             "year": 2018,
             "maps": [
-                {"id": "voyage_of_despair", "name": "Voyage of Despair", "wip": true},
-                {"id": "ix", "name": "IX", "wip": true},
-                {"id": "blood_of_the_dead", "name": "Blood of the Dead", "wip": true},
-                {"id": "classified", "name": "Classified", "wip": true},
-                {"id": "dead_of_the_night", "name": "Dead of the Night", "wip": true},
-                {"id": "ancient_evil", "name": "Ancient Evil", "wip": true},
-                {"id": "alpha_omega", "name": "Alpha Omega", "wip": true},
-                {"id": "tag_der_toten", "name": "Tag der Toten", "wip": true}
+                {"id": "bo4/voyage_of_despair", "name": "Voyage of Despair", "wip": true},
+                {"id": "bo4/ix", "name": "IX", "wip": true},
+                {"id": "bo4/blood_of_the_dead", "name": "Blood of the Dead", "wip": true},
+                {"id": "bo4/classified", "name": "Classified", "wip": true},
+                {"id": "bo4/dead_of_the_night", "name": "Dead of the Night", "wip": true},
+                {"id": "bo4/ancient_evil", "name": "Ancient Evil", "wip": true},
+                {"id": "bo4/alpha_omega", "name": "Alpha Omega", "wip": true},
+                {"id": "bo4/tag_der_toten", "name": "Tag der Toten", "wip": true}
             ]
         },
         {
@@ -43,20 +43,20 @@
             "name": "Black Ops III",
             "year": 2015,
             "maps": [
-                {"id": "shadows_of_evil", "name": "Shadows of Evil"},
-                {"id": "the_giant", "name": "The Giant"},
-                {"id": "der_eisendrache", "name": "Der Eisendrache"},
-                {"id": "zetsubou_no_shima", "name": "Zetsubou No Shima"},
-                {"id": "gorod_krovi", "name": "Gorod Krovi"},
-                {"id": "revelations", "name": "Revelations"},
-                {"id": "nacht_der_untoten", "name": "Nacht der Untoten", "img_alt": "bo3"},
-                {"id": "verruckt", "name": "Verrückt", "img_alt": "bo3"},
-                {"id": "shi_no_numa", "name": "Shi No Numa", "img_alt": "bo3"},
-                {"id": "kino_der_toten", "name": "Kino der Toten", "img_alt": "bo3"},
-                {"id": "ascension", "name": "Ascension", "img_alt": "bo3"},
-                {"id": "shangri_la", "name": "Shangri-La", "img_alt": "bo3"},
-                {"id": "moon", "name": "Moon", "img_alt": "bo3"},
-                {"id": "origins", "name": "Origins", "img_alt": "bo3"}
+                {"id": "bo3/shadows_of_evil", "name": "Shadows of Evil"},
+                {"id": "bo3/the_giant", "name": "The Giant"},
+                {"id": "bo3/der_eisendrache", "name": "Der Eisendrache"},
+                {"id": "bo3/zetsubou_no_shima", "name": "Zetsubou No Shima"},
+                {"id": "bo3/gorod_krovi", "name": "Gorod Krovi"},
+                {"id": "bo3/revelations", "name": "Revelations"},
+                {"id": "waw/nacht_der_untoten", "name": "Nacht der Untoten", "img_alt": "bo3"},
+                {"id": "waw/verruckt", "name": "Verrückt", "img_alt": "bo3"},
+                {"id": "waw/shi_no_numa", "name": "Shi No Numa", "img_alt": "bo3"},
+                {"id": "bo1/kino_der_toten", "name": "Kino der Toten", "img_alt": "bo3"},
+                {"id": "bo1/ascension", "name": "Ascension", "img_alt": "bo3"},
+                {"id": "bo1/shangri_la", "name": "Shangri-La", "img_alt": "bo3"},
+                {"id": "bo1/moon", "name": "Moon", "img_alt": "bo3"},
+                {"id": "bo2/origins", "name": "Origins", "img_alt": "bo3"}
             ]
         },
         {
@@ -64,12 +64,12 @@
             "name": "Black Ops II",
             "year": 2012,
             "maps": [
-                {"id": "tranzit", "name": "TranZit", "wip": true},
-                {"id": "nuketown_zombies", "name": "Nuketown Zombies", "wip": true},
-                {"id": "die_rise", "name": "Die Rise", "wip": true},
-                {"id": "mob_of_the_dead", "name": "Mob of the Dead", "wip": true},
-                {"id": "buried", "name": "Buried", "wip": true},
-                {"id": "origins", "name": "Origins"}
+                {"id": "bo2/tranzit", "name": "TranZit", "wip": true},
+                {"id": "bo2/nuketown_zombies", "name": "Nuketown Zombies", "wip": true},
+                {"id": "bo2/die_rise", "name": "Die Rise", "wip": true},
+                {"id": "bo2/mob_of_the_dead", "name": "Mob of the Dead", "wip": true},
+                {"id": "bo2/buried", "name": "Buried", "wip": true},
+                {"id": "bo2/origins", "name": "Origins"}
             ]
         },
         {
@@ -77,16 +77,16 @@
             "name": "Black Ops",
             "year": 2010,
             "maps": [
-                {"id": "kino_der_toten", "name": "Kino der Toten"},
-                {"id": "five", "name": "\"Five\""},
-                {"id": "ascension", "name": "Ascension"},
-                {"id": "call_of_the_dead", "name": "Call of the Dead"},
-                {"id": "shangri_la", "name": "Shangri-La"},
-                {"id": "moon", "name": "Moon"},
-                {"id": "nacht_der_untoten", "name": "Nacht der Untoten"},
-                {"id": "verruckt", "name": "Verrückt"},
-                {"id": "shi_no_numa", "name": "Shi No Numa"},
-                {"id": "der_riese", "name": "Der Riese", "wip": true}
+                {"id": "bo1/kino_der_toten", "name": "Kino der Toten"},
+                {"id": "bo1/five", "name": "\"Five\""},
+                {"id": "bo1/ascension", "name": "Ascension"},
+                {"id": "bo1/call_of_the_dead", "name": "Call of the Dead"},
+                {"id": "bo1/shangri_la", "name": "Shangri-La"},
+                {"id": "bo1/moon", "name": "Moon"},
+                {"id": "waw/nacht_der_untoten", "name": "Nacht der Untoten"},
+                {"id": "waw/verruckt", "name": "Verrückt"},
+                {"id": "waw/shi_no_numa", "name": "Shi No Numa"},
+                {"id": "waw/der_riese", "name": "Der Riese", "wip": true}
             ]
         },
         {
@@ -94,10 +94,10 @@
             "name": "World at War",
             "year": 2008,
             "maps": [
-                {"id": "nacht_der_untoten", "name": "Nacht der Untoten"},
-                {"id": "verruckt", "name": "Zombie Verrückt"},
-                {"id": "shi_no_numa", "name": "Shi No Numa"},
-                {"id": "der_riese", "name": "Der Riese", "wip": true}
+                {"id": "waw/nacht_der_untoten", "name": "Nacht der Untoten"},
+                {"id": "waw/verruckt", "name": "Zombie Verrückt"},
+                {"id": "waw/shi_no_numa", "name": "Shi No Numa"},
+                {"id": "waw/der_riese", "name": "Der Riese", "wip": true}
             ]
         }
     ]

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/group935/style.css">
+    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/71295013?v=4">
+    <link rel="apple-touch-icon" href="https://avatars.githubusercontent.com/u/71295013?v=4">
+    <title>Die Rise | Group 935</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="/group935/script.js"></script>
+    <script src="/template/data-include.js"></script>
+</head>
+<body>
+    <article>
+        <div data-include="/group935/header" id="header"></div>
+        <div id="parallax-background"></div>
+
+        <span id="page-data"></span>
+
+    </article>
+    <div data-include="/template/footer" id="footer"></div>
+
+    <script>
+        // map script
+        $(function () {
+            $.getJSON("data.json", function (pageData) {
+                $.getJSON("/group935/data.json", function (gamesData) {
+                    $('#page-data').append(buildPage(pageData, gamesData))
+                })
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,940 @@
+{
+    "id": "bo1/moon",
+    "name": "Moon",
+    "background": "assets/background.png",
+    "style": "ultimis",
+    "rev": 2,
+    "sections" : [
+        {
+            "header": "Map Features",
+            "subsections": [
+                {
+                    "header": "Groom Lake Teleporter",
+                    "description": "At the start of the game, zombies and dogs will spawn forever until all players stand on the teleporter. After teleporting to the moon, all players must equip the P.E.S. helmet before running out of air.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/1.jpg",
+                                "alt": "Teleporter"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "P.E.S. (Pressurized External Suit)",
+                    "description": "The helmet can be found directly next to where players are teleported inside the Receiving Bay. After aquiring a helmet, the player must equip it. The helmet can be removed at any time, but the player will run out of air in most areas of the map. The P.E.S. helmet can also be found in every airlock in the map.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/5.jpg",
+                                "alt": "P.E.S. location"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Power Switch",
+                    "description": "Located in the M.P.D. room.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/9.jpg",
+                                "alt": "Power switch location"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Pack-a-Punch",
+                    "description": "To teleport back to Groom Lake, all players must stand on the teleporter outside of the Bio-Dome. The teleporter will be on cooldown for several minutes after returning.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/50.jpg",
+                                "alt": "Teleporter location"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/2.jpg",
+                                "alt": "Pack-a-Punch location"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/23.jpg",
+                                "alt": "Teleporter on cooldown"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Decompression",
+                    "description": "There are only a few places with air and normal gravity. With the exceptions of Groom Lake and the airlocks, these other rooms can all become decompressed during the game, and cannot be undone. The 3 excavators can cause decompression in Tunnel 6, Tunnel 11, and Bio-Dome. In the Receiving Bay and the Laboratories, the glass can be shot out to cause decompression.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/21.jpg",
+                                "alt": "The Bio-Dome after being breached by Excavator Epsilon"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Perk Machines",
+                    "description": "The machine at Groom Lake will randomly switch between Juggernog and Speed Cola each time you teleport there.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/82.jpg",
+                                "alt": "Juggernog - at Groom Lake (randomly switches with Speed Cola when teleporting)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/89.jpg",
+                                "alt": "Speed Cola - at Groom Lake (randomly switches with Juggernog when teleporting)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/83.jpg",
+                                "alt": "Quick Revive - in the Receiving Bay"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/88.jpg",
+                                "alt": "Stamin-Up - in Tunnel 11"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/87.jpg",
+                                "alt": "Double Tap Root Beer - bottom floor of the Laboratories"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/85.jpg",
+                                "alt": "Deadshot Daiquiri - top floor of the Laboratories"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/84.jpg",
+                                "alt": "Mule Kick - outside of the Laboratories"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/86.jpg",
+                                "alt": "Widow's Wine (or PhD Flopper in Black Ops) - in Bio-Dome"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Hacker Device",
+            "subsections": [
+                {
+                    "header": "Device Locations",
+                    "description": "The device can spawn in any level of the Laboratories and can only be found if no one currently has it. You cannot have the Hacker Device at the same time as a P.E.S. helmet.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/13.jpg",
+                                "alt": "The Hacker Device sitting on a yellow paper"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Hacking",
+                    "description": "The Hacker Device can be used unlimited times on all of the following places.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Pack-a-Punch",
+                                "description": "Free - close the gates around the PaP machine to protect anyone inside. The gates will open after a short timer."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/22.jpg",
+                                "alt": "The gates closed around the PaP machine"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Excavators",
+                                "description": "Free - stops the excavator from breaching the map, or sends it back if it already breached."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/20.jpg",
+                                "alt": "One of the 3 excavator control panels"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Mystery Box Spawn",
+                                "description": "1200 points - cause the box to appear at that location for a single use."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Mystery Box Reroll",
+                                "description": "600 points - reroll the weapon in the box. Hack the rerolled weapon to refund 950 points and allow another player to pick up the weapon."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Power-Ups",
+                                "description": "5000 points - Turn a Max Ammo into a Fire Sale or another power-up into a Max Ammo."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Perk Machines",
+                                "description": "Free - Refund a perk to get your money back."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Players",
+                                "description": "500 points - give 500 points to the player."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Doors",
+                                "description": "200 points - open the door (this takes over 30 seconds without having Speed Cola)."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Wall-Buys",
+                                "description": "3000 points - swap the cost of ammo and PaP ammo for this wall-buy."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Barriers",
+                                "description": "Repair the window and receive 100 points. After a few times, it will start costing money instead."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Excavators",
+            "subsections": [
+                {
+                    "header": "Warning Announcements",
+                    "description": "At any time during the game, a voice alert can warn that one of the 3 excavators will soon cause decompression in one of 3 locations. Excavator Pi goes to Tunnel 6, Excavator Omicron goes to Tunnel 11, and Excavator Epsilon goes to Bio-Dome.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/20.jpg",
+                                "alt": "A lit up control panel with the lit up excavator in the distance"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Decompression",
+                    "description": "After an excavator breaches an area, it will no longer have air and gravity will be reduced. The excavators for Tunnel 6 and Tunnel 11 will also block off parts of the map.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/31.jpg",
+                                "alt": "Excavator Pi blocking Tunnel 6"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Hacking the Excavators",
+                    "description": "Excavators can be hacked with the Hacker Device to return to their starting positions. Once an area has become decompressed, hacking the excavator will cause it to leave, but will not cause the area to have air again. Hacking an excavator before it reaches the location will stop the decompression from happening. All 3 control panels are located in the Receiving Bay.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/11.jpg",
+                                "alt": "Control panel for Excavator Pi / Tunnel 6"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/12.jpg",
+                                "alt": "Control panel for Excavator Omicron / Tunnel 11"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/10.jpg",
+                                "alt": "Control panel for Excavator Epsilon / Bio-Dome"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Main Quest (Richtofen's Grand Scheme)",
+            "description": "The full quest consists of Cryogenic Slumber Party and Bing Bang Theory.",
+            "subsections": [
+                {
+                    "header": "Requirements",
+                    "elements": [
+                        {
+                            "full": true,
+                            "bullets": [
+                                "Wave Gun - from Mystery Box",
+                                "Gersh Device - from Mystery Box",
+                                "Quantum Entanglement Device (Q.E.D.) - from Mystery Box",
+                                "Black Ops 1 only - 2 or more players",
+                                "Black Ops 1 only - Call of the Dead main quest (at least one player)",
+                                "Black Ops 1 only - Shangri-La main quest (at least one player)"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "header": "1. Samantha Says",
+                    "description": "After turning on the power, the 4 terminals outside Tunnel 6 will flash a color. Interact with the screens to play Samantha Says. The color order on the screens are always Red, Green, Blue, Yellow.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/15.jpg",
+                                "alt": "Samantha Says location"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Hack the Laboratory",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "description": "With the Hacker Device, hack a button on the wall of the middle floor of the Laboratories. This costs 500 points, and the entire step must be finished before the timer runs out."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/16.jpg",
+                                "alt": "Location to hack"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "description": "Hack the 4 lit up panels spread across all 3 floors of the Laboratories."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/17.jpg",
+                                "alt": "One of the panels lit up green"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "description": "Quickly interact with all 4 buttons back where the initial 500 points was spent. When complete, the 4 buttons will remain locked and lit up."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/18.jpg",
+                                "alt": "All 4 buttons lit after being pressed in time"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Decompress Tunnel 6",
+                    "description": "At a random time, there will be an announcement that Excavator Pi will decompress Tunnel 6. You must allow the excavator to breach the map, then use the Hacker Device to move the excavator away.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/31.jpg",
+                                "alt": "Excavator Pi breaching Tunnel 6"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "4. Move the Vril Sphere",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "description": "The Vril Sphere will start just through the door from the M.P.D. room going into Tunnel 6. Shoot it each time it stops, and walk through the doors to allow it to pass."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/32.jpg",
+                                "alt": "Vril Sphere starting location"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/33.jpg",
+                                "alt": "Move 1 - on the floor"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/34.jpg",
+                                "alt": "Move 2 - by the Tunnel 6 sign"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/35.jpg",
+                                "alt": "Move 3 - waiting for the player to open the door"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "description": "When the Vril Sphere stops on the satellite dish, shoot it with the combined Wave Gun."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/36.jpg",
+                                "alt": "Move 4 - on the satellite dish"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "description": "Continue shooting the Vril Sphere with any gun as it passes through Tunnel 11. Eventually, it will land in the M.P.D. and the step is completed."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/37.jpg",
+                                "alt": "Move 5 - waiting for the player to open the Tunnel 11 door"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/38.jpg",
+                                "alt": "Move 6 - on the wall by some pipes"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/39.jpg",
+                                "alt": "Move 7 - on the ceiling near a red glowing barrier"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/40.jpg",
+                                "alt": "Move 8 - on some boxes by the door"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/41.jpg",
+                                "alt": "Move 9 - waiting for the player to open the door"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/42.jpg",
+                                "alt": "Vril Sphere in the M.P.D."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "5. Collect Souls",
+                    "description": "Kill zombies to collect their souls in the container outside of the M.P.D. The range is extremely short, and visible souls will show that it's working.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/43.jpg",
+                                "alt": "The empty container"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "6. Cryogenic Slumber Party",
+                    "description": "Interact with the lever by the filled soul container. This completes the first half of the easter egg, grants the first achievement, and gives each player a Death Machine.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/44.jpg",
+                                "alt": "The lever on the wall behind the filled container"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/45.jpg",
+                                "alt": "Samantha floating above the opened M.P.D."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "7. Teleport the Plates",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "description": "In Groom Lake, throw a normal grenade at the shelf with the plates, near the teleporter. Some plates will fall to the ground."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/3.jpg",
+                                "alt": "Shelves with the plates"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/4.jpg",
+                                "alt": "Plates on the ground"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "description": "Throw a Gersh Device at the plates. The plates will be sent on top of the teleporter. Then, teleport back to the moon."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/29.jpg",
+                                "alt": "The plates on the teleporter"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "description": "Throw a Q.E.D. onto the plates to send them over to a machine across the room."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/30.jpg",
+                                "alt": "The plates in the Receiving Bay"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/51.jpg",
+                                "alt": "The plates in the machine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "8. Find the Missing Wire",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "description": "This can be picked up at any point of the game and will spawn in one of 8 locations. The locations on Black Ops may vary."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/69.jpg",
+                                "alt": "Location 1 - bottom floor of the Laboratories, by some canisters"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/66.jpg",
+                                "alt": "Location 2 - middle floor of the Laboratories, to the left of the buttons from the hacking step"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/71.jpg",
+                                "alt": "Location 3 - middle floor of the Laboratories, in front of a table"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/68.jpg",
+                                "alt": "Location 4 - top floor of the Laboratories, on the top of the stairs"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/70.jpg",
+                                "alt": "Location 5 - top floor of the Laboratories, on a table"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/49.jpg",
+                                "alt": "Location 6 - top floor of the Laboratories, by Deadshot Daiquiri"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/14.jpg",
+                                "alt": "Location 7 - top floor of the Laboratories, on a shelf"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/67.jpg",
+                                "alt": "Location 8 - just outside of the Laboratories, by a barrel"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "description": "Place the wire into the machine from the previous step."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/52.jpg",
+                                "alt": "The wire connecting a computer to the machine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "9. Type on the Computer",
+                    "description": "The player playing as Richtofen must do this entire step. Place the Vril Device in the machine from the previous steps, then continuously interact with the keyboard on the terminal. Several audio quotes will be heard, and the player must keep interacting until the Vril Device can be grabbed.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/53.jpg",
+                                "alt": "The Vril Device in the machine"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/54.jpg",
+                                "alt": "The computer keyboard to spam interact on"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/55.jpg",
+                                "alt": "The fully charged Vril Device"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "10. Collect More Souls",
+                    "description": "Feed zombie souls to each of the 4 containers around the M.P.D. until they are all completely filled.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/56.jpg",
+                                "alt": "The 4 empty containers around the M.P.D."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "11. Place the Vril Device",
+                    "description": "Richtofen must interact on the front of the M.P.D. to place the Vril Device. This will give Richtofen all perks and swap souls with Samantha.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/57.jpg",
+                                "alt": "The slot to place the Vril Device"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/59.jpg",
+                                "alt": "Blue-eyed zombies controlled by Richtofen"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "12. Three More Samantha Says",
+                    "description": "Go back and beat Samantha Says 3 more times. The game will show more colors each time than in the original step.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/58.jpg",
+                                "alt": "Samantha Says location"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "13. Move the Vril Sphere Again",
+                    "description": "Throw a Q.E.D. at the front of the M.P.D. to displace the Vril Sphere. It will be teleported next to the Samantha Says terminals.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/60.jpg",
+                                "alt": "The Vril Sphere after being teleported with the Q.E.D."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "14. Big Bang Theory",
+                    "description": "Throw a Gersh Device onto the Vril Sphere. This will start an in-game cutscene and grant the second achievement.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/61.jpg",
+                                "alt": "A Gersh Device on the Vril Sphere"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Songs",
+            "subsections": [
+                {
+                    "header": "Coming Home",
+                    "description": "Interact with 3 teddy bears.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/6.jpg",
+                                "alt": "Location 1 - next to the launch pad beneath the Receiving Bay"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/7.jpg",
+                                "alt": "Location 2 - in the airlock between Tunnel 6 and the M.P.D. room"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/8.jpg",
+                                "alt": "Location 3 - in the wall across from Stamin-Up in Tunnel 11"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "8 Bit Songs",
+                    "description": "Each song requires power to be turned on. Interact with the specific control panel 3 times to play the song.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Coming Home"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/72.jpg",
+                                "alt": "A computer station to the right of the Excavator Omicron control panel"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Damned"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/73.jpg",
+                                "alt": "A tall device to the right of the door going from Tunnel 11 to the M.P.D. room"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Pareidolia"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/74.jpg",
+                                "alt": "A computer station to the right of the door going from the Laboratories to the Bio-Dome"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Side Easter Eggs",
+            "subsections": [
+                {
+                    "header": "Space Dog (Black Ops III only)",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Shoot 3 objects with the combined Wave Gun",
+                                "description": "After each object is shot, it will teleport by the dog bowl on the second floor of the Laboratories."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/24.jpg",
+                                "alt": "Dog figurine - Outside the map at Groom Lake, under a vehicle. Shoot through the back tires of the vehicle."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/26.jpg",
+                                "alt": "Bone - Outside the Bio-Dome, in front of some large rocks. Aim just above the pipes."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/25.jpg",
+                                "alt": "Teddy bear - On top of the wall surrounding the Bio-Dome, behind the Mystery Box location. Stand far back and aim roughly where the hexagon connects with the wall."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Hack the dog bowl with the Hacker Device"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/27.jpg",
+                                "alt": "Dog bowl, on the second floor of the Laboratories"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Fetch souls",
+                                "description": "Kill zombies nearby the dog bowl."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/46.jpg",
+                                "alt": "Dog bowl filling up with zombie souls"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "4. Dog walk",
+                                "description": "Once enough souls are collected, a sound will play. Then, the space dog will be seen walking between the Bio-Dome and the Receiving Bay."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/47.jpg",
+                                "alt": "Space dog outside the Bio-Dome"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/48.jpg",
+                                "alt": "Space dog up close"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Audio Reels",
+                    "description": "There are several audio reels that can be found around the map. Interact to pick up, then interact on the machine on the second floor of the Laboratories to play the reel.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/81.jpg",
+                                "alt": "One of the reels"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/80.jpg",
+                                "alt": "Location to place the reel"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Hide and Seek",
+            "description": "Play Samantha's Lullaby Remix and get a Max Ammo (Black Ops III only)",
+            "subsections": [
+                {
+                    "header": "1. Interact with Devices - 3 1 1 4 4 1 4 2 4 2 4 1 1 2 3",
+                    "description": "Using the numbering system below, interact with the devices in this order.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/75_edit.jpg",
+                                "alt": "Labeled devices"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/79.jpg",
+                                "alt": "One of the devices to interact"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Hide and Seek",
+                    "description": "Interact with a Samantha doll to the left of the M.P.D. on the ground. A particle effect will show the game has started. Then, shoot all 7 Samantha dolls. If you run out of time, Samantha will laugh, and you have to start the game again at the original doll.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/76.jpg",
+                                "alt": "The doll to start hide and seek"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/77.jpg",
+                                "alt": "The 7 Samantha dolls, in front of the M.P.D."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Interact with the First Doll",
+                    "description": "Go back to the original doll and interact again. This time, you'll get a Max Ammo and the song will play.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/78.jpg",
+                                "alt": "The doll to get the Max Ammo and song"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

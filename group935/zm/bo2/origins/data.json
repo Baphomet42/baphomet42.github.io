@@ -1,0 +1,1914 @@
+{
+    "id": "bo2/origins",
+    "name": "Origins",
+    "background": "assets/background.png",
+    "style": "victis",
+    "rev": 2,
+    "maps": [{"img": "assets/map1.png"}],
+    "sections" : [
+        {
+            "header": "Map Features",
+            "subsections": [
+                {
+                    "header": "Power Generators",
+                    "description": "There are 6 generators around the map that give power to the surrounding areas. Interact on a generator to start the process, then stand on the metal floor until it's fully powered. Later during the game, the generators can be attacked by Templars. If the Templars successfully unpower a generator, it can be powered again the same way.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/17.jpg",
+                                "alt": "Generator 1 - in spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/18.jpg",
+                                "alt": "Generator 2 - between spawn and the Workshop"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/19.jpg",
+                                "alt": "Generator 3 - between spawn and the Workshop"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/20.jpg",
+                                "alt": "Generator 4 - in No Man's Land"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/21.jpg",
+                                "alt": "Generator 5 - in No Man's Land"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/22.jpg",
+                                "alt": "Generator 6 - behind the Church"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/96.jpg",
+                                "alt": "Templars attacking a generator"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Pack-a-Punch",
+                    "description": "Once all 6 power generators are active, the Pack-a-Punch machine will be unlocked at the top of the Excavation Site.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/3.jpg",
+                                "alt": "Pack-a-Punch machine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Giant Robots",
+                    "description": "There are 3 Giant Robots that occasionally walk through the map. Thor walks through the trenches, Odin walks across No Man's Land, and Freya walks by the Church. The Giant Robots always walk on the same footprints, and red lights will blink before they step in the footprint. Being stepped on will instantly down you. One of the 2 feet will have a yellow circle on the bottom that can be shot to open a door, and the correct foot is randomized each time. Being stepped on with the door opened will take you inside the Giant Robot's head.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/83.jpg",
+                                "alt": "Flashing red lights around footprint"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/82.jpg",
+                                "alt": "Foot with no door"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/81.jpg",
+                                "alt": "Foot with a door"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/84.jpg",
+                                "alt": "Shooting the door open"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Digging",
+                    "description": "All around the map there are small piles of dirt and skulls that you can dig for rewards. Each player must first find a shovel around the map, then they can dig unlimited piles. The piles take a few rounds to come back, so it is recommended to wait for the map to be snowing before digging until all 3 Ice Staff parts are found. There are 6 possible shovel spawns, and each game there will be exactly 4 shovels.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/202.jpg",
+                                "alt": "Shovel location 1 - near Generator 1, in the spawn room"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/5.jpg",
+                                "alt": "Shovel location 2 - near Generator 1, by the door to Generator 3"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/203.jpg",
+                                "alt": "Shovel location 3 - in the Wind Tunnel near Generator 4"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/204.jpg",
+                                "alt": "Shovel location 4 - in the Lightning Tunnel by Generator 5"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/205.jpg",
+                                "alt": "Shovel location 5 - downstairs in the Church, leaning against a box"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/206.jpg",
+                                "alt": "Shovel location 6 - downstairs in the Church, leaning against a pillar"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/24.jpg",
+                                "alt": "Location to dig"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Tank",
+                    "description": "The Tank can be ridden around the map and moves between the Church and the Tank Station by Generator 2. It always starts in the Church, and moving the Tank costs 500 points.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/46.jpg",
+                                "alt": "The Tank in the Church"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Rituals of the Ancients",
+                    "description": "Each player has 3 trials they can complete, and there is an additional fourth trial shared between all players. The trials can be seen next to Generators 1 and 6. Hover over a trial to view the requirements and interact to get the reward. Each player will see their character's name above their trials. Upon powering up Generator 1 the first time, the ritual box will spawn a power-up that can be collected at any time.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/69.jpg",
+                                "alt": "Rituals seen by Generator 1"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/87.jpg",
+                                "alt": "Rituals seen by Generator 6"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Perk Machines",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/6.jpg",
+                                "alt": "Quick Revive - near Generator 1"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/10.jpg",
+                                "alt": "Mule Kick - downstairs in the Excavation Site"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/7.jpg",
+                                "alt": "Speed Cola - near Generator 3"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/8.jpg",
+                                "alt": "Stamin-Up - near Generator 5"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/9.jpg",
+                                "alt": "Juggernog - near Generator 4"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/11.jpg",
+                                "alt": "Der Wunderfizz location 1 - near Generator 1"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/12.jpg",
+                                "alt": "Der Wunderfizz location 2 - near Generator 2"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/13.jpg",
+                                "alt": "Der Wunderfizz location 3 - near Generator 3"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/14.jpg",
+                                "alt": "Der Wunderfizz location 4 - near Generator 4"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/15.jpg",
+                                "alt": "Der Wunderfizz location 5 - near Generator 5"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/16.jpg",
+                                "alt": "Der Wunderfizz location 6 - near Generator 6"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Workbenches",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/28.jpg",
+                                "alt": "Location 1 - downstairs in the Workshop"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/29.jpg",
+                                "alt": "Location 2 - in the Wind Tunnel near Generator 4"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/27.jpg",
+                                "alt": "Location 3 - downstairs in the Church"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Zombie Shield",
+            "description": "Collect 3 parts and craft at a workbench.",
+            "subsections": [
+                {
+                    "header": "Part 1 (Shield Window)",
+                    "description": "Located between Generator 1 and Generator 3 (3 possible locations).",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/23.jpg",
+                                "alt": "Location 1 - in a wheelbarrow near the door to spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/59.jpg",
+                                "alt": "Location 2 - at the end of the Fire Tunnel"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/56.jpg",
+                                "alt": "Location 3 - in the trench between Generator 3 and Speed Cola"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Part 2 (Base)",
+                    "description": "Located in Giant Robot footprints around the Excavation Site (3 possible locations).",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/26.jpg",
+                                "alt": "Location 1 - in the right footprint between the Excavation Site and Generator 5"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/60.jpg",
+                                "alt": "Location 2 - in the right footprint between the Excavation Site and Generator 4"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/66.jpg",
+                                "alt": "Location 3 - in the right footprint by Generator 4"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Part 3 (Scrap Metal)",
+                    "description": "Located between Generator 1 and Generator 2 (3 possible locations).",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/55.jpg",
+                                "alt": "Location 1 - next to a wheelbarrow near the door to spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/25.jpg",
+                                "alt": "Location 2 - in the Giant Robot footprint on the roof of the Tank Station next to Generator 2"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/58.jpg",
+                                "alt": "Location 3 - in a wheelbarrow at the end of the trench past the door to the Workshop"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Craft Shield",
+                    "description": "Build at one of the 3 workbenches. Each player can equip the shield.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/32.jpg",
+                                "alt": "One possible build location, in the Wind Tunnel near Generator 4"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Maxis Drone",
+            "description": "Collect 3 parts and craft at a workbench.",
+            "subsections": [
+                {
+                    "header": "Part 1 (Base)",
+                    "description": "Located near the Church (3 possible locations).",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/47.jpg",
+                                "alt": "Location 1 - in the mud in front of the Tank's path"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/57.jpg",
+                                "alt": "Location 2 - in the mud behind the Tank's path"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/61.jpg",
+                                "alt": "Location 3 - at the end of the Ice Tunnel"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Part 2 (Brain)",
+                    "description": "Located in spawn.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/31.jpg",
+                                "alt": "Brain location"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Part 3 (Rotor)",
+                    "description": "Located around the Excavation Site (3 possible locations).",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/64.jpg",
+                                "alt": "Location 1 - at the top of the Excavation Site, to the PaP machine's right"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/63.jpg",
+                                "alt": "Location 2 - at the top of the secret stairs, to the left of the Gramophone table"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/48.jpg",
+                                "alt": "Location 3 - on some scaffolding next to the staff statues"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Craft Maxis Drone",
+                    "description": "Build at one of the 3 workbenches. Only 1 player can equip the Maxis Drone. After using, the Maxis Drone will reappear at the workbench.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/49.jpg",
+                                "alt": "One possible build location, in the Church"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Elemental Staffs",
+            "description": "Staffs are crafted separately and can be done in any order.",
+            "subsections": [
+                {
+                    "header": "Gramophone & Black Record (Musical Parts)",
+                    "description": "The Gramophone and Black Record are required before crafting the staffs.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Find the Black Record",
+                                "description": "Located around the Excavation Site (3 possible locations)."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/67.jpg",
+                                "alt": "Location 1 - at the start of the ramp going from the Workshop door to the top of the Excavation Site"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/36.jpg",
+                                "alt": "Location 2 - in a wheelbarrow to the left of the Pack-a-Punch machine"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/65.jpg",
+                                "alt": "Location 3 - on the wall between Generator 5 and the Church"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Pick up the Gramophone",
+                                "description": "Located down the stairs at the Excavation Site (2 possible locations)."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/62.jpg",
+                                "alt": "Location 1 - to the right of the table"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/35.jpg",
+                                "alt": "Location 2 - to the left of the table"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Unlock the secret stairs",
+                                "description": "After getting the Gramophone and Black Record, place the Gramophone on the table down the stairs at the Excavation Site. Once the secret spiral stairs have opened, you can pick up the Gramophone. The Gramophone can only be placed in one location around the map at a time, and must be picked up before it can be placed in a new location. When the Gramophone is picked up, it is accessible for all players to place it down somewhere else."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/37.jpg",
+                                "alt": "Gramophone on the table to unlock the secret stairs"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Staff of Fire",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Collect 3 staff parts",
+                                "description": "The first part is found in the Rituals of the Ancients box by Generator 6 after powering it the first time. The second part is found near the Excavation Site after shooting down a glowing orange plane. The third part is dropped after killing a Panzer."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/41.jpg",
+                                "alt": "Part 1 - in the Rituals of the Ancients box by Generator 6"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/192.jpg",
+                                "alt": "Glowing plane to shoot down"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/151.jpg",
+                                "alt": "Part 2 - on the ground between the 2 footprints in front of the Excavation Site"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/1.jpg",
+                                "alt": "Part 3 - dropped from a Panzer"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Find the Fire Record",
+                                "description": "Located near the Church (3 possible locations)."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/75.jpg",
+                                "alt": "Location 1 - on the pillar by the stairs that lead upstairs into the Church (seen easier after the Tank is moved)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/77.jpg",
+                                "alt": "Location 2 - on a pew upstairs in the Church"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/68.jpg",
+                                "alt": "Location 3 - on a box by Generator 6"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Get the Fire Crystal",
+                                "description": "Enter the Fire Tunnel between Generator 1 and Generator 3 and place the Gramophone to open the portal to The Crazy Place. Go through the portal and pick up the Fire Crystal. Interact on the glowing circle to acess a Teleporter to leave. After returning to the tunnel, it is recommended to pick up the Gramophone."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/45.jpg",
+                                "alt": "Fire Tunnel"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/167.jpg",
+                                "alt": "Portal to The Crazy Place"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/168.jpg",
+                                "alt": "Fire Crystal"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/169.jpg",
+                                "alt": "Teleporter to exit"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Craft the staff",
+                                "description": "Go downstairs in the Excavation Site and craft the staff at the corresponding statue."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/194.jpg",
+                                "alt": "Staff of Fire"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Staff of Wind",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Collect 3 staff parts",
+                                "description": "Each of the 3 Giant Robots has one of the parts in its head."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/86.jpg",
+                                "alt": "Part 1 - in the Odin Giant Robot that walks across No Man's Land"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/40.jpg",
+                                "alt": "Part 2 - in the Thor Giant Robot that walks through the trenches"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/85.jpg",
+                                "alt": "Part 3 - in the Freya Giant Robot that walks by the Church"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Find the Wind Record",
+                                "description": "Located near Generator 5 (3 possible locations)."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/70.jpg",
+                                "alt": "Location 1 - to the right of Stamin-Up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/79.jpg",
+                                "alt": "Location 2 - on some boxes outside the entrance to the Lightning Tunnel"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/74.jpg",
+                                "alt": "Location 3 - on a table inside the entrance of the Lightning Tunnel"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Get the Wind Crystal",
+                                "description": "Enter the Wind Tunnel by Generator 4 and place the Gramophone to open the portal to The Crazy Place. Go through the portal and pick up the Wind Crystal. Interact on the glowing circle to acess a Teleporter to leave. After returning to the tunnel, it is recommended to pick up the Gramophone."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/44.jpg",
+                                "alt": "Wind Tunnel"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/158.jpg",
+                                "alt": "Portal to The Crazy Place"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/163.jpg",
+                                "alt": "Wind Crystal"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/159.jpg",
+                                "alt": "Teleporter to exit"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Craft the staff",
+                                "description": "Go downstairs in the Excavation Site and craft the staff at the corresponding statue."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/195.jpg",
+                                "alt": "Staff of Wind"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Staff of Lightning",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Collect 3 staff parts",
+                                "description": "Each of the parts requires jumping off the Tank at a specific point outside the normal playable area."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/152.jpg",
+                                "alt": "Where to jump for part 1"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/153.jpg",
+                                "alt": "Part 1 - on the way from the Church to the Tank Station by Generator 2"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/154.jpg",
+                                "alt": "Where to jump for part 2"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/157.jpg",
+                                "alt": "Part 2 - on the way from the Tank Station by Generator 2 to the Church"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/155.jpg",
+                                "alt": "Where to jump for part 3"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/156.jpg",
+                                "alt": "Part 3 - on the way from the Tank Station by Generator 2 to the Church"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Find the Lightning Record",
+                                "description": "Located near Generator 4 (3 possible locations)."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/76.jpg",
+                                "alt": "Location 1 - on a cart between Generator 4 and the Excavation Site"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/78.jpg",
+                                "alt": "Location 2 - to the left of Juggernog"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/71.jpg",
+                                "alt": "Location 3 - at the end of the Wind Tunnel"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Get the Lightning Crystal",
+                                "description": "Enter the Lightning Tunnel by Generator 5 and place the Gramophone to open the portal to The Crazy Place. Go through the portal and pick up the Lightning Crystal. Interact on the glowing circle to acess a Teleporter to leave. After returning to the tunnel, it is recommended to pick up the Gramophone."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/43.jpg",
+                                "alt": "Lightning Tunnel"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/160.jpg",
+                                "alt": "Portal to The Crazy Place"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/162.jpg",
+                                "alt": "Lightning Crystal"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/161.jpg",
+                                "alt": "Teleporter to exit"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Craft the staff",
+                                "description": "Go downstairs in the Excavation Site and craft the staff at the corresponding statue."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/193.jpg",
+                                "alt": "Staff of Lightning"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Staff of Ice",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Collect 3 staff parts",
+                                "description": "Each of the parts are found randomly when digging on rounds where it's snowing. The map is split into 3 regions with 1 part per region."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/150.jpg",
+                                "alt": "Part 1 - dug near the Church"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/149.jpg",
+                                "alt": "Part 2 - dug in No Man's Land"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/148.jpg",
+                                "alt": "Part 3 - dug in the trenches"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Find the Ice Record",
+                                "description": "Located in the Tank Station by Generator 2 (3 possible locations)."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/72.jpg",
+                                "alt": "Location 1 - on a desk by the door leading to Generator 2"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/80.jpg",
+                                "alt": "Location 2 - to the right of the Mystery Box location"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/73.jpg",
+                                "alt": "Location 3 - on some shelves by the exit to the mud Tank path"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Get the Ice Crystal",
+                                "description": "Enter the Ice Tunnel by Generator 6 and place the Gramophone to open the portal to The Crazy Place. Go through the portal and pick up the Ice Crystal. Interact on the glowing circle to acess a Teleporter to leave. After returning to the tunnel, it is recommended to pick up the Gramophone."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/42.jpg",
+                                "alt": "Ice Tunnel"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/164.jpg",
+                                "alt": "Portal to The Crazy Place"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/165.jpg",
+                                "alt": "Ice Crystal"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/166.jpg",
+                                "alt": "Teleporter to exit"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Craft the staff",
+                                "description": "Go downstairs in the Excavation Site and craft the staff at the corresponding statue."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/199.jpg",
+                                "alt": "Staff of Ice"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Staff Upgrades",
+            "description": "Staffs are upgraded separately and can be done in any order. Any Elemental Staff can be upgraded before crafting the other staffs.",
+            "subsections": [
+                {
+                    "header": "Upgrade Process",
+                    "description": "All 4 staff upgrades follow the same general process.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Unique upgrade steps",
+                                "description": "After crafting the staff, it must be used for a unique step in The Crazy Place. Then, it must be used for a unique step in the normal map. See the below sections for more info."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Set the levers",
+                                "description": "Once the unique steps in The Crazy Place and normal map are completed, go downstairs in the Excavation Site. There are 4 levers that each cycle the color on one of the circles in the middle of the room. Interact with the levers until all 4 circles glow the correct color for the staff. The Fire Staff requires red, the Wind Staff requires yellow, the Lightning Staff requires purple, and the Ice Staff requires blue."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/117.jpg",
+                                "alt": "Lever for the top circle"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/116.jpg",
+                                "alt": "Lever for the second circle"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/115.jpg",
+                                "alt": "Lever for the third circle"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/118.jpg",
+                                "alt": "Lever for the bottom circle"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/197.jpg",
+                                "alt": "All 4 circles the same color"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Shoot the orb",
+                                "description": "After the 4 circles are set correctly, shoot the orb with the staff. It will rise into the sky and disappear. Each staff has a different colored orb."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/129.jpg",
+                                "alt": "An orb to shoot"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "4. Get kills in The Crazy Place",
+                                "description": "Enter The Crazy Place through any of the 4 portals, then place the staff on the corresponding pedestal. Kill zombies next to the staff until enough souls have been collected. After enough kills, pick up the upgraded staff."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/130.jpg",
+                                "alt": "A staff in a pedestal"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Upgraded Fire Staff (Kagutsuchi's Blood)",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Kill zombies to light the fires",
+                                "description": "Go to the Fire section in The Crazy Place. Kill zombies with the Staff of Fire over the metal grates on the floor. After enough kills, all 4 fires will be lit."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/120.jpg",
+                                "alt": "Metal grates with 4 lit fires at the wall"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Shoot the torches in the Church",
+                                "description": "There are 7 symbols upstairs in the Church and 4 of them will be glowing. Use the image below to match the symbols to a set of numbers. Downstairs in the Church there are 7 torches, each with a number next to it. The unlabeled torch between 7 and 9 is torch 4. Using the Staff of Fire, quickly shoot the 4 torches corresponding to the numbers in the image next to the 4 glowing symbols. For example, the image shown would require shooting 11, 9, 6, and 4 in any order."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/121_edit.jpg",
+                                "alt": "The 7 symbols and corresponding numbers"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/122.jpg",
+                                "alt": "Some of the torches downstairs"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/198.jpg",
+                                "alt": "Torch 4, the unlabeled torch between 7 and 9"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Upgrade",
+                                "description": "Set the levers, shoot the orb, then feed souls to the staff. See the upgrade process section above for more info."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/123.jpg",
+                                "alt": "Kagutsuchi's Blood"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Upgraded Wind Staff (Boreas' Fury)",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Spin the 4 circles",
+                                "description": "Go to the Wind section in The Crazy Place. On the ceiling there are 4 circles with symbols on them. Shoot the circles with the Staff of Wind until they match the symbol order below. When done correctly, the circles will move up slightly."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/110.jpg",
+                                "alt": "Correct symbol order"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/111.jpg",
+                                "alt": "Close-up of the symbol order pointing towards the Fire section"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Shoot the 3 smoking stones",
+                                "description": "There are 3 stones around No Man's Land that must be shot in the correct direction. Using the Staff of Wind, shoot the stone while aiming in the direction of the Excavation Site so the smoke flies towards the Excavation Site."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/112.jpg",
+                                "alt": "Location 1 - near Generator 4"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/113.jpg",
+                                "alt": "Location 2 - near Generator 5"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/196.jpg",
+                                "alt": "Location 3 - by the mud path between the Church and Generator 5"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Upgrade",
+                                "description": "Set the levers, shoot the orb, then feed souls to the staff. See the upgrade process section above for more info."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/119.jpg",
+                                "alt": "Boreas' Fury"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Upgraded Lightning Staff (Kimat's Bite)",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Shoot 3 sets of 3 symbols",
+                                "description": "Go to the Lightning section in The Crazy Place. Using the numbering system on the image, shoot these 3 sets of symbols using the Staff of Lightning: 1-3-6, 5-7-3, 2-4-6. When done correctly, the electricity will go away and the symbols will not longer make sound when shot."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/131_edit.jpg",
+                                "alt": "The numbered symbols"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Set the 7 dials",
+                                "description": "There are 7 dials around the map that must be turned to a certain direction."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/133_edit.jpg",
+                                "alt": "Dial 1 - by Generator 1, set left"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/134_edit.jpg",
+                                "alt": "Dial 2 - by Generator 2, set down"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/135_edit.jpg",
+                                "alt": "Dial 3 - by Generator 4, set up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/136_edit.jpg",
+                                "alt": "Dial 4 - by Generator 5, set down"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/139_edit.jpg",
+                                "alt": "Dial 5 - near the Excavation Site by the path going to the Church, set up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/137_edit.jpg",
+                                "alt": "Dial 6 - downstairs in the Church, set right"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/138_edit.jpg",
+                                "alt": "Dial 7 - upstairs in the Church, set up"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Upgrade",
+                                "description": "Set the levers, shoot the orb, then feed souls to the staff. See the upgrade process section above for more info."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/141.jpg",
+                                "alt": "Kimat's Bite"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Upgraded Ice Staff (Ull's Arrow)",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Match the 6 symbols",
+                                "description": "Go to the Ice section in The Crazy Place. There is a wall with a glowing symbol on it, and there are 6 stones with symbols in the air. The chart below shows which stone symbol corresponds to each of the wall symbols. Using the Staff of Ice, shoot the stone that corresponds to the symbol on the wall and repeat until all 6 stones remain facing up."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/124.jpg",
+                                "alt": "Glowing symbol on the wall"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/125.jpg",
+                                "alt": "6 stones with symbols"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "pic": {
+                                "src": "assets/ice_symbols.jpg",
+                                "alt": "Chart to match the symbols"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Destroy 3 graves",
+                                "description": "There are 3 graves that must be shot with the Staff of Ice to be frozen, then shot with a bullet gun to be destroyed."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/126.jpg",
+                                "alt": "Location 1 - outside the Tank Station near Generator 2"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/127.jpg",
+                                "alt": "Location 2 - near the footprint by Generator 4"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/128.jpg",
+                                "alt": "Location 3 - on the Excavation Site hill"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Upgrade",
+                                "description": "Set the levers, shoot the orb, then feed souls to the staff. See the upgrade process section above for more info."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/130.jpg",
+                                "alt": "Ull's Arrow"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "One Inch Punch",
+            "description": "Complete the shared bottom trial of the Rituals of the Ancients. Taking the reward will upgrade your melee attack to a powerful punch.",
+            "subsections": [
+                {
+                    "header": "Fill 4 Chests to Capacity",
+                    "description": "There are 4 chests in the Giant Robot footprints that must be filled with zombie souls. Kill enough zombies next to each chests until they disappear. If a Giant Robot steps on the chest, its progress will be reset.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/89.jpg",
+                                "alt": "Chest 1 - by the Excavation Site"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/88.jpg",
+                                "alt": "Chest 2 - next to Generator 4"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/90.jpg",
+                                "alt": "Chest 3 - next to Generator 5"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/91.jpg",
+                                "alt": "Chest 4 - by the Church"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Take the Reward",
+                    "description": "All players can now go to either of the 2 Rituals of the Ancients locations and claim the reward.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/97.jpg",
+                                "alt": "Glowing reward at the bottom"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/98.jpg",
+                                "alt": "One Inch Punch reward"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "G-Strike Beacon",
+            "description": "Each player who wants the G-Strike Beacon must cleanse a tablet.",
+            "subsections": [
+                {
+                    "header": "Aquire a Tablet",
+                    "description": "Go to the Tank Station next to Generator 2. In the back of the room, there is a table with 4 tablets on it. Each player can take one tablet.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/92.jpg",
+                                "alt": "Table with tablets"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Cleanse the Tablet in the Church",
+                    "description": "Place the tablet in the holy water upstairs in the Church. Get melee kills next to the tablet until enough zombie souls have been collected.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/93.jpg",
+                                "alt": "Tablet in the holy water"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Carefully Carry the Tablet to the Tank Station",
+                    "description": "Pick up the tablet from the holy water, then walk back to the Tank Station without touching any mud. If you step on any mud on the way back, you have to cleanse it in the Church again. Place the cleansed tablet on the original table in the Tank Station.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/94.jpg",
+                                "alt": "Table to place cleansed tablet"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Unlock the G-Strike Beacon",
+                    "description": "Get more melee kills next to the tablet until the G-Strike Beacon appears on the table. Interact to pick up the G-Strike Beacon.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/95.jpg",
+                                "alt": "G-Strike Beacon"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Main Quest (Little Lost Girl)",
+            "subsections": [
+                {
+                    "header": "Requirements",
+                    "elements": [
+                        {
+                            "full": true,
+                            "bullets": [
+                                "All 4 Elemental Staffs crafted and upgraded",
+                                "Maxis Drone",
+                                "One Inch Punch (all players)",
+                                "G-Strike Beacon (at least 1 player)"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "header": "1. Upgrade the 4 Staffs (Secure the Keys)",
+                    "description": "Craft and upgrade each of the 4 Elemental Staffs. Power on all 6 generators is required to finish the step.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/145.jpg",
+                                "alt": "The 4 upgraded staffs"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Place the 4 Staffs in Pedestals (Ascend from Darkness)",
+                    "description": "Each of the upgraded staffs must be placed in specific pedestals. The staffs cannot be used again until the step is over.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/142.jpg",
+                                "alt": "Fire Staff pedestal - downstairs in the Excavation Site"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/144.jpg",
+                                "alt": "Lightning Staff pedestal - in the Thor Giant Robot that walks through the trenches"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/200.jpg",
+                                "alt": "Wind Staff pedestal - in the Odin Giant Robot that walks across No Man's Land"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/143.jpg",
+                                "alt": "Ice Staff pedestal - in the Freya Giant Robot that walks by the Church"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Press the Button and Fire the G-Strike Beacon (Rain Fire)",
+                    "description": "All 3 Giant Robots will keep marching across the map, and each time they march, only one of the 6 feet can be entered. One player must enter the Giant Robot and press the red button inside its head. Quickly after pressing the button, throw a G-Strike Beacon at the cracked stone outside of Generator 5. When done correctly, the stone will be destroyed, revealing a pit.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/180.jpg",
+                                "alt": "Red button inside the Giant Robot's head"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/179.jpg",
+                                "alt": "Location to throw G-Strike Beacon"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/181.jpg",
+                                "alt": "Opened pit"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "4. Launch the Maxis Drone and Kill Panzers (Unleash the Horde)",
+                    "description": "Release the Maxis Drone near the pit from the previous step. It will fly inside, then several Panzers will fly out. Kill all the Panzers.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/182.jpg",
+                                "alt": "Maxis Drone flying towards the pit"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/183.jpg",
+                                "alt": "Panzers flying out of the pit"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "5. Shoot Down the Plane and Kill the Pilot (Skewer the Winged Beast)",
+                    "description": "Shoot the glowing orange plane flying around the map. The plane is only visible while using Zombie Blood. After being shot down, the pilot zombie will run around the Excavation Site area clockwise (it will not be up by Pack-a-Punch, but just the surrounding paths going in a circle). The zombie can only be seen while using Zombie Blood, but it can be a different use of Zombie Blood than the one that was used to shoot down the plane. Run around counterclockwise to find the zombie, then kill it so it drops the Maxis Drone. The zombie will look like a normal zombie, and the easiest way to find it is to kill all zombies that run clockwise around the Excavation Site area. Pick up the Maxis Drone to complete the step.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/184.jpg",
+                                "alt": "Glowing orange plane"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/185.jpg",
+                                "alt": "Pilot zombie"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/147.jpg",
+                                "alt": "Maxis Drone dropped from pilot zombie"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "6. Upgrade the One Inch Punch (Wield a Fist of Iron)",
+                    "description": "All players must upgrade their One Inch Punch. Go downstairs in the Excavation Site and use the One Inch Punch to kill templar zombies with a white glow. After enough have been killed, the last one will drop a tablet that must be picked up to upgrade the One Inch Punch. Each player must get enough kills with the One Inch Punch to get their own tablet.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/186.jpg",
+                                "alt": "Tablet to upgrade One Inch Punch"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "7. Kill Templar Zombies in The Crazy Place (Raise Hell)",
+                    "description": "Before starting this step, make sure all 6 generators are powered. Go to The Crazy Place and insert all 4 upgraded staffs in the altars. Then, kill templar zombies until enough souls fly up in the middle. Picking up the Staffs will stop souls from being collected until they are inserted back into the altars. After enough kills, a rift will appear in the air.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/187.jpg",
+                                "alt": "All 4 upgraded staffs placed in The Crazy Place"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/188.jpg",
+                                "alt": "Templar zombie souls flying up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/189.jpg",
+                                "alt": "The rift"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "8. Release the Maxis Drone (Freedom)",
+                    "description": "Release the Maxis Drone so it flies into the rift. Then, all players must interact on the light in the center of The Crazy Place. This will end the game and grant the achievement for all players. If the cutscene does not start, powering all 6 generators should fix it.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/190.jpg",
+                                "alt": "Maxis Drone flying into the rift"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/191.jpg",
+                                "alt": "Light beam to interact"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Songs",
+            "subsections": [
+                {
+                    "header": "Archangel",
+                    "description": "Interact with 3 green Element 115 meteorites.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/4.jpg",
+                                "alt": "Location 1 - in spawn, near the door to Generator 3"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/34.jpg",
+                                "alt": "Location 2 - in the Workshop, near the door to No Man's Land"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/33.jpg",
+                                "alt": "Location 3 - on some scaffolding near Pack-a-Punch"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Shepherd of Fire",
+                    "description": "Interact with 3 radios.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/52.jpg",
+                                "alt": "Location 1 - downstairs in the Excavation Site, on some scaffolding"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/54.jpg",
+                                "alt": "Location 2 - in The Crazy Place, hugging the wall between the Fire and Lightning sections"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/53.jpg",
+                                "alt": "Location 3 - in the Freya Giant Robot that walks by the Church"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Aether",
+                    "description": "Go prone and interact on both number 1 icons at Generator 1, then do the same for one of the number 5 icons at Generator 5.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/50.jpg",
+                                "alt": "Number 1 icon at Generator 1"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/51.jpg",
+                                "alt": "Number 5 icon at Generator 5"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Side Easter Eggs",
+            "subsections": [
+                {
+                    "header": "Free Zombie Blood",
+                    "description": "This can be activated whenever the carts are flaming (once per round unless it rains). Shoot the 3 flaming carts with the Ice Staff, then pick up the Zombie Blood from the top of the Excavation Site.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/106.jpg",
+                                "alt": "Cart 1 - near Generator 5"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/107.jpg",
+                                "alt": "Cart 2 - near the path to the Workshop"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/108.jpg",
+                                "alt": "Cart 3 - between Generator 4 and the Church"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/173.jpg",
+                                "alt": "Zombie Blood power-up"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Free Magna Collider",
+                    "description": "Bring the Maxis Drone to 4 yellow discs around the map. Each time, the drone will fly to the disc and collect it, and it doesn't have to be a single use of the Maxis Drone. After collecting all 4 discs, the Maxis Drone will fly to the Excavation Site and drop a free Magna Collider (PaP MG08/15) in front of the Pack-a-Punch machine.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/209_edit.jpg",
+                                "alt": "Disc 1 - on the Church roof, near the front entrance to the basement"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/208_edit.jpg",
+                                "alt": "Disc 2 - on top of the Excavation Site, on some scaffolding"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/207_edit.jpg",
+                                "alt": "Disc 3 - near Generator 5, on a wooden beam"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/210_edit.jpg",
+                                "alt": "Disc 4 - directly out the door from Generator 1 towards Generator 2, on a pile of burning wood"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/211.jpg",
+                                "alt": "Magna Collider in front of the Pack-a-Punch machine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Golden Shovel",
+                    "description": "Each player can unlock the Golden Shovel by digging 30 piles. On the 30th pile, a sound will be heard and the shovel icon on the HUD will change to be golden. Dig pile rewards will be better when using the Golden Shovel, and it also unlocks the ability to get the Golden Helmet and hidden red dig piles.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Golden Helmet",
+                                "description": "When digging with the Golden Shovel, there is a chance to unlock the Golden Helmet. A sound will be heard and the Golden Helmet will be seen on the HUD. When wearing the Golden Helmet, you will not be downed when stepped on by a Giant Robot."
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Hidden red dig piles",
+                                "description": "When Zombie Blood is active, a red dig pile will be visible somewhere in the map. There are 16 possible locations, and exactly 1 pile will be in the map at a time. The pile will remain in the same location until it's dug, even across multiple uses of Zombie Blood. After it's dug, a different location will get the red pile, but not until starting the next round. Locations will never be repeated, and each player can only get 4 red piles during a game. Digging the red pile with the Golden Shovel will grant a permanent empty perk bottle power-up. For each empty perk bottle obtained, your max perk count increases by 1."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/212.jpg",
+                                "alt": "Empty perk bottle power-up from a red dig pile"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/218.jpg",
+                                "alt": "Location 1 - near Generator 5, in the footprint where the One Inch Punch chest is"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/224.jpg",
+                                "alt": "Location 2 - between Generator 5 and the Church, in the footprint"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/220.jpg",
+                                "alt": "Location 3 - on the mud Tank path between Generator 5 and the Church (can be seen from the dropoff in the path)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/225.jpg",
+                                "alt": "Location 4 - on the mud Tank path between Generator 5 and Generator 2"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/217.jpg",
+                                "alt": "Location 5 - near Generator 2, in the trench that goes under the Tank path that leads to Generator 5"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/221.jpg",
+                                "alt": "Location 6 - near Generator 2, out the back door of the Tank Station"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/216.jpg",
+                                "alt": "Location 7 - between Generator 2 and Generator 1, next to a wall-buy"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/213.jpg",
+                                "alt": "Location 8 - just out the door of Generator 1 that goes to Generator 2"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/223.jpg",
+                                "alt": "Location 9 - down the Fire Tunnel between Generator 1 and Generator 3"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/222.jpg",
+                                "alt": "Location 10 - between Generator 1 and Generator 3, in a dead end of the trenches"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/214.jpg",
+                                "alt": "Location 11 - right next to Generator 3"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/219.jpg",
+                                "alt": "Location 12 - between Generator 4 and the Excavation Site, between 2 footprints"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/226.jpg",
+                                "alt": "Location 13 - on the mud Tank path between Generator 4 and Generator 3"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/227.jpg",
+                                "alt": "Location 14 - right next to Generator 4"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/215.jpg",
+                                "alt": "Location 15 - on the mud Tank path between Generator 4 and the Church (can be seen from the dropoff in the path)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/228.jpg",
+                                "alt": "Location 16 - right next to Generator 6"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Jumpscare",
+                    "description": "Go to the Excavation Site and look towards the Church. Using a sniper, aim down the sniper scope to the burning window.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/171.jpg",
+                                "alt": "Location to stand"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/172.jpg",
+                                "alt": "Flaming window to aim at"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/170.jpg",
+                                "alt": "Jumpscare"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Hide and Seek",
+            "description": "Play Remember Forever and get a Max Ammo (Black Ops III only)",
+            "subsections": [
+                {
+                    "header": "1. Shoot 4 Wisps with the Staffs",
+                    "description": "Go downstairs in the Excavation Site by the staff statues. Looking up, there is a circle with 4 invisible wisps on each side. Looking at the wisps while in Zombie Blood will reveal their colors, but this is not required as they can be shot without Zombie Blood and are in the same locations every game. Shoot each of the 4 wisps with the corresponding Elemental Staff. Standing under the circle and facing towards Mule Kick, the Fire wisp is in front facing Mule Kick, the Ice wisp is on the left, the Lightning wisp is on the back facing the staff statues, and the Wind wisp is on the right.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/174.jpg",
+                                "alt": "Circle with 4 wisps, seen with Zombie Blood"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Hide and Seek",
+                    "description": "Interact with a Samantha doll in the center of The Crazy Place. A particle effect will show the game has started. Then, shoot all 6 Samantha dolls. If you run out of time, Samantha will laugh, and you have to start the game again at the original doll.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/175.jpg",
+                                "alt": "The doll to start hide and seek"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/176.jpg",
+                                "alt": "The 6 Samantha dolls, in the center of The Crazy Place"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Let the First Doll Ascend",
+                    "description": "The original doll will respawn and float upwards. When it flies all the way up, you'll get a Max Ammo and the song will play.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/177.jpg",
+                                "alt": "The doll floating up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/178.jpg",
+                                "alt": "Max Ammo"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
