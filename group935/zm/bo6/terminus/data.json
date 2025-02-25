@@ -297,7 +297,7 @@
             "description": "Complete a quest from Captain Gregg to get some loot and a special Cursed Talisman item that permanently doubles points (with a cost). This will unlock the Treasure Hunter achievement.",
             "subsections": [
                 {
-                    "header": "1. Find the treasure map",
+                    "header": "1. Find the Treasure Map",
                     "description": "Use Melee Macchiato in the Speed Cola cave to break some rocks.",
                     "elements": [
                         {
@@ -309,7 +309,7 @@
                     ]
                 },
                 {
-                    "header": "2. Retrieve the watch",
+                    "header": "2. Retrieve the Watch",
                     "description": "Use the red X on the treasure map to find the location of the watch around Terminus Island. The spawn location is randomized each game, but will always be underwater. Pick up the watch and give it to Captain Gregg (the skeleton in the cave).",
                     "elements": [
                         {
@@ -327,7 +327,7 @@
                     ]
                 },
                 {
-                    "header": "3. Collect the 3 coins",
+                    "header": "3. Collect the 3 Coins",
                     "description": "After Captain Gregg is done talking, there will be 3 new red X's on the map. Each red X marks a skeleton around the map, and the locations are the same every game. Bring Molotovs or Thermo Grenades to each location and throw one at the skeleton. This will spawn an H.V.T. that must be killed to collect a coin. After picking up the Cursed Coin, your screen will glow purple until you return the coin to Captain Gregg (you can wait and return all 3 at once or return each coin after retrieving it).",
                     "elements": [
                         {
@@ -369,7 +369,7 @@
                     ]
                 },
                 {
-                    "header": "4. Return the coins",
+                    "header": "4. Return the Coins",
                     "description": "Give the 3 coins to Captain Gregg to get some loot. The final step will now be available after 3 rounds.",
                     "elements": [
                         {
@@ -387,7 +387,7 @@
                     ]
                 },
                 {
-                    "header": "5. Find the treasure chest",
+                    "header": "5. Find the Treasure Chest",
                     "description": "3 rounds after the previous step, Crab Island will become stormy and continuously struck by lightning. The lightning will go away after some time, and will only return every 3-4 rounds until the treasure is found. While the island is storming, find and interact on the treasure chest to get a Cursed Talisman. With the Talisman equipped, kills will be worth twice as many points, but you will lose some points each time you get hit. You can return the Talisman back into the chest to remove the effect or give it to another player. A Dark Ops challenge can be unlocked for getting 25k points without taking any damage, while holding the Talisman.",
                     "elements": [
                         {
@@ -416,19 +416,19 @@
             "header": "DRI-11 Beamsmasher",
             "subsections": [
                 {
-                    "header": "1. Shock the electric boxes",
-                    "description": "5 electric boxes must be shot using a gun with Dead Wire. After the final box is shot, a door will open to the Beamsmasher room.",
+                    "header": "1. Shock the 5 Electrical Panels",
+                    "description": "Ride the Inclined Lift and use a weapon equipped with Dead Wire to shoot the Electrical Panels. After the final panel is shot, a door will open to the Research Lab.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/76_edit.jpg",
-                                "alt": "Location 1 - in a room seen when moving on the Inclined Lift and facing away from the PaP machine"
+                                "alt": "Location 1 - in a room seen when riding the Inclined Lift and facing away from the PaP machine"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/78.jpg",
-                                "alt": "Location 2 - on the wall when moving on the Inclined Lift and facing left (from the perspective of moving upwards)"
+                                "alt": "Location 2 - on the wall seen when riding up on the Inclined Lift and facing left"
                             }
                         },
                         {
@@ -458,8 +458,8 @@
                     ]
                 },
                 {
-                    "header": "2. Collect the EMF Fob",
-                    "description": "Enter the Beamsmasher room and kill the zombie stuck under the bookshelf. It will drop the part to pick up.",
+                    "header": "2. Retrieve the EMF Fob from Dr. Tonovsky",
+                    "description": "Enter the Research Lab and kill the zombie stuck under the bookshelf. It will drop the part to pick up.",
                     "elements": [
                         {
                             "pic": {
@@ -476,7 +476,7 @@
                     ]
                 },
                 {
-                    "header": "3. Collect the Multiphasic Resonator",
+                    "header": "3. Retrieve the Contents of Dr. Tonovsky's Briefcase",
                     "description": "Next to Elemental Pop is a briefcase with a hand attached. Open the briefcase and pick up the part. A large group of Vermin will spawn after the briefcase is opened.",
                     "elements": [
                         {
@@ -494,8 +494,8 @@
                     ]
                 },
                 {
-                    "header": "4. Interact with 3 laptops",
-                    "description": "There are 3 laptops labelled 'X', 'Y', and 'Z'. All 3 must be interacted in any order, and each will show a randomized symbol to correspond with the labelled letter. The 3 letters and their matching symbols will be displayed on notes in the Beamsmasher room after interacting with the laptops, so there is no need to memorize them.",
+                    "header": "4. Activate All Harmonic Triangulators",
+                    "description": "There are 3 laptops labelled 'X', 'Y', and 'Z'. All 3 must be powered on in any order, and each will show a randomized symbol to correspond with the labelled letter. The 3 letters and their matching symbols will be displayed on notes in the Research Lab after interacting with the laptops, so there is no need to memorize them.",
                     "elements": [
                         {
                             "pic": {
@@ -518,8 +518,8 @@
                     ]
                 },
                 {
-                    "header": "5. Enter the code",
-                    "description": "Go back to the Beamsmasher room and interact on the computer. The computer can be interacted again to enter a code. Whiteboards in the back of the room can be used to solve the code depending on the symbols on the laptops. Alternatively, after entering any wrong code, Dr. Peck can be paid 5000 points to reveal the correct code.",
+                    "header": "5. Enter the Code",
+                    "description": "Go back to the Research Lab and interact on the computer to return the Resonator. The computer can be interacted again to enter a code. Whiteboards in the back of the room can be used to solve the code depending on the symbols on the laptops. Alternatively, after entering any wrong code, Dr. Peck can be paid 5000 points to reveal the correct code.",
                     "elements": [
                         {
                             "pic": {
@@ -557,8 +557,8 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "Pick up the Multiphasic Resonator",
-                                "description": "After the previous round has ended, the computer will highlight one of the islands. Pick up the Multiphasic Resonator from the computer, then go to the selected island."
+                                "title": "i. Pick up the Multiphasic Resonator",
+                                "description": "Wait for the Location Sequence to complete by ending the round, then the computer will highlight one of the islands. Take the Calibrated Resonator from the computer, then go to the selected island."
                             }
                         },
                         {
@@ -570,44 +570,44 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "Feed the orb",
-                                "description": "Interact on the glowing orb to place the Multiphasic Resonator. Wait until it shocks a zombie, then kill the zombie so it drops a small orb of energy. Pick up the smaller orb and bring it to the larger orb, then repeat until the large orb flies away. This must be done twice more on different islands, and the orb will be a different color each time. Remember to pick up the Multiphasic Resonator each time before moving to the next island. After the final orb, the AMP Munition will drop."
+                                "title": "ii. Feed the AMP Orb",
+                                "description": "Interact on the AMP Orb to place the Multiphasic Resonator. Wait until it shocks a zombie, then kill the zombie so it drops an energy packet. Take the energy packet and bring it to the AMP Orb, and repeat until the AMP Orb flies away. This must be done twice more on different islands, and the AMP Orb will be a different color each time. Remember to pick up the Multiphasic Resonator each time before moving to the next island. After the final AMP Orb is fed enough energy, the AMP Munition will drop."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/80.jpg",
-                                "alt": "Blue orb on Castle Rock Island"
+                                "alt": "Blue AMP Orb on Castle Rock Island"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/82.jpg",
-                                "alt": "Dropped energy orb"
+                                "alt": "Dropped energy packet"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/81.jpg",
-                                "alt": "Carrying the dropped orb to the large orb"
+                                "alt": "Carrying the energy packet to the AMP Orb"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/83.jpg",
-                                "alt": "Orb flying to the next island, leaving the Multiphasic Resonator to pick up"
+                                "alt": "AMP Orb flying to the next island, leaving the Multiphasic Resonator to pick up"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/84.jpg",
-                                "alt": "Green orb on Crab Island"
+                                "alt": "Green AMP Orb on Crab Island"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/85.jpg",
-                                "alt": "Purple orb on Temple Island"
+                                "alt": "Purple AMP Orb on Temple Island"
                             }
                         },
                         {
@@ -619,8 +619,8 @@
                     ]
                 },
                 {
-                    "header": "7. Assemble the DRI-11 Beamsmasher",
-                    "description": "Build at the workbench in the Beamsmasher room.",
+                    "header": "7. Craft the DRI-11 Beamsmasher",
+                    "description": "Build at the workbench in the Research Lab.",
                     "elements": [
                         {
                             "pic": {
@@ -653,31 +653,237 @@
                     ]
                 },
                 {
-                    "header": "",
-                    "description": "",
+                    "header": "1. Retrieve the Hard Drive",
+                    "description": "Go to Bio Lab and activate the trap by TODO. Fire the DRI-11 Beamsmasher at the tentacles until they drop the Hard Drive. Pick it up and give it to Dr. Peck.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Tentacle trap"
                             }
                         },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Hard Drive dropping from shooting the tentacles with the Beamsmasher"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Giving the Hard Drive to Dr. Peck"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Defeat Nathan",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "i. Find the code for Nathan's Chamber",
+                                "description": "A 3 digit passcode is required to unlock Nathan's Chamber, and it is randomized each game. Each number can be found on an object around the map, shown below."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Number 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Number 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Number 3 - TODO"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "ii. Enter the code",
+                                "description": "Go to Bio Lab and interact on the small window on the machine in the center of the lab. After the window is open, enter the 3 digit code on the keypad terminal below the window."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Window to open"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Keypad to enter code"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "iii. Mini-Boss fight",
+                                "description": "Before continuing, make sure you have a strong weapon, plenty of ammo, etc. All players must interact on the Relief Valves simultaneously to unleash Nathan. This will lock all Bio Lab exits until Nathan is killed. Nathan is a stronger version of an Amalgam, and can regenerate health the same way normal Amalgams do. After Nathan is killed, a cutscene will play."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Valves to interact"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Nathan"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Access the Computer in the Comms Room",
+                    "description": "Grab the Security Keycard underwater in Bio Lab, located TODO. Then bring it to the Comms room by TODO and interact with the computer TODO to access the network.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Key card"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Computer to interact"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "4. Survive the Shipwreck Lockdown",
+                    "description": "Pilot a Tactical Raft through the opening in the side of the Shipwreck, and climb the ladder to enter the secret Workshop. Interacting on a Node Connector will start a lockdown in the Workshop, so it is recommended to have all players in the room before interacting.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Ladder to secret Workshop"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Node Connectors to start lockdown"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "5. Restore Both(TODO) Network Connections",
+                    "description": "There are 3(TODO) possible locations for broken network connections around the map, but only 2(TODO) will need repairs. Take the Node Connectors from the Shipwreck Workshop to each broken connection, and interact to repair it.",
+                    "elements": [
                         {
                             "pic": {
                                 "src": "assets/43.jpg",
-                                "alt": "TODO missing tube on Crab Island near the Shipwreck"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/44.jpg",
-                                "alt": "TODO missing tube in Speed Cola cave"
+                                "alt": "Location 1 - on Crab Island near the Shipwreck"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/59.jpg",
-                                "alt": "TODO missing tube under Sea Tower"
+                                "alt": "Location 2 - under the Sea Tower"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/44.jpg",
+                                "alt": "Location 3 - in the Speed Cola cave"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "6. Reprogram the Satellite Buoys",
+                    "description": "Go back to spawn and get the Signal Hacking Device from Dr. Peck after some dialogue plays (TODO). Now go to the Sea and find the 3(TODO) buoys with satellites attached. Hold interact to hack the signal, then hack the remaining 2(TODO) buoys before the timer runs out. After the last buoy has been hacked, some dialogue will play, and it will begin a timed step. All players should go to the Bio Lab to be ready for the next step.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Hacking Device"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "One of the Satellite Buoys to hack"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Hacking a buoy"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "7. Defuse the Apocalypse Protocol Bombs in the Bio Lab",
+                    "description": "This step is timed, and will start automatically after the previous step is finished. There are 3 bombs in the Bio Lab that must be defused before the bomb detonation timer runs out, and failing to do so will end the game. Defusing a bomb requires holding interact for a long time, and you cannot use any weapons or equipment during this time. It is recommended to use Decoys(TODO) or Aether Shroud(TODO) in a solo(TODO) match.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Bomb 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Bomb 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Bomb 3 - TODO"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "8. Boss Fight",
+                    "description": "You cannot leave the boss fight until it's done. Make sure you have perks, armor, strong weapons, and anything else you want to bring. Go to Bio Lab and interact on the keypad at the door by TODO to start the Final Encounter. After a brief cutscene, you must defeat Patient 13 by shooting its glowing parts. Be sure to avoid standing directly in front of Patient 13, as it has a strong melee attack that can down players. At 2 points during the boss fight, Patient 13 will hide underwater, and you must shoot its tentacles until it reappears. After Patient 13 vanishes for the second time, all players must stand near the lab and stay there until it reappears, as you may get trapped outside the arena and be killed when it reappears. For the rest of the fight, Patient 13 will block off the back half of the arena. TODO",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Keypad to start boss fight"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Glowing red mass on Patient 13"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Glowing yellow tentacles"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Glowing mouth"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Standing near the lab to avoid being trapped outside the map near the end of the fight"
                             }
                         }
                     ]

@@ -18,10 +18,16 @@
     --accent-color-primis: #FF6600;
     --accent-text-aether: #FFFF55;
     --accent-color-aether: #DEB12D;
+    --accent-text-chaos: var(--accent-text-aether);
+    --accent-color-chaos: var(--accent-color-aether);
     --accent-text-dark_aether: #7078F1;
     --accent-color-dark_aether: #5C49A4;
     --accent-text-grayscale: #AAAAAA;
     --accent-color-grayscale: #555555;
+    --accent-text-exo: var(--accent-text-ultimis);
+    --accent-color-exo: var(--accent-color-ultimis);
+    --accent-text-iwz: #96f447;
+    --accent-color-iwz: #dd69ef;
     --accent-text: var(--accent-text-ultimis);
     --accent-color: var(--accent-color-ultimis);
 }
@@ -272,7 +278,8 @@ li::marker {
     text-align: center;
     display: flex;
     align-items: center;
-    font-weight: bold;
+    font-size: xx-large;
+    font-weight: bolder;
     margin: 0;
     float: left;
 }

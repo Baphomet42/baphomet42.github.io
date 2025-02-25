@@ -48,7 +48,7 @@
         function buildGames(value) {
             let game = ''
             game += '<div class="game-wrap no-select"><table class="game-table"><tr class="game-row">'
-            game += '<td class="game-td center" style="background-image: url(/group935/assets/'+value.id+'.jpg)">'
+            game += '<td class="game-td center" style="background-image: url(/group935/zm/'+value.id+'/icon.jpg)">'
             game += '</td>'
             game += '<td class="maps-td"><div class="maps-list-wrap-outer"><div class="maps-list-wrap"><table class="maps-list-table"><tr class="maps-row">'
             
@@ -80,8 +80,6 @@
 
                 game += linkData + '<div class="map-button-wrap"><div class="map-button'+mapButtonData+'"'+imgData+'>'
                 game += '<h2 class="map-name">' + mapVal.name + '</h2>'
-                if(mapVal.desc)
-                    game += '<p class="map-desc center">'+mapVal.desc+'</p>'
                 game += '</div></div>'
                 game += linkDataEnd
                 game += '</td>'

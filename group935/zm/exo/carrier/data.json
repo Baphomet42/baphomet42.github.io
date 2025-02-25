@@ -1,8 +1,8 @@
 {
-    "id": "bo4/ancient_evil",
-    "name": "Ancient Evil",
+    "id": "exo/carrier",
+    "name": "Carrier",
     "background": "",
-    "style": "chaos",
+    "style": "exo",
     "rev": 2,
     "wip": true,
     "sections" : [

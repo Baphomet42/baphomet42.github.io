@@ -6,7 +6,8 @@ To ensure a consistent feel, try to stick to these guidelines.
 
 + New game:
     + Add info to `group935/data.json`
-    + Place jpg in `group935/assets/<id>.jpg`
+    + Place jpg in `group935/<id>/icon.jpg`
+        + Max res 320x320 (some maps are less)
 + New map:
     + Create folder `group935/zm/<id>/`
         + Copy `index.html` from another map and change the map name in the `<head><title>`
@@ -96,3 +97,12 @@ To ensure a consistent feel, try to stick to these guidelines.
         + Add wall texture to left and stone to right both with 220 height
         + Resize canvas to 640x270
         + Combine 12 images
+
+# Word Choice, Capitalization, etc.
+
++ Common words should be consistently capitalized in all maps
+    + This goes for names of perks, weapons, rooms, etc.
++ Page element consistency:
+    + `"header"` texts should use title case capitalization
+    + `"alt"` texts should usually be 1 sentence without ending in a period, but not using title case capitalization
+    + Most other texts should use common sentence capitalization and grammar (always ending in a period)

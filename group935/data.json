@@ -99,6 +99,29 @@
                 {"id": "waw/shi_no_numa", "name": "Shi No Numa"},
                 {"id": "waw/der_riese", "name": "Der Riese", "wip": true}
             ]
+        },
+        {
+            "id": "iwz",
+            "name": "Infinite Warfare",
+            "year": 2016,
+            "maps": [
+                {"id": "iwz/zombies_in_spaceland", "name": "Zombies in Spaceland", "wip": true},
+                {"id": "iwz/rave_in_the_redwoods", "name": "Red in the Redwoods", "wip": true},
+                {"id": "iwz/shaolin_shuffle", "name": "Shaolin Shuffle", "wip": true},
+                {"id": "iwz/attack_of_the_radioactive_thing", "name": "Attack of the Radioactive Thing", "wip": true},
+                {"id": "iwz/the_beast_from_beyond", "name": "The Beast From Beyond", "wip": true}
+            ]
+        },
+        {
+            "id": "exo",
+            "name": "Advanced Warfare",
+            "year": 2014,
+            "maps": [
+                {"id": "exo/outbreak", "name": "Outbreak", "wip": true},
+                {"id": "exo/infection", "name": "Infection", "wip": true},
+                {"id": "exo/carrier", "name": "Carrier", "wip": true},
+                {"id": "exo/descent", "name": "Descent", "wip": true}
+            ]
         }
     ]
 }

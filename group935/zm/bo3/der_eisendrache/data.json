@@ -391,7 +391,7 @@
             "description": "Feed 8 zombies to each of the 3 dragon heads.",
             "subsections": [
                 {
-                    "header": "Dragon locations",
+                    "header": "Dragon Locations",
                     "description": "After each kill, wait for the dragon animation to finish before killing the next zombie. When done, the dragon head will be destroyed.",
                     "elements": [
                         {
@@ -415,7 +415,7 @@
                     ]
                 },
                 {
-                    "header": "Aquire the bow",
+                    "header": "Aquire the Bow",
                     "description": "Interact with the bow down the stairs from Speed Cola. This will replace your active weapon like a wall-buy.",
                     "elements": [
                         {
