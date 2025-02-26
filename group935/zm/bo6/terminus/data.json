@@ -4,7 +4,6 @@
     "background": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/bo6/BO6-ZOMBIES-888-001.jpg",
     "style": "dark_aether",
     "rev": 2,
-    "wip": true,
     "maps": [{"img": "assets/maps.jpg", "link": "https://callofduty.fandom.com/wiki/Terminus_(Zombies)?file=Terminus+MiniMap+BO6.png"}],
     "sections" : [
         {
@@ -558,7 +557,7 @@
                             "full": true,
                             "step": {
                                 "title": "i. Pick up the Multiphasic Resonator",
-                                "description": "Wait for the Location Sequence to complete by ending the round, then the computer will highlight one of the islands. Take the Calibrated Resonator from the computer, then go to the selected island."
+                                "description": "Wait for the Location Sequence to complete by ending the round. If it is not yet round 9, you must keep progressing rounds until round 9, at which point the computer will highlight one of the islands. Take the Calibrated Resonator from the computer, then go to the selected island (it will always highlight Castle Rock Island first)."
                             }
                         },
                         {
@@ -570,7 +569,7 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "ii. Feed the AMP Orb",
+                                "title": "ii. Feed the AMP Orb on 3 islands",
                                 "description": "Interact on the AMP Orb to place the Multiphasic Resonator. Wait until it shocks a zombie, then kill the zombie so it drops an energy packet. Take the energy packet and bring it to the AMP Orb, and repeat until the AMP Orb flies away. This must be done twice more on different islands, and the AMP Orb will be a different color each time. Remember to pick up the Multiphasic Resonator each time before moving to the next island. After the final AMP Orb is fed enough energy, the AMP Munition will drop."
                             }
                         },
@@ -654,135 +653,157 @@
                 },
                 {
                     "header": "1. Retrieve the Hard Drive",
-                    "description": "Go to Bio Lab and activate the trap by TODO. Fire the DRI-11 Beamsmasher at the tentacles until they drop the Hard Drive. Pick it up and give it to Dr. Peck.",
+                    "description": "Go to each of the tentacle traps until you find a small keycard on the ground beneath the trap. This will also be the only one of the traps with the vents already ripped apart before the first activation. Activate the trap and fire the DRI-11 Beamsmasher at the tentacles until they drop the Hard Drive. Pick it up and give it to Dr. Peck.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Tentacle trap"
+                                "src": "assets/140_edit.jpg",
+                                "alt": "Keycard below trap"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/138.jpg",
+                                "alt": "Location 1 - in spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/139.jpg",
+                                "alt": "Location 2 - by Juggernog"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/141.jpg",
+                                "alt": "Location 3 - Bio Lab, at the entrance to the PhD Flopper tunnel"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/142.jpg",
+                                "alt": "Location 4 - Bio Lab, at the entrance to the Speed Cola cave"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/148.jpg",
                                 "alt": "Hard Drive dropping from shooting the tentacles with the Beamsmasher"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Giving the Hard Drive to Dr. Peck"
+                                "src": "assets/143.jpg",
+                                "alt": "Box to give Hard Drive to Dr. Peck"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "2. Defeat Nathan",
+                    "header": "2. Find the Code for Nathan's Chamber",
+                    "description": "A 3 digit passcode is required to unlock Nathan's Chamber, and it is randomized each game. Each number can be found on an object around the map, shown below. After figuring out the code, go to Bio Lab and interact on the small window on the machine in the center of the lab. With the window open, enter the 3 digit code on the keypad terminal below the window.",
                     "elements": [
                         {
-                            "full": true,
-                            "step": {
-                                "title": "i. Find the code for Nathan's Chamber",
-                                "description": "A 3 digit passcode is required to unlock Nathan's Chamber, and it is randomized each game. Each number can be found on an object around the map, shown below."
+                            "pic": {
+                                "src": "assets/135_edit.jpg",
+                                "alt": "Number 1 - the hour hand of the clock by Quick Revive, through a barrier"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Number 1 - TODO"
+                                "src": "assets/136_edit.jpg",
+                                "alt": "Number 2 - the number of a playing card on the bulletin board in the Mess Hall"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Number 2 - TODO"
+                                "src": "assets/137_edit.jpg",
+                                "alt": "Number 3 - the number on the 'DAYS SINCE LAST INJURY' sign in the room between Juggernog and Elemental Pop"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Number 3 - TODO"
-                            }
-                        },
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "ii. Enter the code",
-                                "description": "Go to Bio Lab and interact on the small window on the machine in the center of the lab. After the window is open, enter the 3 digit code on the keypad terminal below the window."
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/144.jpg",
                                 "alt": "Window to open"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/145.jpg",
                                 "alt": "Keypad to enter code"
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Defeat Nathan",
+                    "description": "Before continuing, make sure you have a strong weapon, plenty of ammo, etc. All players must interact on the Relief Valves simultaneously to unleash Nathan (there are 4 Relief Valves around the containment unit). This will lock all Bio Lab exits until Nathan is killed. Nathan is a stronger version of an Amalgam, and can regenerate health the same way normal Amalgams do. After Nathan is killed, a cutscene will play.",
+                    "elements": [
                         {
-                            "full": true,
-                            "step": {
-                                "title": "iii. Mini-Boss fight",
-                                "description": "Before continuing, make sure you have a strong weapon, plenty of ammo, etc. All players must interact on the Relief Valves simultaneously to unleash Nathan. This will lock all Bio Lab exits until Nathan is killed. Nathan is a stronger version of an Amalgam, and can regenerate health the same way normal Amalgams do. After Nathan is killed, a cutscene will play."
+                            "pic": {
+                                "src": "assets/147.jpg",
+                                "alt": "1 of the 4 Relief Valves"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Valves to interact"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/150.jpg",
                                 "alt": "Nathan"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "3. Access the Computer in the Comms Room",
-                    "description": "Grab the Security Keycard underwater in Bio Lab, located TODO. Then bring it to the Comms room by TODO and interact with the computer TODO to access the network.",
+                    "header": "4. Access the Computer in the Comms Room",
+                    "description": "Grab the Security Keycard underwater in Bio Lab, under one of the bridges that connect to the central area. Then, bring it to the Comms room between Juggernog and Stamin-Up. Access the network by interacting on the computer that has a terminal open. When done successfully, the computer screen will read 'Network Connection Error'.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/151_edit.jpg",
+                                "alt": "Keycard seen under a bridge"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/152.jpg",
                                 "alt": "Key card"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/154_edit.jpg",
                                 "alt": "Computer to interact"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/156.jpg",
+                                "alt": "Error after interacting"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "4. Survive the Shipwreck Lockdown",
+                    "header": "5. Survive the Shipwreck Lockdown",
                     "description": "Pilot a Tactical Raft through the opening in the side of the Shipwreck, and climb the ladder to enter the secret Workshop. Interacting on a Node Connector will start a lockdown in the Workshop, so it is recommended to have all players in the room before interacting.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/157.jpg",
                                 "alt": "Ladder to secret Workshop"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/158.jpg",
                                 "alt": "Node Connectors to start lockdown"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "5. Restore Both(TODO) Network Connections",
-                    "description": "There are 3(TODO) possible locations for broken network connections around the map, but only 2(TODO) will need repairs. Take the Node Connectors from the Shipwreck Workshop to each broken connection, and interact to repair it.",
+                    "header": "6. Restore Both Network Connections",
+                    "description": "There are 3 possible locations for broken network connections around the map, but only 2 will need repairs. Take the Node Connectors from the Shipwreck Workshop to each broken connection, and hold interact to repair it.",
                     "elements": [
                         {
                             "pic": {
@@ -805,85 +826,148 @@
                     ]
                 },
                 {
-                    "header": "6. Reprogram the Satellite Buoys",
-                    "description": "Go back to spawn and get the Signal Hacking Device from Dr. Peck after some dialogue plays (TODO). Now go to the Sea and find the 3(TODO) buoys with satellites attached. Hold interact to hack the signal, then hack the remaining 2(TODO) buoys before the timer runs out. After the last buoy has been hacked, some dialogue will play, and it will begin a timed step. All players should go to the Bio Lab to be ready for the next step.",
+                    "header": "7. Reprogram the Satellite Buoys",
+                    "description": "Go back to spawn and get the Signal Hacking Device from Dr. Peck, after some dialogue plays. Now, go to the Sea and find the 3 buoys with satellites attached. Hold interact to hack the signal, then hack the remaining 2 buoys before the timer runs out. After the last buoy has been hacked, some dialogue will play, and it will begin a timed step that will end the game if you fail. All players should go to the Bio Lab to be ready for the next step.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/159.jpg",
                                 "alt": "Hacking Device"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "One of the Satellite Buoys to hack"
+                                "src": "assets/161.jpg",
+                                "alt": "Satellite Buoy 1 - between Crab Island and Castle Rock Island"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/163.jpg",
+                                "alt": "Satellite Buoy 2 - between Crab Island and the Shipwreck"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/164.jpg",
+                                "alt": "Satellite Buoy 3 - by Temple Island"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/162.jpg",
                                 "alt": "Hacking a buoy"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "7. Defuse the Apocalypse Protocol Bombs in the Bio Lab",
-                    "description": "This step is timed, and will start automatically after the previous step is finished. There are 3 bombs in the Bio Lab that must be defused before the bomb detonation timer runs out, and failing to do so will end the game. Defusing a bomb requires holding interact for a long time, and you cannot use any weapons or equipment during this time. It is recommended to use Decoys(TODO) or Aether Shroud(TODO) in a solo(TODO) match.",
+                    "header": "8. Defuse the Apocalypse Protocol Bombs in the Bio Lab",
+                    "description": "This step is timed, and will start automatically after the previous step is finished. There are 3 bombs in the Bio Lab that must be defused before the bomb detonation timer runs out, and failing to do so will end the game. Defusing a bomb requires holding interact for a long time, and you cannot use any weapons or equipment during this time. In a solo match, it is recommended to use Aether Shroud or equipment like Decoys.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Bomb 1 - TODO"
+                                "src": "assets/165.jpg",
+                                "alt": "Bomb 1 - to the left of Melee Macchiato, near the bottom of the stairway leading up"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Bomb 2 - TODO"
+                                "src": "assets/168.jpg",
+                                "alt": "Bomb 2 - to the right of Melee Macchiato, near the bottom of the stairway leading up"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Bomb 3 - TODO"
+                                "src": "assets/166.jpg",
+                                "alt": "Bomb 3 - near the armor wall-buy, underneath the raised room"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/167.jpg",
+                                "alt": "Defusing a bomb"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "8. Boss Fight",
-                    "description": "You cannot leave the boss fight until it's done. Make sure you have perks, armor, strong weapons, and anything else you want to bring. Go to Bio Lab and interact on the keypad at the door by TODO to start the Final Encounter. After a brief cutscene, you must defeat Patient 13 by shooting its glowing parts. Be sure to avoid standing directly in front of Patient 13, as it has a strong melee attack that can down players. At 2 points during the boss fight, Patient 13 will hide underwater, and you must shoot its tentacles until it reappears. After Patient 13 vanishes for the second time, all players must stand near the lab and stay there until it reappears, as you may get trapped outside the arena and be killed when it reappears. For the rest of the fight, Patient 13 will block off the back half of the arena. TODO",
+                    "header": "9. Boss Fight",
+                    "description": "You cannot leave the boss fight until it's done. Make sure you have perks, armor, strong weapons, and anything else you want to bring.",
                     "elements": [
                         {
+                            "full": true,
+                            "step": {
+                                "title": "Start the Final Encounter",
+                                "description": "Go to Bio Lab and interact on the keypad by the door to the left of Melee Macchiato. This will teleport all players to the boss fight arena, play a brief cutscene, and start the fight. Throughout the fight, be sure to avoid standing directly in front of Patient 13, as it has a strong slam attack that can instantly down players."
+                            }
+                        },
+                        {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/169.jpg",
                                 "alt": "Keypad to start boss fight"
                             }
                         },
                         {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Glowing red mass on Patient 13"
+                            "full": true,
+                            "step": {
+                                "title": "Damaging Patient 13",
+                                "description": "Patient 13 will go through multiple phases, where different glowing parts must be shot to deal critical hits. These include red spores on its 'shoulders', yellow spots on its main 2 'arms', and a glowing mouth. You can also deal some damage by destroying the outer tentacles."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Glowing yellow tentacles"
+                                "src": "assets/170.jpg",
+                                "alt": "Red spore on the 'shoulders'"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/173.jpg",
+                                "alt": "Yellow spots on the main 2 'arms'"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/172.jpg",
                                 "alt": "Glowing mouth"
                             }
                         },
                         {
+                            "full": true,
+                            "step": {
+                                "title": "Outer tentacles",
+                                "description": "Throughout the fight, tentacles will pop out of the water and shoot yellow sparks at you. These can be destroyed by hitting the large yellow spots down from the end of the tentacles. Multiple times during the fight, Patient 13 will hide under the water, and you must focus on destroying these tentacles until the boss resurfaces."
+                            }
+                        },
+                        {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Standing near the lab to avoid being trapped outside the map near the end of the fight"
+                                "src": "assets/171.jpg",
+                                "alt": "Outer tentacles and glowing yellow spots to shoot"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Final phase",
+                                "description": "After Patient 13 resurfaces for the second time, it will soon block the back half of the arena with its tentacles. If you are still in the back half of the arena, quickly jump into the water, swim around the outside, and climb a ladder to get in front of Patient 13. During this phase, new critical hit points will be Patient 13's glowing blue eyes (in addition to the other points). Patient 13 now also uses a tongue attack and an electric attack. When Patient 13 starts charging up blue electricity, hide behind cover to avoid the deadly blast. When Patient 13's health is fully depleted, a cutscene will play."                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/176.jpg",
+                                "alt": "Blue eyes"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/174.jpg",
+                                "alt": "Tongue attack"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/177.jpg",
+                                "alt": "Shock attack charging"
                             }
                         }
                     ]

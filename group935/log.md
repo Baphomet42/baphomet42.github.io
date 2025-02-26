@@ -102,7 +102,12 @@ To ensure a consistent feel, try to stick to these guidelines.
 
 + Common words should be consistently capitalized in all maps
     + This goes for names of perks, weapons, rooms, etc.
++ Common elements should be formatted consistently between maps
+    + This goes for sections, subsections, etc
++ Ordered lists should be formatted like `1.`, `2.`, `3.`, etc
+    + Sublists should be formatted like `i.`, `ii.`, `iii.`, etc
 + Page element consistency:
     + `"header"` texts should use title case capitalization
-    + `"alt"` texts should usually be 1 sentence without ending in a period, but not using title case capitalization
-    + Most other texts should use common sentence capitalization and grammar (always ending in a period)
+    + `"title"` and `"alt"` texts should usually be 1 sentence without ending in a period, but not using title case capitalization
+        + `"alt"` texts that uses the form `"foo - bar"` should not capitalize `bar` unless it otherwise should be capitalized
+    + `"description"` texts should use common sentence capitalization and grammar (always ending in a period)
