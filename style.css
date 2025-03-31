@@ -309,6 +309,10 @@ ul {
     color: var(--jigsaw-white);
 }
 
+.white {
+    color: white;
+}
+
 .codeblock {
     font-family: var(--font-mono);
     color: var(--mc-white);
