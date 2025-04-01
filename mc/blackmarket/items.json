@@ -1,6 +1,6 @@
 {
     "default_version": 71,
-    "file_format": 2,
+    "file_format": 3,
     "versions": [
         {
             "version": 57,
@@ -578,6 +578,138 @@
                     "item": "{components:{\"minecraft:attribute_modifiers\":[{amount:2048.0d,id:\"minecraft:base_attack_damage\",operation:\"add_value\",slot:\"mainhand\",type:\"minecraft:attack_damage\"},{amount:1024.0d,id:\"minecraft:base_attack_speed\",operation:\"add_value\",slot:\"mainhand\",type:\"minecraft:attack_speed\"}],\"minecraft:blocks_attacks\":{block_sound:\"minecraft:item.shield.block\",bypassed_by:\"#minecraft:bypasses_shield\",damage_reductions:[{base:0.0f,factor:0.5f,horizontal_blocking_angle:180.0f}],item_damage:{base:0.0f,factor:0.0f,threshold:0.0f}},\"minecraft:item_name\":{extra:[{bold:1b,color:\"dark_red\",obfuscated:1b,text:\"ii\"},{bold:1b,color:\"gold\",italic:1b,text:\"Budder Sword\",underlined:1b},{bold:1b,color:\"dark_red\",obfuscated:1b,text:\"ii\"}],text:\"\"},\"minecraft:lore\":[\"\",{color:\"gold\",text:\"BaphomethLabs\"}]},count:1,id:\"minecraft:golden_sword\"}"
                 }
             ]
+        }
+    ],
+    "capes": [
+        {
+            "name": "Mojang (Classic)",
+            "year": 2010,
+            "url": "http://textures.minecraft.net/texture/8f120319222a9f4a104e2f5cb97b2cda93199a2ee9e1585cb8d09d6f687cb761"
+        },
+        {
+            "name": "Mojang",
+            "year": 2015,
+            "url": "http://textures.minecraft.net/texture/5786fe99be377dfb6858859f926c4dbc995751e91cee373468c5fbf4865e7151"
+        },
+        {
+            "name": "Mojang Studios",
+            "year": 2021,
+            "url": "http://textures.minecraft.net/texture/9e507afc56359978a3eb3e32367042b853cddd0995d17d0da995662913fb00f7"
+        },
+        {
+            "name": "MINECON 2011",
+            "year": 2011,
+            "url": "http://textures.minecraft.net/texture/953cac8b779fe41383e675ee2b86071a71658f2180f56fbce8aa315ea70e2ed6"
+        },
+        {
+            "name": "MINECON 2012",
+            "year": 2012,
+            "url": "http://textures.minecraft.net/texture/a2e8d97ec79100e90a75d369d1b3ba81273c4f82bc1b737e934eed4a854be1b6"
+        },
+        {
+            "name": "MINECON 2013",
+            "year": 2013,
+            "url": "http://textures.minecraft.net/texture/153b1a0dfcbae953cdeb6f2c2bf6bf79943239b1372780da44bcbb29273131da"
+        },
+        {
+            "name": "MINECON 2015",
+            "year": 2015,
+            "url": "http://textures.minecraft.net/texture/b0cc08840700447322d953a02b965f1d65a13a603bf64b17c803c21446fe1635"
+        },
+        {
+            "name": "MINECON 2016",
+            "year": 2016,
+            "url": "http://textures.minecraft.net/texture/e7dfea16dc83c97df01a12fabbd1216359c0cd0ea42f9999b6e97c584963e980"
+        },
+        {
+            "name": "Translator",
+            "year": 2012,
+            "url": "http://textures.minecraft.net/texture/1bf91499701404e21bd46b0191d63239a4ef76ebde88d27e4d430ac211df681e"
+        },
+        {
+            "name": "Realms Mapmaker",
+            "year": 2014,
+            "url": "http://textures.minecraft.net/texture/17912790ff164b93196f08ba71d0e62129304776d0f347334f8a6eae509f8a56"
+        },
+        {
+            "name": "Mojira Moderator",
+            "year": 2014,
+            "url": "http://textures.minecraft.net/texture/ae677f7d98ac70a533713518416df4452fe5700365c09cf45d0d156ea9396551"
+        },
+        {
+            "name": "Scrolls",
+            "year": 2014,
+            "url": "http://textures.minecraft.net/texture/3efadf6510961830f9fcc077f19b4daf286d502b5f5aafbd807c7bbffcaca245"
+        },
+        {
+            "name": "Cobalt",
+            "year": 2016,
+            "url": "http://textures.minecraft.net/texture/ca35c56efe71ed290385f4ab5346a1826b546a54d519e6a3ff01efa01acce81"
+        },
+        {
+            "name": "Migrator",
+            "year": 2021,
+            "url": "http://textures.minecraft.net/texture/2340c0e03dd24a11b15a8b33c2a7e9e32abb2051b2481d0ba7defd635ca7a933"
+        },
+        {
+            "name": "Vanilla",
+            "year": 2022,
+            "month": 8,
+            "url": "http://textures.minecraft.net/texture/f9a76537647989f9a0b6d001e320dac591c359e9e61a31f4ce11c88f207f0ad4"
+        },
+        {
+            "name": "Cherry Blossom",
+            "year": 2023,
+            "month": 10,
+            "url": "http://textures.minecraft.net/texture/afd553b39358a24edfe3b8a9a939fa5fa4faa4d9a9c3d6af8eafb377fa05c2bb"
+        },
+        {
+            "name": "15th Anniversary",
+            "year": 2024,
+            "month": 5,
+            "url": "http://textures.minecraft.net/texture/cd9d82ab17fd92022dbd4a86cde4c382a7540e117fae7b9a2853658505a80625"
+        },
+        {
+            "name": "Purple Heart",
+            "year": 2024,
+            "month": 5,
+            "url": "http://textures.minecraft.net/texture/cb40a92e32b57fd732a00fc325e7afb00a7ca74936ad50d8e860152e482cfbde"
+        },
+        {
+            "name": "Follower's",
+            "year": 2024,
+            "month": 5,
+            "url": "http://textures.minecraft.net/texture/569b7f2a1d00d26f30efe3f9ab9ac817b1e6d35f4f3cfb0324ef2d328223d350"
+        },
+        {
+            "name": "MCC 15th Year",
+            "year": 2024,
+            "month": 7,
+            "url": "http://textures.minecraft.net/texture/56c35628fe1c4d59dd52561a3d03bfa4e1a76d397c8b9c476c2f77cb6aebb1df"
+        },
+        {
+            "name": "Minecraft Experience",
+            "year": 2024,
+            "month": 10,
+            "url": "http://textures.minecraft.net/texture/7658c5025c77cfac7574aab3af94a46a8886e3b7722a895255fbf22ab8652434"
+        },
+        {
+            "name": "Mojang Office",
+            "year": 2024,
+            "month": 12,
+            "url": "http://textures.minecraft.net/texture/5c29410057e32abec02d870ecb52ec25fb45ea81e785a7854ae8429d7236ca26"
+        },
+        {
+            "name": "Home",
+            "year": 2025,
+            "month": 5,
+            "url": "http://textures.minecraft.net/texture/b8cd2315f14e30fc78a2e581b4ebd29b26cdb038d93c73e498030b969d234f1d"
+        },
+        {
+            "name": "Menace",
+            "year": 2025,
+            "month": 5,
+            "url": "http://textures.minecraft.net/texture/78014dd0d45639c2962818c3b0c487c6d0501cdcd301f281ba06c9be7400042c"
         }
     ]
 }
