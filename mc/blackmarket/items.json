@@ -697,6 +697,11 @@
             "name": "Menace",
             "description": "2025",
             "url": "http://textures.minecraft.net/texture/78014dd0d45639c2962818c3b0c487c6d0501cdcd301f281ba06c9be7400042c"
+        },
+        {
+            "name": "Yearn",
+            "description": "2025",
+            "url": "http://textures.minecraft.net/texture/308b32a9e303155a0b4262f9e5483ad4a22e3412e84fe8385a0bdd73dc41fa89"
         }
     ]
 }
