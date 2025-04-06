@@ -72,7 +72,7 @@ To ensure a consistent feel, try to stick to these guidelines.
 + Bo6:
     + From https://callofduty.fandom.com/
     + Position all map layers horizontally
-    + Save as jpg 90%
+    + Save as jpg 90% (2048x2048 or 4096x2048)
 
 # Image edits
 

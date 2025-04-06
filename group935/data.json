@@ -8,7 +8,8 @@
                 {"id": "bo6/liberty_falls", "name": "Liberty Falls"},
                 {"id": "bo6/terminus", "name": "Terminus"},
                 {"id": "bo6/citadelle_des_morts", "name": "Citadelle des Morts", "wip": true},
-                {"id": "bo6/the_tomb", "name": "The Tomb", "wip": true}
+                {"id": "bo6/the_tomb", "name": "The Tomb", "wip": true},
+                {"id": "bo6/shattered_veil", "name": "Shattered Veil", "wip": true}
             ]
         },
         {
