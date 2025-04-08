@@ -1,11 +1,11 @@
 {
-    "id": "bo6/citadelle_des_morts",
-    "name": "Citadelle des Morts",
-    "background": "https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/guides/games/blackops6/zombies/COD-BO6-RBZ-CITADELLE-TOUT.webp",
+    "id": "bo6/dlc4",
+    "name": "DLC4",
+    "background": "",
     "style": "dark_aether",
     "rev": 2,
     "wip": true,
-    "maps": [{"img": "assets/maps.jpg", "link": "https://callofduty.fandom.com/wiki/Citadelle_des_Morts?file=CitadelleDesMorts+MiniMap+BO6.png"}],
+    "maps": [{"img": "assets/maps.jpg", "link": ""}],
     "sections" : [
         {
             "header": "Map Features",
@@ -130,7 +130,7 @@
             ]
         },
         {
-            "header": "Songs",
+            "header": "Song",
             "subsections": [
                 {
                     "header": "Slave",
@@ -155,30 +155,6 @@
                             }
                         }
                     ]
-                },
-                {
-                    "header": "Caliburn",
-                    "description": "",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        }
-                    ]
                 }
             ]
         },
@@ -193,18 +169,6 @@
                             "pic": {
                                 "src": "assets/.jpg",
                                 "alt": ""
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "Pool Table",
-                    "description": "Shoot any pool ball to sink them all. 100 Essence will drop next to the pool table.",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Pool table, TODO"
                             }
                         }
                     ]

@@ -1,7 +1,7 @@
 {
     "id": "bo6/the_tomb",
     "name": "The Tomb",
-    "background": "https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/seasons/blackops6/season-2/S02_Maps_Tomb.webp",
+    "background": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/guides/games/blackops6/zombies/COD-BO6-RBZ-TOMB-021.webp",
     "style": "dark_aether",
     "rev": 2,
     "wip": true,
@@ -14,6 +14,12 @@
                     "header": "Pack-a-Punch",
                     "description": "After opening the Doorway to Nowhere, Pack-a-Punch will start in the Dark Aether Nexus. Throughout the game, the PaP machine will teleport between the Dark Aether Nexus and the Dig Site (spawn).",
                     "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Ritual Bowl to place Amulet to open the Doorway to Nowhere"
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
@@ -41,6 +47,24 @@
                     ]
                 },
                 {
+                    "header": "Digging",
+                    "description": "All around the map there are small piles of dirt and skulls that you can dig for rewards. Each player must first find a shovel around the map, then they can dig unlimited piles.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Shovel"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Dig pile"
+                            }
+                        }
+                    ]
+                },
+                {
                     "header": "Dark Aether Crystals",
                     "description": "The dark aether crystals in the Dark Aether Nexus can be broken to drop random loot, including Salvage.",
                     "elements": [
@@ -54,7 +78,7 @@
                 },
                 {
                     "header": "Exfil",
-                    "description": "The radio is located in the Dig Site, and the exfil location will be TODO (if open).",
+                    "description": "The radio is located in the Dig Site, and the exfil location will be there too.",
                     "elements": [
                         {
                             "pic": {
@@ -132,17 +156,71 @@
             ]
         },
         {
-            "header": "Ice Staff (TODO)",
-            "description": "",
+            "header": "Staff of Ice",
+            "description": "Collect 3 parts, then defend the Staff.",
             "subsections": [
                 {
-                    "header": "",
-                    "description": "",
+                    "header": "Part 1 (Monocle)",
+                    "description": "Dropped when killing the first Shock Mimic",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Monocle"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Part 2 (Staff)",
+                    "description": "Parts 2 and 3 can be collected in any order. Break Aetheric Lanterns in the Tombs until symbols are revealed. When the lantern appears in the correct location, and the Monocle part has been aquired, several symbols will appear on the wall over a mural. Shoot the symbols in ascending order (each symbol represents a Roman Numeral counting from 1 to 8). Finally, kill the creatures emerging from the portals until the part appears by the mural.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Correct lantern location"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Symbols to shoot in order"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Part 3 (Head Piece)",
+                    "description": "Parts 2 and 3 can be collected in any order. Break Aetheric Lanterns in the Neolithic Catacombs until symbols are revealed. When the lantern appears in the correct location, and the Monocle part has been aquired, several symbols will appear on the wall over a mural. Shoot the symbols in ascending order (each symbol represents a Roman Numeral counting from 1 to 10). Finally, kill the creatures emerging from the portals until the part appears by the mural.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Correct lantern location"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Symbols to shoot in order"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Aquire the Staff",
+                    "description": "Activate the Staff of Ice pieces on the Plinth in the Dark Aether. Then, defend the Staff of Ice until it's assembled. If you fail, you can try again the following round. One player may now retrieve the Staff of Ice.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location to activate Plinth"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Staff of Ice"
                             }
                         }
                     ]
@@ -150,7 +228,79 @@
             ]
         },
         {
-            "header": "Main Quest (TODO)",
+            "header": "Upgraded Ice Staff (Ull's Arrow)",
+            "description": "The upgrade process must be done once, then all players may upgrade their Staff of Ice (TODO).",
+            "subsections": [
+                {
+                    "header": "Quickly Freeze 3 Lanterns",
+                    "description": "Freeze 3 Aetheric Lanterns with the Staff of Ice within 10 seconds. A simple strategy involves using a different weapon to shoot the lanterns in the Ossuary and the Shrine of the Hierophants until they're visible through the doors from the Subterranean Temple. Then, shoot the lantern in the Subterranean Temple until it's near one of the doors, such that all 3 are lined up and can be shot quickly in a row. When done successfully, Archibald will speak, and the symbols for the next step will appear.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Freezing an Aetheric Lantern"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Shoot 3 Runes in the Dark Aether Nexus",
+                    "description": "With the Staff of Ice, shoot 3 Runes on the floating rocks in the Dark Aether Sky. After each symbol has been shot, the rock will lower closer to the ground. When all 3 rocks have been lowered, memorize the 3 symbols for the next step. The symbols and locations of the rocks are randomized each game.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Floating rock with a purple Rune"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Teleport to the Energy",
+                    "description": "Exit the Dark Aether Nexus and locate the Gateway that has been closed. The Gateway will be covered in various symbols, including the 3 from the previous step. Use the Staff of Ice to shoot the same Runes on the outside Gateway and enter it. If the wrong symbols were shot, you will appear in the sky and take heavy fall damage. When done successfully, you will appear on a floating rock next to a purple orb. Interact to touch the Energy and begin the next step.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Closed Gateway with Runes"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Floating rock with Energy"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Feed the Energy",
+                    "description": "The purple orb will slowly move around the Dark Aether Nexus and can be fed by killing enemies. Stay close to the Energy as it moves around the Dark Aether. All players should stay as close to the Energy as possible and constantly killing enemies, or the step will fail. If the step fails, you must repeat the previous step to teleport to the Energy. If the Energy reaches the Plinth, the step will be completed.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Killing enemies while following the Energy"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Touch the Staff to the Altar",
+                    "description": "Interact on the glowing purple energy to upgrade the Staff of Ice into the Ull's Arrow.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location to upgrade Staff of Ice"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Main Quest",
             "subsections": [
                 {
                     "header": "Requirements",
@@ -158,19 +308,368 @@
                         {
                             "full": true,
                             "bullets": [
-                                ""
+                                "Ull's Arrow (Upgraded Ice Staff)"
                             ]
                         }
                     ]
                 },
                 {
-                    "header": "",
-                    "description": "",
+                    "header": "1. Vermin Ritual",
                     "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Gather the raw energy into the Amulet",
+                                "description": "Go to the Dark Aether Nexus and switch the Staff of Ice to its alt fire. Use the Staff's Healing Shot to charge the crystal at the Vermin Monolith. Interact to pick up the energy."
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Vermin Monolith to shoot with the Staff's Healing Shot"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Raw energy to interact"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Refine the raw energy",
+                                "description": "Go to the Vermin Altar in the Dig Site (Blue Gateway) and interact to place the energy. This will start a lockdown and spawn a ton of Vermin. Survive and kill Vermin until the lockdown finishes."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Vermin Altar to place the energy"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Swarms of Vermin in the lockdown"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Vermin Altar with refined energy"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Return the refined energy",
+                                "description": "Interact to gather the refined energy into the Amulet. This will close the Gateway in the Dig Site until the energy is returned to the Monolith in the Dark Aether Nexus by going through one of the other Gateways."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Vermin Monolith to place refined energy"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "2. Parasite Ritual",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Gather the raw energy into the Amulet",
+                                "description": "Use the Staff's Healing Shot to charge the crystal at the Parasite Monolith. Interact to pick up the energy."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Parasite Monolith to shoot with the Staff's Healing Shot"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Raw energy to interact"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Refine the raw energy",
+                                "description": "Go to the Parasite Altar in the Shrine of the Hierophants (Yellow Gateway) and interact to place the energy. This will start a lockdown with Parasites and zombies. Kill the purple glowing Parasites so they drop an energy orb. Walk up to the energy to pick it up, then walk back to the Altar to return the energy. Repeat until the lockdown is finished."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Parasite Altar to place the energy"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Glowing Parasite"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Energy orb to bring to the Altar"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Parasite Altar with refined energy"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Return the refined energy",
+                                "description": "Interact to gather the refined energy into the Amulet. This will close the Gateway in the Shrine of the Hierophants until the energy is returned to the Monolith in the Dark Aether Nexus by going through one of the other Gateways."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Parasite Monolith to place refined energy"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Doppelghast Ritual",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Gather the raw energy into the Amulet",
+                                "description": "Use the Staff's Healing Shot to charge the crystal at the Doppelghast Monolith. Interact to pick up the energy."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Doppelghast Monolith to shoot with the Staff's Healing Shot"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Raw energy to interact"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Refine the raw energy",
+                                "description": "Go to the Doppelghast Altar in the Ossuary (Green Gateway) and interact to place the energy. This will start a lockdown with Doppelghasts and zombies. There will also be purple circles and spinning lasers on the ground that will deal damage if you step on them. Survive until the lockdown finishes."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Doppelghast Altar to place the energy"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Purple circles and lasers to avoid"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Doppelghast Altar with refined energy"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Return the refined energy",
+                                "description": "Interact to gather the refined energy into the Amulet. This will close the Gateway in the Ossuary until the energy is returned to the Monolith in the Dark Aether Nexus by going through one of the other Gateways."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Doppelghast Monolith to place refined energy"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "4. Amalgam Ritual",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Gather the raw energy into the Amulet",
+                                "description": "Use the Staff's Healing Shot to charge the crystal at the Amalgam Monolith. Interact to pick up the energy."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Amalgam Monolith to shoot with the Staff's Healing Shot"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Raw energy to interact"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Refine the raw energy",
+                                "description": "Go to the Amalgam Altar in the Deep Excavation (Red Gateway) and interact to place the energy. This will start a lockdown with one Amalgam and some zombies. Occasionally, the Amalgam will connect to zombies and will be immune from damage until the connected zombies are killed. Kill the Amalgam to finish the lockdown."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Amalgam Altar to place the energy"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Amalgam connecting to a zombie"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Amalgam Altar with refined energy"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Return the refined energy",
+                                "description": "Interact to gather the refined energy into the Amulet. This will close the Gateway in the Deep Excavation until the energy is returned to the Monolith in the Dark Aether Nexus by going through one of the other Gateways."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Amalgam Monolith to place refined energy"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "5. Boss Fight",
+                    "description": "You cannot leave the boss fight until it's done. Make sure you have perks, armor, strong weapons, and anything else you want to bring.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Activate the pedestal",
+                                "description": "Interact on the pedestal in the Dark Aether Nexus to open the bridge to the boss fight arena. Then, interact on the Sentinel Artifact to start the Final Encounter."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Pedestal to open the bridge"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Sentinel Artifact to start boss fight"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Phase 1",
+                                "description": "The Sentinel Artifact has 9 health stages that must be depleted to win the fight, and 1 health stage will be lost each time a Sentinel Artifact is shattered. The artifact will start by rotating in a circle and shooting a deadly laser. It will also slowly move up and down to hit both levels of the arena. Eventually, it will turn purple for a short period of time, where it can be damaged (this will not be indicated on the boss bar until it is shattered). Each time an artifact is shattered, another one will join the artifact to spin around with an additional laser. All of the artifacts will turn purple at the same time, and it is possible to shatter multiple artifacts during this time to reduce multiple health stages. After the 4th artifact has been shattered, the fight will continue to Phase 2."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Spinning Sentinel Artifact"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Shooting the artifact when it glows purple"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Shattered artifact"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Multiple spinning artifacts"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Phase 2",
+                                "description": "During this phase, the 4 previously shattered artifacts will remain spinning and shooting lasers, but can no longer be shattered. The next 4 artifacts must be shattered one at a time, and will spawn attached to an enemy. Kill the enemy holding the artifact, then quickly shatter the artifact before it goes away. If the artifact vanishes before it's shattered, it will respawn on a new enemy. The artifact will be carried by a Heavy Zombie, Doppelghast, Shock Mimic, and Amalgam. After these 4 artifacts have been shattered, the fight will continue to the final phase."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "TODO empowered by the Sentinel Artifact"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Artifact to shatter after being dropped"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Phase 3",
+                                "description": "For the final phase, the 8 previously shattered artifacts will all shoot a laser at the 9th and final artifact. After a brief animation, the final artifact will float up to a wall where it can be shattered. Finish off the Sentinel Artifact before it destroys you. If it isn't shattered quick enough, the game will end. When done successfully, the artifact will float down to the center of the arena, where it can be picked up."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Final artifact being powered by the first 8"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Shattering the final artifact"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Retrieve the Sentinel Artifact",
+                                "description": "Interact on the Sentinel Artifact to complete the main quest and play a cutscene."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Sentinel Artifact"
                             }
                         }
                     ]
@@ -209,6 +708,18 @@
         {
             "header": "Side Easter Eggs",
             "subsections": [
+                {
+                    "header": "TODO Golden Armor",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
                 {
                     "header": "",
                     "description": "",

@@ -568,7 +568,7 @@
             "subsections": [
                 {
                     "header": "Bowling",
-                    "description": "There are 5 pairs of bowling shoes through barriers around the map. Shoot each pair so they disappear, then all players will teleport to Liberty Lanes for a minigame. Each player must bowl to hit zombies until the time is up, at which point they will each get a prize depending on how many zombies they hit. A calling card is unlocked for getting a score of 300. After 5 rounds, a new pair of bowling shoes will appear in a toilet in Liberty Lanes, through a barrier. Shooting this pair will redo the bowling minigame and can be repeated once more after another 5 rounds.",
+                    "description": "There are 5 pairs of bowling shoes through barriers around the map. Shoot each pair so they disappear, then all players will teleport to Liberty Lanes for a minigame. Each player must bowl to hit zombies until the time is up, at which point they will each get a prize depending on how many zombies they hit. A calling card and the Deadwood achievement are unlocked for getting a score of 300. After 5 rounds, a new pair of bowling shoes will appear in a toilet in Liberty Lanes, through a barrier. Shooting this pair will redo the bowling minigame and can be repeated once more after another 5 rounds.",
                     "elements": [
                         {
                             "pic": {
@@ -646,7 +646,7 @@
                 },
                 {
                     "header": "Aetherella",
-                    "description": "There are 4 miniature Aetherella dolls in the comic shop and 5 elsewhere around the map. Use the Jet Gun to collect all 9 dolls, then the player who collected the final doll will transform into Aetherella for a short time. During this time, the player cannot be killed and will instakill zombies with laser-eyes. If you buy the Aetherella trap while in Aetherella mode, you will turn into Dark Aetherella.",
+                    "description": "There are 4 miniature Aetherella dolls in the comic shop and 5 elsewhere around the map. Use the Jet Gun to collect all 9 dolls, then the player who collected the final doll will transform into Aetherella for a short time. This will unlock the World Domination achievement. During this time, the player cannot be killed and will instakill zombies with laser-eyes. If you buy the Aetherella trap while in Aetherella mode, you will turn into Dark Aetherella.",
                     "elements": [
                         {
                             "pic": {
@@ -826,7 +826,7 @@
                 },
                 {
                     "header": "Church Candle Trap",
-                    "description": "There are 2 candle displays in the Church that can be ignited using Napalm Burst. After both are lit, the floor in the Church will be covered in purple flames, dealing damage to both enemies and players.",
+                    "description": "There are 2 candle displays in the Church that can be ignited using Napalm Burst. After both are lit, the floor in the Church will be covered in purple flames, dealing damage to both enemies and players. This can be repeated once per round.",
                     "elements": [
                         {
                             "pic": {
@@ -850,7 +850,7 @@
                 },
                 {
                     "header": "Gravedigger Shovel",
-                    "description": "A shovel can be optained by destroying a barrel up the hill from Speed Cola. The barrel can be destroyed using a Chopper Gunner, and the shovel can be used to dig up graves to get loot.",
+                    "description": "A shovel can be optained by destroying a barrel up the hill from Speed Cola. The barrel can be easily destroyed using a Chopper Gunner, but other explosives can also work if they hit the top of the barrel. After picking up the shovel, it can be used to dig up graves to get loot.",
                     "elements": [
                         {
                             "pic": {
