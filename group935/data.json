@@ -87,7 +87,7 @@
                 {"id": "waw/nacht_der_untoten", "name": "Nacht der Untoten"},
                 {"id": "waw/verruckt", "name": "Verrückt"},
                 {"id": "waw/shi_no_numa", "name": "Shi No Numa"},
-                {"id": "waw/der_riese", "name": "Der Riese", "wip": true}
+                {"id": "waw/der_riese", "name": "Der Riese"}
             ]
         },
         {
@@ -98,7 +98,7 @@
                 {"id": "waw/nacht_der_untoten", "name": "Nacht der Untoten"},
                 {"id": "waw/verruckt", "name": "Zombie Verrückt"},
                 {"id": "waw/shi_no_numa", "name": "Shi No Numa"},
-                {"id": "waw/der_riese", "name": "Der Riese", "wip": true}
+                {"id": "waw/der_riese", "name": "Der Riese"}
             ]
         },
         {

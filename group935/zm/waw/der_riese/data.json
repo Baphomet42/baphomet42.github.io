@@ -60,36 +60,35 @@
                 },
                 {
                     "header": "Perk Machines",
-                    "description": "The machines are randomized each game. (TODO)",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Quick Revive - TODO"
+                                "alt": "Juggernog - on the Teleporter A side of the drawbridge"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Double Tap Root Beer - TODO"
+                                "alt": "Double Tap Root Beer - on the Teleporter B side of the drawbridge"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Speed Cola - TODO"
+                                "alt": "Speed Cola - between the mainframe and power switch"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Juggernog - TODO"
+                                "alt": "Quick Revive - in the side room near Teleporter C"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Mule Kick (Black Ops only) - TODO"
+                                "alt": "Mule Kick (Black Ops only) - by the furnace below Teleporter B"
                             }
                         }
                     ]
@@ -130,6 +129,7 @@
             "subsections": [
                 {
                     "header": "Fly Trap",
+                    "description": "Play a game of Hide and Seek with Sam.",
                     "elements": [
                         {
                             "full": true,
@@ -154,26 +154,26 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "alt": "Location 1 - in a cage near Teleporter A"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "alt": "Location 2 - in a window seen when facing away from PaP and looking up to the left"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "alt": "Location 3 - in the furnace near Teleporter B"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Burning Monkey Bomb",
-                    "description": "If you throw a Monkey Bomb into the furnace, a quote will play. (TODO power-up note)",
+                    "description": "If you throw a Monkey Bomb into the furnace, it will scream, and a quote from Sam will play.",
                     "elements": [
                         {
                             "pic": {
