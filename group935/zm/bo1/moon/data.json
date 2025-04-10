@@ -801,19 +801,19 @@
                         {
                             "pic": {
                                 "src": "assets/24.jpg",
-                                "alt": "Dog figurine - Outside the map at Groom Lake, under a vehicle. Shoot through the back tires of the vehicle."
+                                "alt": "Dog figurine - outside the map at Groom Lake, under a vehicle (shoot through the back tires of the vehicle)"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/26.jpg",
-                                "alt": "Bone - Outside the Bio-Dome, in front of some large rocks. Aim just above the pipes."
+                                "alt": "Bone - outside the Bio-Dome, in front of some large rocks (aim just above the pipes)"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/25.jpg",
-                                "alt": "Teddy bear - On top of the wall surrounding the Bio-Dome, behind the Mystery Box location. Stand far back and aim roughly where the hexagon connects with the wall."
+                                "alt": "Teddy bear - on top of the wall surrounding the Bio-Dome, behind the Mystery Box location (stand far back and aim roughly where the hexagon connects with the wall)"
                             }
                         },
                         {
@@ -884,7 +884,7 @@
         },
         {
             "header": "Hide and Seek",
-            "description": "Play Samantha's Lullaby Remix and get a Max Ammo (Black Ops III only)",
+            "description": "Play Samantha's Lullaby Remix and get a Max Ammo (Black Ops III only).",
             "subsections": [
                 {
                     "header": "1. Interact with Devices - 3 1 1 4 4 1 4 2 4 2 4 1 1 2 3",

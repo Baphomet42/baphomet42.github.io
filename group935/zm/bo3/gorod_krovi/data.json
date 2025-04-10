@@ -276,7 +276,7 @@
                 },
                 {
                     "header": "Craft Shield",
-                    "description": "Build at the workbench in the Operations Bunker",
+                    "description": "Build at the workbench in the Operations Bunker.",
                     "elements": [
                         {
                             "pic": {
@@ -521,7 +521,7 @@
                             "full": true,
                             "step": {
                                 "title": "Return pink cylinder",
-                                "description": "Give the cylinder from the previous step to Sophia"
+                                "description": "Give the cylinder from the previous step to Sophia."
                             }
                         },
                         {
@@ -534,7 +534,7 @@
                             "full": true,
                             "step": {
                                 "title": "Select KRONOS",
-                                "description": "Use a bullet gun to shoot the letters until they spell KRONOS"
+                                "description": "Use a bullet gun to shoot the letters until they spell KRONOS."
                             }
                         },
                         {
@@ -978,7 +978,7 @@
             "subsections": [
                 {
                     "header": "Dead Ended",
-                    "description": "Interact with 3 vodka bottles",
+                    "description": "Interact with 3 vodka bottles.",
                     "elements": [
                         {
                             "pic": {
@@ -1002,7 +1002,7 @@
                 },
                 {
                     "header": "Ace of Spades",
-                    "description": "Interact with 3 ace of spades playing cards",
+                    "description": "Interact with 3 ace of spades playing cards.",
                     "elements": [
                         {
                             "pic": {
@@ -1123,7 +1123,7 @@
                             "full": true,
                             "step": {
                                 "title": "1. Get 50 shield kills",
-                                "description": "Melee attacks and shield blasts both count"
+                                "description": "Melee attacks and shield blasts both count."
                             }
                         },
                         {
@@ -1143,7 +1143,7 @@
                             "full": true,
                             "step": {
                                 "title": "3. Shoot 3 symbols",
-                                "description": "Using the shield blast, shoot 3 purple symbols across the map"
+                                "description": "Using the shield blast, shoot 3 purple symbols across the map."
                             }
                         },
                         {
@@ -1373,7 +1373,7 @@
         },
         {
             "header": "Hide and Seek",
-            "description": "Play Samantha's Sorrow and get a Max Ammo",
+            "description": "Play Samantha's Sorrow and get a Max Ammo.",
             "subsections": [
                 {
                     "header": "1. Burn 3 Monkey Bombs",

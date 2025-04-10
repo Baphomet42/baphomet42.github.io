@@ -606,7 +606,7 @@
                             "full": true,
                             "step": {
                                 "title": "1. Get 15 Fury headshot kills",
-                                "description": "A sound will play after you get enough headshot kills"
+                                "description": "A sound will play after you get enough headshot kills."
                             }
                         },
                         {
@@ -1171,7 +1171,7 @@
                             "full": true,
                             "step": {
                                 "title": "Find a yellow egg",
-                                "description": "There are over 20 potential egg locations around the map, and 4 eggs will spawn at the same time as the purple sigil appeared. Interact to pick it up. The following locations are only some of the possibilities. <a href=\"https://www.reddit.com/r/CODZombies/comments/532qae/all_egg_locations_on_revelations/\" rel=\"noopener noreferrer\" target=\"_blank\" class=\"link\">Find more</a>"
+                                "description": "There are over 20 potential egg locations around the map, and 4 eggs will spawn at the same time as the purple sigil appeared. Interact on an egg to pick it up. The following locations are only some of the possibilities. <a href=\"https://www.reddit.com/r/CODZombies/comments/532qae/all_egg_locations_on_revelations/\" rel=\"noopener noreferrer\" target=\"_blank\" class=\"link\">Find more</a>"
                             }
                         },
                         {

@@ -16,19 +16,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/6.jpg",
                                 "alt": "Ritual Bowl to place Amulet to open the Doorway to Nowhere"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/7.jpg",
                                 "alt": "Location 1 - Dark Aether Nexus"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/62.jpg",
                                 "alt": "Location 2 - Dig Site"
                             }
                         }
@@ -40,7 +40,25 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/8.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/28.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/67.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/75.jpg",
                                 "alt": ""
                             }
                         }
@@ -52,13 +70,31 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Shovel"
+                                "src": "assets/56.jpg",
+                                "alt": "Shovel location 1 - TODO"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/17.jpg",
+                                "alt": "Shovel location 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/14.jpg",
+                                "alt": "Shovel location 3 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/16.jpg",
+                                "alt": "Shovel location 4 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/20.jpg",
                                 "alt": "Dig pile"
                             }
                         }
@@ -66,12 +102,12 @@
                 },
                 {
                     "header": "Dark Aether Crystals",
-                    "description": "The dark aether crystals in the Dark Aether Nexus can be broken to drop random loot, including Salvage.",
+                    "description": "The dark aether crystals around the map can be broken to drop random loot, including Salvage.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Crystals"
+                                "src": "assets/10.jpg",
+                                "alt": "Crystal"
                             }
                         }
                     ]
@@ -82,7 +118,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/18.jpg",
                                 "alt": "Exfil radio"
                             }
                         }
@@ -94,7 +130,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/15.jpg",
                                 "alt": "Level 3 armor wall-buy"
                             }
                         }
@@ -105,25 +141,25 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/9.jpg",
                                 "alt": "PhD Flopper - in the Dig Site (through the Blue Gateway)"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/11.jpg",
                                 "alt": "Deadshot Daiquiri - between spawn and Speed Cola"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/12.jpg",
                                 "alt": "Speed Cola - through the Green Gateway"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/13.jpg",
                                 "alt": "Quick Revive - through the Red Gateway"
                             }
                         },
@@ -135,7 +171,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/19.jpg",
                                 "alt": "Death Perception - between spawn and Stamin-Up"
                             }
                         },
@@ -161,11 +197,17 @@
             "subsections": [
                 {
                     "header": "Part 1 (Monocle)",
-                    "description": "Dropped when killing the first Shock Mimic",
+                    "description": "Dropped when killing the first Shock Mimic on round 8.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/29.jpg",
+                                "alt": "Shock Mimic"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/30.jpg",
                                 "alt": "Monocle"
                             }
                         }
@@ -177,14 +219,20 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/33.jpg",
                                 "alt": "Correct lantern location"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/34.jpg",
                                 "alt": "Symbols to shoot in order"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/43.jpg",
+                                "alt": "Staff"
                             }
                         }
                     ]
@@ -195,14 +243,20 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/31.jpg",
                                 "alt": "Correct lantern location"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/32.jpg",
                                 "alt": "Symbols to shoot in order"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/41.jpg",
+                                "alt": "Head Piece"
                             }
                         }
                     ]
@@ -213,13 +267,13 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/44.jpg",
                                 "alt": "Location to activate Plinth"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/46.jpg",
                                 "alt": "Staff of Ice"
                             }
                         }
@@ -237,8 +291,8 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Freezing an Aetheric Lantern"
+                                "src": "assets/68.jpg",
+                                "alt": "Frozen Aetheric Lantern"
                             }
                         }
                     ]
@@ -326,13 +380,7 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Vermin Monolith to shoot with the Staff's Healing Shot"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Raw energy to interact"
+                                "alt": "Vermin Monolith with charged crystal"
                             }
                         },
                         {
@@ -388,13 +436,7 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Parasite Monolith to shoot with the Staff's Healing Shot"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Raw energy to interact"
+                                "alt": "Parasite Monolith with charged crystal"
                             }
                         },
                         {
@@ -456,13 +498,7 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Doppelghast Monolith to shoot with the Staff's Healing Shot"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Raw energy to interact"
+                                "alt": "Doppelghast Monolith with charged crystal"
                             }
                         },
                         {
@@ -518,13 +554,7 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Amalgam Monolith to shoot with the Staff's Healing Shot"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Raw energy to interact"
+                                "alt": "Amalgam Monolith with charged crystal"
                             }
                         },
                         {
@@ -709,9 +739,72 @@
             "header": "Side Easter Eggs",
             "subsections": [
                 {
-                    "header": "TODO Golden Armor",
+                    "header": "Gold Armor Vest",
                     "description": "",
                     "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/22.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/24.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/21.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/23.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/26.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": "TODO start blood sacrifice"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
@@ -721,9 +814,291 @@
                     ]
                 },
                 {
-                    "header": "",
+                    "header": "Ancient Gems (Ray Gun)",
                     "description": "",
                     "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "TODO Flying Rocks PaP (Cryo Freeze, timed?)",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Waterfall Aether Tool",
+                    "description": "In the Dark Aether Nexus, there are 2 waterfalls that can be frozen using Cryo Freeze or the Staff of Ice. Freeze both waterfalls to spawn a free Aether Tool. The rarity of the Aether Tool depends on the current round.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Waterfall 1 - behind the Crafting Table"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/47.jpg",
+                                "alt": "Waterfall 2 - between the Green Gateway and Red Gateway"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Aether Tool reward"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Hidden Pots",
+                    "description": "There are 10 pots around the map that can be broken by shooting them. Breaking all 10 pots will spawn a Self-Revive Kit and a Light Mend ammo mod.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/48.jpg",
+                                "alt": "Location 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/50.jpg",
+                                "alt": "Location 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/49.jpg",
+                                "alt": "Location 3 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 4 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 5 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/53.jpg",
+                                "alt": "Location 6 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 7 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/52.jpg",
+                                "alt": "Location 8 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 9 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/51.jpg",
+                                "alt": "Location 10 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Tombs Statue Game",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/54.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/55.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/57.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/58.jpg",
+                                "alt": "Loot, including Brain Rot Ammo Mod"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Flaming Bowls Random Perk",
+                    "description": "There are 6 stone bowls by the doorways around Speed Cola, and they can be lit using Napalm Burst, Molotovs, or Thermo Grenades(TODO). Each lit bowl will drop a Molotov, and after the 6th is lit, a Random Perk power-up will spawn.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/35.jpg",
+                                "alt": "Doorway 1"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/36.jpg",
+                                "alt": "Doorway 2"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/37.jpg",
+                                "alt": "Doorway 3"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/38.jpg",
+                                "alt": "Flaming bowl"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/39.jpg",
+                                "alt": "Random Perk power-up"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Dead Wire Generators",
+                    "description": "In the Dig Site, shoot 2 generators with Dead Wire to energize them. This will spawn a Full Power power-up and other loot.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/65.jpg",
+                                "alt": "Generator 1 - by the armor wall-buy"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/63.jpg",
+                                "alt": "Generator 2 - down the stairs from the armor wall-buy and to the left of another staircase"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/64.jpg",
+                                "alt": "Loot"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Brain Rot Skulls",
+                    "description": "There are 4 skulls around Speed Cola with an X on them. Using Brain Rot, quickly shoot all 4 skulls in the correct order. This will spawn several TODO.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/59.jpg",
+                                "alt": "Skull 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/60.jpg",
+                                "alt": "Skull 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/61.jpg",
+                                "alt": "Skull 3 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Skull 4 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Jumpscare",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
@@ -743,7 +1118,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/69.jpg",
                                 "alt": ""
                             }
                         }
@@ -754,7 +1129,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/72.jpg",
                                 "alt": ""
                             }
                         }
@@ -765,7 +1140,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/73.jpg",
                                 "alt": ""
                             }
                         }
@@ -787,7 +1162,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/71.jpg",
                                 "alt": ""
                             }
                         }
@@ -798,7 +1173,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/70.jpg",
                                 "alt": ""
                             }
                         }
@@ -809,7 +1184,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/66.jpg",
                                 "alt": ""
                             }
                         }
@@ -821,7 +1196,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/74.jpg",
                                 "alt": ""
                             }
                         }

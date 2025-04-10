@@ -57,8 +57,26 @@
                     "elements": [
                         {
                             "pic": {
+                                "src": "assets/179.jpg",
+                                "alt": "Shovel location 1 - outside the Speed Cola cave"
+                            }
+                        },
+                        {
+                            "pic": {
                                 "src": "assets/14.jpg",
-                                "alt": "Shovel"
+                                "alt": "Shovel location 2 - in the PhD Flopper tunnel"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/178.jpg",
+                                "alt": "Shovel location 3 - Temple Island"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/180.jpg",
+                                "alt": "Shovel location 4 - Castle Rock Island"
                             }
                         },
                         {

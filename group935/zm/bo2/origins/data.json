@@ -142,7 +142,7 @@
                         {
                             "pic": {
                                 "src": "assets/24.jpg",
-                                "alt": "Location to dig"
+                                "alt": "Dig pile"
                             }
                         }
                     ]
@@ -1858,7 +1858,7 @@
         },
         {
             "header": "Hide and Seek",
-            "description": "Play Remember Forever and get a Max Ammo (Black Ops III only)",
+            "description": "Play Remember Forever and get a Max Ammo (Black Ops III only).",
             "subsections": [
                 {
                     "header": "1. Shoot 4 Wisps with the Staffs",

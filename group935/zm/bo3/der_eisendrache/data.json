@@ -362,7 +362,7 @@
                 },
                 {
                     "header": "Part 3",
-                    "description": "Dropped when killing a Panzer",
+                    "description": "Dropped when killing a Panzer.",
                     "elements": [
                         {
                             "pic": {
@@ -709,19 +709,19 @@
                         {
                             "pic": {
                                 "src": "assets/100.jpg",
-                                "alt": "Fireplace by the Double Tap dragon. Used for the circle outside the clock tower."
+                                "alt": "Fireplace by the Double Tap dragon, used for the circle outside the clock tower"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/146.jpg",
-                                "alt": "Fireplace in the church. Used for the circle by the Death Ray."
+                                "alt": "Fireplace in the church, used for the circle by the Death Ray"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/148.jpg",
-                                "alt": "Fireplace in the bedrooms area. Used for the circle on the way from spawn to Double Tap."
+                                "alt": "Fireplace in the bedrooms area, used for the circle on the way from spawn to Double Tap"
                             }
                         },
                         {
@@ -790,25 +790,25 @@
                         {
                             "pic": {
                                 "src": "assets/33.jpg",
-                                "alt": "First painting. On the way from the power room to the bedrooms."
+                                "alt": "Painting 1 - seen here on the way from the power room to the bedrooms"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/34.jpg",
-                                "alt": "Second painting. In the clock tower."
+                                "alt": "Painting 2 - seen here in the clock tower"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/35.jpg",
-                                "alt": "Third painting. In the room below the clock tower."
+                                "alt": "Painting 3 - seen here in the room below the clock tower"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/36.jpg",
-                                "alt": "Fourth painting. Upstairs in the church."
+                                "alt": "Painting 4 - seen here upstairs in the church"
                             }
                         },
                         {
@@ -1173,7 +1173,7 @@
                 },
                 {
                     "header": "1. Upgrade At Least 1 Bow",
-                    "description": "It doesn't matter which one is done first, and only one player needs an upgraded bow for now"
+                    "description": "It doesn't matter which one is done first, and only one player needs an upgraded bow for now."
                 },
                 {
                     "header": "2. Shoot All 6 Teleporter Spokes with the Starter Bow",
@@ -1195,7 +1195,7 @@
                 },
                 {
                     "header": "3. Shoot 3 Electric Wisps",
-                    "description": "This step and step 4 must be done within a single round",
+                    "description": "This step and step 4 must be done within a single round.",
                     "elements": [
                         {
                             "full": true,
@@ -1276,7 +1276,7 @@
                             "full": true,
                             "step": {
                                 "title": "Pick up fuses and glowing object in the room",
-                                "description": "Interact with the items to pick them up"
+                                "description": "Interact with the items to pick them up."
                             }
                         },
                         {
@@ -1295,13 +1295,13 @@
                             "full": true,
                             "step": {
                                 "title": "Remember the code on the safe",
-                                "description": "Dr. Groph will input 3 symbols on the safe. You must remember these symbols in the correct order for a later step."
+                                "description": "Dr. Groph will input 3 randomized symbols on the safe. You must remember these symbols in the correct order for a later step. There are 4 possible symbols, and a given symbol may appear more than once."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/70.jpg",
-                                "alt": "The 3 symbols on the safe. There are 4 possible symbols that can be chosen."
+                                "alt": "Safe code"
                             }
                         }
                     ]
@@ -1338,7 +1338,7 @@
                 },
                 {
                     "header": "6. Enter the Safe Code on the Computers Outside the Clock Tower",
-                    "description": "If this step is failed, you must repeat the wisp step and time travel to get a new code",
+                    "description": "If this step is failed, you must repeat the wisp step and time travel to get a new code.",
                     "elements": [
                         {
                             "full": true,
@@ -1438,7 +1438,7 @@
                 },
                 {
                     "header": "10. Shoot Down the Rocket",
-                    "description": "Both Death Ray towers must be glowing from the previous step",
+                    "description": "Both Death Ray towers must be glowing from the previous step.",
                     "elements": [
                         {
                             "full": true,
@@ -1457,7 +1457,7 @@
                             "full": true,
                             "step": {
                                 "title": "Pick up the Vrill Device",
-                                "description": "Under the rocket wreckage in the courtyard, there is a small part to interact with"
+                                "description": "Under the rocket wreckage in the courtyard, there is a small part to interact with."
                             }
                         },
                         {

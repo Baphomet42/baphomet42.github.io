@@ -87,7 +87,7 @@
             "subsections": [
                 {
                     "header": "Richtofen Laughter",
-                    "description": "Interact with a bookshelf in the Doctor's Quaters to hear an evil laugh",
+                    "description": "Interact with a bookshelf in the Doctor's Quaters to hear an evil laugh.",
                     "elements": [
                         {
                             "pic": {
@@ -101,7 +101,7 @@
         },
         {
             "header": "Hide and Seek",
-            "description": "Play Samantha's Sorrow and get a Max Ammo (Black Ops III only)",
+            "description": "Play Samantha's Sorrow and get a Max Ammo (Black Ops III only).",
             "subsections": [
                 {
                     "header": "1. Shoot 4 Pans",
