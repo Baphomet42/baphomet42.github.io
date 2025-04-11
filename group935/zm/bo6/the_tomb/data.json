@@ -35,31 +35,31 @@
                     ]
                 },
                 {
-                    "header": "Pods (TODO)",
-                    "description": "",
+                    "header": "Fungus and Creatures",
+                    "description": "Fungus will grow around the Dark Aether Nexus and can grow between 3 stages. Destroying fungus will typically drop Salvage, but you can use the fully grown fungus to summon creatures for additional loot. Hold the melee button up close to the fungus until it bursts. This will destroy the fungus and drop the Salvage as usual, but will also make 2 creatures quickly fly away. Killing the creatures will drop extra loot, and the color of the creature indicates the loot rarity.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/8.jpg",
-                                "alt": ""
+                                "alt": "Level 1 fungus"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/28.jpg",
-                                "alt": ""
+                                "alt": "Level 2 fungus"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/67.jpg",
-                                "alt": ""
+                                "alt": "Level 3 fungus"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/75.jpg",
-                                "alt": ""
+                                "src": "assets/75_edit.jpg",
+                                "alt": "Fungus creatures"
                             }
                         }
                     ]
@@ -71,25 +71,25 @@
                         {
                             "pic": {
                                 "src": "assets/56.jpg",
-                                "alt": "Shovel location 1 - TODO"
+                                "alt": "Shovel location 1 - near Death Perception, up on some rubble"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/17.jpg",
-                                "alt": "Shovel location 2 - TODO"
+                                "alt": "Shovel location 2 - between Speed Cola and the Green Gateway"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/14.jpg",
-                                "alt": "Shovel location 3 - TODO"
+                                "alt": "Shovel location 3 - down the stairs from the Red Gateway, behind a wall"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/16.jpg",
-                                "alt": "Shovel location 4 - TODO"
+                                "alt": "Shovel location 4 - next to Quick Revive"
                             }
                         },
                         {
@@ -114,7 +114,7 @@
                 },
                 {
                     "header": "Exfil",
-                    "description": "The radio is located in the Dig Site, and the exfil location will be there too.",
+                    "description": "The radio and exfil location are both in the Dig Site.",
                     "elements": [
                         {
                             "pic": {
@@ -183,7 +183,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/115.jpg",
                                 "alt": "Der Wunderfizz - in the Dark Aether Nexus, by the Green Gateway (spawns at the start of round 25)"
                             }
                         }
@@ -283,10 +283,10 @@
         },
         {
             "header": "Upgraded Ice Staff (Ull's Arrow)",
-            "description": "The upgrade process must be done once, then all players may upgrade their Staff of Ice (TODO).",
+            "description": "The upgrade process must be done once, then all players may upgrade their Staff of Ice.",
             "subsections": [
                 {
-                    "header": "Quickly Freeze 3 Lanterns",
+                    "header": "1. Quickly Freeze 3 Lanterns",
                     "description": "Freeze 3 Aetheric Lanterns with the Staff of Ice within 10 seconds. A simple strategy involves using a different weapon to shoot the lanterns in the Ossuary and the Shrine of the Hierophants until they're visible through the doors from the Subterranean Temple. Then, shoot the lantern in the Subterranean Temple until it's near one of the doors, such that all 3 are lined up and can be shot quickly in a row. When done successfully, Archibald will speak, and the symbols for the next step will appear.",
                     "elements": [
                         {
@@ -298,54 +298,54 @@
                     ]
                 },
                 {
-                    "header": "Shoot 3 Runes in the Dark Aether Nexus",
-                    "description": "With the Staff of Ice, shoot 3 Runes on the floating rocks in the Dark Aether Sky. After each symbol has been shot, the rock will lower closer to the ground. When all 3 rocks have been lowered, memorize the 3 symbols for the next step. The symbols and locations of the rocks are randomized each game.",
+                    "header": "2. Shoot 3 Runes in the Dark Aether Nexus",
+                    "description": "With the Staff of Ice, shoot 3 Runes on the floating rocks in the Dark Aether sky. After each symbol has been shot, the rock will lower closer to the ground. When all 3 rocks have been lowered, memorize the 3 symbols for the next step. The symbols and locations of the rocks are randomized each game.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/85.jpg",
                                 "alt": "Floating rock with a purple Rune"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Teleport to the Energy",
-                    "description": "Exit the Dark Aether Nexus and locate the Gateway that has been closed. The Gateway will be covered in various symbols, including the 3 from the previous step. Use the Staff of Ice to shoot the same Runes on the outside Gateway and enter it. If the wrong symbols were shot, you will appear in the sky and take heavy fall damage. When done successfully, you will appear on a floating rock next to a purple orb. Interact to touch the Energy and begin the next step.",
+                    "header": "3. Teleport to the Energy",
+                    "description": "One of the Gateways will now be closed on both sides. Exit the Dark Aether Nexus and locate the Gateway that has been closed. The Gateway will be covered in various symbols, including the 3 from the previous step. Use the Staff of Ice to shoot the same Runes on the outside Gateway and enter it. If the wrong symbols were shot, you will appear in the sky and take heavy fall damage. When done successfully, you will appear on a floating rock next to a purple orb. Interact to touch the Energy and begin the next step.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/87.jpg",
                                 "alt": "Closed Gateway with Runes"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/88.jpg",
                                 "alt": "Floating rock with Energy"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Feed the Energy",
+                    "header": "4. Feed the Energy",
                     "description": "The purple orb will slowly move around the Dark Aether Nexus and can be fed by killing enemies. Stay close to the Energy as it moves around the Dark Aether. All players should stay as close to the Energy as possible and constantly killing enemies, or the step will fail. If the step fails, you must repeat the previous step to teleport to the Energy. If the Energy reaches the Plinth, the step will be completed.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Killing enemies while following the Energy"
+                                "src": "assets/92.jpg",
+                                "alt": "Following the Energy to feed it zombies"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Touch the Staff to the Altar",
-                    "description": "Interact on the glowing purple energy to upgrade the Staff of Ice into the Ull's Arrow.",
+                    "header": "5. Touch the Staff to the Altar",
+                    "description": "Interact on the glowing purple energy to upgrade the Staff of Ice into the Ull's Arrow. Each time a staff is upgraded, the Altar must recharge before it can be used again to upgrade a different staff.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/93.jpg",
                                 "alt": "Location to upgrade Staff of Ice"
                             }
                         }
@@ -379,7 +379,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/89.jpg",
                                 "alt": "Vermin Monolith with charged crystal"
                             }
                         },
@@ -392,19 +392,19 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/95.jpg",
                                 "alt": "Vermin Altar to place the energy"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/96.jpg",
                                 "alt": "Swarms of Vermin in the lockdown"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/97.jpg",
                                 "alt": "Vermin Altar with refined energy"
                             }
                         },
@@ -412,13 +412,13 @@
                             "full": true,
                             "step": {
                                 "title": "Return the refined energy",
-                                "description": "Interact to gather the refined energy into the Amulet. This will close the Gateway in the Dig Site until the energy is returned to the Monolith in the Dark Aether Nexus by going through one of the other Gateways."
+                                "description": "Interact to gather the refined energy into the Amulet. This will close the Blue Gateway until the energy is returned to the Monolith in the Dark Aether Nexus, by going through one of the other Gateways."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Vermin Monolith to place refined energy"
+                                "src": "assets/98.jpg",
+                                "alt": "Vermin Monolith with refined energy"
                             }
                         }
                     ]
@@ -435,7 +435,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/99.jpg",
                                 "alt": "Parasite Monolith with charged crystal"
                             }
                         },
@@ -448,25 +448,25 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/100.jpg",
                                 "alt": "Parasite Altar to place the energy"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Glowing Parasite"
+                                "src": "assets/101.jpg",
+                                "alt": "Glowing Parasites"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/102.jpg",
                                 "alt": "Energy orb to bring to the Altar"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/104.jpg",
                                 "alt": "Parasite Altar with refined energy"
                             }
                         },
@@ -474,13 +474,13 @@
                             "full": true,
                             "step": {
                                 "title": "Return the refined energy",
-                                "description": "Interact to gather the refined energy into the Amulet. This will close the Gateway in the Shrine of the Hierophants until the energy is returned to the Monolith in the Dark Aether Nexus by going through one of the other Gateways."
+                                "description": "Interact to gather the refined energy into the Amulet. This will close the Yellow Gateway until the energy is returned to the Monolith in the Dark Aether Nexus, by going through one of the other Gateways."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Parasite Monolith to place refined energy"
+                                "src": "assets/105.jpg",
+                                "alt": "Parasite Monolith with refined energy"
                             }
                         }
                     ]
@@ -497,7 +497,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/103.jpg",
                                 "alt": "Doppelghast Monolith with charged crystal"
                             }
                         },
@@ -505,24 +505,24 @@
                             "full": true,
                             "step": {
                                 "title": "Refine the raw energy",
-                                "description": "Go to the Doppelghast Altar in the Ossuary (Green Gateway) and interact to place the energy. This will start a lockdown with Doppelghasts and zombies. There will also be purple circles and spinning lasers on the ground that will deal damage if you step on them. Survive until the lockdown finishes."
+                                "description": "Go to the Doppelghast Altar in the Ossuary (Green Gateway) and interact to place the energy. This will start a lockdown with Doppelghasts and zombies. There will also be purple circles and spinning lasers on the ground that will deal damage if you step on them. Survive and kill Doppelghasts until the lockdown finishes."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/106.jpg",
                                 "alt": "Doppelghast Altar to place the energy"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/118.jpg",
                                 "alt": "Purple circles and lasers to avoid"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/107.jpg",
                                 "alt": "Doppelghast Altar with refined energy"
                             }
                         },
@@ -530,13 +530,13 @@
                             "full": true,
                             "step": {
                                 "title": "Return the refined energy",
-                                "description": "Interact to gather the refined energy into the Amulet. This will close the Gateway in the Ossuary until the energy is returned to the Monolith in the Dark Aether Nexus by going through one of the other Gateways."
+                                "description": "Interact to gather the refined energy into the Amulet. This will close the Green Gateway until the energy is returned to the Monolith in the Dark Aether Nexus, by going through one of the other Gateways."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Doppelghast Monolith to place refined energy"
+                                "src": "assets/108.jpg",
+                                "alt": "Doppelghast Monolith with refined energy"
                             }
                         }
                     ]
@@ -553,7 +553,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/109.jpg",
                                 "alt": "Amalgam Monolith with charged crystal"
                             }
                         },
@@ -566,19 +566,19 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/119.jpg",
                                 "alt": "Amalgam Altar to place the energy"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/120.jpg",
                                 "alt": "Amalgam connecting to a zombie"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/121.jpg",
                                 "alt": "Amalgam Altar with refined energy"
                             }
                         },
@@ -586,13 +586,13 @@
                             "full": true,
                             "step": {
                                 "title": "Return the refined energy",
-                                "description": "Interact to gather the refined energy into the Amulet. This will close the Gateway in the Deep Excavation until the energy is returned to the Monolith in the Dark Aether Nexus by going through one of the other Gateways."
+                                "description": "Interact to gather the refined energy into the Amulet. This will close the Red Gateway until the energy is returned to the Monolith in the Dark Aether Nexus, by going through one of the other Gateways."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Amalgam Monolith to place refined energy"
+                                "src": "assets/110.jpg",
+                                "alt": "Amalgam Monolith with refined energy"
                             }
                         }
                     ]
@@ -610,13 +610,19 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/112.jpg",
+                                "alt": "Pedestal location being powered by all 4 completed rituals"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/128.jpg",
                                 "alt": "Pedestal to open the bridge"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/114.jpg",
                                 "alt": "Sentinel Artifact to start boss fight"
                             }
                         },
@@ -629,26 +635,26 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/122.jpg",
                                 "alt": "Spinning Sentinel Artifact"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Shooting the artifact when it glows purple"
+                                "src": "assets/123.jpg",
+                                "alt": "Artifact glowing purple"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Shattered artifact"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/124.jpg",
                                 "alt": "Multiple spinning artifacts"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/127.jpg",
+                                "alt": "Max Ammo after an artifact is shattered"
                             }
                         },
                         {
@@ -660,13 +666,13 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "TODO empowered by the Sentinel Artifact"
+                                "src": "assets/125.jpg",
+                                "alt": "Enemy empowered by the Sentinel Artifact"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/126.jpg",
                                 "alt": "Artifact to shatter after being dropped"
                             }
                         },
@@ -686,7 +692,7 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Shattering the final artifact"
+                                "alt": "Final artifact to shatter before it ends the game"
                             }
                         },
                         {
@@ -740,87 +746,99 @@
             "subsections": [
                 {
                     "header": "Gold Armor Vest",
-                    "description": "",
+                    "description": "Complete 2 lockdowns to unlock a free Gold Armor Vest wall-buy in the Dig Site. Gold Armor holds 3 plates and regenerates on its own.",
                     "elements": [
                         {
                             "full": true,
                             "step": {
-                                "title": "",
-                                "description": ""
+                                "title": "Collect 2 statue heads",
+                                "description": "There are 2 crates in the Dark Aether Nexus that can be broken by repeatedly meleeing them. Each crate contains a statue head that can be interacted to pick up."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/22.jpg",
-                                "alt": ""
+                                "alt": "Crate 1 - by Juggernog"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/24.jpg",
-                                "alt": ""
+                                "alt": "Statue head from crate 1"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/21.jpg",
-                                "alt": ""
+                                "alt": "Crate 2 - to the left of the Green Gateway"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/23.jpg",
-                                "alt": ""
+                                "alt": "Statue head from crate 2"
                             }
                         },
                         {
                             "full": true,
                             "step": {
-                                "title": "",
-                                "description": ""
+                                "title": "Place the statue heads",
+                                "description": "There are 2 statues with missing heads in the Dig Site. Interact on each statue to place the heads."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/26.jpg",
-                                "alt": ""
+                                "alt": "Statue 1 - by the Blue Gateway"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/81.jpg",
+                                "alt": "Statue 2 - by PhD Flopper"
                             }
                         },
                         {
                             "full": true,
                             "step": {
-                                "title": "",
-                                "description": "TODO start blood sacrifice"
+                                "title": "Lockdowns",
+                                "description": "There are 2 lockdowns to do (one per statue). In each lockdown, there is a heavy red fog and you only have 1 hp, but armor works as normal. Kill all the Doppelghasts and Shock Mimics to finish the lockdown, or leave the area to cancel. Interact on a statue to start the blood sacrifice. After a successful lockdown, the statue will spew blood. When both are complete, the armor wall-buy will appear by the PaP location."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Lockdown"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Gold Armor Vest"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Ancient Gems (Ray Gun)",
-                    "description": "",
+                    "header": "Ancient Gems (Free Ray Gun)",
+                    "description": "With the Death Perception perk active, digging with a shovel has a chance to spawn an Ancient Gem. Collect 3 Ancient Gems and offer them to a statue by Death Perception. This will spawn multiple Doppelghasts to kill. After all the Doppelghasts are killed, return to where the Ancient Gems were offered for a free Ray Gun.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Ancient Gem"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Offer the Ancient"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Doppelghasts to kill"
                             }
                         },
                         {
@@ -832,151 +850,145 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Ray Gun and Essence"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "TODO Flying Rocks PaP (Cryo Freeze, timed?)",
-                    "description": "",
+                    "header": "Flying Rocks (Free Aetherium Crystal and Cryo Freeze)",
+                    "description": "Each time you enter the Dark Aether Nexus, one of the floating rocks will spark for a brief time. Shoot the rock that sparked to start a short timer where multiple rocks will fly around in circles. If all the rocks are shot within a short enough time, a Raw Aetherium Crystal and a Cryo Freeze Ammo Mod will drop in front of the Ice Staff Altar.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/116_edit.jpg",
+                                "alt": "Sparking rock"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/117.jpg",
+                                "alt": "Aetherium Crystal and Cryo Freeze"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Waterfall Aether Tool",
-                    "description": "In the Dark Aether Nexus, there are 2 waterfalls that can be frozen using Cryo Freeze or the Staff of Ice. Freeze both waterfalls to spawn a free Aether Tool. The rarity of the Aether Tool depends on the current round.",
+                    "header": "Frozen Waterfalls (Free Aether Tool)",
+                    "description": "In the Dark Aether Nexus, there are 2 waterfalls that can be frozen using Cryo Freeze or the Staff of Ice. Freeze both waterfalls to spawn a free Aether Tool.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/83.jpg",
                                 "alt": "Waterfall 1 - behind the Crafting Table"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/47.jpg",
-                                "alt": "Waterfall 2 - between the Green Gateway and Red Gateway"
+                                "alt": "Waterfall 2 - between the Green and Red Gateways"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/84.jpg",
                                 "alt": "Aether Tool reward"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Hidden Pots",
-                    "description": "There are 10 pots around the map that can be broken by shooting them. Breaking all 10 pots will spawn a Self-Revive Kit and a Light Mend ammo mod.",
+                    "header": "Hidden Pots (Free Self-Revive and Light Mend)",
+                    "description": "There are 10 pots around the map that can be broken by shooting them. Breaking all 10 pots will spawn a Self-Revive Kit and a Light Mend Ammo Mod.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/48.jpg",
-                                "alt": "Location 1 - TODO"
+                                "src": "assets/48_edit.jpg",
+                                "alt": "Location 1 - at the Dig Site, above the Rampage Inducer"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/50.jpg",
-                                "alt": "Location 2 - TODO"
+                                "src": "assets/50_edit.jpg",
+                                "alt": "Location 2 - at the Dig Site, above the door leading to Deadshot Daiquiri"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/49.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/49_edit.jpg",
+                                "alt": "Location 3 - at the Dig Site, above the Blue Gateway"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 4 - TODO"
+                                "src": "assets/76_edit.jpg",
+                                "alt": "Location 4 - near Deadshot Daiquiri, through the barrier by the Mystery Box location"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 5 - TODO"
+                                "src": "assets/77_edit.jpg",
+                                "alt": "Location 5 - between Deadshot Daiquiri and Speed Cola, above a doorway"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/53.jpg",
-                                "alt": "Location 6 - TODO"
+                                "src": "assets/53_edit.jpg",
+                                "alt": "Location 6 - near Death Perception, above the doorway leading to Stamin-Up"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 7 - TODO"
+                                "src": "assets/79_edit.jpg",
+                                "alt": "Location 7 - above Stamin-Up and to the right"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/52.jpg",
-                                "alt": "Location 8 - TODO"
+                                "src": "assets/52_edit.jpg",
+                                "alt": "Location 8 - above the Red Gateway and to the left"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 9 - TODO"
+                                "src": "assets/78_edit.jpg",
+                                "alt": "Location 9 - looking up from the Red Gateway, in the hole letting sunlight in"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/51.jpg",
-                                "alt": "Location 10 - TODO"
+                                "src": "assets/51_edit.jpg",
+                                "alt": "Location 10 - to the left of Quick Revive, on the stone wall"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/82.jpg",
+                                "alt": "Self-Revive Kit and Light Mend"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Tombs Statue Game",
-                    "description": "",
+                    "header": "Statue Memory Game (Free Brain Rot)",
+                    "description": "There are 9 statues on a wall by Death Perception, and all 9 must be lit up to drop some loot, including a Brain Rot Ammo Mod. Shoot the correct statue in the head to light it up, and it will remain lit for a short time. The correct order can be seen by shooting the fallen 10th statue in the head. Shooting the wrong statue will not reset the sequence, so you can quickly try shooting multiple statues until they all light up.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/54.jpg",
-                                "alt": ""
+                                "alt": "Wall with 9 statues"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/55.jpg",
-                                "alt": ""
+                                "src": "assets/55_edit.jpg",
+                                "alt": "Fallen statue to see the correct order"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/57.jpg",
-                                "alt": ""
+                                "alt": "The first 5 statues lit up"
                             }
                         },
                         {
@@ -988,8 +1000,8 @@
                     ]
                 },
                 {
-                    "header": "Flaming Bowls Random Perk",
-                    "description": "There are 6 stone bowls by the doorways around Speed Cola, and they can be lit using Napalm Burst, Molotovs, or Thermo Grenades(TODO). Each lit bowl will drop a Molotov, and after the 6th is lit, a Random Perk power-up will spawn.",
+                    "header": "Flaming Bowls (Free Random Perk)",
+                    "description": "There are 6 stone bowls by the doorways around Speed Cola, and they can be lit using Napalm Burst or Molotovs. Each lit bowl will drop a Molotov, and after the 6th is lit, a Random Perk power-up will spawn. If all 6 are not lit within the time limit, the flames will go out, and this can be used to get unlimited Molotovs.",
                     "elements": [
                         {
                             "pic": {
@@ -1049,60 +1061,66 @@
                 },
                 {
                     "header": "Brain Rot Skulls",
-                    "description": "There are 4 skulls around Speed Cola with an X on them. Using Brain Rot, quickly shoot all 4 skulls in the correct order. This will spawn several TODO.",
+                    "description": "There are 4 skulls around Speed Cola with an X on them. Using Brain Rot, quickly shoot all 4 skulls in the correct order. This will spawn several Brain Rot zombies.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/59.jpg",
-                                "alt": "Skull 1 - TODO"
+                                "src": "assets/59_edit.jpg",
+                                "alt": "Skull 1 - in the room with the 2 doorways with traps, to the right of the door leading up towards Deadshot Daiquiri"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/60.jpg",
-                                "alt": "Skull 2 - TODO"
+                                "src": "assets/60_edit.jpg",
+                                "alt": "Skull 2 - on the right side stairway with the trap, when facing Speed Cola"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/61.jpg",
-                                "alt": "Skull 3 - TODO"
+                                "src": "assets/61_edit.jpg",
+                                "alt": "Skull 3 - in the center of the Green Gateway room"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Skull 4 - TODO"
+                                "src": "assets/91_edit.jpg",
+                                "alt": "Skull 4 - by the Doppelghast Altar in the Speed Cola room"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/90.jpg",
+                                "alt": "Brain Rot army"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Jumpscare",
-                    "description": "",
+                    "description": "There are 3 possible spawns for the statue that causes the jumpscare. Aim down sight while looking at the statue, and it will turn to face you with red eyes. After looking away, you will hear whispering voices and the statue will disappear. The jumpscare will trigger once randomly when picking up loot. After the jumpscare has been triggered, the statue will reappear at any of the 3 locations, and can be repeated unlimited times.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/130_edit.jpg",
+                                "alt": "Location 1 - to the right of Deadshot Daiquiri, through the barrier"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/131_edit.jpg",
+                                "alt": "Location 2 - near Deadshot Daiquiri, through the barrier by the Mystery Box location"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/132_edit.jpg",
+                                "alt": "Location 3 - above Quick Revive"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/129.jpg",
+                                "alt": "Jumpscare"
                             }
                         }
                     ]
@@ -1118,8 +1136,8 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/69.jpg",
-                                "alt": ""
+                                "src": "assets/69_edit.jpg",
+                                "alt": "Through the Red Gateway, in a hole in the wall near the door to Stamin-Up"
                             }
                         }
                     ]
@@ -1129,8 +1147,8 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/72.jpg",
-                                "alt": ""
+                                "src": "assets/72_edit.jpg",
+                                "alt": "In the Dark Aether Nexus, between the Green and Red Gateways"
                             }
                         }
                     ]
@@ -1140,8 +1158,8 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/73.jpg",
-                                "alt": ""
+                                "src": "assets/73_edit.jpg",
+                                "alt": "In the Dark Aether Nexus, between the Blue and Green Gateways"
                             }
                         }
                     ]
@@ -1151,8 +1169,8 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/80_edit.jpg",
+                                "alt": "To the right of Speed Cola, in a hole in the wall"
                             }
                         }
                     ]
@@ -1162,8 +1180,8 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/71.jpg",
-                                "alt": ""
+                                "src": "assets/71_edit.jpg",
+                                "alt": "To the right of Stamin-Up, in a barrier"
                             }
                         }
                     ]
@@ -1173,8 +1191,8 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/70.jpg",
-                                "alt": ""
+                                "src": "assets/70_edit.jpg",
+                                "alt": "To the left of Quick Revive, in a hole seen from the stairs leading up towards the Red Gateway"
                             }
                         }
                     ]
@@ -1184,8 +1202,8 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/66.jpg",
-                                "alt": ""
+                                "src": "assets/66_edit.jpg",
+                                "alt": "Near Deadshot Daiquiri, through the barrier by the Mystery Box location, on top of a rock far into the cave"
                             }
                         }
                     ]
@@ -1196,8 +1214,8 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/74.jpg",
-                                "alt": ""
+                                "src": "assets/74_edit.jpg",
+                                "alt": "At the Dig Site, in some fire above the wall between PhD Flopper and the Rampage Inducer"
                             }
                         }
                     ]
