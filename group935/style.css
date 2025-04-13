@@ -102,6 +102,35 @@ li::marker {
     padding: .5rem;
 }
 
+.related-maps-wrapper {
+    padding: 0;
+    margin: 2rem 0;
+    color: var(--accent-text);
+}
+
+.related-maps-area {
+    padding: .5rem 5rem;
+    border-top: .1rem solid var(--accent-color);
+    border-bottom: .1rem solid var(--accent-color);
+    display: inline-block;
+}
+
+.related-maps-header {
+    padding: 0;
+    margin: 0;
+}
+
+.related-map {
+    padding: 0;
+    margin: 0;
+    color: var(--main-text-color);
+    font-size: larger;
+}
+
+.related-map-link {
+    text-decoration: underline;
+}
+
 .notice-wrap {
     box-sizing: border-box;
     width: 50%;

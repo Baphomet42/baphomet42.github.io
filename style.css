@@ -281,6 +281,10 @@ ul {
     -webkit-user-select: none;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
 .center {
     text-align: center;
 }

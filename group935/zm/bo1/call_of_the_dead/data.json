@@ -4,6 +4,7 @@
     "background": "assets/background.png",
     "style": "ultimis",
     "rev": 2,
+    "related_maps": ["bo4/tag_der_toten"],
     "notice": "The main quest is altered in solo.",
     "sections" : [
         {
@@ -307,36 +308,13 @@
                         },
                         {
                             "full": true,
-                            "step": {
-                                "title": "i. Set the purple dial to 6"
-                            }
-                        },
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "ii. Interact on the orange dial until the blue dial is 4",
-                                "description": "Do not interact on the blue dial directly, since it would mess up the purple dial."
-                            }
-                        },
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "iii. Interact on the yellow dial until the orange dial is 7",
-                                "description": "Do not interact on the orange dial directly, since it would mess up the blue dial."
-                            }
-                        },
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "iv. Set the yellow dial to 2, then turn the purple dial the same number of times you had to turn the yellow dial"
-                            }
-                        },
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "v. Set the blue dial back to 4",
-                                "description": "All 4 dials will now be set correctly."
-                            }
+                            "bullets": [
+                                "i. Set the purple dial to 6",
+                                "ii. Interact on the orange dial until the blue dial is 4",
+                                "iii. Interact on the yellow dial until the orange dial is 7",
+                                "iv. Set the yellow dial to 2, then turn the purple dial the same number of times you just turned the yellow dial",
+                                "v. Set the blue dial back to 4"
+                            ]
                         },
                         {
                             "pic": {

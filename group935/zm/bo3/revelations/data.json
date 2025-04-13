@@ -1735,7 +1735,8 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "3. Interact on the \"Mystery Box\" in Samantha's room"
+                                "title": "3. Interact on the \"Mystery Box\" in Samantha's room",
+                                "description": "The box is a crate with a white question mark drawn on the front."
                             }
                         },
                         {

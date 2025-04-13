@@ -4,6 +4,7 @@
     "background": "https://callofdutymaps.com/wp-content/uploads/worldatwwarderriese43.jpg",
     "style": "ultimis",
     "rev": 2,
+    "related_maps": ["bo3/the_giant"],
     "wip": true,
     "maps": [{"img": "https://callofdutymaps.com/wp-content/uploads/derrieseloadscreen.jpg"}],
     "sections" : [

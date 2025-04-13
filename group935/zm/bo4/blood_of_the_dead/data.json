@@ -1,9 +1,10 @@
 {
     "id": "bo4/blood_of_the_dead",
     "name": "Blood of the Dead",
-    "background": "",
+    "background": "https://callofdutymaps.com/wp-content/uploads/bloodofthedead5.jpg",
     "style": "aether",
     "rev": 2,
+    "related_maps": ["bo2/mob_of_the_dead"],
     "wip": true,
     "sections" : [
     ]

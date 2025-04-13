@@ -842,7 +842,7 @@
             "subsections": [
                 {
                     "header": "Trials Overview",
-                    "description": "Each player has a pillar with 3 trials between spawn and Lab B. Hover over a trial to view the requirements and interact to get the reward. Each player will see their trials as glowing green.",
+                    "description": "Each player has a pillar with 3 trials between spawn and Lab B. Hover over a trial to view the requirements and interact to get the reward. Each player will see their trials as glowing green. The top trial reward is a random perk. The middle trial reward is a gun, and is either a Dingo, 205 Brecci, or SVG-100 (you can let the reward go away, then claim it again to respin). The bottom trial reward is a Max Ammo.",
                     "elements": [
                         {
                             "pic": {
@@ -854,6 +854,37 @@
                             "pic": {
                                 "src": "assets/68.jpg",
                                 "alt": "All 3 trials completed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Electrified Shield",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Electrify a shield",
+                                "description": "After all players complete all 3 of their trials, the trial area will randomly get hit by lightning every few minutes. Hold your shield in the trial area until it gets hit, at which point it will be electrified for one use."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/69.jpg",
+                                "alt": "Electrified shield"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Uses",
+                                "description": "The electrified shield is required for several other steps. It can also be used to melee Perk Machines and Gobblegum Machines to reduce the price by half, for one use."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/178.jpg",
+                                "alt": "Electrified Perk Machine"
                             }
                         }
                     ]
@@ -1047,37 +1078,6 @@
                             "step": {
                                 "title": "Water 5 plants.",
                                 "description": "Use a bucket to water 5 planters."
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "Electrified Shield",
-                    "elements": [
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "Electrify a shield",
-                                "description": "After all players complete all 3 of their trials, the trial area will randomly get hit by lightning every few minutes. Hold your shield in the trial area until it gets hit, at which point it will be electrified for one use."
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/69.jpg",
-                                "alt": "Electrified shield"
-                            }
-                        },
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "Uses",
-                                "description": "The electrified shield is required for several other steps. It can also be used to melee Perk Machines and Gobblegum Machines to reduce the price by half, for one use."
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/178.jpg",
-                                "alt": "Electrified Perk Machine"
                             }
                         }
                     ]

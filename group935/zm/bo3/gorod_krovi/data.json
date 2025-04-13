@@ -861,24 +861,12 @@
                 },
                 {
                     "header": "6. Bring the Power Core to Nikolai",
+                    "description": "Grab the power core from Sophia, then bring it to Belinski Square. Stand near the wall facing Nikolai and launch a whelp. It will carry the part to Nikolai, and a quote will play.",
                     "elements": [
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "Grab the power core from Sophia"
-                            }
-                        },
                         {
                             "pic": {
                                 "src": "assets/105.jpg",
-                                "alt": "Power core in an open compartment"
-                            }
-                        },
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "At Belinski Square, give the part to Nikolai",
-                                "description": "Stand near the wall facing Nikolai and launch a whelp. It will carry the part to Nikolai, and a quote will play."
+                                "alt": "Power core in an open compartment by Sophia"
                             }
                         },
                         {

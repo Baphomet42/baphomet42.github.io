@@ -4,6 +4,7 @@
     "background": "assets/background.png",
     "style": "ultimis",
     "rev": 2,
+    "related_maps": ["bo4/classified"],
     "sections" : [
         {
             "header": "Map Features",

@@ -4,7 +4,6 @@
     "background": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/guides/games/blackops6/zombies/COD-BO6-RBZ-TOMB-021.webp",
     "style": "dark_aether",
     "rev": 2,
-    "wip": true,
     "maps": [{"img": "assets/maps.jpg", "link": "https://callofduty.fandom.com/wiki/The_Tomb?file=TheTomb+Excavation+MiniMap+BO6.png"}],
     "sections" : [
         {
@@ -36,7 +35,7 @@
                 },
                 {
                     "header": "Fungus and Creatures",
-                    "description": "Fungus will grow around the Dark Aether Nexus and can grow between 3 stages. Destroying fungus will typically drop Salvage, but you can use the fully grown fungus to summon creatures for additional loot. Hold the melee button up close to the fungus until it bursts. This will destroy the fungus and drop the Salvage as usual, but will also make 2 creatures quickly fly away. Killing the creatures will drop extra loot, and the color of the creature indicates the loot rarity.",
+                    "description": "Fungus will grow around the Dark Aether Nexus and can grow between 3 stages. Destroying fungus will drop Salvage, but you can also use them to summon creatures for additional loot. Hold the melee button (or spam it) on the fungus until it bursts. This will destroy the fungus and drop the Salvage as usual, but will also make 2 creatures quickly try to fly away. Killing the creatures will drop extra loot, and the rarity of the loot depends on the level of fungus and color of the creature.",
                     "elements": [
                         {
                             "pic": {
@@ -630,7 +629,7 @@
                             "full": true,
                             "step": {
                                 "title": "Phase 1",
-                                "description": "The Sentinel Artifact has 9 health stages that must be depleted to win the fight, and 1 health stage will be lost each time a Sentinel Artifact is shattered. The artifact will start by rotating in a circle and shooting a deadly laser. It will also slowly move up and down to hit both levels of the arena. Eventually, it will turn purple for a short period of time, where it can be damaged (this will not be indicated on the boss bar until it is shattered). Each time an artifact is shattered, another one will join the artifact to spin around with an additional laser. All of the artifacts will turn purple at the same time, and it is possible to shatter multiple artifacts during this time to reduce multiple health stages. After the 4th artifact has been shattered, the fight will continue to Phase 2."
+                                "description": "The Sentinel Artifact has 9 health stages that must be depleted to win the fight, and 1 health stage will be lost each time a Sentinel Artifact is broken. The artifact will start by rotating in a circle and shooting a deadly laser. It will also slowly move up and down to hit both levels of the arena. Eventually, it will turn purple for a short period of time, where it can be damaged (this will not be indicated on the boss bar until it breaks). Each time an artifact is broken, another one will join the artifact to spin around with an additional laser. All of the artifacts will turn purple at the same time, and it is possible to break multiple artifacts during this time to reduce multiple health stages. After the 4th artifact is broken, the fight will continue to Phase 2."
                             }
                         },
                         {
@@ -654,14 +653,14 @@
                         {
                             "pic": {
                                 "src": "assets/127.jpg",
-                                "alt": "Max Ammo after an artifact is shattered"
+                                "alt": "Max Ammo after an artifact is broken"
                             }
                         },
                         {
                             "full": true,
                             "step": {
                                 "title": "Phase 2",
-                                "description": "During this phase, the 4 previously shattered artifacts will remain spinning and shooting lasers, but can no longer be shattered. The next 4 artifacts must be shattered one at a time, and will spawn attached to an enemy. Kill the enemy holding the artifact, then quickly shatter the artifact before it goes away. If the artifact vanishes before it's shattered, it will respawn on a new enemy. The artifact will be carried by a Heavy Zombie, Doppelghast, Shock Mimic, and Amalgam. After these 4 artifacts have been shattered, the fight will continue to the final phase."
+                                "description": "During this phase, the 4 previously broken artifacts will remain spinning and shooting lasers, but can no longer be broken. The next 4 artifacts must be broken one at a time, and will spawn attached to an enemy. Kill the enemy holding the artifact, then quickly break the artifact before it goes away. If the artifact vanishes before it's broken, it will respawn on a new enemy. The artifact will be carried by a Heavy Zombie, Doppelghast, Shock Mimic, and Amalgam. After these 4 artifacts have been broken, the fight will continue to the final phase."
                             }
                         },
                         {
@@ -673,26 +672,26 @@
                         {
                             "pic": {
                                 "src": "assets/126.jpg",
-                                "alt": "Artifact to shatter after being dropped"
+                                "alt": "Artifact to break after being dropped"
                             }
                         },
                         {
                             "full": true,
                             "step": {
                                 "title": "Phase 3",
-                                "description": "For the final phase, the 8 previously shattered artifacts will all shoot a laser at the 9th and final artifact. After a brief animation, the final artifact will float up to a wall where it can be shattered. Finish off the Sentinel Artifact before it destroys you. If it isn't shattered quick enough, the game will end. When done successfully, the artifact will float down to the center of the arena, where it can be picked up."
+                                "description": "For the final phase, the 8 previously broken artifacts will all shoot a laser at the 9th and final artifact. After a brief animation, the final artifact will float up to a wall where it can be broken. Finish off the Sentinel Artifact before it destroys you. If it isn't broken quick enough, the game will end. When done successfully, the artifact will float down to the center of the arena, where it can be picked up."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/140.jpg",
                                 "alt": "Final artifact being powered by the first 8"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Final artifact to shatter before it ends the game"
+                                "src": "assets/141.jpg",
+                                "alt": "Final artifact to break before it ends the game"
                             }
                         },
                         {
@@ -704,7 +703,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/142.jpg",
                                 "alt": "Sentinel Artifact"
                             }
                         }
@@ -802,18 +801,24 @@
                             "full": true,
                             "step": {
                                 "title": "Lockdowns",
-                                "description": "There are 2 lockdowns to do (one per statue). In each lockdown, there is a heavy red fog and you only have 1 hp, but armor works as normal. Kill all the Doppelghasts and Shock Mimics to finish the lockdown, or leave the area to cancel. Interact on a statue to start the blood sacrifice. After a successful lockdown, the statue will spew blood. When both are complete, the armor wall-buy will appear by the PaP location."
+                                "description": "There are 2 lockdowns to do (one per statue). In each lockdown, there is a heavy red fog, and you are limited to 1 hp for the entire fight, but armor works as normal. Kill all the Doppelghasts and Shock Mimics to finish the lockdown, or leave the area to cancel. Interact on a statue to start the blood sacrifice. After a successful lockdown, the statue will spew blood. When both are complete, the armor wall-buy will appear by the PaP location."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/139.jpg",
                                 "alt": "Lockdown"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/143.jpg",
+                                "alt": "Bleeding statue"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/144.jpg",
                                 "alt": "Gold Armor Vest"
                             }
                         }
@@ -825,31 +830,31 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/133.jpg",
                                 "alt": "Ancient Gem"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/135.jpg",
+                                "alt": "Statue to give Ancient Gems"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/136.jpg",
                                 "alt": "Offer the Ancient"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/137.jpg",
                                 "alt": "Doppelghasts to kill"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/138.jpg",
                                 "alt": "Ray Gun and Essence"
                             }
                         }

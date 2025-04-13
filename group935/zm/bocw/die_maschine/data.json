@@ -1,10 +1,15 @@
 {
     "id": "bocw/die_maschine",
     "name": "Die Maschine",
-    "background": "",
+    "background": "https://callofdutymaps.com/wp-content/uploads/Die-Maschine-2.jpg",
     "style": "dark_aether",
     "rev": 2,
+    "related_maps": ["waw/nacht_der_untoten"],
     "wip": true,
+    "maps": [
+        {"img": "https://callofdutymaps.com/wp-content/uploads/diemaschine-above-ground-minimap.png", "link": "https://callofdutymaps.com/zombies/die-maschine/"},
+        {"img": "https://callofdutymaps.com/wp-content/uploads/diemaschine-bunker-minimap.png", "link": "https://callofdutymaps.com/zombies/die-maschine/"}
+    ],
     "sections" : [
     ]
 }

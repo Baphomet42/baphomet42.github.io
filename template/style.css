@@ -32,6 +32,7 @@
     margin: -6px;
     padding-left: 1rem;
     padding-right: 1rem;
+    white-space: nowrap;
 }
 
 #footer-gold {

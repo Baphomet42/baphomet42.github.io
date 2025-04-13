@@ -199,14 +199,14 @@
                             "full": true,
                             "step": {
                                 "title": "Power-Ups",
-                                "description": "5000 points - Turn a Max Ammo into a Fire Sale or another power-up into a Max Ammo."
+                                "description": "5000 points - turn a Max Ammo into a Fire Sale or another power-up into a Max Ammo."
                             }
                         },
                         {
                             "full": true,
                             "step": {
                                 "title": "Perk Machines",
-                                "description": "Free - Refund a perk to get your money back."
+                                "description": "Free - refund a perk to get your money back."
                             }
                         },
                         {
@@ -748,37 +748,40 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "Coming Home"
+                                "title": "Coming Home",
+                                "description": "Interact on the computer station to the right of the Excavator Omicron control panel."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/72.jpg",
-                                "alt": "A computer station to the right of the Excavator Omicron control panel"
+                                "alt": "Control panel to interact 3 times"
                             }
                         },
                         {
                             "full": true,
                             "step": {
-                                "title": "Damned"
+                                "title": "Damned",
+                                "description": "Interact on the tall device to the right of the door going from Tunnel 11 to the M.P.D. room."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/73.jpg",
-                                "alt": "A tall device to the right of the door going from Tunnel 11 to the M.P.D. room"
+                                "alt": "Control panel to interact 3 times"
                             }
                         },
                         {
                             "full": true,
                             "step": {
-                                "title": "Pareidolia"
+                                "title": "Pareidolia",
+                                "description": "Interact on the computer station to the right of the door going from the Laboratories to the Bio-Dome."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/74.jpg",
-                                "alt": "A computer station to the right of the door going from the Laboratories to the Bio-Dome"
+                                "alt": "Control panel to interact 3 times"
                             }
                         }
                     ]
@@ -819,13 +822,14 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "2. Hack the dog bowl with the Hacker Device"
+                                "title": "2. Hack the dog bowl with the Hacker Device",
+                                "description": "The dog bowl is on the second floor of the Laboratories."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/27.jpg",
-                                "alt": "Dog bowl, on the second floor of the Laboratories"
+                                "alt": "Dog bowl"
                             }
                         },
                         {

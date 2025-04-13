@@ -1,10 +1,14 @@
 {
     "id": "bocw/mauer_der_toten",
     "name": "Mauer der Toten",
-    "background": "",
+    "background": "https://callofdutymaps.com/wp-content/uploads/Mauer-der-toten-56.jpg",
     "style": "dark_aether",
     "rev": 2,
     "wip": true,
+    "maps": [
+        {"img": "https://callofdutymaps.com/wp-content/uploads/Mauer-der-toten-city-minimap.png", "link": "https://callofdutymaps.com/zombies/mauer-der-toten/"},
+        {"img": "https://callofdutymaps.com/wp-content/uploads/Mauer-der-toten-bunker-minimap.png", "link": "https://callofdutymaps.com/zombies/mauer-der-toten/"}
+    ],
     "sections" : [
     ]
 }

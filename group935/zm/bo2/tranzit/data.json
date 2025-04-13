@@ -1,7 +1,7 @@
 {
     "id": "bo2/tranzit",
     "name": "TranZit",
-    "background": "",
+    "background": "https://callofdutymaps.com/wp-content/uploads/zombiestranzit1.jpg",
     "style": "victis",
     "rev": 2,
     "wip": true,

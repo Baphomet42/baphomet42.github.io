@@ -1,7 +1,7 @@
 {
     "id": "bo2/die_rise",
     "name": "Die Rise",
-    "background": "",
+    "background": "https://callofdutymaps.com/wp-content/uploads/zombiesdierise54.jpg",
     "style": "victis",
     "rev": 2,
     "wip": true,

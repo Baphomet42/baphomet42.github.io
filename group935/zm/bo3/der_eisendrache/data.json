@@ -1308,24 +1308,12 @@
                 },
                 {
                     "header": "5. Set the Death Ray to Protect Mode",
-                    "description": "The Death Ray must be used at least once in the game before this step.",
+                    "description": "The Death Ray must be used at least once in the game before this step. Interact on the empty fuse box to place the fuses, then interact on the opposite side of the Death Ray to select protect mode.",
                     "elements": [
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "Place the fuses in the Death Ray"
-                            }
-                        },
                         {
                             "pic": {
                                 "src": "assets/77.jpg",
                                 "alt": "Location to place the fuses"
-                            }
-                        },
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "Select the protect mode on the other side of the Death Ray"
                             }
                         },
                         {
@@ -1337,15 +1325,9 @@
                     ]
                 },
                 {
-                    "header": "6. Enter the Safe Code on the Computers Outside the Clock Tower",
-                    "description": "If this step is failed, you must repeat the wisp step and time travel to get a new code.",
+                    "header": "6. Enter the Safe Code",
+                    "description": "If this step is failed, you must repeat the wisp step and time travel to get a new code. Go to the computers outside the clock tower and interact with 1 symbol at a time. A click will be heard after each interaction. If done correctly, a sound will play and the safe will open.",
                     "elements": [
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "Interact with 1 symbol at a time. A click will be heard after each interaction. If done correctly, a sound will play."
-                            }
-                        },
                         {
                             "pic": {
                                 "src": "assets/78.jpg",
@@ -1356,23 +1338,12 @@
                 },
                 {
                     "header": "7. Move the Parts from the Safe to the Death Ray",
+                    "description": "Go to the safe in the teleporter room, and interact with the parts to pick them up. Then, place the parts in 2 places around the Death Ray.",
                     "elements": [
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "Go to the safe in the teleporter room, and interact with the parts."
-                            }
-                        },
                         {
                             "pic": {
                                 "src": "assets/79.jpg",
                                 "alt": "The unlocked safe with the parts inside"
-                            }
-                        },
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "Place the parts in 2 places around the Death Ray"
                             }
                         },
                         {
@@ -1402,30 +1373,18 @@
                 },
                 {
                     "header": "9. Samantha Says",
-                    "description": "Win a game of Samantha Says at both computer stations. If one fails, you must redo both games.",
+                    "description": "Win a game of Samantha Says at both computer stations. If one fails, you must redo both games. Interact with the computer station to start the game. Remember the order of the 4 symbols on the small screens, then click the correct screen after a symbol appears on the main screen. When both games are complete, there will be white lights on each of the Death Ray towers.",
                     "elements": [
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "Interact with the computer station to start the game. Remember the order of the 4 symbols on the small screens, then click the correct screen after a symbol appears on the main screen."
-                            }
-                        },
                         {
                             "pic": {
                                 "src": "assets/78.jpg",
-                                "alt": "Location 1 - outside the clock tower"
+                                "alt": "Computer station 1 - outside the clock tower"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/90.jpg",
-                                "alt": "Location 2 - at the rocket"
-                            }
-                        },
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "When both games are complete, there will be white lights on each of the Death Ray towers."
+                                "alt": "Computer station 2 - at the rocket"
                             }
                         },
                         {
@@ -1475,13 +1434,15 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "Shoot 3 wisps again, and have all players teleport. Once again, this must be done in one round, and the teleporter will glow purple when ready."
+                                "title": "Prepare the teleporter",
+                                "description": "Shoot 3 wisps again, and have all players teleport. Once again, this must be done in one round, and the teleporter will glow purple when ready."
                             }
                         },
                         {
                             "full": true,
                             "step": {
-                                "title": "In the past, you must interact with the Kronorium, then pick up the slab"
+                                "title": "Get the slab",
+                                "description": "Interact on the Kronorium to open a safe, then pick up the slab."
                             }
                         },
                         {
@@ -1499,43 +1460,26 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "In the present, place the slab in the wall by Double Tap"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/170.jpg",
-                                "alt": "Location to place the slab"
+                                "title": "Return the slab",
+                                "description": "Back in the present, place the slab in the wall by Double Tap."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/189.jpg",
-                                "alt": "Slab placed in wall"
+                                "alt": "Location to place the slab"
                             }
                         }
                     ]
                 },
                 {
                     "header": "12. Summon the Keeper Ghost",
-                    "description": "This can be done before finishing the previous step, but dogs will keep spawning in until the next step is completed. It is also recommended to have one bow upgraded per player before doing this step.",
+                    "description": "This can be done before finishing the previous step, but dogs will keep spawning in until the next step is completed. It is also recommended to have one bow upgraded per player before doing this step. Place the Vril Device in the crypt next to the starter bow, then follow the Keeper ghost for the next step.",
                     "elements": [
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "Place the Vril Device in the crypt next to the starter bow"
-                            }
-                        },
                         {
                             "pic": {
                                 "src": "assets/109.jpg",
                                 "alt": "Hole to place the Vril Device"
-                            }
-                        },
-                        {
-                            "full": true,
-                            "step": {
-                                "title": "Follow the Keeper ghost for the next step"
                             }
                         }
                     ]

@@ -1,9 +1,10 @@
 {
     "id": "bo2/nuketown_zombies",
     "name": "Nuketown Zombies",
-    "background": "",
+    "background": "https://callofdutymaps.com/wp-content/uploads/zombiesnuketown24.jpg",
     "style": "victis",
     "rev": 2,
+    "related_maps": ["bo4/alpha_omega"],
     "wip": true,
     "sections" : [
     ]

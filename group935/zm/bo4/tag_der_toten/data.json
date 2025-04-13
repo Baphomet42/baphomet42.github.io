@@ -1,9 +1,10 @@
 {
     "id": "bo4/tag_der_toten",
     "name": "Tag der Toten",
-    "background": "",
+    "background": "https://callofdutymaps.com/wp-content/uploads/tagdertoten1.jpg",
     "style": "aether",
     "rev": 2,
+    "related_maps": ["bo1/call_of_the_dead"],
     "wip": true,
     "sections" : [
     ]

@@ -1,9 +1,10 @@
 {
     "id": "bo4/classified",
     "name": "Classified",
-    "background": "",
+    "background": "https://callofdutymaps.com/wp-content/uploads/classified11.jpg",
     "style": "aether",
     "rev": 2,
+    "related_maps": ["bo1/five"],
     "wip": true,
     "sections" : [
     ]

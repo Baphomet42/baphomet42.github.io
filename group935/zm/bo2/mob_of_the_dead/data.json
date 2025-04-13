@@ -1,9 +1,10 @@
 {
     "id": "bo2/mob_of_the_dead",
     "name": "Mob of the Dead",
-    "background": "",
+    "background": "https://callofdutymaps.com/wp-content/uploads/zombiesmobofthedead7.jpg",
     "style": "victis",
     "rev": 2,
+    "related_maps": ["bo4/blood_of_the_dead"],
     "wip": true,
     "sections" : [
     ]

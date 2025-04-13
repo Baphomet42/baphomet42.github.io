@@ -1,10 +1,14 @@
 {
     "id": "bocw/firebase_z",
     "name": "Firebase Z",
-    "background": "",
+    "background": "https://callofdutymaps.com/wp-content/uploads/firebase-z-10.jpg",
     "style": "dark_aether",
     "rev": 2,
     "wip": true,
+    "maps": [
+        {"img": "https://callofdutymaps.com/wp-content/uploads/firebase-z-village-minimap.png", "link": "https://callofdutymaps.com/zombies/firebase-z/"},
+        {"img": "https://callofdutymaps.com/wp-content/uploads/firebase-z-outpost-minimap.png", "link": "https://callofdutymaps.com/zombies/firebase-z/"}
+    ],
     "sections" : [
     ]
 }

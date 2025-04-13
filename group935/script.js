@@ -136,6 +136,50 @@ function pageRev2(data) {
     subtext += subtext_separator
     page += '<h3 class="center">'+subtext+'</h3>'
 
+    if(data.related_maps && data.related_maps.length > 0) {
+        page += '<div class="center related-maps-wrapper"><span class="related-maps-area">'
+
+        if(data.related_maps.length === 1)
+            page += '<h3 class="related-maps-header">Related Map:</h3>'
+        else
+            page += '<h3 class="related-maps-header">Related Maps:</h3>'
+
+        let firstMap = true
+        $.each(data.related_maps, function (relMapKey, relMap) {
+            let mapName = relMap
+            let gameNames = []
+
+            $.each(gameData, function (gameKey, game) {
+                $.each(game.maps, function (mapKey, map) {
+                    if(map.id === relMap) {
+                        mapName = map.name
+                        gameNames.push(game.name)
+                    }
+                })
+            })
+
+            if(firstMap)
+                firstMap = false
+            else
+                page += '<h3 class="related-map">&nbsp;</h3>'
+
+            page += '<h3 class="related-map"><a class="related-map-link" href="/group935/zm/'+relMap+'" rel="noopener noreferrer">'
+            page += '<span class="nowrap">'+mapName+'</span>'
+            page += '</a>'
+            if(gameNames.length > 0) {
+                page += '<span class="accent-color"> - </span>'
+                for(let i=0; i<gameNames.length; i++) {
+                    if(i>0)
+                        page += '<span class="accent-color"> ◦ </span>'
+                    page += '<span class="nowrap">'+gameNames[gameNames.length-1-i]+'</span>'
+                }
+            }
+            page += '</h3>'
+        })
+
+        page += '</span></div>'
+    }
+
     if(data.notice) {
         page += '<div class="notice-wrap"><h4 class="notice">⚠ Notice: '+data.notice+'</h4></div>'
     }

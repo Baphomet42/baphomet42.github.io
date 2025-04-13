@@ -1,9 +1,10 @@
 {
     "id": "bo4/alpha_omega",
     "name": "Alpha Omega",
-    "background": "",
+    "background": "https://callofdutymaps.com/wp-content/uploads/alphaomega2.jpg",
     "style": "aether",
     "rev": 2,
+    "related_maps": ["bo2/nuketown_zombies"],
     "wip": true,
     "sections" : [
     ]

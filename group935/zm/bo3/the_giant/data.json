@@ -4,6 +4,7 @@
     "background": "assets/background.jpg",
     "style": "primis",
     "rev": 2,
+    "related_maps": ["waw/der_riese"],
     "maps": [{"img": "https://callofdutymaps.com/wp-content/uploads/thegiantloadscreen.jpg"}],
     "sections" : [
         {
