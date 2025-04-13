@@ -90,20 +90,12 @@
     box-shadow: inset 0 0 .3rem .3rem white, inset 0 0 10rem 10rem #FFFFFF33;
 }
 
-.map-nolink {
-    box-shadow: inset 0 0 .3rem .3rem black, inset 0 0 10rem 10rem #33000099;
-}
-
-.map-nolink:hover {
-    box-shadow: inset 0 0 .3rem .3rem black, inset 0 0 10rem 10rem #33000099;
-}
-
 .map-red {
-    box-shadow: inset 0 0 .3rem .3rem black, inset 0 0 10rem 10rem #33000099;
+    box-shadow: inset 0 0 .3rem .3rem black, inset 0 0 .5rem .5rem #FF000099;
 }
 
 .map-red:hover {
-    box-shadow: inset 0 0 .3rem .3rem red, inset 0 0 10rem 10rem #33000099, inset 0 0 10rem 10rem #FFFFFF33;
+    box-shadow: inset 0 0 .3rem .3rem white, inset 0 0 10rem 10rem #FFFFFF33, inset 0 0 .5rem .5rem #FF000099;
 }
 
 .map-name {

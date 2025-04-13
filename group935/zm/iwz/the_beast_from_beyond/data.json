@@ -1,7 +1,7 @@
 {
     "id": "iwz/the_beast_from_beyond",
     "name": "The Beast From Beyond",
-    "background": "",
+    "background": "assets/background.png",
     "style": "iwz",
     "rev": 2,
     "wip": true,

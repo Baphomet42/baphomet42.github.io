@@ -25,7 +25,13 @@
         <br/>
         <div class="section-full">
             <h1 class="center">Zombies Guides</h1>
-            <h2 class="center">Main Quest Steps<span class="accent-color"> | </span>Part Locations<span class="accent-color"> | </span>Side Easter Eggs</h2>
+            <h2 class="center">
+                <span class="nowrap">Main Quest Steps</span>
+                <span class="accent-color"> | </span>
+                <span class="nowrap">Part Locations</span>
+                <span class="accent-color"> | </span>
+                <span class="nowrap">Side Easter Eggs</span>
+            </h2>
         </div>
         <br/>
         <br/>
@@ -60,20 +66,24 @@
                 let mapButtonData = ''
                 let imgData = ''
 
-                if(mapVal.wip)
-                    mapButtonData += ' map-red'
-
                 if(mapVal.id) {
                     linkData = '<a href="/group935/zm/'+mapVal.id+'" rel="noopener noreferrer">'
+
+                    let mapOverlayData = ''
+                    if(mapVal.wip)
+                        mapOverlayData = 'url(/assets/wip_banner.png), '
+
                     if(!mapVal.img_alt)
-                        imgData = ' style="background-image: url(/group935/zm/'+mapVal.id+'/assets/icon.jpg)"'
+                        imgData = ' style="background-image: '+mapOverlayData+'url(/group935/zm/'+mapVal.id+'/assets/icon.jpg)"'
                     else
-                        imgData = ' style="background-image: url(/group935/zm/'+mapVal.id+'/assets/icon_'+mapVal.img_alt+'.jpg)"'
+                        imgData = ' style="background-image: '+mapOverlayData+'url(/group935/zm/'+mapVal.id+'/assets/icon_'+mapVal.img_alt+'.jpg)"'
                 }
                 else {
-                    mapButtonData = ' map-nolink'
                     linkDataEnd = ''
                 }
+
+                if(mapVal.wip)
+                    mapButtonData += ' map-red'
 
                 if(mapVal.img)
                     imgData = ' style="background-image: url('+mapVal.img+')"'

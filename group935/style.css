@@ -24,8 +24,8 @@
     --accent-color-dark_aether: #5C49A4;
     --accent-text-grayscale: #AAAAAA;
     --accent-color-grayscale: #555555;
-    --accent-text-exo: var(--accent-text-ultimis);
-    --accent-color-exo: var(--accent-color-ultimis);
+    --accent-text-awz: var(--accent-text-ultimis);
+    --accent-color-awz: var(--accent-color-ultimis);
     --accent-text-iwz: #96f447;
     --accent-color-iwz: #dd69ef;
     --accent-text: var(--accent-text-ultimis);

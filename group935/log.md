@@ -46,18 +46,27 @@ To ensure a consistent feel, try to stick to these guidelines.
     + Maps in multiple games can have different image (and name) depending on game
 + Scale image min length to 320, trim canvas to square, and adjust to fit in frame
     + Save as JPG at 70% quality
-+ Chronicles pics unstretch
-    + Original pictures 1148x484 (~64/27)
-    + Rescale to 16/9 (~861 width)
-    + Origins different, scale to 1050x484
 + Bo2 pics without name
     + From https://callofduty.fandom.com/
     + Resized from 480x270 to 480x221
++ IWZ pics
+    + From https://www.reddit.com/r/CODZombies/comments/wvw1kg/all_iw_zombies_map_posters_high_quality/
+    + Trimmed from 640 width to 600 before above resize
++ Bo3 Chronicles pics unstretch
+    + Original pictures 1148x484 (~64/27)
+    + Rescale to 16/9 (~861 width)
+    + Origins different, scale to 1050x484
 
 ## Map Page Paralax Pictures
 
 + Some from https://callofdutymaps.com/
     + Find an image that represents the map as a whole
++ AWZ:
+    + Some from COD fandom
+    + Others from map trailers
++ IWZ:
+    + Some from https://steamcommunity.com/sharedfiles/filedetails/?id=3306529505
+    + Others from map trailers
 + Bo3 Chronicles:
     + Some from https://store.steampowered.com/app/581450/Call_of_Duty_Black_Ops_III__Zombies_Chronicles/
     + Some from https://www.pushsquare.com/games/ps4/call_of_duty_black_ops_iii_zombies_chronicles

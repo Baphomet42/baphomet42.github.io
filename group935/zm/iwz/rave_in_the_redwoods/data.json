@@ -1,10 +1,11 @@
 {
     "id": "iwz/rave_in_the_redwoods",
     "name": "Rave in the Redwoods",
-    "background": "",
+    "background": "assets/background.png",
     "style": "iwz",
     "rev": 2,
     "wip": true,
+    "maps": [{"img": "https://images.steamusercontent.com/ugc/1696156586537035488/4D762C15B67CB8D77DEE081CDCA730DEFC0BC147/", "link": "https://steamcommunity.com/sharedfiles/filedetails/?id=2589580023"}],
     "sections" : [
     ]
 }

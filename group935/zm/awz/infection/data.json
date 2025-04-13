@@ -1,8 +1,8 @@
 {
-    "id": "iwz/shaolin_shuffle",
-    "name": "Shaolin Shuffle",
+    "id": "awz/infection",
+    "name": "Infection",
     "background": "assets/background.png",
-    "style": "iwz",
+    "style": "awz",
     "rev": 2,
     "wip": true,
     "sections" : [

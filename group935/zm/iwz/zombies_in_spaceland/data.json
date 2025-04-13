@@ -1,10 +1,11 @@
 {
     "id": "iwz/zombies_in_spaceland",
     "name": "Zombies in Spaceland",
-    "background": "",
+    "background": "https://images.steamusercontent.com/ugc/2461851703918404176/6FCDB8EE176765F9872A72BFD5ADFCDF16F8AC58/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false",
     "style": "iwz",
     "rev": 2,
     "wip": true,
+    "maps": [{"img": "https://images.steamusercontent.com/ugc/1764824360732536436/A207A5DF8B57324ECE030D6D300E92992B44B922/", "link": "https://steamcommunity.com/sharedfiles/filedetails/?id=2462403426"}],
     "sections" : [
     ]
 }

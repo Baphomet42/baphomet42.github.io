@@ -114,14 +114,14 @@
             ]
         },
         {
-            "id": "exo",
+            "id": "awz",
             "name": "Advanced Warfare",
             "year": 2014,
             "maps": [
-                {"id": "exo/outbreak", "name": "Outbreak", "wip": true},
-                {"id": "exo/infection", "name": "Infection", "wip": true},
-                {"id": "exo/carrier", "name": "Carrier", "wip": true},
-                {"id": "exo/descent", "name": "Descent", "wip": true}
+                {"id": "awz/outbreak", "name": "Outbreak", "wip": true},
+                {"id": "awz/infection", "name": "Infection", "wip": true},
+                {"id": "awz/carrier", "name": "Carrier", "wip": true},
+                {"id": "awz/descent", "name": "Descent", "wip": true}
             ]
         }
     ]
