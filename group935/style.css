@@ -364,15 +364,31 @@ li::marker {
     width: 20%;
     z-index: 1;
     background-color: var(--section-background);
+    box-sizing: border-box;
     border: #AAAAAAee .05rem solid;
 }
 
 .sidebar-links {
     position: fixed;
-    top: 10rem;
-    bottom: 9.5rem;
+    top: 9rem;
+    bottom: 8.5rem;
     width: 20%;
     overflow-y: auto;
+    
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 0,
+        black 1.5rem,
+        black calc(100% - 1.5rem),
+        transparent 100%);
+    mask-composite: intersect;
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 0,
+        black 1.5rem,
+        black calc(100% - 1.5rem),
+        transparent 100%);
+    -webkit-mask-composite: destination-in;
 }
 
 .sidebar-sections {
@@ -381,6 +397,7 @@ li::marker {
 
 .sidebar-section-li {
     padding-top: .5rem;
+    list-style: none;
 }
 
 .sidebar-link {
@@ -389,40 +406,58 @@ li::marker {
     color: var(--accent-text);
 }
 
-.sidebar-link-subsection {
-    padding-top: .1rem;
-    color: var(--main-text-color)
+.li-spacer-top {
+    list-style: none;
+    font-size: xx-small;
+    color: #00000000;
 }
 
-.control-panel {
-    position: fixed;
-    bottom: 5rem;
-    height: 4rem;
+.li-spacer-bottom {
+    list-style: none;
+    font-size: x-large;
+    color: #00000000;
+}
+
+.sidebar-subsections {
+    padding-left: 1.5rem;
+}
+
+.sidebar-link-subsection {
+    padding-top: .125rem;
+    color: var(--main-text-color);
 }
 
 .control-panel-button {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    height: 4rem;
+    height: 3.5rem;
     cursor: pointer;
     text-align: center;
     font-size: xx-large;
-    background-color: #000000ee;
+    background-color: #000000aa;
     color: #FFFFFF;
     box-sizing: border-box;
     border: #AAAAAAee .05rem solid;
 }
 .control-panel-button:hover {
-    background-color: #111111ee;
+    background-color: #222222aa;
 }
 
 #control-panel-hidden {
+    position: fixed;
+    bottom: 5rem;
+    height: 3.5rem;
     left: 0;
+    right: auto;
     width: 3rem;
     z-index: 2;
     box-sizing: border-box;
     border: #AAAAAAee .05rem solid;
+}
+
+#control-panel-hidden-symbol {
+    display: block;
 }
 
 .accent-color {
@@ -479,6 +514,12 @@ li::marker {
 
     .sidebar-links {
         width: 100%;
+    }
+
+    #control-panel-hidden {
+        left: auto;
+        right: 0;
+        width: 3.5rem;
     }
 
 }

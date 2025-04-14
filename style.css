@@ -283,6 +283,17 @@ ul {
     float: right;
 }
 
+.rotatable {
+    transform-origin: center center;
+    transition: transform .25s ease;
+}
+.rotate90 {
+    transform: rotate(90deg);
+}
+.rotate180 {
+    transform: rotate(180deg);
+}
+
 .no-select {
     user-select: none;
     -webkit-user-select: none;

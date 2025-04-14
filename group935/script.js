@@ -112,11 +112,11 @@ function toggleSidebar() {
 
     if(pageData.sidebar === true) {
         document.getElementById('page-table-sidebar').style.display = "block"
-        document.getElementById('control-panel-hidden-button').innerHTML = "<"
+        document.getElementById('control-panel-hidden-symbol').classList.add('rotate90')
     }
     else {
         document.getElementById('page-table-sidebar').style.display = "none"
-        document.getElementById('control-panel-hidden-button').innerHTML = ">"
+        document.getElementById('control-panel-hidden-symbol').classList.remove('rotate90')
     }
 }
 
@@ -332,17 +332,19 @@ function pageRev2(data) {
     pageTable += '<td class="control-panel-button no-select" onclick="cycleSection(false)">\u2228</td>'
     pageTable += '</tr></table>'
 
-    pageTable += '<div class="sidebar-links"><ul class="sidebar-sections">'
+    pageTable += '<div class="sidebar-links"><ul class="sidebar-sections"><li class="li-spacer-top no-select">-</li>'
     for(let i=0; i<pageData.sections.length; i++) {
         pageTable += '<li class="sidebar-section-li"><h3 class="sidebar-link no-select" onclick="scrollToSection('+i+')">'+pageData.sections[i].header+'</h3></li>'
         if(pageData.sections[i].subsections.length > 0) {
             pageTable += '<ul class="sidebar-subsections">'
-            for(let ii=0; ii<pageData.sections[i].subsections.length; ii++)
-                pageTable += '<li><p class="sidebar-link sidebar-link-subsection no-select" onclick="scrollToSubsection('+i+','+ii+')">'+pageData.sections[i].subsections[ii].header+'</p></li>'
+            for(let ii=0; ii<pageData.sections[i].subsections.length; ii++) {
+                if(pageData.sections[i].subsections[ii].header)
+                    pageTable += '<li><p class="sidebar-link sidebar-link-subsection no-select" onclick="scrollToSubsection('+i+','+ii+')">'+pageData.sections[i].subsections[ii].header+'</p></li>'
+            }
             pageTable += '</ul>'
         }
     }
-    pageTable += '</ul></div>'
+    pageTable += '<li class="li-spacer-bottom no-select">-</li></ul></div>'
     pageTable += '</div>'
 
     pageTable += '</div></td>'
@@ -351,7 +353,9 @@ function pageRev2(data) {
 
     page = pageTable
     
-    page += '<div id="control-panel-hidden" class="control-panel"><table><tr><td id="control-panel-hidden-button" class="control-panel-button no-select" onclick="toggleSidebar()">></td></tr></table></div>'
+    page += '<div id="control-panel-hidden"><table><tr><td id="control-panel-hidden-button" class="control-panel-button no-select" onclick="toggleSidebar()">'
+        +'<span id="control-panel-hidden-symbol" class="rotatable">☰</span>'
+        +'</td></tr></table></div>'
 
     return page
 }
