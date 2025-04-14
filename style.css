@@ -4,6 +4,7 @@
     --main-text-color: #FFFFFF;
     --header-borders: #FFFFFF;
     --mc-black: #000000;
+    --mc-dark-gray: #555555;
     --mc-gray: #AAAAAA;
     --mc-gold: #FFAA00;
     --mc-dark-purple: #AA00AA;
@@ -129,7 +130,13 @@ h1, h2, h3, h4, h5, h6 {
 
 ul {
     margin: 0;
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.inline-list {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .card-table {
@@ -321,7 +328,10 @@ ul {
     font-family: var(--font-mono);
     color: var(--mc-white);
     background-color: var(--mc-black);
-    border-bottom: 1px solid var(--mc-gray);
+    border-left: .05rem solid var(--mc-dark-gray);
+    border-top: .05rem solid var(--mc-dark-gray);
+    border-bottom: .05rem solid var(--mc-gray);
+    border-right: .05rem solid var(--mc-gray);
 }
 
 .serif {

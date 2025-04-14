@@ -1,4 +1,4 @@
-let pageData = {'panel': false, 'sections':[], 'current': -1}
+let pageData = {'sidebar': false, 'sections': [], 'current': -1}
 let gameData = []
 
 function buildPage(pageData, gamesData) {
@@ -46,34 +46,9 @@ function setSectionCollapse(section,mode) {
     }
 }
 
-function scrollToSubsection(section, subsection) {
-    setSectionCollapse(section,0)
-    scrollToElement(document.getElementById('section_'+section+'_'+subsection))
-}
-
-function scrollToTop() {
-    scrollToElement(document.getElementById('title-section'))
-}
-
-function scrollToElement(el) {
-    el.scrollIntoView({block: 'start', behavior: 'smooth'})
-}
-
-function cycleSection(cycleUp) {
+function scrollToSection(section) {
     let sections = document.getElementsByClassName('section-group')
-    let current = pageData.current
-    
-    if(!(current>-1 && current<sections.length && pageData.sections[current].collapse==2)) {
-        if(cycleUp === true)
-            current--
-        else
-            current++
-    }
-
-    if(current<-1)
-        current = -1
-    else if(current>sections.length)
-        current = sections.length
+    let current = section
 
     for(let i=0; i<pageData.sections.length; i++) {
         if(pageData.sections[i].collapse == 1 && current!=i)
@@ -93,22 +68,55 @@ function cycleSection(cycleUp) {
     }
 
     pageData.current = current
+}
+
+function scrollToSubsection(section, subsection) {
+    scrollToSection(section)
+    scrollToElement(document.getElementById('section_'+section+'_'+subsection))
+    pageData.current = section
+}
+
+function scrollToTop() {
+    scrollToElement(document.getElementById('title-section'))
+}
+
+function scrollToElement(el) {
+    el.scrollIntoView({block: 'start', behavior: 'smooth'})
+}
+
+function cycleSection(cycleUp) {
+    let sections = document.getElementsByClassName('section-group')
+    let newCurrent = pageData.current
+    
+    if(!(newCurrent>-1 && newCurrent<sections.length && pageData.sections[newCurrent].collapse==2)) {
+        if(cycleUp === true)
+            newCurrent--
+        else
+            newCurrent++
+    }
+
+    if(newCurrent<-1)
+        newCurrent = -1
+    else if(newCurrent>sections.length)
+        newCurrent = sections.length
+
+    scrollToSection(newCurrent)
 
 }
 
-function toggleControlPanelVisibility() {
-    if(pageData.panel == true)
-        pageData.panel = false
+function toggleSidebar() {
+    if(pageData.sidebar === true)
+        pageData.sidebar = false
     else
-        pageData.panel = true
+        pageData.sidebar = true
 
-    if(pageData.panel == true) {
-        document.getElementById('control-panel').style.display = "block"
-        document.getElementById('control-panel-hidden-button').innerHTML = ">"
+    if(pageData.sidebar === true) {
+        document.getElementById('page-table-sidebar').style.display = "block"
+        document.getElementById('control-panel-hidden-button').innerHTML = "<"
     }
     else {
-        document.getElementById('control-panel').style.display = "none"
-        document.getElementById('control-panel-hidden-button').innerHTML = "<"
+        document.getElementById('page-table-sidebar').style.display = "none"
+        document.getElementById('control-panel-hidden-button').innerHTML = ">"
     }
 }
 
@@ -217,7 +225,7 @@ function pageRev2(data) {
     }
     
     $.each(data.sections, function (sectionKey, section) {
-        pageData.sections.push({'collapse': 2})
+        let thisSectionData = {'collapse': 2, 'header': section.header, 'subsections': []}
 
         page += '<div class="section-group">'
         page += '<div class="section-header no-select" onclick="toggleSectionCollapse('+sectionKey+')"><table><tr>'
@@ -235,7 +243,7 @@ function pageRev2(data) {
             if(section.subsections.length > 1) {
                 page += '<div class="subsection">'
                 page += '<h3 class="subsection-header">Jump to...</h3>'
-                page += '<table class="card-table"><tr class="card-table-row"><td class="col-wrap-full"><div class="col-cell center-container"><ul>'
+                page += '<table class="card-table"><tr class="card-table-row"><td class="col-wrap-full"><div class="col-cell center-container"><ul class="inline-list">'
                 $.each(section.subsections, function (subKey, sub) {
                     if(sub.header)
                         page += '<li><span class="link" onclick="scrollToSubsection('+sectionKey+','+subKey+')">'+sub.header+'</span></li>'
@@ -244,6 +252,7 @@ function pageRev2(data) {
             }
 
             $.each(section.subsections, function (subKey, sub) {
+                thisSectionData.subsections.push({'header': sub.header})
                 page += '<div class="subsection" id="section_'+sectionKey+'_'+subKey+'">'
 
                 if(sub.header)
@@ -285,7 +294,7 @@ function pageRev2(data) {
                                 page += '<p class="pic-alt">'+el.youtube.alt+'</p>'
                         }
                         else if(el.bullets) {
-                            page += '<ul>'
+                            page += '<ul class="inline-list">'
                             $.each(el.bullets, function (bulletKey, bullet) {
                                 page += '<li>'+bullet+'</li>'
                             })
@@ -309,16 +318,40 @@ function pageRev2(data) {
 
         page += '<div class="section-footer collapse-button no-select" onclick="setSectionCollapse('+sectionKey+',2)"><table><tr><td class="header-table-button center"><span class="accent-color">[</span>Collapse<span class="accent-color">]</span></td></tr></table></div>'
         page += '</div></div>'
+
+        pageData.sections.push(thisSectionData)
     })
 
-    page += '<div id="control-panel" class="control-panel" style="display: none">'
-    page += '<table><tr>'
-    page += '<td class="control-panel-button no-select" onclick="scrollToTop()">⌂</td>'
-    page += '<td class="control-panel-button no-select" onclick="cycleSection(true)">\u2227</td>'
-    page += '<td class="control-panel-button no-select" onclick="cycleSection(false)">\u2228</td>'
-    page += '</tr></table>'
-    page += '</div>'
-    page += '<div id="control-panel-hidden" class="control-panel"><table><tr><td id="control-panel-hidden-button" class="control-panel-button no-select" onclick="toggleControlPanelVisibility()"><</td></tr></table></div>'
+    let pageTable = '<table class="page-table"><tr class="page-table-row">'
+    pageTable += '<td id="page-table-sidebar"><div id="sidebar-panel">'
+    
+    pageTable += '<div>'
+    pageTable += '<table><tr>'
+    pageTable += '<td class="control-panel-button no-select" onclick="scrollToTop()">⌂</td>'
+    pageTable += '<td class="control-panel-button no-select" onclick="cycleSection(true)">\u2227</td>'
+    pageTable += '<td class="control-panel-button no-select" onclick="cycleSection(false)">\u2228</td>'
+    pageTable += '</tr></table>'
+
+    pageTable += '<div class="sidebar-links"><ul class="sidebar-sections">'
+    for(let i=0; i<pageData.sections.length; i++) {
+        pageTable += '<li class="sidebar-section-li"><h3 class="sidebar-link no-select" onclick="scrollToSection('+i+')">'+pageData.sections[i].header+'</h3></li>'
+        if(pageData.sections[i].subsections.length > 0) {
+            pageTable += '<ul class="sidebar-subsections">'
+            for(let ii=0; ii<pageData.sections[i].subsections.length; ii++)
+                pageTable += '<li><p class="sidebar-link sidebar-link-subsection no-select" onclick="scrollToSubsection('+i+','+ii+')">'+pageData.sections[i].subsections[ii].header+'</p></li>'
+            pageTable += '</ul>'
+        }
+    }
+    pageTable += '</ul></div>'
+    pageTable += '</div>'
+
+    pageTable += '</div></td>'
+    pageTable += '<td id="page-table-main">'+page+'</td>'
+    pageTable += '</tr></table>'
+
+    page = pageTable
+    
+    page += '<div id="control-panel-hidden" class="control-panel"><table><tr><td id="control-panel-hidden-button" class="control-panel-button no-select" onclick="toggleSidebar()">></td></tr></table></div>'
 
     return page
 }

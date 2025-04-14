@@ -1,5 +1,6 @@
 :root {
     --section-background: #000000cc;
+    --section-background-solid: #000000;
     --section-clickable: #00000099;
     --section-clickable-hover: #33333399;
     --section-clickable-press: #66666699;
@@ -336,39 +337,92 @@ li::marker {
     font-weight: bold;
 }
 
-#control-panel-hidden {
-    right: 0;
-    width: 4rem;
+.page-table {
+    margin: 0;
+    padding: 0;
 }
 
-#control-panel {
-    right: 4rem;
-    margin-right: 1px;
-    width: 12rem;
-    border-right: #FFFFFFbb 1px solid;
-    border-left: #FFFFFFbb 1px solid;
+.page-table-row {
+    margin: 0;
+    padding: 0;
+}
+
+#page-table-sidebar {
+    width: 20%;
+    display: none;
+}
+
+#page-table-main {
+    width: 80%;
+}
+
+#sidebar-panel {
+    position: fixed;
+    top: 5.5rem;
+    left: 0;
+    bottom: 5rem;
+    width: 20%;
+    z-index: 1;
+    background-color: var(--section-background);
+    border: #AAAAAAee .05rem solid;
+}
+
+.sidebar-links {
+    position: fixed;
+    top: 10rem;
+    bottom: 9.5rem;
+    width: 20%;
+    overflow-y: auto;
+}
+
+.sidebar-sections {
+    padding-left: .5rem;
+}
+
+.sidebar-section-li {
+    padding-top: .5rem;
+}
+
+.sidebar-link {
+    cursor: pointer;
+    margin: 0;
+    color: var(--accent-text);
+}
+
+.sidebar-link-subsection {
+    padding-top: .1rem;
+    color: var(--main-text-color)
 }
 
 .control-panel {
     position: fixed;
-    bottom: 4.5rem;
+    bottom: 5rem;
     height: 4rem;
-    background-color: #000000ee;
 }
 
 .control-panel-button {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    width: 4rem;
     height: 4rem;
     cursor: pointer;
     text-align: center;
     font-size: xx-large;
-    color: #FFFFFFbb;
+    background-color: #000000ee;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    border: #AAAAAAee .05rem solid;
 }
 .control-panel-button:hover {
     background-color: #111111ee;
+}
+
+#control-panel-hidden {
+    left: 0;
+    width: 3rem;
+    z-index: 2;
+    box-sizing: border-box;
+    border: #AAAAAAee .05rem solid;
 }
 
 .accent-color {
@@ -407,6 +461,24 @@ li::marker {
     .back-button-wrap {
         position: static;
         margin-bottom: 1rem;
+    }
+
+    #page-table-sidebar {
+        width: 100%;
+        display: none;
+    }
+    
+    #page-table-main {
+        width: 100%;
+    }
+    
+    #sidebar-panel {
+        width: 100%;
+        background-color: var(--section-background-solid);
+    }
+
+    .sidebar-links {
+        width: 100%;
     }
 
 }
