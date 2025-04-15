@@ -18,7 +18,7 @@ h1 {
     font-family: var(--font-sans);
 }
 
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 55rem) {
 
     .main-title {
         margin-left: 1rem;

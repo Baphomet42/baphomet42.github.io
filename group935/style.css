@@ -392,6 +392,7 @@ li::marker {
 }
 
 .sidebar-sections {
+    margin: 1rem 0 1.5rem 0;
     padding-left: .5rem;
 }
 
@@ -404,18 +405,6 @@ li::marker {
     cursor: pointer;
     margin: 0;
     color: var(--accent-text);
-}
-
-.li-spacer-top {
-    list-style: none;
-    font-size: xx-small;
-    color: #00000000;
-}
-
-.li-spacer-bottom {
-    list-style: none;
-    font-size: x-large;
-    color: #00000000;
 }
 
 .sidebar-subsections {
@@ -468,7 +457,7 @@ li::marker {
     color: var(--accent-text)
 }
 
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 55rem) {
 
     .mobile-hide {
         width: 0;
@@ -524,7 +513,7 @@ li::marker {
 
 }
 
-@media only screen and (max-width: 880px) and (max-height: 500px) {
+@media only screen and (max-height: 32rem) {
     
     #sidebar-panel {
         top: 1rem;

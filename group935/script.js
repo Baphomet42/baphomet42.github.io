@@ -332,7 +332,7 @@ function pageRev2(data) {
     pageTable += '<td class="control-panel-button no-select" onclick="cycleSection(false)">\u2228</td>'
     pageTable += '</tr></table>'
 
-    pageTable += '<div class="sidebar-links"><ul class="sidebar-sections"><li class="li-spacer-top no-select">-</li>'
+    pageTable += '<div class="sidebar-links"><ul class="sidebar-sections">'
     for(let i=0; i<pageData.sections.length; i++) {
         pageTable += '<li class="sidebar-section-li"><h3 class="sidebar-link no-select" onclick="scrollToSection('+i+')">'+pageData.sections[i].header+'</h3></li>'
         if(pageData.sections[i].subsections.length > 0) {
@@ -344,7 +344,7 @@ function pageRev2(data) {
             pageTable += '</ul>'
         }
     }
-    pageTable += '<li class="li-spacer-bottom no-select">-</li></ul></div>'
+    pageTable += '</ul></div>'
     pageTable += '</div>'
 
     pageTable += '</div></td>'
