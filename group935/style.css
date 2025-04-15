@@ -365,7 +365,7 @@ li::marker {
     z-index: 1;
     background-color: var(--section-background);
     box-sizing: border-box;
-    border: #AAAAAAee .05rem solid;
+    border: var(--accent-color) .15rem solid;
 }
 
 .sidebar-links {
@@ -427,7 +427,7 @@ li::marker {
     background-color: #000000aa;
     color: #FFFFFF;
     box-sizing: border-box;
-    border: #AAAAAAee .05rem solid;
+    border: var(--accent-text) .05rem solid;
 }
 .control-panel-button:hover {
     background-color: #222222aa;
@@ -442,7 +442,6 @@ li::marker {
     width: 3rem;
     z-index: 2;
     box-sizing: border-box;
-    border: #AAAAAAee .05rem solid;
 }
 
 #control-panel-hidden-symbol {
