@@ -49,7 +49,7 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "Aquire the Summoning Key",
+                                "title": "1. Aquire the Summoning Key",
                                 "description": "Use Beast Mode to melee a box in the spawn area containing the Summoning Key."
                             }
                         },
@@ -68,7 +68,7 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "Sacrifice Rituals",
+                                "title": "2. Sacrifice Rituals",
                                 "description": "The rituals can be done in any order. Each ritual requires getting an artifact and opening the ritual room, both of which require Beast Mode. After exiting Beast Mode, pick up the artifact and bring it to the ritual room. Interact to place the artifact, then interact again to begin the ritual. The ritual will last a short time, and killing the Keepers is optional. After the ritual is finished, collect the Gateworm from the table where the ritual was started."
                             }
                         },
@@ -235,7 +235,7 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "Teleport to the Subway Station",
+                                "title": "3. Teleport to the Subway Station",
                                 "description": "There are 3 wooden doors that can be meleed while in Beast Mode (one in each district). Each door leads to a different rift. Interact on a rift to spawn the portal, then use it to enter the Subway Station. You are only required to open one rift, but the others can be opened too. Inside the Subway Station, you can use Beast Mode to shock a power panel to open the stairs leading up to the Junction."
                             }
                         },
@@ -278,7 +278,7 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "Unlock Pack-a-Punch",
+                                "title": "4. Unlock Pack-a-Punch",
                                 "description": "After all 4 Gateworms are collected, go to the Subway Station and a wall will vanish when you approach it. Place the 4 Gateworms on pedestals, then place the Summoning Key on the table at the entrance. After placing the first 2 Gateworms, walls will appear that you can wallrun on to get to the other side. Survive the ritual to unlock Pack-a-Punch."
                             }
                         },

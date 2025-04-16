@@ -17,8 +17,9 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Power switch location"
+                                "src": "assets/5.jpg",
+                                "alt": "Power switch location",
+                                "disclaimer": "Image from bo3 'The Giant'"
                             }
                         }
                     ]
@@ -29,32 +30,37 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Teleporter mainframe"
+                                "src": "assets/1.jpg",
+                                "alt": "Teleporter mainframe",
+                                "disclaimer": "Image from bo3 'The Giant'"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Teleporter A"
+                                "src": "assets/2.jpg",
+                                "alt": "Teleporter A",
+                                "disclaimer": "Image from bo3 'The Giant'"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Teleporter B"
+                                "src": "assets/3.jpg",
+                                "alt": "Teleporter B",
+                                "disclaimer": "Image from bo3 'The Giant'"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Teleporter C"
+                                "src": "assets/4.jpg",
+                                "alt": "Teleporter C",
+                                "disclaimer": "Image from bo3 'The Giant'"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Unlocked Pack-a-Punch machine"
+                                "src": "assets/9.jpg",
+                                "alt": "Unlocked Pack-a-Punch machine",
+                                "disclaimer": "Image from bo3 'The Giant'"
                             }
                         }
                     ]
@@ -64,8 +70,9 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Juggernog - on the Teleporter A side of the drawbridge"
+                                "src": "assets/12.jpg",
+                                "alt": "Juggernog - on the Teleporter A side of the drawbridge",
+                                "disclaimer": "Image from bo3 'The Giant'"
                             }
                         },
                         {
@@ -105,20 +112,23 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - outside Teleporter A, on a desk"
+                                "src": "assets/6.jpg",
+                                "alt": "Location 1 - outside Teleporter A, on a desk",
+                                "disclaimer": "Image from bo3 'The Giant'"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - outside Teleporter A, on a shelf"
+                                "src": "assets/7.jpg",
+                                "alt": "Location 2 - outside Teleporter A, on a shelf",
+                                "disclaimer": "Image from bo3 'The Giant'"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - in the side room from Teleporter B, on a desk"
+                                "src": "assets/8.jpg",
+                                "alt": "Location 3 - in the side room from Teleporter B, on a desk",
+                                "disclaimer": "Image from bo3 'The Giant'"
                             }
                         }
                     ]
@@ -141,8 +151,9 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "The panel seen outside the map"
+                                "src": "assets/10.jpg",
+                                "alt": "The panel seen outside the map",
+                                "disclaimer": "Image from bo3 'The Giant'"
                             }
                         },
                         {
@@ -178,8 +189,9 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Monkey Bomb being thrown into the furnace"
+                                "src": "assets/11.jpg",
+                                "alt": "Monkey Bomb being thrown into the furnace",
+                                "disclaimer": "Image from bo3 'The Giant'"
                             }
                         }
                     ]

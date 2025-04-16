@@ -11,33 +11,52 @@
             "header": "Map Features",
             "subsections": [
                 {
-                    "header": "Power",
-                    "description": "",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        }
-                    ]
-                },
-                {
                     "header": "Pack-a-Punch",
-                    "description": "",
                     "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Fire the cannon at the castle",
+                                "description": "Aim the cannon at the Entrance Hall, then interact to fire the cannon."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Crank to rotate cannon"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location to fire cannon"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Power the Pack-a-Punch machine",
+                                "description": "Go to the Oubliette Room in the castle and break the locks on the crate. This will spawn a Doppelghast to kill. Pick up the Power Crystal from the Doppelghast, and interact to activate the Pack-a-Punch machine with the Power Crystal."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "3 locks on the crate"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Cleanse the metamorph infestation"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Blood Aetherium Crystal"
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
@@ -60,7 +79,7 @@
                 },
                 {
                     "header": "Level III Armor Vest",
-                    "description": "Located TODO.",
+                    "description": "Located in the Oubliette Room by Pack-a-Punch.",
                     "elements": [
                         {
                             "pic": {
@@ -84,9 +103,355 @@
             ]
         },
         {
-            "header": "",
+            "header": "Fast Travel",
             "description": "",
             "subsections": [
+                {
+                    "header": "",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Bastard Swords",
+            "description": "Pick up a Stamp and give it to a Knight Statue.",
+            "subsections": [
+                {
+                    "header": "Stamps",
+                    "description": "Starting on round 10, zombies can spawn with a knight helmet. Kill a Helmeted Zombie to drop a Stamp. After 4 Stamps are used, Helmeted Zombies will no longer spawn.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Helmeted Zombie"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Stamp"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Swords",
+                    "description": "Each Knight Statue will give a different Bastard Sword. All 4 swords start the same, but have different upgrades.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Dragon Bastard Sword"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Lion Bastard Sword"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Stag Bastard Sword"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "TODO Bastard Sword"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Sword Upgrades",
+            "subsections": [
+                {
+                    "header": "Caliburn (Upgraded Dragon Bastard Sword)",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Place the Dragon Bastard Sword",
+                                "description": "Interact on the Dragon Altar up the stairs from Juggernog to place the sword."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Dragon Altar"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Carry 3 Fires",
+                                "description": "There are 3 braziers with fire around the map. Collect the Dragon Fire and return it to the Dragon Altar. While holding the fire, you will slowly take damage and cannot switch to a weapon without dropping the fire. Melee zombies to refill your health."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 1 - at spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 2 - through the door in spawn leading towards Deadshot Daiquiri"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 3 - on the castle wall"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Take Caliburn",
+                                "description": "Interact on the Dragon Altar to take Caliburn."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Caliburn"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Solais (Upgraded Lion Bastard Sword)",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Kill Glowing Parasites",
+                                "description": "TODO While holding the Lion Bastard Sword, Glowing Parasites will spawn. Kill 4 Glowing Parasites with the sword, and after each kill, melee the Sanctuary Door to transfer the Glowing Parasite Essence. The door is located between spawn and Speed Cola, and after each successful melee, a symbol will appear on the door."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Glowing Parasite"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Sanctuary Door with 4 symbols"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Enter the Sanctuary",
+                                "description": "Interact on the Sanctuary Door to enter the building. Place the Lion Bastard Sword in the Plinth of Light, then watch the 4 glowing symbols on the Plinth. One symbol will light up at a time, and you must shoot the corresponding symbol flying around the room. If all 4 are shot correctly, the puzzle is complete."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Take Solais",
+                                "description": "Interact on the Plinth of Light to take Solais."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Solais"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "TODO (Upgraded Stag Bastard Sword)",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "TODO (Upgraded TODO Bastard Sword)",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "",
+                                "description": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "TODO Incantations",
+            "description": "Each upgraded sword has a matching incantation. The upgraded sword is required to unlock the incantation.",
+            "subsections": [
+                {
+                    "header": "",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
                 {
                     "header": "",
                     "description": "",
@@ -110,8 +475,27 @@
                         {
                             "full": true,
                             "bullets": [
-                                ""
+                                "All 4 upgraded swords",
+                                "All 4 incantations(TODO)"
                             ]
+                        }
+                    ]
+                },
+                {
+                    "header": "1. Talk to Gabriel Krafft",
+                    "description": "Go to the Dungeon and open the hatch on the wooden door. This will play a short ingame cutscene.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Hatch to open"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Krafft"
+                            }
                         }
                     ]
                 },
@@ -186,7 +570,115 @@
             "header": "Side Easter Eggs",
             "subsections": [
                 {
-                    "header": "",
+                    "header": "Maya Sidequest",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Bartender PhD Flopper",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Fireplaces",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Money Well",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Rat Crown",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Chess Knight",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Raven Free Perk",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Mister Peeks Free Perk",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Wall Runes Free Perk",
+                    "description": "",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Bell Tower Monkey Bombs",
                     "description": "",
                     "elements": [
                         {
