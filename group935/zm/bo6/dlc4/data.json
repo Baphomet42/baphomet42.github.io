@@ -76,6 +76,12 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
                                 "alt": "Der Wunderfizz - TODO (spawns at the start of round 25)"
                             }
                         }

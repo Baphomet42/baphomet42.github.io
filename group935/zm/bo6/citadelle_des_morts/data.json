@@ -95,7 +95,13 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Der Wunderfizz - TODO (spawns at the start of round 25)"
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Der Wunderfizz - in the Tavern Loft (spawns at the start of round 25)"
                             }
                         }
                     ]
@@ -167,7 +173,7 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "TODO Bastard Sword"
+                                "alt": "Raven Bastard Sword"
                             }
                         }
                     ]
@@ -215,7 +221,7 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Location 3 - on the castle wall"
+                                "alt": "Location 3 - on the castle wall near Melee Macchiato"
                             }
                         },
                         {
@@ -284,83 +290,119 @@
                     ]
                 },
                 {
-                    "header": "TODO (Upgraded Stag Bastard Sword)",
+                    "header": "Durendal (Upgraded Stag Bastard Sword)",
                     "elements": [
                         {
                             "full": true,
                             "step": {
-                                "title": "",
-                                "description": ""
+                                "title": "1. Quick Revive Lightning Rod",
+                                "description": "The 3 Lightning Rods can be obtained in any order. After picking up the Stag Bastard Sword, go to Quick Revive and wait for a Heavy Zombie to spawn with a Lightning Rod TODO. Kill the zombie and pick up the Lightning Rod."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
                                 "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Lightning Rod"
                             }
                         },
                         {
                             "full": true,
                             "step": {
-                                "title": "",
-                                "description": ""
+                                "title": "2. Deadshot Daiquiri Lightning Rod",
+                                "description": "The 3 Lightning Rods can be obtained in any order. A Lightning Rod will always spawn just to the left of Deadshot Daiquiri."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Lightning Rod"
                             }
                         },
                         {
                             "full": true,
                             "step": {
-                                "title": "",
-                                "description": ""
+                                "title": "3. Speed Cola Lightning Rod",
+                                "description": "The 3 Lightning Rods can be obtained in any order. Go to the left staircase down from Speed Cola and short circuit the fusebox with Dead Wire or a Shock Charge. This will cause a Lightning Rod to fall to the ground."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Fusebox"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Lightning Rod"
                             }
                         },
                         {
                             "full": true,
                             "step": {
-                                "title": "",
-                                "description": ""
+                                "title": "4. Charge the Weather Machine",
+                                "description": "Go to the castle wall near Elemental Pop and insert the Lightning Rods into the Weather Machine. This will cause a storm around the machine, and lightning will occasionally hit your sword. Melee to transfer charge to the Weather Machine when the Stag Bastard Sword is sparking."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Weather Machine with all 3 Lightning Rods"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Sparking Stag Bastard Sword"
                             }
                         },
                         {
                             "full": true,
                             "step": {
-                                "title": "",
-                                "description": ""
+                                "title": "5. Take Durendal",
+                                "description": "Insert the sword into the Weather Machine to imbue the Stag Bastard Sword with Electricity. Interact on the Weather Machine to take Durendal."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Durendal"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "TODO (Upgraded TODO Bastard Sword)",
+                    "header": "Balmung (Upgraded Raven Bastard Sword)",
                     "elements": [
                         {
                             "full": true,
                             "step": {
-                                "title": "",
-                                "description": ""
+                                "title": "1. Retrieve an Antiquity",
+                                "description": "Go to the Alchemical Lab by the Dining Hall and pick up the Antiquity. There are TODO possible Antiquities, and only 1 will spawn each game."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
                             }
                         },
                         {
@@ -372,8 +414,32 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "",
-                                "description": ""
+                                "title": "2. Configure the Summoning Circle",
+                                "description": "Go to the Tavern Cellar near spawn and interact to place the Raven Bastard Sword in the Summoning Circle. Then, interact on the Summoning Circle to configure the rings so the symbols and Antiquity match. The correct orientation for each Antiquity is shown below. (TODO how figure out naturally?)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Summoning Circle"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
                             }
                         },
                         {
@@ -385,27 +451,39 @@
                         {
                             "full": true,
                             "step": {
-                                "title": "",
-                                "description": ""
+                                "title": "3. Lure Shadow Entities to the Portals",
+                                "description": "A purple portal will appear on the floor near the Summoning Circle, and glowing orbs will start to move towards you. Stand near the Portal so the glowing orbs go through it. After enough orbs go through, the portal will move up to the Tavern main level, and then once more to the Tavern Loft."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Portal in the Basement"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Portal in the Tavern"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Portal in the Loft"
                             }
                         },
                         {
                             "full": true,
                             "step": {
-                                "title": "",
-                                "description": ""
+                                "title": "4. Take Balmung",
+                                "description": "Interact on the Summoning Circle to imbue the Raven Bastard Sword with Darkness. Interact again to take Balmung."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Balmung"
                             }
                         }
                     ]
@@ -413,53 +491,305 @@
             ]
         },
         {
-            "header": "TODO Incantations",
+            "header": "Incantations",
             "description": "Each upgraded sword has a matching incantation. The upgraded sword is required to unlock the incantation.",
             "subsections": [
                 {
-                    "header": "",
-                    "description": "",
+                    "header": "Fire Incantation",
+                    "description": "For Caliburn (Upgraded Dragon Bastard Sword).",
                     "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Light the Fire Beacons",
+                                "description": "There are 3 piles of logs around the castle wall that must be ignited using Caliburn's Special Attack or Molotovs. Once all 3 are lit, a Doppelghast will spawn and drop Ra's Ankh when killed. Interact to pick it up."
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Fire beacon 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Fire beacon 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Fire beacon 3 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Doppelghast"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Ra's Ankh"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Fire Ritual",
+                                "description": "In the courtyard, a yellow sigil will appear on the floor. Interact to initiate the Fire Ritual, then kill zombies by any means until the Incantation Box appears."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Sigil to start Fire Ritual"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Incantation Box"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Open the Incantation Box",
+                                "description": "Melee the Incantation Box with Caliburn to unlock the new tactical for all players. Another location for the Fire Incantation will appear in the Dining Hall."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Fire Incantation 1 - in the Courtyard"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Fire Incantation 2 - in the Dining Hall"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "",
-                    "description": "",
+                    "header": "Light Incantation",
+                    "description": "For Solais (Upgraded Lion Bastard Sword).",
                     "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Direct the Light",
+                                "description": "Above the fireplace in the Dining Hall is a crystal that can be shot to generate a light beam. Shoot the crystal at different angles until the beam of light focuses on the next crystal, then do the same for the following crystals. Eventually, the light beam will be redirected to reveal Paladin's Brooch. After TODO, interact to pick it up."
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "First crystal to shoot"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Focused light beam bouncing off the next crystal"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Paladin's Brooch"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Light Ritual",
+                                "description": "Back in the Dining Hall, a yellow sigil will appear on the floor. Interact to initiate the Light Ritual, then kill zombies by any means until the Incantation Box appears."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Sigil to start Light Ritual"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Incantation Box"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Open the Incantation Box",
+                                "description": "Melee the Incantation Box with Solais to unlock the new tactical for all players. Another location for the Light Incantation will appear TODO."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Light Incantation 1 - in the Dining Hall"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Light Incantation 2 - TODO"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "",
-                    "description": "",
+                    "header": "Electric Incantation",
+                    "description": "For Durendal (Upgraded Stag Bastard Sword).",
                     "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Electrify the Horseshoe",
+                                "description": "In the Stables by Deadshot Daiquiri, shoot the horseshoe off the wall and interact to pick it up. Then, use the Rampart Cannon fast travel to launch yourself towards spawn. This will cause the horseshoe to be electrified and fly TODO. Look for a storm cloud to find the electrified horseshoe. Interact to pick it up."
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Horseshoe to shoot in the Stables"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Otto's Horseshoe"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Horseshoe being struck by lightning"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Storm cloud above the electrified horseshoe"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Pegasus' Horseshoe"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Electric Ritual",
+                                "description": "In spawn, a yellow sigil will appear on the floor. Interact to initiate the Electric Ritual, then kill zombies by any means until the Incantation Box appears."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Sigil to start Electric Ritual"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Incantation Box"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Open the Incantation Box",
+                                "description": "Melee the Incantation Box with Durendal to unlock the new tactical for all players. Another location for the Electric Incantation will appear in the Dining Hall."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Electric Incantation 1 - spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Electric Incantation 2 - in the Dining Hall"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "",
-                    "description": "",
+                    "header": "Dark Incantation",
+                    "description": "For Balmung (Upgraded Raven Bastard Sword).",
                     "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "1. Shoot the Raven",
+                                "description": "Use the Cave Slide fast travel and shoot the Raven inside. Then, shoot the Raven as it flies around the map so it drops its talon. Interact to pick it up."
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Raven in the Cave Slide"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Raven flying around"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Raven's Talon"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "2. Dark Ritual",
+                                "description": "In the Undercroft, a yellow sigil will appear on the floor. Interact to initiate the Dark Ritual, then kill zombies by any means until the Incantation Box appears."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Sigil to start Dark Ritual"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Incantation Box"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "3. Open the Incantation Box",
+                                "description": "Melee the Incantation Box with Balmung to unlock the new tactical for all players. Another location for the Dark Incantation will appear in the Dining Hall."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Dark Incantation 1 - in the Undercroft"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Dark Incantation 2 - in the Dining Hall"
                             }
                         }
                     ]
@@ -476,7 +806,7 @@
                             "full": true,
                             "bullets": [
                                 "All 4 upgraded swords",
-                                "All 4 incantations(TODO)"
+                                "All 4 incantations"
                             ]
                         }
                     ]
@@ -500,13 +830,217 @@
                     ]
                 },
                 {
-                    "header": "",
-                    "description": "",
+                    "header": "2. Memorize the Bottle Symbols",
+                    "description": "In the Tavern at spawn, there are 6 bottles labelled with Roman Numerals from I to VI. Interact on the bottles to reveal the mystic symbols, then memorize the 6 symbols in the correct order.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
                                 "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "3. Shoot the Symbols in the Undercroft",
+                    "description": "Go to the Undercroft next to the Pack-a-Punch room, and use Melee Macchiato to smash the wall and reveal the symbols. Then, shoot the 6 symbols in the order indicated by the bottles. After each symbol is shot, the rest of the symbols will rearrange on the wall. When done successfully, the wall will vanish to the left of the symbols, revealing the Codex.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Wall to smash"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Symbols"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Codex"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "4. Locate the Torn Pages",
+                    "description": "There are 4 torn pages that randomly spawn TODO. Interact to pick them up, then restore the torn pages to the Codex. This will make 4 red symbols appear on the Codex.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "5. Attune the Points of Power",
+                    "description": "Each of the 4 symbols in the Codex matches one of the Point of Power traps around the map. Activate the traps in the order indicated by the Codex (top left, bottom left, top right, bottom right), and get enough kills until the trap stops early. After each Point of Power is finished, its symbol will stop glowing in the Codex.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "6. Salute the 4 Knights",
+                    "description": "On the wall of the Undercroft Stairway, the 4 knight symbols are numbered from I to IV. In this order, make each of the 4 Knight Statues salute. To make the statue salute, use the corresponding incantation on the statue, then quicky use the inspect weapon control on the corresponding upgraded sword. When all 4 statues have saluted in the correct order, they will summon the Mystic Orb.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Wall indicating the Knight Statue order"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Using an incantation on a Knight Statue"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Pressing inspect weapon on a sword"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Knight Statue saluting"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "All 4 Knight Statues summoning the Mystic Orb"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "7. Elemental Mystic Orb Challenges",
+                    "description": "There are 4 elemental challenges around the map that must be completed to fully charge the Mystic Orb. The challenges can be completed in any order, and each one is started by placing the Mystic Orb, then interacting again to begin. After each challenge, be sure to pick up the Mystic Orb.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Light Challenge",
+                                "description": "The Mystic Orb location is upstairs in the Dining Hall. For this challenge, you must run through the Light Spheres to collect them. If enough Light Spheres are collected before the timer ends, the challenge is complete."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location to place Mystic Orb"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Light Sphere"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Dark Challenge",
+                                "description": "The Mystic Orb location is in the Undercroft. For this challenge, get dark elemental kills by using Balmung's Special Attack, Dark Incantations, and/or TODO(test ammo mod and gersh grenades). If enough elemental kills are secured before the timer ends, the challenge is complete."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location to place Mystic Orb"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Electric Challenge",
+                                "description": "The Mystic Orb location is in spawn. For this challenge, get electric elemental kills by using Durendal's Special Attack, Electric Incantations, and/or Dead Wire(TODO test, also test shock charges). If enough elemental kills are secured before the timer ends, the challenge is complete."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location to place Mystic Orb"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Fire Challenge",
+                                "description": "The Mystic Orb location is in the Courtyard. For this challenge, get fire elemental kills by using Caliburn's Special Attack, Fire Incantations, Napalm Burst and/or Molotovs(TODO test, also test thermo grenades). If enough elemental kills are secured before the timer ends, the challenge is complete."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location to place Mystic Orb"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "8. Obtain the Guardian Key",
+                    "description": "Go to the Undercroft Stairway and place the fully charged Mystic Orb to open the sealed door. Interact on the Guardian Key to activate the Ancient Mystic's message, then interact again to pick it up.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Guardian Key"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "9. Boss Fight",
+                    "description": "You cannot leave the boss fight until it's done. Make sure you have perks, armor, strong weapons, and anything else you want to bring.",
+                    "elements": [
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Start the Final Encounter",
+                                "description": "Go to spawn and interact on the Guardian Statue to insert the Guardian Key. This will teleport all players to the boss fight arena and start the fight."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location to start boss fight"
+                            }
+                        },
+                        {
+                            "full": true,
+                            "step": {
+                                "title": "Damaging the Guardian",
+                                "description": "Shoot the glowing parts of the Guardian to deal critical damage. Throughout the fight, the Guardian will occasionally lock in place and become immune. During this time, lava will block off more of the arena. Once the Guardian is defeated, pick up the Amulet to complete the main quest and play a cutscene."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "The Guardian"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Amulet"
                             }
                         }
                     ]
@@ -696,7 +1230,7 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Pool table, TODO"
+                                "alt": "Pool table, in the Tavern Loft"
                             }
                         }
                     ]
