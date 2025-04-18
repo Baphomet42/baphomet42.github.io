@@ -79,12 +79,17 @@
                 },
                 {
                     "header": "Level III Armor Vest",
-                    "description": "Located in the Oubliette Room by Pack-a-Punch.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Level 3 armor wall-buy"
+                                "alt": "Location 1 - Oubliette Room by Pack-a-Punch"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 2 - Alchemical Lab between Stamin-Up and Vulture Aid"
                             }
                         }
                     ]
@@ -95,31 +100,55 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Speed Cola - between spawn and the castle"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Melee Macchiato - in the entrance to the castle wall"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Elemental Pop - in the entrance to the castle wall"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Deadshot Daiquiri - between spawn and the castle, next to the Stables"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Juggernog - in the Entrance Hall"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Vulture Aid - in the Dining Hall"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Stamin-Up - around the Sitting Rooms"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Quick Revive - in the Dungeon"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
                                 "alt": "Der Wunderfizz - in the Tavern Loft (spawns at the start of round 25)"
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "header": "Fast Travel",
-            "description": "",
-            "subsections": [
-                {
-                    "header": "",
-                    "description": "",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
                             }
                         }
                     ]
@@ -271,7 +300,19 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Plinth of Light"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Plinth with glowing symbol to shoot"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Symbols flying around the room"
                             }
                         },
                         {
@@ -384,7 +425,13 @@
                             "full": true,
                             "step": {
                                 "title": "1. Retrieve an Antiquity",
-                                "description": "Go to the Alchemical Lab by the Dining Hall and pick up the Antiquity. There are TODO possible Antiquities, and only 1 will spawn each game."
+                                "description": "Go to the Alchemical Lab by the Dining Hall and pick up the Antiquity. There are 5 possible Antiquities, and only 1 will spawn each game."
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
                             }
                         },
                         {
@@ -415,13 +462,19 @@
                             "full": true,
                             "step": {
                                 "title": "2. Configure the Summoning Circle",
-                                "description": "Go to the Tavern Cellar near spawn and interact to place the Raven Bastard Sword in the Summoning Circle. Then, interact on the Summoning Circle to configure the rings so the symbols and Antiquity match. The correct orientation for each Antiquity is shown below. (TODO how figure out naturally?)"
+                                "description": "Go to the Tavern Cellar near spawn and interact to place the Raven Bastard Sword in the Summoning Circle. Then, interact on the Summoning Circle to configure the rings so the symbols and Antiquity match. The correct orientation for each Antiquity is shown below."
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
                                 "alt": "Summoning Circle"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
                             }
                         },
                         {
@@ -836,7 +889,37 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Bottle 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Bottle 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Bottle 3 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Bottle 4 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Bottle 5 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Bottle 6 - TODO"
                             }
                         }
                     ]
@@ -867,7 +950,49 @@
                 },
                 {
                     "header": "4. Locate the Torn Pages",
-                    "description": "There are 4 torn pages that randomly spawn TODO. Interact to pick them up, then restore the torn pages to the Codex. This will make 4 red symbols appear on the Codex.",
+                    "description": "There are 4 torn pages with red symbols that randomly spawn around the Sitting Rooms by Stamin-Up. Each page has several spawn locations, but will always be around the same general location. Interact to pick them up, then restore the torn pages to the Codex. This will make 4 red symbols appear on the Codex.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "General location of page 1 - TODO(boxes in back hallway)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "General location of page 2 - TODO(around the beds)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "General location of page 3 - TODO(tv or couch)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "General location of page 4 - TODO(hallway opposite of boxes)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Torn Page Fragment"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Codex with all 4 symbols"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "5. Attune the Points of Power",
+                    "description": "Each of the 4 symbols in the Codex matches one of the Point of Power traps around the map. Activate the traps in the order indicated by the Codex (top left, bottom left, top right, bottom right), and get enough kills until the trap stops early. After each Point of Power is finished, its symbol will stop glowing in the Codex. The final Point of Power is always in the Stamin-Up room, and after it's completed, an orb will move towards the Undercroft Stairway and create symbols for the next step.",
                     "elements": [
                         {
                             "pic": {
@@ -880,13 +1005,25 @@
                                 "src": "assets/.jpg",
                                 "alt": ""
                             }
-                        }
-                    ]
-                },
-                {
-                    "header": "5. Attune the Points of Power",
-                    "description": "Each of the 4 symbols in the Codex matches one of the Point of Power traps around the map. Activate the traps in the order indicated by the Codex (top left, bottom left, top right, bottom right), and get enough kills until the trap stops early. After each Point of Power is finished, its symbol will stop glowing in the Codex.",
-                    "elements": [
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
@@ -926,7 +1063,7 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "All 4 Knight Statues summoning the Mystic Orb"
+                                "alt": "Mystic Orb"
                             }
                         }
                     ]
@@ -958,7 +1095,7 @@
                             "full": true,
                             "step": {
                                 "title": "Dark Challenge",
-                                "description": "The Mystic Orb location is in the Undercroft. For this challenge, get dark elemental kills by using Balmung's Special Attack, Dark Incantations, and/or TODO(test ammo mod and gersh grenades). If enough elemental kills are secured before the timer ends, the challenge is complete."
+                                "description": "The Mystic Orb location is in the Undercroft. For this challenge, get dark elemental kills by using Balmung's Special Attack(TODO or normal melee?), Dark Incantations, and/or TODO(test ammo mod and gersh grenades). If enough elemental kills are secured before the timer ends, the challenge is complete."
                             }
                         },
                         {
@@ -971,7 +1108,7 @@
                             "full": true,
                             "step": {
                                 "title": "Electric Challenge",
-                                "description": "The Mystic Orb location is in spawn. For this challenge, get electric elemental kills by using Durendal's Special Attack, Electric Incantations, and/or Dead Wire(TODO test, also test shock charges). If enough elemental kills are secured before the timer ends, the challenge is complete."
+                                "description": "The Mystic Orb location is in spawn. For this challenge, get electric elemental kills by using Durendal's Special Attack(TODO or normal melee?), Electric Incantations, and/or Dead Wire(TODO test, also test shock charges). If enough elemental kills are secured before the timer ends, the challenge is complete."
                             }
                         },
                         {
@@ -984,7 +1121,7 @@
                             "full": true,
                             "step": {
                                 "title": "Fire Challenge",
-                                "description": "The Mystic Orb location is in the Courtyard. For this challenge, get fire elemental kills by using Caliburn's Special Attack, Fire Incantations, Napalm Burst and/or Molotovs(TODO test, also test thermo grenades). If enough elemental kills are secured before the timer ends, the challenge is complete."
+                                "description": "The Mystic Orb location is in the Courtyard. For this challenge, get fire elemental kills by using Caliburn's Special Attack(TODO or normal melee?), Fire Incantations, Napalm Burst and/or Molotovs(TODO test, also test thermo grenades). If enough elemental kills are secured before the timer ends, the challenge is complete."
                             }
                         },
                         {
@@ -1002,6 +1139,12 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
+                                "alt": "Location to place Mystic Orb"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
                                 "alt": "Guardian Key"
                             }
                         }
@@ -1015,7 +1158,7 @@
                             "full": true,
                             "step": {
                                 "title": "Start the Final Encounter",
-                                "description": "Go to spawn and interact on the Guardian Statue to insert the Guardian Key. This will teleport all players to the boss fight arena and start the fight."
+                                "description": "Go to spawn and interact on the Guardian Statue to insert the Guardian Key (TODO interact again?). This will teleport all players to the boss fight arena and start the fight."
                             }
                         },
                         {
@@ -1076,24 +1219,24 @@
                 },
                 {
                     "header": "Caliburn",
-                    "description": "",
+                    "description": "Using the Caliburn sword, melee the 3 braziers from the upgrade process to relight them. After all 3 are lit, the Caliburn song will play.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Location 1 - at spawn"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Location 2 - through the door in spawn leading towards Deadshot Daiquiri"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Location 3 - on the castle wall near Melee Macchiato"
                             }
                         }
                     ]
@@ -1104,33 +1247,111 @@
             "header": "Side Easter Eggs",
             "subsections": [
                 {
-                    "header": "Maya Sidequest",
-                    "description": "",
+                    "header": "Maya Side Quest",
+                    "description": "You must be playing as the Maya operator to do this side quest. After round 12 (TODO exactly or any time after?), interact on a radio to the left of Vulture Aid. After the dialogue plays, interact on the door to enter a secret area. Kill the Vermin and Doppelghast, then kill the special Laurent Doppelghast to drop the keys. Pick up the keys and use them to unlock a door. Going down the stairs will play a cutscene, then teleport you back to the Dining Hall. Some loot will spawn, including a Legendary GS45.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Radio and door left of Vulture Aid"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Laurent Doppelghast"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Keys"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Door to unlock"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Loot"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Bartender PhD Flopper",
-                    "description": "",
+                    "description": "Pick up 3 bottles of alcohol around the map and return them to the Tavern. TODO to start a bartender minigame. Serve zombies the correct drinks, and you will eventually get PhD Flopper.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
+                                "alt": "Location 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 3 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Tavern bar"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
                                 "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Bartender minigame"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Fireplaces",
-                    "description": "",
+                    "description": "Quickly light the 4 fireplaces around the map by using Caliburn(TODO test slash and special), Fire Incantations(TODO), Napalm Burst(TODO), Molotovs, and/or Thermo Grenades. If all 4 were lit in enough time, they will shoot fireballs at zombies for a short time. This can be repeated TODO.",
                     "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 1 - in the Tavern"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 2 - left of Stamin-Up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 3 - in the Alchemical Lab, left of the Arsenal"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 4 - in the Dining Hall"
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
@@ -1158,19 +1379,115 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Cheese"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Rat 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Rat 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Rat 3 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Rat 4 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Rat 5 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Rat 6 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Rat 7 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Rat 8 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Rat 9 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Rat 10 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Plate to place cheese"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Crown"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Chess Knight",
-                    "description": "",
+                    "description": "Find the chess knight in 1 of TODO locations and bring it to the chess board by Stamin-Up. Then, get kills around the chess board until the knight appears in the map. The chess knight will last TODO and can kill zombies.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Location 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location TODO - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Chess board"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Killing zombies around the chess board"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Chess knight"
                             }
                         }
                     ]
@@ -1189,12 +1506,30 @@
                 },
                 {
                     "header": "Mister Peeks Free Perk",
-                    "description": "",
+                    "description": "There are 4 locations for Mister Peeks around the map, and each time you shoot him, he will appear at the next location. The order is the same every game. After shooting him in the final location, you will get a free random perk.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Location 1 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 2 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 3 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 4 - TODO"
                             }
                         }
                     ]
@@ -1215,6 +1550,18 @@
                     "header": "Bell Tower Monkey Bombs",
                     "description": "",
                     "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
@@ -1247,7 +1594,7 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "In a window near Speed Cola"
                             }
                         }
                     ]
@@ -1258,7 +1605,7 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "In the Alchemical Lab, through a barrier to the right of the armor wall-buy"
                             }
                         }
                     ]
@@ -1269,7 +1616,7 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "In the Undercroft, behind a couch (you may(TODO) need to break a box in the way first)"
                             }
                         }
                     ]
@@ -1280,7 +1627,7 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "On the ceiling above Juggernog"
                             }
                         }
                     ]
@@ -1291,7 +1638,7 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "In the Dining Hall, on the broken roof opposite of Vulture Aid"
                             }
                         }
                     ]
@@ -1302,7 +1649,7 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "In spawn, above the Cave Slide exit, on some scaffolding"
                             }
                         }
                     ]
@@ -1313,7 +1660,7 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "On the castle wall, seen from a fence by Deadshot Daiquiri"
                             }
                         }
                     ]
@@ -1325,7 +1672,7 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "In the well by Speed Cola"
                             }
                         }
                     ]
