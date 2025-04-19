@@ -22,13 +22,13 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/1.jpg",
                                 "alt": "Crank to rotate cannon"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/2.jpg",
                                 "alt": "Location to fire cannon"
                             }
                         },
@@ -41,25 +41,25 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/3.jpg",
                                 "alt": "3 locks on the crate"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/16.jpg",
                                 "alt": "Cleanse the metamorph infestation"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/17.jpg",
                                 "alt": "Blood Aetherium Crystal"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/5.jpg",
                                 "alt": "Pack-a-Punch machine"
                             }
                         }
@@ -71,7 +71,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/15.jpg",
                                 "alt": "Exfil radio"
                             }
                         }
@@ -82,13 +82,13 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/6.jpg",
                                 "alt": "Location 1 - Oubliette Room by Pack-a-Punch"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/8.jpg",
                                 "alt": "Location 2 - Alchemical Lab between Stamin-Up and Vulture Aid"
                             }
                         }
@@ -99,49 +99,49 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/13.jpg",
                                 "alt": "Speed Cola - between spawn and the castle"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/11.jpg",
                                 "alt": "Melee Macchiato - in the entrance to the castle wall"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/12.jpg",
                                 "alt": "Elemental Pop - in the entrance to the castle wall"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/14.jpg",
                                 "alt": "Deadshot Daiquiri - between spawn and the castle, next to the Stables"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/10.jpg",
                                 "alt": "Juggernog - in the Entrance Hall"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/7.jpg",
                                 "alt": "Vulture Aid - in the Dining Hall"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/9.jpg",
                                 "alt": "Stamin-Up - around the Sitting Rooms"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/4.jpg",
                                 "alt": "Quick Revive - in the Dungeon"
                             }
                         },
@@ -165,13 +165,13 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/21.jpg",
                                 "alt": "Helmeted Zombie"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/20.jpg",
                                 "alt": "Stamp"
                             }
                         }
@@ -183,25 +183,25 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/19.jpg",
                                 "alt": "Dragon Bastard Sword"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/22.jpg",
                                 "alt": "Lion Bastard Sword"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/23.jpg",
                                 "alt": "Stag Bastard Sword"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/24.jpg",
                                 "alt": "Raven Bastard Sword"
                             }
                         }
@@ -224,7 +224,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/25.jpg",
                                 "alt": "Dragon Altar"
                             }
                         },
@@ -237,19 +237,19 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/30.jpg",
                                 "alt": "Location 1 - at spawn"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/28.jpg",
                                 "alt": "Location 2 - through the door in spawn leading towards Deadshot Daiquiri"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/26.jpg",
                                 "alt": "Location 3 - on the castle wall near Melee Macchiato"
                             }
                         },
@@ -262,7 +262,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/31.jpg",
                                 "alt": "Caliburn"
                             }
                         }
@@ -280,13 +280,19 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/33.jpg",
                                 "alt": "Glowing Parasite"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/34.jpg",
+                                "alt": "Glowing sword"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/35.jpg",
                                 "alt": "Sanctuary Door with 4 symbols"
                             }
                         },
@@ -299,19 +305,19 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/36.jpg",
                                 "alt": "Plinth of Light"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/37.jpg",
                                 "alt": "Plinth with glowing symbol to shoot"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/38.jpg",
                                 "alt": "Symbols flying around the room"
                             }
                         },
@@ -324,7 +330,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/39.jpg",
                                 "alt": "Solais"
                             }
                         }
@@ -337,18 +343,18 @@
                             "full": true,
                             "step": {
                                 "title": "1. Quick Revive Lightning Rod",
-                                "description": "The 3 Lightning Rods can be obtained in any order. After picking up the Stag Bastard Sword, go to Quick Revive and wait for a Heavy Zombie to spawn with a Lightning Rod TODO. Kill the zombie and pick up the Lightning Rod."
+                                "description": "The 3 Lightning Rods can be obtained in any order. After picking up the Stag Bastard Sword, go to Quick Revive and wait for a Heavy Zombie to spawn with a Lightning Rod on it. Kill the zombie and pick up the Lightning Rod."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/41.jpg",
+                                "alt": "Heavy Zombie with Lightning Rod"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/42.jpg",
                                 "alt": "Lightning Rod"
                             }
                         },
@@ -361,7 +367,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/43.jpg",
                                 "alt": "Lightning Rod"
                             }
                         },
@@ -374,13 +380,13 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/44.jpg",
                                 "alt": "Fusebox"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/45.jpg",
                                 "alt": "Lightning Rod"
                             }
                         },
@@ -388,19 +394,25 @@
                             "full": true,
                             "step": {
                                 "title": "4. Charge the Weather Machine",
-                                "description": "Go to the castle wall near Elemental Pop and insert the Lightning Rods into the Weather Machine. This will cause a storm around the machine, and lightning will occasionally hit your sword. Melee to transfer charge to the Weather Machine when the Stag Bastard Sword is sparking."
+                                "description": "Go to the castle wall near Elemental Pop and insert the Lightning Rods into the Weather Machine. This will cause a storm around the machine, and lightning will occasionally hit your sword. Melee to transfer charge to the Weather Machine when the Stag Bastard Sword is sparking. When enough charge has been transfered, the storm will go away, and the Weather Machine will be sparking."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/46.jpg",
                                 "alt": "Weather Machine with all 3 Lightning Rods"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/47.jpg",
                                 "alt": "Sparking Stag Bastard Sword"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/48.jpg",
+                                "alt": "Sparking Weather Machine"
                             }
                         },
                         {
@@ -412,7 +424,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/49.jpg",
                                 "alt": "Durendal"
                             }
                         }
@@ -430,7 +442,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/51.jpg",
                                 "alt": ""
                             }
                         },
@@ -467,13 +479,13 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/52.jpg",
                                 "alt": "Summoning Circle"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/53.jpg",
                                 "alt": ""
                             }
                         },
@@ -510,19 +522,19 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/54.jpg",
                                 "alt": "Portal in the Basement"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/55.jpg",
                                 "alt": "Portal in the Tavern"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/56.jpg",
                                 "alt": "Portal in the Loft"
                             }
                         },
@@ -535,7 +547,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/57.jpg",
                                 "alt": "Balmung"
                             }
                         }
@@ -545,8 +557,26 @@
         },
         {
             "header": "Incantations",
-            "description": "Each upgraded sword has a matching incantation. The upgraded sword is required to unlock the incantation.",
+            "description": "Each upgraded sword has a matching incantation. The upgraded sword is required to unlock the incantation. You must also first talk to Krafft before certain incantation steps can be completed.",
             "subsections": [
+                {
+                    "header": "Talk to Gabriel Krafft",
+                    "description": "Go to the Dungeon and open the hatch on the wooden door. This will play a short ingame cutscene.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/61.jpg",
+                                "alt": "Wooden door behind Quick Revive"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/62.jpg",
+                                "alt": "Krafft"
+                            }
+                        }
+                    ]
+                },
                 {
                     "header": "Fire Incantation",
                     "description": "For Caliburn (Upgraded Dragon Bastard Sword).",
@@ -560,31 +590,31 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Fire beacon 1 - TODO"
+                                "src": "assets/89.jpg",
+                                "alt": "Fire beacon 1 - above Elemental Pop"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Fire beacon 2 - TODO"
+                                "src": "assets/90.jpg",
+                                "alt": "Fire beacon 2 - above Speed Cola"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Fire beacon 3 - TODO"
+                                "src": "assets/91.jpg",
+                                "alt": "Fire beacon 3 - above the Entrance Hall"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/92.jpg",
                                 "alt": "Doppelghast"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/93.jpg",
                                 "alt": "Ra's Ankh"
                             }
                         },
@@ -597,13 +627,13 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/94.jpg",
                                 "alt": "Sigil to start Fire Ritual"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/95.jpg",
                                 "alt": "Incantation Box"
                             }
                         },
@@ -611,19 +641,31 @@
                             "full": true,
                             "step": {
                                 "title": "3. Open the Incantation Box",
-                                "description": "Melee the Incantation Box with Caliburn to unlock the new tactical for all players. Another location for the Fire Incantation will appear in the Dining Hall."
+                                "description": "Melee the Incantation Box with Caliburn to unlock the new tactical for all players. 3 more locations for the Fire Incantation will appear around the map."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/96.jpg",
                                 "alt": "Fire Incantation 1 - in the Courtyard"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/98.jpg",
                                 "alt": "Fire Incantation 2 - in the Dining Hall"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Fire Incantation 3 - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/97.jpg",
+                                "alt": "Fire Incantation 4 - in the Tavern Cellar"
                             }
                         }
                     ]
@@ -636,24 +678,24 @@
                             "full": true,
                             "step": {
                                 "title": "1. Direct the Light",
-                                "description": "Above the fireplace in the Dining Hall is a crystal that can be shot to generate a light beam. Shoot the crystal at different angles until the beam of light focuses on the next crystal, then do the same for the following crystals. Eventually, the light beam will be redirected to reveal Paladin's Brooch. After TODO, interact to pick it up."
+                                "description": "Above the fireplace in the Dining Hall is a crystal that can be shot to generate a light beam. Shoot the crystal at different angles until the beam of light focuses on the next crystal, then do the same for the following crystals. Eventually, the light beam will be redirected to reveal(TODO) Paladin's Brooch. Interact to pick it up."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/63.jpg",
                                 "alt": "First crystal to shoot"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/64.jpg",
                                 "alt": "Focused light beam bouncing off the next crystal"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/65.jpg",
                                 "alt": "Paladin's Brooch"
                             }
                         },
@@ -666,13 +708,13 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/66.jpg",
                                 "alt": "Sigil to start Light Ritual"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/67.jpg",
                                 "alt": "Incantation Box"
                             }
                         },
@@ -680,19 +722,31 @@
                             "full": true,
                             "step": {
                                 "title": "3. Open the Incantation Box",
-                                "description": "Melee the Incantation Box with Solais to unlock the new tactical for all players. Another location for the Light Incantation will appear TODO."
+                                "description": "Melee the Incantation Box with Solais to unlock the new tactical for all players. 3 more locations for the Light Incantation will appear around the map."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/68.jpg",
                                 "alt": "Light Incantation 1 - in the Dining Hall"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Light Incantation 2 - TODO"
+                                "src": "assets/82.jpg",
+                                "alt": "Light Incantation 2 - near Stamin-Up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/85.jpg",
+                                "alt": "Light Incantation 3 - next to Melee Macchiato"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/87.jpg",
+                                "alt": "Light Incantation 4 - between spawn and Speed Cola"
                             }
                         }
                     ]
@@ -705,36 +759,42 @@
                             "full": true,
                             "step": {
                                 "title": "1. Electrify the Horseshoe",
-                                "description": "In the Stables by Deadshot Daiquiri, shoot the horseshoe off the wall and interact to pick it up. Then, use the Rampart Cannon fast travel to launch yourself towards spawn. This will cause the horseshoe to be electrified and fly TODO. Look for a storm cloud to find the electrified horseshoe. Interact to pick it up."
+                                "description": "In the Stables by Deadshot Daiquiri, shoot the horseshoe off the wall and interact to pick it up. Then, use the Rampart Cannon fast travel to launch yourself towards spawn. This will cause the horseshoe to be electrified and fly to 1 of 2 locations. Look for a storm cloud to find the electrified horseshoe. Interact to pick it up."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/59.jpg",
                                 "alt": "Horseshoe to shoot in the Stables"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/60.jpg",
                                 "alt": "Otto's Horseshoe"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/70.jpg",
                                 "alt": "Horseshoe being struck by lightning"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Storm cloud above the electrified horseshoe"
+                                "alt": "Storm cloud location 1 - between spawn and Deadshot Daiquiri"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/71.jpg",
+                                "alt": "Storm cloud location 2 - between spawn and Speed Cola"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/72.jpg",
                                 "alt": "Pegasus' Horseshoe"
                             }
                         },
@@ -747,13 +807,13 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/73.jpg",
                                 "alt": "Sigil to start Electric Ritual"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/74.jpg",
                                 "alt": "Incantation Box"
                             }
                         },
@@ -761,12 +821,12 @@
                             "full": true,
                             "step": {
                                 "title": "3. Open the Incantation Box",
-                                "description": "Melee the Incantation Box with Durendal to unlock the new tactical for all players. Another location for the Electric Incantation will appear in the Dining Hall."
+                                "description": "Melee the Incantation Box with Durendal to unlock the new tactical for all players. 3 more locations for the Electric Incantation will appear around the map."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/75.jpg",
                                 "alt": "Electric Incantation 1 - spawn"
                             }
                         },
@@ -774,6 +834,18 @@
                             "pic": {
                                 "src": "assets/.jpg",
                                 "alt": "Electric Incantation 2 - in the Dining Hall"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/86.jpg",
+                                "alt": "Electric Incantation 3 - down the steps from Melee Macchiato"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/83.jpg",
+                                "alt": "Electric Incantation 4 - near Quick Revive"
                             }
                         }
                     ]
@@ -791,19 +863,19 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/76.jpg",
                                 "alt": "Raven in the Cave Slide"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/77.jpg",
                                 "alt": "Raven flying around"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/78.jpg",
                                 "alt": "Raven's Talon"
                             }
                         },
@@ -816,13 +888,13 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/79.jpg",
                                 "alt": "Sigil to start Dark Ritual"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/80.jpg",
                                 "alt": "Incantation Box"
                             }
                         },
@@ -830,12 +902,12 @@
                             "full": true,
                             "step": {
                                 "title": "3. Open the Incantation Box",
-                                "description": "Melee the Incantation Box with Balmung to unlock the new tactical for all players. Another location for the Dark Incantation will appear in the Dining Hall."
+                                "description": "Melee the Incantation Box with Balmung to unlock the new tactical for all players. 3 more locations for the Dark Incantation will appear around the map."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/81.jpg",
                                 "alt": "Dark Incantation 1 - in the Undercroft"
                             }
                         },
@@ -843,6 +915,18 @@
                             "pic": {
                                 "src": "assets/.jpg",
                                 "alt": "Dark Incantation 2 - in the Dining Hall"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/84.jpg",
+                                "alt": "Dark Incantation 3 - next to Elemental Pop"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/88.jpg",
+                                "alt": "Dark Incantation 4 - in spawn"
                             }
                         }
                     ]
@@ -870,13 +954,13 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Hatch to open"
+                                "src": "assets/61.jpg",
+                                "alt": "Wooden door behind Quick Revive"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/62.jpg",
                                 "alt": "Krafft"
                             }
                         }
