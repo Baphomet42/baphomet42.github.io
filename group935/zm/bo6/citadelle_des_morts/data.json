@@ -67,7 +67,7 @@
                 },
                 {
                     "header": "Exfil",
-                    "description": "The radio is located TODO, and the exfil location will be TODO (if open).",
+                    "description": "The radio is located in the Tavern, and the exfil location will be TODO (if open).",
                     "elements": [
                         {
                             "pic": {
@@ -147,7 +147,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/120.jpg",
                                 "alt": "Der Wunderfizz - in the Tavern Loft (spawns at the start of round 25)"
                             }
                         }
@@ -275,7 +275,7 @@
                             "full": true,
                             "step": {
                                 "title": "1. Kill Glowing Parasites",
-                                "description": "TODO While holding the Lion Bastard Sword, Glowing Parasites will spawn. Kill 4 Glowing Parasites with the sword, and after each kill, melee the Sanctuary Door to transfer the Glowing Parasite Essence. The door is located between spawn and Speed Cola, and after each successful melee, a symbol will appear on the door."
+                                "description": "After picking up the Lion Bastard Sword, Glowing Parasites will spawn. Kill 4 Glowing Parasites with the sword, and after each kill, melee the Sanctuary Door to transfer the Glowing Parasite Essence. The door is located between spawn and Speed Cola, and after each successful melee, a symbol will appear on the door."
                             }
                         },
                         {
@@ -443,7 +443,7 @@
                         {
                             "pic": {
                                 "src": "assets/51.jpg",
-                                "alt": ""
+                                "alt": "Raven Skulls - on a bookcase by the door to Stamin-Up"
                             }
                         },
                         {
@@ -486,31 +486,31 @@
                         {
                             "pic": {
                                 "src": "assets/53.jpg",
-                                "alt": ""
+                                "alt": "Correct orientation for Raven Skulls Antiquity"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Correct orientation for TODO Antiquity"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Correct orientation for TODO Antiquity"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Correct orientation for TODO Antiquity"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Correct orientation for TODO Antiquity"
                             }
                         },
                         {
@@ -678,7 +678,7 @@
                             "full": true,
                             "step": {
                                 "title": "1. Direct the Light",
-                                "description": "Above the fireplace in the Dining Hall is a crystal that can be shot to generate a light beam. Shoot the crystal at different angles until the beam of light focuses on the next crystal, then do the same for the following crystals. Eventually, the light beam will be redirected to reveal(TODO) Paladin's Brooch. Interact to pick it up."
+                                "description": "Above the fireplace in the Dining Hall is a crystal that can be shot to generate a light beam. Shoot the crystal at different angles until the beam of light focuses on the next crystal, then do the same for the following crystals. Eventually, the light beam will be redirected to reveal Paladin's Brooch. Interact to pick it up."
                             }
                         },
                         {
@@ -972,38 +972,38 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Bottle 1 - TODO"
+                                "src": "assets/99.jpg",
+                                "alt": "Bottle 1 - at the bar"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Bottle 2 - TODO"
+                                "src": "assets/100.jpg",
+                                "alt": "Bottle 2 - on a table by the Exfil radio"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Bottle 3 - TODO"
+                                "src": "assets/101.jpg",
+                                "alt": "Bottle 3 - on a table in the corner by the bar"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Bottle 4 - TODO"
+                                "src": "assets/102.jpg",
+                                "alt": "Bottle 4 - in the Loft"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Bottle 5 - TODO"
+                                "src": "assets/103.jpg",
+                                "alt": "Bottle 5 - on a table by the Exfil radio"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Bottle 6 - TODO"
+                                "src": "assets/104.jpg",
+                                "alt": "Bottle 6 - by the exit door"
                             }
                         }
                     ]
@@ -1014,19 +1014,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/105.jpg",
                                 "alt": "Wall to smash"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/106.jpg",
                                 "alt": "Symbols"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/107.jpg",
                                 "alt": "Codex"
                             }
                         }
@@ -1038,37 +1038,37 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "General location of page 1 - TODO(boxes in back hallway)"
+                                "src": "assets/108.jpg",
+                                "alt": "General location of page 1 - around some boxes by the door leading towards the Entrance Hall"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "General location of page 2 - TODO(around the beds)"
+                                "src": "assets/110.jpg",
+                                "alt": "General location of page 2 - around the bunk beds"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "General location of page 3 - TODO(tv or couch)"
+                                "src": "assets/109.jpg",
+                                "alt": "General location of page 3 - around the couch, TV, or Stamin-Up"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "General location of page 4 - TODO(hallway opposite of boxes)"
+                                "src": "assets/111.jpg",
+                                "alt": "General location of page 4 - around the door to the Alchemical Lab"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/112.jpg",
                                 "alt": "Torn Page Fragment"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/113.jpg",
                                 "alt": "Codex with all 4 symbols"
                             }
                         }
@@ -1080,38 +1080,44 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/114.jpg",
+                                "alt": "Location 1 - by Pack-a-Punch"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/115.jpg",
+                                "alt": "Location 2 - by Quick Revive"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/116.jpg",
+                                "alt": "Location 3 - by Stamin-Up"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/117.jpg",
+                                "alt": "Location 4 - in the Courtyard"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/118.jpg",
+                                "alt": "Location 5 - by Deadshot Daiquiri"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/119.jpg",
+                                "alt": "Location 6 - between spawn and Speed Cola"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/121.jpg",
+                                "alt": "Codex with all 4 symbols done"
                             }
                         }
                     ]
@@ -1122,31 +1128,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/122.jpg",
                                 "alt": "Wall indicating the Knight Statue order"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Using an incantation on a Knight Statue"
+                                "src": "assets/126.jpg",
+                                "alt": "Knight Statue glowing"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Pressing inspect weapon on a sword"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Knight Statue saluting"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/127.jpg",
                                 "alt": "Mystic Orb"
                             }
                         }
@@ -1165,13 +1159,13 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/128.jpg",
                                 "alt": "Location to place Mystic Orb"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/129.jpg",
                                 "alt": "Light Sphere"
                             }
                         },
@@ -1184,7 +1178,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/130.jpg",
                                 "alt": "Location to place Mystic Orb"
                             }
                         },
@@ -1197,7 +1191,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/131.jpg",
                                 "alt": "Location to place Mystic Orb"
                             }
                         },
@@ -1210,7 +1204,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/132.jpg",
                                 "alt": "Location to place Mystic Orb"
                             }
                         }
@@ -1222,13 +1216,13 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/133.jpg",
                                 "alt": "Location to place Mystic Orb"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/135.jpg",
                                 "alt": "Guardian Key"
                             }
                         }
@@ -1242,12 +1236,12 @@
                             "full": true,
                             "step": {
                                 "title": "Start the Final Encounter",
-                                "description": "Go to spawn and interact on the Guardian Statue to insert the Guardian Key (TODO interact again?). This will teleport all players to the boss fight arena and start the fight."
+                                "description": "Go to spawn and interact on the Guardian Statue to insert the Guardian Key. This will teleport all players to the boss fight arena and start the fight."
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/136.jpg",
                                 "alt": "Location to start boss fight"
                             }
                         },
@@ -1260,13 +1254,13 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/137.jpg",
                                 "alt": "The Guardian"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/139.jpg",
                                 "alt": "Amulet"
                             }
                         }
@@ -1283,20 +1277,20 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "src": "assets/125.jpg",
+                                "alt": "Location 1 - on a table in the Tavern"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "src": "assets/124.jpg",
+                                "alt": "Location 2 - in the Courtyard by the door to Speed Cola"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/123.jpg",
+                                "alt": "Location 3 - in the Undercroft by a couch"
                             }
                         }
                     ]
@@ -1462,8 +1456,14 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Cheese"
+                                "src": "assets/140.jpg",
+                                "alt": "Window with cheese"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/141.jpg",
+                                "alt": "Cheese taken from broken window"
                             }
                         },
                         {
@@ -1700,7 +1700,7 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "In the Undercroft, behind a couch (you may(TODO) need to break a box in the way first)"
+                                "alt": "In the Undercroft, behind a couch (you may need to break a box in the way first)"
                             }
                         }
                     ]
