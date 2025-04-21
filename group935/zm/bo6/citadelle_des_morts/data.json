@@ -67,7 +67,7 @@
                 },
                 {
                     "header": "Exfil",
-                    "description": "The radio is located in the Tavern, and the exfil location will be TODO (if open).",
+                    "description": "The radio is located in the Tavern, and the exfil location will be on the castle wall (if open).",
                     "elements": [
                         {
                             "pic": {
@@ -474,7 +474,7 @@
                             "full": true,
                             "step": {
                                 "title": "2. Configure the Summoning Circle",
-                                "description": "Go to the Tavern Cellar near spawn and interact to place the Raven Bastard Sword in the Summoning Circle. Then, interact on the Summoning Circle to configure the rings so the symbols and Antiquity match. The correct orientation for each Antiquity is shown below."
+                                "description": "Go to the Tavern Cellar near spawn and interact to place the Antiquity on the Summoning Circle. Interact again to place the Raven Bastard Sword, then interact a third time to configure the rings so the symbols and Antiquity match. The correct orientation for each Antiquity is shown below."
                             }
                         },
                         {
@@ -658,8 +658,8 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Fire Incantation 3 - TODO"
+                                "src": "assets/151.jpg",
+                                "alt": "Fire Incantation 3 - by Pack-a-Punch"
                             }
                         },
                         {
@@ -782,7 +782,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/143.jpg",
                                 "alt": "Storm cloud location 1 - between spawn and Deadshot Daiquiri"
                             }
                         },
@@ -832,7 +832,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/149.jpg",
                                 "alt": "Electric Incantation 2 - in the Dining Hall"
                             }
                         },
@@ -913,7 +913,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/150.jpg",
                                 "alt": "Dark Incantation 2 - in the Dining Hall"
                             }
                         },
@@ -1301,19 +1301,19 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/147.jpg",
                                 "alt": "Location 1 - at spawn"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/146.jpg",
                                 "alt": "Location 2 - through the door in spawn leading towards Deadshot Daiquiri"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/148.jpg",
                                 "alt": "Location 3 - on the castle wall near Melee Macchiato"
                             }
                         }
@@ -1404,29 +1404,29 @@
                 },
                 {
                     "header": "Fireplaces",
-                    "description": "Quickly light the 4 fireplaces around the map by using Caliburn(TODO test slash and special), Fire Incantations(TODO), Napalm Burst(TODO), Molotovs, and/or Thermo Grenades. If all 4 were lit in enough time, they will shoot fireballs at zombies for a short time. This can be repeated TODO.",
+                    "description": "Quickly light the 4 fireplaces around the map by using the Caliburn melee attack, Napalm Burst(TODO), Molotovs, and/or Thermo Grenades(TODO). If all 4 were lit in enough time, they will shoot fireballs at zombies for a short time. This can be repeated TODO.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/155.jpg",
                                 "alt": "Location 1 - in the Tavern"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/156.jpg",
                                 "alt": "Location 2 - left of Stamin-Up"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/157.jpg",
                                 "alt": "Location 3 - in the Alchemical Lab, left of the Arsenal"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/158.jpg",
                                 "alt": "Location 4 - in the Dining Hall"
                             }
                         },
@@ -1578,11 +1578,17 @@
                 },
                 {
                     "header": "Raven Free Perk",
-                    "description": "",
+                    "description": "TODO >3 minutes",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/144.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/145.jpg",
                                 "alt": ""
                             }
                         }
@@ -1620,12 +1626,24 @@
                 },
                 {
                     "header": "Wall Runes Free Perk",
-                    "description": "",
+                    "description": "TODO lockdown waves and ammo mods",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/152.jpg",
                                 "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/153.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/154.jpg",
+                                "alt": "Loot and Random Perk power-up"
                             }
                         }
                     ]
@@ -1660,7 +1678,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/142.jpg",
                                 "alt": "Pool table, in the Tavern Loft"
                             }
                         }
@@ -1744,7 +1762,7 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "On the castle wall, seen from a fence by Deadshot Daiquiri"
+                                "alt": "On the castle wall(TODO), seen from a fence by Deadshot Daiquiri"
                             }
                         }
                     ]
