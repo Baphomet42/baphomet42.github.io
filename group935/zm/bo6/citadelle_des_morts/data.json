@@ -67,7 +67,7 @@
                 },
                 {
                     "header": "Exfil",
-                    "description": "The radio is located in the Tavern, and the exfil location will be on the castle wall (if open).",
+                    "description": "The radio is located in the Tavern, and the exfil location will be in spawn or on the castle wall.",
                     "elements": [
                         {
                             "pic": {
@@ -858,7 +858,7 @@
                             "full": true,
                             "step": {
                                 "title": "1. Shoot the Raven",
-                                "description": "Use the Cave Slide fast travel and shoot the Raven inside. Then, shoot the Raven as it flies around the map so it drops its talon. Interact to pick it up."
+                                "description": "Use the Cave Slide fast travel and shoot the raven inside. Then, shoot the raven as it flies around the map so it drops its talon. Alternatively, before shooting the raven right away, you can follow it around the map for several minutes, and it will eventually drop a Random Perk power-up. After shooting the raven from the sky, interact to pick up the Raven's Talon."
                             }
                         },
                         {
@@ -1173,7 +1173,7 @@
                             "full": true,
                             "step": {
                                 "title": "Dark Challenge",
-                                "description": "The Mystic Orb location is in the Undercroft. For this challenge, get dark elemental kills by using Balmung's Special Attack(TODO or normal melee?), Dark Incantations, and/or TODO(test ammo mod and gersh grenades). If enough elemental kills are secured before the timer ends, the challenge is complete."
+                                "description": "The Mystic Orb location is in the Undercroft. For this challenge, get dark elemental kills by using Balmung's Special Attack, Dark Incantations, Shadow Rift, LT53 Kazimirs(TODO), etc. If enough elemental kills are secured before the timer ends, the challenge is complete."
                             }
                         },
                         {
@@ -1186,7 +1186,7 @@
                             "full": true,
                             "step": {
                                 "title": "Electric Challenge",
-                                "description": "The Mystic Orb location is in spawn. For this challenge, get electric elemental kills by using Durendal's Special Attack(TODO or normal melee?), Electric Incantations, and/or Dead Wire(TODO test, also test shock charges). If enough elemental kills are secured before the timer ends, the challenge is complete."
+                                "description": "The Mystic Orb location is in spawn. For this challenge, get electric elemental kills by using Durendal's Special Attack, Electric Incantations, Dead Wire, Shock Charges(TODO), etc. If enough elemental kills are secured before the timer ends, the challenge is complete."
                             }
                         },
                         {
@@ -1199,7 +1199,7 @@
                             "full": true,
                             "step": {
                                 "title": "Fire Challenge",
-                                "description": "The Mystic Orb location is in the Courtyard. For this challenge, get fire elemental kills by using Caliburn's Special Attack(TODO or normal melee?), Fire Incantations, Napalm Burst and/or Molotovs(TODO test, also test thermo grenades). If enough elemental kills are secured before the timer ends, the challenge is complete."
+                                "description": "The Mystic Orb location is in the Courtyard. For this challenge, get fire elemental kills by using Caliburn's Special Attack, Fire Incantations, Napalm Burst, Molotovs, etc. If enough elemental kills are secured before the timer ends, the challenge is complete."
                             }
                         },
                         {
@@ -1361,25 +1361,73 @@
                     ]
                 },
                 {
+                    "header": "Chess Knight",
+                    "description": "Find the chess knight in 1 of 4 locations and bring it to the chess board by Stamin-Up. Then, get kills around the chess board until the knight appears in the map. The chess knight will kill zombies and move around the map for a short time.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 1 - in the Tavern Cellar, TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 2 - near Elemental Pop, TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 3 - upstairs from Juggernog, on a table in the hallway to the Dining Hall"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 4 - near Quick Revive, TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Chess board"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Killing zombies around the chess board"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Chess knight"
+                            }
+                        }
+                    ]
+                },
+                {
                     "header": "Bartender PhD Flopper",
                     "description": "Pick up 3 bottles of alcohol around the map and return them to the Tavern. TODO to start a bartender minigame. Serve zombies the correct drinks, and you will eventually get PhD Flopper.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "alt": "Location 1 - in the Dining Hall, under the table by the couch"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
+                                "alt": "Location 2 - in the Alchemical Lab, on the bottom shelf across from Stamin-Up"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "alt": "Location 3 - in the Undercroft, under the table by the couch"
                             }
                         },
                         {
@@ -1403,8 +1451,92 @@
                     ]
                 },
                 {
-                    "header": "Fireplaces",
-                    "description": "Quickly light the 4 fireplaces around the map by using the Caliburn melee attack, Napalm Burst(TODO), Molotovs, and/or Thermo Grenades(TODO). If all 4 were lit in enough time, they will shoot fireballs at zombies for a short time. This can be repeated TODO.",
+                    "header": "Mister Peeks Free Perk",
+                    "description": "There are 4 locations for Mister Peeks around the map, and each time you shoot him, he will appear at the next location. The order is the same every game. After shooting him in the final location, you will get a free random perk.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 1 - near Elemental Pop, seen through a window"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 2 - near Deadshot Daiquiri, seen through a hole in the Stables wall"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 3 - seen from the Dining Hall, in a window on a castle tower"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 4 - near Quick Revive, in a cell"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Raven Free Perk",
+                    "description": "During the Dark Incantation step, after shooting the raven from the Cave Slide, wait before shooting it in the sky to get the Raven's Talon. Instead, follow the raven as it circles the map for several minutes. Eventually, it will drop a Random Perk power-up.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/144.jpg",
+                                "alt": "Red spark flying to the ground"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/145.jpg",
+                                "alt": "Random Perk power-up"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Wall Runes Free Perk",
+                    "description": "Any time after completing the wall runes main quest step, use all 4 incantations on the wall to relight the symbols. After all 4 rows are lit up, a lockdown will begin in the Undercroft. After several waves of enemies are killed, a Random Perk power-up and some Ammo Mods will drop.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/152.jpg",
+                                "alt": "Wall runes step completed"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/153.jpg",
+                                "alt": "Lockdown"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/154.jpg",
+                                "alt": "Loot and Random Perk power-up"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Money Well",
+                    "description": "TODO wait for vermin to leave well? On a bug round, throw any explosive or Concussion into the well between spawn and Speed Cola. This will cause Essence to fly out of the well. After this, you can now interact on the well during any round to drop some points. You can retrieve these points by throwing an explosive into the well on any bug round.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Fireplace Trap",
+                    "description": "Quickly light the 4 fireplaces around the map by using the Caliburn melee attack or Molotovs. If all 4 were lit in enough time, the fireplaces will shoot fireballs at zombies for a short time. This can be repeated every time the fireplace logs respawn.",
                     "elements": [
                         {
                             "pic": {
@@ -1433,26 +1565,14 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "Money Well",
-                    "description": "",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Fireballs"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Rat Crown",
-                    "description": "",
+                    "description": "Break a cheese display window in spawn and grab the cheese. Then, scare 10 rats around the map by walking up and staring at them. When all 10 rats are waiting around a plate by Pack-a-Punch, interact to place the cheese. This will drop some loot, including a crown that can be worn.",
                     "elements": [
                         {
                             "pic": {
@@ -1469,61 +1589,61 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Rat 1 - TODO"
+                                "alt": "Rat 1 - by spawn, under a van just through the door to Speed Cola"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Rat 2 - TODO"
+                                "alt": "Rat 2 - in spawn, under a planter by the door leading to Deadshot Daiquiri"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Rat 3 - TODO"
+                                "alt": "Rat 3 - near Deadshot Daiquiri, outside the zombie spawn hole in the side of the well"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Rat 4 - TODO"
+                                "alt": "Rat 4 - on the castle wall, under the wooden stairs to the Rampart Cannon on the Melee Macchiato side"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Rat 5 - TODO"
+                                "alt": "Rat 5 - near Juggernog, under a chair to the right of the main staircase"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Rat 6 - TODO"
+                                "alt": "Rat 6 - in the Dining Hall, under a wooden pallet by the Stag Knight Statue"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Rat 7 - TODO"
+                                "alt": "Rat 7 - in the Alchemical Lab, behind the tablet with the symbols"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Rat 8 - TODO"
+                                "alt": "Rat 8 - near Stamin-Up, under a bench by the bunk bed in the corner"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Rat 9 - TODO"
+                                "alt": "Rat 9 - in the Undercroft, just right of the Mystery Box location"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Rat 10 - TODO"
+                                "alt": "Rat 10 - near Quick Revive, in the cell to the left of the gun wall-buy"
                             }
                         },
                         {
@@ -1535,115 +1655,31 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Crown"
+                                "alt": "Crown and loot"
                             }
                         }
                     ]
                 },
                 {
-                    "header": "Chess Knight",
-                    "description": "Find the chess knight in 1 of TODO locations and bring it to the chess board by Stamin-Up. Then, get kills around the chess board until the knight appears in the map. The chess knight will last TODO and can kill zombies.",
+                    "header": "Rotate the Rampart Cannon",
+                    "description": "After using the cannon to open the castle entrance, the crank wheel will fly to spawn. Pick up the crank wheel and the blowtorch, then interact to place the wheel back on the Rampart Cannon. You can now rotate the Rampart Cannon between going to spawn and going to the Dining Hall.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
+                                "alt": "Crank wheel - at spawn, in a box of bananas"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Location TODO - TODO"
+                                "alt": "Blowtorch - in the Dining Hall, to the right of the fireplace"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Chess board"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Killing zombies around the chess board"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Chess knight"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "Raven Free Perk",
-                    "description": "TODO >3 minutes",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/144.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/145.jpg",
-                                "alt": ""
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "Mister Peeks Free Perk",
-                    "description": "There are 4 locations for Mister Peeks around the map, and each time you shoot him, he will appear at the next location. The order is the same every game. After shooting him in the final location, you will get a free random perk.",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 4 - TODO"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "Wall Runes Free Perk",
-                    "description": "TODO lockdown waves and ammo mods",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/152.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/153.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/154.jpg",
-                                "alt": "Loot and Random Perk power-up"
+                                "alt": "Crank wheel on the cannon"
                             }
                         }
                     ]
@@ -1652,18 +1688,6 @@
                     "header": "Bell Tower Monkey Bombs",
                     "description": "",
                     "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
