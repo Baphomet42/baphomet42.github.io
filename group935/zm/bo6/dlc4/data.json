@@ -19,18 +19,6 @@
                                 "src": "assets/.jpg",
                                 "alt": ""
                             }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
-                            }
                         }
                     ]
                 },
@@ -139,7 +127,7 @@
             "header": "Song",
             "subsections": [
                 {
-                    "header": "Slave",
+                    "header": "",
                     "description": "Interact with 3 Mister Peeks headphones.",
                     "elements": [
                         {

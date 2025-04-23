@@ -4,7 +4,6 @@
     "background": "https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/guides/games/blackops6/zombies/COD-BO6-RBZ-CITADELLE-TOUT.webp",
     "style": "dark_aether",
     "rev": 2,
-    "wip": true,
     "maps": [{"img": "assets/maps.jpg", "link": "https://callofduty.fandom.com/wiki/Citadelle_des_Morts?file=CitadelleDesMorts+MiniMap+BO6.png"}],
     "sections" : [
         {
@@ -448,8 +447,8 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Scorpion Fossil - TODO"
+                                "src": "assets/217_edit.jpg",
+                                "alt": "Scorpion Fossil - on a table next to a skull"
                             }
                         },
                         {
@@ -491,7 +490,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/218.jpg",
                                 "alt": "Correct orientation for Scorpion Fossil Antiquity (🜄 ♏︎)"
                             }
                         },
