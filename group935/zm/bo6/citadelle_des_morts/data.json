@@ -367,7 +367,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/43.jpg",
+                                "src": "assets/43_edit.jpg",
                                 "alt": "Lightning Rod"
                             }
                         },
@@ -380,7 +380,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/44.jpg",
+                                "src": "assets/44_edit.jpg",
                                 "alt": "Fusebox"
                             }
                         },
@@ -442,32 +442,32 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/51.jpg",
-                                "alt": "Raven Skulls - on a bookcase by the door to Stamin-Up"
+                                "src": "assets/196_edit.jpg",
+                                "alt": "Ram Horn - on the bookcase to the right of the tablet with the symbols"
                             }
                         },
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": ""
+                                "alt": "Scorpion Fossil - TODO"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/51_edit.jpg",
+                                "alt": "Raven Skulls - on the bookcase to the left of the door to Stamin-Up"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/189_edit.jpg",
+                                "alt": "Jaw Bone - on the bookcase to the left of the door to Stamin-Up"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/212_edit.jpg",
+                                "alt": "Fish Fossil - on the bookcase to the right of the door to Stamin-Up"
                             }
                         },
                         {
@@ -485,32 +485,32 @@
                         },
                         {
                             "pic": {
+                                "src": "assets/197.jpg",
+                                "alt": "Correct orientation for Ram Horn Antiquity (🜂 ♈︎)"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Correct orientation for Scorpion Fossil Antiquity (🜄 ♏︎)"
+                            }
+                        },
+                        {
+                            "pic": {
                                 "src": "assets/53.jpg",
-                                "alt": "Correct orientation for Raven Skulls Antiquity"
+                                "alt": "Correct orientation for Raven Skulls Antiquity (🜁 ♊︎)"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Correct orientation for TODO Antiquity"
+                                "src": "assets/191.jpg",
+                                "alt": "Correct orientation for Jaw Bone Antiquity (🜂 ♌︎)"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Correct orientation for TODO Antiquity"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Correct orientation for TODO Antiquity"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Correct orientation for TODO Antiquity"
+                                "src": "assets/206.jpg",
+                                "alt": "Correct orientation for Fish Fossil Antiquity (🜄 ♓︎)"
                             }
                         },
                         {
@@ -764,7 +764,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/59.jpg",
+                                "src": "assets/59_edit.jpg",
                                 "alt": "Horseshoe to shoot in the Stables"
                             }
                         },
@@ -863,7 +863,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/76.jpg",
+                                "src": "assets/76_edit.jpg",
                                 "alt": "Raven in the Cave Slide"
                             }
                         },
@@ -1010,7 +1010,7 @@
                 },
                 {
                     "header": "3. Shoot the Symbols in the Undercroft",
-                    "description": "Go to the Undercroft next to the Pack-a-Punch room, and use Melee Macchiato to smash the wall and reveal the symbols. Then, shoot the 6 symbols in the order indicated by the bottles. After each symbol is shot, the rest of the symbols will rearrange on the wall. When done successfully, the wall will vanish to the left of the symbols, revealing the Codex.",
+                    "description": "Go to the Undercroft next to the Pack-a-Punch room, and use Melee Macchiato to smash the wall and reveal the symbols. Then, shoot the 6 symbols in the order indicated by the bottles. After each symbol is shot, the rest of the symbols will rearrange on the wall. When done successfully, the wall to the left of the symbols will vanish, revealing the Codex.",
                     "elements": [
                         {
                             "pic": {
@@ -1076,7 +1076,7 @@
                 },
                 {
                     "header": "5. Attune the Points of Power",
-                    "description": "Each of the 4 symbols in the Codex matches one of the Point of Power traps around the map. Activate the traps in the order indicated by the Codex (top left, bottom left, top right, bottom right), and get enough kills until the trap stops early. After each Point of Power is finished, its symbol will stop glowing in the Codex. The final Point of Power is always in the Stamin-Up room, and after it's completed, an orb will move towards the Undercroft Stairway and create symbols for the next step.",
+                    "description": "Each of the 4 symbols in the Codex matches one of the Point of Power traps around the map. Activate the traps in the order indicated by the Codex (top left, bottom left, top right, then bottom right), and get enough kills until the trap stops early. After each Point of Power is finished, its symbol will stop glowing in the Codex. The final Point of Power is always in the Stamin-Up room, and after it's completed, an orb will move towards the Undercroft Stairway and create symbols for the next step.",
                     "elements": [
                         {
                             "pic": {
@@ -1124,7 +1124,7 @@
                 },
                 {
                     "header": "6. Salute the 4 Knights",
-                    "description": "On the wall of the Undercroft Stairway, the 4 knight symbols are numbered from I to IV. In this order, make each of the 4 Knight Statues salute. To make the statue salute, use the corresponding incantation on the statue, then quicky use the inspect weapon control on the corresponding upgraded sword. When all 4 statues have saluted in the correct order, they will summon the Mystic Orb.",
+                    "description": "On the wall of the Undercroft Stairway, the 4 knight symbols are numbered from I to IV. In this order, make each of the 4 Knight Statues salute. To make the statue salute, use the corresponding incantation on the statue, then quicky use the inspect weapon control on the corresponding upgraded sword. When all 4 statues have saluted in the correct order, they will summon the Mystic Orb. The Dragon Knight Statue corresponds to the Fire Incantation and Caliburn. The Lion Knight Statue corresponds to the Light Incantation and Solais. The Stag Knight Statue corresponds to the Electric Incantation and Durendal. The Raven Knight Statue corresponds to the Dark Incantation and Balmung.",
                     "elements": [
                         {
                             "pic": {
@@ -1135,7 +1135,7 @@
                         {
                             "pic": {
                                 "src": "assets/126.jpg",
-                                "alt": "Knight Statue glowing"
+                                "alt": "Knight Statue glowing after saluting"
                             }
                         },
                         {
@@ -1173,7 +1173,7 @@
                             "full": true,
                             "step": {
                                 "title": "Dark Challenge",
-                                "description": "The Mystic Orb location is in the Undercroft. For this challenge, get dark elemental kills by using Balmung's Special Attack, Dark Incantations, Shadow Rift, LT53 Kazimirs(TODO), etc. If enough elemental kills are secured before the timer ends, the challenge is complete."
+                                "description": "The Mystic Orb location is in the Undercroft. For this challenge, get dark elemental kills by using Balmung's Special Attack, Dark Incantations, Shadow Rift, etc. If enough elemental kills are secured before the timer ends, the challenge is complete."
                             }
                         },
                         {
@@ -1186,7 +1186,7 @@
                             "full": true,
                             "step": {
                                 "title": "Electric Challenge",
-                                "description": "The Mystic Orb location is in spawn. For this challenge, get electric elemental kills by using Durendal's Special Attack, Electric Incantations, Dead Wire, Shock Charges(TODO), etc. If enough elemental kills are secured before the timer ends, the challenge is complete."
+                                "description": "The Mystic Orb location is in spawn. For this challenge, get electric elemental kills by using Durendal's Special Attack, Electric Incantations, Dead Wire, etc. If enough elemental kills are secured before the timer ends, the challenge is complete."
                             }
                         },
                         {
@@ -1326,35 +1326,35 @@
             "subsections": [
                 {
                     "header": "Maya Side Quest",
-                    "description": "You must be playing as the Maya operator to do this side quest. After round 12 (TODO exactly or any time after?), interact on a radio to the left of Vulture Aid. After the dialogue plays, interact on the door to enter a secret area. Kill the Vermin and Doppelghast, then kill the special Laurent Doppelghast to drop the keys. Pick up the keys and use them to unlock a door. Going down the stairs will play a cutscene, then teleport you back to the Dining Hall. Some loot will spawn, including a Legendary GS45.",
+                    "description": "You must be playing as the Maya operator to do this side quest. Starting on round 12, the radio to the left of Vulture Aid will start beeping morse code. Interact on the radio, then after the dialogue plays, interact on the door to enter a secret area. Kill the Vermin and Doppelghast, then kill the special Laurent Doppelghast to drop the keys. Pick up the keys and use them to unlock a door. Going down the stairs will play a cutscene, then teleport you back to the Dining Hall. Some loot will spawn, including a Legendary GS45.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Radio and door left of Vulture Aid"
+                                "src": "assets/207.jpg",
+                                "alt": "Radio and door to the left of Vulture Aid"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/208.jpg",
                                 "alt": "Laurent Doppelghast"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/209.jpg",
                                 "alt": "Keys"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/210.jpg",
                                 "alt": "Door to unlock"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/215.jpg",
                                 "alt": "Loot"
                             }
                         }
@@ -1362,47 +1362,41 @@
                 },
                 {
                     "header": "Chess Knight",
-                    "description": "Find the chess knight in 1 of 4 locations and bring it to the chess board by Stamin-Up. Then, get kills around the chess board until the knight appears in the map. The chess knight will kill zombies and move around the map for a short time.",
+                    "description": "Find the chess knight in 1 of 4 locations and bring it to the chess board by Stamin-Up. Then, get kills around the chess board until the knight appears in the map. The chess knight will kill zombies and follow you around the map for a couple minutes.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 1 - in the Tavern Cellar, TODO"
+                                "src": "assets/213_edit.jpg",
+                                "alt": "Location 1 - in the Tavern Cellar, on a shelf between some cans and bottles"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 2 - near Elemental Pop, TODO"
+                                "src": "assets/190_edit.jpg",
+                                "alt": "Location 2 - near Elemental Pop, on a desk"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/159_edit.jpg",
                                 "alt": "Location 3 - upstairs from Juggernog, on a table in the hallway to the Dining Hall"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 4 - near Quick Revive, TODO"
+                                "src": "assets/216_edit.jpg",
+                                "alt": "Location 4 - near Quick Revive, on a table"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Chess board"
+                                "src": "assets/187.jpg",
+                                "alt": "Chess board ritual"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Killing zombies around the chess board"
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/188.jpg",
                                 "alt": "Chess knight"
                             }
                         }
@@ -1410,41 +1404,35 @@
                 },
                 {
                     "header": "Bartender PhD Flopper",
-                    "description": "Pick up 3 bottles of alcohol around the map and return them to the Tavern. TODO to start a bartender minigame. Serve zombies the correct drinks, and you will eventually get PhD Flopper.",
+                    "description": "Pick up 3 bottles of alcohol around the map and return them to the Tavern. Interact on the alcohol glasses to start a bartender minigame. Serve zombies the correct drinks, and you will eventually get PhD Flopper upon leaving the bar.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/172_edit.jpg",
                                 "alt": "Location 1 - in the Dining Hall, under the table by the couch"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/174_edit.jpg",
                                 "alt": "Location 2 - in the Alchemical Lab, on the bottom shelf across from Stamin-Up"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/173_edit.jpg",
                                 "alt": "Location 3 - in the Undercroft, under the table by the couch"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Tavern bar"
+                                "src": "assets/194.jpg",
+                                "alt": "Alcohol to start game"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        },
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/193.jpg",
                                 "alt": "Bartender minigame"
                             }
                         }
@@ -1456,25 +1444,37 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/160_edit.jpg",
                                 "alt": "Location 1 - near Elemental Pop, seen through a window"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/198.jpg",
                                 "alt": "Location 2 - near Deadshot Daiquiri, seen through a hole in the Stables wall"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/199.jpg",
+                                "alt": "Location 2 close-up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/200.jpg",
                                 "alt": "Location 3 - seen from the Dining Hall, in a window on a castle tower"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/201.jpg",
+                                "alt": "Location 3 close-up"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/202_edit.jpg",
                                 "alt": "Location 4 - near Quick Revive, in a cell"
                             }
                         }
@@ -1482,7 +1482,7 @@
                 },
                 {
                     "header": "Raven Free Perk",
-                    "description": "During the Dark Incantation step, after shooting the raven from the Cave Slide, wait before shooting it in the sky to get the Raven's Talon. Instead, follow the raven as it circles the map for several minutes. Eventually, it will drop a Random Perk power-up.",
+                    "description": "During the Dark Incantation step, after shooting the raven from the Cave Slide, wait before shooting it in the sky. Instead, follow the raven as it circles the map for several minutes. Eventually, it will drop a Random Perk power-up.",
                     "elements": [
                         {
                             "pic": {
@@ -1524,19 +1524,31 @@
                 },
                 {
                     "header": "Money Well",
-                    "description": "TODO wait for vermin to leave well? On a bug round, throw any explosive or Concussion into the well between spawn and Speed Cola. This will cause Essence to fly out of the well. After this, you can now interact on the well during any round to drop some points. You can retrieve these points by throwing an explosive into the well on any bug round.",
+                    "description": "To unlock the well, wait for a bug round and stare at the well between spawn and Speed Cola until a Vermin crawls out. Kill the Vermin that crawled out, then throw a Frag or Concussion into the well. This will cause essence to fly out of the well. After this, you can now interact on the well during any round to drop some points. You can retrieve these points by throwing another Frag or Concussion into the well on any future bug round.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/203.jpg",
+                                "alt": "Vermin crawling out of the well"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/204.jpg",
+                                "alt": "Essence around the well"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/205.jpg",
+                                "alt": "Dropping essence into the well"
                             }
                         }
                     ]
                 },
                 {
                     "header": "Fireplace Trap",
-                    "description": "Quickly light the 4 fireplaces around the map by using the Caliburn melee attack or Molotovs. If all 4 were lit in enough time, the fireplaces will shoot fireballs at zombies for a short time. This can be repeated every time the fireplace logs respawn.",
+                    "description": "Quickly light the 4 fireplaces around the map by using the Caliburn melee attack, Molotovs, or Thermo Grenades. If all 4 were lit in enough time, the fireplaces will shoot fireballs at zombies for a short time. This can be repeated every time the fireplace logs respawn (after 5 rounds).",
                     "elements": [
                         {
                             "pic": {
@@ -1564,7 +1576,7 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/214.jpg",
                                 "alt": "Fireballs"
                             }
                         }
@@ -1588,73 +1600,73 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/175_edit.jpg",
                                 "alt": "Rat 1 - by spawn, under a van just through the door to Speed Cola"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/176_edit.jpg",
                                 "alt": "Rat 2 - in spawn, under a planter by the door leading to Deadshot Daiquiri"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Rat 3 - near Deadshot Daiquiri, outside the zombie spawn hole in the side of the well"
+                                "src": "assets/177_edit.jpg",
+                                "alt": "Rat 3 - near Deadshot Daiquiri, outside the zombie spawn hole in the stone circle"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/178_edit.jpg",
                                 "alt": "Rat 4 - on the castle wall, under the wooden stairs to the Rampart Cannon on the Melee Macchiato side"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/179_edit.jpg",
                                 "alt": "Rat 5 - near Juggernog, under a chair to the right of the main staircase"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/182_edit.jpg",
                                 "alt": "Rat 6 - in the Dining Hall, under a wooden pallet by the Stag Knight Statue"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/183_edit.jpg",
                                 "alt": "Rat 7 - in the Alchemical Lab, behind the tablet with the symbols"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/181_edit.jpg",
                                 "alt": "Rat 8 - near Stamin-Up, under a bench by the bunk bed in the corner"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/180_edit.jpg",
                                 "alt": "Rat 9 - in the Undercroft, just right of the Mystery Box location"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/184_edit.jpg",
                                 "alt": "Rat 10 - near Quick Revive, in the cell to the left of the gun wall-buy"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/195.jpg",
                                 "alt": "Plate to place cheese"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/186.jpg",
                                 "alt": "Crown and loot"
                             }
                         }
@@ -1662,36 +1674,24 @@
                 },
                 {
                     "header": "Rotate the Rampart Cannon",
-                    "description": "After using the cannon to open the castle entrance, the crank wheel will fly to spawn. Pick up the crank wheel and the blowtorch, then interact to place the wheel back on the Rampart Cannon. You can now rotate the Rampart Cannon between going to spawn and going to the Dining Hall.",
+                    "description": "After using the cannon to open the castle entrance, the crank wheel will fly to spawn. Pick up the crank wheel and the blowtorch, then interact to place the wheel back on the Rampart Cannon. You can now rotate the Rampart Cannon between going to spawn and going to the Dining Hall. If you then use the Rampart Cannon fast travel 100 times (in either direction), when you next take the fast travel to spawn, you will hit the clock tower. This will drop 2 Cymbal Monkeys, and the tower itself will attract zombies for a short time.",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/165_edit.jpg",
                                 "alt": "Crank wheel - at spawn, in a box of bananas"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/164_edit.jpg",
                                 "alt": "Blowtorch - in the Dining Hall, to the right of the fireplace"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/166.jpg",
                                 "alt": "Crank wheel on the cannon"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "header": "Bell Tower Monkey Bombs",
-                    "description": "",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
                             }
                         }
                     ]
@@ -1719,7 +1719,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/167_edit.jpg",
                                 "alt": "In a window near Speed Cola"
                             }
                         }
@@ -1730,7 +1730,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/168_edit.jpg",
                                 "alt": "In the Alchemical Lab, through a barrier to the right of the armor wall-buy"
                             }
                         }
@@ -1741,7 +1741,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/163_edit.jpg",
                                 "alt": "In the Undercroft, behind a couch (you may need to break a box in the way first)"
                             }
                         }
@@ -1752,7 +1752,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/162_edit.jpg",
                                 "alt": "On the ceiling above Juggernog"
                             }
                         }
@@ -1763,7 +1763,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/169_edit.jpg",
                                 "alt": "In the Dining Hall, on the broken roof opposite of Vulture Aid"
                             }
                         }
@@ -1774,7 +1774,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/161_edit.jpg",
                                 "alt": "In spawn, above the Cave Slide exit, on some scaffolding"
                             }
                         }
@@ -1785,8 +1785,8 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "On the castle wall(TODO), seen from a fence by Deadshot Daiquiri"
+                                "src": "assets/170_edit.jpg",
+                                "alt": "On the castle wall, seen from a fence by Deadshot Daiquiri"
                             }
                         }
                     ]
@@ -1797,7 +1797,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/171_edit.jpg",
                                 "alt": "In the well by Speed Cola"
                             }
                         }
