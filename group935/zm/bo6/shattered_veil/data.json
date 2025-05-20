@@ -36,7 +36,7 @@
                 },
                 {
                     "header": "Exfil",
-                    "description": "The radio is located TODO, and the exfil location will be TODO (if open).",
+                    "description": "The radio is located in spawn, and the exfil location will be in the Motor Court outside the Grand Foyer (if open).",
                     "elements": [
                         {
                             "pic": {
@@ -48,12 +48,17 @@
                 },
                 {
                     "header": "Level III Armor Vest",
-                    "description": "Located TODO.",
                     "elements": [
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Level 3 armor wall-buy"
+                                "alt": "Location 1 - in the Banquet Hall by the elevator"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Location 2 - down in the Service Tunnel"
                             }
                         }
                     ]
@@ -64,7 +69,13 @@
                         {
                             "pic": {
                                 "src": "assets/.jpg",
-                                "alt": "Der Wunderfizz - TODO (spawns at the start of round 25)"
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/.jpg",
+                                "alt": "Der Wunderfizz - down in the Service Tunnel (spawns at the start of round 25)"
                             }
                         }
                     ]
