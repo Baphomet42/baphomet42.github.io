@@ -11,25 +11,25 @@
             "header": "Map Features",
             "subsections": [
                 {
-                    "header": "Power",
-                    "description": "",
-                    "elements": [
-                        {
-                            "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
-                            }
-                        }
-                    ]
-                },
-                {
                     "header": "Pack-a-Punch",
                     "description": "",
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/6.jpg",
                                 "alt": "Pack-a-Punch machine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "header": "Armory",
+                    "description": "Loot Keys will occasionally drop from enemies and can be exchanged for loot.",
+                    "elements": [
+                        {
+                            "pic": {
+                                "src": "assets/1.jpg",
+                                "alt": "Location to enter the Armory, by the TODO down the elevator"
                             }
                         }
                     ]
@@ -40,7 +40,7 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/19.jpg",
                                 "alt": "Exfil radio"
                             }
                         }
@@ -51,13 +51,13 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/7.jpg",
                                 "alt": "Location 1 - in the Banquet Hall by the elevator"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/4.jpg",
                                 "alt": "Location 2 - down in the Service Tunnel"
                             }
                         }
@@ -68,13 +68,55 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/17.jpg",
+                                "alt": "Quick Revive - TODO"
                             }
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
+                                "src": "assets/15.jpg",
+                                "alt": "Speed Cola - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/14.jpg",
+                                "alt": "Juggernog - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/13.jpg",
+                                "alt": "Stamin Up - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/11.jpg",
+                                "alt": "Elemental Pop - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/8.jpg",
+                                "alt": "Double Tap TODO - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/10.jpg",
+                                "alt": "Death Perception - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/9.jpg",
+                                "alt": "PhD Flopper - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/2.jpg",
                                 "alt": "Der Wunderfizz - down in the Service Tunnel (spawns at the start of round 25)"
                             }
                         }
@@ -159,6 +201,18 @@
                                 "src": "assets/.jpg",
                                 "alt": ""
                             }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/12.jpg",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/16.jpg",
+                                "alt": ""
+                            }
                         }
                     ]
                 }
@@ -185,8 +239,8 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Location 3 - TODO"
+                                "src": "assets/5.jpg",
+                                "alt": "Location 3 - in the Service Tunnel, on a cardboard box under a shelf"
                             }
                         }
                     ]
@@ -292,8 +346,26 @@
                     "elements": [
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": ""
+                                "src": "assets/18.jpg",
+                                "alt": "Combat Axe - in spawn"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/20.jpg",
+                                "alt": "Combat Axe - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/21.jpg",
+                                "alt": "Molotov - TODO"
+                            }
+                        },
+                        {
+                            "pic": {
+                                "src": "assets/3.jpg",
+                                "alt": "LT53 Kazimir - in the Service Tunnel on some rubble by the armor wall-buy"
                             }
                         }
                     ]
