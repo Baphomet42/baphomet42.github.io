@@ -583,6 +583,11 @@
                     "item": "{components:{\"minecraft:custom_name\":{italic:0b,text:\"ambient.cave\"},\"minecraft:lore\":[\"\",{color:\"gold\",text:\"BaphomethLabs\"}],\"minecraft:max_stack_size\":1,\"minecraft:note_block_sound\":\"minecraft:ambient.cave\",\"minecraft:profile\":{properties:[{name:\"textures\",value:\"ew0KICAic2lnbmF0dXJlUmVxdWlyZWQiIDogZmFsc2UsDQogICJ0ZXh0dXJlcyIgOiB7DQogICAgIlNLSU4iIDogew0KICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS80Y2VlYjc3ZDRkMjU3MjRhOWNhZjJjN2NkZjJkODgzOTliMTQxN2M2YjlmZjUyMTM2NTliNjUzYmU0Mzc2ZTMiDQogICAgfQ0KICB9DQp9\"}]}},count:1,id:\"minecraft:player_head\"}"
                 },
                 {
+                    "name": "Dialog Book",
+                    "description": "Mid",
+                    "item": "{components:{\"minecraft:lore\":[\"\",{color:\"gold\",text:\"BaphomethLabs\"}],\"minecraft:written_book_content\":{author:\"Mojang\",pages:[{raw:{extra:[{click_event:{action:\"show_dialog\",dialog:\"minecraft:quick_actions\"},text:\"Quick Actions\",underlined:1b},\"\n\n\",{click_event:{action:\"show_dialog\",dialog:\"minecraft:custom_options\"},text:\"Custom Options\",underlined:1b},\"\n\n\",{click_event:{action:\"show_dialog\",dialog:\"minecraft:server_links\"},text:\"Server Links\",underlined:1b}],text:\"\"}}],resolved:1b,title:{raw:\"Dialog Menu\"}}},count:1,id:\"minecraft:written_book\"}"
+                },
+                {
                     "name": "1.8 Diamond Sword",
                     "description": "Just as Notch intended",
                     "item": "{components:{\"minecraft:attribute_modifiers\":[{amount:6.0d,id:\"minecraft:base_attack_damage\",operation:\"add_value\",slot:\"mainhand\",type:\"minecraft:attack_damage\"},{amount:1024.0d,id:\"minecraft:base_attack_speed\",operation:\"add_value\",slot:\"mainhand\",type:\"minecraft:attack_speed\"}],\"minecraft:blocks_attacks\":{block_sound:\"minecraft:item.shield.block\",bypassed_by:\"#minecraft:bypasses_shield\",damage_reductions:[{base:0.0f,factor:0.5f,horizontal_blocking_angle:180.0f}],item_damage:{base:0.0f,factor:0.0f,threshold:0.0f}},\"minecraft:item_name\":{extra:[{translate:\"item.minecraft.diamond_sword\"}],text:\"1.8 \"},\"minecraft:lore\":[\"\",{color:\"gold\",text:\"BaphomethLabs\"}]},count:1,id:\"minecraft:diamond_sword\"}"
