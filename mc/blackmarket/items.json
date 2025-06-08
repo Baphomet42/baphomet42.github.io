@@ -585,7 +585,7 @@
                 {
                     "name": "Dialog Book",
                     "description": "Mid",
-                    "item": "{components:{\"minecraft:lore\":[\"\",{color:\"gold\",text:\"BaphomethLabs\"}],\"minecraft:written_book_content\":{author:\"Mojang\",pages:[{raw:{extra:[{click_event:{action:\"show_dialog\",dialog:\"minecraft:quick_actions\"},text:\"Quick Actions\",underlined:1b},\"\n\n\",{click_event:{action:\"show_dialog\",dialog:\"minecraft:custom_options\"},text:\"Custom Options\",underlined:1b},\"\n\n\",{click_event:{action:\"show_dialog\",dialog:\"minecraft:server_links\"},text:\"Server Links\",underlined:1b}],text:\"\"}}],resolved:1b,title:{raw:\"Dialog Menu\"}}},count:1,id:\"minecraft:written_book\"}"
+                    "item": "{components:{\"minecraft:lore\":[\"\",{color:\"gold\",text:\"BaphomethLabs\"}],\"minecraft:written_book_content\":{author:\"Mojang\",pages:[{raw:{extra:[{click_event:{action:\"show_dialog\",dialog:\"minecraft:quick_actions\"},text:\"Quick Actions\",underlined:1b},\"\\n\\n\",{click_event:{action:\"show_dialog\",dialog:\"minecraft:custom_options\"},text:\"Custom Options\",underlined:1b},\"\\n\\n\",{click_event:{action:\"show_dialog\",dialog:\"minecraft:server_links\"},text:\"Server Links\",underlined:1b}],text:\"\"}}],resolved:1b,title:{raw:\"Dialog Menu\"}}},count:1,id:\"minecraft:written_book\"}"
                 },
                 {
                     "name": "1.8 Diamond Sword",
