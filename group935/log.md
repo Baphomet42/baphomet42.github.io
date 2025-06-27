@@ -1,3 +1,6 @@
+
+----------------------------------------------------------------
+
 # Entry 741021
 
 To ensure a consistent feel, try to stick to these guidelines.
@@ -120,3 +123,5 @@ To ensure a consistent feel, try to stick to these guidelines.
     + `"title"`, `"alt"`, and `"bullets"` texts should usually be 1 sentence without ending in a period, but not using title case capitalization
         + `"alt"` texts that uses the form `"foo - bar"` should not capitalize `bar` unless it otherwise should be capitalized (like for proper nouns)
     + `"description"` texts should use common sentence capitalization and grammar (always ending in a period)
+
+----------------------------------------------------------------
