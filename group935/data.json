@@ -9,7 +9,8 @@
                 {"id": "bo6/terminus", "name": "Terminus"},
                 {"id": "bo6/citadelle_des_morts", "name": "Citadelle des Morts"},
                 {"id": "bo6/the_tomb", "name": "The Tomb"},
-                {"id": "bo6/shattered_veil", "name": "Shattered Veil", "wip": true}
+                {"id": "bo6/shattered_veil", "name": "Shattered Veil", "wip": true},
+                {"id": "bo6/reckoning", "name": "Reckoning", "wip": true}
             ]
         },
         {
