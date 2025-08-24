@@ -1,7 +1,7 @@
 {
     "id": "bo6/reckoning",
     "name": "Reckoning",
-    "background": "",
+    "background": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/bo6/season-05/BO6-S05-ANNOUNCEMENT-022.webp",
     "style": "dark_aether",
     "rev": 2,
     "wip": true,
@@ -69,8 +69,8 @@
                         },
                         {
                             "pic": {
-                                "src": "assets/.jpg",
-                                "alt": "Der Wunderfizz - TODO (spawns at the start of round 25)"
+                                "src": "assets/1.jpg",
+                                "alt": "Der Wunderfizz - T2 Android Assembly (spawns at the start of round 25)"
                             }
                         }
                     ]
