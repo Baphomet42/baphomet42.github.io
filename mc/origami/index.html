@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/main/style.css">
+    <link rel="stylesheet" href="/mc/style.css">
+    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/71295013?v=4">
+    <link rel="apple-touch-icon" href="https://avatars.githubusercontent.com/u/71295013?v=4">
+    <title>Origami | BaphomethLabs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="/template/data-include.js"></script>
+</head>
+<body>
+    <article>
+        <div data-include="/mc/header" id="header"></div>
+
+        <table class="card-table"><tr class="card-table-row">
+
+            <td class="card-wrap-mid"><div class="card tooltip center">
+                <p class="item-header">Origami</p>
+                <br/>
+                <p class="item-header warn" style="color:#FFFF55">W.I.P.</p>
+                <br/>
+                <p class="item-subtitle">Printable Minecraft skin tool</p>
+            </div></td>
+
+            <td class="card-wrap-full"><div class="card tooltip center">
+
+                <table class="card-table">
+                    <tr class="card-table-row">
+                        <td class="card-wrap-third card-wrap-third-small">
+                            <label for="file-input">Skin:</label>
+                        </td>
+                        <td class="card-wrap-third card-wrap-third-big">
+                            <input type="file" id="file-input" style="display: none;"/>
+                            <button class="button" onClick="openFile()" style="font-size:x-large">Select Skin</button>
+                        </td>
+                        <td class="card-wrap-third card-wrap-third-small">
+                            <span id="file-label"></span>
+                        </td>
+                    </tr>
+                    <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
+                    <tr class="card-table-row">
+                        <td class="card-wrap-third card-wrap-third-small">
+                            <label for="model">Model:</label>
+                        </td>
+                        <td class="card-wrap-third card-wrap-third-big">
+                            <select id="model" style="font-size:large">
+                                <option value="wide">Wide</option>
+                                <option value="slim">Slim</option>
+                            </select>
+                        </td>
+                        <td class="card-wrap-third card-wrap-third-small">
+                            <span id="model-label"></span>
+                        </td>
+                    </tr>
+                    <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
+                    <tr class="card-table-row">
+                        <td class="card-wrap-third card-wrap-third-small">
+                            <label for="shift-3d">Offset 3D layer:</label>
+                        </td>
+                        <td class="card-wrap-third card-wrap-third-big">
+                            <select id="shift-3d" style="font-size:large">
+                                <option value="none">Off</option>
+                                <option value="head">Head</option>
+                                <option value="all">All</option>
+                            </select>
+                        </td>
+                        <td class="card-wrap-third card-wrap-third-small">
+                            <span id="shift-label"></span>
+                        </td>
+                    </tr>
+                    <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
+                    <tr class="card-table-row">
+                        <td class="card-wrap-third card-wrap-third-small">
+                            <label for="file-cape-input">Cape:</label>
+                        </td>
+                        <td class="card-wrap-third card-wrap-third-big">
+                            <input type="file" id="file-cape-input" style="display: none;"/>
+                            <button class="button" onClick="openFileCape()" style="font-size:x-large">Select Cape</button>
+                            <button class="button" onClick="clearCape()" style="font-size:x-large">Clear</button>
+                        </td>
+                        <td class="card-wrap-third card-wrap-third-small">
+                            <span id="file-cape-label"></span>
+                        </td>
+                    </tr>
+                    <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
+                    <tr class="card-table-row">
+                        <td class="card-wrap-third card-wrap-third-small"></td>
+                        <td class="card-wrap-third card-wrap-third-big">
+                            <button class="button" onClick="submit()" style="font-size:x-large">Generate</button>
+                        </td>
+                        <td class="card-wrap-third card-wrap-third-small"></td>
+                    </tr>
+                </table>
+
+                <br/>
+                <span id="button-label" class="error"></span>
+                <canvas id="canvas" style="display: none"></canvas>
+                <span id="img-span"></span>
+
+            </div></td>
+
+        </tr></table>
+
+    </article>
+    <div data-include="/template/footer" id="footer"></div>
+
+    <script>
+        let img = new Image()
+        let imgName = ''
+        let imgCape = new Image()
+        let imgNameCape = ''
+        let hasCape = false
+        let downloadLink = document.createElement('a')
+
+        function openFile() {
+            document.getElementById('file-input').click()
+        }
+
+        function openFileCape() {
+            document.getElementById('file-cape-input').click()
+        }
+
+        function clearCape() {
+            imgCapeName = ''
+            document.getElementById('file-cape-label').innerHTML = ''
+            document.getElementById('file-cape-input').value = ''
+            hasCape = false
+        }
+
+        document.getElementById('file-input').addEventListener('change', function(event) {
+            const file = event.target.files[0]
+            let valid = false
+            document.getElementById('file-label').innerHTML = ''
+
+            if(file && file.type === 'image/png') {
+                valid = true
+                imgName = file.name
+
+                const fr = new FileReader()
+
+                fr.onload = function(e) {
+                    img.src = e.target.result
+                }
+
+                fr.readAsDataURL(file)
+            }
+
+            if(!valid) {
+                document.getElementById('file-label').innerHTML = 'File must be a 64x64 or 128x128 PNG'
+            }
+
+        })
+
+        document.getElementById('file-cape-input').addEventListener('change', function(event) {
+            hasCape = true
+
+            const file = event.target.files[0]
+            let valid = false
+            document.getElementById('file-cape-label').innerHTML = ''
+
+            if(file && file.type === 'image/png') {
+                valid = true
+                imgCapeName = file.name
+
+                const fr = new FileReader()
+
+                fr.onload = function(e) {
+                    imgCape.src = e.target.result
+                }
+
+                fr.readAsDataURL(file)
+            }
+
+            if(!valid) {
+                document.getElementById('file-cape-label').innerHTML = 'File must be a 64x32 or 128x64 PNG'
+            }
+
+        })
+
+        img.onload = function() {
+            document.getElementById('file-label').innerHTML = ''
+            if(img.width === img.height && (img.width === 64 || img.width === 128)) {
+                document.getElementById('file-label').innerHTML = imgName+' ('+img.width+'&#8203;x&#8203;'+img.height+')'
+            }
+            else {
+                document.getElementById('file-label').innerHTML = 'File must be a 64x64 or 128x128 PNG'
+            }
+        }
+
+        imgCape.onload = function() {
+            document.getElementById('file-cape-label').innerHTML = ''
+            if((imgCape.width === 64 && imgCape.height === 32) || (imgCape.width === 128 && imgCape.height === 64)) {
+                document.getElementById('file-cape-label').innerHTML = imgCapeName+' ('+imgCape.width+'&#8203;x&#8203;'+imgCape.height+')'
+            }
+            else {
+                document.getElementById('file-cape-label').innerHTML = 'File must be a 64x32 or 128x64 PNG'
+            }
+        }
+
+        function submit() {
+            let valid = false
+            let lbl = ''
+            if(img.width !== img.height || !(img.width === 64 || img.width === 128))
+                lbl = 'Skin must be a 64x64 or 128x128 PNG'
+            else if(hasCape && !(imgCape.width === 64 && imgCape.height === 32) && !(imgCape.width === 128 && imgCape.height === 64))
+                lbl = 'Cape must be a 64x32 or 128x64 PNG'
+            else {
+                valid = true
+            }
+            document.getElementById('button-label').innerHTML = lbl
+
+            document.getElementById('img-span').innerHTML = ''
+            downloadLink = document.createElement('a')
+
+            if(valid) {
+
+                const inputWidth = img.width
+                const inputHeight = img.height
+                const upscale = 512 / inputWidth
+
+                const slim = document.getElementById('model').value === 'slim'
+
+                const offset = 2
+                const offset_3d_all = document.getElementById('shift-3d').value === 'all'
+                const offset_3d_head = offset_3d_all || document.getElementById('shift-3d').value === 'head'
+
+                const srcCanvas = document.createElement('canvas')
+                srcCanvas.width = 512
+                srcCanvas.height = 512
+                const srcCtx = srcCanvas.getContext('2d')
+
+                const tmpCanvas = document.createElement('canvas')
+                tmpCanvas.width = inputWidth
+                tmpCanvas.height = inputHeight
+                const tmpCtx = tmpCanvas.getContext('2d')
+                tmpCtx.drawImage(img, 0, 0)
+                const originalImageData = tmpCtx.getImageData(0, 0, inputWidth, inputHeight)
+                const scaledImageData = srcCtx.createImageData(512, 512)
+
+                for (let y = 0; y < inputHeight; y++) {
+                    for (let x = 0; x < inputWidth; x++) {
+                        const index = (y * inputWidth + x) * 4
+                        const r = originalImageData.data[index]
+                        const g = originalImageData.data[index + 1]
+                        const b = originalImageData.data[index + 2]
+                        const a = originalImageData.data[index + 3]
+
+                        for (let dy = 0; dy < upscale; dy++) {
+                            for (let dx = 0; dx < upscale; dx++) {
+                                const scaledIndex = ((y * upscale + dy) * 512 + (x * upscale + dx)) * 4
+                                scaledImageData.data[scaledIndex] = r
+                                scaledImageData.data[scaledIndex + 1] = g
+                                scaledImageData.data[scaledIndex + 2] = b
+                                scaledImageData.data[scaledIndex + 3] = a
+                            }
+                        }
+                    }
+                }
+                srcCtx.putImageData(scaledImageData, 0, 0)
+
+                let srcCapeCanvas;
+                if (hasCape) {
+                    srcCapeCanvas = document.createElement('canvas');
+                    srcCapeCanvas.width = 512;
+                    srcCapeCanvas.height = 256;
+                    const capeCtx = srcCapeCanvas.getContext('2d');
+
+                    const capeWidth = imgCape.width;
+                    const capeHeight = imgCape.height;
+                    const capeUpscale = 512 / capeWidth; // 512 width scale
+                    const tmpCapeCanvas = document.createElement('canvas');
+                    tmpCapeCanvas.width = capeWidth;
+                    tmpCapeCanvas.height = capeHeight;
+                    const tmpCapeCtx = tmpCapeCanvas.getContext('2d');
+                    tmpCapeCtx.drawImage(imgCape, 0, 0);
+                    const capeData = tmpCapeCtx.getImageData(0, 0, capeWidth, capeHeight);
+                    const scaledCapeData = capeCtx.createImageData(512, 256);
+
+                    for (let y = 0; y < capeHeight; y++) {
+                        for (let x = 0; x < capeWidth; x++) {
+                            const index = (y * capeWidth + x) * 4;
+                            const r = capeData.data[index];
+                            const g = capeData.data[index + 1];
+                            const b = capeData.data[index + 2];
+                            const a = capeData.data[index + 3];
+
+                            for (let dy = 0; dy < capeUpscale; dy++) {
+                                for (let dx = 0; dx < capeUpscale; dx++) {
+                                    const scaledIndex = ((y * capeUpscale + dy) * 512 + (x * capeUpscale + dx)) * 4;
+                                    scaledCapeData.data[scaledIndex] = r;
+                                    scaledCapeData.data[scaledIndex + 1] = g;
+                                    scaledCapeData.data[scaledIndex + 2] = b;
+                                    scaledCapeData.data[scaledIndex + 3] = a;
+                                }
+                            }
+                        }
+                    }
+                    capeCtx.putImageData(scaledCapeData, 0, 0);
+                }
+
+                const canvas = document.getElementById('canvas')
+                canvas.width = 595
+                canvas.height = 770
+                const ctx = canvas.getContext('2d')
+                ctx.clearRect(0, 0, canvas.width, canvas.height)
+                ctx.imageSmoothingEnabled = false
+                ctx.globalCompositeOperation = 'source-over'
+
+                const head_x = 20
+                const head_y = 10
+                const body_x = 20
+                const body_y = 220
+                const arm_left_x = 20
+                const arm_left_y = 400
+                const arm_right_x = 300
+                const arm_right_y = 400
+                const leg_left_x = 20
+                const leg_left_y = 600
+                const leg_right_x = 300
+                const leg_right_y = 600
+                const cape_x = 300
+                const cape_y = 10
+
+                const ops = [
+                    { input: { x: 0, y: 8, dx: 32, dy: 8 }, output: { x: head_x, y: head_y+8*8 }, color:"0xFF000000" },
+                    { input: { x: 8, y: 0, dx: 8, dy: 8 }, output: { x: head_x+8*8, y: head_y }, color:"0xFF000000" },
+                    { input: { x: 16, y: 0, dx: 8, dy: -8 }, output: { x: head_x+8*8, y: head_y+16*8 }, color:"0xFF000000" },
+                    { input: { x: 0, y: 8, dx: 32, dy: 8 }, output: { x: head_x, y: head_y+8*8 } },
+                    { input: { x: 8, y: 0, dx: 8, dy: 8 }, output: { x: head_x+8*8, y: head_y } },
+                    { input: { x: 16, y: 0, dx: 8, dy: -8 }, output: { x: head_x+8*8, y: head_y+16*8 } },
+                    { input: { x: 0+32, y: 8, dx: 32, dy: 8 }, output: { x: head_x, y: head_y+8*8, offset_y: offset_3d_head ? offset : 0 } },
+                    { input: { x: 8+32, y: 0, dx: 8, dy: 8 }, output: { x: head_x+8*8, y: head_y } },
+                    { input: { x: 16+32, y: 0, dx: 8, dy: -8 }, output: { x: head_x+8*8, y: head_y+16*8 } },
+
+                    { input: { x: 16, y: 20, dx: 24, dy: 12 }, output: { x: body_x, y: body_y+4*8 }, color:"0xFF000000" },
+                    { input: { x: 20, y: 16, dx: 8, dy: 4 }, output: { x: body_x+4*8, y: body_y }, color:"0xFF000000" },
+                    { input: { x: 28, y: 16, dx: 8, dy: -4 }, output: { x: body_x+4*8, y: body_y+16*8 }, color:"0xFF000000" },
+                    { input: { x: 16, y: 20, dx: 24, dy: 12 }, output: { x: body_x, y: body_y+4*8 } },
+                    { input: { x: 20, y: 16, dx: 8, dy: 4 }, output: { x: body_x+4*8, y: body_y } },
+                    { input: { x: 28, y: 16, dx: 8, dy: -4 }, output: { x: body_x+4*8, y: body_y+16*8 } },
+                    { input: { x: 16, y: 20+16, dx: 24, dy: 12 }, output: { x: body_x, y: body_y+4*8, offset_y: offset_3d_all ? offset : 0 } },
+                    { input: { x: 20, y: 16+16, dx: 8, dy: 4 }, output: { x: body_x+4*8, y: body_y } },
+                    { input: { x: 28, y: 16+16, dx: 8, dy: -4 }, output: { x: body_x+4*8, y: body_y+16*8 } },
+
+                    { input: { x: 40, y: 20, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: arm_right_x, y: arm_right_y+4*8 }, color:"0xFF000000" },
+                    { input: { x: 44, y: 16, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: arm_right_x+4*8, y: arm_right_y }, color:"0xFF000000" },
+                    { input: { x: 48 - (slim ? 1 : 0), y: 16, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: arm_right_x+4*8, y: arm_right_y+16*8 }, color:"0xFF000000" },
+                    { input: { x: 40, y: 20, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: arm_right_x, y: arm_right_y+4*8 } },
+                    { input: { x: 44, y: 16, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: arm_right_x+4*8, y: arm_right_y } },
+                    { input: { x: 48 - (slim ? 1 : 0), y: 16, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: arm_right_x+4*8, y: arm_right_y+16*8 } },
+                    { input: { x: 40, y: 20+16, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: arm_right_x, y: arm_right_y+4*8, offset_y: offset_3d_all ? offset : 0 } },
+                    { input: { x: 44, y: 16+16, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: arm_right_x+4*8, y: arm_right_y } },
+                    { input: { x: 48, y: 16+16, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: arm_right_x+4*8, y: arm_right_y+16*8 } },
+
+                    { input: { x: 32, y: 52, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: arm_left_x, y: arm_left_y+4*8 }, color:"0xFF000000" },
+                    { input: { x: 36, y: 48, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: arm_left_x+4*8, y: arm_left_y }, color:"0xFF000000" },
+                    { input: { x: 40 - (slim ? 1 : 0), y: 48, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: arm_left_x+4*8, y: arm_left_y+16*8 }, color:"0xFF000000" },
+                    { input: { x: 32, y: 52, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: arm_left_x, y: arm_left_y+4*8 } },
+                    { input: { x: 36, y: 48, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: arm_left_x+4*8, y: arm_left_y } },
+                    { input: { x: 40 - (slim ? 1 : 0), y: 48, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: arm_left_x+4*8, y: arm_left_y+16*8 } },
+                    { input: { x: 32+16, y: 52, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: arm_left_x, y: arm_left_y+4*8, offset_y: offset_3d_all ? offset : 0 } },
+                    { input: { x: 36+16, y: 48, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: arm_left_x+4*8, y: arm_left_y } },
+                    { input: { x: 40+16, y: 48, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: arm_left_x+4*8, y: arm_left_y+16*8 } },
+
+                    { input: { x: 0, y: 20, dx: 16, dy: 12 }, output: { x: leg_right_x, y: leg_right_y+4*8 }, color:"0xFF000000" },
+                    { input: { x: 4, y: 16, dx: 4, dy: 4 }, output: { x: leg_right_x+4*8, y: leg_right_y }, color:"0xFF000000" },
+                    { input: { x: 8, y: 16, dx: 4, dy: -4 }, output: { x: leg_right_x+4*8, y: leg_right_y+16*8 }, color:"0xFF000000" },
+                    { input: { x: 0, y: 20, dx: 16, dy: 12 }, output: { x: leg_right_x, y: leg_right_y+4*8 } },
+                    { input: { x: 4, y: 16, dx: 4, dy: 4 }, output: { x: leg_right_x+4*8, y: leg_right_y } },
+                    { input: { x: 8, y: 16, dx: 4, dy: -4 }, output: { x: leg_right_x+4*8, y: leg_right_y+16*8 } },
+                    { input: { x: 0, y: 20+16, dx: 16, dy: 12 }, output: { x: leg_right_x, y: leg_right_y+4*8, offset_y: offset_3d_all ? offset : 0  } },
+                    { input: { x: 4, y: 16+16, dx: 4, dy: 4 }, output: { x: leg_right_x+4*8, y: leg_right_y } },
+                    { input: { x: 8, y: 16+16, dx: 4, dy: -4 }, output: { x: leg_right_x+4*8, y: leg_right_y+16*8 } },
+
+                    { input: { x: 16, y: 52, dx: 16, dy: 12 }, output: { x: leg_left_x, y: leg_left_y+4*8 }, color:"0xFF000000" },
+                    { input: { x: 20, y: 48, dx: 4, dy: 4 }, output: { x: leg_left_x+4*8, y: leg_left_y }, color:"0xFF000000" },
+                    { input: { x: 24, y: 48, dx: 4, dy: -4 }, output: { x: leg_left_x+4*8, y: leg_left_y+16*8 }, color:"0xFF000000" },
+                    { input: { x: 16, y: 52, dx: 16, dy: 12 }, output: { x: leg_left_x, y: leg_left_y+4*8 } },
+                    { input: { x: 20, y: 48, dx: 4, dy: 4 }, output: { x: leg_left_x+4*8, y: leg_left_y } },
+                    { input: { x: 24, y: 48, dx: 4, dy: -4 }, output: { x: leg_left_x+4*8, y: leg_left_y+16*8 } },
+                    { input: { x: 16-16, y: 52, dx: 16, dy: 12 }, output: { x: leg_left_x, y: leg_left_y+4*8, offset_y: offset_3d_all ? offset : 0  } },
+                    { input: { x: 20-16, y: 48, dx: 4, dy: 4 }, output: { x: leg_left_x+4*8, y: leg_left_y } },
+                    { input: { x: 24-16, y: 48, dx: 4, dy: -4 }, output: { x: leg_left_x+4*8, y: leg_left_y+16*8 } },
+
+                    { input: { file:"cape", x: 0, y: 1, dx: 22, dy: 16 }, output: { x: cape_x, y: cape_y+1*8 }, color:"0xFF000000" },
+                    { input: { file:"cape", x: 1, y: 0, dx: 10, dy: 1 }, output: { x: cape_x+1*8, y: cape_y }, color:"0xFF000000" },
+                    { input: { file:"cape", x: 11, y: 0, dx: 10, dy: -1 }, output: { x: cape_x+1*8, y: cape_y+17*8 }, color:"0xFF000000" },
+                    { input: { file:"cape", x: 0, y: 1, dx: 22, dy: 16 }, output: { x: cape_x, y: cape_y+1*8 } },
+                    { input: { file:"cape", x: 1, y: 0, dx: 10, dy: 1 }, output: { x: cape_x+1*8, y: cape_y } },
+                    { input: { file:"cape", x: 11, y: 0, dx: 10, dy: -1 }, output: { x: cape_x+1*8, y: cape_y+17*8 } },
+                ]
+
+                for (const op of ops) {
+                    let sourceCanvas = srcCanvas;
+                    if (op.input.file === "cape") {
+                        if (!hasCape) {
+                            ctx.restore();
+                            continue; // skip this op entirely
+                        }
+                        sourceCanvas = srcCapeCanvas;
+                    }
+
+                    const sx = op.input.x * 8;
+                    const sy = op.input.y * 8;
+                    const sw = op.input.dx * 8;
+                    const sh = op.input.dy * 8;
+                    const dx = op.output.x;
+                    const dy = op.output.y;
+                    const dw = Math.abs(sw);
+                    const dh = Math.abs(sh);
+
+                    const ox = (op.output.offset_x || 0);
+                    const oy = (op.output.offset_y || 0);
+
+                    ctx.save();
+
+                    ctx.beginPath();
+                    ctx.rect(dx, dy, dw, dh);
+                    ctx.clip();
+
+                    ctx.translate(dx + (sw < 0 ? dw : 0) + ox, dy + (sh < 0 ? dh : 0) + oy);
+                    ctx.scale(sw < 0 ? -1 : 1, sh < 0 ? -1 : 1);
+
+                    if (op.color) {
+                        const hex = op.color.toString(16).padStart(8, '0');
+                        const a = parseInt(hex.slice(0, 2), 16) / 255;
+                        const r = parseInt(hex.slice(2, 4), 16);
+                        const g = parseInt(hex.slice(4, 6), 16);
+                        const b = parseInt(hex.slice(6, 8), 16);
+                        ctx.fillStyle = `rgba(${r},${g},${b},${a})`;
+                        ctx.fillRect(0, 0, dw, dh);
+                    } else {
+                        ctx.drawImage(sourceCanvas, sx, sy, dw, dh, 0, 0, dw, dh);
+                    }
+
+                    ctx.restore();
+                }
+
+                downloadLink.href = canvas.toDataURL('image/png')
+                downloadLink.download = imgName
+                let newHtml = '<img src="'+canvas.toDataURL('image/png')+'" class="img-full">'
+                newHtml += '<br/><br/>'
+                newHtml += '<button class="button" onClick="download()" style="font-size:x-large">Download</button>'
+                document.getElementById('img-span').innerHTML = newHtml
+            }
+        }
+
+        function download() {
+            downloadLink.click()
+        }
+
+    </script>
+
+</body>
+</html>
