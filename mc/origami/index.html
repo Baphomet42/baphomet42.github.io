@@ -119,7 +119,7 @@
                         </td>
                         <td class="card-wrap-third card-wrap-third-big">
                             <select id="cape-source" onchange="setCapeSource(this.value)" style="font-size:large">
-                                <option value="list">Preset</option>
+                                <option value="preset">Preset</option>
                                 <option value="file">File</option>
                                 <option value="username">Username</option>
                             </select>
@@ -239,7 +239,7 @@
             document.getElementById('cape-source-preset-mode').style.display = "none"
             if(source === "username")
                 document.getElementById('cape-source-username-mode').style.display = ""
-            else if(source === "list")
+            else if(source === "preset")
                 document.getElementById('cape-source-preset-mode').style.display = ""
             else
                 document.getElementById('cape-source-file-mode').style.display = ""
@@ -250,6 +250,7 @@
             const prev = dropdown.value
 
             dropdown.innerHTML = ''
+            let optionCount = 0
 
             const optionNone = document.createElement('option')
             optionNone.text = 'None'
@@ -275,6 +276,7 @@
                     if (!cape.name || !cape.url)
                         return
 
+                    optionCount++
                     const option = document.createElement('option')
                     option.text = cape.name
                     option.value = cape.url
@@ -287,6 +289,11 @@
                 } else {
                     dropdown.value = 'none'
                 }
+
+                let lbl = ''
+                if(optionCount === 0)
+                    lbl = '<span class="error">Failed to fetch cape presets</span>'
+                document.getElementById('cape-preset-label').innerHTML = lbl
 
             } catch (err) {
                 console.error('Error reading or parsing JSON:', err)
@@ -590,7 +597,7 @@
                         }
                     }
                 }
-                else if(capeMode === 'list') {
+                else if(capeMode === 'preset') {
                     const url = document.getElementById('cape-preset-input').value
                     if(url === 'none') {
                         capeValid = true
