@@ -27,11 +27,29 @@
             </div></td>
 
             <td class="card-wrap-full"><div class="card tooltip center">
-
+                <p class="item-header">Skin Options</p>
+                <br/>
                 <table class="card-table">
                     <tr class="card-table-row">
                         <td class="card-wrap-third card-wrap-third-small">
-                            <label for="file-input">Skin:</label>
+                            <label for="skin-source">Source:</label>
+                        </td>
+                        <td class="card-wrap-third card-wrap-third-big">
+                            <select id="skin-source" onchange="setSkinSource(this.value)" style="font-size:large">
+                                <option value="file">File</option>
+                                <option value="username">Username</option>
+                            </select>
+                        </td>
+                        <td class="card-wrap-third card-wrap-third-small">
+                            <span id="skin-source-label"></span>
+                        </td>
+                    </tr>
+                </table>
+                <table class="card-table" id="skin-source-file-mode" style="display: none;">
+                    <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
+                    <tr class="card-table-row">
+                        <td class="card-wrap-third card-wrap-third-small">
+                            <label for="file-input">File:</label>
                         </td>
                         <td class="card-wrap-third card-wrap-third-big">
                             <input type="file" id="file-input" style="display: none;"/>
@@ -57,6 +75,22 @@
                         </td>
                     </tr>
                     <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
+                </table>
+                <table class="card-table" id="skin-source-username-mode" style="display: none;">
+                    <tr class="card-table-row">
+                        <td class="card-wrap-third card-wrap-third-small">
+                            <label for="username-input">Username:</label>
+                        </td>
+                        <td class="card-wrap-third card-wrap-third-big">
+                            <input id="username-input" style="font-size:large"/>
+                        </td>
+                        <td class="card-wrap-third card-wrap-third-small">
+                            <span id="username-label"></span>
+                        </td>
+                    </tr>
+                </table>
+                <table class="card-table">
+                    <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
                     <tr class="card-table-row">
                         <td class="card-wrap-third card-wrap-third-small">
                             <label for="shift-3d">Offset 3D layer:</label>
@@ -72,10 +106,34 @@
                             <span id="shift-label"></span>
                         </td>
                     </tr>
+                </table>
+            </div></td>
+
+            <td class="card-wrap-full"><div class="card tooltip center">
+                <p class="item-header">Cape Options</p>
+                <br/>
+                <table class="card-table">
+                    <tr class="card-table-row">
+                        <td class="card-wrap-third card-wrap-third-small">
+                            <label for="cape-source">Source:</label>
+                        </td>
+                        <td class="card-wrap-third card-wrap-third-big">
+                            <select id="cape-source" onchange="setCapeSource(this.value)" style="font-size:large">
+                                <option value="list">Preset</option>
+                                <option value="file">File</option>
+                                <option value="username">Username</option>
+                            </select>
+                        </td>
+                        <td class="card-wrap-third card-wrap-third-small">
+                            <span id="cape-source-label"></span>
+                        </td>
+                    </tr>
+                </table>
+                <table class="card-table" id="cape-source-file-mode" style="display: none;">
                     <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
                     <tr class="card-table-row">
                         <td class="card-wrap-third card-wrap-third-small">
-                            <label for="file-cape-input">Cape:</label>
+                            <label for="file-cape-input">File:</label>
                         </td>
                         <td class="card-wrap-third card-wrap-third-big">
                             <input type="file" id="file-cape-input" style="display: none;"/>
@@ -86,7 +144,39 @@
                             <span id="file-cape-label"></span>
                         </td>
                     </tr>
+                </table>
+                <table class="card-table" id="cape-source-username-mode" style="display: none;">
                     <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
+                    <tr class="card-table-row">
+                        <td class="card-wrap-third card-wrap-third-small"></td>
+                        <td class="card-wrap-third card-wrap-third-big">
+                            <span>Cape will be fetched from the username set above, if present</span>
+                        </td>
+                        <td class="card-wrap-third card-wrap-third-small"></td>
+                    </tr>
+                </table>
+                <table class="card-table" id="cape-source-preset-mode" style="display: none;">
+                    <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
+                    <tr class="card-table-row">
+                        <td class="card-wrap-third card-wrap-third-small">
+                            <label for="cape-preset-input">Cape:</label>
+                        </td>
+                        <td class="card-wrap-third card-wrap-third-big">
+                            <select id="cape-preset-input" style="font-size:large">
+                                <option value="none">None</option>
+                            </select>
+                        </td>
+                        <td class="card-wrap-third card-wrap-third-small">
+                            <span id="cape-preset-label"></span>
+                        </td>
+                    </tr>
+                </table>
+            </div></td>
+
+            <td class="card-wrap-full"><div class="card tooltip center">
+                <p class="item-header">Output</p>
+                <br/>
+                <table class="card-table">
                     <tr class="card-table-row">
                         <td class="card-wrap-third card-wrap-third-small"></td>
                         <td class="card-wrap-third card-wrap-third-big">
@@ -95,11 +185,12 @@
                         <td class="card-wrap-third card-wrap-third-small"></td>
                     </tr>
                 </table>
-
                 <br/>
                 <span id="button-label" class="error"></span>
-                <canvas id="canvas" style="display: none"></canvas>
-                <span id="img-span"></span>
+                <div>
+                    <canvas id="canvas" style="display: none"></canvas>
+                    <span id="img-span"></span>
+                </div>
 
             </div></td>
 
@@ -109,12 +200,100 @@
     <div data-include="/template/footer" id="footer"></div>
 
     <script>
-        let img = new Image()
-        let imgName = ''
-        let imgCape = new Image()
-        let imgNameCape = ''
-        let hasCape = false
+        const vanillaSkinWidth = 64
+        const vanillaSkinHeight = 64
+        const vanillaCapeWidth = 64
+        const vanillaCapeHeight = 32
+
+        const pixelScale = 40 // must be even
+        const outputWidthBase = 8.5
+        const outputHeightBase = 11
+        const outputScale = 350
+        const outputWidth = Math.floor(outputWidthBase * outputScale)
+        const outputHeight = Math.floor(outputHeightBase * outputScale)
+
+        let selectedSkinFileImg = new Image()
+        let selectedSkinFileName = ''
+        let selectedCapeFileImg = new Image()
+        let selectedCapeFileName = ''
+        let selectedCapeFileSet = false
         let downloadLink = document.createElement('a')
+        let hasOutput = false
+
+        refreshCapePresets()
+        setSkinSource('file')
+        setCapeSource('preset')
+
+        function setSkinSource(source) {
+            document.getElementById('skin-source-file-mode').style.display = "none"
+            document.getElementById('skin-source-username-mode').style.display = "none"
+            if(source === "username")
+                document.getElementById('skin-source-username-mode').style.display = ""
+            else
+                document.getElementById('skin-source-file-mode').style.display = ""
+        }
+
+        function setCapeSource(source) {
+            document.getElementById('cape-source-file-mode').style.display = "none"
+            document.getElementById('cape-source-username-mode').style.display = "none"
+            document.getElementById('cape-source-preset-mode').style.display = "none"
+            if(source === "username")
+                document.getElementById('cape-source-username-mode').style.display = ""
+            else if(source === "list")
+                document.getElementById('cape-source-preset-mode').style.display = ""
+            else
+                document.getElementById('cape-source-file-mode').style.display = ""
+        }
+
+        async function refreshCapePresets() {
+            const dropdown = document.getElementById('cape-preset-input')
+            const prev = dropdown.value
+
+            dropdown.innerHTML = ''
+
+            const optionNone = document.createElement('option')
+            optionNone.text = 'None'
+            optionNone.value = 'none'
+            dropdown.add(optionNone)
+
+            try {
+                const response = await fetch('../blackmarket/items.json')
+
+                if (!response.ok) {
+                    console.warn('Could not load JSON file:', response.statusText)
+                    return
+                }
+
+                const data = await response.json()
+
+                if (!data.capes || !Array.isArray(data.capes)) {
+                    console.warn('JSON format unexpected: "capes" key missing or not an array')
+                    return
+                }
+
+                data.capes.forEach(cape => {
+                    if (!cape.name || !cape.url)
+                        return
+
+                    const option = document.createElement('option')
+                    option.text = cape.name
+                    option.value = cape.url
+                    dropdown.add(option)
+                })
+
+                // Restore previous selection if it still exists
+                if ([...dropdown.options].some(opt => opt.value === prev)) {
+                    dropdown.value = prev
+                } else {
+                    dropdown.value = 'none'
+                }
+
+            } catch (err) {
+                console.error('Error reading or parsing JSON:', err)
+            }
+
+
+        }
 
         function openFile() {
             document.getElementById('file-input').click()
@@ -125,25 +304,26 @@
         }
 
         function clearCape() {
-            imgCapeName = ''
+            selectedCapeFileName = ''
             document.getElementById('file-cape-label').innerHTML = ''
             document.getElementById('file-cape-input').value = ''
-            hasCape = false
+            selectedCapeFileSet = false
         }
 
         document.getElementById('file-input').addEventListener('change', function(event) {
             const file = event.target.files[0]
             let valid = false
             document.getElementById('file-label').innerHTML = ''
+            document.getElementById('file-input').value = ''
 
             if(file && file.type === 'image/png') {
                 valid = true
-                imgName = file.name
+                selectedSkinFileName = file.name
 
                 const fr = new FileReader()
 
                 fr.onload = function(e) {
-                    img.src = e.target.result
+                    selectedSkinFileImg.src = e.target.result
                 }
 
                 fr.readAsDataURL(file)
@@ -156,20 +336,21 @@
         })
 
         document.getElementById('file-cape-input').addEventListener('change', function(event) {
-            hasCape = true
+            selectedCapeFileSet = true
 
             const file = event.target.files[0]
             let valid = false
             document.getElementById('file-cape-label').innerHTML = ''
+            document.getElementById('file-cape-input').value = ''
 
             if(file && file.type === 'image/png') {
                 valid = true
-                imgCapeName = file.name
+                selectedCapeFileName = file.name
 
                 const fr = new FileReader()
 
                 fr.onload = function(e) {
-                    imgCape.src = e.target.result
+                    selectedCapeFileImg.src = e.target.result
                 }
 
                 fr.readAsDataURL(file)
@@ -181,65 +362,323 @@
 
         })
 
-        img.onload = function() {
+        selectedSkinFileImg.onload = function() {
             document.getElementById('file-label').innerHTML = ''
-            if(img.width === img.height && (img.width === 64 || img.width === 128)) {
-                document.getElementById('file-label').innerHTML = imgName+' ('+img.width+'&#8203;x&#8203;'+img.height+')'
+            if(selectedSkinFileImg.width === selectedSkinFileImg.height && (selectedSkinFileImg.width === 64 || selectedSkinFileImg.width === 128)) {
+                document.getElementById('file-label').innerHTML = selectedSkinFileName+' ('+selectedSkinFileImg.width+'&#8203;x&#8203;'+selectedSkinFileImg.height+')'
             }
             else {
                 document.getElementById('file-label').innerHTML = 'File must be a 64x64 or 128x128 PNG'
             }
         }
 
-        imgCape.onload = function() {
+        selectedCapeFileImg.onload = function() {
             document.getElementById('file-cape-label').innerHTML = ''
-            if((imgCape.width === 64 && imgCape.height === 32) || (imgCape.width === 128 && imgCape.height === 64)) {
-                document.getElementById('file-cape-label').innerHTML = imgCapeName+' ('+imgCape.width+'&#8203;x&#8203;'+imgCape.height+')'
+            if((selectedCapeFileImg.width === 64 && selectedCapeFileImg.height === 32) || (selectedCapeFileImg.width === 128 && selectedCapeFileImg.height === 64)) {
+                document.getElementById('file-cape-label').innerHTML = selectedCapeFileName+' ('+selectedCapeFileImg.width+'&#8203;x&#8203;'+selectedCapeFileImg.height+')'
             }
             else {
                 document.getElementById('file-cape-label').innerHTML = 'File must be a 64x32 or 128x64 PNG'
             }
         }
 
-        function submit() {
-            let valid = false
-            let lbl = ''
-            if(img.width !== img.height || !(img.width === 64 || img.width === 128))
-                lbl = 'Skin must be a 64x64 or 128x128 PNG'
-            else if(hasCape && !(imgCape.width === 64 && imgCape.height === 32) && !(imgCape.width === 128 && imgCape.height === 64))
-                lbl = 'Cape must be a 64x32 or 128x64 PNG'
-            else {
-                valid = true
-            }
-            document.getElementById('button-label').innerHTML = lbl
-
-            document.getElementById('img-span').innerHTML = ''
+        async function submit() {
+            document.getElementById('button-label').innerHTML = ''
             downloadLink = document.createElement('a')
 
-            if(valid) {
+            if(hasOutput) {
+                const tempCanvas = document.createElement('canvas')
+                tempCanvas.width = outputWidth
+                tempCanvas.height = outputHeight
+                let tempCanvasHtml = '<img src="'+tempCanvas.toDataURL('image/png')+'" class="img-full">'
+                tempCanvasHtml += '<br/><br/>'
+                tempCanvasHtml += '<button class="button" style="font-size:x-large" disabled>Download</button>'
+                document.getElementById('img-span').innerHTML = tempCanvasHtml
+            }
+            else {
+                document.getElementById('img-span').innerHTML = ''
+            }
 
-                const inputWidth = img.width
-                const inputHeight = img.height
-                const upscale = 512 / inputWidth
+            let skinValid = false
+            let capeValid = false
+            let lbl = ''
 
-                const slim = document.getElementById('model').value === 'slim'
+            let outputFileName = 'download'
+            let imgSkin = new Image()
+            let slim = false
+            let hasCape = false
+            let imgCape = new Image()
+            let usernameMode = false
+            let fetchedProfileCapeExists = false
+            let fetchedProfileCapeImg = new Image()
 
-                const offset = 2
+            const skinMode = document.getElementById('skin-source').value
+            const capeMode = document.getElementById('cape-source').value
+
+            if(skinMode === 'file') {
+                if(selectedSkinFileImg.width !== selectedSkinFileImg.height || !(selectedSkinFileImg.width === 64 || selectedSkinFileImg.width === 128))
+                    lbl = 'Skin must be a 64x64 or 128x128 PNG'
+                else {
+                    skinValid = true
+                    outputFileName = selectedSkinFileName
+                    if(outputFileName.endsWith(".png") && outputFileName.length > 4)
+                        outputFileName = outputFileName.substring(0,outputFileName.length - 4)
+                    imgSkin = selectedSkinFileImg
+                    slim = document.getElementById('model').value === 'slim'
+                }
+            }
+            else if(skinMode === 'username') {
+                usernameMode = true
+                let username = ''
+
+                try {
+                    username = document.getElementById('username-input').value.trim()
+                    if (username !== '' && /^[A-Za-z0-9_]+$/.test(username)) {
+                        document.getElementById('button-label').innerHTML = 'Fetching profile...'
+                        try {
+                            const lookupResponse = await fetch('https://api.minecraftservices.com/minecraft/profile/lookup/name/' + username);
+                            if (lookupResponse.ok) {
+                                const lookupData = await lookupResponse.json()
+                                const playerId = lookupData.id
+                                try {
+                                    const profileResponse = await fetch('https://sessionserver.mojang.com/session/minecraft/profile/' + playerId);
+                                    if (profileResponse.ok) {
+                                        const profileData = await profileResponse.json()
+                                        const propertiesArray = profileData.properties
+                                        if (Array.isArray(propertiesArray) && propertiesArray.length > 0) {
+                                            const base64Value = propertiesArray[0].value
+                                            try {
+                                                const decoded = JSON.parse(atob(base64Value))
+                                                if (decoded.textures && decoded.textures.SKIN && decoded.textures.SKIN.url) {
+                                                    const skinUrl = decoded.textures.SKIN.url
+                                                    const model = decoded.textures.SKIN.model // optional
+                                                    const capeUrl = decoded.textures.CAPE?.url // optional
+
+                                                    if(model === 'slim')
+                                                        slim = true
+
+                                                    if(skinUrl) {
+                                                        skinValid = true
+                                                        try {
+                                                            const parsedUrl = new URL(skinUrl)
+                                                            if (parsedUrl.protocol === "http:" || parsedUrl.protocol === "https:") {
+                                                                try {
+                                                                    const response = await fetch(skinUrl)
+                                                                    if (response.ok) {
+                                                                        const contentType = response.headers.get("content-type") || ""
+                                                                        const blob = await response.blob()
+
+                                                                        // Fallback: treat as PNG if content-type is missing but the data starts with PNG signature
+                                                                        const isPngHeader = (await blob.slice(0, 8).arrayBuffer())
+                                                                            && new Uint8Array(await blob.slice(0, 8).arrayBuffer())
+                                                                                .every((b, i) => [137, 80, 78, 71, 13, 10, 26, 10][i] === b)
+                                                                        if (contentType.includes("image/png") || isPngHeader) {
+                                                                            const objectUrl = URL.createObjectURL(blob)
+                                                                            await new Promise((resolve, reject) => {
+                                                                                imgSkin.onload = () => {
+                                                                                    URL.revokeObjectURL(objectUrl)
+                                                                                    resolve(true)
+
+                                                                                    if (!(fetchedProfileCapeImg.width === 64 && fetchedProfileCapeImg.height === 64)
+                                                                                    && !(fetchedProfileCapeImg.width === 128 && fetchedProfileCapeImg.height === 128))
+                                                                                        lbl = 'Skin must be a 64x64 or 128x128 PNG'
+                                                                                }
+                                                                                imgSkin.onerror = () => {
+                                                                                    URL.revokeObjectURL(objectUrl)
+                                                                                    reject(false)
+                                                                                }
+                                                                                imgSkin.src = objectUrl
+                                                                            })
+                                                                        }
+                                                                    }
+                                                                } catch {}
+                                                            }
+                                                        } catch {}
+                                                    }
+
+                                                    if(capeUrl) {
+                                                        fetchedProfileCapeExists = true
+                                                        try {
+                                                            const parsedUrl = new URL(capeUrl)
+                                                            if (parsedUrl.protocol === "http:" || parsedUrl.protocol === "https:") {
+                                                                try {
+                                                                    const response = await fetch(capeUrl)
+                                                                    if (response.ok) {
+                                                                        const contentType = response.headers.get("content-type") || ""
+                                                                        const blob = await response.blob()
+
+                                                                        // Fallback: treat as PNG if content-type is missing but the data starts with PNG signature
+                                                                        const isPngHeader = (await blob.slice(0, 8).arrayBuffer())
+                                                                            && new Uint8Array(await blob.slice(0, 8).arrayBuffer())
+                                                                                .every((b, i) => [137, 80, 78, 71, 13, 10, 26, 10][i] === b)
+                                                                        if (contentType.includes("image/png") || isPngHeader) {
+                                                                            const objectUrl = URL.createObjectURL(blob)
+                                                                            await new Promise((resolve, reject) => {
+                                                                                fetchedProfileCapeImg.onload = () => {
+                                                                                    URL.revokeObjectURL(objectUrl)
+                                                                                    resolve(true)
+
+                                                                                    if (!(fetchedProfileCapeImg.width === 64 && fetchedProfileCapeImg.height === 32)
+                                                                                    && !(fetchedProfileCapeImg.width === 128 && fetchedProfileCapeImg.height === 64))
+                                                                                        lbl = 'Cape must be a 64x32 or 128x64 PNG'
+                                                                                }
+                                                                                fetchedProfileCapeImg.onerror = () => {
+                                                                                    URL.revokeObjectURL(objectUrl)
+                                                                                    reject(false)
+                                                                                }
+                                                                                fetchedProfileCapeImg.src = objectUrl
+                                                                            })
+                                                                        }
+                                                                    }
+                                                                } catch {}
+                                                            }
+                                                        } catch {}
+                                                    }
+
+                                                }
+                                            } catch {}
+                                        }
+                                    }
+                                } catch {}
+                            }
+                        } catch {}
+                    }
+                    else {
+                        lbl = 'Invalid username'
+                    }
+                } catch {}
+
+                if(!skinValid && lbl === '') {
+                    lbl = 'Failed to fetch username: ' + username
+                }
+                document.getElementById('button-label').innerHTML = ''
+            }
+            else {
+                lbl = 'Failed to determine skin source'
+            }
+
+            if(skinValid) {
+                if(capeMode === 'file') {
+                    if(selectedCapeFileSet
+                    && !(selectedCapeFileImg.width === 64 && selectedCapeFileImg.height === 32)
+                    && !(selectedCapeFileImg.width === 128 && selectedCapeFileImg.height === 64))
+                        lbl = 'Cape must be a 64x32 or 128x64 PNG'
+                    else {
+                        capeValid = true
+                        hasCape = selectedCapeFileSet
+                        imgCape = selectedCapeFileImg
+                    }
+                }
+                else if(capeMode === 'username') {
+                    if(!usernameMode) {
+                        lbl = 'Username cape source cannot be used without the username skin source'
+                    }
+                    else {
+                        if(fetchedProfileCapeExists) {
+                            if (!(fetchedProfileCapeImg.width === 64 && fetchedProfileCapeImg.height === 32)
+                            && !(fetchedProfileCapeImg.width === 128 && fetchedProfileCapeImg.height === 64))
+                                lbl = 'Cape must be a 64x32 or 128x64 PNG'
+                            else {
+                                capeValid = true
+                                hasCape =  true
+                                imgCape = fetchedProfileCapeImg
+                            }
+                        }
+                        else {
+                            capeValid = true
+                            hasCape = false
+                        }
+                    }
+                }
+                else if(capeMode === 'list') {
+                    const url = document.getElementById('cape-preset-input').value
+                    if(url === 'none') {
+                        capeValid = true
+                        hasCape = false
+                    }
+                    else {
+                        document.getElementById('button-label').innerHTML = 'Fetching cape...'
+
+                        try {
+                            const parsedUrl = new URL(url)
+                            if (parsedUrl.protocol === "http:" || parsedUrl.protocol === "https:") {
+                                try {
+                                    const response = await fetch(url)
+                                    if (response.ok) {
+                                        const contentType = response.headers.get("content-type") || ""
+                                        const blob = await response.blob()
+
+                                        // Fallback: treat as PNG if content-type is missing but the data starts with PNG signature
+                                        const isPngHeader = (await blob.slice(0, 8).arrayBuffer())
+                                            && new Uint8Array(await blob.slice(0, 8).arrayBuffer())
+                                                .every((b, i) => [137, 80, 78, 71, 13, 10, 26, 10][i] === b)
+                                        if (contentType.includes("image/png") || isPngHeader) {
+                                            const objectUrl = URL.createObjectURL(blob)
+                                            await new Promise((resolve, reject) => {
+                                                imgCape.onload = () => {
+                                                    URL.revokeObjectURL(objectUrl)
+                                                    resolve(true)
+
+                                                    if (!(imgCape.width === 64 && imgCape.height === 32)
+                                                    && !(imgCape.width === 128 && imgCape.height === 64))
+                                                        lbl = 'Cape must be a 64x32 or 128x64 PNG'
+                                                    else {
+                                                        capeValid = true
+                                                        hasCape = true
+                                                    }
+                                                }
+                                                imgCape.onerror = () => {
+                                                    URL.revokeObjectURL(objectUrl)
+                                                    reject(false)
+                                                }
+                                                imgCape.src = objectUrl
+                                            })
+                                        }
+                                    }
+                                } catch {}
+                            }
+                        } catch {}
+
+                        if(!capeValid && lbl === '') {
+                            lbl = 'Failed to fetch preset cape: ' + document.getElementById('cape-preset-input').selectedOptions[0].text
+                        }
+
+                        document.getElementById('button-label').innerHTML = ''
+                    }
+                }
+                else {
+                    lbl = 'Failed to determine cape source'
+                }
+            }
+
+            if(lbl === '' && !(skinValid && capeValid))
+                lbl = 'Failed to validate inputs'
+
+            document.getElementById('button-label').innerHTML = lbl
+
+            if(skinValid && capeValid) {
+                document.getElementById('button-label').innerHTML = 'Loading...'
+
+                const inputWidth = imgSkin.width
+                const inputHeight = imgSkin.height
+                const upscale = Math.floor((vanillaSkinWidth*pixelScale) / inputWidth)
+
+                const offset = Math.floor(pixelScale / 4)
                 const offset_3d_all = document.getElementById('shift-3d').value === 'all'
                 const offset_3d_head = offset_3d_all || document.getElementById('shift-3d').value === 'head'
 
-                const srcCanvas = document.createElement('canvas')
-                srcCanvas.width = 512
-                srcCanvas.height = 512
-                const srcCtx = srcCanvas.getContext('2d')
+                const canvasSkin = document.createElement('canvas')
+                canvasSkin.width = vanillaSkinWidth*pixelScale
+                canvasSkin.height = vanillaSkinHeight*pixelScale
+                const srcCtx = canvasSkin.getContext('2d')
 
                 const tmpCanvas = document.createElement('canvas')
                 tmpCanvas.width = inputWidth
                 tmpCanvas.height = inputHeight
                 const tmpCtx = tmpCanvas.getContext('2d')
-                tmpCtx.drawImage(img, 0, 0)
+                tmpCtx.drawImage(imgSkin, 0, 0)
                 const originalImageData = tmpCtx.getImageData(0, 0, inputWidth, inputHeight)
-                const scaledImageData = srcCtx.createImageData(512, 512)
+                const scaledImageData = srcCtx.createImageData(vanillaSkinWidth*pixelScale, vanillaSkinHeight*pixelScale)
 
                 for (let y = 0; y < inputHeight; y++) {
                     for (let x = 0; x < inputWidth; x++) {
@@ -251,7 +690,7 @@
 
                         for (let dy = 0; dy < upscale; dy++) {
                             for (let dx = 0; dx < upscale; dx++) {
-                                const scaledIndex = ((y * upscale + dy) * 512 + (x * upscale + dx)) * 4
+                                const scaledIndex = ((y * upscale + dy) * vanillaSkinWidth*pixelScale + (x * upscale + dx)) * 4
                                 scaledImageData.data[scaledIndex] = r
                                 scaledImageData.data[scaledIndex + 1] = g
                                 scaledImageData.data[scaledIndex + 2] = b
@@ -262,190 +701,182 @@
                 }
                 srcCtx.putImageData(scaledImageData, 0, 0)
 
-                let srcCapeCanvas;
+                let canvasCape
                 if (hasCape) {
-                    srcCapeCanvas = document.createElement('canvas');
-                    srcCapeCanvas.width = 512;
-                    srcCapeCanvas.height = 256;
-                    const capeCtx = srcCapeCanvas.getContext('2d');
+                    canvasCape = document.createElement('canvas')
+                    canvasCape.width = vanillaCapeWidth*pixelScale
+                    canvasCape.height = vanillaCapeHeight*pixelScale
+                    const capeCtx = canvasCape.getContext('2d')
 
-                    const capeWidth = imgCape.width;
-                    const capeHeight = imgCape.height;
-                    const capeUpscale = 512 / capeWidth; // 512 width scale
-                    const tmpCapeCanvas = document.createElement('canvas');
-                    tmpCapeCanvas.width = capeWidth;
-                    tmpCapeCanvas.height = capeHeight;
-                    const tmpCapeCtx = tmpCapeCanvas.getContext('2d');
-                    tmpCapeCtx.drawImage(imgCape, 0, 0);
-                    const capeData = tmpCapeCtx.getImageData(0, 0, capeWidth, capeHeight);
-                    const scaledCapeData = capeCtx.createImageData(512, 256);
+                    const capeWidth = imgCape.width
+                    const capeHeight = imgCape.height
+                    const capeUpscale = Math.floor(vanillaCapeWidth*pixelScale / capeWidth)
+                    const tmpCapeCanvas = document.createElement('canvas')
+                    tmpCapeCanvas.width = capeWidth
+                    tmpCapeCanvas.height = capeHeight
+                    const tmpCapeCtx = tmpCapeCanvas.getContext('2d')
+                    tmpCapeCtx.drawImage(imgCape, 0, 0)
+                    const capeData = tmpCapeCtx.getImageData(0, 0, capeWidth, capeHeight)
+                    const scaledCapeData = capeCtx.createImageData(vanillaCapeWidth*pixelScale, vanillaCapeHeight*pixelScale)
 
                     for (let y = 0; y < capeHeight; y++) {
                         for (let x = 0; x < capeWidth; x++) {
-                            const index = (y * capeWidth + x) * 4;
-                            const r = capeData.data[index];
-                            const g = capeData.data[index + 1];
-                            const b = capeData.data[index + 2];
-                            const a = capeData.data[index + 3];
+                            const index = (y * capeWidth + x) * 4
+                            const r = capeData.data[index]
+                            const g = capeData.data[index + 1]
+                            const b = capeData.data[index + 2]
+                            const a = capeData.data[index + 3]
 
                             for (let dy = 0; dy < capeUpscale; dy++) {
                                 for (let dx = 0; dx < capeUpscale; dx++) {
-                                    const scaledIndex = ((y * capeUpscale + dy) * 512 + (x * capeUpscale + dx)) * 4;
-                                    scaledCapeData.data[scaledIndex] = r;
-                                    scaledCapeData.data[scaledIndex + 1] = g;
-                                    scaledCapeData.data[scaledIndex + 2] = b;
-                                    scaledCapeData.data[scaledIndex + 3] = a;
+                                    const scaledIndex = ((y * capeUpscale + dy) * vanillaCapeWidth*pixelScale + (x * capeUpscale + dx)) * 4
+                                    scaledCapeData.data[scaledIndex] = r
+                                    scaledCapeData.data[scaledIndex + 1] = g
+                                    scaledCapeData.data[scaledIndex + 2] = b
+                                    scaledCapeData.data[scaledIndex + 3] = a
                                 }
                             }
                         }
                     }
-                    capeCtx.putImageData(scaledCapeData, 0, 0);
+                    capeCtx.putImageData(scaledCapeData, 0, 0)
                 }
 
                 const canvas = document.getElementById('canvas')
-                canvas.width = 595
-                canvas.height = 770
+                canvas.width = outputWidth
+                canvas.height = outputHeight
                 const ctx = canvas.getContext('2d')
                 ctx.clearRect(0, 0, canvas.width, canvas.height)
                 ctx.imageSmoothingEnabled = false
                 ctx.globalCompositeOperation = 'source-over'
 
-                const head_x = 20
-                const head_y = 10
-                const body_x = 20
-                const body_y = 220
-                const arm_left_x = 20
-                const arm_left_y = 400
-                const arm_right_x = 300
-                const arm_right_y = 400
-                const leg_left_x = 20
-                const leg_left_y = 600
-                const leg_right_x = 300
-                const leg_right_y = 600
-                const cape_x = 300
-                const cape_y = 10
+                const spacing = Math.floor(outputWidth / 40)
+
+                const head_x = spacing
+                const head_y = spacing
+                const body_x = spacing
+                const body_y = spacing + (24*pixelScale + spacing)
+                const arm_left_x = spacing
+                const arm_left_y = spacing + (24*pixelScale + spacing) + (20*pixelScale + spacing)
+                const arm_right_x = Math.floor(outputWidth / 2) + spacing
+                const arm_right_y = spacing + (24*pixelScale + spacing) + (20*pixelScale + spacing)
+                const leg_left_x = spacing
+                const leg_left_y = spacing + (24*pixelScale + spacing) + (20*pixelScale + spacing) + (20*pixelScale + spacing)
+                const leg_right_x = Math.floor(outputWidth / 2) + spacing
+                const leg_right_y = spacing + (24*pixelScale + spacing) + (20*pixelScale + spacing) + (20*pixelScale + spacing)
+                const cape_x = Math.floor(outputWidth / 2) + spacing
+                const cape_y = spacing
 
                 const ops = [
-                    { input: { x: 0, y: 8, dx: 32, dy: 8 }, output: { x: head_x, y: head_y+8*8 }, color:"0xFF000000" },
-                    { input: { x: 8, y: 0, dx: 8, dy: 8 }, output: { x: head_x+8*8, y: head_y }, color:"0xFF000000" },
-                    { input: { x: 16, y: 0, dx: 8, dy: -8 }, output: { x: head_x+8*8, y: head_y+16*8 }, color:"0xFF000000" },
-                    { input: { x: 0, y: 8, dx: 32, dy: 8 }, output: { x: head_x, y: head_y+8*8 } },
-                    { input: { x: 8, y: 0, dx: 8, dy: 8 }, output: { x: head_x+8*8, y: head_y } },
-                    { input: { x: 16, y: 0, dx: 8, dy: -8 }, output: { x: head_x+8*8, y: head_y+16*8 } },
-                    { input: { x: 0+32, y: 8, dx: 32, dy: 8 }, output: { x: head_x, y: head_y+8*8, offset_y: offset_3d_head ? offset : 0 } },
-                    { input: { x: 8+32, y: 0, dx: 8, dy: 8 }, output: { x: head_x+8*8, y: head_y } },
-                    { input: { x: 16+32, y: 0, dx: 8, dy: -8 }, output: { x: head_x+8*8, y: head_y+16*8 } },
+                    { input: { x: 0, y: 8, dx: 32, dy: 8 }, output: { x: head_x, y: head_y+8*pixelScale },
+                        background: "0xFF000000", layer: { dx: 32, offset_y: offset_3d_head ? offset : 0 } },
+                    { input: { x: 8, y: 0, dx: 8, dy: 8 }, output: { x: head_x+8*pixelScale, y: head_y },
+                        background: "0xFF000000", layer: { dx: 32 } },
+                    { input: { x: 16, y: 0, dx: 8, dy: -8 }, output: { x: head_x+8*pixelScale, y: head_y+16*pixelScale },
+                        background: "0xFF000000", layer: { dx: 32 } },
 
-                    { input: { x: 16, y: 20, dx: 24, dy: 12 }, output: { x: body_x, y: body_y+4*8 }, color:"0xFF000000" },
-                    { input: { x: 20, y: 16, dx: 8, dy: 4 }, output: { x: body_x+4*8, y: body_y }, color:"0xFF000000" },
-                    { input: { x: 28, y: 16, dx: 8, dy: -4 }, output: { x: body_x+4*8, y: body_y+16*8 }, color:"0xFF000000" },
-                    { input: { x: 16, y: 20, dx: 24, dy: 12 }, output: { x: body_x, y: body_y+4*8 } },
-                    { input: { x: 20, y: 16, dx: 8, dy: 4 }, output: { x: body_x+4*8, y: body_y } },
-                    { input: { x: 28, y: 16, dx: 8, dy: -4 }, output: { x: body_x+4*8, y: body_y+16*8 } },
-                    { input: { x: 16, y: 20+16, dx: 24, dy: 12 }, output: { x: body_x, y: body_y+4*8, offset_y: offset_3d_all ? offset : 0 } },
-                    { input: { x: 20, y: 16+16, dx: 8, dy: 4 }, output: { x: body_x+4*8, y: body_y } },
-                    { input: { x: 28, y: 16+16, dx: 8, dy: -4 }, output: { x: body_x+4*8, y: body_y+16*8 } },
+                    { input: { x: 16, y: 20, dx: 24, dy: 12 }, output: { x: body_x, y: body_y+4*pixelScale },
+                        background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset : 0 } },
+                    { input: { x: 20, y: 16, dx: 8, dy: 4 }, output: { x: body_x+4*pixelScale, y: body_y },
+                        background: "0xFF000000", layer: { dy: 16 } },
+                    { input: { x: 28, y: 16, dx: 8, dy: -4 }, output: { x: body_x+4*pixelScale, y: body_y+16*pixelScale },
+                        background: "0xFF000000", layer: { dy: 16 } },
 
-                    { input: { x: 40, y: 20, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: arm_right_x, y: arm_right_y+4*8 }, color:"0xFF000000" },
-                    { input: { x: 44, y: 16, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: arm_right_x+4*8, y: arm_right_y }, color:"0xFF000000" },
-                    { input: { x: 48 - (slim ? 1 : 0), y: 16, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: arm_right_x+4*8, y: arm_right_y+16*8 }, color:"0xFF000000" },
-                    { input: { x: 40, y: 20, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: arm_right_x, y: arm_right_y+4*8 } },
-                    { input: { x: 44, y: 16, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: arm_right_x+4*8, y: arm_right_y } },
-                    { input: { x: 48 - (slim ? 1 : 0), y: 16, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: arm_right_x+4*8, y: arm_right_y+16*8 } },
-                    { input: { x: 40, y: 20+16, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: arm_right_x, y: arm_right_y+4*8, offset_y: offset_3d_all ? offset : 0 } },
-                    { input: { x: 44, y: 16+16, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: arm_right_x+4*8, y: arm_right_y } },
-                    { input: { x: 48, y: 16+16, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: arm_right_x+4*8, y: arm_right_y+16*8 } },
+                    { input: { x: 40, y: 20, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: arm_right_x, y: arm_right_y+4*pixelScale },
+                        background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset : 0 } },
+                    { input: { x: 44, y: 16, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: arm_right_x+4*pixelScale, y: arm_right_y },
+                        background: "0xFF000000", layer: { dy: 16 } },
+                    { input: { x: 48 - (slim ? 1 : 0), y: 16, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: arm_right_x+4*pixelScale, y: arm_right_y+16*pixelScale },
+                        background: "0xFF000000", layer: { dy: 16 } },
 
-                    { input: { x: 32, y: 52, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: arm_left_x, y: arm_left_y+4*8 }, color:"0xFF000000" },
-                    { input: { x: 36, y: 48, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: arm_left_x+4*8, y: arm_left_y }, color:"0xFF000000" },
-                    { input: { x: 40 - (slim ? 1 : 0), y: 48, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: arm_left_x+4*8, y: arm_left_y+16*8 }, color:"0xFF000000" },
-                    { input: { x: 32, y: 52, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: arm_left_x, y: arm_left_y+4*8 } },
-                    { input: { x: 36, y: 48, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: arm_left_x+4*8, y: arm_left_y } },
-                    { input: { x: 40 - (slim ? 1 : 0), y: 48, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: arm_left_x+4*8, y: arm_left_y+16*8 } },
-                    { input: { x: 32+16, y: 52, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: arm_left_x, y: arm_left_y+4*8, offset_y: offset_3d_all ? offset : 0 } },
-                    { input: { x: 36+16, y: 48, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: arm_left_x+4*8, y: arm_left_y } },
-                    { input: { x: 40+16, y: 48, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: arm_left_x+4*8, y: arm_left_y+16*8 } },
+                    { input: { x: 32, y: 52, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: arm_left_x, y: arm_left_y+4*pixelScale },
+                        background: "0xFF000000", layer: { dx: 16, offset_y: offset_3d_all ? offset : 0 } },
+                    { input: { x: 36, y: 48, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: arm_left_x+4*pixelScale, y: arm_left_y },
+                        background: "0xFF000000", layer: { dx: 16 } },
+                    { input: { x: 40 - (slim ? 1 : 0), y: 48, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: arm_left_x+4*pixelScale, y: arm_left_y+16*pixelScale },
+                        background: "0xFF000000", layer: { dx: 16 } },
 
-                    { input: { x: 0, y: 20, dx: 16, dy: 12 }, output: { x: leg_right_x, y: leg_right_y+4*8 }, color:"0xFF000000" },
-                    { input: { x: 4, y: 16, dx: 4, dy: 4 }, output: { x: leg_right_x+4*8, y: leg_right_y }, color:"0xFF000000" },
-                    { input: { x: 8, y: 16, dx: 4, dy: -4 }, output: { x: leg_right_x+4*8, y: leg_right_y+16*8 }, color:"0xFF000000" },
-                    { input: { x: 0, y: 20, dx: 16, dy: 12 }, output: { x: leg_right_x, y: leg_right_y+4*8 } },
-                    { input: { x: 4, y: 16, dx: 4, dy: 4 }, output: { x: leg_right_x+4*8, y: leg_right_y } },
-                    { input: { x: 8, y: 16, dx: 4, dy: -4 }, output: { x: leg_right_x+4*8, y: leg_right_y+16*8 } },
-                    { input: { x: 0, y: 20+16, dx: 16, dy: 12 }, output: { x: leg_right_x, y: leg_right_y+4*8, offset_y: offset_3d_all ? offset : 0  } },
-                    { input: { x: 4, y: 16+16, dx: 4, dy: 4 }, output: { x: leg_right_x+4*8, y: leg_right_y } },
-                    { input: { x: 8, y: 16+16, dx: 4, dy: -4 }, output: { x: leg_right_x+4*8, y: leg_right_y+16*8 } },
+                    { input: { x: 0, y: 20, dx: 16, dy: 12 }, output: { x: leg_right_x, y: leg_right_y+4*pixelScale },
+                        background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset : 0 } },
+                    { input: { x: 4, y: 16, dx: 4, dy: 4 }, output: { x: leg_right_x+4*pixelScale, y: leg_right_y },
+                        background: "0xFF000000", layer: { dy: 16 } },
+                    { input: { x: 8, y: 16, dx: 4, dy: -4 }, output: { x: leg_right_x+4*pixelScale, y: leg_right_y+16*pixelScale },
+                        background: "0xFF000000", layer: { dy: 16 } },
 
-                    { input: { x: 16, y: 52, dx: 16, dy: 12 }, output: { x: leg_left_x, y: leg_left_y+4*8 }, color:"0xFF000000" },
-                    { input: { x: 20, y: 48, dx: 4, dy: 4 }, output: { x: leg_left_x+4*8, y: leg_left_y }, color:"0xFF000000" },
-                    { input: { x: 24, y: 48, dx: 4, dy: -4 }, output: { x: leg_left_x+4*8, y: leg_left_y+16*8 }, color:"0xFF000000" },
-                    { input: { x: 16, y: 52, dx: 16, dy: 12 }, output: { x: leg_left_x, y: leg_left_y+4*8 } },
-                    { input: { x: 20, y: 48, dx: 4, dy: 4 }, output: { x: leg_left_x+4*8, y: leg_left_y } },
-                    { input: { x: 24, y: 48, dx: 4, dy: -4 }, output: { x: leg_left_x+4*8, y: leg_left_y+16*8 } },
-                    { input: { x: 16-16, y: 52, dx: 16, dy: 12 }, output: { x: leg_left_x, y: leg_left_y+4*8, offset_y: offset_3d_all ? offset : 0  } },
-                    { input: { x: 20-16, y: 48, dx: 4, dy: 4 }, output: { x: leg_left_x+4*8, y: leg_left_y } },
-                    { input: { x: 24-16, y: 48, dx: 4, dy: -4 }, output: { x: leg_left_x+4*8, y: leg_left_y+16*8 } },
+                    { input: { x: 16, y: 52, dx: 16, dy: 12 }, output: { x: leg_left_x, y: leg_left_y+4*pixelScale },
+                        background: "0xFF000000", layer: { dx: -16, offset_y: offset_3d_all ? offset : 0  } },
+                    { input: { x: 20, y: 48, dx: 4, dy: 4 }, output: { x: leg_left_x+4*pixelScale, y: leg_left_y },
+                        background: "0xFF000000", layer: { dx: -16 } },
+                    { input: { x: 24, y: 48, dx: 4, dy: -4 }, output: { x: leg_left_x+4*pixelScale, y: leg_left_y+16*pixelScale },
+                        background: "0xFF000000", layer: { dx: -16 } },
 
-                    { input: { file:"cape", x: 0, y: 1, dx: 22, dy: 16 }, output: { x: cape_x, y: cape_y+1*8 }, color:"0xFF000000" },
-                    { input: { file:"cape", x: 1, y: 0, dx: 10, dy: 1 }, output: { x: cape_x+1*8, y: cape_y }, color:"0xFF000000" },
-                    { input: { file:"cape", x: 11, y: 0, dx: 10, dy: -1 }, output: { x: cape_x+1*8, y: cape_y+17*8 }, color:"0xFF000000" },
-                    { input: { file:"cape", x: 0, y: 1, dx: 22, dy: 16 }, output: { x: cape_x, y: cape_y+1*8 } },
-                    { input: { file:"cape", x: 1, y: 0, dx: 10, dy: 1 }, output: { x: cape_x+1*8, y: cape_y } },
-                    { input: { file:"cape", x: 11, y: 0, dx: 10, dy: -1 }, output: { x: cape_x+1*8, y: cape_y+17*8 } },
+                    {  file:"cape", input: { x: 0, y: 1, dx: 22, dy: 16 }, output: { x: cape_x, y: cape_y+1*pixelScale },
+                        background: "0xFF000000" },
+                    {  file:"cape", input: { x: 1, y: 0, dx: 10, dy: 1 }, output: { x: cape_x+1*pixelScale, y: cape_y },
+                        background: "0xFF000000" },
+                    {  file:"cape", input: { x: 11, y: 0, dx: 10, dy: -1 }, output: { x: cape_x+1*pixelScale, y: cape_y+17*pixelScale },
+                        background: "0xFF000000" },
                 ]
 
                 for (const op of ops) {
-                    let sourceCanvas = srcCanvas;
-                    if (op.input.file === "cape") {
-                        if (!hasCape) {
-                            ctx.restore();
-                            continue; // skip this op entirely
-                        }
-                        sourceCanvas = srcCapeCanvas;
+                    if (op.file === "cape" && !hasCape)
+                        continue
+
+                    const sourceCanvas = op.file === "cape" ? canvasCape : canvasSkin
+
+                    const inputX = op.input.x * pixelScale
+                    const inputY = op.input.y * pixelScale
+                    const inputW = op.input.dx * pixelScale
+                    const inputH = op.input.dy * pixelScale
+
+                    const outputX = op.output.x
+                    const outputY = op.output.y
+                    const outputW = Math.abs(inputW)
+                    const outputH = Math.abs(inputH)
+
+                    ctx.save()
+                    ctx.beginPath()
+                    ctx.rect(outputX, outputY, outputW, outputH)
+                    ctx.clip()
+
+                    ctx.translate(outputX + (inputW < 0 ? outputW : 0), outputY + (inputH < 0 ? outputH : 0))
+                    ctx.scale(inputW < 0 ? -1 : 1, inputH < 0 ? -1 : 1)
+
+                    if (op.background) {
+                        const argb = parseInt(op.background)
+                        const a = ((argb >> 24) & 0xFF) / 255
+                        const r = (argb >> 16) & 0xFF
+                        const g = (argb >> 8) & 0xFF
+                        const b = argb & 0xFF
+                        ctx.fillStyle = `rgba(${r},${g},${b},${a})`
+                        ctx.fillRect(0, 0, outputW, outputH)
                     }
 
-                    const sx = op.input.x * 8;
-                    const sy = op.input.y * 8;
-                    const sw = op.input.dx * 8;
-                    const sh = op.input.dy * 8;
-                    const dx = op.output.x;
-                    const dy = op.output.y;
-                    const dw = Math.abs(sw);
-                    const dh = Math.abs(sh);
+                    ctx.drawImage(sourceCanvas, inputX, inputY, outputW, outputH, 0, 0, outputW, outputH)
 
-                    const ox = (op.output.offset_x || 0);
-                    const oy = (op.output.offset_y || 0);
+                    if (op.layer) {
+                        const layerInputX = (op.input.x + (op.layer.dx ?? 0)) * pixelScale
+                        const layerInputY = (op.input.y + (op.layer.dy ?? 0)) * pixelScale
+                        const layerOffsetX = op.layer.offset_x ?? 0
+                        const layerOffsetY = op.layer.offset_y ?? 0
 
-                    ctx.save();
-
-                    ctx.beginPath();
-                    ctx.rect(dx, dy, dw, dh);
-                    ctx.clip();
-
-                    ctx.translate(dx + (sw < 0 ? dw : 0) + ox, dy + (sh < 0 ? dh : 0) + oy);
-                    ctx.scale(sw < 0 ? -1 : 1, sh < 0 ? -1 : 1);
-
-                    if (op.color) {
-                        const hex = op.color.toString(16).padStart(8, '0');
-                        const a = parseInt(hex.slice(0, 2), 16) / 255;
-                        const r = parseInt(hex.slice(2, 4), 16);
-                        const g = parseInt(hex.slice(4, 6), 16);
-                        const b = parseInt(hex.slice(6, 8), 16);
-                        ctx.fillStyle = `rgba(${r},${g},${b},${a})`;
-                        ctx.fillRect(0, 0, dw, dh);
-                    } else {
-                        ctx.drawImage(sourceCanvas, sx, sy, dw, dh, 0, 0, dw, dh);
+                        ctx.drawImage(sourceCanvas, layerInputX, layerInputY, outputW, outputH, layerOffsetX, layerOffsetY, outputW, outputH)
                     }
 
-                    ctx.restore();
+                    ctx.restore()
                 }
 
+                hasOutput = true
                 downloadLink.href = canvas.toDataURL('image/png')
-                downloadLink.download = imgName
+                downloadLink.download = outputFileName + ".png"
                 let newHtml = '<img src="'+canvas.toDataURL('image/png')+'" class="img-full">'
                 newHtml += '<br/><br/>'
                 newHtml += '<button class="button" onClick="download()" style="font-size:x-large">Download</button>'
                 document.getElementById('img-span').innerHTML = newHtml
+                document.getElementById('button-label').innerHTML = ''
+            }
+            else {
+                hasOutput = false
+                document.getElementById('img-span').innerHTML = ''
             }
         }
 
