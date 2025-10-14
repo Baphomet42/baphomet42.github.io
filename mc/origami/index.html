@@ -304,6 +304,14 @@
 
         }
 
+        function convertUrlHttps(url) {
+            if(typeof url !== 'string')
+                return null
+            if(url.startsWith('http:'))
+                return 'https:' + url.substring(5)
+            return url
+        }
+
         function openFile() {
             document.getElementById('file-input').click()
         }
@@ -459,9 +467,9 @@
                                 } catch {}
 
                                 if (propertiesData.textures && propertiesData.textures.SKIN && propertiesData.textures.SKIN.url) {
-                                    const skinUrl = propertiesData.textures.SKIN.url
+                                    const skinUrl = convertUrlHttps(propertiesData.textures.SKIN.url)
                                     const model = propertiesData.textures.SKIN.model // optional
-                                    const capeUrl = propertiesData.textures.CAPE?.url // optional
+                                    const capeUrl = convertUrlHttps(propertiesData.textures.CAPE?.url) // optional
 
                                     if(model === 'slim')
                                         slim = true
@@ -607,10 +615,11 @@
                         document.getElementById('button-label').innerHTML = 'Fetching cape...'
 
                         try {
-                            const parsedUrl = new URL(url)
+                            const capeUrl = convertUrlHttps(url)
+                            const parsedUrl = new URL(capeUrl)
                             if (parsedUrl.protocol === "http:" || parsedUrl.protocol === "https:") {
                                 try {
-                                    const response = await fetch(url)
+                                    const response = await fetch(capeUrl)
                                     if (response.ok) {
                                         const contentType = response.headers.get("content-type") || ""
                                         const blob = await response.blob()
