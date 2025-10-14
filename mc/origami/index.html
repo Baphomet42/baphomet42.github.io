@@ -36,8 +36,8 @@
                         </td>
                         <td class="card-wrap-third card-wrap-third-big">
                             <select id="skin-source" onchange="setSkinSource(this.value)" style="font-size:large">
-                                <option value="file">File</option>
                                 <option value="username">Username</option>
+                                <option value="file">File</option>
                             </select>
                         </td>
                         <td class="card-wrap-third card-wrap-third-small">
@@ -119,9 +119,9 @@
                         </td>
                         <td class="card-wrap-third card-wrap-third-big">
                             <select id="cape-source" onchange="setCapeSource(this.value)" style="font-size:large">
+                                <option value="username">Username</option>
                                 <option value="preset">Preset</option>
                                 <option value="file">File</option>
-                                <option value="username">Username</option>
                             </select>
                         </td>
                         <td class="card-wrap-third card-wrap-third-small">
@@ -205,6 +205,8 @@
         const vanillaCapeWidth = 64
         const vanillaCapeHeight = 32
 
+        const apiServer = 'http://34.10.149.93:8080/api'
+
         const pixelScale = 40 // must be even
         const outputWidthBase = 8.5
         const outputHeightBase = 11
@@ -221,8 +223,8 @@
         let hasOutput = false
 
         refreshCapePresets()
-        setSkinSource('file')
-        setCapeSource('preset')
+        setSkinSource('username')
+        setCapeSource('username')
 
         function setSkinSource(source) {
             document.getElementById('skin-source-file-mode').style.display = "none"
@@ -437,116 +439,107 @@
             else if(skinMode === 'username') {
                 usernameMode = true
                 let username = ''
+                let accessedApi = false
+                let apiEmpty = false
 
                 try {
                     username = document.getElementById('username-input').value.trim()
                     if (username !== '' && /^[A-Za-z0-9_]+$/.test(username)) {
                         document.getElementById('button-label').innerHTML = 'Fetching profile...'
                         try {
-                            const lookupResponse = await fetch('https://api.minecraftservices.com/minecraft/profile/lookup/name/' + username);
-                            if (lookupResponse.ok) {
-                                const lookupData = await lookupResponse.json()
-                                const playerId = lookupData.id
+                            const propertiesResponse = await fetch(apiServer + '/minecraft/properties/name/' + username);
+                            if (propertiesResponse.ok) {
+                                const propertiesData = await propertiesResponse.json()
                                 try {
-                                    const profileResponse = await fetch('https://sessionserver.mojang.com/session/minecraft/profile/' + playerId);
-                                    if (profileResponse.ok) {
-                                        const profileData = await profileResponse.json()
-                                        const propertiesArray = profileData.properties
-                                        if (Array.isArray(propertiesArray) && propertiesArray.length > 0) {
-                                            const base64Value = propertiesArray[0].value
-                                            try {
-                                                const decoded = JSON.parse(atob(base64Value))
-                                                if (decoded.textures && decoded.textures.SKIN && decoded.textures.SKIN.url) {
-                                                    const skinUrl = decoded.textures.SKIN.url
-                                                    const model = decoded.textures.SKIN.model // optional
-                                                    const capeUrl = decoded.textures.CAPE?.url // optional
-
-                                                    if(model === 'slim')
-                                                        slim = true
-
-                                                    if(skinUrl) {
-                                                        skinValid = true
-                                                        try {
-                                                            const parsedUrl = new URL(skinUrl)
-                                                            if (parsedUrl.protocol === "http:" || parsedUrl.protocol === "https:") {
-                                                                try {
-                                                                    const response = await fetch(skinUrl)
-                                                                    if (response.ok) {
-                                                                        const contentType = response.headers.get("content-type") || ""
-                                                                        const blob = await response.blob()
-
-                                                                        // Fallback: treat as PNG if content-type is missing but the data starts with PNG signature
-                                                                        const isPngHeader = (await blob.slice(0, 8).arrayBuffer())
-                                                                            && new Uint8Array(await blob.slice(0, 8).arrayBuffer())
-                                                                                .every((b, i) => [137, 80, 78, 71, 13, 10, 26, 10][i] === b)
-                                                                        if (contentType.includes("image/png") || isPngHeader) {
-                                                                            const objectUrl = URL.createObjectURL(blob)
-                                                                            await new Promise((resolve, reject) => {
-                                                                                imgSkin.onload = () => {
-                                                                                    URL.revokeObjectURL(objectUrl)
-                                                                                    resolve(true)
-
-                                                                                    if (!(fetchedProfileCapeImg.width === 64 && fetchedProfileCapeImg.height === 64)
-                                                                                    && !(fetchedProfileCapeImg.width === 128 && fetchedProfileCapeImg.height === 128))
-                                                                                        lbl = 'Skin must be a 64x64 or 128x128 PNG'
-                                                                                }
-                                                                                imgSkin.onerror = () => {
-                                                                                    URL.revokeObjectURL(objectUrl)
-                                                                                    reject(false)
-                                                                                }
-                                                                                imgSkin.src = objectUrl
-                                                                            })
-                                                                        }
-                                                                    }
-                                                                } catch {}
-                                                            }
-                                                        } catch {}
-                                                    }
-
-                                                    if(capeUrl) {
-                                                        fetchedProfileCapeExists = true
-                                                        try {
-                                                            const parsedUrl = new URL(capeUrl)
-                                                            if (parsedUrl.protocol === "http:" || parsedUrl.protocol === "https:") {
-                                                                try {
-                                                                    const response = await fetch(capeUrl)
-                                                                    if (response.ok) {
-                                                                        const contentType = response.headers.get("content-type") || ""
-                                                                        const blob = await response.blob()
-
-                                                                        // Fallback: treat as PNG if content-type is missing but the data starts with PNG signature
-                                                                        const isPngHeader = (await blob.slice(0, 8).arrayBuffer())
-                                                                            && new Uint8Array(await blob.slice(0, 8).arrayBuffer())
-                                                                                .every((b, i) => [137, 80, 78, 71, 13, 10, 26, 10][i] === b)
-                                                                        if (contentType.includes("image/png") || isPngHeader) {
-                                                                            const objectUrl = URL.createObjectURL(blob)
-                                                                            await new Promise((resolve, reject) => {
-                                                                                fetchedProfileCapeImg.onload = () => {
-                                                                                    URL.revokeObjectURL(objectUrl)
-                                                                                    resolve(true)
-
-                                                                                    if (!(fetchedProfileCapeImg.width === 64 && fetchedProfileCapeImg.height === 32)
-                                                                                    && !(fetchedProfileCapeImg.width === 128 && fetchedProfileCapeImg.height === 64))
-                                                                                        lbl = 'Cape must be a 64x32 or 128x64 PNG'
-                                                                                }
-                                                                                fetchedProfileCapeImg.onerror = () => {
-                                                                                    URL.revokeObjectURL(objectUrl)
-                                                                                    reject(false)
-                                                                                }
-                                                                                fetchedProfileCapeImg.src = objectUrl
-                                                                            })
-                                                                        }
-                                                                    }
-                                                                } catch {}
-                                                            }
-                                                        } catch {}
-                                                    }
-
-                                                }
-                                            } catch {}
-                                        }
+                                    if(propertiesData && typeof propertiesData === "object" && !Array.isArray(propertiesData)) {
+                                        accessedApi = true
+                                        if(Object.keys(propertiesData).length === 0)
+                                            apiEmpty = true
                                     }
                                 } catch {}
+
+                                if (propertiesData.textures && propertiesData.textures.SKIN && propertiesData.textures.SKIN.url) {
+                                    const skinUrl = propertiesData.textures.SKIN.url
+                                    const model = propertiesData.textures.SKIN.model // optional
+                                    const capeUrl = propertiesData.textures.CAPE?.url // optional
+
+                                    if(model === 'slim')
+                                        slim = true
+
+                                    if(skinUrl) {
+                                        skinValid = true
+                                        try {
+                                            const parsedUrl = new URL(skinUrl)
+                                            if (parsedUrl.protocol === "http:" || parsedUrl.protocol === "https:") {
+                                                try {
+                                                    const response = await fetch(skinUrl)
+                                                    if (response.ok) {
+                                                        const contentType = response.headers.get("content-type") || ""
+                                                        const blob = await response.blob()
+
+                                                        // Fallback: treat as PNG if content-type is missing but the data starts with PNG signature
+                                                        const isPngHeader = (await blob.slice(0, 8).arrayBuffer())
+                                                            && new Uint8Array(await blob.slice(0, 8).arrayBuffer())
+                                                                .every((b, i) => [137, 80, 78, 71, 13, 10, 26, 10][i] === b)
+                                                        if (contentType.includes("image/png") || isPngHeader) {
+                                                            const objectUrl = URL.createObjectURL(blob)
+                                                            await new Promise((resolve, reject) => {
+                                                                imgSkin.onload = () => {
+                                                                    URL.revokeObjectURL(objectUrl)
+                                                                    resolve(true)
+
+                                                                    if (!(fetchedProfileCapeImg.width === 64 && fetchedProfileCapeImg.height === 64)
+                                                                    && !(fetchedProfileCapeImg.width === 128 && fetchedProfileCapeImg.height === 128))
+                                                                        lbl = 'Skin must be a 64x64 or 128x128 PNG'
+                                                                }
+                                                                imgSkin.onerror = () => {
+                                                                    URL.revokeObjectURL(objectUrl)
+                                                                    reject(false)
+                                                                }
+                                                                imgSkin.src = objectUrl
+                                                            })
+                                                        }
+                                                    }
+                                                } catch {}
+                                            }
+                                        } catch {}
+                                    }
+
+                                    if(capeUrl) {
+                                        fetchedProfileCapeExists = true
+                                        try {
+                                            const parsedUrl = new URL(capeUrl)
+                                            if (parsedUrl.protocol === "http:" || parsedUrl.protocol === "https:") {
+                                                try {
+                                                    const response = await fetch(capeUrl)
+                                                    if (response.ok) {
+                                                        const contentType = response.headers.get("content-type") || ""
+                                                        const blob = await response.blob()
+
+                                                        // Fallback: treat as PNG if content-type is missing but the data starts with PNG signature
+                                                        const isPngHeader = (await blob.slice(0, 8).arrayBuffer())
+                                                            && new Uint8Array(await blob.slice(0, 8).arrayBuffer())
+                                                                .every((b, i) => [137, 80, 78, 71, 13, 10, 26, 10][i] === b)
+                                                        if (contentType.includes("image/png") || isPngHeader) {
+                                                            const objectUrl = URL.createObjectURL(blob)
+                                                            await new Promise((resolve, reject) => {
+                                                                fetchedProfileCapeImg.onload = () => {
+                                                                    URL.revokeObjectURL(objectUrl)
+                                                                    resolve(true)
+                                                                }
+                                                                fetchedProfileCapeImg.onerror = () => {
+                                                                    URL.revokeObjectURL(objectUrl)
+                                                                    reject(false)
+                                                                }
+                                                                fetchedProfileCapeImg.src = objectUrl
+                                                            })
+                                                        }
+                                                    }
+                                                } catch {}
+                                            }
+                                        } catch {}
+                                    }
+                                }
                             }
                         } catch {}
                     }
@@ -555,9 +548,15 @@
                     }
                 } catch {}
 
-                if(!skinValid && lbl === '') {
-                    lbl = 'Failed to fetch username: ' + username
+                if(lbl === '') {
+                    if(!accessedApi)
+                        lbl = 'Failed to access skin server proxy'
+                    else if(apiEmpty)
+                        lbl = 'Skin server proxy error'
+                    else if(!skinValid)
+                        lbl = 'Failed to fetch username: ' + username
                 }
+
                 document.getElementById('button-label').innerHTML = ''
             }
             else {
@@ -577,10 +576,7 @@
                     }
                 }
                 else if(capeMode === 'username') {
-                    if(!usernameMode) {
-                        lbl = 'Username cape source cannot be used without the username skin source'
-                    }
-                    else {
+                    if(usernameMode) {
                         if(fetchedProfileCapeExists) {
                             if (!(fetchedProfileCapeImg.width === 64 && fetchedProfileCapeImg.height === 32)
                             && !(fetchedProfileCapeImg.width === 128 && fetchedProfileCapeImg.height === 64))
@@ -595,6 +591,10 @@
                             capeValid = true
                             hasCape = false
                         }
+                    }
+                    else {
+                        capeValid = true
+                        hasCape = false
                     }
                 }
                 else if(capeMode === 'preset') {
