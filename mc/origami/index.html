@@ -448,7 +448,6 @@
                 usernameMode = true
                 let username = ''
                 let accessedApi = false
-                let apiEmpty = false
 
                 try {
                     username = document.getElementById('username-input').value.trim()
@@ -459,11 +458,8 @@
                             if (propertiesResponse.ok) {
                                 const propertiesData = await propertiesResponse.json()
                                 try {
-                                    if(propertiesData && typeof propertiesData === "object" && !Array.isArray(propertiesData)) {
+                                    if(propertiesData && typeof propertiesData === "object" && !Array.isArray(propertiesData))
                                         accessedApi = true
-                                        if(Object.keys(propertiesData).length === 0)
-                                            apiEmpty = true
-                                    }
                                 } catch {}
 
                                 if (propertiesData.textures && propertiesData.textures.SKIN && propertiesData.textures.SKIN.url) {
@@ -560,8 +556,6 @@
                 if(lbl === '') {
                     if(!accessedApi)
                         lbl = 'Failed to access skin server proxy'
-                    else if(apiEmpty)
-                        lbl = 'Skin server proxy error'
                     else if(!skinValid)
                         lbl = 'Failed to fetch username: ' + username
                 }
