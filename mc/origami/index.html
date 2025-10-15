@@ -468,7 +468,7 @@
 
                                 if (propertiesData.textures && propertiesData.textures.SKIN && propertiesData.textures.SKIN.url) {
                                     const skinUrl = convertUrlHttps(propertiesData.textures.SKIN.url)
-                                    const model = propertiesData.textures.SKIN.model // optional
+                                    const model = propertiesData.textures.SKIN.metadata?.model // optional
                                     const capeUrl = convertUrlHttps(propertiesData.textures.CAPE?.url) // optional
 
                                     if(model === 'slim')
