@@ -475,7 +475,6 @@
                                         slim = true
 
                                     if(skinUrl) {
-                                        skinValid = true
                                         try {
                                             const parsedUrl = new URL(skinUrl)
                                             if (parsedUrl.protocol === "http:" || parsedUrl.protocol === "https:") {
@@ -496,9 +495,11 @@
                                                                     URL.revokeObjectURL(objectUrl)
                                                                     resolve(true)
 
-                                                                    if (!(fetchedProfileCapeImg.width === 64 && fetchedProfileCapeImg.height === 64)
-                                                                    && !(fetchedProfileCapeImg.width === 128 && fetchedProfileCapeImg.height === 128))
+                                                                    if (!(imgSkin.width === 64 && imgSkin.height === 64)
+                                                                    && !(imgSkin.width === 128 && imgSkin.height === 128))
                                                                         lbl = 'Skin must be a 64x64 or 128x128 PNG'
+                                                                    else
+                                                                        skinValid = true
                                                                 }
                                                                 imgSkin.onerror = () => {
                                                                     URL.revokeObjectURL(objectUrl)
