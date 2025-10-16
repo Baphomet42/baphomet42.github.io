@@ -752,6 +752,11 @@
             "name": "Common",
             "description": "2025",
             "url": "http://textures.minecraft.net/texture/5ec930cdd2629c8771655c60eebeb867b4b6559b0e6d3bc71c40c96347fa03f0"
+        },
+        {
+            "name": "Copper",
+            "description": "2025",
+            "url": "http://textures.minecraft.net/texture/5e6f3193e74cd16cdd6637d9bae5484e3a37ff2a14c2d157c659a07810b1bdca"
         }
     ]
 }
