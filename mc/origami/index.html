@@ -31,16 +31,16 @@
                 <br/>
                 <table class="card-table">
                     <tr class="card-table-row">
-                        <td class="card-wrap-third card-wrap-third-small">
+                        <td class="card-wrap-third">
                             <label for="skin-source">Source:</label>
                         </td>
-                        <td class="card-wrap-third card-wrap-third-big">
+                        <td class="card-wrap-third">
                             <select id="skin-source" onchange="setSkinSource(this.value)" style="font-size:large">
                                 <option value="username">Username</option>
                                 <option value="file">File</option>
                             </select>
                         </td>
-                        <td class="card-wrap-third card-wrap-third-small">
+                        <td class="card-wrap-third">
                             <span id="skin-source-label"></span>
                         </td>
                     </tr>
@@ -48,29 +48,29 @@
                 <table class="card-table" id="skin-source-file-mode" style="display: none;">
                     <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
                     <tr class="card-table-row">
-                        <td class="card-wrap-third card-wrap-third-small">
+                        <td class="card-wrap-third">
                             <label for="file-input">File:</label>
                         </td>
-                        <td class="card-wrap-third card-wrap-third-big">
+                        <td class="card-wrap-third">
                             <input type="file" id="file-input" style="display: none;"/>
                             <button class="button" onClick="openFile()" style="font-size:x-large">Select Skin</button>
                         </td>
-                        <td class="card-wrap-third card-wrap-third-small">
+                        <td class="card-wrap-third">
                             <span id="file-label"></span>
                         </td>
                     </tr>
                     <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
                     <tr class="card-table-row">
-                        <td class="card-wrap-third card-wrap-third-small">
+                        <td class="card-wrap-third">
                             <label for="model">Model:</label>
                         </td>
-                        <td class="card-wrap-third card-wrap-third-big">
+                        <td class="card-wrap-third">
                             <select id="model" style="font-size:large">
                                 <option value="wide">Wide</option>
                                 <option value="slim">Slim</option>
                             </select>
                         </td>
-                        <td class="card-wrap-third card-wrap-third-small">
+                        <td class="card-wrap-third">
                             <span id="model-label"></span>
                         </td>
                     </tr>
@@ -78,13 +78,13 @@
                 </table>
                 <table class="card-table" id="skin-source-username-mode" style="display: none;">
                     <tr class="card-table-row">
-                        <td class="card-wrap-third card-wrap-third-small">
+                        <td class="card-wrap-third">
                             <label for="username-input">Username:</label>
                         </td>
-                        <td class="card-wrap-third card-wrap-third-big">
-                            <input id="username-input" style="font-size:large"/>
+                        <td class="card-wrap-third">
+                            <input id="username-input" onkeydown="if(event.key==='Enter') submit();" class="large-input" style="font-size:large"/>
                         </td>
-                        <td class="card-wrap-third card-wrap-third-small">
+                        <td class="card-wrap-third">
                             <span id="username-label"></span>
                         </td>
                     </tr>
@@ -92,17 +92,17 @@
                 <table class="card-table">
                     <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
                     <tr class="card-table-row">
-                        <td class="card-wrap-third card-wrap-third-small">
+                        <td class="card-wrap-third">
                             <label for="shift-3d">Offset 3D layer:</label>
                         </td>
-                        <td class="card-wrap-third card-wrap-third-big">
+                        <td class="card-wrap-third">
                             <select id="shift-3d" style="font-size:large">
                                 <option value="none">Off</option>
                                 <option value="head">Head</option>
                                 <option value="all">All</option>
                             </select>
                         </td>
-                        <td class="card-wrap-third card-wrap-third-small">
+                        <td class="card-wrap-third">
                             <span id="shift-label"></span>
                         </td>
                     </tr>
@@ -114,17 +114,17 @@
                 <br/>
                 <table class="card-table">
                     <tr class="card-table-row">
-                        <td class="card-wrap-third card-wrap-third-small">
+                        <td class="card-wrap-third">
                             <label for="cape-source">Source:</label>
                         </td>
-                        <td class="card-wrap-third card-wrap-third-big">
+                        <td class="card-wrap-third">
                             <select id="cape-source" onchange="setCapeSource(this.value)" style="font-size:large">
                                 <option value="username">Username</option>
                                 <option value="preset">Preset</option>
                                 <option value="file">File</option>
                             </select>
                         </td>
-                        <td class="card-wrap-third card-wrap-third-small">
+                        <td class="card-wrap-third">
                             <span id="cape-source-label"></span>
                         </td>
                     </tr>
@@ -132,15 +132,15 @@
                 <table class="card-table" id="cape-source-file-mode" style="display: none;">
                     <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
                     <tr class="card-table-row">
-                        <td class="card-wrap-third card-wrap-third-small">
+                        <td class="card-wrap-third">
                             <label for="file-cape-input">File:</label>
                         </td>
-                        <td class="card-wrap-third card-wrap-third-big">
+                        <td class="card-wrap-third">
                             <input type="file" id="file-cape-input" style="display: none;"/>
                             <button class="button" onClick="openFileCape()" style="font-size:x-large">Select Cape</button>
                             <button class="button" onClick="clearCape()" style="font-size:x-large">Clear</button>
                         </td>
-                        <td class="card-wrap-third card-wrap-third-small">
+                        <td class="card-wrap-third">
                             <span id="file-cape-label"></span>
                         </td>
                     </tr>
@@ -148,25 +148,25 @@
                 <table class="card-table" id="cape-source-username-mode" style="display: none;">
                     <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
                     <tr class="card-table-row">
-                        <td class="card-wrap-third card-wrap-third-small"></td>
-                        <td class="card-wrap-third card-wrap-third-big">
+                        <td class="card-wrap-third"></td>
+                        <td class="card-wrap-third">
                             <span>Cape will be fetched from the username set above, if present</span>
                         </td>
-                        <td class="card-wrap-third card-wrap-third-small"></td>
+                        <td class="card-wrap-third"></td>
                     </tr>
                 </table>
                 <table class="card-table" id="cape-source-preset-mode" style="display: none;">
                     <tr class="card-table-row"><td class="card-wrap-full"><br/></td></tr>
                     <tr class="card-table-row">
-                        <td class="card-wrap-third card-wrap-third-small">
+                        <td class="card-wrap-third">
                             <label for="cape-preset-input">Cape:</label>
                         </td>
-                        <td class="card-wrap-third card-wrap-third-big">
+                        <td class="card-wrap-third">
                             <select id="cape-preset-input" style="font-size:large">
                                 <option value="none">No cape</option>
                             </select>
                         </td>
-                        <td class="card-wrap-third card-wrap-third-small">
+                        <td class="card-wrap-third">
                             <span id="cape-preset-label"></span>
                         </td>
                     </tr>
@@ -178,11 +178,11 @@
                 <br/>
                 <table class="card-table">
                     <tr class="card-table-row">
-                        <td class="card-wrap-third card-wrap-third-small"></td>
-                        <td class="card-wrap-third card-wrap-third-big">
+                        <td class="card-wrap-third"></td>
+                        <td class="card-wrap-third">
                             <button class="button" onClick="submit()" style="font-size:x-large">Generate</button>
                         </td>
-                        <td class="card-wrap-third card-wrap-third-small"></td>
+                        <td class="card-wrap-third"></td>
                     </tr>
                 </table>
                 <br/>

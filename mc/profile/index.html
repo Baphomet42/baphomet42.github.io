@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/main/style.css">
+    <link rel="stylesheet" href="/mc/style.css">
+    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/71295013?v=4">
+    <link rel="apple-touch-icon" href="https://avatars.githubusercontent.com/u/71295013?v=4">
+    <title>Profile Resolver | BaphomethLabs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="/template/data-include.js"></script>
+</head>
+<body>
+    <article>
+        <div data-include="/mc/header" id="header"></div>
+
+        <table class="card-table"><tr class="card-table-row">
+
+            <td class="card-wrap-mid"><div class="card tooltip center">
+                <p class="item-header">Profile Resolver</p>
+                <br/>
+                <p class="item-subtitle">Resolve a profile component and view the encoded properties</p>
+            </div></td>
+
+            <td class="card-wrap-full"><div class="card tooltip center">
+                <p class="item-header">Profile Search</p>
+                <br/>
+                <table class="card-table">
+                    <tr class="card-table-row">
+                        <td class="card-wrap-third card-wrap-third-small">
+                            <select id="input-type" style="font-size:large">
+                                <option value="username">Username</option>
+                                <option value="uuid">Hex UUID</option>
+                            </select>
+                        </td>
+                        <td class="card-wrap-third card-wrap-third-big">
+                            <input id="input-box" onkeydown="if(event.key==='Enter') submit();" class="large-input" style="font-size:large"/>
+                        </td>
+                        <td class="card-wrap-third card-wrap-third-small">
+                            <button class="button" onClick="submit()" style="font-size:x-large">Search</button>
+                        </td>
+                    </tr>
+                </table>
+
+                <br/>
+                <span id="search-label" class="error"></span>
+            </td>
+            <td class="card-wrap-full" id="results-span" style="display: none;"><div class="card tooltip center">
+                <p class="item-header">Fetched Profile</p>
+                <br/>
+                <br/>
+                <table class="card-table">
+                    <tr class="card-table-row">
+                        <td class="card-wrap-third">
+                            <label for="profile-component-output">Profile component:</label>
+                        </td>
+                        <td class="card-wrap-third">
+                            <button class="button" onClick="copyProfileComponent()" style="font-size:x-large">Copy Component</button>
+                        </td>
+                    </tr>
+                    <tr class="card-table-row">
+                        <td class="card-wrap-full">
+                            <textarea class="text-box" id="profile-component-output" spellcheck="false"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <br/>
+                <table class="card-table">
+                    <tr class="card-table-row">
+                        <td class="card-wrap-third">
+                            <label for="properties-box">Decoded properties:</label>
+                        </td>
+                        <td class="card-wrap-third">
+                            <button class="button" onClick="copyProfileProperties()" style="font-size:x-large">Copy Properties</button>
+                        </td>
+                    </tr>
+                    <tr class="card-table-row">
+                        <td class="card-wrap-full">
+                            <textarea class="text-box" id="properties-box" spellcheck="false"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <br/>
+                <table class="card-table">
+                    <tr class="card-table-row">
+                        <td class="card-wrap-third">
+                            <span id="skin-img-span"></span>
+                        </td>
+                        <td class="card-wrap-third">
+                            <span id="cape-img-span"></span>
+                        </td>
+                    </tr>
+                    <tr class="card-table-row">
+                        <td class="card-wrap-third">
+                            <canvas id="skin-canvas" style="display: none"></canvas>
+                            <span id="skin-img-download-span"></span>
+                        </td>
+                        <td class="card-wrap-third">
+                            <canvas id="cape-canvas" style="display: none"></canvas>
+                            <span id="cape-img-download-span"></span>
+                        </td>
+                    </tr>
+                </table>
+            </div></td>
+
+        </tr></table>
+
+    </article>
+    <div data-include="/template/footer" id="footer"></div>
+
+    <script>
+        const apiServer = 'https://silcrow-209748932377.us-central1.run.app/api'
+
+        function convertUrlHttps(url) {
+            if(typeof url !== 'string')
+                return null
+            if(url.startsWith('http:'))
+                return 'https:' + url.substring(5)
+            return url
+        }
+
+        function copyProfileComponent() {
+            let input = document.getElementById('profile-component-output')
+            navigator.clipboard.writeText(input.value)
+        }
+
+        function copyProfileProperties() {
+            let input = document.getElementById('properties-box')
+            navigator.clipboard.writeText(input.value)
+        }
+
+        async function submit() {
+            document.getElementById('search-label').innerHTML = ''
+            document.getElementById('skin-img-span').innerHTML = ''
+            document.getElementById('cape-img-span').innerHTML = ''
+            document.getElementById('results-span').style.display = "none"
+            lbl = ''
+
+            const searchInput = document.getElementById('input-box').value.trim()
+            let searchModeName = 'username'
+            let uuidMode = false
+            if(document.getElementById('input-type').value === 'uuid') {
+                searchModeName = 'UUID'
+                uuidMode = true
+            }
+
+            if (searchInput === '')
+                lbl = 'Enter a valid ' + searchModeName
+            else if ((!uuidMode && /^[A-Za-z0-9_]+$/.test(searchInput)) || (uuidMode && /^[A-Fa-f0-9-]+$/.test(searchInput))) {
+                let accessedApi = false
+                let success = false
+                document.getElementById('search-label').innerHTML = 'Fetching profile...'
+                try {
+                    let apiSearchType = uuidMode ? 'uuid/' : 'name/'
+                    const profileResponse = await fetch(apiServer + '/minecraft/profile/' + apiSearchType + searchInput);
+                    if (profileResponse.ok) {
+                        const profileData = await profileResponse.json()
+                        try {
+                            if(profileData && typeof profileData === "object" && !Array.isArray(profileData))
+                                accessedApi = true
+                        } catch {}
+
+                        if (profileData.name && typeof profileData.name === 'string' && profileData.id && typeof profileData.id === 'string') {
+
+                            lbl = 'Failed to parse profile UUID'
+
+                            let uuid = profileData.id
+                            if(uuid.length===32) {
+                                uuid = uuid.substring(0,8)+'-'+uuid.substring(8,12)+'-'+uuid.substring(12,16)+'-'+uuid.substring(16,20)+'-'+uuid.substring(20,32)
+                            }
+
+                            if(uuid.length===36 && uuid[8]==='-' && uuid[13]==='-' && uuid[18]==='-' && uuid[23]==='-') {
+                                success = true
+                                lbl = 'Failed to fetch skin properties'
+
+                                let profileCompound = '{'
+
+                                profileCompound += 'name:"' + profileData.name + '",'
+                                profileCompound += 'id:'
+
+                                let arr = [0,0,0,0]
+                                let uuidHex = uuid.substring(0,8)
+                                    + uuid.substring(9,13)
+                                    + uuid.substring(14,18)
+                                    + uuid.substring(19,23)
+                                    + uuid.substring(24,36)
+                                for(let i=0; i<4; i++) {
+                                    arr[i] = parseInt(uuidHex.substring(i*8,i*8+8), 16)
+                                    if(arr[i]>2147483647) {
+                                        arr[i] -= 2147483648
+                                        arr[i] += -2147483648
+                                    }
+                                }
+                                profileCompound += '[I;'+arr[0]+','+arr[1]+','+arr[2]+','+arr[3]+']'
+
+                                try {
+                                    if (profileData.properties && Array.isArray(profileData.properties) && profileData.properties.length === 1) {
+
+                                        let propertiesEntry = profileData.properties[0]
+
+                                        if(propertiesEntry.name && propertiesEntry.name === 'textures' && propertiesEntry.value && typeof propertiesEntry.value === 'string') {
+                                            const propertiesDecoded = atob(propertiesEntry.value)
+                                            const propertiesData = JSON.parse(propertiesDecoded)
+                                            if (propertiesData.textures && propertiesData.textures.SKIN && propertiesData.textures.SKIN.url) {
+                                                const skinUrl = convertUrlHttps(propertiesData.textures.SKIN.url)
+                                                const capeUrl = convertUrlHttps(propertiesData.textures.CAPE?.url) // optional
+
+                                                if (skinUrl) {
+                                                    profileCompound += ',properties:[{name:"textures",value:"'+propertiesEntry.value+'"}]'
+                                                    document.getElementById('properties-box').value = propertiesDecoded
+
+                                                    document.getElementById('skin-img-span').innerHTML = '<img src="'+skinUrl+'" class="img-full">'
+                                                    document.getElementById('skin-img-download-span').innerHTML
+                                                        = '<a class="button" href="'+skinUrl+'" rel="noopener noreferrer" target="_blank" style="font-size:x-large">Download Skin</a>'
+
+                                                    if (capeUrl) {
+                                                        document.getElementById('cape-img-span').innerHTML = '<img src="'+capeUrl+'" class="img-full">'
+                                                        document.getElementById('cape-img-download-span').innerHTML
+                                                            = '<a class="button" href="'+capeUrl+'" rel="noopener noreferrer" target="_blank" style="font-size:x-large">Download Cape</a>'
+                                                    }
+                                                    lbl = ''
+                                                }
+                                            }
+                                        }
+                                    }
+                                } catch {}
+
+                                profileCompound += '}'
+                                document.getElementById('results-span').style.display = ''
+                                document.getElementById('profile-component-output').value = profileCompound
+                            }
+                        }
+                    }
+                } catch {}
+
+                if(lbl === '') {
+                    if(!accessedApi)
+                        lbl = 'Failed to access skin server proxy'
+                    else if(!success)
+                        lbl = 'Failed to fetch ' + searchModeName + ': ' + searchInput
+                }
+            }
+            else {
+                lbl = 'Invalid ' + searchModeName
+            }
+
+            document.getElementById('search-label').innerHTML = lbl
+        }
+
+    </script>
+
+</body>
+</html>
