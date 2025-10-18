@@ -734,7 +734,16 @@
                         ctx.putImageData(hatData, imgSkin.width / 2, 0)
                     }
 
-                    function copyRegion(srcX, srcY, destDX, destDY, width, height, mirrorX = false, mirrorY = false) {
+                    const legacyCoordScale = imgSkin.width / vanillaSkinWidth
+
+                    function copyRegion(inpSrcX, inpSrcY, inpDestDX, inpDestDY, inpWidth, inpHeight, mirrorX = false, mirrorY = false) {
+                        const srcX = inpSrcX * legacyCoordScale
+                        const srcY = inpSrcY * legacyCoordScale
+                        const destDX = inpDestDX * legacyCoordScale
+                        const destDY = inpDestDY * legacyCoordScale
+                        const width = inpWidth * legacyCoordScale
+                        const height = inpHeight * legacyCoordScale
+
                         const imageData = ctx.getImageData(srcX, srcY, width, height);
                         const out = ctx.createImageData(width, height);
                         const src = imageData.data;
