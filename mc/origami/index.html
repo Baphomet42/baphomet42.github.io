@@ -82,7 +82,7 @@
                             <label for="username-input">Username:</label>
                         </td>
                         <td class="card-wrap-third">
-                            <input id="username-input" onkeydown="if(event.key==='Enter') submit();" class="large-input" style="font-size:large"/>
+                            <input id="username-input" onkeydown="if(event.key==='Enter') submitAndScroll();" class="large-input" style="font-size:large"/>
                         </td>
                         <td class="card-wrap-third">
                             <span id="username-label"></span>
@@ -431,6 +431,11 @@
             else {
                 document.getElementById('file-cape-label').innerHTML = 'File must be a '+capeSizes+' PNG'
             }
+        }
+
+        function submitAndScroll() {
+            document.getElementById('button-label').scrollIntoView({block: 'start', behavior: 'smooth'})
+            submit()
         }
 
         async function submit() {
