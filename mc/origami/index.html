@@ -491,7 +491,10 @@
 
                 try {
                     username = document.getElementById('username-input').value.trim()
-                    if (username !== '' && /^[A-Za-z0-9_]+$/.test(username)) {
+                    if(username === '') {
+                        lbl = 'Enter a username'
+                    }
+                    else if (/^[A-Za-z0-9_]+$/.test(username)) {
                         document.getElementById('button-label').innerHTML = 'Fetching profile...'
                         try {
                             const propertiesResponse = await fetch(apiServer + '/minecraft/properties/name/' + username)
@@ -898,62 +901,80 @@
                 const leg_right_x = Math.floor(outputWidth / 2) + spacing
                 const leg_right_y = spacing + (24*pixelScale + spacing) + (20*pixelScale + spacing) + (20*pixelScale + spacing)
                 const cape_x = Math.floor(outputWidth / 2) + spacing
-                const cape_y = spacing
+                const cape_y = spacing + (24*pixelScale + spacing)
+                const tab_size = 4
+                const tab_small_size = 2
 
                 const ops = [
-                    { input: { x: 0, y: 8, dx: 32, dy: 8 }, output: { x: head_x, y: head_y+8*pixelScale },
+                    { input: { x: 0, y: 8, dx: 32, dy: 8 }, output: { x: head_x+tab_size*pixelScale, y: head_y+8*pixelScale },
                         background: "0xFF000000", layer: { dx: 32, offset_y: offset_3d_head ? offset : 0 } },
-                    { input: { x: 8, y: 0, dx: 8, dy: 8 }, output: { x: head_x+8*pixelScale, y: head_y },
+                    { input: { x: 8, y: 0, dx: 8, dy: 8 }, output: { x: head_x+(tab_size+8)*pixelScale, y: head_y },
                         background: "0xFF000000", layer: { dx: 32 } },
-                    { input: { x: 16, y: 0, dx: 8, dy: -8 }, output: { x: head_x+8*pixelScale, y: head_y+16*pixelScale },
+                    { input: { x: 16, y: 0, dx: 8, dy: -8 }, output: { x: head_x+(tab_size+8)*pixelScale, y: head_y+16*pixelScale },
                         background: "0xFF000000", layer: { dx: 32 } },
+                    { input: { x: 0+24+8-tab_size, y: 8, dx: tab_size, dy: 8 }, output: { x: head_x, y: head_y+8*pixelScale },
+                        background: "0xFF000000", layer: { dx: 32, offset_y: offset_3d_head ? offset : 0 } },
 
-                    { input: { x: 16, y: 20, dx: 24, dy: 12 }, output: { x: body_x, y: body_y+4*pixelScale },
+                    { input: { x: 16, y: 20, dx: 24, dy: 12 }, output: { x: body_x+tab_size*pixelScale, y: body_y+4*pixelScale },
                         background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset : 0 } },
-                    { input: { x: 20, y: 16, dx: 8, dy: 4 }, output: { x: body_x+4*pixelScale, y: body_y },
+                    { input: { x: 20, y: 16, dx: 8, dy: 4 }, output: { x: body_x+(tab_size+4)*pixelScale, y: body_y },
                         background: "0xFF000000", layer: { dy: 16 } },
-                    { input: { x: 28, y: 16, dx: 8, dy: -4 }, output: { x: body_x+4*pixelScale, y: body_y+16*pixelScale },
+                    { input: { x: 28, y: 16, dx: 8, dy: -4 }, output: { x: body_x+(tab_size+4)*pixelScale, y: body_y+16*pixelScale },
                         background: "0xFF000000", layer: { dy: 16 } },
-
-                    { input: { x: 40, y: 20, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: arm_right_x, y: arm_right_y+4*pixelScale },
+                    { input: { x: 16+16+8-tab_size, y: 20, dx: tab_size, dy: 12 }, output: { x: body_x, y: body_y+4*pixelScale },
                         background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset : 0 } },
-                    { input: { x: 44, y: 16, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: arm_right_x+4*pixelScale, y: arm_right_y },
-                        background: "0xFF000000", layer: { dy: 16 } },
-                    { input: { x: 48 - (slim ? 1 : 0), y: 16, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: arm_right_x+4*pixelScale, y: arm_right_y+16*pixelScale },
-                        background: "0xFF000000", layer: { dy: 16 } },
 
-                    { input: { x: 32, y: 52, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: arm_left_x, y: arm_left_y+4*pixelScale },
+                    { input: { x: 40, y: 20, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: arm_right_x+tab_small_size*pixelScale, y: arm_right_y+4*pixelScale },
+                        background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset : 0 } },
+                    { input: { x: 44, y: 16, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: arm_right_x+(tab_small_size+4)*pixelScale, y: arm_right_y },
+                        background: "0xFF000000", layer: { dy: 16 } },
+                    { input: { x: 48 - (slim ? 1 : 0), y: 16, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: arm_right_x+(tab_small_size+4)*pixelScale, y: arm_right_y+16*pixelScale },
+                        background: "0xFF000000", layer: { dy: 16 } },
+                    { input: { x: 40+12+4-tab_small_size-(slim ? 2 : 0), y: 20, dx: tab_small_size, dy: 12 }, output: { x: arm_right_x, y: arm_right_y+4*pixelScale },
+                        background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset : 0 } },
+
+                    { input: { x: 32, y: 52, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: arm_left_x+tab_small_size*pixelScale, y: arm_left_y+4*pixelScale },
                         background: "0xFF000000", layer: { dx: 16, offset_y: offset_3d_all ? offset : 0 } },
-                    { input: { x: 36, y: 48, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: arm_left_x+4*pixelScale, y: arm_left_y },
+                    { input: { x: 36, y: 48, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: arm_left_x+(tab_small_size+4)*pixelScale, y: arm_left_y },
                         background: "0xFF000000", layer: { dx: 16 } },
-                    { input: { x: 40 - (slim ? 1 : 0), y: 48, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: arm_left_x+4*pixelScale, y: arm_left_y+16*pixelScale },
+                    { input: { x: 40 - (slim ? 1 : 0), y: 48, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: arm_left_x+(tab_small_size+4)*pixelScale, y: arm_left_y+16*pixelScale },
                         background: "0xFF000000", layer: { dx: 16 } },
+                    { input: { x: 32+12+4-tab_small_size-(slim ? 2 : 0), y: 52, dx: tab_small_size, dy: 12 }, output: { x: arm_left_x, y: arm_left_y+4*pixelScale },
+                        background: "0xFF000000", layer: { dx: 16, offset_y: offset_3d_all ? offset : 0 } },
 
-                    { input: { x: 0, y: 20, dx: 16, dy: 12 }, output: { x: leg_right_x, y: leg_right_y+4*pixelScale },
+                    { input: { x: 0, y: 20, dx: 16, dy: 12 }, output: { x: leg_right_x+tab_small_size*pixelScale, y: leg_right_y+4*pixelScale },
                         background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset : 0 } },
-                    { input: { x: 4, y: 16, dx: 4, dy: 4 }, output: { x: leg_right_x+4*pixelScale, y: leg_right_y },
+                    { input: { x: 4, y: 16, dx: 4, dy: 4 }, output: { x: leg_right_x+(tab_small_size+4)*pixelScale, y: leg_right_y },
                         background: "0xFF000000", layer: { dy: 16 } },
-                    { input: { x: 8, y: 16, dx: 4, dy: -4 }, output: { x: leg_right_x+4*pixelScale, y: leg_right_y+16*pixelScale },
+                    { input: { x: 8, y: 16, dx: 4, dy: -4 }, output: { x: leg_right_x+(tab_small_size+4)*pixelScale, y: leg_right_y+16*pixelScale },
                         background: "0xFF000000", layer: { dy: 16 } },
+                    { input: { x: 0+12+4-tab_small_size, y: 20, dx: tab_small_size, dy: 12 }, output: { x: leg_right_x, y: leg_right_y+4*pixelScale },
+                        background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset : 0 } },
 
-                    { input: { x: 16, y: 52, dx: 16, dy: 12 }, output: { x: leg_left_x, y: leg_left_y+4*pixelScale },
+                    { input: { x: 16, y: 52, dx: 16, dy: 12 }, output: { x: leg_left_x+tab_small_size*pixelScale, y: leg_left_y+4*pixelScale },
                         background: "0xFF000000", layer: { dx: -16, offset_y: offset_3d_all ? offset : 0  } },
-                    { input: { x: 20, y: 48, dx: 4, dy: 4 }, output: { x: leg_left_x+4*pixelScale, y: leg_left_y },
+                    { input: { x: 20, y: 48, dx: 4, dy: 4 }, output: { x: leg_left_x+(tab_small_size+4)*pixelScale, y: leg_left_y },
                         background: "0xFF000000", layer: { dx: -16 } },
-                    { input: { x: 24, y: 48, dx: 4, dy: -4 }, output: { x: leg_left_x+4*pixelScale, y: leg_left_y+16*pixelScale },
+                    { input: { x: 24, y: 48, dx: 4, dy: -4 }, output: { x: leg_left_x+(tab_small_size+4)*pixelScale, y: leg_left_y+16*pixelScale },
                         background: "0xFF000000", layer: { dx: -16 } },
+                    { input: { x: 16+12+4-tab_small_size, y: 52, dx: tab_small_size, dy: 12 }, output: { x: leg_left_x, y: leg_left_y+4*pixelScale },
+                        background: "0xFF000000", layer: { dx: -16, offset_y: offset_3d_all ? offset : 0  } },
 
-                    {  file:"cape", input: { x: 0, y: 1, dx: 22, dy: 16 }, output: { x: cape_x, y: cape_y+1*pixelScale },
+                    {  file:"cape", input: { x: 0, y: 1, dx: 22, dy: 16 }, output: { x: cape_x+tab_size*pixelScale, y: cape_y+1*pixelScale },
                         background: "0xFF000000" },
-                    {  file:"cape", input: { x: 1, y: 0, dx: 10, dy: 1 }, output: { x: cape_x+1*pixelScale, y: cape_y },
+                    {  file:"cape", input: { x: 1, y: 0, dx: 10, dy: 1 }, output: { x: cape_x+(tab_size+1)*pixelScale, y: cape_y },
                         background: "0xFF000000" },
-                    {  file:"cape", input: { x: 11, y: 0, dx: 10, dy: -1 }, output: { x: cape_x+1*pixelScale, y: cape_y+17*pixelScale },
+                    {  file:"cape", input: { x: 11, y: 0, dx: 10, dy: -1 }, output: { x: cape_x+(tab_size+1)*pixelScale, y: cape_y+17*pixelScale },
+                        background: "0xFF000000" },
+                    {  file:"cape", input: { x: 0+12+10-tab_size, y: 1, dx: tab_size, dy: 16 }, output: { x: cape_x, y: cape_y+1*pixelScale },
                         background: "0xFF000000" },
                 ]
 
                 console.log('Drawing canvas')
                 for (const op of ops) {
                     if (op.file === "cape" && !hasCape)
+                        continue
+                    if(op.input.dx === 0 || op.input.dy === 0)
                         continue
 
                     const sourceCanvas = op.file === "cape" ? canvasCape : canvasSkin
