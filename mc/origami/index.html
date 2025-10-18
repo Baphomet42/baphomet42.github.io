@@ -972,7 +972,22 @@
                         ctx.fillRect(0, 0, outputW, outputH)
                     }
 
-                    ctx.drawImage(sourceCanvas, inputX, inputY, outputW, outputH, 0, 0, outputW, outputH)
+                    {
+                        const tempCanvas = document.createElement('canvas')
+                        tempCanvas.width = outputW
+                        tempCanvas.height = outputH
+                        const tempCtx = tempCanvas.getContext('2d')
+
+                        tempCtx.drawImage(sourceCanvas, inputX, inputY, outputW, outputH, 0, 0, outputW, outputH)
+
+                        const imgData = tempCtx.getImageData(0, 0, outputW, outputH)
+                        for (let i = 3; i < imgData.data.length; i += 4) {
+                            imgData.data[i] = 255
+                        }
+                        tempCtx.putImageData(imgData, 0, 0)
+
+                        ctx.drawImage(tempCanvas, 0, 0)
+                    }
 
                     if (op.layer) {
                         const layerInputX = (op.input.x + (op.layer.dx ?? 0)) * pixelScale
