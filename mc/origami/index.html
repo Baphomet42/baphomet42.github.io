@@ -202,8 +202,12 @@
     <script>
         const vanillaSkinWidth = 64
         const vanillaSkinHeight = 64
+        const vanillaSkinHeightOld = 32
         const vanillaCapeWidth = 64
         const vanillaCapeHeight = 32
+        const hdScale = 2
+        const skinSizes = ''+(vanillaSkinWidth)+'x'+(vanillaSkinHeight)+', '+(hdScale * vanillaSkinWidth)+'x'+(hdScale * vanillaSkinHeight)+', '+(vanillaSkinWidth)+'x'+(vanillaSkinHeightOld)+', or '+(hdScale * vanillaSkinWidth)+'x'+(hdScale * vanillaSkinHeightOld)
+        const capeSizes = ''+(vanillaCapeWidth)+'x'+(vanillaCapeHeight)+' or '+(hdScale * vanillaCapeWidth)+'x'+(hdScale * vanillaCapeHeight)
 
         const apiServer = 'https://silcrow-209748932377.us-central1.run.app/api'
 
@@ -312,6 +316,36 @@
             return url
         }
 
+        function testValidSkinSize(width, height) {
+            return (
+                (
+                    height === width
+                    ||
+                    height * 2 === width
+                )
+                &&
+                (
+                    width === vanillaSkinWidth
+                    ||
+                    width === (hdScale * vanillaSkinWidth)
+                )
+            )
+        }
+
+        function testValidCapeSize(width, height) {
+            return (
+                (
+                    height * 2 === width
+                )
+                &&
+                (
+                    width === vanillaCapeWidth
+                    ||
+                    width === (hdScale * vanillaCapeWidth)
+                )
+            )
+        }
+
         function openFile() {
             document.getElementById('file-input').click()
         }
@@ -347,7 +381,7 @@
             }
 
             if(!valid) {
-                document.getElementById('file-label').innerHTML = 'File must be a 64x64 or 128x128 PNG'
+                document.getElementById('file-label').innerHTML = 'File must be a '+skinSizes+' PNG'
             }
 
         })
@@ -374,32 +408,33 @@
             }
 
             if(!valid) {
-                document.getElementById('file-cape-label').innerHTML = 'File must be a 64x32 or 128x64 PNG'
+                document.getElementById('file-cape-label').innerHTML = 'File must be a '+capeSizes+' PNG'
             }
 
         })
 
         selectedSkinFileImg.onload = function() {
             document.getElementById('file-label').innerHTML = ''
-            if(selectedSkinFileImg.width === selectedSkinFileImg.height && (selectedSkinFileImg.width === 64 || selectedSkinFileImg.width === 128)) {
+            if(testValidSkinSize(selectedSkinFileImg.width,selectedSkinFileImg.height)) {
                 document.getElementById('file-label').innerHTML = selectedSkinFileName+' ('+selectedSkinFileImg.width+'&#8203;x&#8203;'+selectedSkinFileImg.height+')'
             }
             else {
-                document.getElementById('file-label').innerHTML = 'File must be a 64x64 or 128x128 PNG'
+                document.getElementById('file-label').innerHTML = 'File must be a '+skinSizes+' PNG'
             }
         }
 
         selectedCapeFileImg.onload = function() {
             document.getElementById('file-cape-label').innerHTML = ''
-            if((selectedCapeFileImg.width === 64 && selectedCapeFileImg.height === 32) || (selectedCapeFileImg.width === 128 && selectedCapeFileImg.height === 64)) {
+            if(testValidCapeSize(selectedCapeFileImg.width,selectedCapeFileImg.height)) {
                 document.getElementById('file-cape-label').innerHTML = selectedCapeFileName+' ('+selectedCapeFileImg.width+'&#8203;x&#8203;'+selectedCapeFileImg.height+')'
             }
             else {
-                document.getElementById('file-cape-label').innerHTML = 'File must be a 64x32 or 128x64 PNG'
+                document.getElementById('file-cape-label').innerHTML = 'File must be a '+capeSizes+' PNG'
             }
         }
 
         async function submit() {
+            console.log('Origami generate function started')
             document.getElementById('button-label').innerHTML = ''
             downloadLink = document.createElement('a')
 
@@ -433,8 +468,8 @@
             const capeMode = document.getElementById('cape-source').value
 
             if(skinMode === 'file') {
-                if(selectedSkinFileImg.width !== selectedSkinFileImg.height || !(selectedSkinFileImg.width === 64 || selectedSkinFileImg.width === 128))
-                    lbl = 'Skin must be a 64x64 or 128x128 PNG'
+                if(!testValidSkinSize(selectedSkinFileImg.width,selectedSkinFileImg.height))
+                    lbl = 'Skin must be a '+skinSizes+' PNG'
                 else {
                     skinValid = true
                     outputFileName = selectedSkinFileName
@@ -454,7 +489,7 @@
                     if (username !== '' && /^[A-Za-z0-9_]+$/.test(username)) {
                         document.getElementById('button-label').innerHTML = 'Fetching profile...'
                         try {
-                            const propertiesResponse = await fetch(apiServer + '/minecraft/properties/name/' + username);
+                            const propertiesResponse = await fetch(apiServer + '/minecraft/properties/name/' + username)
                             if (propertiesResponse.ok) {
                                 const propertiesData = await propertiesResponse.json()
                                 try {
@@ -491,9 +526,8 @@
                                                                     URL.revokeObjectURL(objectUrl)
                                                                     resolve(true)
 
-                                                                    if (!(imgSkin.width === 64 && imgSkin.height === 64)
-                                                                    && !(imgSkin.width === 128 && imgSkin.height === 128))
-                                                                        lbl = 'Skin must be a 64x64 or 128x128 PNG'
+                                                                    if (!testValidSkinSize(imgSkin.width,imgSkin.height))
+                                                                        lbl = 'Skin must be a '+skinSizes+' PNG'
                                                                     else
                                                                         skinValid = true
                                                                 }
@@ -568,10 +602,8 @@
 
             if(skinValid) {
                 if(capeMode === 'file') {
-                    if(selectedCapeFileSet
-                    && !(selectedCapeFileImg.width === 64 && selectedCapeFileImg.height === 32)
-                    && !(selectedCapeFileImg.width === 128 && selectedCapeFileImg.height === 64))
-                        lbl = 'Cape must be a 64x32 or 128x64 PNG'
+                    if(selectedCapeFileSet && !testValidCapeSize(selectedCapeFileImg.width,selectedCapeFileImg.height))
+                        lbl = 'Cape must be a '+capeSizes+' PNG'
                     else {
                         capeValid = true
                         hasCape = selectedCapeFileSet
@@ -581,9 +613,8 @@
                 else if(capeMode === 'username') {
                     if(usernameMode) {
                         if(fetchedProfileCapeExists) {
-                            if (!(fetchedProfileCapeImg.width === 64 && fetchedProfileCapeImg.height === 32)
-                            && !(fetchedProfileCapeImg.width === 128 && fetchedProfileCapeImg.height === 64))
-                                lbl = 'Cape must be a 64x32 or 128x64 PNG'
+                            if (!testValidCapeSize(fetchedProfileCapeImg.width,fetchedProfileCapeImg.height))
+                                lbl = 'Cape must be a '+capeSizes+' PNG'
                             else {
                                 capeValid = true
                                 hasCape =  true
@@ -630,9 +661,8 @@
                                                     URL.revokeObjectURL(objectUrl)
                                                     resolve(true)
 
-                                                    if (!(imgCape.width === 64 && imgCape.height === 32)
-                                                    && !(imgCape.width === 128 && imgCape.height === 64))
-                                                        lbl = 'Cape must be a 64x32 or 128x64 PNG'
+                                                    if (!testValidCapeSize(imgCape.width,imgCape.height))
+                                                        lbl = 'Cape must be a '+capeSizes+' PNG'
                                                     else {
                                                         capeValid = true
                                                         hasCape = true
@@ -668,7 +698,83 @@
             document.getElementById('button-label').innerHTML = lbl
 
             if(skinValid && capeValid) {
+                console.log('Inputs validated')
                 document.getElementById('button-label').innerHTML = 'Loading...'
+
+                console.log('Skin size: '+imgSkin.width+'x'+imgSkin.height)
+
+                if ((imgSkin.width !== imgSkin.height)) {
+                    // see net.minecraft.client.renderer.texture.SkinTextureDownloader
+                    console.log('Legacy skin detected, converting to new format')
+                    const oldSkinResizeCanvas = document.createElement('canvas')
+                    oldSkinResizeCanvas.width = imgSkin.width
+                    oldSkinResizeCanvas.height = imgSkin.width
+                    const ctx = oldSkinResizeCanvas.getContext('2d', { willReadFrequently: true })
+
+                    ctx.drawImage(imgSkin, 0, 0)
+
+                    const imageData = ctx.getImageData(imgSkin.width / 2, 0, imgSkin.width / 2, imgSkin.width / 2)
+                    let hasTransparency = false
+                    for (let i = 3; i < imageData.data.length; i += 4) {
+                        if (imageData.data[i] < 128) {
+                            hasTransparency = true
+                            break
+                        }
+                    }
+
+                    if (!hasTransparency) {
+                        console.log('Archaic skin detected, removing hat layer')
+                        const hatData = ctx.getImageData(imgSkin.width / 2, 0, imgSkin.width / 2, imgSkin.width / 4)
+                        for (let i = 0; i < hatData.data.length; i += 4) {
+                            hatData.data[i] = 0
+                            hatData.data[i+1] = 0
+                            hatData.data[i+2] = 0
+                            hatData.data[i+3] = 0
+                        }
+                        ctx.putImageData(hatData, imgSkin.width / 2, 0)
+                    }
+
+                    function copyRegion(srcX, srcY, destDX, destDY, width, height, mirrorX = false, mirrorY = false) {
+                        const imageData = ctx.getImageData(srcX, srcY, width, height);
+                        const out = ctx.createImageData(width, height);
+                        const src = imageData.data;
+                        const dst = out.data;
+
+                        for (let y = 0; y < height; y++) {
+                            for (let x = 0; x < width; x++) {
+                                const srcIndex = (y * width + x) * 4;
+                                const dstX = mirrorX ? width - 1 - x : x;
+                                const dstY = mirrorY ? height - 1 - y : y;
+                                const dstIndex = (dstY * width + dstX) * 4;
+                                dst[dstIndex] = src[srcIndex];
+                                dst[dstIndex + 1] = src[srcIndex + 1];
+                                dst[dstIndex + 2] = src[srcIndex + 2];
+                                dst[dstIndex + 3] = src[srcIndex + 3];
+                            }
+                        }
+
+                        ctx.putImageData(out, srcX + destDX, srcY + destDY);
+                    }
+
+                    copyRegion(4, 16, 16, 32, 4, 4, true, false)
+                    copyRegion(8, 16, 16, 32, 4, 4, true, false)
+                    copyRegion(0, 20, 24, 32, 4, 12, true, false)
+                    copyRegion(4, 20, 16, 32, 4, 12, true, false)
+                    copyRegion(8, 20, 8, 32, 4, 12, true, false)
+                    copyRegion(12, 20, 16, 32, 4, 12, true, false)
+                    copyRegion(44, 16, -8, 32, 4, 4, true, false)
+                    copyRegion(48, 16, -8, 32, 4, 4, true, false)
+                    copyRegion(40, 20, 0, 32, 4, 12, true, false)
+                    copyRegion(44, 20, -8, 32, 4, 12, true, false)
+                    copyRegion(48, 20, -16, 32, 4, 12, true, false)
+                    copyRegion(52, 20, -8, 32, 4, 12, true, false)
+
+                    imgSkin = await new Promise(resolve => {
+                        const newImg = new Image();
+                        newImg.onload = () => resolve(newImg);
+                        newImg.src = oldSkinResizeCanvas.toDataURL('image/png');
+                    })
+                }       
 
                 const inputWidth = imgSkin.width
                 const inputHeight = imgSkin.height
@@ -691,6 +797,7 @@
                 const originalImageData = tmpCtx.getImageData(0, 0, inputWidth, inputHeight)
                 const scaledImageData = srcCtx.createImageData(vanillaSkinWidth*pixelScale, vanillaSkinHeight*pixelScale)
 
+                console.log('Scaling skin')
                 for (let y = 0; y < inputHeight; y++) {
                     for (let x = 0; x < inputWidth; x++) {
                         const index = (y * inputWidth + x) * 4
@@ -714,6 +821,7 @@
 
                 let canvasCape
                 if (hasCape) {
+                    console.log('Cape size: '+imgCape.width+'x'+imgCape.height)
                     canvasCape = document.createElement('canvas')
                     canvasCape.width = vanillaCapeWidth*pixelScale
                     canvasCape.height = vanillaCapeHeight*pixelScale
@@ -730,6 +838,7 @@
                     const capeData = tmpCapeCtx.getImageData(0, 0, capeWidth, capeHeight)
                     const scaledCapeData = capeCtx.createImageData(vanillaCapeWidth*pixelScale, vanillaCapeHeight*pixelScale)
 
+                    console.log('Scaling cape')
                     for (let y = 0; y < capeHeight; y++) {
                         for (let x = 0; x < capeWidth; x++) {
                             const index = (y * capeWidth + x) * 4
@@ -828,6 +937,7 @@
                         background: "0xFF000000" },
                 ]
 
+                console.log('Drawing canvas')
                 for (const op of ops) {
                     if (op.file === "cape" && !hasCape)
                         continue
@@ -884,8 +994,13 @@
                 newHtml += '<button class="button" onClick="download()" style="font-size:x-large">Download</button>'
                 document.getElementById('img-span').innerHTML = newHtml
                 document.getElementById('button-label').innerHTML = ''
+                console.log('Generate function completed')
             }
             else {
+                if(lbl === '')
+                    console.log('Inputs invalid')
+                else
+                    console.log('Inputs invalid: '+lbl)
                 hasOutput = false
                 document.getElementById('img-span').innerHTML = ''
             }
