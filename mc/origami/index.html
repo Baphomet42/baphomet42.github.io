@@ -218,13 +218,17 @@
         const outputWidth = Math.floor(outputWidthBase * outputScale)
         const outputHeight = Math.floor(outputHeightBase * outputScale)
 
+        const spacing = 3 * pixelScale
+        const pageMarginX = Math.ceil(outputWidth / 10)
+        const pageMarginY = Math.ceil(outputHeight / 10)
+
         let selectedSkinFileImg = new Image()
         let selectedSkinFileName = ''
         let selectedCapeFileImg = new Image()
         let selectedCapeFileName = ''
         let selectedCapeFileSet = false
         let downloadLink = document.createElement('a')
-        let hasOutput = false
+        let prevPageCount = 0
 
         refreshCapePresets()
         setSkinSource('username')
@@ -433,6 +437,20 @@
             }
         }
 
+        async function sleep() {
+            return new Promise(r => setTimeout(r, 50))
+        }
+
+        async function labelAndLog(element, text) {
+            console.log(text)
+            await label(element, text)
+        }
+
+        async function label(element, text) {
+            document.getElementById(element).innerHTML = text
+            await sleep()
+        }
+
         function submitAndScroll() {
             document.getElementById('button-label').scrollIntoView({block: 'start', behavior: 'smooth'})
             submit()
@@ -440,21 +458,25 @@
 
         async function submit() {
             console.log('Origami generate function started')
-            document.getElementById('button-label').innerHTML = ''
+            await labelAndLog('button-label', 'Validating inputs...')
             downloadLink = document.createElement('a')
 
-            if(hasOutput) {
+            if (prevPageCount >= 1) {
                 const tempCanvas = document.createElement('canvas')
                 tempCanvas.width = outputWidth
                 tempCanvas.height = outputHeight
-                let tempCanvasHtml = '<img src="'+tempCanvas.toDataURL('image/png')+'" class="img-full">'
-                tempCanvasHtml += '<br/><br/>'
-                tempCanvasHtml += '<button class="button" style="font-size:x-large" disabled>Download</button>'
-                document.getElementById('img-span').innerHTML = tempCanvasHtml
+                let newHtml = '<table class="card-table"><tr class="card-table-row">'
+                for (let i = 0; i < prevPageCount; i++) {
+                    newHtml += `<td class="card-wrap-third"><img src="${tempCanvas.toDataURL('image/png')}" class="img-full"></td>`
+                }
+                newHtml += '</tr></table>'
+                newHtml += `<button class="button" style="font-size:x-large" disabled>Download</button>`
+
+                document.getElementById('img-span').innerHTML = newHtml
+                document.getElementById('button-label').innerHTML = ''
             }
-            else {
+            else
                 document.getElementById('img-span').innerHTML = ''
-            }
 
             let skinValid = false
             let capeValid = false
@@ -495,7 +517,7 @@
                         lbl = 'Enter a username'
                     }
                     else if (/^[A-Za-z0-9_]+$/.test(username)) {
-                        document.getElementById('button-label').innerHTML = 'Fetching profile...'
+                        await labelAndLog('button-label', 'Fetching profile...')
                         try {
                             const propertiesResponse = await fetch(apiServer + '/minecraft/properties/name/' + username)
                             if (propertiesResponse.ok) {
@@ -602,7 +624,7 @@
                         lbl = 'Failed to fetch username: ' + username
                 }
 
-                document.getElementById('button-label').innerHTML = ''
+                await label('button-label', 'Validating inputs...')
             }
             else {
                 lbl = 'Failed to determine skin source'
@@ -646,7 +668,7 @@
                         hasCape = false
                     }
                     else {
-                        document.getElementById('button-label').innerHTML = 'Fetching cape...'
+                        await labelAndLog('button-label', 'Fetching cape...')
 
                         try {
                             const capeUrl = convertUrlHttps(url)
@@ -692,7 +714,7 @@
                             lbl = 'Failed to fetch preset cape: ' + document.getElementById('cape-preset-input').selectedOptions[0].text
                         }
 
-                        document.getElementById('button-label').innerHTML = ''
+                        await label('button-label', 'Validating inputs...')
                     }
                 }
                 else {
@@ -703,11 +725,8 @@
             if(lbl === '' && !(skinValid && capeValid))
                 lbl = 'Failed to validate inputs'
 
-            document.getElementById('button-label').innerHTML = lbl
-
             if(skinValid && capeValid) {
-                console.log('Inputs validated')
-                document.getElementById('button-label').innerHTML = 'Loading...'
+                await labelAndLog('button-label', 'Loading skin...')
 
                 console.log('Skin size: '+imgSkin.width+'x'+imgSkin.height)
 
@@ -752,25 +771,25 @@
                         const width = inpWidth * legacyCoordScale
                         const height = inpHeight * legacyCoordScale
 
-                        const imageData = ctx.getImageData(srcX, srcY, width, height);
-                        const out = ctx.createImageData(width, height);
-                        const src = imageData.data;
-                        const dst = out.data;
+                        const imageData = ctx.getImageData(srcX, srcY, width, height)
+                        const out = ctx.createImageData(width, height)
+                        const src = imageData.data
+                        const dst = out.data
 
                         for (let y = 0; y < height; y++) {
                             for (let x = 0; x < width; x++) {
-                                const srcIndex = (y * width + x) * 4;
-                                const dstX = mirrorX ? width - 1 - x : x;
-                                const dstY = mirrorY ? height - 1 - y : y;
-                                const dstIndex = (dstY * width + dstX) * 4;
+                                const srcIndex = (y * width + x) * 4
+                                const dstX = mirrorX ? width - 1 - x : x
+                                const dstY = mirrorY ? height - 1 - y : y
+                                const dstIndex = (dstY * width + dstX) * 4
                                 dst[dstIndex] = src[srcIndex];
-                                dst[dstIndex + 1] = src[srcIndex + 1];
-                                dst[dstIndex + 2] = src[srcIndex + 2];
-                                dst[dstIndex + 3] = src[srcIndex + 3];
+                                dst[dstIndex + 1] = src[srcIndex + 1]
+                                dst[dstIndex + 2] = src[srcIndex + 2]
+                                dst[dstIndex + 3] = src[srcIndex + 3]
                             }
                         }
 
-                        ctx.putImageData(out, srcX + destDX, srcY + destDY);
+                        ctx.putImageData(out, srcX + destDX, srcY + destDY)
                     }
 
                     copyRegion(4, 16, 16, 32, 4, 4, true, false)
@@ -787,9 +806,9 @@
                     copyRegion(52, 20, -8, 32, 4, 12, true, false)
 
                     imgSkin = await new Promise(resolve => {
-                        const newImg = new Image();
-                        newImg.onload = () => resolve(newImg);
-                        newImg.src = oldSkinResizeCanvas.toDataURL('image/png');
+                        const newImg = new Image()
+                        newImg.onload = () => resolve(newImg)
+                        newImg.src = oldSkinResizeCanvas.toDataURL('image/png')
                     })
                 }       
 
@@ -838,6 +857,7 @@
 
                 let canvasCape
                 if (hasCape) {
+                    await labelAndLog('button-label', 'Loading cape...')
                     console.log('Cape size: '+imgCape.width+'x'+imgCape.height)
                     canvasCape = document.createElement('canvas')
                     canvasCape.width = vanillaCapeWidth*pixelScale
@@ -878,180 +898,324 @@
                     capeCtx.putImageData(scaledCapeData, 0, 0)
                 }
 
-                const canvas = document.getElementById('canvas')
-                canvas.width = outputWidth
-                canvas.height = outputHeight
-                const ctx = canvas.getContext('2d')
-                ctx.clearRect(0, 0, canvas.width, canvas.height)
-                ctx.imageSmoothingEnabled = false
-                ctx.globalCompositeOperation = 'source-over'
+                await labelAndLog('button-label', 'Generating skin sections...')
 
-                const spacing = Math.floor(outputWidth / 40)
+                // account for extruding
+                const x_offset = 1*pixelScale
+                const y_offset = 1*pixelScale
 
-                const head_x = spacing
-                const head_y = spacing
-                const body_x = spacing
-                const body_y = spacing + (24*pixelScale + spacing)
-                const arm_left_x = spacing
-                const arm_left_y = spacing + (24*pixelScale + spacing) + (20*pixelScale + spacing)
-                const arm_right_x = Math.floor(outputWidth / 2) + spacing
-                const arm_right_y = spacing + (24*pixelScale + spacing) + (20*pixelScale + spacing)
-                const leg_left_x = spacing
-                const leg_left_y = spacing + (24*pixelScale + spacing) + (20*pixelScale + spacing) + (20*pixelScale + spacing)
-                const leg_right_x = Math.floor(outputWidth / 2) + spacing
-                const leg_right_y = spacing + (24*pixelScale + spacing) + (20*pixelScale + spacing) + (20*pixelScale + spacing)
-                const cape_x = Math.floor(outputWidth / 2) + spacing
-                const cape_y = spacing + (24*pixelScale + spacing)
-                const tab_size = 4
-                const tab_small_size = 2
+                const tab_size = 0
+                const tab_small_size = 0
 
-                const ops = [
-                    { input: { x: 0, y: 8, dx: 32, dy: 8 }, output: { x: head_x+tab_size*pixelScale, y: head_y+8*pixelScale },
+                const headOps = [
+                    { input: { x: 0, y: 8, dx: 32, dy: 8 }, output: { x: x_offset+tab_size*pixelScale, y: y_offset+8*pixelScale },
                         background: "0xFF000000", layer: { dx: 32, offset_y: offset_3d_head ? offset : 0 } },
-                    { input: { x: 8, y: 0, dx: 8, dy: 8 }, output: { x: head_x+(tab_size+8)*pixelScale, y: head_y },
+                    { input: { x: 8, y: 0, dx: 8, dy: 8 }, output: { x: x_offset+(tab_size+8)*pixelScale, y: y_offset },
                         background: "0xFF000000", layer: { dx: 32 } },
-                    { input: { x: 16, y: 0, dx: 8, dy: -8 }, output: { x: head_x+(tab_size+8)*pixelScale, y: head_y+16*pixelScale },
+                    { input: { x: 16, y: 0, dx: 8, dy: -8 }, output: { x: x_offset+(tab_size+8)*pixelScale, y: y_offset+16*pixelScale },
                         background: "0xFF000000", layer: { dx: 32 } },
-                    { input: { x: 0+24+8-tab_size, y: 8, dx: tab_size, dy: 8 }, output: { x: head_x, y: head_y+8*pixelScale },
+                    { input: { x: 0+24+8-tab_size, y: 8, dx: tab_size, dy: 8 }, output: { x: x_offset, y: y_offset+8*pixelScale },
                         background: "0xFF000000", layer: { dx: 32, offset_y: offset_3d_head ? offset : 0 } },
-
-                    { input: { x: 16, y: 20, dx: 24, dy: 12 }, output: { x: body_x+tab_size*pixelScale, y: body_y+4*pixelScale },
+                ]
+                const bodyOps = [
+                    { input: { x: 16, y: 20, dx: 24, dy: 12 }, output: { x: x_offset+tab_size*pixelScale, y: y_offset+4*pixelScale },
                         background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset : 0 } },
-                    { input: { x: 20, y: 16, dx: 8, dy: 4 }, output: { x: body_x+(tab_size+4)*pixelScale, y: body_y },
+                    { input: { x: 20, y: 16, dx: 8, dy: 4 }, output: { x: x_offset+(tab_size+4)*pixelScale, y: y_offset },
                         background: "0xFF000000", layer: { dy: 16 } },
-                    { input: { x: 28, y: 16, dx: 8, dy: -4 }, output: { x: body_x+(tab_size+4)*pixelScale, y: body_y+16*pixelScale },
+                    { input: { x: 28, y: 16, dx: 8, dy: -4 }, output: { x: x_offset+(tab_size+4)*pixelScale, y: y_offset+16*pixelScale },
                         background: "0xFF000000", layer: { dy: 16 } },
-                    { input: { x: 16+16+8-tab_size, y: 20, dx: tab_size, dy: 12 }, output: { x: body_x, y: body_y+4*pixelScale },
+                    { input: { x: 16+16+8-tab_size, y: 20, dx: tab_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
                         background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset : 0 } },
-
-                    { input: { x: 40, y: 20, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: arm_right_x+tab_small_size*pixelScale, y: arm_right_y+4*pixelScale },
+                ]
+                const armRightOps = [
+                    { input: { x: 40, y: 20, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale, y: y_offset+4*pixelScale },
                         background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset : 0 } },
-                    { input: { x: 44, y: 16, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: arm_right_x+(tab_small_size+4)*pixelScale, y: arm_right_y },
+                    { input: { x: 44, y: 16, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset },
                         background: "0xFF000000", layer: { dy: 16 } },
-                    { input: { x: 48 - (slim ? 1 : 0), y: 16, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: arm_right_x+(tab_small_size+4)*pixelScale, y: arm_right_y+16*pixelScale },
+                    { input: { x: 48 - (slim ? 1 : 0), y: 16, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset+16*pixelScale },
                         background: "0xFF000000", layer: { dy: 16 } },
-                    { input: { x: 40+12+4-tab_small_size-(slim ? 2 : 0), y: 20, dx: tab_small_size, dy: 12 }, output: { x: arm_right_x, y: arm_right_y+4*pixelScale },
+                    { input: { x: 40+12+4-tab_small_size-(slim ? 2 : 0), y: 20, dx: tab_small_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
                         background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset : 0 } },
-
-                    { input: { x: 32, y: 52, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: arm_left_x+tab_small_size*pixelScale, y: arm_left_y+4*pixelScale },
+                ]
+                const armLeftOps = [
+                    { input: { x: 32, y: 52, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale, y: y_offset+4*pixelScale },
                         background: "0xFF000000", layer: { dx: 16, offset_y: offset_3d_all ? offset : 0 } },
-                    { input: { x: 36, y: 48, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: arm_left_x+(tab_small_size+4)*pixelScale, y: arm_left_y },
+                    { input: { x: 36, y: 48, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset },
                         background: "0xFF000000", layer: { dx: 16 } },
-                    { input: { x: 40 - (slim ? 1 : 0), y: 48, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: arm_left_x+(tab_small_size+4)*pixelScale, y: arm_left_y+16*pixelScale },
+                    { input: { x: 40 - (slim ? 1 : 0), y: 48, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset+16*pixelScale },
                         background: "0xFF000000", layer: { dx: 16 } },
-                    { input: { x: 32+12+4-tab_small_size-(slim ? 2 : 0), y: 52, dx: tab_small_size, dy: 12 }, output: { x: arm_left_x, y: arm_left_y+4*pixelScale },
+                    { input: { x: 32+12+4-tab_small_size-(slim ? 2 : 0), y: 52, dx: tab_small_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
                         background: "0xFF000000", layer: { dx: 16, offset_y: offset_3d_all ? offset : 0 } },
-
-                    { input: { x: 0, y: 20, dx: 16, dy: 12 }, output: { x: leg_right_x+tab_small_size*pixelScale, y: leg_right_y+4*pixelScale },
+                ]
+                const legRightOps = [
+                    { input: { x: 0, y: 20, dx: 16, dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale, y: y_offset+4*pixelScale },
                         background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset : 0 } },
-                    { input: { x: 4, y: 16, dx: 4, dy: 4 }, output: { x: leg_right_x+(tab_small_size+4)*pixelScale, y: leg_right_y },
+                    { input: { x: 4, y: 16, dx: 4, dy: 4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset },
                         background: "0xFF000000", layer: { dy: 16 } },
-                    { input: { x: 8, y: 16, dx: 4, dy: -4 }, output: { x: leg_right_x+(tab_small_size+4)*pixelScale, y: leg_right_y+16*pixelScale },
+                    { input: { x: 8, y: 16, dx: 4, dy: -4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset+16*pixelScale },
                         background: "0xFF000000", layer: { dy: 16 } },
-                    { input: { x: 0+12+4-tab_small_size, y: 20, dx: tab_small_size, dy: 12 }, output: { x: leg_right_x, y: leg_right_y+4*pixelScale },
+                    { input: { x: 0+12+4-tab_small_size, y: 20, dx: tab_small_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
                         background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset : 0 } },
-
-                    { input: { x: 16, y: 52, dx: 16, dy: 12 }, output: { x: leg_left_x+tab_small_size*pixelScale, y: leg_left_y+4*pixelScale },
+                ]
+                const legLeftOps = [
+                    { input: { x: 16, y: 52, dx: 16, dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale, y: y_offset+4*pixelScale },
                         background: "0xFF000000", layer: { dx: -16, offset_y: offset_3d_all ? offset : 0  } },
-                    { input: { x: 20, y: 48, dx: 4, dy: 4 }, output: { x: leg_left_x+(tab_small_size+4)*pixelScale, y: leg_left_y },
+                    { input: { x: 20, y: 48, dx: 4, dy: 4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset },
                         background: "0xFF000000", layer: { dx: -16 } },
-                    { input: { x: 24, y: 48, dx: 4, dy: -4 }, output: { x: leg_left_x+(tab_small_size+4)*pixelScale, y: leg_left_y+16*pixelScale },
+                    { input: { x: 24, y: 48, dx: 4, dy: -4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset+16*pixelScale },
                         background: "0xFF000000", layer: { dx: -16 } },
-                    { input: { x: 16+12+4-tab_small_size, y: 52, dx: tab_small_size, dy: 12 }, output: { x: leg_left_x, y: leg_left_y+4*pixelScale },
+                    { input: { x: 16+12+4-tab_small_size, y: 52, dx: tab_small_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
                         background: "0xFF000000", layer: { dx: -16, offset_y: offset_3d_all ? offset : 0  } },
-
-                    {  file:"cape", input: { x: 0, y: 1, dx: 22, dy: 16 }, output: { x: cape_x+tab_size*pixelScale, y: cape_y+1*pixelScale },
+                ]
+                const capeOps = [
+                    {  file:"cape", input: { x: 0, y: 1, dx: 22, dy: 16 }, output: { x: x_offset+tab_size*pixelScale, y: y_offset+1*pixelScale },
                         background: "0xFF000000" },
-                    {  file:"cape", input: { x: 1, y: 0, dx: 10, dy: 1 }, output: { x: cape_x+(tab_size+1)*pixelScale, y: cape_y },
+                    {  file:"cape", input: { x: 1, y: 0, dx: 10, dy: 1 }, output: { x: x_offset+(tab_size+1)*pixelScale, y: y_offset },
                         background: "0xFF000000" },
-                    {  file:"cape", input: { x: 11, y: 0, dx: 10, dy: -1 }, output: { x: cape_x+(tab_size+1)*pixelScale, y: cape_y+17*pixelScale },
+                    {  file:"cape", input: { x: 11, y: 0, dx: 10, dy: -1 }, output: { x: x_offset+(tab_size+1)*pixelScale, y: y_offset+17*pixelScale },
                         background: "0xFF000000" },
-                    {  file:"cape", input: { x: 0+12+10-tab_size, y: 1, dx: tab_size, dy: 16 }, output: { x: cape_x, y: cape_y+1*pixelScale },
+                    {  file:"cape", input: { x: 0+12+10-tab_size, y: 1, dx: tab_size, dy: 16 }, output: { x: x_offset, y: y_offset+1*pixelScale },
                         background: "0xFF000000" },
                 ]
 
-                console.log('Drawing canvas')
-                for (const op of ops) {
-                    if (op.file === "cape" && !hasCape)
-                        continue
-                    if(op.input.dx === 0 || op.input.dy === 0)
-                        continue
+                const skinSections = []
 
-                    const sourceCanvas = op.file === "cape" ? canvasCape : canvasSkin
+                await labelAndLog('button-label', 'Slicing and dicing...')
 
-                    const inputX = op.input.x * pixelScale
-                    const inputY = op.input.y * pixelScale
-                    const inputW = op.input.dx * pixelScale
-                    const inputH = op.input.dy * pixelScale
-
-                    const outputX = op.output.x
-                    const outputY = op.output.y
-                    const outputW = Math.abs(inputW)
-                    const outputH = Math.abs(inputH)
-
-                    ctx.save()
-                    ctx.beginPath()
-                    ctx.rect(outputX, outputY, outputW, outputH)
-                    ctx.clip()
-
-                    ctx.translate(outputX + (inputW < 0 ? outputW : 0), outputY + (inputH < 0 ? outputH : 0))
-                    ctx.scale(inputW < 0 ? -1 : 1, inputH < 0 ? -1 : 1)
-
-                    if (op.background) {
-                        const argb = parseInt(op.background)
-                        const a = ((argb >> 24) & 0xFF) / 255
-                        const r = (argb >> 16) & 0xFF
-                        const g = (argb >> 8) & 0xFF
-                        const b = argb & 0xFF
-                        ctx.fillStyle = `rgba(${r},${g},${b},${a})`
-                        ctx.fillRect(0, 0, outputW, outputH)
-                    }
-
-                    {
-                        const tempCanvas = document.createElement('canvas')
-                        tempCanvas.width = outputW
-                        tempCanvas.height = outputH
-                        const tempCtx = tempCanvas.getContext('2d')
-
-                        tempCtx.drawImage(sourceCanvas, inputX, inputY, outputW, outputH, 0, 0, outputW, outputH)
-
-                        const imgData = tempCtx.getImageData(0, 0, outputW, outputH)
-                        for (let i = 3; i < imgData.data.length; i += 4) {
-                            imgData.data[i] = 255
-                        }
-                        tempCtx.putImageData(imgData, 0, 0)
-
-                        ctx.drawImage(tempCanvas, 0, 0)
-                    }
-
-                    if (op.layer) {
-                        const layerInputX = (op.input.x + (op.layer.dx ?? 0)) * pixelScale
-                        const layerInputY = (op.input.y + (op.layer.dy ?? 0)) * pixelScale
-                        const layerOffsetX = op.layer.offset_x ?? 0
-                        const layerOffsetY = op.layer.offset_y ?? 0
-
-                        ctx.drawImage(sourceCanvas, layerInputX, layerInputY, outputW, outputH, layerOffsetX, layerOffsetY, outputW, outputH)
-                    }
-
-                    ctx.restore()
+                // Helper to create a canvas of given size
+                function createCanvas(width, height) {
+                    const c = document.createElement('canvas')
+                    c.width = width
+                    c.height = height
+                    return c
                 }
 
-                hasOutput = true
-                downloadLink.href = canvas.toDataURL('image/png')
-                downloadLink.download = outputFileName + ".png"
-                let newHtml = '<img src="'+canvas.toDataURL('image/png')+'" class="img-full">'
-                newHtml += '<br/><br/>'
-                newHtml += '<button class="button" onClick="download()" style="font-size:x-large">Download</button>'
+                // Draw a section with optional layer
+                function drawSection(sourceCanvas, width, height, opsArray) {
+                    const canvas = createCanvas(width, height)
+                    const ctx = canvas.getContext('2d', { willReadFrequently: true })
+                    ctx.clearRect(0, 0, width, height)
+                    ctx.imageSmoothingEnabled = false
+                    ctx.globalCompositeOperation = 'source-over'
+
+                    for (const op of opsArray) {
+                        if (op.input.dx === 0 || op.input.dy === 0) continue
+
+                        const inputX = op.input.x * pixelScale
+                        const inputY = op.input.y * pixelScale
+                        const inputW = op.input.dx * pixelScale
+                        const inputH = op.input.dy * pixelScale
+
+                        const outputX = op.output.x
+                        const outputY = op.output.y
+                        const outputW = Math.abs(inputW)
+                        const outputH = Math.abs(inputH)
+
+                        ctx.save()
+                        ctx.beginPath()
+                        ctx.rect(outputX, outputY, outputW, outputH)
+                        ctx.clip()
+
+                        ctx.translate(outputX + (inputW < 0 ? outputW : 0), outputY + (inputH < 0 ? outputH : 0))
+                        ctx.scale(inputW < 0 ? -1 : 1, inputH < 0 ? -1 : 1)
+
+                        if (op.background) {
+                            const argb = parseInt(op.background)
+                            const a = ((argb >> 24) & 0xFF) / 255
+                            const r = (argb >> 16) & 0xFF
+                            const g = (argb >> 8) & 0xFF
+                            const b = argb & 0xFF
+                            ctx.fillStyle = `rgba(${r},${g},${b},${a})`
+                            ctx.fillRect(0, 0, outputW, outputH)
+                        }
+
+                        {
+                            const tempCanvas = createCanvas(outputW, outputH)
+                            const tempCtx = tempCanvas.getContext('2d')
+                            tempCtx.drawImage(sourceCanvas, inputX, inputY, outputW, outputH, 0, 0, outputW, outputH)
+
+                            const imgData = tempCtx.getImageData(0, 0, outputW, outputH)
+                            for (let i = 3; i < imgData.data.length; i += 4) imgData.data[i] = 255
+                            tempCtx.putImageData(imgData, 0, 0)
+
+                            ctx.drawImage(tempCanvas, 0, 0)
+                        }
+
+                        if (op.layer) {
+                            const layerInputX = (op.input.x + (op.layer.dx ?? 0)) * pixelScale
+                            const layerInputY = (op.input.y + (op.layer.dy ?? 0)) * pixelScale
+                            const layerOffsetX = op.layer.offset_x ?? 0
+                            const layerOffsetY = op.layer.offset_y ?? 0
+
+                            ctx.drawImage(sourceCanvas, layerInputX, layerInputY, outputW, outputH, layerOffsetX, layerOffsetY, outputW, outputH)
+                        }
+
+                        ctx.restore()
+                    }
+
+                    return canvas
+                }
+
+                // Head
+                skinSections.push(drawSection(canvasSkin, 32*pixelScale + 2*pixelScale, 24*pixelScale + 2*pixelScale, headOps))
+
+                // Body
+                skinSections.push(drawSection(canvasSkin, 24*pixelScale + 2*pixelScale, 20*pixelScale + 2*pixelScale, bodyOps))
+
+                // Right Arm
+                skinSections.push(drawSection(canvasSkin, 16*pixelScale + 2*pixelScale, 20*pixelScale + 2*pixelScale, armRightOps))
+
+                // Left Arm
+                skinSections.push(drawSection(canvasSkin, 16*pixelScale + 2*pixelScale, 20*pixelScale + 2*pixelScale, armLeftOps))
+
+                // Right Leg
+                skinSections.push(drawSection(canvasSkin, 16*pixelScale + 2*pixelScale, 20*pixelScale + 2*pixelScale, legRightOps))
+
+                // Left Leg
+                skinSections.push(drawSection(canvasSkin, 16*pixelScale + 2*pixelScale, 20*pixelScale + 2*pixelScale, legLeftOps))
+
+                // Cape
+                if (hasCape)
+                    skinSections.push(drawSection(canvasCape, 22*pixelScale + 2*pixelScale, 18*pixelScale + 2*pixelScale, capeOps))
+
+                await labelAndLog('button-label', 'Organizing pages...')
+
+                const extrudeEdges = true
+
+                function extrudeCanvasEdges(canvas) {
+                    const ctx = canvas.getContext('2d', { willReadFrequently: true })
+                    const w = canvas.width
+                    const h = canvas.height
+
+                    const src = ctx.getImageData(0, 0, w, h)
+                    const srcData = src.data
+
+                    const dist = new Int32Array(w * h).fill(-1)
+                    const srcId = new Int32Array(w * h).fill(-1)
+                    const srcColors = []
+                    const queue = []
+
+                    const idx = (x, y) => y * w + x
+                    const inBounds = (x, y) => x >= 0 && y >= 0 && x < w && y < h
+
+                    // Initialize queues and color mapping
+                    for (let y = 0; y < h; y++) {
+                        for (let x = 0; x < w; x++) {
+                            const i = idx(x, y);
+                            if (srcData[i * 4 + 3] !== 0) {
+                                const id = srcColors.length
+                                srcColors.push([
+                                    srcData[i * 4 + 0],
+                                    srcData[i * 4 + 1],
+                                    srcData[i * 4 + 2],
+                                    srcData[i * 4 + 3],
+                                ])
+                                dist[i] = 0
+                                srcId[i] = id
+                                queue.push(i)
+                            }
+                        }
+                    }
+
+                    for (let qIndex = 0; qIndex < queue.length; qIndex++) {
+                        const cur = queue[qIndex]
+                        const cx = cur % w
+                        const cy = Math.floor(cur / w)
+                        const curDist = dist[cur]
+                        if (curDist >= pixelScale) continue
+
+                        const neighbors = [
+                            [cx - 1, cy],
+                            [cx + 1, cy],
+                            [cx, cy - 1],
+                            [cx, cy + 1],
+                        ]
+                        for (const [nx, ny] of neighbors) {
+                            if (!inBounds(nx, ny)) continue
+                            const ni = idx(nx, ny)
+                            if (dist[ni] === -1) {
+                                dist[ni] = curDist + 1
+                                srcId[ni] = srcId[cur]
+                                queue.push(ni)
+                            }
+                        }
+                    }
+
+                    const dst = ctx.createImageData(w, h)
+                    dst.data.set(srcData)
+
+                    for (let y = 0; y < h; y++) {
+                        for (let x = 0; x < w; x++) {
+                            const i = idx(x, y)
+                            if (dist[i] > 0 && dist[i] <= pixelScale) {
+                                const color = srcColors[srcId[i]]
+                                dst.data[i * 4 + 0] = color[0]
+                                dst.data[i * 4 + 1] = color[1]
+                                dst.data[i * 4 + 2] = color[2]
+                                dst.data[i * 4 + 3] = color[3]
+                            }
+                        }
+                    }
+
+                    ctx.putImageData(dst, 0, 0)
+                }
+
+                const pageSections = []
+                let currentPage = createCanvas(outputWidth, outputHeight)
+                let ctxPage = currentPage.getContext('2d', { willReadFrequently: true })
+                ctxPage.imageSmoothingEnabled = false
+
+                let x = pageMarginX
+                let y = pageMarginY
+                let rowHeight = 0
+
+                for (const section of skinSections) {
+                    if (x + section.width + pageMarginX > outputWidth) {
+                        x = pageMarginX
+                        y += rowHeight + spacing
+                        rowHeight = 0
+                    }
+
+                    if (y + section.height + pageMarginY > outputHeight) {
+                        pageSections.push(currentPage)
+                        currentPage = createCanvas(outputWidth, outputHeight)
+                        ctxPage = currentPage.getContext('2d', { willReadFrequently: true })
+                        ctxPage.imageSmoothingEnabled = false
+                        x = pageMarginX
+                        y = pageMarginY
+                        rowHeight = 0
+                    }
+
+                    ctxPage.drawImage(section, x, y)
+                    x += section.width + spacing
+                    rowHeight = Math.max(rowHeight, section.height)
+                }
+
+                pageSections.push(currentPage)
+                prevPageCount = pageSections.length
+
+                if (extrudeEdges) {
+                    pageSections.forEach(c => extrudeCanvasEdges(c))
+                }
+
+                let newHtml = '<table class="card-table"><tr class="card-table-row">'
+                for (const page of pageSections) {
+                    newHtml += `<td class="card-wrap-third"><img src="${page.toDataURL('image/png')}" class="img-full"></td>`
+                }
+                newHtml += '</tr></table>'
+                newHtml += `<button class="button" onClick="download()" style="font-size:x-large">Download</button>`
+
                 document.getElementById('img-span').innerHTML = newHtml
                 document.getElementById('button-label').innerHTML = ''
+
                 console.log('Generate function completed')
             }
             else {
                 if(lbl === '')
-                    console.log('Inputs invalid')
+                    await labelAndLog('button-label', 'Input error')
                 else
-                    console.log('Inputs invalid: '+lbl)
-                hasOutput = false
+                    await labelAndLog('button-label', 'Inputs invalid: '+lbl)
+                prevPageCount = 0
                 document.getElementById('img-span').innerHTML = ''
             }
         }
