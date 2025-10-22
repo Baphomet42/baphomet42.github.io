@@ -10,6 +10,7 @@
     <link rel="apple-touch-icon" href="https://avatars.githubusercontent.com/u/71295013?v=4">
     <title>Origami | BaphomethLabs</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js" defer></script>
     <script src="/template/data-include.js"></script>
 </head>
 <body>
@@ -211,28 +212,48 @@
 
         const apiServer = 'https://silcrow-209748932377.us-central1.run.app/api'
 
-        const pixelScale = 40 // must be even
-        const outputWidthBase = 8.5
-        const outputHeightBase = 11
-        const outputScale = 350
-        const outputWidth = Math.floor(outputWidthBase * outputScale)
-        const outputHeight = Math.floor(outputHeightBase * outputScale)
+        const pixelScaleInput = 10
+        const pixelScale = 4 * pixelScaleInput // must be multiple of 4
+        const outputUnitWidth = 8.5
+        const outputUnitHeight = 11
+        const outputUnitLabel = 'in'
+        const outputUnitScale = 350
+        const outputWidth = Math.floor(outputUnitWidth * outputUnitScale)
+        const outputHeight = Math.floor(outputUnitHeight * outputUnitScale)
+
+        const offset_layer_amount = Math.floor(pixelScale / 4)
 
         const spacing = 3 * pixelScale
         const pageMarginX = Math.ceil(outputWidth / 10)
         const pageMarginY = Math.ceil(outputHeight / 10)
+        const pageMarginUnitX = pageMarginX / outputUnitScale
+        const pageMarginUnitY = pageMarginY / outputUnitScale
 
         let selectedSkinFileImg = new Image()
         let selectedSkinFileName = ''
         let selectedCapeFileImg = new Image()
         let selectedCapeFileName = ''
         let selectedCapeFileSet = false
+        let generatedPdf = null
         let downloadLink = document.createElement('a')
         let prevPageCount = 0
 
         refreshCapePresets()
         setSkinSource('username')
         setCapeSource('username')
+
+        function createCanvas(width, height) {
+            const c = document.createElement('canvas')
+            c.width = width
+            c.height = height
+            return c
+        }
+
+        function getCanvasContext(canvas) {
+            const ctx = canvas.getContext('2d', { willReadFrequently: true })
+            ctx.imageSmoothingEnabled = false
+            return ctx
+        }
 
         function setSkinSource(source) {
             document.getElementById('skin-source-file-mode').style.display = "none"
@@ -457,198 +478,204 @@
         }
 
         async function submit() {
-            console.log('Origami generate function started')
-            await labelAndLog('button-label', 'Validating inputs...')
-            downloadLink = document.createElement('a')
+            try {
+                console.log('Origami generate function started')
+                downloadLink = document.createElement('a')
+                generatedPdf = null
 
-            if (prevPageCount >= 1) {
-                const tempCanvas = document.createElement('canvas')
-                tempCanvas.width = outputWidth
-                tempCanvas.height = outputHeight
-                let newHtml = '<table class="card-table"><tr class="card-table-row">'
-                for (let i = 0; i < prevPageCount; i++) {
-                    newHtml += `<td class="card-wrap-third"><img src="${tempCanvas.toDataURL('image/png')}" class="img-full"></td>`
-                }
-                newHtml += '</tr></table>'
-                newHtml += `<button class="button" style="font-size:x-large" disabled>Download</button>`
-
-                document.getElementById('img-span').innerHTML = newHtml
-                document.getElementById('button-label').innerHTML = ''
-            }
-            else
-                document.getElementById('img-span').innerHTML = ''
-
-            let skinValid = false
-            let capeValid = false
-            let lbl = ''
-
-            let outputFileName = 'download'
-            let imgSkin = new Image()
-            let slim = false
-            let hasCape = false
-            let imgCape = new Image()
-            let usernameMode = false
-            let fetchedProfileCapeExists = false
-            let fetchedProfileCapeImg = new Image()
-
-            const skinMode = document.getElementById('skin-source').value
-            const capeMode = document.getElementById('cape-source').value
-
-            if(skinMode === 'file') {
-                if(!testValidSkinSize(selectedSkinFileImg.width,selectedSkinFileImg.height))
-                    lbl = 'Skin must be a '+skinSizes+' PNG'
-                else {
-                    skinValid = true
-                    outputFileName = selectedSkinFileName
-                    if(outputFileName.endsWith(".png") && outputFileName.length > 4)
-                        outputFileName = outputFileName.substring(0,outputFileName.length - 4)
-                    imgSkin = selectedSkinFileImg
-                    slim = document.getElementById('model').value === 'slim'
-                }
-            }
-            else if(skinMode === 'username') {
-                usernameMode = true
-                let username = ''
-                let accessedApi = false
-
-                try {
-                    username = document.getElementById('username-input').value.trim()
-                    if(username === '') {
-                        lbl = 'Enter a username'
+                if (prevPageCount >= 1) {
+                    const tempCanvas = createCanvas(outputWidth, outputHeight)
+                    let newHtml = '<table class="card-table"><tr class="card-table-row">'
+                    for (let i = 0; i < prevPageCount; i++) {
+                        newHtml += `<td class="card-wrap-third"><img src="${tempCanvas.toDataURL('image/png')}" class="img-full"></td>`
                     }
-                    else if (/^[A-Za-z0-9_]+$/.test(username)) {
-                        await labelAndLog('button-label', 'Fetching profile...')
-                        try {
-                            const propertiesResponse = await fetch(apiServer + '/minecraft/properties/name/' + username)
-                            if (propertiesResponse.ok) {
-                                const propertiesData = await propertiesResponse.json()
-                                try {
-                                    if(propertiesData && typeof propertiesData === "object" && !Array.isArray(propertiesData))
-                                        accessedApi = true
-                                } catch {}
+                    newHtml += '</tr></table>'
+                    newHtml += `<button class="button" style="font-size:x-large" disabled>Download</button>`
 
-                                if (propertiesData.textures && propertiesData.textures.SKIN && propertiesData.textures.SKIN.url) {
-                                    const skinUrl = convertUrlHttps(propertiesData.textures.SKIN.url)
-                                    const model = propertiesData.textures.SKIN.metadata?.model // optional
-                                    const capeUrl = convertUrlHttps(propertiesData.textures.CAPE?.url) // optional
+                    document.getElementById('img-span').innerHTML = newHtml
+                    label('button-label', '')
+                }
+                else
+                    document.getElementById('img-span').innerHTML = ''
 
-                                    if(model === 'slim')
-                                        slim = true
+                await labelAndLog('button-label', 'Validating inputs...')
 
-                                    if(skinUrl) {
-                                        try {
-                                            const parsedUrl = new URL(skinUrl)
-                                            if (parsedUrl.protocol === "http:" || parsedUrl.protocol === "https:") {
-                                                try {
-                                                    const response = await fetch(skinUrl)
-                                                    if (response.ok) {
-                                                        const contentType = response.headers.get("content-type") || ""
-                                                        const blob = await response.blob()
+                let skinValid = false
+                let capeValid = false
+                let lbl = ''
 
-                                                        // Fallback: treat as PNG if content-type is missing but the data starts with PNG signature
-                                                        const isPngHeader = (await blob.slice(0, 8).arrayBuffer())
-                                                            && new Uint8Array(await blob.slice(0, 8).arrayBuffer())
-                                                                .every((b, i) => [137, 80, 78, 71, 13, 10, 26, 10][i] === b)
-                                                        if (contentType.includes("image/png") || isPngHeader) {
-                                                            const objectUrl = URL.createObjectURL(blob)
-                                                            await new Promise((resolve, reject) => {
-                                                                imgSkin.onload = () => {
-                                                                    URL.revokeObjectURL(objectUrl)
-                                                                    resolve(true)
+                let outputFileName = 'download'
+                let imgSkin = new Image()
+                let slim = false
+                let hasCape = false
+                let imgCape = new Image()
+                let usernameMode = false
+                let fetchedProfileCapeExists = false
+                let fetchedProfileCapeImg = new Image()
 
-                                                                    if (!testValidSkinSize(imgSkin.width,imgSkin.height))
-                                                                        lbl = 'Skin must be a '+skinSizes+' PNG'
-                                                                    else
-                                                                        skinValid = true
-                                                                }
-                                                                imgSkin.onerror = () => {
-                                                                    URL.revokeObjectURL(objectUrl)
-                                                                    reject(false)
-                                                                }
-                                                                imgSkin.src = objectUrl
-                                                            })
+                const skinMode = document.getElementById('skin-source').value
+                const capeMode = document.getElementById('cape-source').value
+
+                if(skinMode === 'file') {
+                    if(!testValidSkinSize(selectedSkinFileImg.width,selectedSkinFileImg.height))
+                        lbl = 'Skin must be a '+skinSizes+' PNG'
+                    else {
+                        skinValid = true
+                        outputFileName = selectedSkinFileName
+                        if(outputFileName.endsWith(".png") && outputFileName.length > 4)
+                            outputFileName = outputFileName.substring(0,outputFileName.length - 4)
+                        imgSkin = selectedSkinFileImg
+                        slim = document.getElementById('model').value === 'slim'
+                    }
+                }
+                else if(skinMode === 'username') {
+                    usernameMode = true
+                    let username = ''
+                    let accessedApi = false
+
+                    try {
+                        username = document.getElementById('username-input').value.trim()
+                        if(username === '') {
+                            lbl = 'Enter a username'
+                        }
+                        else if (/^[A-Za-z0-9_]+$/.test(username)) {
+                            await labelAndLog('button-label', 'Fetching profile...')
+                            try {
+                                const propertiesResponse = await fetch(apiServer + '/minecraft/properties/name/' + username)
+                                if (propertiesResponse.ok) {
+                                    const propertiesData = await propertiesResponse.json()
+                                    try {
+                                        if(propertiesData && typeof propertiesData === "object" && !Array.isArray(propertiesData))
+                                            accessedApi = true
+                                    } catch {}
+
+                                    if (propertiesData.textures && propertiesData.textures.SKIN && propertiesData.textures.SKIN.url) {
+                                        const skinUrl = convertUrlHttps(propertiesData.textures.SKIN.url)
+                                        const model = propertiesData.textures.SKIN.metadata?.model // optional
+                                        const capeUrl = convertUrlHttps(propertiesData.textures.CAPE?.url) // optional
+
+                                        if(model === 'slim')
+                                            slim = true
+
+                                        if(skinUrl) {
+                                            try {
+                                                const parsedUrl = new URL(skinUrl)
+                                                if (parsedUrl.protocol === "http:" || parsedUrl.protocol === "https:") {
+                                                    try {
+                                                        const response = await fetch(skinUrl)
+                                                        if (response.ok) {
+                                                            const contentType = response.headers.get("content-type") || ""
+                                                            const blob = await response.blob()
+
+                                                            // Fallback: treat as PNG if content-type is missing but the data starts with PNG signature
+                                                            const isPngHeader = (await blob.slice(0, 8).arrayBuffer())
+                                                                && new Uint8Array(await blob.slice(0, 8).arrayBuffer())
+                                                                    .every((b, i) => [137, 80, 78, 71, 13, 10, 26, 10][i] === b)
+                                                            if (contentType.includes("image/png") || isPngHeader) {
+                                                                const objectUrl = URL.createObjectURL(blob)
+                                                                await new Promise((resolve, reject) => {
+                                                                    imgSkin.onload = () => {
+                                                                        URL.revokeObjectURL(objectUrl)
+                                                                        resolve(true)
+
+                                                                        if (!testValidSkinSize(imgSkin.width,imgSkin.height))
+                                                                            lbl = 'Skin must be a '+skinSizes+' PNG'
+                                                                        else
+                                                                            skinValid = true
+                                                                    }
+                                                                    imgSkin.onerror = () => {
+                                                                        URL.revokeObjectURL(objectUrl)
+                                                                        reject(false)
+                                                                    }
+                                                                    imgSkin.src = objectUrl
+                                                                })
+                                                            }
                                                         }
-                                                    }
-                                                } catch {}
-                                            }
-                                        } catch {}
-                                    }
+                                                    } catch {}
+                                                }
+                                            } catch {}
+                                        }
 
-                                    if(capeUrl) {
-                                        fetchedProfileCapeExists = true
-                                        try {
-                                            const parsedUrl = new URL(capeUrl)
-                                            if (parsedUrl.protocol === "http:" || parsedUrl.protocol === "https:") {
-                                                try {
-                                                    const response = await fetch(capeUrl)
-                                                    if (response.ok) {
-                                                        const contentType = response.headers.get("content-type") || ""
-                                                        const blob = await response.blob()
+                                        if(capeUrl) {
+                                            fetchedProfileCapeExists = true
+                                            try {
+                                                const parsedUrl = new URL(capeUrl)
+                                                if (parsedUrl.protocol === "http:" || parsedUrl.protocol === "https:") {
+                                                    try {
+                                                        const response = await fetch(capeUrl)
+                                                        if (response.ok) {
+                                                            const contentType = response.headers.get("content-type") || ""
+                                                            const blob = await response.blob()
 
-                                                        // Fallback: treat as PNG if content-type is missing but the data starts with PNG signature
-                                                        const isPngHeader = (await blob.slice(0, 8).arrayBuffer())
-                                                            && new Uint8Array(await blob.slice(0, 8).arrayBuffer())
-                                                                .every((b, i) => [137, 80, 78, 71, 13, 10, 26, 10][i] === b)
-                                                        if (contentType.includes("image/png") || isPngHeader) {
-                                                            const objectUrl = URL.createObjectURL(blob)
-                                                            await new Promise((resolve, reject) => {
-                                                                fetchedProfileCapeImg.onload = () => {
-                                                                    URL.revokeObjectURL(objectUrl)
-                                                                    resolve(true)
-                                                                }
-                                                                fetchedProfileCapeImg.onerror = () => {
-                                                                    URL.revokeObjectURL(objectUrl)
-                                                                    reject(false)
-                                                                }
-                                                                fetchedProfileCapeImg.src = objectUrl
-                                                            })
+                                                            // Fallback: treat as PNG if content-type is missing but the data starts with PNG signature
+                                                            const isPngHeader = (await blob.slice(0, 8).arrayBuffer())
+                                                                && new Uint8Array(await blob.slice(0, 8).arrayBuffer())
+                                                                    .every((b, i) => [137, 80, 78, 71, 13, 10, 26, 10][i] === b)
+                                                            if (contentType.includes("image/png") || isPngHeader) {
+                                                                const objectUrl = URL.createObjectURL(blob)
+                                                                await new Promise((resolve, reject) => {
+                                                                    fetchedProfileCapeImg.onload = () => {
+                                                                        URL.revokeObjectURL(objectUrl)
+                                                                        resolve(true)
+                                                                    }
+                                                                    fetchedProfileCapeImg.onerror = () => {
+                                                                        URL.revokeObjectURL(objectUrl)
+                                                                        reject(false)
+                                                                    }
+                                                                    fetchedProfileCapeImg.src = objectUrl
+                                                                })
+                                                            }
                                                         }
-                                                    }
-                                                } catch {}
-                                            }
-                                        } catch {}
+                                                    } catch {}
+                                                }
+                                            } catch {}
+                                        }
                                     }
                                 }
+                            } catch {}
+                        }
+                        else {
+                            lbl = 'Invalid username'
+                        }
+                    } catch {}
+
+                    if(lbl === '') {
+                        if(!accessedApi)
+                            lbl = 'Failed to access skin server proxy'
+                        else if(!skinValid)
+                            lbl = 'Failed to fetch username: ' + username
+                    }
+
+                    await label('button-label', 'Validating inputs...')
+                }
+                else {
+                    lbl = 'Failed to determine skin source'
+                }
+
+                if(skinValid) {
+                    if(capeMode === 'file') {
+                        if(selectedCapeFileSet && !testValidCapeSize(selectedCapeFileImg.width,selectedCapeFileImg.height))
+                            lbl = 'Cape must be a '+capeSizes+' PNG'
+                        else {
+                            capeValid = true
+                            hasCape = selectedCapeFileSet
+                            imgCape = selectedCapeFileImg
+                        }
+                    }
+                    else if(capeMode === 'username') {
+                        if(usernameMode) {
+                            if(fetchedProfileCapeExists) {
+                                if (!testValidCapeSize(fetchedProfileCapeImg.width,fetchedProfileCapeImg.height))
+                                    lbl = 'Cape must be a '+capeSizes+' PNG'
+                                else {
+                                    capeValid = true
+                                    hasCape =  true
+                                    imgCape = fetchedProfileCapeImg
+                                }
                             }
-                        } catch {}
-                    }
-                    else {
-                        lbl = 'Invalid username'
-                    }
-                } catch {}
-
-                if(lbl === '') {
-                    if(!accessedApi)
-                        lbl = 'Failed to access skin server proxy'
-                    else if(!skinValid)
-                        lbl = 'Failed to fetch username: ' + username
-                }
-
-                await label('button-label', 'Validating inputs...')
-            }
-            else {
-                lbl = 'Failed to determine skin source'
-            }
-
-            if(skinValid) {
-                if(capeMode === 'file') {
-                    if(selectedCapeFileSet && !testValidCapeSize(selectedCapeFileImg.width,selectedCapeFileImg.height))
-                        lbl = 'Cape must be a '+capeSizes+' PNG'
-                    else {
-                        capeValid = true
-                        hasCape = selectedCapeFileSet
-                        imgCape = selectedCapeFileImg
-                    }
-                }
-                else if(capeMode === 'username') {
-                    if(usernameMode) {
-                        if(fetchedProfileCapeExists) {
-                            if (!testValidCapeSize(fetchedProfileCapeImg.width,fetchedProfileCapeImg.height))
-                                lbl = 'Cape must be a '+capeSizes+' PNG'
                             else {
                                 capeValid = true
-                                hasCape =  true
-                                imgCape = fetchedProfileCapeImg
+                                hasCape = false
                             }
                         }
                         else {
@@ -656,572 +683,630 @@
                             hasCape = false
                         }
                     }
-                    else {
-                        capeValid = true
-                        hasCape = false
-                    }
-                }
-                else if(capeMode === 'preset') {
-                    const url = document.getElementById('cape-preset-input').value
-                    if(url === 'none') {
-                        capeValid = true
-                        hasCape = false
-                    }
-                    else {
-                        await labelAndLog('button-label', 'Fetching cape...')
+                    else if(capeMode === 'preset') {
+                        const url = document.getElementById('cape-preset-input').value
+                        if(url === 'none') {
+                            capeValid = true
+                            hasCape = false
+                        }
+                        else {
+                            await labelAndLog('button-label', 'Fetching cape...')
 
-                        try {
-                            const capeUrl = convertUrlHttps(url)
-                            const parsedUrl = new URL(capeUrl)
-                            if (parsedUrl.protocol === "http:" || parsedUrl.protocol === "https:") {
-                                try {
-                                    const response = await fetch(capeUrl)
-                                    if (response.ok) {
-                                        const contentType = response.headers.get("content-type") || ""
-                                        const blob = await response.blob()
+                            try {
+                                const capeUrl = convertUrlHttps(url)
+                                const parsedUrl = new URL(capeUrl)
+                                if (parsedUrl.protocol === "http:" || parsedUrl.protocol === "https:") {
+                                    try {
+                                        const response = await fetch(capeUrl)
+                                        if (response.ok) {
+                                            const contentType = response.headers.get("content-type") || ""
+                                            const blob = await response.blob()
 
-                                        // Fallback: treat as PNG if content-type is missing but the data starts with PNG signature
-                                        const isPngHeader = (await blob.slice(0, 8).arrayBuffer())
-                                            && new Uint8Array(await blob.slice(0, 8).arrayBuffer())
-                                                .every((b, i) => [137, 80, 78, 71, 13, 10, 26, 10][i] === b)
-                                        if (contentType.includes("image/png") || isPngHeader) {
-                                            const objectUrl = URL.createObjectURL(blob)
-                                            await new Promise((resolve, reject) => {
-                                                imgCape.onload = () => {
-                                                    URL.revokeObjectURL(objectUrl)
-                                                    resolve(true)
+                                            // Fallback: treat as PNG if content-type is missing but the data starts with PNG signature
+                                            const isPngHeader = (await blob.slice(0, 8).arrayBuffer())
+                                                && new Uint8Array(await blob.slice(0, 8).arrayBuffer())
+                                                    .every((b, i) => [137, 80, 78, 71, 13, 10, 26, 10][i] === b)
+                                            if (contentType.includes("image/png") || isPngHeader) {
+                                                const objectUrl = URL.createObjectURL(blob)
+                                                await new Promise((resolve, reject) => {
+                                                    imgCape.onload = () => {
+                                                        URL.revokeObjectURL(objectUrl)
+                                                        resolve(true)
 
-                                                    if (!testValidCapeSize(imgCape.width,imgCape.height))
-                                                        lbl = 'Cape must be a '+capeSizes+' PNG'
-                                                    else {
-                                                        capeValid = true
-                                                        hasCape = true
+                                                        if (!testValidCapeSize(imgCape.width,imgCape.height))
+                                                            lbl = 'Cape must be a '+capeSizes+' PNG'
+                                                        else {
+                                                            capeValid = true
+                                                            hasCape = true
+                                                        }
                                                     }
-                                                }
-                                                imgCape.onerror = () => {
-                                                    URL.revokeObjectURL(objectUrl)
-                                                    reject(false)
-                                                }
-                                                imgCape.src = objectUrl
-                                            })
+                                                    imgCape.onerror = () => {
+                                                        URL.revokeObjectURL(objectUrl)
+                                                        reject(false)
+                                                    }
+                                                    imgCape.src = objectUrl
+                                                })
+                                            }
                                         }
-                                    }
-                                } catch {}
+                                    } catch {}
+                                }
+                            } catch {}
+
+                            if(!capeValid && lbl === '') {
+                                lbl = 'Failed to fetch preset cape: ' + document.getElementById('cape-preset-input').selectedOptions[0].text
                             }
-                        } catch {}
 
-                        if(!capeValid && lbl === '') {
-                            lbl = 'Failed to fetch preset cape: ' + document.getElementById('cape-preset-input').selectedOptions[0].text
+                            await label('button-label', 'Validating inputs...')
                         }
-
-                        await label('button-label', 'Validating inputs...')
+                    }
+                    else {
+                        lbl = 'Failed to determine cape source'
                     }
                 }
-                else {
-                    lbl = 'Failed to determine cape source'
-                }
-            }
 
-            if(lbl === '' && !(skinValid && capeValid))
-                lbl = 'Failed to validate inputs'
+                if(lbl === '' && !(skinValid && capeValid))
+                    lbl = 'Failed to validate inputs'
 
-            if(skinValid && capeValid) {
-                await labelAndLog('button-label', 'Loading skin...')
+                if(skinValid && capeValid) {
+                    await labelAndLog('button-label', 'Loading skin...')
 
-                console.log('Skin size: '+imgSkin.width+'x'+imgSkin.height)
+                    console.log('Skin size: '+imgSkin.width+'x'+imgSkin.height)
 
-                if ((imgSkin.width !== imgSkin.height)) {
-                    // see net.minecraft.client.renderer.texture.SkinTextureDownloader
-                    console.log('Legacy skin detected, converting to new format')
-                    const oldSkinResizeCanvas = document.createElement('canvas')
-                    oldSkinResizeCanvas.width = imgSkin.width
-                    oldSkinResizeCanvas.height = imgSkin.width
-                    const ctx = oldSkinResizeCanvas.getContext('2d', { willReadFrequently: true })
+                    if ((imgSkin.width !== imgSkin.height)) {
+                        // see net.minecraft.client.renderer.texture.SkinTextureDownloader
+                        console.log('Legacy skin detected, converting to new format')
+                        const oldSkinResizeCanvas = createCanvas(imgSkin.width, imgSkin.width)
+                        const oldSkinResizeCanvasCtx = getCanvasContext(oldSkinResizeCanvas)
 
-                    ctx.drawImage(imgSkin, 0, 0)
+                        oldSkinResizeCanvasCtx.drawImage(imgSkin, 0, 0)
 
-                    const imageData = ctx.getImageData(imgSkin.width / 2, 0, imgSkin.width / 2, imgSkin.width / 2)
-                    let hasTransparency = false
-                    for (let i = 3; i < imageData.data.length; i += 4) {
-                        if (imageData.data[i] < 128) {
-                            hasTransparency = true
-                            break
-                        }
-                    }
-
-                    if (!hasTransparency) {
-                        console.log('Archaic skin detected, removing hat layer')
-                        const hatData = ctx.getImageData(imgSkin.width / 2, 0, imgSkin.width / 2, imgSkin.width / 4)
-                        for (let i = 0; i < hatData.data.length; i += 4) {
-                            hatData.data[i] = 0
-                            hatData.data[i+1] = 0
-                            hatData.data[i+2] = 0
-                            hatData.data[i+3] = 0
-                        }
-                        ctx.putImageData(hatData, imgSkin.width / 2, 0)
-                    }
-
-                    const legacyCoordScale = imgSkin.width / vanillaSkinWidth
-
-                    function copyRegion(inpSrcX, inpSrcY, inpDestDX, inpDestDY, inpWidth, inpHeight, mirrorX = false, mirrorY = false) {
-                        const srcX = inpSrcX * legacyCoordScale
-                        const srcY = inpSrcY * legacyCoordScale
-                        const destDX = inpDestDX * legacyCoordScale
-                        const destDY = inpDestDY * legacyCoordScale
-                        const width = inpWidth * legacyCoordScale
-                        const height = inpHeight * legacyCoordScale
-
-                        const imageData = ctx.getImageData(srcX, srcY, width, height)
-                        const out = ctx.createImageData(width, height)
-                        const src = imageData.data
-                        const dst = out.data
-
-                        for (let y = 0; y < height; y++) {
-                            for (let x = 0; x < width; x++) {
-                                const srcIndex = (y * width + x) * 4
-                                const dstX = mirrorX ? width - 1 - x : x
-                                const dstY = mirrorY ? height - 1 - y : y
-                                const dstIndex = (dstY * width + dstX) * 4
-                                dst[dstIndex] = src[srcIndex];
-                                dst[dstIndex + 1] = src[srcIndex + 1]
-                                dst[dstIndex + 2] = src[srcIndex + 2]
-                                dst[dstIndex + 3] = src[srcIndex + 3]
+                        const imageData = oldSkinResizeCanvasCtx.getImageData(imgSkin.width / 2, 0, imgSkin.width / 2, imgSkin.width / 2)
+                        let hasTransparency = false
+                        for (let i = 3; i < imageData.data.length; i += 4) {
+                            if (imageData.data[i] < 128) {
+                                hasTransparency = true
+                                break
                             }
                         }
 
-                        ctx.putImageData(out, srcX + destDX, srcY + destDY)
-                    }
-
-                    copyRegion(4, 16, 16, 32, 4, 4, true, false)
-                    copyRegion(8, 16, 16, 32, 4, 4, true, false)
-                    copyRegion(0, 20, 24, 32, 4, 12, true, false)
-                    copyRegion(4, 20, 16, 32, 4, 12, true, false)
-                    copyRegion(8, 20, 8, 32, 4, 12, true, false)
-                    copyRegion(12, 20, 16, 32, 4, 12, true, false)
-                    copyRegion(44, 16, -8, 32, 4, 4, true, false)
-                    copyRegion(48, 16, -8, 32, 4, 4, true, false)
-                    copyRegion(40, 20, 0, 32, 4, 12, true, false)
-                    copyRegion(44, 20, -8, 32, 4, 12, true, false)
-                    copyRegion(48, 20, -16, 32, 4, 12, true, false)
-                    copyRegion(52, 20, -8, 32, 4, 12, true, false)
-
-                    imgSkin = await new Promise(resolve => {
-                        const newImg = new Image()
-                        newImg.onload = () => resolve(newImg)
-                        newImg.src = oldSkinResizeCanvas.toDataURL('image/png')
-                    })
-                }       
-
-                const inputWidth = imgSkin.width
-                const inputHeight = imgSkin.height
-                const upscale = Math.floor((vanillaSkinWidth*pixelScale) / inputWidth)
-
-                const offset = Math.floor(pixelScale / 4)
-                const offset_3d_all = document.getElementById('shift-3d').value === 'all'
-                const offset_3d_head = offset_3d_all || document.getElementById('shift-3d').value === 'head'
-
-                const canvasSkin = document.createElement('canvas')
-                canvasSkin.width = vanillaSkinWidth*pixelScale
-                canvasSkin.height = vanillaSkinHeight*pixelScale
-                const srcCtx = canvasSkin.getContext('2d')
-
-                const tmpCanvas = document.createElement('canvas')
-                tmpCanvas.width = inputWidth
-                tmpCanvas.height = inputHeight
-                const tmpCtx = tmpCanvas.getContext('2d')
-                tmpCtx.drawImage(imgSkin, 0, 0)
-                const originalImageData = tmpCtx.getImageData(0, 0, inputWidth, inputHeight)
-                const scaledImageData = srcCtx.createImageData(vanillaSkinWidth*pixelScale, vanillaSkinHeight*pixelScale)
-
-                console.log('Scaling skin')
-                for (let y = 0; y < inputHeight; y++) {
-                    for (let x = 0; x < inputWidth; x++) {
-                        const index = (y * inputWidth + x) * 4
-                        const r = originalImageData.data[index]
-                        const g = originalImageData.data[index + 1]
-                        const b = originalImageData.data[index + 2]
-                        const a = originalImageData.data[index + 3]
-
-                        for (let dy = 0; dy < upscale; dy++) {
-                            for (let dx = 0; dx < upscale; dx++) {
-                                const scaledIndex = ((y * upscale + dy) * vanillaSkinWidth*pixelScale + (x * upscale + dx)) * 4
-                                scaledImageData.data[scaledIndex] = r
-                                scaledImageData.data[scaledIndex + 1] = g
-                                scaledImageData.data[scaledIndex + 2] = b
-                                scaledImageData.data[scaledIndex + 3] = a
+                        if (!hasTransparency) {
+                            console.log('Archaic skin detected, removing hat layer')
+                            const hatData = oldSkinResizeCanvasCtx.getImageData(imgSkin.width / 2, 0, imgSkin.width / 2, imgSkin.width / 4)
+                            for (let i = 0; i < hatData.data.length; i += 4) {
+                                hatData.data[i] = 0
+                                hatData.data[i+1] = 0
+                                hatData.data[i+2] = 0
+                                hatData.data[i+3] = 0
                             }
+                            oldSkinResizeCanvasCtx.putImageData(hatData, imgSkin.width / 2, 0)
                         }
-                    }
-                }
-                srcCtx.putImageData(scaledImageData, 0, 0)
 
-                let canvasCape
-                if (hasCape) {
-                    await labelAndLog('button-label', 'Loading cape...')
-                    console.log('Cape size: '+imgCape.width+'x'+imgCape.height)
-                    canvasCape = document.createElement('canvas')
-                    canvasCape.width = vanillaCapeWidth*pixelScale
-                    canvasCape.height = vanillaCapeHeight*pixelScale
-                    const capeCtx = canvasCape.getContext('2d')
+                        const legacyCoordScale = imgSkin.width / vanillaSkinWidth
 
-                    const capeWidth = imgCape.width
-                    const capeHeight = imgCape.height
-                    const capeUpscale = Math.floor(vanillaCapeWidth*pixelScale / capeWidth)
-                    const tmpCapeCanvas = document.createElement('canvas')
-                    tmpCapeCanvas.width = capeWidth
-                    tmpCapeCanvas.height = capeHeight
-                    const tmpCapeCtx = tmpCapeCanvas.getContext('2d')
-                    tmpCapeCtx.drawImage(imgCape, 0, 0)
-                    const capeData = tmpCapeCtx.getImageData(0, 0, capeWidth, capeHeight)
-                    const scaledCapeData = capeCtx.createImageData(vanillaCapeWidth*pixelScale, vanillaCapeHeight*pixelScale)
+                        function copyRegion(inpSrcX, inpSrcY, inpDestDX, inpDestDY, inpWidth, inpHeight, mirrorX = false, mirrorY = false) {
+                            const srcX = inpSrcX * legacyCoordScale
+                            const srcY = inpSrcY * legacyCoordScale
+                            const destDX = inpDestDX * legacyCoordScale
+                            const destDY = inpDestDY * legacyCoordScale
+                            const width = inpWidth * legacyCoordScale
+                            const height = inpHeight * legacyCoordScale
 
-                    console.log('Scaling cape')
-                    for (let y = 0; y < capeHeight; y++) {
-                        for (let x = 0; x < capeWidth; x++) {
-                            const index = (y * capeWidth + x) * 4
-                            const r = capeData.data[index]
-                            const g = capeData.data[index + 1]
-                            const b = capeData.data[index + 2]
-                            const a = capeData.data[index + 3]
+                            const imageData = oldSkinResizeCanvasCtx.getImageData(srcX, srcY, width, height)
+                            const out = oldSkinResizeCanvasCtx.createImageData(width, height)
+                            const src = imageData.data
+                            const dst = out.data
 
-                            for (let dy = 0; dy < capeUpscale; dy++) {
-                                for (let dx = 0; dx < capeUpscale; dx++) {
-                                    const scaledIndex = ((y * capeUpscale + dy) * vanillaCapeWidth*pixelScale + (x * capeUpscale + dx)) * 4
-                                    scaledCapeData.data[scaledIndex] = r
-                                    scaledCapeData.data[scaledIndex + 1] = g
-                                    scaledCapeData.data[scaledIndex + 2] = b
-                                    scaledCapeData.data[scaledIndex + 3] = a
+                            for (let y = 0; y < height; y++) {
+                                for (let x = 0; x < width; x++) {
+                                    const srcIndex = (y * width + x) * 4
+                                    const dstX = mirrorX ? width - 1 - x : x
+                                    const dstY = mirrorY ? height - 1 - y : y
+                                    const dstIndex = (dstY * width + dstX) * 4
+                                    dst[dstIndex] = src[srcIndex];
+                                    dst[dstIndex + 1] = src[srcIndex + 1]
+                                    dst[dstIndex + 2] = src[srcIndex + 2]
+                                    dst[dstIndex + 3] = src[srcIndex + 3]
+                                }
+                            }
+
+                            oldSkinResizeCanvasCtx.putImageData(out, srcX + destDX, srcY + destDY)
+                        }
+
+                        copyRegion(4, 16, 16, 32, 4, 4, true, false)
+                        copyRegion(8, 16, 16, 32, 4, 4, true, false)
+                        copyRegion(0, 20, 24, 32, 4, 12, true, false)
+                        copyRegion(4, 20, 16, 32, 4, 12, true, false)
+                        copyRegion(8, 20, 8, 32, 4, 12, true, false)
+                        copyRegion(12, 20, 16, 32, 4, 12, true, false)
+                        copyRegion(44, 16, -8, 32, 4, 4, true, false)
+                        copyRegion(48, 16, -8, 32, 4, 4, true, false)
+                        copyRegion(40, 20, 0, 32, 4, 12, true, false)
+                        copyRegion(44, 20, -8, 32, 4, 12, true, false)
+                        copyRegion(48, 20, -16, 32, 4, 12, true, false)
+                        copyRegion(52, 20, -8, 32, 4, 12, true, false)
+
+                        imgSkin = await new Promise(resolve => {
+                            const newImg = new Image()
+                            newImg.onload = () => resolve(newImg)
+                            newImg.src = oldSkinResizeCanvas.toDataURL('image/png')
+                        })
+                    }       
+
+                    const inputWidth = imgSkin.width
+                    const inputHeight = imgSkin.height
+                    const upscale = Math.floor((vanillaSkinWidth*pixelScale) / inputWidth)
+
+                    const offset_3d_all = document.getElementById('shift-3d').value === 'all'
+                    const offset_3d_head = offset_3d_all || document.getElementById('shift-3d').value === 'head'
+
+                    const canvasSkin = createCanvas(vanillaSkinWidth*pixelScale, vanillaSkinHeight*pixelScale)
+                    const canvasSkinCtx = getCanvasContext(canvasSkin)
+
+                    const tmpCanvas = createCanvas(inputWidth, inputHeight)
+                    const tmpCanvasCtx = getCanvasContext(tmpCanvas)
+                    tmpCanvasCtx.drawImage(imgSkin, 0, 0)
+                    const originalImageData = tmpCanvasCtx.getImageData(0, 0, inputWidth, inputHeight)
+                    const scaledImageData = canvasSkinCtx.createImageData(vanillaSkinWidth*pixelScale, vanillaSkinHeight*pixelScale)
+
+                    console.log('Scaling skin')
+                    for (let y = 0; y < inputHeight; y++) {
+                        for (let x = 0; x < inputWidth; x++) {
+                            const index = (y * inputWidth + x) * 4
+                            const r = originalImageData.data[index]
+                            const g = originalImageData.data[index + 1]
+                            const b = originalImageData.data[index + 2]
+                            const a = originalImageData.data[index + 3]
+
+                            for (let dy = 0; dy < upscale; dy++) {
+                                for (let dx = 0; dx < upscale; dx++) {
+                                    const scaledIndex = ((y * upscale + dy) * vanillaSkinWidth*pixelScale + (x * upscale + dx)) * 4
+                                    scaledImageData.data[scaledIndex] = r
+                                    scaledImageData.data[scaledIndex + 1] = g
+                                    scaledImageData.data[scaledIndex + 2] = b
+                                    scaledImageData.data[scaledIndex + 3] = a
                                 }
                             }
                         }
                     }
-                    capeCtx.putImageData(scaledCapeData, 0, 0)
-                }
+                    canvasSkinCtx.putImageData(scaledImageData, 0, 0)
 
-                await labelAndLog('button-label', 'Generating skin sections...')
+                    let canvasCape
+                    if (hasCape) {
+                        await labelAndLog('button-label', 'Loading cape...')
+                        console.log('Cape size: '+imgCape.width+'x'+imgCape.height)
+                        canvasCape = createCanvas(vanillaCapeWidth*pixelScale, vanillaCapeHeight*pixelScale)
+                        const canvasCapeCtx = getCanvasContext(canvasCape)
 
-                // account for extruding
-                const x_offset = 1*pixelScale
-                const y_offset = 1*pixelScale
+                        const capeWidth = imgCape.width
+                        const capeHeight = imgCape.height
+                        const capeUpscale = Math.floor(vanillaCapeWidth*pixelScale / capeWidth)
+                        const tmpCapeCanvas = createCanvas(capeWidth, capeHeight)
+                        const tmpCapeCanvasCtx = getCanvasContext(tmpCapeCanvas)
+                        tmpCapeCanvasCtx.drawImage(imgCape, 0, 0)
+                        const capeData = tmpCapeCanvasCtx.getImageData(0, 0, capeWidth, capeHeight)
+                        const scaledCapeData = canvasCapeCtx.createImageData(vanillaCapeWidth*pixelScale, vanillaCapeHeight*pixelScale)
 
-                const tab_size = 0
-                const tab_small_size = 0
+                        console.log('Scaling cape')
+                        for (let y = 0; y < capeHeight; y++) {
+                            for (let x = 0; x < capeWidth; x++) {
+                                const index = (y * capeWidth + x) * 4
+                                const r = capeData.data[index]
+                                const g = capeData.data[index + 1]
+                                const b = capeData.data[index + 2]
+                                const a = capeData.data[index + 3]
 
-                const headOps = [
-                    { input: { x: 0, y: 8, dx: 32, dy: 8 }, output: { x: x_offset+tab_size*pixelScale, y: y_offset+8*pixelScale },
-                        background: "0xFF000000", layer: { dx: 32, offset_y: offset_3d_head ? offset : 0 } },
-                    { input: { x: 8, y: 0, dx: 8, dy: 8 }, output: { x: x_offset+(tab_size+8)*pixelScale, y: y_offset },
-                        background: "0xFF000000", layer: { dx: 32 } },
-                    { input: { x: 16, y: 0, dx: 8, dy: -8 }, output: { x: x_offset+(tab_size+8)*pixelScale, y: y_offset+16*pixelScale },
-                        background: "0xFF000000", layer: { dx: 32 } },
-                    { input: { x: 0+24+8-tab_size, y: 8, dx: tab_size, dy: 8 }, output: { x: x_offset, y: y_offset+8*pixelScale },
-                        background: "0xFF000000", layer: { dx: 32, offset_y: offset_3d_head ? offset : 0 } },
-                ]
-                const bodyOps = [
-                    { input: { x: 16, y: 20, dx: 24, dy: 12 }, output: { x: x_offset+tab_size*pixelScale, y: y_offset+4*pixelScale },
-                        background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset : 0 } },
-                    { input: { x: 20, y: 16, dx: 8, dy: 4 }, output: { x: x_offset+(tab_size+4)*pixelScale, y: y_offset },
-                        background: "0xFF000000", layer: { dy: 16 } },
-                    { input: { x: 28, y: 16, dx: 8, dy: -4 }, output: { x: x_offset+(tab_size+4)*pixelScale, y: y_offset+16*pixelScale },
-                        background: "0xFF000000", layer: { dy: 16 } },
-                    { input: { x: 16+16+8-tab_size, y: 20, dx: tab_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
-                        background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset : 0 } },
-                ]
-                const armRightOps = [
-                    { input: { x: 40, y: 20, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale, y: y_offset+4*pixelScale },
-                        background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset : 0 } },
-                    { input: { x: 44, y: 16, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset },
-                        background: "0xFF000000", layer: { dy: 16 } },
-                    { input: { x: 48 - (slim ? 1 : 0), y: 16, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset+16*pixelScale },
-                        background: "0xFF000000", layer: { dy: 16 } },
-                    { input: { x: 40+12+4-tab_small_size-(slim ? 2 : 0), y: 20, dx: tab_small_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
-                        background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset : 0 } },
-                ]
-                const armLeftOps = [
-                    { input: { x: 32, y: 52, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale, y: y_offset+4*pixelScale },
-                        background: "0xFF000000", layer: { dx: 16, offset_y: offset_3d_all ? offset : 0 } },
-                    { input: { x: 36, y: 48, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset },
-                        background: "0xFF000000", layer: { dx: 16 } },
-                    { input: { x: 40 - (slim ? 1 : 0), y: 48, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset+16*pixelScale },
-                        background: "0xFF000000", layer: { dx: 16 } },
-                    { input: { x: 32+12+4-tab_small_size-(slim ? 2 : 0), y: 52, dx: tab_small_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
-                        background: "0xFF000000", layer: { dx: 16, offset_y: offset_3d_all ? offset : 0 } },
-                ]
-                const legRightOps = [
-                    { input: { x: 0, y: 20, dx: 16, dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale, y: y_offset+4*pixelScale },
-                        background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset : 0 } },
-                    { input: { x: 4, y: 16, dx: 4, dy: 4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset },
-                        background: "0xFF000000", layer: { dy: 16 } },
-                    { input: { x: 8, y: 16, dx: 4, dy: -4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset+16*pixelScale },
-                        background: "0xFF000000", layer: { dy: 16 } },
-                    { input: { x: 0+12+4-tab_small_size, y: 20, dx: tab_small_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
-                        background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset : 0 } },
-                ]
-                const legLeftOps = [
-                    { input: { x: 16, y: 52, dx: 16, dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale, y: y_offset+4*pixelScale },
-                        background: "0xFF000000", layer: { dx: -16, offset_y: offset_3d_all ? offset : 0  } },
-                    { input: { x: 20, y: 48, dx: 4, dy: 4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset },
-                        background: "0xFF000000", layer: { dx: -16 } },
-                    { input: { x: 24, y: 48, dx: 4, dy: -4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset+16*pixelScale },
-                        background: "0xFF000000", layer: { dx: -16 } },
-                    { input: { x: 16+12+4-tab_small_size, y: 52, dx: tab_small_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
-                        background: "0xFF000000", layer: { dx: -16, offset_y: offset_3d_all ? offset : 0  } },
-                ]
-                const capeOps = [
-                    {  file:"cape", input: { x: 0, y: 1, dx: 22, dy: 16 }, output: { x: x_offset+tab_size*pixelScale, y: y_offset+1*pixelScale },
-                        background: "0xFF000000" },
-                    {  file:"cape", input: { x: 1, y: 0, dx: 10, dy: 1 }, output: { x: x_offset+(tab_size+1)*pixelScale, y: y_offset },
-                        background: "0xFF000000" },
-                    {  file:"cape", input: { x: 11, y: 0, dx: 10, dy: -1 }, output: { x: x_offset+(tab_size+1)*pixelScale, y: y_offset+17*pixelScale },
-                        background: "0xFF000000" },
-                    {  file:"cape", input: { x: 0+12+10-tab_size, y: 1, dx: tab_size, dy: 16 }, output: { x: x_offset, y: y_offset+1*pixelScale },
-                        background: "0xFF000000" },
-                ]
-
-                const skinSections = []
-
-                await labelAndLog('button-label', 'Slicing and dicing...')
-
-                // Helper to create a canvas of given size
-                function createCanvas(width, height) {
-                    const c = document.createElement('canvas')
-                    c.width = width
-                    c.height = height
-                    return c
-                }
-
-                // Draw a section with optional layer
-                function drawSection(sourceCanvas, width, height, opsArray) {
-                    const canvas = createCanvas(width, height)
-                    const ctx = canvas.getContext('2d', { willReadFrequently: true })
-                    ctx.clearRect(0, 0, width, height)
-                    ctx.imageSmoothingEnabled = false
-                    ctx.globalCompositeOperation = 'source-over'
-
-                    for (const op of opsArray) {
-                        if (op.input.dx === 0 || op.input.dy === 0) continue
-
-                        const inputX = op.input.x * pixelScale
-                        const inputY = op.input.y * pixelScale
-                        const inputW = op.input.dx * pixelScale
-                        const inputH = op.input.dy * pixelScale
-
-                        const outputX = op.output.x
-                        const outputY = op.output.y
-                        const outputW = Math.abs(inputW)
-                        const outputH = Math.abs(inputH)
-
-                        ctx.save()
-                        ctx.beginPath()
-                        ctx.rect(outputX, outputY, outputW, outputH)
-                        ctx.clip()
-
-                        ctx.translate(outputX + (inputW < 0 ? outputW : 0), outputY + (inputH < 0 ? outputH : 0))
-                        ctx.scale(inputW < 0 ? -1 : 1, inputH < 0 ? -1 : 1)
-
-                        if (op.background) {
-                            const argb = parseInt(op.background)
-                            const a = ((argb >> 24) & 0xFF) / 255
-                            const r = (argb >> 16) & 0xFF
-                            const g = (argb >> 8) & 0xFF
-                            const b = argb & 0xFF
-                            ctx.fillStyle = `rgba(${r},${g},${b},${a})`
-                            ctx.fillRect(0, 0, outputW, outputH)
-                        }
-
-                        {
-                            const tempCanvas = createCanvas(outputW, outputH)
-                            const tempCtx = tempCanvas.getContext('2d')
-                            tempCtx.drawImage(sourceCanvas, inputX, inputY, outputW, outputH, 0, 0, outputW, outputH)
-
-                            const imgData = tempCtx.getImageData(0, 0, outputW, outputH)
-                            for (let i = 3; i < imgData.data.length; i += 4) imgData.data[i] = 255
-                            tempCtx.putImageData(imgData, 0, 0)
-
-                            ctx.drawImage(tempCanvas, 0, 0)
-                        }
-
-                        if (op.layer) {
-                            const layerInputX = (op.input.x + (op.layer.dx ?? 0)) * pixelScale
-                            const layerInputY = (op.input.y + (op.layer.dy ?? 0)) * pixelScale
-                            const layerOffsetX = op.layer.offset_x ?? 0
-                            const layerOffsetY = op.layer.offset_y ?? 0
-
-                            ctx.drawImage(sourceCanvas, layerInputX, layerInputY, outputW, outputH, layerOffsetX, layerOffsetY, outputW, outputH)
-                        }
-
-                        ctx.restore()
-                    }
-
-                    return canvas
-                }
-
-                // Head
-                skinSections.push(drawSection(canvasSkin, 32*pixelScale + 2*pixelScale, 24*pixelScale + 2*pixelScale, headOps))
-
-                // Body
-                skinSections.push(drawSection(canvasSkin, 24*pixelScale + 2*pixelScale, 20*pixelScale + 2*pixelScale, bodyOps))
-
-                // Right Arm
-                skinSections.push(drawSection(canvasSkin, 16*pixelScale + 2*pixelScale, 20*pixelScale + 2*pixelScale, armRightOps))
-
-                // Left Arm
-                skinSections.push(drawSection(canvasSkin, 16*pixelScale + 2*pixelScale, 20*pixelScale + 2*pixelScale, armLeftOps))
-
-                // Right Leg
-                skinSections.push(drawSection(canvasSkin, 16*pixelScale + 2*pixelScale, 20*pixelScale + 2*pixelScale, legRightOps))
-
-                // Left Leg
-                skinSections.push(drawSection(canvasSkin, 16*pixelScale + 2*pixelScale, 20*pixelScale + 2*pixelScale, legLeftOps))
-
-                // Cape
-                if (hasCape)
-                    skinSections.push(drawSection(canvasCape, 22*pixelScale + 2*pixelScale, 18*pixelScale + 2*pixelScale, capeOps))
-
-                await labelAndLog('button-label', 'Organizing pages...')
-
-                const extrudeEdges = true
-
-                function extrudeCanvasEdges(canvas) {
-                    const ctx = canvas.getContext('2d', { willReadFrequently: true })
-                    const w = canvas.width
-                    const h = canvas.height
-
-                    const src = ctx.getImageData(0, 0, w, h)
-                    const srcData = src.data
-
-                    const dist = new Int32Array(w * h).fill(-1)
-                    const srcId = new Int32Array(w * h).fill(-1)
-                    const srcColors = []
-                    const queue = []
-
-                    const idx = (x, y) => y * w + x
-                    const inBounds = (x, y) => x >= 0 && y >= 0 && x < w && y < h
-
-                    // Initialize queues and color mapping
-                    for (let y = 0; y < h; y++) {
-                        for (let x = 0; x < w; x++) {
-                            const i = idx(x, y);
-                            if (srcData[i * 4 + 3] !== 0) {
-                                const id = srcColors.length
-                                srcColors.push([
-                                    srcData[i * 4 + 0],
-                                    srcData[i * 4 + 1],
-                                    srcData[i * 4 + 2],
-                                    srcData[i * 4 + 3],
-                                ])
-                                dist[i] = 0
-                                srcId[i] = id
-                                queue.push(i)
+                                for (let dy = 0; dy < capeUpscale; dy++) {
+                                    for (let dx = 0; dx < capeUpscale; dx++) {
+                                        const scaledIndex = ((y * capeUpscale + dy) * vanillaCapeWidth*pixelScale + (x * capeUpscale + dx)) * 4
+                                        scaledCapeData.data[scaledIndex] = r
+                                        scaledCapeData.data[scaledIndex + 1] = g
+                                        scaledCapeData.data[scaledIndex + 2] = b
+                                        scaledCapeData.data[scaledIndex + 3] = a
+                                    }
+                                }
                             }
                         }
+                        canvasCapeCtx.putImageData(scaledCapeData, 0, 0)
                     }
 
-                    for (let qIndex = 0; qIndex < queue.length; qIndex++) {
-                        const cur = queue[qIndex]
-                        const cx = cur % w
-                        const cy = Math.floor(cur / w)
-                        const curDist = dist[cur]
-                        if (curDist >= pixelScale) continue
+                    await labelAndLog('button-label', 'Slicing and dicing...')
 
-                        const neighbors = [
-                            [cx - 1, cy],
-                            [cx + 1, cy],
-                            [cx, cy - 1],
-                            [cx, cy + 1],
-                        ]
-                        for (const [nx, ny] of neighbors) {
-                            if (!inBounds(nx, ny)) continue
-                            const ni = idx(nx, ny)
-                            if (dist[ni] === -1) {
-                                dist[ni] = curDist + 1
-                                srcId[ni] = srcId[cur]
-                                queue.push(ni)
+                    function getSectionWidth(opsArray) {
+                        let maxX = 0
+                        for (const op of opsArray) {
+                            const x1 = op.output.x
+                            const x2 = op.output.x + Math.abs(op.input.dx * pixelScale)
+                            maxX = Math.max(maxX, x2)
+                        }
+                        return maxX + pixelScale
+                    }
+
+                    function getSectionHeight(opsArray) {
+                        let maxY = 0;
+                        for (const op of opsArray) {
+                            const y1 = op.output.y
+                            const y2 = op.output.y + Math.abs(op.input.dy * pixelScale)
+                            maxY = Math.max(maxY, y2)
+                        }
+                        return maxY + pixelScale
+                    }
+
+                    function drawSection(sourceCanvas, opsArray) {
+                        return drawSectionPadded(0, sourceCanvas, opsArray)
+                    }
+
+                    function drawSectionPadded(extraWidth, sourceCanvas, opsArray) {
+                        const width = getSectionWidth(opsArray) + (extraWidth * pixelScale)
+                        const height = getSectionHeight(opsArray)
+
+                        const canvas = createCanvas(width, height)
+                        const canvasCtx = getCanvasContext(canvas)
+
+                        for (const op of opsArray) {
+                            if (op.input.dx === 0 || op.input.dy === 0) continue
+
+                            const inputX = op.input.x * pixelScale
+                            const inputY = op.input.y * pixelScale
+                            const inputW = op.input.dx * pixelScale
+                            const inputH = op.input.dy * pixelScale
+
+                            const outputX = op.output.x
+                            const outputY = op.output.y
+                            const outputW = Math.abs(inputW)
+                            const outputH = Math.abs(inputH)
+
+                            canvasCtx.save()
+                            canvasCtx.beginPath()
+                            canvasCtx.rect(outputX, outputY, outputW, outputH)
+                            canvasCtx.clip()
+
+                            canvasCtx.translate(outputX + (inputW < 0 ? outputW : 0), outputY + (inputH < 0 ? outputH : 0))
+                            canvasCtx.scale(inputW < 0 ? -1 : 1, inputH < 0 ? -1 : 1)
+
+                            if (op.background) {
+                                const argb = parseInt(op.background)
+                                const a = ((argb >> 24) & 0xFF) / 255
+                                const r = (argb >> 16) & 0xFF
+                                const g = (argb >> 8) & 0xFF
+                                const b = argb & 0xFF
+                                canvasCtx.fillStyle = `rgba(${r},${g},${b},${a})`
+                                canvasCtx.fillRect(0, 0, outputW, outputH)
+                            }
+
+                            {
+                                const tempCanvas = createCanvas(outputW, outputH)
+                                const tempCanvasCtx = getCanvasContext(tempCanvas)
+                                tempCanvasCtx.drawImage(sourceCanvas, inputX, inputY, outputW, outputH, 0, 0, outputW, outputH)
+
+                                const imgData = tempCanvasCtx.getImageData(0, 0, outputW, outputH)
+                                for (let i = 3; i < imgData.data.length; i += 4) imgData.data[i] = 255
+                                tempCanvasCtx.putImageData(imgData, 0, 0)
+
+                                canvasCtx.drawImage(tempCanvas, 0, 0)
+                            }
+
+                            if (op.layer) {
+                                const layerInputX = (op.input.x + (op.layer.dx ?? 0)) * pixelScale
+                                const layerInputY = (op.input.y + (op.layer.dy ?? 0)) * pixelScale
+                                const layerOffsetX = op.layer.offset_x ?? 0
+                                const layerOffsetY = op.layer.offset_y ?? 0
+
+                                canvasCtx.drawImage(sourceCanvas, layerInputX, layerInputY, outputW, outputH, layerOffsetX, layerOffsetY, outputW, outputH)
+                            }
+
+                            canvasCtx.restore()
+                        }
+
+                        return canvas
+                    }
+
+                    // account for extruding
+                    const x_offset = 1*pixelScale
+                    const y_offset = 1*pixelScale
+
+                    const tab_size = 0
+                    const tab_small_size = 0
+
+                    const skinSections = []
+
+                    // Head
+                    skinSections.push(drawSection(canvasSkin, [
+                        { input: { x: 0, y: 8, dx: 32, dy: 8 }, output: { x: x_offset+tab_size*pixelScale, y: y_offset+8*pixelScale },
+                            background: "0xFF000000", layer: { dx: 32, offset_y: offset_3d_head ? offset_layer_amount : 0 } },
+                        { input: { x: 8, y: 0, dx: 8, dy: 8 }, output: { x: x_offset+(tab_size+8)*pixelScale, y: y_offset },
+                            background: "0xFF000000", layer: { dx: 32 } },
+                        { input: { x: 16, y: 0, dx: 8, dy: -8 }, output: { x: x_offset+(tab_size+8)*pixelScale, y: y_offset+16*pixelScale },
+                            background: "0xFF000000", layer: { dx: 32 } },
+                        { input: { x: 0+24+8-tab_size, y: 8, dx: tab_size, dy: 8 }, output: { x: x_offset, y: y_offset+8*pixelScale },
+                            background: "0xFF000000", layer: { dx: 32, offset_y: offset_3d_head ? offset_layer_amount : 0 } },
+                    ]))
+
+                    // Body
+                    skinSections.push(drawSection(canvasSkin, [
+                        { input: { x: 16, y: 20, dx: 24, dy: 12 }, output: { x: x_offset+tab_size*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset_layer_amount : 0 } },
+                        { input: { x: 20, y: 16, dx: 8, dy: 4 }, output: { x: x_offset+(tab_size+4)*pixelScale, y: y_offset },
+                            background: "0xFF000000", layer: { dy: 16 } },
+                        { input: { x: 28, y: 16, dx: 8, dy: -4 }, output: { x: x_offset+(tab_size+4)*pixelScale, y: y_offset+16*pixelScale },
+                            background: "0xFF000000", layer: { dy: 16 } },
+                        { input: { x: 16+16+8-tab_size, y: 20, dx: tab_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset_layer_amount : 0 } },
+                    ]))
+
+                    // Right Arm
+                    skinSections.push(drawSectionPadded((slim ? 2 : 0), canvasSkin, [
+                        { input: { x: 40, y: 20, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset_layer_amount : 0 } },
+                        { input: { x: 44, y: 16, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset },
+                            background: "0xFF000000", layer: { dy: 16 } },
+                        { input: { x: 48 - (slim ? 1 : 0), y: 16, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset+16*pixelScale },
+                            background: "0xFF000000", layer: { dy: 16 } },
+                        { input: { x: 40+12+4-tab_small_size-(slim ? 2 : 0), y: 20, dx: tab_small_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset_layer_amount : 0 } },
+                    ]))
+
+                    // Left Arm
+                    skinSections.push(drawSectionPadded((slim ? 2 : 0), canvasSkin, [
+                        { input: { x: 32, y: 52, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dx: 16, offset_y: offset_3d_all ? offset_layer_amount : 0 } },
+                        { input: { x: 36, y: 48, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset },
+                            background: "0xFF000000", layer: { dx: 16 } },
+                        { input: { x: 40 - (slim ? 1 : 0), y: 48, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset+16*pixelScale },
+                            background: "0xFF000000", layer: { dx: 16 } },
+                        { input: { x: 32+12+4-tab_small_size-(slim ? 2 : 0), y: 52, dx: tab_small_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dx: 16, offset_y: offset_3d_all ? offset_layer_amount : 0 } },
+                    ]))
+
+                    // Right Leg
+                    skinSections.push(drawSection(canvasSkin, [
+                        { input: { x: 0, y: 20, dx: 16, dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset_layer_amount : 0 } },
+                        { input: { x: 4, y: 16, dx: 4, dy: 4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset },
+                            background: "0xFF000000", layer: { dy: 16 } },
+                        { input: { x: 8, y: 16, dx: 4, dy: -4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset+16*pixelScale },
+                            background: "0xFF000000", layer: { dy: 16 } },
+                        { input: { x: 0+12+4-tab_small_size, y: 20, dx: tab_small_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset_layer_amount : 0 } },
+                    ]))
+
+                    // Left Leg
+                    skinSections.push(drawSection(canvasSkin, [
+                        { input: { x: 16, y: 52, dx: 16, dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dx: -16, offset_y: offset_3d_all ? offset_layer_amount : 0  } },
+                        { input: { x: 20, y: 48, dx: 4, dy: 4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset },
+                            background: "0xFF000000", layer: { dx: -16 } },
+                        { input: { x: 24, y: 48, dx: 4, dy: -4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset+16*pixelScale },
+                            background: "0xFF000000", layer: { dx: -16 } },
+                        { input: { x: 16+12+4-tab_small_size, y: 52, dx: tab_small_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dx: -16, offset_y: offset_3d_all ? offset_layer_amount : 0  } },
+                    ]))
+
+                    // Cape
+                    if (hasCape)
+                        skinSections.push(drawSection(canvasCape, [
+                            {  file:"cape", input: { x: 0, y: 1, dx: 22, dy: 16 }, output: { x: x_offset+tab_size*pixelScale, y: y_offset+1*pixelScale },
+                                background: "0xFF000000" },
+                            {  file:"cape", input: { x: 1, y: 0, dx: 10, dy: 1 }, output: { x: x_offset+(tab_size+1)*pixelScale, y: y_offset },
+                                background: "0xFF000000" },
+                            {  file:"cape", input: { x: 11, y: 0, dx: 10, dy: -1 }, output: { x: x_offset+(tab_size+1)*pixelScale, y: y_offset+17*pixelScale },
+                                background: "0xFF000000" },
+                            {  file:"cape", input: { x: 0+12+10-tab_size, y: 1, dx: tab_size, dy: 16 }, output: { x: x_offset, y: y_offset+1*pixelScale },
+                                background: "0xFF000000" },
+                        ]))
+
+                    await labelAndLog('button-label', 'Organizing pages...')
+
+                    const extrudeEdges = true
+
+                    function extrudeCanvasEdges(extrudeCanvas) {
+                        const extrudeCtx = getCanvasContext(extrudeCanvas)
+                        const w = extrudeCanvas.width
+                        const h = extrudeCanvas.height
+
+                        const src = extrudeCtx.getImageData(0, 0, w, h)
+                        const srcData = src.data
+
+                        const dist = new Int32Array(w * h).fill(-1)
+                        const srcId = new Int32Array(w * h).fill(-1)
+                        const srcColors = []
+                        const queue = []
+
+                        const idx = (x, y) => y * w + x
+                        const inBounds = (x, y) => x >= 0 && y >= 0 && x < w && y < h
+
+                        // Initialize queues and color mapping
+                        for (let y = 0; y < h; y++) {
+                            for (let x = 0; x < w; x++) {
+                                const i = idx(x, y);
+                                if (srcData[i * 4 + 3] !== 0) {
+                                    const id = srcColors.length
+                                    srcColors.push([
+                                        srcData[i * 4 + 0],
+                                        srcData[i * 4 + 1],
+                                        srcData[i * 4 + 2],
+                                        srcData[i * 4 + 3],
+                                    ])
+                                    dist[i] = 0
+                                    srcId[i] = id
+                                    queue.push(i)
+                                }
                             }
                         }
-                    }
 
-                    const dst = ctx.createImageData(w, h)
-                    dst.data.set(srcData)
+                        for (let qIndex = 0; qIndex < queue.length; qIndex++) {
+                            const cur = queue[qIndex]
+                            const cx = cur % w
+                            const cy = Math.floor(cur / w)
+                            const curDist = dist[cur]
+                            if (curDist >= pixelScale) continue
 
-                    for (let y = 0; y < h; y++) {
-                        for (let x = 0; x < w; x++) {
-                            const i = idx(x, y)
-                            if (dist[i] > 0 && dist[i] <= pixelScale) {
-                                const color = srcColors[srcId[i]]
-                                dst.data[i * 4 + 0] = color[0]
-                                dst.data[i * 4 + 1] = color[1]
-                                dst.data[i * 4 + 2] = color[2]
-                                dst.data[i * 4 + 3] = color[3]
+                            const neighbors = [
+                                [cx - 1, cy],
+                                [cx + 1, cy],
+                                [cx, cy - 1],
+                                [cx, cy + 1],
+                            ]
+                            for (const [nx, ny] of neighbors) {
+                                if (!inBounds(nx, ny)) continue
+                                const ni = idx(nx, ny)
+                                if (dist[ni] === -1) {
+                                    dist[ni] = curDist + 1
+                                    srcId[ni] = srcId[cur]
+                                    queue.push(ni)
+                                }
                             }
                         }
+
+                        const dst = extrudeCtx.createImageData(w, h)
+                        dst.data.set(srcData)
+
+                        for (let y = 0; y < h; y++) {
+                            for (let x = 0; x < w; x++) {
+                                const i = idx(x, y)
+                                if (dist[i] > 0 && dist[i] <= pixelScale) {
+                                    const color = srcColors[srcId[i]]
+                                    dst.data[i * 4 + 0] = color[0]
+                                    dst.data[i * 4 + 1] = color[1]
+                                    dst.data[i * 4 + 2] = color[2]
+                                    dst.data[i * 4 + 3] = color[3]
+                                }
+                            }
+                        }
+
+                        extrudeCtx.putImageData(dst, 0, 0)
                     }
 
-                    ctx.putImageData(dst, 0, 0)
-                }
+                    const pageSections = []
+                    let currentPage = createCanvas(outputWidth, outputHeight)
+                    let currentPageCtx = getCanvasContext(currentPage)
 
-                const pageSections = []
-                let currentPage = createCanvas(outputWidth, outputHeight)
-                let ctxPage = currentPage.getContext('2d', { willReadFrequently: true })
-                ctxPage.imageSmoothingEnabled = false
+                    let x = pageMarginX
+                    let y = pageMarginY
+                    let rowHeight = 0
 
-                let x = pageMarginX
-                let y = pageMarginY
-                let rowHeight = 0
+                    for (const section of skinSections) {
+                        if (x + section.width + pageMarginX > outputWidth) {
+                            x = pageMarginX
+                            y += rowHeight + spacing
+                            rowHeight = 0
+                        }
 
-                for (const section of skinSections) {
-                    if (x + section.width + pageMarginX > outputWidth) {
-                        x = pageMarginX
-                        y += rowHeight + spacing
-                        rowHeight = 0
+                        if (y + section.height + pageMarginY > outputHeight) {
+                            pageSections.push(currentPage)
+                            currentPage = createCanvas(outputWidth, outputHeight)
+                            currentPageCtx = getCanvasContext(currentPage)
+                            x = pageMarginX
+                            y = pageMarginY
+                            rowHeight = 0
+                        }
+
+                        currentPageCtx.drawImage(section, x, y)
+                        x += section.width + spacing
+                        rowHeight = Math.max(rowHeight, section.height)
                     }
 
-                    if (y + section.height + pageMarginY > outputHeight) {
-                        pageSections.push(currentPage)
-                        currentPage = createCanvas(outputWidth, outputHeight)
-                        ctxPage = currentPage.getContext('2d', { willReadFrequently: true })
-                        ctxPage.imageSmoothingEnabled = false
-                        x = pageMarginX
-                        y = pageMarginY
-                        rowHeight = 0
+                    pageSections.push(currentPage)
+
+                    await labelAndLog('button-label', 'Extruding edges...')
+
+                    if (extrudeEdges) {
+                        pageSections.forEach(c => extrudeCanvasEdges(c))
                     }
 
-                    ctxPage.drawImage(section, x, y)
-                    x += section.width + spacing
-                    rowHeight = Math.max(rowHeight, section.height)
+                    await labelAndLog('button-label', 'Doubling sides...')
+
+                    const pageSectionsDouble = []
+                    pageSections.forEach(c => {
+                        pageSectionsDouble.push(c)
+
+                        const backPage = createCanvas(c.width, c.height)
+                        const backPageCtx = getCanvasContext(backPage)
+
+                        backPageCtx.translate(backPage.width, 0)
+                        backPageCtx.scale(-1, 1)
+                        backPageCtx.drawImage(c, 0, 0)
+
+                        pageSectionsDouble.push(backPage)
+                    })
+
+                    await labelAndLog('button-label', 'Generating PDF...')
+
+                    while (!window.jspdf) {
+                        await new Promise(r => setTimeout(r, 50))
+                    }
+
+                    const { jsPDF } = window.jspdf
+
+                    let newPdf = new jsPDF({
+                        orientation: 'portrait',
+                        unit: outputUnitLabel,
+                        format: [outputUnitWidth, outputUnitHeight],
+                        compress: false
+                    })
+
+                    const safeAreaX = outputWidth - (2 * pageMarginX)
+                    const safeAreaY = outputHeight - (2 * pageMarginY)
+                    const safeAreaUnitX = outputUnitWidth - (2 * pageMarginUnitX)
+                    const safeAreaUnitY = outputUnitHeight - (2 * pageMarginUnitY)
+
+                    pageSectionsDouble.forEach((canvas, i) => {
+                        if (i > 0)
+                            newPdf.addPage()
+
+                        const pdfPageCanvas = createCanvas(safeAreaX, safeAreaY)
+                        const pdfPageCanvasCtx = getCanvasContext(pdfPageCanvas)
+                        pdfPageCanvasCtx.fillStyle = "#FFFFFF"
+                        pdfPageCanvasCtx.fillRect(0, 0, safeAreaX, safeAreaY)
+                        pdfPageCanvasCtx.drawImage(canvas, pageMarginX, pageMarginY, safeAreaX, safeAreaY, 0, 0, safeAreaX, safeAreaY)
+
+                        newPdf.addImage(
+                            pdfPageCanvas.toDataURL('image/jpeg', 0.8),
+                            'JPEG',
+                            pageMarginUnitX,
+                            pageMarginUnitY,
+                            safeAreaUnitX,
+                            safeAreaUnitY
+                        )
+                    })
+
+                    generatedPdf = newPdf
+
+                    let newHtml = '<table class="card-table"><tr class="card-table-row">'
+                    for (const page of pageSections) {
+                        prevPageCount++
+                        newHtml += `<td class="card-wrap-third"><img src="${page.toDataURL('image/png')}" class="img-full"></td>`
+                    }
+                    newHtml += '</tr></table>'
+                    newHtml += `<button class="button" onClick="openPdf()" style="font-size:x-large">Open PDF</button>`
+
+                    document.getElementById('img-span').innerHTML = newHtml
+                    label('button-label', '')
+
+                    console.log('Generate function completed')
                 }
-
-                pageSections.push(currentPage)
-                prevPageCount = pageSections.length
-
-                if (extrudeEdges) {
-                    pageSections.forEach(c => extrudeCanvasEdges(c))
+                else {
+                    if(lbl === '')
+                        await labelAndLog('button-label', 'Input error')
+                    else
+                        await labelAndLog('button-label', 'Inputs invalid: '+lbl)
+                    prevPageCount = 0
+                    document.getElementById('img-span').innerHTML = ''
                 }
-
-                let newHtml = '<table class="card-table"><tr class="card-table-row">'
-                for (const page of pageSections) {
-                    newHtml += `<td class="card-wrap-third"><img src="${page.toDataURL('image/png')}" class="img-full"></td>`
-                }
-                newHtml += '</tr></table>'
-                newHtml += `<button class="button" onClick="download()" style="font-size:x-large">Download</button>`
-
-                document.getElementById('img-span').innerHTML = newHtml
-                document.getElementById('button-label').innerHTML = ''
-
-                console.log('Generate function completed')
-            }
-            else {
-                if(lbl === '')
-                    await labelAndLog('button-label', 'Input error')
-                else
-                    await labelAndLog('button-label', 'Inputs invalid: '+lbl)
-                prevPageCount = 0
-                document.getElementById('img-span').innerHTML = ''
+            } catch (err) {
+                await label('button-label', 'Error:\n'+err)
+                throw err
             }
         }
 
         function download() {
             downloadLink.click()
+        }
+
+        function openPdf() {
+            if (!generatedPdf)
+                return
+            const pdfBlob = generatedPdf.output('bloburl');
+            window.open(pdfBlob, '_blank');
         }
 
     </script>
