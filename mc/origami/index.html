@@ -24,7 +24,7 @@
                 <br/>
                 <p class="item-header warn" style="color:#FFFF55">W.I.P.</p>
                 <br/>
-                <p class="item-subtitle">Printable Minecraft skin tool</p>
+                <p class="item-subtitle">Generate a double-sided PDF to print a 3D Minecraft skin</p>
             </div></td>
 
             <td class="card-wrap-full"><div class="card tooltip center">
@@ -177,15 +177,11 @@
             <td class="card-wrap-full"><div class="card tooltip center">
                 <p class="item-header">Output</p>
                 <br/>
-                <table class="card-table">
-                    <tr class="card-table-row">
-                        <td class="card-wrap-third"></td>
-                        <td class="card-wrap-third">
-                            <button class="button" onClick="submit()" style="font-size:x-large">Generate</button>
-                        </td>
-                        <td class="card-wrap-third"></td>
-                    </tr>
-                </table>
+                <br/>
+                <br/>
+                <button class="button" onClick="submit()" style="font-size:x-large">Generate</button>
+                <br/>
+                <br/>
                 <br/>
                 <span id="button-label" class="error"></span>
                 <div>
@@ -214,6 +210,7 @@
 
         const pixelScaleInput = 10
         const pixelScale = 4 * pixelScaleInput // must be multiple of 4
+        const extrudeAmount = pixelScale // must be integer 0 or higher
         const outputUnitWidth = 8.5
         const outputUnitHeight = 11
         const outputUnitLabel = 'in'
@@ -223,7 +220,7 @@
 
         const offset_layer_amount = Math.floor(pixelScale / 4)
 
-        const spacing = 3 * pixelScale
+        const spacing = (2 * extrudeAmount) + pixelScale
         const pageMarginX = Math.ceil(outputWidth / 10)
         const pageMarginY = Math.ceil(outputHeight / 10)
         const pageMarginUnitX = pageMarginX / outputUnitScale
@@ -235,7 +232,6 @@
         let selectedCapeFileName = ''
         let selectedCapeFileSet = false
         let generatedPdf = null
-        let downloadLink = document.createElement('a')
         let prevPageCount = 0
 
         refreshCapePresets()
@@ -480,23 +476,32 @@
         async function submit() {
             try {
                 console.log('Origami generate function started')
-                downloadLink = document.createElement('a')
                 generatedPdf = null
+
+                if(outputHeight < outputWidth) {
+                    // do not remove without reworking logic to determine if pixelScale too big for output size
+                    throw 'outputHeight cannot be less than outputWidth'
+                }
 
                 if (prevPageCount >= 1) {
                     const tempCanvas = createCanvas(outputWidth, outputHeight)
-                    let newHtml = '<table class="card-table"><tr class="card-table-row">'
+
+                    let newHtml = ''
+                    newHtml += '<br/>'
+                    newHtml += '<button class="button" onClick="openPdf()" style="font-size:x-large">Open PDF</button>'
+                    newHtml += '<br/>'
+                    newHtml += '<table class="card-table"><tr class="card-table-row">'
                     for (let i = 0; i < prevPageCount; i++) {
                         newHtml += `<td class="card-wrap-third"><img src="${tempCanvas.toDataURL('image/png')}" class="img-full"></td>`
                     }
                     newHtml += '</tr></table>'
-                    newHtml += `<button class="button" style="font-size:x-large" disabled>Download</button>`
 
                     document.getElementById('img-span').innerHTML = newHtml
                     label('button-label', '')
                 }
                 else
                     document.getElementById('img-span').innerHTML = ''
+                prevPageCount = 0
 
                 await labelAndLog('button-label', 'Validating inputs...')
 
@@ -918,7 +923,7 @@
                             const x2 = op.output.x + Math.abs(op.input.dx * pixelScale)
                             maxX = Math.max(maxX, x2)
                         }
-                        return maxX + pixelScale
+                        return maxX + extrudeAmount
                     }
 
                     function getSectionHeight(opsArray) {
@@ -928,7 +933,7 @@
                             const y2 = op.output.y + Math.abs(op.input.dy * pixelScale)
                             maxY = Math.max(maxY, y2)
                         }
-                        return maxY + pixelScale
+                        return maxY + extrudeAmount
                     }
 
                     function drawSection(sourceCanvas, opsArray) {
@@ -1000,14 +1005,45 @@
                         return canvas
                     }
 
-                    // account for extruding
-                    const x_offset = 1*pixelScale
-                    const y_offset = 1*pixelScale
+                    const x_offset = extrudeAmount
+                    const y_offset = extrudeAmount
 
                     const tab_size = 0
                     const tab_small_size = 0
 
                     const skinSections = []
+                    const sectionFolds = []
+
+                    function registerSectionFold(fold) {
+                        if (fold.type === "rect") {
+                            if (fold.x === undefined || fold.y === undefined || fold.width === undefined || fold.height === undefined)
+                                throw 'Invalid \'rect\' fold type to register'
+                            return {
+                                type: "rect",
+                                x: (fold.x * pixelScale) + extrudeAmount,
+                                y: (fold.y * pixelScale) + extrudeAmount,
+                                width: fold.width * pixelScale,
+                                height: fold.height * pixelScale
+                            }
+                        }
+                        else if (fold.type === "line") {
+                            if (fold.x === undefined || fold.y === undefined || fold.dx === undefined || fold.dy === undefined)
+                                throw 'Invalid \'line\' fold type to register'
+                            throw 'TODO'
+                        }
+                        else
+                            throw 'Failed to read fold type to register: ' + fold.type
+                    }
+
+                    function registerSectionFolds(list) {
+                        let thisSection = {folds:[]}
+                        list.forEach(fold => {
+                            let newFold = registerSectionFold(fold)
+                            if(newFold.type)
+                                thisSection.folds.push(newFold)
+                        })
+                        sectionFolds.push(thisSection)
+                    }
 
                     // Head
                     skinSections.push(drawSection(canvasSkin, [
@@ -1020,6 +1056,14 @@
                         { input: { x: 0+24+8-tab_size, y: 8, dx: tab_size, dy: 8 }, output: { x: x_offset, y: y_offset+8*pixelScale },
                             background: "0xFF000000", layer: { dx: 32, offset_y: offset_3d_head ? offset_layer_amount : 0 } },
                     ]))
+                    registerSectionFolds([
+                        {type: "rect", x: 0, y: 8, width: 8, height: 8},
+                        {type: "rect", x: 8, y: 8, width: 8, height: 8},
+                        {type: "rect", x: 16, y: 8, width: 8, height: 8},
+                        {type: "rect", x: 24, y: 8, width: 8, height: 8},
+                        {type: "rect", x: 8, y: 0, width: 8, height: 8},
+                        {type: "rect", x: 8, y: 16, width: 8, height: 8},
+                    ])
 
                     // Body
                     skinSections.push(drawSection(canvasSkin, [
@@ -1032,6 +1076,14 @@
                         { input: { x: 16+16+8-tab_size, y: 20, dx: tab_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
                             background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset_layer_amount : 0 } },
                     ]))
+                    registerSectionFolds([
+                        {type: "rect", x: 0, y: 4, width: 4, height: 12},
+                        {type: "rect", x: 4, y: 4, width: 8, height: 12},
+                        {type: "rect", x: 12, y: 4, width: 4, height: 12},
+                        {type: "rect", x: 16, y: 4, width: 8, height: 12},
+                        {type: "rect", x: 4, y: 0, width: 8, height: 4},
+                        {type: "rect", x: 4, y: 16, width: 8, height: 4},
+                    ])
 
                     // Right Arm
                     skinSections.push(drawSectionPadded((slim ? 2 : 0), canvasSkin, [
@@ -1044,6 +1096,14 @@
                         { input: { x: 40+12+4-tab_small_size-(slim ? 2 : 0), y: 20, dx: tab_small_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
                             background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset_layer_amount : 0 } },
                     ]))
+                    registerSectionFolds([
+                        {type: "rect", x: 0, y: 4, width: 4, height: 12},
+                        {type: "rect", x: 4, y: 4, width: (slim ? 3 : 4), height: 12},
+                        {type: "rect", x: 4 + (slim ? 3 : 4), y: 4, width: 4, height: 12},
+                        {type: "rect", x: 4 + (slim ? 3 : 4) + 4, y: 4, width: (slim ? 3 : 4), height: 12},
+                        {type: "rect", x: 4, y: 0, width: (slim ? 3 : 4), height: 4},
+                        {type: "rect", x: 4, y: 16, width: (slim ? 3 : 4), height: 4},
+                    ])
 
                     // Left Arm
                     skinSections.push(drawSectionPadded((slim ? 2 : 0), canvasSkin, [
@@ -1056,6 +1116,14 @@
                         { input: { x: 32+12+4-tab_small_size-(slim ? 2 : 0), y: 52, dx: tab_small_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
                             background: "0xFF000000", layer: { dx: 16, offset_y: offset_3d_all ? offset_layer_amount : 0 } },
                     ]))
+                    registerSectionFolds([
+                        {type: "rect", x: 0, y: 4, width: 4, height: 12},
+                        {type: "rect", x: 4, y: 4, width: (slim ? 3 : 4), height: 12},
+                        {type: "rect", x: 4 + (slim ? 3 : 4), y: 4, width: 4, height: 12},
+                        {type: "rect", x: 4 + (slim ? 3 : 4) + 4, y: 4, width: (slim ? 3 : 4), height: 12},
+                        {type: "rect", x: 4, y: 0, width: (slim ? 3 : 4), height: 4},
+                        {type: "rect", x: 4, y: 16, width: (slim ? 3 : 4), height: 4},
+                    ])
 
                     // Right Leg
                     skinSections.push(drawSection(canvasSkin, [
@@ -1068,6 +1136,14 @@
                         { input: { x: 0+12+4-tab_small_size, y: 20, dx: tab_small_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
                             background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset_layer_amount : 0 } },
                     ]))
+                    registerSectionFolds([
+                        {type: "rect", x: 0, y: 4, width: 4, height: 12},
+                        {type: "rect", x: 4, y: 4, width: 4, height: 12},
+                        {type: "rect", x: 8, y: 4, width: 4, height: 12},
+                        {type: "rect", x: 12, y: 4, width: 4, height: 12},
+                        {type: "rect", x: 4, y: 0, width: 4, height: 4},
+                        {type: "rect", x: 4, y: 16, width: 4, height: 4},
+                    ])
 
                     // Left Leg
                     skinSections.push(drawSection(canvasSkin, [
@@ -1080,9 +1156,17 @@
                         { input: { x: 16+12+4-tab_small_size, y: 52, dx: tab_small_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
                             background: "0xFF000000", layer: { dx: -16, offset_y: offset_3d_all ? offset_layer_amount : 0  } },
                     ]))
+                    registerSectionFolds([
+                        {type: "rect", x: 0, y: 4, width: 4, height: 12},
+                        {type: "rect", x: 4, y: 4, width: 4, height: 12},
+                        {type: "rect", x: 8, y: 4, width: 4, height: 12},
+                        {type: "rect", x: 12, y: 4, width: 4, height: 12},
+                        {type: "rect", x: 4, y: 0, width: 4, height: 4},
+                        {type: "rect", x: 4, y: 16, width: 4, height: 4},
+                    ])
 
                     // Cape
-                    if (hasCape)
+                    if (hasCape) {
                         skinSections.push(drawSection(canvasCape, [
                             {  file:"cape", input: { x: 0, y: 1, dx: 22, dy: 16 }, output: { x: x_offset+tab_size*pixelScale, y: y_offset+1*pixelScale },
                                 background: "0xFF000000" },
@@ -1093,6 +1177,15 @@
                             {  file:"cape", input: { x: 0+12+10-tab_size, y: 1, dx: tab_size, dy: 16 }, output: { x: x_offset, y: y_offset+1*pixelScale },
                                 background: "0xFF000000" },
                         ]))
+                        registerSectionFolds([
+                            {type: "rect", x: 0, y: 1, width: 1, height: 16},
+                            {type: "rect", x: 1, y: 1, width: 10, height: 16},
+                            {type: "rect", x: 11, y: 1, width: 1, height: 16},
+                            {type: "rect", x: 12, y: 1, width: 10, height: 16},
+                            {type: "rect", x: 1, y: 0, width: 10, height: 1},
+                            {type: "rect", x: 1, y: 17, width: 10, height: 1},
+                        ])
+                    }
 
                     await labelAndLog('button-label', 'Organizing pages...')
 
@@ -1138,7 +1231,7 @@
                             const cx = cur % w
                             const cy = Math.floor(cur / w)
                             const curDist = dist[cur]
-                            if (curDist >= pixelScale) continue
+                            if (curDist >= extrudeAmount) continue
 
                             const neighbors = [
                                 [cx - 1, cy],
@@ -1163,7 +1256,7 @@
                         for (let y = 0; y < h; y++) {
                             for (let x = 0; x < w; x++) {
                                 const i = idx(x, y)
-                                if (dist[i] > 0 && dist[i] <= pixelScale) {
+                                if (dist[i] > 0 && dist[i] <= extrudeAmount) {
                                     const color = srcColors[srcId[i]]
                                     dst.data[i * 4 + 0] = color[0]
                                     dst.data[i * 4 + 1] = color[1]
@@ -1184,8 +1277,12 @@
                     let y = pageMarginY
                     let rowHeight = 0
 
+                    let sectionNum = 0
                     for (const section of skinSections) {
                         if (x + section.width + pageMarginX > outputWidth) {
+                            if(pageMarginX + section.width + pageMarginX > outputWidth) {
+                                throw "pixelScaleInput '"+pixelScaleInput+"' too high for outputWidth '"+outputWidth+"'"
+                            }
                             x = pageMarginX
                             y += rowHeight + spacing
                             rowHeight = 0
@@ -1201,8 +1298,14 @@
                         }
 
                         currentPageCtx.drawImage(section, x, y)
+
+                        sectionFolds[sectionNum].page = pageSections.length
+                        sectionFolds[sectionNum].x = x
+                        sectionFolds[sectionNum].y = y
+
                         x += section.width + spacing
                         rowHeight = Math.max(rowHeight, section.height)
+                        sectionNum++
                     }
 
                     pageSections.push(currentPage)
@@ -1228,6 +1331,84 @@
 
                         pageSectionsDouble.push(backPage)
                     })
+
+                    await labelAndLog('button-label', 'Drawing fold lines...')
+
+                    const dottedPixelLength = Math.floor(pixelScale * 3/5)
+                    const dottedPixelWidth = Math.floor(pixelScale / 4)
+
+                    // alpha values cause issues where lines and line widths overlap
+                    const dottedColorA = '#FFFFFF'
+                    const dottedColorB = '#000000'
+
+                    function drawAlignedDottedLine(ctx, dir, x1, y1, x2, y2) {
+                        const isVertical = Math.abs(x2 - x1) < Math.abs(y2 - y1)
+                        if(isVertical != dir)
+                            return
+
+                        const dx = x2 - x1
+                        const dy = y2 - y1
+                        const totalLength = Math.hypot(dx, dy)
+
+                        const dirX = dx / totalLength
+                        const dirY = dy / totalLength
+
+                        const startCoord = isVertical ? y1 : x1
+                        const phaseOffset = (startCoord % (2 * dottedPixelLength) + 2 * dottedPixelLength) % (2 * dottedPixelLength)
+
+                        let dist = 0
+                        while (dist < totalLength) {
+                            const coord = (phaseOffset + dist) % (2 * dottedPixelLength)
+                            const colorIndex = Math.floor(coord / dottedPixelLength) % 2
+                            ctx.strokeStyle = colorIndex === 0 ? dottedColorA : dottedColorB
+                            ctx.lineWidth = dottedPixelWidth
+
+                            const nextBoundary =
+                                Math.min(
+                                    dist + (dottedPixelLength - (coord % dottedPixelLength)),
+                                    totalLength
+                                )
+
+                            const sx = x1 + dirX * dist
+                            const sy = y1 + dirY * dist
+                            const ex = x1 + dirX * nextBoundary
+                            const ey = y1 + dirY * nextBoundary
+
+                            ctx.beginPath()
+                            ctx.moveTo(sx, sy)
+                            ctx.lineTo(ex, ey)
+                            ctx.stroke()
+
+                            dist = nextBoundary
+                        }
+                    }
+
+                    function drawFoldLines(ctx, thisSection, fold, dir) {
+                        if (fold.type === 'rect') {
+                            drawAlignedDottedLine(ctx, dir, thisSection.x + fold.x, thisSection.y + fold.y, thisSection.x + fold.x + fold.width, thisSection.y + fold.y)
+                            drawAlignedDottedLine(ctx, dir, thisSection.x + fold.x, thisSection.y + fold.y, thisSection.x + fold.x, thisSection.y + fold.y + fold.height)
+                            drawAlignedDottedLine(ctx, dir, thisSection.x + fold.x + fold.width, thisSection.y + fold.y + fold.height, thisSection.x + fold.x + fold.width, thisSection.y + fold.y)
+                            drawAlignedDottedLine(ctx, dir, thisSection.x + fold.x + fold.width, thisSection.y + fold.y + fold.height, thisSection.x + fold.x, thisSection.y + fold.y + fold.height)
+                        } else if (fold.type === 'line') {
+                            drawAlignedDottedLine(ctx, dir, thisSection.x + fold.x, thisSection.y + fold.y, thisSection.x + fold.x + fold.dx, thisSection.y + fold.y + fold.dy)
+                        }
+                        else
+                            throw 'Failed to read fold type to draw: ' + fold.type
+                    }
+
+                    for (let i = 0; i < sectionFolds.length; i++) {
+                        let thisSection = sectionFolds[i]
+                        if (thisSection.page === undefined || thisSection.x === undefined || thisSection.y === undefined || thisSection.folds === undefined)
+                            throw 'Error generating fold lines'
+                        let ctx = getCanvasContext(pageSectionsDouble[(2 * thisSection.page) + 1])
+                        ctx.lineWidth = dottedPixelWidth
+                        thisSection.folds.forEach(fold => {
+                            drawFoldLines(ctx, thisSection, fold, true)
+                        })
+                        thisSection.folds.forEach(fold => {
+                            drawFoldLines(ctx, thisSection, fold, false)
+                        })
+                    }
 
                     await labelAndLog('button-label', 'Generating PDF...')
 
@@ -1271,13 +1452,16 @@
 
                     generatedPdf = newPdf
 
-                    let newHtml = '<table class="card-table"><tr class="card-table-row">'
+                    let newHtml = ''
+                    newHtml += '<br/>'
+                    newHtml += '<button class="button" onClick="openPdf()" style="font-size:x-large">Open PDF</button>'
+                    newHtml += '<br/>'
+                    newHtml += '<table class="card-table"><tr class="card-table-row">'
                     for (const page of pageSections) {
                         prevPageCount++
                         newHtml += `<td class="card-wrap-third"><img src="${page.toDataURL('image/png')}" class="img-full"></td>`
                     }
                     newHtml += '</tr></table>'
-                    newHtml += `<button class="button" onClick="openPdf()" style="font-size:x-large">Open PDF</button>`
 
                     document.getElementById('img-span').innerHTML = newHtml
                     label('button-label', '')
@@ -1289,17 +1473,12 @@
                         await labelAndLog('button-label', 'Input error')
                     else
                         await labelAndLog('button-label', 'Inputs invalid: '+lbl)
-                    prevPageCount = 0
                     document.getElementById('img-span').innerHTML = ''
                 }
             } catch (err) {
                 await label('button-label', 'Error:\n'+err)
                 throw err
             }
-        }
-
-        function download() {
-            downloadLink.click()
         }
 
         function openPdf() {
