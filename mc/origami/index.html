@@ -22,8 +22,6 @@
             <td class="card-wrap-mid"><div class="card tooltip center">
                 <p class="item-header">Origami</p>
                 <br/>
-                <p class="item-header warn" style="color:#FFFF55">W.I.P.</p>
-                <br/>
                 <p class="item-subtitle">Generate a double-sided PDF to print a 3D Minecraft skin</p>
             </div></td>
 
@@ -98,9 +96,9 @@
                         </td>
                         <td class="card-wrap-third">
                             <select id="shift-3d" style="font-size:large">
-                                <option value="none">Off</option>
-                                <option value="head">Head</option>
                                 <option value="all">All</option>
+                                <option value="head">Head</option>
+                                <option value="none">Off</option>
                             </select>
                         </td>
                         <td class="card-wrap-third">
@@ -225,6 +223,13 @@
         const pageMarginY = Math.ceil(outputHeight / 10)
         const pageMarginUnitX = pageMarginX / outputUnitScale
         const pageMarginUnitY = pageMarginY / outputUnitScale
+        const pageColor = "#FFFFFF"
+
+        const dottedPixelLength = Math.floor(pixelScale / 2)
+        const dottedPixelWidth = Math.floor(pixelScale / 4)
+        // alpha values cause issues where lines and line widths overlap
+        const dottedColorA = '#00000088'
+        const dottedColorB = '#FFFFFF88'
 
         let selectedSkinFileImg = new Image()
         let selectedSkinFileName = ''
@@ -477,11 +482,6 @@
             try {
                 console.log('Origami generate function started')
                 generatedPdf = null
-
-                if(outputHeight < outputWidth) {
-                    // do not remove without reworking logic to determine if pixelScale too big for output size
-                    throw 'outputHeight cannot be less than outputWidth'
-                }
 
                 if (prevPageCount >= 1) {
                     const tempCanvas = createCanvas(outputWidth, outputHeight)
@@ -993,10 +993,25 @@
                             if (op.layer) {
                                 const layerInputX = (op.input.x + (op.layer.dx ?? 0)) * pixelScale
                                 const layerInputY = (op.input.y + (op.layer.dy ?? 0)) * pixelScale
-                                const layerOffsetX = op.layer.offset_x ?? 0
-                                const layerOffsetY = op.layer.offset_y ?? 0
+                                const scale = op.layer.scale ?? 1
 
-                                canvasCtx.drawImage(sourceCanvas, layerInputX, layerInputY, outputW, outputH, layerOffsetX, layerOffsetY, outputW, outputH)
+                                const layerWidth = outputW * scale
+                                const layerHeight = outputH * scale
+
+                                const layerDestX = (outputW - layerWidth) / 2
+                                const layerDestY = (outputH - layerHeight) / 2
+
+                                canvasCtx.drawImage(
+                                    sourceCanvas,
+                                    layerInputX,
+                                    layerInputY,
+                                    outputW,
+                                    outputH,
+                                    layerDestX,
+                                    layerDestY,
+                                    layerWidth,
+                                    layerHeight
+                                )
                             }
 
                             canvasCtx.restore()
@@ -1015,7 +1030,7 @@
                     const sectionFolds = []
 
                     function registerSectionFold(fold) {
-                        if (fold.type === "rect") {
+                        if (fold.type === 'rect') {
                             if (fold.x === undefined || fold.y === undefined || fold.width === undefined || fold.height === undefined)
                                 throw 'Invalid \'rect\' fold type to register'
                             return {
@@ -1026,10 +1041,16 @@
                                 height: fold.height * pixelScale
                             }
                         }
-                        else if (fold.type === "line") {
+                        else if (fold.type === 'line') {
                             if (fold.x === undefined || fold.y === undefined || fold.dx === undefined || fold.dy === undefined)
                                 throw 'Invalid \'line\' fold type to register'
-                            throw 'TODO'
+                            return {
+                                type: "line",
+                                x: (fold.x * pixelScale) + extrudeAmount,
+                                y: (fold.y * pixelScale) + extrudeAmount,
+                                dx: fold.dx * pixelScale,
+                                dy: fold.dy * pixelScale
+                            }
                         }
                         else
                             throw 'Failed to read fold type to register: ' + fold.type
@@ -1047,14 +1068,18 @@
 
                     // Head
                     skinSections.push(drawSection(canvasSkin, [
-                        { input: { x: 0, y: 8, dx: 32, dy: 8 }, output: { x: x_offset+tab_size*pixelScale, y: y_offset+8*pixelScale },
-                            background: "0xFF000000", layer: { dx: 32, offset_y: offset_3d_head ? offset_layer_amount : 0 } },
+                        { input: { x: 0, y: 8, dx: 8, dy: 8 }, output: { x: x_offset+tab_size*pixelScale, y: y_offset+8*pixelScale },
+                            background: "0xFF000000", layer: { dx: 32, scale: offset_3d_head ? ((8+.5)/8) : 1 } },
+                        { input: { x: 8, y: 8, dx: 8, dy: 8 }, output: { x: x_offset+tab_size*pixelScale+8*pixelScale, y: y_offset+8*pixelScale },
+                            background: "0xFF000000", layer: { dx: 32, scale: offset_3d_head ? ((8+.5)/8) : 1 } },
+                        { input: { x: 16, y: 8, dx: 8, dy: 8 }, output: { x: x_offset+tab_size*pixelScale+16*pixelScale, y: y_offset+8*pixelScale },
+                            background: "0xFF000000", layer: { dx: 32, scale: offset_3d_head ? ((8+.5)/8) : 1 } },
+                        { input: { x: 24, y: 8, dx: 8, dy: 8 }, output: { x: x_offset+tab_size*pixelScale+24*pixelScale, y: y_offset+8*pixelScale },
+                            background: "0xFF000000", layer: { dx: 32, scale: offset_3d_head ? ((8+.5)/8) : 1 } },
                         { input: { x: 8, y: 0, dx: 8, dy: 8 }, output: { x: x_offset+(tab_size+8)*pixelScale, y: y_offset },
-                            background: "0xFF000000", layer: { dx: 32 } },
+                            background: "0xFF000000", layer: { dx: 32, scale: offset_3d_head ? ((8+.5)/8) : 1 } },
                         { input: { x: 16, y: 0, dx: 8, dy: -8 }, output: { x: x_offset+(tab_size+8)*pixelScale, y: y_offset+16*pixelScale },
-                            background: "0xFF000000", layer: { dx: 32 } },
-                        { input: { x: 0+24+8-tab_size, y: 8, dx: tab_size, dy: 8 }, output: { x: x_offset, y: y_offset+8*pixelScale },
-                            background: "0xFF000000", layer: { dx: 32, offset_y: offset_3d_head ? offset_layer_amount : 0 } },
+                            background: "0xFF000000", layer: { dx: 32, scale: offset_3d_head ? ((8+.5)/8) : 1 } },
                     ]))
                     registerSectionFolds([
                         {type: "rect", x: 0, y: 8, width: 8, height: 8},
@@ -1067,14 +1092,18 @@
 
                     // Body
                     skinSections.push(drawSection(canvasSkin, [
-                        { input: { x: 16, y: 20, dx: 24, dy: 12 }, output: { x: x_offset+tab_size*pixelScale, y: y_offset+4*pixelScale },
-                            background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset_layer_amount : 0 } },
+                        { input: { x: 16, y: 20, dx: 4, dy: 12 }, output: { x: x_offset+tab_size*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dy: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
+                        { input: { x: 20, y: 20, dx: 8, dy: 12 }, output: { x: x_offset+tab_size*pixelScale+4*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dy: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
+                        { input: { x: 28, y: 20, dx: 4, dy: 12 }, output: { x: x_offset+tab_size*pixelScale+12*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dy: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
+                        { input: { x: 32, y: 20, dx: 8, dy: 12 }, output: { x: x_offset+tab_size*pixelScale+16*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dy: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
                         { input: { x: 20, y: 16, dx: 8, dy: 4 }, output: { x: x_offset+(tab_size+4)*pixelScale, y: y_offset },
-                            background: "0xFF000000", layer: { dy: 16 } },
+                            background: "0xFF000000", layer: { dy: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
                         { input: { x: 28, y: 16, dx: 8, dy: -4 }, output: { x: x_offset+(tab_size+4)*pixelScale, y: y_offset+16*pixelScale },
-                            background: "0xFF000000", layer: { dy: 16 } },
-                        { input: { x: 16+16+8-tab_size, y: 20, dx: tab_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
-                            background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset_layer_amount : 0 } },
+                            background: "0xFF000000", layer: { dy: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
                     ]))
                     registerSectionFolds([
                         {type: "rect", x: 0, y: 4, width: 4, height: 12},
@@ -1087,14 +1116,18 @@
 
                     // Right Arm
                     skinSections.push(drawSectionPadded((slim ? 2 : 0), canvasSkin, [
-                        { input: { x: 40, y: 20, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale, y: y_offset+4*pixelScale },
-                            background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset_layer_amount : 0 } },
-                        { input: { x: 44, y: 16, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset },
-                            background: "0xFF000000", layer: { dy: 16 } },
-                        { input: { x: 48 - (slim ? 1 : 0), y: 16, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset+16*pixelScale },
-                            background: "0xFF000000", layer: { dy: 16 } },
-                        { input: { x: 40+12+4-tab_small_size-(slim ? 2 : 0), y: 20, dx: tab_small_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
-                            background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset_layer_amount : 0 } },
+                        { input: { x: 40, y: 20, dx: 4, dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dy: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
+                        { input: { x: 44, y: 20, dx: (slim ? 3 : 4), dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale+4*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dy: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
+                        { input: { x: 44 + (slim ? 3 : 4), y: 20, dx: 4, dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale+(4 + (slim ? 3 : 4))*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dy: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
+                        { input: { x: 44 + (slim ? 3 : 4) + 4, y: 20, dx: (slim ? 3 : 4), dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale+(4 + (slim ? 3 : 4) + 4)*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dy: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
+                        { input: { x: 44, y: 16, dx: (slim ? 3 : 4), dy: 4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset },
+                            background: "0xFF000000", layer: { dy: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
+                        { input: { x: 48 - (slim ? 1 : 0), y: 16, dx: (slim ? 3 : 4), dy: -4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset+16*pixelScale },
+                            background: "0xFF000000", layer: { dy: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
                     ]))
                     registerSectionFolds([
                         {type: "rect", x: 0, y: 4, width: 4, height: 12},
@@ -1107,14 +1140,18 @@
 
                     // Left Arm
                     skinSections.push(drawSectionPadded((slim ? 2 : 0), canvasSkin, [
-                        { input: { x: 32, y: 52, dx: 16 - (slim ? 2 : 0), dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale, y: y_offset+4*pixelScale },
-                            background: "0xFF000000", layer: { dx: 16, offset_y: offset_3d_all ? offset_layer_amount : 0 } },
-                        { input: { x: 36, y: 48, dx: 4 - (slim ? 1 : 0), dy: 4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset },
-                            background: "0xFF000000", layer: { dx: 16 } },
-                        { input: { x: 40 - (slim ? 1 : 0), y: 48, dx: 4 - (slim ? 1 : 0), dy: -4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset+16*pixelScale },
-                            background: "0xFF000000", layer: { dx: 16 } },
-                        { input: { x: 32+12+4-tab_small_size-(slim ? 2 : 0), y: 52, dx: tab_small_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
-                            background: "0xFF000000", layer: { dx: 16, offset_y: offset_3d_all ? offset_layer_amount : 0 } },
+                        { input: { x: 32, y: 52, dx: 4, dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dx: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
+                        { input: { x: 36, y: 52, dx: (slim ? 3 : 4), dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale+4*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dx: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
+                        { input: { x: 36 + (slim ? 3 : 4), y: 52, dx: 4, dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale+(4 + (slim ? 3 : 4))*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dx: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
+                        { input: { x: 36 + (slim ? 3 : 4) + 4, y: 52, dx: (slim ? 3 : 4), dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale+(4 + (slim ? 3 : 4) + 4)*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dx: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
+                        { input: { x: 36, y: 48, dx: (slim ? 3 : 4), dy: 4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset },
+                            background: "0xFF000000", layer: { dx: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
+                        { input: { x: 40 - (slim ? 1 : 0), y: 48, dx: (slim ? 3 : 4), dy: -4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset+16*pixelScale },
+                            background: "0xFF000000", layer: { dx: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
                     ]))
                     registerSectionFolds([
                         {type: "rect", x: 0, y: 4, width: 4, height: 12},
@@ -1127,14 +1164,18 @@
 
                     // Right Leg
                     skinSections.push(drawSection(canvasSkin, [
-                        { input: { x: 0, y: 20, dx: 16, dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale, y: y_offset+4*pixelScale },
-                            background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset_layer_amount : 0 } },
+                        { input: { x: 0, y: 20, dx: 4, dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dy: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
+                        { input: { x: 4, y: 20, dx: 4, dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale+4*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dy: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
+                        { input: { x: 8, y: 20, dx: 4, dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale+8*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dy: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
+                        { input: { x: 12, y: 20, dx: 4, dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale+12*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dy: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
                         { input: { x: 4, y: 16, dx: 4, dy: 4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset },
-                            background: "0xFF000000", layer: { dy: 16 } },
+                            background: "0xFF000000", layer: { dy: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
                         { input: { x: 8, y: 16, dx: 4, dy: -4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset+16*pixelScale },
-                            background: "0xFF000000", layer: { dy: 16 } },
-                        { input: { x: 0+12+4-tab_small_size, y: 20, dx: tab_small_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
-                            background: "0xFF000000", layer: { dy: 16, offset_y: offset_3d_all ? offset_layer_amount : 0 } },
+                            background: "0xFF000000", layer: { dy: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
                     ]))
                     registerSectionFolds([
                         {type: "rect", x: 0, y: 4, width: 4, height: 12},
@@ -1147,14 +1188,18 @@
 
                     // Left Leg
                     skinSections.push(drawSection(canvasSkin, [
-                        { input: { x: 16, y: 52, dx: 16, dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale, y: y_offset+4*pixelScale },
-                            background: "0xFF000000", layer: { dx: -16, offset_y: offset_3d_all ? offset_layer_amount : 0  } },
+                        { input: { x: 16, y: 52, dx: 4, dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dx: -16, scale: offset_3d_all ? ((8+.25)/8) : 1  } },
+                        { input: { x: 20, y: 52, dx: 4, dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale+4*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dx: -16, scale: offset_3d_all ? ((8+.25)/8) : 1  } },
+                        { input: { x: 24, y: 52, dx: 4, dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale+8*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dx: -16, scale: offset_3d_all ? ((8+.25)/8) : 1  } },
+                        { input: { x: 28, y: 52, dx: 4, dy: 12 }, output: { x: x_offset+tab_small_size*pixelScale+12*pixelScale, y: y_offset+4*pixelScale },
+                            background: "0xFF000000", layer: { dx: -16, scale: offset_3d_all ? ((8+.25)/8) : 1  } },
                         { input: { x: 20, y: 48, dx: 4, dy: 4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset },
-                            background: "0xFF000000", layer: { dx: -16 } },
+                            background: "0xFF000000", layer: { dx: -16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
                         { input: { x: 24, y: 48, dx: 4, dy: -4 }, output: { x: x_offset+(tab_small_size+4)*pixelScale, y: y_offset+16*pixelScale },
-                            background: "0xFF000000", layer: { dx: -16 } },
-                        { input: { x: 16+12+4-tab_small_size, y: 52, dx: tab_small_size, dy: 12 }, output: { x: x_offset, y: y_offset+4*pixelScale },
-                            background: "0xFF000000", layer: { dx: -16, offset_y: offset_3d_all ? offset_layer_amount : 0  } },
+                            background: "0xFF000000", layer: { dx: -16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
                     ]))
                     registerSectionFolds([
                         {type: "rect", x: 0, y: 4, width: 4, height: 12},
@@ -1168,13 +1213,17 @@
                     // Cape
                     if (hasCape) {
                         skinSections.push(drawSection(canvasCape, [
-                            {  file:"cape", input: { x: 0, y: 1, dx: 22, dy: 16 }, output: { x: x_offset+tab_size*pixelScale, y: y_offset+1*pixelScale },
+                            {  file:"cape", input: { x: 0, y: 1, dx: 1, dy: 16 }, output: { x: x_offset+tab_size*pixelScale, y: y_offset+1*pixelScale },
+                                background: "0xFF000000" },
+                            {  file:"cape", input: { x: 1, y: 1, dx: 10, dy: 16 }, output: { x: x_offset+tab_size*pixelScale+1*pixelScale, y: y_offset+1*pixelScale },
+                                background: "0xFF000000" },
+                            {  file:"cape", input: { x: 11, y: 1, dx: 1, dy: 16 }, output: { x: x_offset+tab_size*pixelScale+11*pixelScale, y: y_offset+1*pixelScale },
+                                background: "0xFF000000" },
+                            {  file:"cape", input: { x: 12, y: 1, dx: 10, dy: 16 }, output: { x: x_offset+tab_size*pixelScale+12*pixelScale, y: y_offset+1*pixelScale },
                                 background: "0xFF000000" },
                             {  file:"cape", input: { x: 1, y: 0, dx: 10, dy: 1 }, output: { x: x_offset+(tab_size+1)*pixelScale, y: y_offset },
                                 background: "0xFF000000" },
                             {  file:"cape", input: { x: 11, y: 0, dx: 10, dy: -1 }, output: { x: x_offset+(tab_size+1)*pixelScale, y: y_offset+17*pixelScale },
-                                background: "0xFF000000" },
-                            {  file:"cape", input: { x: 0+12+10-tab_size, y: 1, dx: tab_size, dy: 16 }, output: { x: x_offset, y: y_offset+1*pixelScale },
                                 background: "0xFF000000" },
                         ]))
                         registerSectionFolds([
@@ -1289,6 +1338,9 @@
                         }
 
                         if (y + section.height + pageMarginY > outputHeight) {
+                            if(pageMarginY + section.height + pageMarginY > outputHeight) {
+                                throw "pixelScaleInput '"+pixelScaleInput+"' too high for outputHeight '"+outputHeight+"'"
+                            }
                             pageSections.push(currentPage)
                             currentPage = createCanvas(outputWidth, outputHeight)
                             currentPageCtx = getCanvasContext(currentPage)
@@ -1334,17 +1386,22 @@
 
                     await labelAndLog('button-label', 'Drawing fold lines...')
 
-                    const dottedPixelLength = Math.floor(pixelScale * 3/5)
-                    const dottedPixelWidth = Math.floor(pixelScale / 4)
-
-                    // alpha values cause issues where lines and line widths overlap
-                    const dottedColorA = '#FFFFFF'
-                    const dottedColorB = '#000000'
-
                     function drawAlignedDottedLine(ctx, dir, x1, y1, x2, y2) {
                         const isVertical = Math.abs(x2 - x1) < Math.abs(y2 - y1)
                         if(isVertical != dir)
                             return
+
+                        // make sure dash colors always go same direction
+                        if(x2 < x1) {
+                            let temp = x2
+                            x2 = x1
+                            x1 = temp
+                        }
+                        if(y2 < y1) {
+                            let temp = y2
+                            y2 = y1
+                            y1 = temp
+                        }
 
                         const dx = x2 - x1
                         const dy = y2 - y1
@@ -1353,15 +1410,31 @@
                         const dirX = dx / totalLength
                         const dirY = dy / totalLength
 
-                        const startCoord = isVertical ? y1 : x1
+                        const startCoord = (isVertical ? (y1 - pageMarginY) : (x1 - pageMarginX)) - (pixelScale / 4)
                         const phaseOffset = (startCoord % (2 * dottedPixelLength) + 2 * dottedPixelLength) % (2 * dottedPixelLength)
+
+                        ctx.beginPath()
+                        ctx.moveTo(x1, y1)
+                        ctx.lineTo(x2, y2)
+
+                        ctx.save()
+                        ctx.globalCompositeOperation = 'destination-out'
+                        ctx.strokeStyle = '#000'
+                        ctx.lineCap = 'square'
+                        ctx.stroke()
+                        ctx.restore()
+
+                        ctx.save()
+                        ctx.globalCompositeOperation = 'source-over'
+                        ctx.strokeStyle = dottedColorB
+                        ctx.lineCap = 'square'
+                        ctx.stroke()
+                        ctx.restore()
 
                         let dist = 0
                         while (dist < totalLength) {
                             const coord = (phaseOffset + dist) % (2 * dottedPixelLength)
                             const colorIndex = Math.floor(coord / dottedPixelLength) % 2
-                            ctx.strokeStyle = colorIndex === 0 ? dottedColorA : dottedColorB
-                            ctx.lineWidth = dottedPixelWidth
 
                             const nextBoundary =
                                 Math.min(
@@ -1377,7 +1450,18 @@
                             ctx.beginPath()
                             ctx.moveTo(sx, sy)
                             ctx.lineTo(ex, ey)
+
+                            ctx.save()
+                            ctx.globalCompositeOperation = 'destination-out'
+                            ctx.strokeStyle = '#000'
                             ctx.stroke()
+                            ctx.restore()
+
+                            ctx.save()
+                            ctx.globalCompositeOperation = 'source-over'
+                            ctx.strokeStyle = colorIndex === 0 ? dottedColorA : dottedColorB
+                            ctx.stroke()
+                            ctx.restore()
 
                             dist = nextBoundary
                         }
@@ -1396,18 +1480,30 @@
                             throw 'Failed to read fold type to draw: ' + fold.type
                     }
 
+                    const sectionFoldOverlays = []
+                    for (let i = 0; i < pageSections.length; i++) {
+                        sectionFoldOverlays.push(createCanvas(outputWidth, outputHeight))
+                    }
+
                     for (let i = 0; i < sectionFolds.length; i++) {
                         let thisSection = sectionFolds[i]
                         if (thisSection.page === undefined || thisSection.x === undefined || thisSection.y === undefined || thisSection.folds === undefined)
                             throw 'Error generating fold lines'
-                        let ctx = getCanvasContext(pageSectionsDouble[(2 * thisSection.page) + 1])
+                        let ctx = getCanvasContext(sectionFoldOverlays[thisSection.page])
                         ctx.lineWidth = dottedPixelWidth
+                        ctx.globalCompositeOperation = 'destination-over'
                         thisSection.folds.forEach(fold => {
                             drawFoldLines(ctx, thisSection, fold, true)
                         })
                         thisSection.folds.forEach(fold => {
                             drawFoldLines(ctx, thisSection, fold, false)
                         })
+                    }
+
+                    for (let i = 0; i < pageSections.length; i++) {
+                        const baseCtx = getCanvasContext(pageSectionsDouble[(2 * i) + 1])
+                        const overlay = sectionFoldOverlays[i]
+                        baseCtx.drawImage(overlay, 0, 0)
                     }
 
                     await labelAndLog('button-label', 'Generating PDF...')
@@ -1436,7 +1532,7 @@
 
                         const pdfPageCanvas = createCanvas(safeAreaX, safeAreaY)
                         const pdfPageCanvasCtx = getCanvasContext(pdfPageCanvas)
-                        pdfPageCanvasCtx.fillStyle = "#FFFFFF"
+                        pdfPageCanvasCtx.fillStyle = pageColor
                         pdfPageCanvasCtx.fillRect(0, 0, safeAreaX, safeAreaY)
                         pdfPageCanvasCtx.drawImage(canvas, pageMarginX, pageMarginY, safeAreaX, safeAreaY, 0, 0, safeAreaX, safeAreaY)
 
