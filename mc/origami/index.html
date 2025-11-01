@@ -208,7 +208,7 @@
 
         const pixelScaleInput = 10
         const pixelScale = 4 * pixelScaleInput // must be multiple of 4
-        const extrudeAmount = pixelScale // must be integer 0 or higher
+
         const outputUnitWidth = 8.5
         const outputUnitHeight = 11
         const outputUnitLabel = 'in'
@@ -216,7 +216,8 @@
         const outputWidth = Math.floor(outputUnitWidth * outputUnitScale)
         const outputHeight = Math.floor(outputUnitHeight * outputUnitScale)
 
-        const offset_layer_amount = Math.floor(pixelScale / 4)
+        const extrudeEdges = true
+        const extrudeAmount = pixelScale // must be integer 0 or higher
 
         const spacing = (2 * extrudeAmount) + pixelScale
         const pageMarginX = Math.ceil(outputWidth / 10)
@@ -230,6 +231,7 @@
         // alpha values cause issues where lines and line widths overlap
         const dottedColorA = '#00000088'
         const dottedColorB = '#FFFFFF88'
+        const solidColor = '#88888888'
 
         let selectedSkinFileImg = new Image()
         let selectedSkinFileName = ''
@@ -492,7 +494,7 @@
                     newHtml += '<br/>'
                     newHtml += '<table class="card-table"><tr class="card-table-row">'
                     for (let i = 0; i < prevPageCount; i++) {
-                        newHtml += `<td class="card-wrap-third"><img src="${tempCanvas.toDataURL('image/png')}" class="img-full"></td>`
+                        newHtml += `<td class="card-wrap-any"><img src="${tempCanvas.toDataURL('image/png')}" class="img-mostly"></td>`
                     }
                     newHtml += '</tr></table>'
 
@@ -1023,34 +1025,166 @@
                     const x_offset = extrudeAmount
                     const y_offset = extrudeAmount
 
-                    const tab_size = 0
-                    const tab_small_size = 0
+                    const tab_size = 4
+                    const tab_small_size = 2
+                    const tab_tiny_size = .666
 
                     const skinSections = []
                     const sectionFolds = []
 
-                    function registerSectionFold(fold) {
+                    function registerSectionFold(foldsList, fold) {
+                        let thisDashed = true
+                        if (fold.dashed === false)
+                            thisDashed = false
+
                         if (fold.type === 'rect') {
                             if (fold.x === undefined || fold.y === undefined || fold.width === undefined || fold.height === undefined)
                                 throw 'Invalid \'rect\' fold type to register'
-                            return {
+                            
+                            foldsList.push({
                                 type: "rect",
-                                x: (fold.x * pixelScale) + extrudeAmount,
+                                dashed: thisDashed,
+                                x: (fold.x * pixelScale) + extrudeAmount + (pixelScale * fold.tabWidth),
                                 y: (fold.y * pixelScale) + extrudeAmount,
                                 width: fold.width * pixelScale,
                                 height: fold.height * pixelScale
+                            })
+
+                            if (fold.extend) {
+                                if (fold.extend.left > 0) {
+                                    const extendFold = fold.extend.left
+                                    registerSectionFold(foldsList, {
+                                        type: "line",
+                                        tabWidth: fold.tabWidth,
+                                        dashed: false,
+                                        x: fold.x,
+                                        y: fold.y,
+                                        dx: -1 * extendFold,
+                                        dy: extendFold / 2,
+                                    })
+                                    registerSectionFold(foldsList, {
+                                        type: "line",
+                                        tabWidth: fold.tabWidth,
+                                        dashed: false,
+                                        x: fold.x,
+                                        y: fold.y + fold.height,
+                                        dx: -1 * extendFold,
+                                        dy: -1 * extendFold / 2,
+                                    })
+                                    registerSectionFold(foldsList, {
+                                        type: "line",
+                                        tabWidth: fold.tabWidth,
+                                        dashed: false,
+                                        x: fold.x + (-1 * extendFold),
+                                        y: fold.y + (extendFold / 2),
+                                        dx: 0,
+                                        dy: fold.height + (-1 * extendFold),
+                                    })
+                                }
+                                if (fold.extend.right > 0) {
+                                    const extendFold = fold.extend.right
+                                    registerSectionFold(foldsList, {
+                                        type: "line",
+                                        tabWidth: fold.tabWidth,
+                                        dashed: false,
+                                        x: fold.x + fold.width,
+                                        y: fold.y,
+                                        dx: extendFold,
+                                        dy: extendFold / 2,
+                                    })
+                                    registerSectionFold(foldsList, {
+                                        type: "line",
+                                        tabWidth: fold.tabWidth,
+                                        dashed: false,
+                                        x: fold.x + fold.width,
+                                        y: fold.y + fold.height,
+                                        dx: extendFold,
+                                        dy: -1 * extendFold / 2,
+                                    })
+                                    registerSectionFold(foldsList, {
+                                        type: "line",
+                                        tabWidth: fold.tabWidth,
+                                        dashed: false,
+                                        x: fold.x + fold.width + extendFold,
+                                        y: fold.y + (extendFold / 2),
+                                        dx: 0,
+                                        dy: fold.height + (-1 * extendFold),
+                                    })
+                                }
+                                if (fold.extend.top > 0) {
+                                    const extendFold = fold.extend.top
+                                    registerSectionFold(foldsList, {
+                                        type: "line",
+                                        tabWidth: fold.tabWidth,
+                                        dashed: false,
+                                        x: fold.x,
+                                        y: fold.y,
+                                        dx: extendFold / 2,
+                                        dy: -1 * extendFold,
+                                    })
+                                    registerSectionFold(foldsList, {
+                                        type: "line",
+                                        tabWidth: fold.tabWidth,
+                                        dashed: false,
+                                        x: fold.x + fold.width,
+                                        y: fold.y,
+                                        dx: -1 * extendFold / 2,
+                                        dy: -1 * extendFold,
+                                    })
+                                    registerSectionFold(foldsList, {
+                                        type: "line",
+                                        tabWidth: fold.tabWidth,
+                                        dashed: false,
+                                        x: fold.x + (extendFold / 2),
+                                        y: fold.y + (-1 * extendFold),
+                                        dx: fold.width + (-1 * extendFold),
+                                        dy: 0,
+                                    })
+                                }
+                                if (fold.extend.bottom > 0) {
+                                    const extendFold = fold.extend.bottom
+                                    registerSectionFold(foldsList, {
+                                        type: "line",
+                                        tabWidth: fold.tabWidth,
+                                        dashed: false,
+                                        x: fold.x,
+                                        y: fold.y + fold.height,
+                                        dx: extendFold / 2,
+                                        dy: extendFold,
+                                    })
+                                    registerSectionFold(foldsList, {
+                                        type: "line",
+                                        tabWidth: fold.tabWidth,
+                                        dashed: false,
+                                        x: fold.x + fold.width,
+                                        y: fold.y + fold.height,
+                                        dx: -1 * extendFold / 2,
+                                        dy: extendFold,
+                                    })
+                                    registerSectionFold(foldsList, {
+                                        type: "line",
+                                        tabWidth: fold.tabWidth,
+                                        dashed: false,
+                                        x: fold.x + (extendFold / 2),
+                                        y: fold.y + fold.height + extendFold,
+                                        dx: fold.width + (-1 * extendFold),
+                                        dy: 0,
+                                    })
+                                }
                             }
                         }
                         else if (fold.type === 'line') {
                             if (fold.x === undefined || fold.y === undefined || fold.dx === undefined || fold.dy === undefined)
                                 throw 'Invalid \'line\' fold type to register'
-                            return {
+                            
+                            foldsList.push({
                                 type: "line",
-                                x: (fold.x * pixelScale) + extrudeAmount,
+                                dashed: thisDashed,
+                                x: (fold.x * pixelScale) + extrudeAmount + (pixelScale * fold.tabWidth),
                                 y: (fold.y * pixelScale) + extrudeAmount,
                                 dx: fold.dx * pixelScale,
                                 dy: fold.dy * pixelScale
-                            }
+                            })
                         }
                         else
                             throw 'Failed to read fold type to register: ' + fold.type
@@ -1059,9 +1193,7 @@
                     function registerSectionFolds(list) {
                         let thisSection = {folds:[]}
                         list.forEach(fold => {
-                            let newFold = registerSectionFold(fold)
-                            if(newFold.type)
-                                thisSection.folds.push(newFold)
+                            registerSectionFold(thisSection.folds, fold)
                         })
                         sectionFolds.push(thisSection)
                     }
@@ -1082,12 +1214,12 @@
                             background: "0xFF000000", layer: { dx: 32, scale: offset_3d_head ? ((8+.5)/8) : 1 } },
                     ]))
                     registerSectionFolds([
-                        {type: "rect", x: 0, y: 8, width: 8, height: 8},
-                        {type: "rect", x: 8, y: 8, width: 8, height: 8},
-                        {type: "rect", x: 16, y: 8, width: 8, height: 8},
-                        {type: "rect", x: 24, y: 8, width: 8, height: 8},
-                        {type: "rect", x: 8, y: 0, width: 8, height: 8},
-                        {type: "rect", x: 8, y: 16, width: 8, height: 8},
+                        {type: "rect", tabWidth: tab_size, x: 0, y: 8, width: 8, height: 8, extend: {left: tab_size, top: tab_size, bottom: tab_size}},
+                        {type: "rect", tabWidth: tab_size, x: 8, y: 8, width: 8, height: 8},
+                        {type: "rect", tabWidth: tab_size, x: 16, y: 8, width: 8, height: 8, extend: {top: tab_size, bottom: tab_size}},
+                        {type: "rect", tabWidth: tab_size, x: 24, y: 8, width: 8, height: 8, extend: {top: tab_size, bottom: tab_size}},
+                        {type: "rect", tabWidth: tab_size, x: 8, y: 0, width: 8, height: 8},
+                        {type: "rect", tabWidth: tab_size, x: 8, y: 16, width: 8, height: 8},
                     ])
 
                     // Body
@@ -1106,12 +1238,12 @@
                             background: "0xFF000000", layer: { dy: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
                     ]))
                     registerSectionFolds([
-                        {type: "rect", x: 0, y: 4, width: 4, height: 12},
-                        {type: "rect", x: 4, y: 4, width: 8, height: 12},
-                        {type: "rect", x: 12, y: 4, width: 4, height: 12},
-                        {type: "rect", x: 16, y: 4, width: 8, height: 12},
-                        {type: "rect", x: 4, y: 0, width: 8, height: 4},
-                        {type: "rect", x: 4, y: 16, width: 8, height: 4},
+                        {type: "rect", tabWidth: tab_size, x: 0, y: 4, width: 4, height: 12, extend: {left: tab_size, top: tab_small_size, bottom: tab_small_size}},
+                        {type: "rect", tabWidth: tab_size, x: 4, y: 4, width: 8, height: 12},
+                        {type: "rect", tabWidth: tab_size, x: 12, y: 4, width: 4, height: 12, extend: {top: tab_small_size, bottom: tab_small_size}},
+                        {type: "rect", tabWidth: tab_size, x: 16, y: 4, width: 8, height: 12, extend: {top: tab_small_size, bottom: tab_small_size}},
+                        {type: "rect", tabWidth: tab_size, x: 4, y: 0, width: 8, height: 4},
+                        {type: "rect", tabWidth: tab_size, x: 4, y: 16, width: 8, height: 4},
                     ])
 
                     // Right Arm
@@ -1130,12 +1262,12 @@
                             background: "0xFF000000", layer: { dy: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
                     ]))
                     registerSectionFolds([
-                        {type: "rect", x: 0, y: 4, width: 4, height: 12},
-                        {type: "rect", x: 4, y: 4, width: (slim ? 3 : 4), height: 12},
-                        {type: "rect", x: 4 + (slim ? 3 : 4), y: 4, width: 4, height: 12},
-                        {type: "rect", x: 4 + (slim ? 3 : 4) + 4, y: 4, width: (slim ? 3 : 4), height: 12},
-                        {type: "rect", x: 4, y: 0, width: (slim ? 3 : 4), height: 4},
-                        {type: "rect", x: 4, y: 16, width: (slim ? 3 : 4), height: 4},
+                        {type: "rect", tabWidth: tab_small_size, x: 0, y: 4, width: 4, height: 12, extend: {left: tab_small_size, top: tab_small_size, bottom: tab_small_size}},
+                        {type: "rect", tabWidth: tab_small_size, x: 4, y: 4, width: (slim ? 3 : 4), height: 12},
+                        {type: "rect", tabWidth: tab_small_size, x: 4 + (slim ? 3 : 4), y: 4, width: 4, height: 12, extend: {top: tab_small_size, bottom: tab_small_size}},
+                        {type: "rect", tabWidth: tab_small_size, x: 4 + (slim ? 3 : 4) + 4, y: 4, width: (slim ? 3 : 4), height: 12, extend: {top: tab_small_size, bottom: tab_small_size}},
+                        {type: "rect", tabWidth: tab_small_size, x: 4, y: 0, width: (slim ? 3 : 4), height: 4},
+                        {type: "rect", tabWidth: tab_small_size, x: 4, y: 16, width: (slim ? 3 : 4), height: 4},
                     ])
 
                     // Left Arm
@@ -1154,12 +1286,12 @@
                             background: "0xFF000000", layer: { dx: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
                     ]))
                     registerSectionFolds([
-                        {type: "rect", x: 0, y: 4, width: 4, height: 12},
-                        {type: "rect", x: 4, y: 4, width: (slim ? 3 : 4), height: 12},
-                        {type: "rect", x: 4 + (slim ? 3 : 4), y: 4, width: 4, height: 12},
-                        {type: "rect", x: 4 + (slim ? 3 : 4) + 4, y: 4, width: (slim ? 3 : 4), height: 12},
-                        {type: "rect", x: 4, y: 0, width: (slim ? 3 : 4), height: 4},
-                        {type: "rect", x: 4, y: 16, width: (slim ? 3 : 4), height: 4},
+                        {type: "rect", tabWidth: tab_small_size, x: 0, y: 4, width: 4, height: 12, extend: {left: tab_small_size, top: tab_small_size, bottom: tab_small_size}},
+                        {type: "rect", tabWidth: tab_small_size, x: 4, y: 4, width: (slim ? 3 : 4), height: 12},
+                        {type: "rect", tabWidth: tab_small_size, x: 4 + (slim ? 3 : 4), y: 4, width: 4, height: 12, extend: {top: tab_small_size, bottom: tab_small_size}},
+                        {type: "rect", tabWidth: tab_small_size, x: 4 + (slim ? 3 : 4) + 4, y: 4, width: (slim ? 3 : 4), height: 12, extend: {top: tab_small_size, bottom: tab_small_size}},
+                        {type: "rect", tabWidth: tab_small_size, x: 4, y: 0, width: (slim ? 3 : 4), height: 4},
+                        {type: "rect", tabWidth: tab_small_size, x: 4, y: 16, width: (slim ? 3 : 4), height: 4},
                     ])
 
                     // Right Leg
@@ -1178,12 +1310,12 @@
                             background: "0xFF000000", layer: { dy: 16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
                     ]))
                     registerSectionFolds([
-                        {type: "rect", x: 0, y: 4, width: 4, height: 12},
-                        {type: "rect", x: 4, y: 4, width: 4, height: 12},
-                        {type: "rect", x: 8, y: 4, width: 4, height: 12},
-                        {type: "rect", x: 12, y: 4, width: 4, height: 12},
-                        {type: "rect", x: 4, y: 0, width: 4, height: 4},
-                        {type: "rect", x: 4, y: 16, width: 4, height: 4},
+                        {type: "rect", tabWidth: tab_small_size, x: 0, y: 4, width: 4, height: 12, extend: {left: tab_small_size, top: tab_small_size, bottom: tab_small_size}},
+                        {type: "rect", tabWidth: tab_small_size, x: 4, y: 4, width: 4, height: 12},
+                        {type: "rect", tabWidth: tab_small_size, x: 8, y: 4, width: 4, height: 12, extend: {top: tab_small_size, bottom: tab_small_size}},
+                        {type: "rect", tabWidth: tab_small_size, x: 12, y: 4, width: 4, height: 12, extend: {top: tab_small_size, bottom: tab_small_size}},
+                        {type: "rect", tabWidth: tab_small_size, x: 4, y: 0, width: 4, height: 4},
+                        {type: "rect", tabWidth: tab_small_size, x: 4, y: 16, width: 4, height: 4},
                     ])
 
                     // Left Leg
@@ -1202,12 +1334,12 @@
                             background: "0xFF000000", layer: { dx: -16, scale: offset_3d_all ? ((8+.25)/8) : 1 } },
                     ]))
                     registerSectionFolds([
-                        {type: "rect", x: 0, y: 4, width: 4, height: 12},
-                        {type: "rect", x: 4, y: 4, width: 4, height: 12},
-                        {type: "rect", x: 8, y: 4, width: 4, height: 12},
-                        {type: "rect", x: 12, y: 4, width: 4, height: 12},
-                        {type: "rect", x: 4, y: 0, width: 4, height: 4},
-                        {type: "rect", x: 4, y: 16, width: 4, height: 4},
+                        {type: "rect", tabWidth: tab_small_size, x: 0, y: 4, width: 4, height: 12, extend: {left: tab_small_size, top: tab_small_size, bottom: tab_small_size}},
+                        {type: "rect", tabWidth: tab_small_size, x: 4, y: 4, width: 4, height: 12},
+                        {type: "rect", tabWidth: tab_small_size, x: 8, y: 4, width: 4, height: 12, extend: {top: tab_small_size, bottom: tab_small_size}},
+                        {type: "rect", tabWidth: tab_small_size, x: 12, y: 4, width: 4, height: 12, extend: {top: tab_small_size, bottom: tab_small_size}},
+                        {type: "rect", tabWidth: tab_small_size, x: 4, y: 0, width: 4, height: 4},
+                        {type: "rect", tabWidth: tab_small_size, x: 4, y: 16, width: 4, height: 4},
                     ])
 
                     // Cape
@@ -1227,18 +1359,16 @@
                                 background: "0xFF000000" },
                         ]))
                         registerSectionFolds([
-                            {type: "rect", x: 0, y: 1, width: 1, height: 16},
-                            {type: "rect", x: 1, y: 1, width: 10, height: 16},
-                            {type: "rect", x: 11, y: 1, width: 1, height: 16},
-                            {type: "rect", x: 12, y: 1, width: 10, height: 16},
-                            {type: "rect", x: 1, y: 0, width: 10, height: 1},
-                            {type: "rect", x: 1, y: 17, width: 10, height: 1},
+                            {type: "rect", tabWidth: tab_size, x: 0, y: 1, width: 1, height: 16, extend: {left: tab_size, top: tab_tiny_size, bottom: tab_tiny_size}},
+                            {type: "rect", tabWidth: tab_size, x: 1, y: 1, width: 10, height: 16},
+                            {type: "rect", tabWidth: tab_size, x: 11, y: 1, width: 1, height: 16, extend: {top: tab_tiny_size, bottom: tab_tiny_size}},
+                            {type: "rect", tabWidth: tab_size, x: 12, y: 1, width: 10, height: 16, extend: {top: tab_tiny_size, bottom: tab_tiny_size}},
+                            {type: "rect", tabWidth: tab_size, x: 1, y: 0, width: 10, height: 1},
+                            {type: "rect", tabWidth: tab_size, x: 1, y: 17, width: 10, height: 1},
                         ])
                     }
 
                     await labelAndLog('button-label', 'Organizing pages...')
-
-                    const extrudeEdges = true
 
                     function extrudeCanvasEdges(extrudeCanvas) {
                         const extrudeCtx = getCanvasContext(extrudeCanvas)
@@ -1362,12 +1492,6 @@
 
                     pageSections.push(currentPage)
 
-                    await labelAndLog('button-label', 'Extruding edges...')
-
-                    if (extrudeEdges) {
-                        pageSections.forEach(c => extrudeCanvasEdges(c))
-                    }
-
                     await labelAndLog('button-label', 'Doubling sides...')
 
                     const pageSectionsDouble = []
@@ -1384,20 +1508,28 @@
                         pageSectionsDouble.push(backPage)
                     })
 
+                    if (extrudeEdges) {
+                        await labelAndLog('button-label', 'Extruding edges...')
+                        pageSections.forEach(c => extrudeCanvasEdges(c))
+                    }
+
                     await labelAndLog('button-label', 'Drawing fold lines...')
 
-                    function drawAlignedDottedLine(ctx, dir, x1, y1, x2, y2) {
+                    function drawAlignedDottedLine(ctx, dir, dashed, x1, y1, x2, y2) {
                         const isVertical = Math.abs(x2 - x1) < Math.abs(y2 - y1)
                         if(isVertical != dir)
                             return
 
+                        if (x1 === x2 && y1 === y2)
+                            return
+
                         // make sure dash colors always go same direction
-                        if(x2 < x1) {
+                        if(y1 === y2 && x2 < x1) {
                             let temp = x2
                             x2 = x1
                             x1 = temp
                         }
-                        if(y2 < y1) {
+                        if(x1 === x2 && y2 < y1) {
                             let temp = y2
                             y2 = y1
                             y1 = temp
@@ -1425,56 +1557,58 @@
                         ctx.restore()
 
                         ctx.save()
-                        ctx.globalCompositeOperation = 'source-over'
-                        ctx.strokeStyle = dottedColorB
+                        ctx.globalCompositeOperation = dashed ? 'source-over' : 'destination-over'
+                        ctx.strokeStyle = dashed ? dottedColorB : solidColor
                         ctx.lineCap = 'square'
                         ctx.stroke()
                         ctx.restore()
 
-                        let dist = 0
-                        while (dist < totalLength) {
-                            const coord = (phaseOffset + dist) % (2 * dottedPixelLength)
-                            const colorIndex = Math.floor(coord / dottedPixelLength) % 2
+                        if (dashed) {
+                            let dist = 0
+                            while (dist < totalLength) {
+                                const coord = (phaseOffset + dist) % (2 * dottedPixelLength)
+                                const colorIndex = Math.floor(coord / dottedPixelLength) % 2
 
-                            const nextBoundary =
-                                Math.min(
-                                    dist + (dottedPixelLength - (coord % dottedPixelLength)),
-                                    totalLength
-                                )
+                                const nextBoundary =
+                                    Math.min(
+                                        dist + (dottedPixelLength - (coord % dottedPixelLength)),
+                                        totalLength
+                                    )
 
-                            const sx = x1 + dirX * dist
-                            const sy = y1 + dirY * dist
-                            const ex = x1 + dirX * nextBoundary
-                            const ey = y1 + dirY * nextBoundary
+                                const sx = x1 + dirX * dist
+                                const sy = y1 + dirY * dist
+                                const ex = x1 + dirX * nextBoundary
+                                const ey = y1 + dirY * nextBoundary
 
-                            ctx.beginPath()
-                            ctx.moveTo(sx, sy)
-                            ctx.lineTo(ex, ey)
+                                ctx.beginPath()
+                                ctx.moveTo(sx, sy)
+                                ctx.lineTo(ex, ey)
 
-                            ctx.save()
-                            ctx.globalCompositeOperation = 'destination-out'
-                            ctx.strokeStyle = '#000'
-                            ctx.stroke()
-                            ctx.restore()
+                                ctx.save()
+                                ctx.globalCompositeOperation = 'destination-out'
+                                ctx.strokeStyle = '#000'
+                                ctx.stroke()
+                                ctx.restore()
 
-                            ctx.save()
-                            ctx.globalCompositeOperation = 'source-over'
-                            ctx.strokeStyle = colorIndex === 0 ? dottedColorA : dottedColorB
-                            ctx.stroke()
-                            ctx.restore()
+                                ctx.save()
+                                ctx.globalCompositeOperation = 'source-over'
+                                ctx.strokeStyle = colorIndex === 0 ? dottedColorA : dottedColorB
+                                ctx.stroke()
+                                ctx.restore()
 
-                            dist = nextBoundary
+                                dist = nextBoundary
+                            }
                         }
                     }
 
                     function drawFoldLines(ctx, thisSection, fold, dir) {
                         if (fold.type === 'rect') {
-                            drawAlignedDottedLine(ctx, dir, thisSection.x + fold.x, thisSection.y + fold.y, thisSection.x + fold.x + fold.width, thisSection.y + fold.y)
-                            drawAlignedDottedLine(ctx, dir, thisSection.x + fold.x, thisSection.y + fold.y, thisSection.x + fold.x, thisSection.y + fold.y + fold.height)
-                            drawAlignedDottedLine(ctx, dir, thisSection.x + fold.x + fold.width, thisSection.y + fold.y + fold.height, thisSection.x + fold.x + fold.width, thisSection.y + fold.y)
-                            drawAlignedDottedLine(ctx, dir, thisSection.x + fold.x + fold.width, thisSection.y + fold.y + fold.height, thisSection.x + fold.x, thisSection.y + fold.y + fold.height)
+                            drawAlignedDottedLine(ctx, dir, fold.dashed, thisSection.x + fold.x, thisSection.y + fold.y, thisSection.x + fold.x + fold.width, thisSection.y + fold.y)
+                            drawAlignedDottedLine(ctx, dir, fold.dashed, thisSection.x + fold.x, thisSection.y + fold.y, thisSection.x + fold.x, thisSection.y + fold.y + fold.height)
+                            drawAlignedDottedLine(ctx, dir, fold.dashed, thisSection.x + fold.x + fold.width, thisSection.y + fold.y + fold.height, thisSection.x + fold.x + fold.width, thisSection.y + fold.y)
+                            drawAlignedDottedLine(ctx, dir, fold.dashed, thisSection.x + fold.x + fold.width, thisSection.y + fold.y + fold.height, thisSection.x + fold.x, thisSection.y + fold.y + fold.height)
                         } else if (fold.type === 'line') {
-                            drawAlignedDottedLine(ctx, dir, thisSection.x + fold.x, thisSection.y + fold.y, thisSection.x + fold.x + fold.dx, thisSection.y + fold.y + fold.dy)
+                            drawAlignedDottedLine(ctx, dir, fold.dashed, thisSection.x + fold.x, thisSection.y + fold.y, thisSection.x + fold.x + fold.dx, thisSection.y + fold.y + fold.dy)
                         }
                         else
                             throw 'Failed to read fold type to draw: ' + fold.type
@@ -1553,9 +1687,9 @@
                     newHtml += '<button class="button" onClick="openPdf()" style="font-size:x-large">Open PDF</button>'
                     newHtml += '<br/>'
                     newHtml += '<table class="card-table"><tr class="card-table-row">'
-                    for (const page of pageSections) {
+                    for (const page of pageSectionsDouble) {
                         prevPageCount++
-                        newHtml += `<td class="card-wrap-third"><img src="${page.toDataURL('image/png')}" class="img-full"></td>`
+                        newHtml += `<td class="card-wrap-any"><img src="${page.toDataURL('image/png')}" class="img-mostly"></td>`
                     }
                     newHtml += '</tr></table>'
 
