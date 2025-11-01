@@ -22,7 +22,7 @@
             <td class="card-wrap-mid"><div class="card tooltip center">
                 <p class="item-header">Origami</p>
                 <br/>
-                <p class="item-subtitle">Generate a double-sided PDF to print a 3D Minecraft skin</p>
+                <p class="item-subtitle">Generate a PDF to print a 3D Minecraft skin</p>
             </div></td>
 
             <td class="card-wrap-full"><div class="card tooltip center">
@@ -219,6 +219,8 @@
         const extrudeEdges = true
         const extrudeAmount = pixelScale // must be integer 0 or higher
 
+        const disableDoubleSided = true
+
         const spacing = (2 * extrudeAmount) + pixelScale
         const pageMarginX = Math.ceil(outputWidth / 10)
         const pageMarginY = Math.ceil(outputHeight / 10)
@@ -228,7 +230,7 @@
 
         const dottedPixelLength = Math.floor(pixelScale / 2)
         const dottedPixelWidth = Math.floor(pixelScale / 4)
-        // alpha values cause issues where lines and line widths overlap
+        const showDashedLines = !disableDoubleSided
         const dottedColorA = '#00000088'
         const dottedColorB = '#FFFFFF88'
         const solidColor = '#88888888'
@@ -1501,8 +1503,10 @@
                         const backPage = createCanvas(c.width, c.height)
                         const backPageCtx = getCanvasContext(backPage)
 
-                        backPageCtx.translate(backPage.width, 0)
-                        backPageCtx.scale(-1, 1)
+                        if (!disableDoubleSided) {
+                            backPageCtx.translate(backPage.width, 0)
+                            backPageCtx.scale(-1, 1)
+                        }
                         backPageCtx.drawImage(c, 0, 0)
 
                         pageSectionsDouble.push(backPage)
@@ -1521,6 +1525,9 @@
                             return
 
                         if (x1 === x2 && y1 === y2)
+                            return
+
+                        if (dashed && !showDashedLines)
                             return
 
                         // make sure dash colors always go same direction
@@ -1659,6 +1666,14 @@
                     const safeAreaY = outputHeight - (2 * pageMarginY)
                     const safeAreaUnitX = outputUnitWidth - (2 * pageMarginUnitX)
                     const safeAreaUnitY = outputUnitHeight - (2 * pageMarginUnitY)
+
+                    if (disableDoubleSided) {
+                        let tempList = []
+                        for (let i = 0; i < pageSections.length; i++)
+                            tempList.push(pageSectionsDouble[(2 * i) + 1])
+                        pageSectionsDouble.length = 0
+                        pageSectionsDouble.push(...tempList)
+                    }
 
                     pageSectionsDouble.forEach((canvas, i) => {
                         if (i > 0)
