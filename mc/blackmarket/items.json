@@ -757,6 +757,11 @@
             "name": "Copper",
             "description": "2025",
             "url": "http://textures.minecraft.net/texture/5e6f3193e74cd16cdd6637d9bae5484e3a37ff2a14c2d157c659a07810b1bdca"
+        },
+        {
+            "name": "Zombie Horse",
+            "description": "2025",
+            "url": "http://textures.minecraft.net/texture/a3f6e4f14801f3ea55e3d95b9b4ef3b5e8802d947f669de93d6ec4b9354a436b"
         }
     ]
 }
