@@ -787,6 +787,16 @@
             "name": "Moonlight Trail",
             "description": "2026",
             "url": "http://textures.minecraft.net/texture/fe8a02dfe9e390e44ff33d69feef9d3943f76d3901015bbd50f0b67722d288bd"
+        },
+        {
+            "name": "Crafter",
+            "description": "2026",
+            "url": "http://textures.minecraft.net/texture/479eacefa3cdd7aca94207f36c0dd449653ddf259daf40544a5866baf05eee22"
+        },
+        {
+            "name": "Builder",
+            "description": "2026",
+            "url": "http://textures.minecraft.net/texture/2c579968c64c1719740fd8c2a451461879b238002574fce48f7d1a7c36a1c7d4"
         }
     ]
 }
